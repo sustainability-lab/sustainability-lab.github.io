@@ -3,7 +3,6 @@ title: About
 layout: default
 ---
 
-<div class="row content-row">
 
 Hi everyone! We are a group of researchers based out of IIT Gandhinagar. We have been doing some cool stuff in the computer science (CS) + sustainability space and are starting this blog to share our updates.
 
@@ -18,7 +17,7 @@ This blog/website has several purposes, including, but not limited to:
 
 We hope to engage with all of you.
 
-Nipun Batra (PI of Sustainability Lab)
+[Nipun Batra](https://nipunbatra.github.io/) (PI of Sustainability Lab)
 
-https://nipunbatra.github.io/
-</div>
+
+
