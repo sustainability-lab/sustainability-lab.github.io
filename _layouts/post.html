@@ -2,6 +2,7 @@
 layout: default
 ---
 
+{% include post-readingtime.erb %}
 {%- if page.use_toc -%}
     <span>{{ page.excerpt | markdownify }}</span>
     <h2>Table of Contents</h2>
