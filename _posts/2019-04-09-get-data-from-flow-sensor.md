@@ -23,6 +23,67 @@ Once we have the voltage signal (in 0V to 5V range), the next immediate step was
 **Analog to Digital Conver (ADS1115)**
 The ADS1115 is a 15 bit resolution ADC. It works on the I2C protocol and hence we can connect upto 4 analog input device to this sensor with each having a different address. For our experiment, we connected the output voltage to the ADC pin A0. We wire up the ADC with the Raspberry Pi Model B+ as shown in the figure below. The A0 pin of ADC is connected to the voltage output from the current to voltage converter module.
 
+**Raspberry Pi**
+Once the connections are set up, we need to configure the Raspberry Pi as explained below.
+
+1. Update the RPi to run the latest linux
+    1. ```sudo apt-get update```
+    2. ```sudo apt-get upgrade```
+    3. ```sudo pip3 install --upgrade setuptools or sudo apt-get install python3-pip```
+2. Enable I2C.
+    1. Install I2C utility: ```sudo apt-get install -y python-smbus and sudo apt-get install -y i2c-tools```
+    2. Run ```sudo raspi-config```, go to ‘Interfacing Option’ and enable I2C
+    3. Once done, reboot!. ```sudo reboot```.
+    4. Test the I2C interface, ```sudo i2cdetect -y 1```
+    5. The result of 4) in the terminal should show the I2C address in Use. (Should be 0x48 in our case)
+3. Make sure Rpi is using Python3 and Pip3
+4. Install the following libraries
+    1. ```pip3 install RPI.GPIO```
+    2. ```pip3 install adafruit-blinka```
+5. Test if everything is running by testing your Pi with blinkatest.py
+6. Install the library for ADS1115: sudo pip3 install adafruit-circuitpython-ads1x15
+7. Run the file, testADCv1.py
+
+**Below is the code for blinktest.py**
+```python
+
+import board
+import digitalio
+import busio
+
+print("Hello blinka!")
+
+# Try to great a Digital input
+pin = digitalio.DigitalInOut(board.D4)
+print("Digital IO ok!")
+
+# Try to create an I2C device
+i2c = busio.I2C(board.SCL, board.SDA)
+print("I2C ok!")
+
+# Try to create an SPI device
+spi = busio.SPI(board.SCLK, board.MOSI, board.MISO)
+print("SPI ok!")
+
+print("done!")
+
+```
+**Below is the code for testADCv1.py**
+```python
+import board
+import busio
+i2c = busio.I2C(board.SCL, board.SDA)
+
+import adafruit_ads1x15.ads1115 as ADS
+
+from adafruit_ads1x15.analog_in import AnalogIn
+
+ads = ADS.ADS1115(i2c)
+chan = AnalogIn(ads, ADS.P0)
+print(chan.value, chan.voltage)
+
+```
+
 On running the file, we should see the ADC value and the voltage value on the screen. We later created a MySQL database on the Raspberry Pi to store the ADC data periodically after every 5 minutes. We can execute the Python Script every 5 minutes using the cron job scheduler of the OS in the Raspberry Pi.
 
 
