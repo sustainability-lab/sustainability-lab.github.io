@@ -20,10 +20,12 @@ Once we have the voltage signal (in 0V to 5V range), the next immediate step was
 
 ![Current to voltage converter](/images/ads1115.jpg)
 
-**Analog to Digital Conver (ADS1115)**
+**Analog to Digital Conver (ADS1115):**
 The ADS1115 is a 15 bit resolution ADC. It works on the I2C protocol and hence we can connect upto 4 analog input device to this sensor with each having a different address. For our experiment, we connected the output voltage to the ADC pin A0. We wire up the ADC with the Raspberry Pi Model B+ as shown in the figure below. The A0 pin of ADC is connected to the voltage output from the current to voltage converter module.
 
-**Raspberry Pi**
+![](/images/flow-meter-ck-overview.jpg)
+
+**Raspberry Pi:**
 Once the connections are set up, we need to configure the Raspberry Pi as explained below.
 
 1. Update the RPi to run the latest linux
