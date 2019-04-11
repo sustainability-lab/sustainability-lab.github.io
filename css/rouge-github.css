@@ -218,12 +218,29 @@
     margin: 6px;
 }
 
+.author-short-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    display: inline-block;
+    float: left;
+    background: no-repeat center center;
+    background-size: cover;
+    margin: 4px;
+}
+
+
+
+
 .author-div{
     margin-top: 6px;
 }
 
 .author-div .btn{
 	border-radius: 3px;
+  border-color: transparent;
+  font-size: .6em;
+  
 
 }
 

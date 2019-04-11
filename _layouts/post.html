@@ -2,17 +2,20 @@
 layout: default
 ---
 
-{% include post-readingtime.erb %}
+{% assign author = site.data.authors[page.author] %}
+{% include time_to_read.html %}
 {%- if page.use_toc -%}
     <span>{{ page.excerpt | markdownify }}</span>
     <h2>Table of Contents</h2>
     {% include toc.html html=content %}
 {%- endif -%}
 
+
+<div style="margin-top: 1em;">
 {{ content }}
+</div>
 
 
-{% assign author = site.data.authors[page.author] %}
 {% if author %}
     {% include author_bio.html %}
 {% endif %}
