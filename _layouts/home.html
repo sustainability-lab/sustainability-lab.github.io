@@ -4,18 +4,21 @@ layout: default
 
 {{ content }}
 
-<h2>Latest Posts</h2>
+<h2>Posts</h2>
 
 <ul class="post-list">
 {%- for post in site.posts -%}
+  {% assign current_author = site.data.authors[post.author] %}
   <li>
 
     {%- assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" -%}
-    <span class="post-meta">{{ post.date | date: date_format }}</span>
+    <!--<span class="post-meta">{{ post.date | date: date_format }}</span>-->
 
     <h2>
       <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
     </h2>
+  
+      <p style="align:right;font-weight: 10;color:#0000009e"> {{ current_author.name }} - {{ post.date | date: date_format }} - {{ post.time }} read </p>
 
     <span>{{ post.excerpt | markdownify | truncatewords: 50 }}</span>
 
