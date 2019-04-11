@@ -1,6 +1,7 @@
 ---
 title: Getting data from Flow Sensors
 layout: post
+author: nipun_batra
 use_math: true
 use_code: true
 ---

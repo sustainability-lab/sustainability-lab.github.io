@@ -207,3 +207,23 @@
 .highlight {
   background-color: #f8f8f8;
 }
+.author-pic{
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    display: inline-block;
+    background: no-repeat center center;
+    background-size: cover;
+
+    margin: 6px;
+}
+
+.author-div{
+    margin-top: 6px;
+}
+
+.author-div .btn{
+	border-radius: 3px;
+
+}
+
