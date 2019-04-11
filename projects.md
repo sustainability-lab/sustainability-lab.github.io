@@ -5,6 +5,7 @@ use_fontawesome: true
 ---
 
 <!-- Research -->
+<!--
 <h1 class="section-title">Research</h1>
 
 <div class="row content-row">
@@ -57,8 +58,9 @@ use_fontawesome: true
     <p><span class="bold">Presentation:</span> 43rd American Chemistry Society Western Regional Meeting, Pasadena, CA</p>
 </div>
 </div>
-
+-->
 <!-- Experience -->
+<!--
 <h1 class="section-title">Experience</h1>
 
 <div class="row content-row">
@@ -84,8 +86,9 @@ use_fontawesome: true
 </div>
 </div>
 <hr>
-
+-->
 <!-- Projects -->
+<!--
 <h1 class="section-title">Projects</h1>
 
 <div class="row content-row">
@@ -129,3 +132,4 @@ use_fontawesome: true
     </a>
 </div>
 </div>
+-->
