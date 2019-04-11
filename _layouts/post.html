@@ -10,3 +10,10 @@ layout: default
 {%- endif -%}
 
 {{ content }}
+
+
+{% assign author = site.data.authors[page.author] %}
+{% if author %}
+    {% include author_bio.html %}
+{% endif %}
+
