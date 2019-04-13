@@ -1,6 +1,7 @@
 ---
 title: Team
-layout: default
+use_code: True
+layout: team
 ---
 
 ### Faculty

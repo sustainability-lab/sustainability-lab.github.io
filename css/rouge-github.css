@@ -229,6 +229,13 @@
     margin: 4px;
 }
 
+.team-page-pic{
+
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+
+}
 
 
 
@@ -244,3 +251,15 @@
 
 }
 
+.roles{
+
+  margin-top: 2em;
+}
+
+.circle-image{
+
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+
+}
