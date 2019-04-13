@@ -1,7 +1,7 @@
 ---
 title: Getting data from Flow Sensors
 layout: post
-author: nipun_batra
+author: rishi
 use_math: true
 use_code: true
 time: 5 min
