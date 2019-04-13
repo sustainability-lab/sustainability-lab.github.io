@@ -4,6 +4,7 @@ layout: post
 author: rishi
 use_math: true
 use_code: true
+use_google_fonts: true
 time: 5 min
 ---
 
