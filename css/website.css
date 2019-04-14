@@ -1,6 +1,10 @@
 /*******************
  * BASICS
  ******************/
+
+p {
+  text-align:justify;
+}
 .italic {
   font-style: italic !important;
 }
