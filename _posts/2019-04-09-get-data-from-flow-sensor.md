@@ -2,6 +2,7 @@
 title: Getting data from Flow Sensors
 layout: post
 author: rishi
+signature_img: /images/flow-meter-ck-overview.jpg
 use_math: true
 use_code: true
 use_google_fonts: true
