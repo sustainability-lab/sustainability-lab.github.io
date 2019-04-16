@@ -4,8 +4,13 @@ layout: default
 
 {{ content }}
 
-<h2>Posts</h2>
 
+
+<div class='row'>
+
+<div class='col-lg-8 offset-lg-2 col-md-8 offset-md-8'>
+  <h1 class="text-center">Posts</h1>
+  
 <ul class="post-list">
 {%- for post in site.posts -%}
   {% assign current_author = site.data.authors[post.author] %}
@@ -14,14 +19,33 @@ layout: default
     {%- assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" -%}
     <!--<span class="post-meta">{{ post.date | date: date_format }}</span>-->
 
-    <h2>
-      <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
-    </h2>
-  
-      <p style="align:right;font-weight: 10;color:#0000009e"> {{ current_author.name }} - {{ post.date | date: date_format }} - {{ post.time }} read </p>
+    <div class='individual-post'>
 
-    <span>{{ post.excerpt | markdownify | truncatewords: 50 }}</span>
+        <div class="author-short" style="display: block;">
+      
+          
+            <img class="author-short-pic" src="{{current_author.image}}" alt="{{current_author.name}} profile">
+
+            <div style="margin-left: 5em;">
+                <h5>{{current_author.name}}</h5>
+                <p style="align:right;font-weight: 10;color:#0000009e"> {{ post.date | date: date_format }} - {% include post-readingtime.erb %} read </p>
+            </div>
+
+         </div>
+
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+      </h3>
+    
+      <img src="{{post.signature_img}}" class="homepage-signature-img rounded mx-auto d-block">
+        
+
+      <span>{{ post.excerpt | markdownify | truncatewords: 20 }}</span>
+
+  </div>
 
   </li>
 {%- endfor -%}
 </ul>
+</div>
+</div>

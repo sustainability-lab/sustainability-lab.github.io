@@ -103,6 +103,7 @@ ul.contact {
  ******************/
 .post-list {
   margin-left: 0;
+  padding-left: 0px;
   list-style: none;
 }
 
@@ -270,4 +271,24 @@ hr {
 
 
 
+/* For the Image we can see associated with every post */
 
+.homepage-signature-img{
+
+  max-height: 10em;
+  width: auto;
+
+
+}
+
+.individual-post{
+  
+  padding:1em;
+  border: 1px solid #0000002e;
+  box-shadow: 2px 2px 2px 2px #0000002e;
+  border-radius: 5px;
+
+
+
+
+}
