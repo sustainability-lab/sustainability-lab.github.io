@@ -92,5 +92,8 @@ print(chan.value, chan.voltage)
 
 On running the file, we should see the ADC value and the voltage value on the screen. We later created a MySQL database on the Raspberry Pi to store the ADC data periodically after every 5 minutes. We can execute the Python Script every 5 minutes using the cron job scheduler of the OS in the Raspberry Pi.
 
+The complete circuit just before deployment.
+![](/images/narmada-complete-ckt.jpg)
+
 
 
