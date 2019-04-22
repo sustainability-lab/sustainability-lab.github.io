@@ -33,7 +33,17 @@ In Research, we often require actionable insights that we get from the data we c
     *  Check is NTP is running successfully. Type ```sudo service ntp status```. You should see the ```active``` status on screen. 
     *  Open UDP port 123 so that your Raspberry Pi can connect to this NTP server. Type ```sudo ufw allow from any to any port 123 proto udp```
     *  Now, do the following on your Raspberry Pi. Access the file timesyncd.conf by typing ```sudo nano /etc/systemd/timesyncd.conf ```. Replace the line ```NTP=``` with ```NTP = x.x.x.x``` where ```x.x.x.x``` is your NTP server's IP address.
+    
+4. **Setting a static IP for the Raspberry Pi**. We always prefer if our Raspberry Pi always gets the same IP address from the DHCP pool.  We followed the following procedure to set a static IP.
 
+    *  We can see the IP assigned to our Pi and the network size by typing ```ip -4 addr show | grep global```
+    * The second address visible on typing the above command is the  brd (broadcast) address of the network.
+    * We can find the address of our router (or gateway) by typing the command ```ip route | grep default | awk '{print $3}'```
+    * Lastly, we need the DNS which we get by typing cat ```/etc/resolv.conf```
+    * Now we edit the file  ```/etc/dhcpcd.conf```  with all the information found from above steps.
+    * <div class="alert alert-danger" role="alert">HEADS UP! Your Raspberry Pi won't be assigned the IP you listed in the ```dhcpcd.conf``` file if that IP is already assigned to some other device.</div> 
+    
+---
 
 Developing article.
 
