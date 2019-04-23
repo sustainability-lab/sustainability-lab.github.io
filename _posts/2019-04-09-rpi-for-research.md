@@ -2,7 +2,7 @@
 title: Making Raspberry Pi Ready For Research Applications
 layout: post
 author: rishi
-signature_img:
+signature_img:/images/rpi-for-research.png
 use_math: true
 use_code: true
 use_google_fonts: true
