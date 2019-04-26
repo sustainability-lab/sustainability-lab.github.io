@@ -48,6 +48,15 @@ In research, collected data are often subjected to actionable insights. Raspberr
     
  ---
  
+**Sending terminal outputs as POST data using curl.**
+
+We wanted our Pi's IP address to be sent as a POST data to a remote server.  The command ```hostname -I``` give the IP address of a Linux machine. We thus used the following command in a shell script file to send Pi's IP address and MAC address as a POST data.
+
+
+```echo “ip=`hostname -I`&emac=`ifconfig | grep ether`” | curl -d @- http://10.0.76.58:5000 > /tmp/rc.local.log 2>&1```
+
+ ---
+ 
 **Sending POST data to a remote server and storing it in MySQL server**
 
 Often time, we require to send data from the Raspberry Pi to a remote server. The Python scripts below will help you get started in very less time when it comes to working with POST data. 
