@@ -17,6 +17,7 @@ layout: default
   <li>
 
     {%- assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" -%}
+    {%  assign page= post %}
     <!--<span class="post-meta">{{ post.date | date: date_format }}</span>-->
 
     <div class='individual-post'>
@@ -28,7 +29,7 @@ layout: default
 
             <div style="margin-left: 5em;">
                 <h5>{{current_author.name}}</h5>
-                <p style="align:right;font-weight: 10;color:#0000009e"> {{ post.date | date: date_format }} - {% include post-readingtime.erb %} read </p>
+                <p style="align:right;font-weight: 10;color:#0000009e"> {{ post.date | date: date_format }} - {% include post-readingtime.erb %}</p>
             </div>
 
          </div>
