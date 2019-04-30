@@ -6,7 +6,7 @@ signature_img: /images/rpi-for-research.png
 use_math: true
 use_code: true
 use_google_fonts: true
-time: 5 min
+comments: true
 ---
 
 In research, collected data are often subjected to actionable insights. Raspberry Pi (one of the cheapest computer) plays a very crucial role in data acquisition and processing. In this blog post, we explain the changes we made on our Pi to aid it in our research work.
