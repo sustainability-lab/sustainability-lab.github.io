@@ -6,7 +6,7 @@ signature_img: /images/flow-meter-ck-overview.jpg
 use_math: true
 use_code: true
 use_google_fonts: true
-time: 5 min
+comments: true
 ---
 
 Water scarcity problem is highly prevalent in western India. Studies estimate that 20-35% of the total water flow is wasted due to leakages in the network, which if timely rectified can reduce wastage by more than 90%. This necessities the need to monitor the water flow using sensing infrastructure. Water flow sensors are typically placed in between water piper by physically cutting them. Some of these flow sensors are even connected to a flow meter. Flow sensors output data as a current. Data in the form of current does not attenuate over a long distance, unlike voltage. The output current typically ranges from 4mA to 20mA.

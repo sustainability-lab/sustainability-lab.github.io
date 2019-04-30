@@ -21,7 +21,12 @@ layout: default
 		{% if author %}
 		    {% include author_bio.html %}
 		{% endif %}
+		
+		{% if page.comments %}
 
+			{% include comments.html %}
+
+		{% endif %}
 
 	</div>
 </div>
