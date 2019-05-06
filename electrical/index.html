@@ -3,7 +3,7 @@
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="1">
+  <meta http-equiv="refresh" content="3">
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,9 +14,9 @@
 
 </head>
 <body>
-	<div class="container" style="margin-top: 3em;">
+	<div class="container" style="margin-top: 3em;" id='myDiv'>
 	  
-		<svg  class='drawing' id='drawing' width="100%" height="100%" >
+		<svg  class='drawing' id='drawing' width="y/10%" height="y/10%" >
 		</svg>
 
 </div>
@@ -29,14 +29,14 @@
 <script>
 
 
-var x = 1000
-var y = 500
+var x = document.getElementById('myDiv').clientWidth;
+var y = 300+document.getElementById('myDiv').clientHeight;
 
 var draw = SVG('drawing').size(x, y)
 
 
 
-var x_pos_line1 = 100
+var x_pos_line1 = x/3
 
 var y_pos_line1 = y/2
 
@@ -48,7 +48,9 @@ var line3 = draw.line(x-x_pos_line1, y_pos_line1, x-x_pos_line1, 0).stroke({ wid
 
 
 
-var polyline1 = draw.polyline([[x_pos_line1-10,y_pos_line1-50],[ x_pos_line1-10,y_pos_line1-100] ,[x_pos_line1+10,y_pos_line1-100], [x_pos_line1+10,y_pos_line1- 50],[x_pos_line1-10,y_pos_line1-50]])
+
+
+var polyline1 = draw.polyline([[x_pos_line1-10,y_pos_line1-y/20],[ x_pos_line1-10,y_pos_line1-y/10] ,[x_pos_line1+10,y_pos_line1-y/10], [x_pos_line1+10,y_pos_line1- y/20],[x_pos_line1-10,y_pos_line1-y/20]])
 
 polyline1.fill('white')
 polyline1.stroke({ color: '#f06', width: 4, linecap: 'round', linejoin: 'round' })
@@ -57,7 +59,7 @@ polyline1.stroke({ color: '#f06', width: 4, linecap: 'round', linejoin: 'round' 
 
 
 
-var polyline2 = draw.polyline([[x-x_pos_line1-10,y_pos_line1-50],[x- x_pos_line1-10,y_pos_line1-100] ,[x-x_pos_line1+10,y_pos_line1-100], [x-x_pos_line1+10,y_pos_line1- 50],[x-x_pos_line1-10,y_pos_line1-50]])
+var polyline2 = draw.polyline([[x-x_pos_line1-10,y_pos_line1-y/20],[x- x_pos_line1-10,y_pos_line1-y/10] ,[x-x_pos_line1+10,y_pos_line1-y/10], [x-x_pos_line1+10,y_pos_line1- y/20],[x-x_pos_line1-10,y_pos_line1-y/20]])
 
 polyline2.fill('white')
 polyline2.stroke({ color: '#f06', width: 4, linecap: 'round', linejoin: 'round' })
@@ -75,11 +77,11 @@ polyline3.stroke({ color: '#f06', width: 4, linecap: 'round', linejoin: 'round' 
 
 
 
-var x_pos_line2 = 200
+var x_pos_line2 = x/5
 
 var y_pos_line2 = y/2
 
-var y_offset = 140
+var y_offset = y/5
 
 
 var line5 = draw.line(x_pos_line2, y_pos_line2, x_pos_line2, y-y_offset).stroke({ width: 2 })
@@ -125,12 +127,12 @@ var circle3 = draw.circle(2*rad2).center(x-x_pos_line2+20,y-y_offset+10+rad)
 circle3.fill('none')
 circle3.stroke({ color: 'blue', width: 4, linecap: 'round', linejoin: 'round' })
 
-//var text = draw.text("S").move(x_pos_line2,y-100+rad)
+//var text = draw.text("S").move(x_pos_line2,y-y/10+rad)
 
 
-var line6 = draw.line(x-x_pos_line2+20+rad2,y-y_offset+10+rad, x-100, y-y_offset+10+rad).stroke({ width: 2 })
+var line6 = draw.line(x-x_pos_line2+20+rad2,y-y_offset+10+rad, x-y/10, y-y_offset+10+rad).stroke({ width: 2 })
 
-//var line6 = draw.line(x-x_pos_line2+20+rad2,y-y_offset+10+rad, x-100, y-y_offset+10+rad).stroke({ width: 2 })
+//var line6 = draw.line(x-x_pos_line2+20+rad2,y-y_offset+10+rad, x-y/10, y-y_offset+10+rad).stroke({ width: 2 })
 
 
 
@@ -149,7 +151,7 @@ polyline5.stroke({ color: '#f06', width: 4, linecap: 'round', linejoin: 'round' 
 
 
 
-var bot_line = draw.line(x-x_pos_line2-50,y ,x-x_pos_line2+50, y).stroke({ width: 3 })
+var bot_line = draw.line(x-x_pos_line2-y/20,y ,x-x_pos_line2+y/20, y).stroke({ width: 3 })
 
 
 var total = 2000
@@ -176,7 +178,7 @@ var text2 = draw.text("▲"+reading2+" MW").move(x-x_pos_line1+10,30).stroke({wi
 var text3 = draw.text("▼"+reading3+" MW").move(x-x_pos_line2+10,y/2+30).stroke({width:1})
 
 
-var text4 = draw.text("▲"+total+" MW").move(x_pos_line2+10,y/2+50).stroke({width:1})
+var text4 = draw.text("▲"+total+" MW").move(x_pos_line2+10,y/2+y/20).stroke({width:1})
 
 
 var gen = draw.text("〰〰").move(x_pos_line2-15,y-y_offset+rad-7).stroke({width:1})
@@ -198,4 +200,5 @@ var gen = draw.text("〰〰").move(x_pos_line2-15,y-y_offset+rad-7).stroke({widt
 
 
 </html>
+
 
