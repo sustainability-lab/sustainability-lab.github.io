@@ -1,28 +1,35 @@
 <hr>
-<span>
-   <div>
-      
-<div class="author-div">
-      
-      <div>
-      	<img class="author-pic" src="{{author.image}}" align="left" alt="{{author.name}} profile">
-      
-      </div>
+	<span>
+		<div>
 
-      <div style="display: table-cell!important;vertical-align: middle!important; padding-left: 1em;">
-      <h4>{{author.name}} <br>
+		  	{% assign authors = page.author | split: ',' %}
 
-		<a href="{{author.twitter}}" target="_blank" class="btn btn-info" role="button" style='background-color:#55ACEE'>Twitter</a> 
-<a href="{{author.github}}" target="_blank" class="btn btn-info" role="button" style='background-color:#4078c0'>Github</a> 
+		  	{% for author_identifier in authors%}
 
-<a href="{{author.site}}" target="_blank" class="btn btn-info" role="button" style='background-color:#f5f5f5;color: black'>Website</a> 
+		  	{% assign author = site.data.authors[author_identifier] %}
 
-      </h4> 
-      <p>{{author.bio}}</p>
-   
-</div>
-  </div>
-</div>
+			<div class="author-div">
 
-</span>
+				<div>
+					<img class="author-pic" src="{{author.image}}" align="left" alt="{{author.name}} profile">
+				</div>
+
+				<div style="display: table-cell!important;vertical-align: middle!important; padding-left: 1em;">
+					<h4>{{author.name}} <br>
+
+					<a href="{{author.twitter}}" target="_blank" class="btn btn-info" role="button" style='background-color:#55ACEE'>Twitter</a> 
+					<a href="{{author.github}}" target="_blank" class="btn btn-info" role="button" style='background-color:#4078c0'>Github</a> 
+
+					<a href="{{author.site}}" target="_blank" class="btn btn-info" role="button" style='background-color:#f5f5f5;color: black'>Website</a> 
+					</h4> 
+
+				<p>{{author.bio}}</p>
+
+				</div>
+			</div>
+
+			{% endfor %}
+		</div>
+
+	</span>
 <br>

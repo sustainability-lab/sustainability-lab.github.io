@@ -1,17 +1,41 @@
 <hr>
 
    
+	{% assign authors = page.author | split: ',' %}
+
+<div class='row'>
+
+	{% for author_identifier in authors%}
       
-	<div class="author-short" style="display: block;">
-		
+	<div class="col-lg-6">
 
-	      	<img class="author-short-pic" src="{{author.image}}" alt="{{author.name}} profile">
+<div class="author-short" style="display: block; margin-top: 1em;">
 
-		 <div style="margin-left: 5em;">
-				<h5>{{author.name}}</h5>
 
-				<h6>{% include post-readingtime.erb %}</h6>
-		</div>
-	  	 </div>
+	{% assign author = site.data.authors[author_identifier] %}
+
+
+	<img class="author-short-pic" src="{{author.image}}" alt="{{author.name}} profile">
+
+	<div style="margin-left: 5em;">
+
+		<h5 style="padding-top: .5em;">{{author.name}}</h5>
+
+		<!--<h6>{% include post-readingtime.erb %}</h6>-->
+	</div>
+
+	
+
+
+</div>
 
 <div style="clear:both;"></div>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+<h6 style="margin-top: 1.5em;">{% include post-readingtime.erb %}</h6>
+
