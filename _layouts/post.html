@@ -9,6 +9,7 @@ layout: default
 		{% assign author = site.data.authors[page.author] %}
 
 		{% include time_to_read.html %}
+		
 		{%- if page.use_toc -%}
 		    <span>{{ page.excerpt | markdownify }}</span>
 		    <h2>Table of Contents</h2>

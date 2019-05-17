@@ -13,7 +13,18 @@ layout: default
   
 <ul class="post-list">
 {%- for post in site.posts -%}
-  {% assign current_author = site.data.authors[post.author] %}
+
+  {% assign all_authors = post.author | split: ',' %}
+
+  {% assign author_identifier = all_authors[0] %}
+
+  {% assign current_author = site.data.authors[author_identifier] %}
+
+  
+
+
+
+
   <li>
 
     {%- assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" -%}
