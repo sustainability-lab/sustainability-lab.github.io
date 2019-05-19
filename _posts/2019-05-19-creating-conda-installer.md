@@ -1,7 +1,7 @@
 ---
 title: Creating a conda installer for NILMTK package
 layout: post
-author: ayush
+author: ayush,rajat,raktim
 signature_img: /images/conda.png
 use_math: true
 use_code: true
