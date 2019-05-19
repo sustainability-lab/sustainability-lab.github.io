@@ -36,9 +36,9 @@ Some past efforts to get a stable conda build helped us get a head start towards
     * When all else fails, write a recipe
 		 Only required section:  
 			```
-			package:
-			  name: abc
-			  version: 1.2.3
+			package:  
+			  name: abc  
+			  version: 1.2.3  
  			```
 3. Listing the package dependencies  
    	The requirements section of the *meta.yaml* is where you list out all your dependencies.
