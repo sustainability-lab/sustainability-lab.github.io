@@ -36,9 +36,9 @@ Some past efforts to get a stable conda build helped us get a head start towards
     * When all else fails, write a recipe
 		 Only required section:  
 			```
-			package:  
-			  name: abc  
-			  version: 1.2.3  
+			package:     
+			  name: abc     
+			  version: 1.2.3    
  			```
 3. Listing the package dependencies  
    	The requirements section of the *meta.yaml* is where you list out all your dependencies.
@@ -68,12 +68,11 @@ Some past efforts to get a stable conda build helped us get a head start towards
 	> Note: Filenames are of paramount importance here.  
 	
 	All we need to do is execute the setup.py file. The commands are slightly different depending on the version. Our files contained:
-	* build.sh
+	* build.sh  
 		`$PYTHON setup.py install --single-version-externally-managed --record=record.txt`
-	* bld.bat
+	* bld.bat  
 		`"%PYTHON%" setup.py install --single-version-externally-managed --record=record.txt
 		if errorlevel 1 exit 1`  
-
 5. Building the package
 	Change your directory to location of your recipes and run  
 	`conda build .`  
