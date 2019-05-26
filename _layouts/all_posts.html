@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+
+
+<div class='row' style="margin-top: 1em; ">
+	
+
+		<div class="col-lg-8 offset-lg-2" style="">
+
+		{% for author_obj in site.data.authors %}
+			{% assign author_id =  author_obj[0]%}
+			{% assign author = site.data.authors[author_id]%}
+
+			<div id="{{author_id}}" style="padding-top:2em;">
+			
+			<h3>Posts by {{author.name}}</h3>
+			{% assign post_flag = 0%}
+			{% for post in site.posts%}
+
+				{% assign all_authors = post.author | split: ',' %}
+
+				{% for current_author_id in all_authors%}
+				
+					{% assign current_author = site.data.authors[current_author_id]%}
+					
+					{% if current_author == author%}
+
+						{% assign post_flag = 1%}
+						
+						<div class='individual-post'>
+
+				        <div class="author-short" style="display: block;">
+				      
+				          
+				            <img class="author-short-pic" src="{{current_author.image}}" alt="{{current_author.name}} profile">
+
+				            <div style="margin-left: 5em;">
+				                <h5>{{current_author.name}}</h5>
+				                <p style="align:right;font-weight: 10;color:#0000009e"> {{ post.date | date: date_format }} - {% include post-readingtime.erb %}</p>
+				            </div>
+
+				        </div>
+
+					      <h3>
+					        <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+					      </h3>
+			    
+      					<img src="{{post.signature_img}}" class="homepage-signature-img rounded mx-auto d-block">
+        
+
+      <span>{{ post.excerpt | markdownify | truncatewords: 20 }}</span>
+
+  </div>
+
+
+					{% endif %}
+				
+				{% endfor %}
+						
+						
+			
+					
+					
+
+			{% endfor %}
+			{% if post_flag==0 %}
+							<blockquote >{{author.name}} has not authored any posts till now. </blockquote>
+			{%endif%}
+
+
+		</div>
+
+
+		{% endfor %}
+
+		</div>
+	
+</div>
+
+
+
+
