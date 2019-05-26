@@ -7,6 +7,7 @@ nipun_batra:
     site: https://nipunbatra.github.io/
     bio: Nipun is an Assistant Professor in CS department at IIT Gandhinagar. He completed his PhD. from IIIT Delhi. He broadly works on machine learning/AI/sensors/IoT for computational sustainability problems.
     image: https://nipunbatra.github.io/images/nipun_4.jpg
+    tag: Head of Sustainability Lab
     
 rishi:
     name: Rishiraj Adhikary
@@ -17,6 +18,7 @@ rishi:
     site: http://corvinelabs.com/
     bio: Rishiraj is a Research Assistant in CS department at IIT Gandhinagar. He is working under Prof. Nipun Batra.
     image: https://pbs.twimg.com/profile_images/602493759088041984/It5CvU1c_400x400.jpg
+    tag: Research Assistant 
 
 sumit:
     name: Sumit Kanu
@@ -26,6 +28,7 @@ sumit:
     github:  https://github.com/sumitkanu/ 
     bio: Sumit is a summer intern at the Sustainability Lab, IIT Gandhinagar
     image: https://pbs.twimg.com/profile_images/1129980078580948992/bjABfdGt_400x400.jpg
+    tag: Summer intern at Sustainability Lab
 
 ayush:
     name: Ayush Pandey
@@ -35,6 +38,7 @@ ayush:
     github:  https://github.com/ayushp20/ 
     bio: Ayush is an undergraduate student @NIT Agartala. Presently a summer intern at the IIT Gandhinagar, working on NILMTK.
     image: https://pbs.twimg.com/profile_images/1006458862776434688/C6G_MzkI_400x400.jpg
+    tag: Summer intern at Sustainability Lab
 
 rajat:
     name: Rajat Kumar
@@ -42,6 +46,7 @@ rajat:
     github:  https://github.com/rajatgupta1234/ 
     bio: Rajat is doing summer internship at the IIT Gandhinagar sustainability lab, working on NILMTK and currently pursuing his M. Tech in ICT at DA-IICT.
     image: https://pbs.twimg.com/profile_images/1130911106816364544/hBFbb74p_400x400.jpg
+    tag: Summer intern at Sustainability Lab
 
 raktim:
     name: Raktim Malakar
@@ -49,7 +54,8 @@ raktim:
     github:  https://github.com/raktim2015/ 
     bio: Raktim is an undergraduate student @IIEST Shibpur. Presently a summer intern at the IIT Gandhinagar, working on NILMTK.
     image: http://www.stleos.uq.edu.au/wp-content/uploads/2016/08/image-placeholder.png
-    
+    tag: Summer intern at Sustainability Lab
+
 sajal:
     name: Sajal Sirohi 
     email: sirohisajal@gmail.com 
@@ -58,6 +64,7 @@ sajal:
     github:  https://github.com/sajal_sirohi/ 
     bio: Sajal is a summer intern at the Sustainability Lab, IIT Gandhinagar
     image: https://pbs.twimg.com/profile_images/1131818005652836352/slpahtk6_400x400.jpg
+    tag: Summer intern at Sustainability Lab
 
 rithwik:
     name: Rithwik Kukunuri 
@@ -67,5 +74,6 @@ rithwik:
     github:  https://github.com/Rithwikksvr 
     bio: Rithwik is a Computer Science undergrad at IIT Gandhinagar. He is currently working with Prof. Nipun in the field of Machine Learning.
     image: https://media.licdn.com/dms/image/C5103AQFV4P4nR01e9g/profile-displayphoto-shrink_200_200/0?e=1560384000&v=beta&t=-_vrGH2rIB8dPD_TvNEBOJ2-D5WTsY29VcUNOcSKQBg
+    tag: Undergrad research student 
 
 
