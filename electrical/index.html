@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Single Line Diagram using SVG.js</title>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="3">
+  
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -169,8 +170,6 @@ var reading3 = total - reading1 - reading2
 var text1 = draw.text("▲"+reading1+" MW").move(x_pos_line1+10,30).stroke({width:1})
 
 
-
-
 var text2 = draw.text("▲"+reading2+" MW").move(x-x_pos_line1+10,30).stroke({width:1})
 
 
@@ -182,6 +181,22 @@ var text4 = draw.text("▲"+total+" MW").move(x_pos_line2+10,y/2+y/20).stroke({w
 
 
 var gen = draw.text("〰〰").move(x_pos_line2-15,y-y_offset+rad-7).stroke({width:1})
+
+
+window.setInterval(function(){
+  // t1, t2 and t3 are the text objects
+  // In this function, we simply modify the text attribute for each of the readings.
+  //Generate random readings
+  var reading1 = 100*Math.ceil(Math.random()*10)
+  var reading2 = 100*Math.ceil(Math.random()*10)
+  var reading3 = total - reading1 - reading2
+  // Modify the text objects
+  text1.text("▲"+reading1+" MW");
+  text2.text("▲"+reading2+" MW");
+  text3.text("▼"+reading3+" MW");
+}, 1000);//Refresh time in ms
+
+
 
 
 
