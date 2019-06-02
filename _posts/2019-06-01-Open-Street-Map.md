@@ -1,7 +1,7 @@
 ---
 title: Open Street Map
 layout: post
-author: Karan Kumar
+author: karan
 signature_img: /images/osm1.PNG
 use_math: true
 use_code: true
