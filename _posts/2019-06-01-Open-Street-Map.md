@@ -27,31 +27,31 @@ We will understand all these steps with an example in the given you tube link:
 1. Academic Area.
 
 
-![Academic Area](/images/osm_w_update.png)
+![Academic Area](/images/osm_w_update.PNG)
 2. Open area, Playground, Parking etc.
 
 
-![Open Area](/images/hostel.png)
+![Open Area](/images/hostel.PNG)
 3. Faculty Housing.
 
 
-![Housing](/images/housing_w.png)
+![Housing](/images/housing_w.PNG)
 
 
 **IIT Gandhinagar Campus After OSM Updated :**
 1. Academic Area.
 
 
-![Academic Area](/images/osm1.png)
+![Academic Area](/images/osm1.PNG)
 2. Open area, Playground, Parking etc.
 
 
-![Open Area](/images/osm2.png)
+![Open Area](/images/osm2.PNG)
 
 3. Faculty Housing.
 
 
-![Housing](/images/housing_d.png)
+![Housing](/images/housing_d.PNG)
 
 
 
