@@ -9,7 +9,7 @@ use_google_fonts: true
 comments: true
 ---
 
-**Why Use Open Street Map :** There are some countries in the world where geographical data is not freely available. If you live in any such country, you will have to pay to map your organization and to get the copy of that mapping again you will have to pay a good amount of money. Other commercially used maps such as Google map has some of the restrictions such as  We cannot update them according to our geographical location and at the same time, if we want to use them in our system/organization, we need to pay for it. As the technology is growing, GPS units are getting cheaper and cheaper. So it allows us to create our own GPS unit with or without the collaboration of some other organization and customize it according to our need. OPEN STREET MAP is also one such unit that can be used freely and can be customized according to an individual's need.
+**Why Use Open Street Map :** There are some countries in the world where geographical data is not freely available. If you live in any such country, you will have to pay to map your organization and to get the copy of that mapping again you will have to pay a good amount of money. Other commercially used maps such as Google map has some of the restrictions such as  We cannot update them according to our geographical location and at the same time, if we want to use them in our system/organization, we need to pay for it. As the technology is growing, GPS units are getting cheaper and cheaper. So it allows us to create our own GPS unit with or without the collaboration of some other organization and customize it according to our need. Open Street Map is also one such unit that can be used freely and can be customized according to an individual's need.
 
 
 **Map Some Location to Open Street Map :** 
@@ -24,15 +24,17 @@ We will understand all these steps with an example in the given you tube link:
 [Update Open Street Map](https://www.youtube.com/watch?v=qcgoUcsURzU)
 
 **IIT Gandhinagar Campus Before OSM Update :**
-1. Academic Area.
+## Academic Area.
 
 
 ![Academic Area](/images/osm_w_update.PNG)
-2. Open area, Playground, Parking etc.
+## Open area, Playground, Parking etc.
 
 
 ![Open Area](/images/hostel.PNG)
-3. Faculty Housing.
+## Faculty Housing.
+
+
 
 
 ![Housing](/images/housing_w.PNG)
