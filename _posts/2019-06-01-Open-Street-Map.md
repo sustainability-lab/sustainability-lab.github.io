@@ -23,7 +23,7 @@ comments: true
 We will understand all these steps with an example in the given you tube link:
 [Update Open Street Map](https://www.youtube.com/watch?v=qcgoUcsURzU)
 
-##**IIT Gandhinagar Campus Before OSM Update :**
+## IIT Gandhinagar Campus Before OSM Update :
 ### Academic Area.
 
 
@@ -40,7 +40,7 @@ We will understand all these steps with an example in the given you tube link:
 ![Housing](/images/housing_w.PNG)
 
 
-### **IIT Gandhinagar Campus After OSM Updated :**
+## IIT Gandhinagar Campus After OSM Update :
 ### Academic Area.
 
 
