@@ -23,16 +23,16 @@ comments: true
 We will understand all these steps with an example in the given you tube link:
 [Update Open Street Map](https://www.youtube.com/watch?v=k8FHBD87j8Q)
 
-## IIT Gandhinagar Campus Before OSM Update :
-### Academic Area.
+### IIT Gandhinagar Campus Before OSM Update :
+##### Academic Area.
 
 
 ![Academic Area](/images/osm_w_update.png)
-### Open area, Playground, Parking etc.
+##### Open area, Playground, Parking etc.
 
 
 ![Open Area](/images/hostel.png)
-### Faculty Housing.
+##### Faculty Housing.
 
 
 
@@ -40,8 +40,8 @@ We will understand all these steps with an example in the given you tube link:
 ![Housing](/images/housing_w.png)
 
 
-## IIT Gandhinagar Campus After OSM Update :
-### Academic Area.
+### IIT Gandhinagar Campus After OSM Update :
+##### Academic Area.
 
 
 ![Academic Area](/images/osm1.png)
@@ -50,7 +50,7 @@ We will understand all these steps with an example in the given you tube link:
 
 ![Open Area](/images/osm2.png)
 
-### Faculty Housing.
+##### Faculty Housing.
 
 
 ![Housing](/images/housing_d.png)
