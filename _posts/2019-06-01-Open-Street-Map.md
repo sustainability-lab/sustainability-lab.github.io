@@ -2,7 +2,7 @@
 title: Open Street Map
 layout: post
 author: karan
-signature_img: /images/osm1.PNG
+signature_img: /images/osm1.png
 use_math: true
 use_code: true
 use_google_fonts: true
@@ -27,33 +27,33 @@ We will understand all these steps with an example in the given you tube link:
 ### Academic Area.
 
 
-![Academic Area](/images/osm_w_update.PNG)
+![Academic Area](/images/osm_w_update.png)
 ### Open area, Playground, Parking etc.
 
 
-![Open Area](/images/hostel.PNG)
+![Open Area](/images/hostel.png)
 ### Faculty Housing.
 
 
 
 
-![Housing](/images/housing_w.PNG)
+![Housing](/images/housing_w.png)
 
 
 ## IIT Gandhinagar Campus After OSM Update :
 ### Academic Area.
 
 
-![Academic Area](/images/osm1.PNG)
+![Academic Area](/images/osm1.png)
 ### Open area, Playground, Parking etc.
 
 
-![Open Area](/images/osm2.PNG)
+![Open Area](/images/osm2.png)
 
 ### Faculty Housing.
 
 
-![Housing](/images/housing_d.PNG)
+![Housing](/images/housing_d.png)
 
 
 
