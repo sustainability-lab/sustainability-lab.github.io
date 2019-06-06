@@ -21,7 +21,7 @@ comments: true
 6. Provide the description of your update and that's it, you are done.
 
 We will understand all these steps with an example in the given you tube link:
-[Update Open Street Map](https://www.youtube.com/watch?v=qcgoUcsURzU)
+[Update Open Street Map](https://www.youtube.com/watch?v=k8FHBD87j8Q)
 
 ## IIT Gandhinagar Campus Before OSM Update :
 ### Academic Area.
