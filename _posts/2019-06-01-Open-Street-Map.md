@@ -45,7 +45,7 @@ We will understand all these steps with an example in the given you tube link:
 
 
 ![Academic Area](/images/osm1.png)
-### Open area, Playground, Parking etc.
+##### Open area, Playground, Parking etc.
 
 
 ![Open Area](/images/osm2.png)
