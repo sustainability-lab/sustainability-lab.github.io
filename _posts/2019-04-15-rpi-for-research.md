@@ -123,19 +123,21 @@ try:
 **Running a Flask App in the background**
 
 Ideally we would want our flask app to run even after we close the terminal. For this we use the POSIX command called ```nohup```. The following commands will help. 
+
  * ```chmod +x your-flask-app.py```
  * ```nohup python3 your-flask-app.py &```. Note the ```&``` at the last.
  * To check the process again: ```ps ax | grep your-flask-app.py```
+
 ---
 
 **Automating file transfer from one linux machine to another.** 
 Raspberry Pis deployed across our campus collects a lot of data from various sensors. It makes sense to send this data to a remote server on a periodic interval. To automate this process of file transfer, we followed the following procedure.
 
-* Now, access your remote machine. Create a ```.ssh``` directory. Inside that directory create a file named ```authorized_keys.```
-* Next, copy the file ```id_rsa.pub``` from Raspberry Pi to your remote machine using command like ```scp id_rsa.pub username:hostname```
+* Setup a public-private key pair on your Raspberry pi's home directory by typing ```ssh-keygen -t rsa```. It will create a ```.ssh``` directory which will contain a file named ```id_rsa.pub``` which is your public key. 
+* Next, copy the file ```id_rsa.pub``` from Raspberry Pi to your remote machine using command like ```scp id_rsa.pub username:hostname```.
+* Now, access your remote machine. Create a ```.ssh``` directory. Inside the ```.ssh``` directory create a file named ```authorized_keys```.
 * Now, append the content of ```id_rsa.pub``` to the ```authorized_keys``` file. You can do this using the command ```cat id_rsa.pub >> .ssh/authorized_file``` (assuming that you copied ```id_rsa.pub``` file in the home directory of remote machine)
 * Go to the Raspberry Pi and try to access the remote server using SSH. If everything worked successfully, your Pi wont ask for password. You are now almost done!
 * To automate the file copying process in your Pi, use ```crontab``` with the scp command. Since the ```scp``` command no longer requires password, the cronjob will be successful.
 * For example: I use this command ```0 16 * * * scp /home/pi/water_meter/flow_meter_id_1.csv HOST_USERNAME:HOSTNAME:/path/to/dest``` to copy the ```flow_meter_id_1.csv``` file every 4 pm to my remote server.
     
----
