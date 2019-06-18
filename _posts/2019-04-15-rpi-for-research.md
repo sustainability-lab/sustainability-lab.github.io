@@ -44,7 +44,7 @@ In research, collected data are often subjected to actionable insights. Raspberr
 * We can find the address of our router (or gateway) by typing the command ```ip route | grep default | awk '{print $3}'```
 * Lastly, we need the DNS which we get by typing cat ```/etc/resolv.conf```
 * Now we edit the file  ```/etc/dhcpcd.conf```  with all the information found from above steps.
-* <small><div class="alert alert-danger" role="alert">HEADS UP! Your Raspberry Pi won't be assigned the IP you listed in the dhcpcd.conf file if that IP is already assigned to some other device.</div> </small>
+* <div class="alert alert-danger" role="alert"><strong>HEADS UP:</strong> Your Raspberry Pi won't be assigned the IP you listed in the dhcpcd.conf file if that IP is already assigned to some other device.</div>
     
  ---
  
