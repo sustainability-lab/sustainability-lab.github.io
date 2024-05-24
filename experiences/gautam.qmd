@@ -1,0 +1,29 @@
+---
+title: "Sustainability Lab: A family atmosphere of learning and growth"
+author: "Gautam Vashishtha"
+date: "2023-11-29"
+---
+
+## About me
+Hello, my name is Gautam Vashishtha. As you're reading this, I'm likely engrossed in my role as a data scientist at Skan.ai, a pioneering Process Intelligence Startup based in the United States. The purpose of this narrative is to share my treasured experiences as an undergraduate student at IIT Gandhinagar, particularly my time at the Sustainability Lab, under the mentorship of Prof. Nipun.
+
+## ES 654: My Foray into Machine Learning
+
+My journey into Machine Learning began with securing an internship at BEES Lab, IISc Bangalore, after my sophomore year. This experience plunged me into the thrilling world of Machine Learning. As a newcomer, I found the field daunting, filled with advanced concepts and rapidly evolving technologies. It was challenging to grasp the essence of Machine Learning and delve deeper. I pondered on differentiating myself from being just another coder proficient in CNN architectures using PyTorch to understanding fundamental concepts like the impact of a single LayerNorm block on model performance, the role of regularization in inducing generality, and the importance of visualizing the workings of the so-called "black box" of a neural network. The learning curve seemed colossal. Fortuitously, it was during this time that I was introduced to the course ES 654, an introduction to Machine Learning, taught by Prof. Nipun.
+
+From the very first class, where Prof. Nipun introduced us to the broad scope of AI, I knew this course would be a turning point in my career. His teaching approach made me realize the importance of understanding classical Machine Learning's intuition, often overshadowed by implicit modeling in Neural Modelling Strategies. The course took us from implementing Decision Trees and various classical Machine Learning algorithms in pure Python to building neural networks from scratch. It illuminated the intuition behind optimization strategies and autograd workings. The structured learning helped solidify my foundation in Machine Learning. Particularly impactful were the on-paper tests, where we derived vectorized solutions to various problems, significantly boosting my confidence and understanding.
+
+## Embarking on a Journey with Sustainability Lab (SL)
+Prof. Nipun's course made my decision to join Sustainability lab abundantly clear to begin a journey of delving into research under his guidance. The best thing about Prof. Nipun was the way he streamlined the learning experience and crafted it individually for every single student. My initial task involved bug fixes in Pyro, a deep probabilistic programming library on Pytorch. This was my first foray into open-source ML contributions, and Prof. Nipun's guidance was invaluable. I remember him hand-holding me in this task and giving me code suggestions before I made the commits. The best part was him celebrating with me on the small victory of the first PR getting merged! This marked the beginning of my deep dive into Bayesian Machine Learning, focusing on Gaussian Processes and Neural Kernel Networks, which became my primary areas of interest at SL.
+
+## Research Experience at SL
+Starting my fourth year, I became a regular member at SL, focusing on Non-Intrusive
+Load Monitoring (NILM) using Bayesian deep learning strategies like Gaussian
+Processes. Parallelly, I attended Prof. Nipun's advanced course on Probabilistic Machine
+Learning, which complimented my research perfectly, enhancing my understanding of
+Gaussian Processes. The highlight of my time at SL were the weekly meetings with Prof. Nipun. His guidance extended beyond theoretical solutions to the nitty-gritty of implementation. His mentorship played a crucial role in my development, not just academically but also in how I approach problems in my current corporate research role at Skan. Our collaborative work, including contributions from fellow students Aadesh Desai and Zeel Patel, was recognized at the NeurIPS workshop on Gaussian Processes in 2023.
+
+## Culture at SL
+Beyond academic excellence, Prof. Nipun built a vibrant culture and camaraderie in the lab. He has a unique way of fostering a familial atmosphere in the lab, from celebrating Teacher’s Day to enjoying lab dinners and shared moments of humor. One of my most cherished memories is receiving a personalized message and a copy of “The One Thing” by Gary Keller and Jay Papasan from him. His ongoing support for students and alumni, including career guidance, reflects his dedication to nurturing a community of budding researchers.
+
+My experiences at Sustainability Lab have been instrumental in shaping my journey as a researcher in Representation Learning and in my professional endeavors. The opportunity to work with Prof. Nipun and his unwavering support and teachings have left an indelible impact on my life and career and I am forever grateful for his support and mentorship.

@@ -1,0 +1,33 @@
+---
+title: "Computational Resources"
+---
+
+IIT Gandhinagar has a number of computational resources available for research and teaching purposes. Aside frim it, the department also has a number of workstations available for students and faculty members.
+
+The following is the list of computational resources in our lab apart from the institute and departmental resources.
+
+#### Servers
+1. Ramanujan
+
+| | |
+| -- | -- |
+| RAM | 512 GB (32 x 16) |
+| CPU | AMD EPYC 7452 32-Core Processor |
+| Number of CPUs | 64 |
+| GPU | NVIDIA A100-SXM4 (80 GB) |
+| Number of GPUs | 4 |
+
+2. Sustain
+
+| | |
+| -- | -- |
+| RAM | 192 GB (32 x 6) |
+| CPU | Intel(R) Xeon(R) Silver 4208 CPU @ 2.10GHz |
+| Number of CPUs | 16 |
+| GPU | NVIDIA TITAN Xp (12 GB) |
+| Number of GPUs | 1 |
+
+
+#### Workstations
+
+1. Aryabhatta

@@ -1,0 +1,77 @@
+---
+title: "From Thesis to Life Lessons: My learning curve at Sustainability Lab"
+author: "Souvik Roy"
+date: "2023-12-15"
+---
+
+### About me
+
+I am Souvik Roy, an alumnus of IIT Gandhinagar, where I completed my MTech in Computer Science and Engineering in 2020. Currently, I am a Senior Consultant at eClerx, where I specialise in Data Analytics and Engineering for a global investment bank.
+
+I had the privilege to work with Prof. Nipun as one of his first M.Tech students. This post narrates my enriching experience under his mentorship.
+
+![](../images/experiences/souvik-1.jpg)
+Picture 1: (Dec 2022) returned to college for a late convocation.
+
+
+### Research Endeavours and Milestones
+
+The M.Tech program consisted of 50% coursework and 50% research. My work with Prof. Nipun started in January 2019, broadly focusing on air quality estimation.
+
+• Experimention with portable air quality sensors (Jan 2019 - Apr 2019)
+
+I measured PM2.5 exposure among construction workers and calibrated five sensors to plot and analyse the data.
+
+![](../images/experiences/souvik-2.jpg)
+Picture 2: (Feb 2019) calibrating Atmos air quality sensors at my workspace
+
+### Developing a Live Air quality dashboard (May 2019 - Jul 2019)
+
+I deployed 5 air quality sensors across the campus and created a live dashboard using JavaScript, Python (Flask), and Leaflet.js. This project was crucial in identifying high pollution activities and their timings.
+
+![](../images/experiences/souvik-3.jpg)
+
+Picture 3: (May 2019) Installing an air quality sensor at IIT Gn
+
+![](../images/experiences/souvik-4.jpg)
+
+Picture 4: (Jun 2019) Live air quality measurements across 5 locations on campus
+
+I got introduced to interdisciplinary research - the goal was to calculate the exposure of PM2.5 in our college bus route. I worked in Tinkerer’s lab with a mechanical engineer to design a 3D printed mount using MDF, which was mounted in the moving bus:
+
+![](../images/experiences/souvik-5.jpg)
+
+• Estimating ground air quality using satellite data (Aug 2019 - Dec 2019)
+
+Air quality sensors were expensive and provided less spatial coverage, we used satellite-derived aerosol optical depth (AOD) and meteorological fields to estimate surface-level PM2.5 using a regression model.
+
+Prof. Nipun encouraged me to write a short 1-page paper and submit it to CoDS-COMAD. I got my first short paper published \[[link](https://dl.acm.org/doi/10.1145/3371158.3371216)] at ISB Hyderabad in January 2020. Fun fact: the presentation coincided with my birthday :)
+
+![](../images/experiences/souvik-6.jpg)
+
+Picture 5: (Jan 2020) Presenting at CoDS-COMAD conference in ISB Hyderabad
+
+• Data Curation and Machine Learning (Jan 2020 - Jul 2020)
+
+Gathered PM, AOD, and meteorological data for India through various sources and collated them in time and space. Used Ridge regression, random forest, time-series cross-validation for our analysis like seasonal variation in pollution. This study helped us in identifying the challenges for data curation and collocation for India.
+
+If you are interested in learning more about the research, here are some links - \[[video](https://www.youtube.com/watch?v=--ie07f5-pY\&t=5s)]\[[slides](https://drive.google.com/file/d/1kXRM66EP4COZb-rC6T8GDHfu72yXWrVv/view)]\[[pdf](https://drive.google.com/file/d/1jLkWEOUEHYb5sWJZqGQeTJleyl-xGw5e/view)]
+
+
+### Beyond Research
+
+The learnings from Prof. Nipun that still resonate with me:
+
+1. Discipline > motivation
+
+2. Prioritise your health
+
+3. Valuing the impact of work over accolades and recognition
+
+During my last semester in college, there was an abrupt change in our work due to lockdown and COVID. Prof. Nipun was supportive and understanding, guided me with my thesis and empathised during hard situations at home.
+
+Prof. Nipun didn’t hand me solutions that cultivated a mindset of problem solving. This mindset helped me deal with different situations in my professional life too. I’d be forever grateful that I could have him as my thesis supervisor in college, and a lifelong mentor in life.
+
+![](../images/experiences/souvik-7.jpg)
+
+Picture 6: A view from the terrace of my workspace, overlooking the Sabarmati river, was a constant reminder of how beautiful the campus is, and how privileged I was to be working there.

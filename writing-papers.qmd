@@ -1,0 +1,46 @@
+---
+title: "Writing Papers"
+---
+
+Paper writing is a key part of research. This page contains some tips and tricks for writing papers. Paper writing is a skill that you will develop over time. But, it needs deliberate practice. 
+
+#### Paper structure and Abstract
+I gave a talk ([recording here](https://www.youtube.com/watch?v=LoCoplWgvp4), [slides here](https://github.com/nipunbatra/CS-Research-Methods-Bootcamp/blob/master/RM101.pdf)) on how to write a paper. I recommend watching it. Other materials from the talk are available [here](https://github.com/nipunbatra/CS-Research-Methods-Bootcamp).
+
+#### LaTeXify figures
+We'd suggest using [this latexification tool](https://nipunbatra.github.io/lab/papers.html#latexify-figures) to make the `matplotlib` figures publication-ready. It helps in the following aspects:
+
+1. It helps in setting the exact size of the figure relative to the column width or page width of the paper. After using this tool, manually setting the size within the `\begin{figure}` block is rarely needed.
+1. We can set the font size relative to the text font size in the paper to ensure fonts are not too small or too big.
+1. It converts the fonts into latex fonts so that the fonts in the figures do not look different from the main text font.
+
+> Tip: You can find page width and column width with `\the\textwidth` and  `\the\columnwidth` commands, respectively.
+
+#### Self-contained figures and tables (and captions)
+
+#### Tables
+We follow this excellent [small guide to making nice tables](https://people.inf.ethz.ch/markusp/teaching/guides/guide-tables.pdf) by Markus Püschel.
+
+#### Comments in LaTeX
+We typically create a macro corresponding to different author initials (I use `\nb` for example) and then use that to create comments in the text. This is useful for commenting on the text, or for leaving notes to yourself. For example, I might write `\nb{I'm not sure about this sentence}` and then I can search for all instances of `\nb` to find all of my comments.
+
+```tex
+\newcommand{\nb}[1]{{\color{red}\small \iftoggle{hide}{}{\textbf{Nipun's comment:} #1}}}
+```
+
+#### Active v/s Passive Voice
+
+#### American v/s British English
+There are a few differences in spelling between American and British English. For example, the word "colour" in British English is spelled "color" in American English. The word "optimise" in British English is spelled "optimize" in American English. There are also some differences in grammar. I recommend picking one and sticking to it. Most of our previous papers have used British English (but often this depends on the set of co-authors).
+
+#### Paper timelines
+
+
+#### Grammarly and other AI tools
+I recommend students use Grammarly (or a similar) tool to check their writing once they have done a complete pass of editing. I do not recommend relying a lot on ChatGPT-like tools for writing papers as they can often lead to "correct" sounding but "incorrect" sentences.
+
+
+
+
+
+
