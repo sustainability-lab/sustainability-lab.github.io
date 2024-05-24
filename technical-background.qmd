@@ -1,0 +1,31 @@
+---
+title: "Technical Background"
+---
+
+
+### Git and GitHub
+
+There are a ton of good resorces on Git and Github. I'm linking two such resources here:
+- [YouTube video by Kevin Stratvert](https://www.youtube.com/watch?v=tRZGeaHPoaw)
+- [Github skills](https://github.com/skills/introduction-to-github)
+
+### Python Data Science Stack
+
+1. We recommend students to study the [Python for Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) by Jake VanderPlas. It is a free online book that covers the basics of Python, NumPy, Pandas, Matplotlib, and Scikit-Learn. It is a great resource for beginners and intermediate students alike.
+2. We recommend students regularly hone their skills solving exercises such as [100 Numpy exercises](https://github.com/rougier/numpy-100). Given that much of our work is in Torch-like frameworks, the students would also benefit by attempting to solve the exercises using PyTorch.
+
+### Object-Oriented Programming in Python
+RealPython has a nice [tutorial](https://realpython.com/python3-object-oriented-programming/) on Object-Oriented Programming in Python. We recommend students to go through the tutorial. They also have a corresponding [video](https://realpython.com/courses/python-basics-oop/) page. 
+
+### LaTeX
+
+We typically use LaTeX for writing reports and papers. We recommend students to use [Overleaf](https://www.overleaf.com/) for students to get started. Overleaf has a nice 30 minute [tutorial](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) that covers the basics of LaTeX. We highly recommend students to go through the tutorial.
+
+### Creating a Website and Blog
+
+We highly recommend students create a simple website and a blog. We have been happily using Quarto for our website and blog. You may see in action in [Nipun's website](https://nipunbatra.github.io/) and corresponding GitHub repo [here](https://github.com/nipunbatra/nipunbatra.github.io); and [Nipun's blog](https://nipunbatra.github.io/blog/) and corresponding Github repo [here](https://github.com/nipunbatra/blog).
+
+Both of these are built via Github actions. Feel free to reuse these for creating your own website and blog. We will be happy to help you get started.
+
+
+

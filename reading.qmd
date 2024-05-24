@@ -1,0 +1,26 @@
+---
+title: "Reading Group"
+---
+
+### 2024
+May 15
+
+#### Forecasting
+- Large Language Models are Few-Shot Health Learners
+- Leveraging Language Foundation Models for Human Mobility Forecasting
+
+#### Health
+- Large Language Models are Few-Shot Health Learners
+- ``It Is a Moving Process'': Understanding the Evolution of Explainability Needs of Clinicians in Pulmonary Medicine
+
+#### Active Learning + Spatio temporal
+- Deep Bayesian Active Learning for Accelerating Stochastic Simulation
+- Active Learning on a Budget: Opposite Strategies Suit High and Low Budgets
+- Deep Distributed Fusion Network for Air Quality Prediction
+
+### Object Detection + Sustainable Vision
+- You Only Look Once: Unified, Real-Time Object Detection
+- Generating Interpretable Poverty Maps using Object Detection in Satellite Images
+
+
+

@@ -1,0 +1,60 @@
+/*-- scss:defaults --*/
+
+@import 'https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap';
+
+$font-family: "Nunito", sans-serif;
+$font-family-serif: "Nunito", sans-serif;
+
+/*-- scss:rules --*/
+kbd,
+.kbd {
+    background-color: #f6f5f5 !important;
+}
+
+.navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: $font-family;
+}
+
+/* Apply the font-family to body to ensure all text uses Nunito */
+body {
+    font-family: $font-family;
+}
+
+.paper {
+    display: flex;
+    margin-bottom: 5px;
+  }
+  
+  .paper-image {
+    width: 20%;
+    margin-right: 20px;
+  }
+  
+  .paper-details {
+    width: 80%;
+  }
+
+  .paper-details p {
+    margin-bottom: 2px; /* Adjust the value as needed */
+}
+  
+  .paper-title {
+    color: #2E86C1; /* Change this to your desired color */
+  }
+  
+  .paper-button {
+    display: inline-block;
+    padding: 5px 5px;
+    margin: 4px 0;
+    background-color: #2E86C1; /* Change this to your desired button color */
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 5px;
+  }
+  
+  .paper-button:hover {
+    background-color: #21618C;
+  }

@@ -1,0 +1,17 @@
+---
+title: "Server Policy"
+---
+
+
+#### How to get access
+
+Send an email to Mr. [Raviraj Sukhadiya](raviraj.s@iitgn.ac.in), keeping Prof. [Nipun Batra](nipun.batra@iitgn.ac.in) in cc. Mention the following details in your request: i) server name; ii) purpose for access.
+
+#### Don'ts
+- Do not use the server for personal use or anything not related to the project. This includes any classwork or homework.
+- Do not share your server credentials with anyone else.
+
+#### Fair usage
+- Sometimes we have multiple projects running on the same server. Please be considerate of other projects and do not use up all the resources.
+- Sometimes we may allocate specific cores or GPUs to specific projects. Please do not use cores or GPUs that are not allocated to your project.
+

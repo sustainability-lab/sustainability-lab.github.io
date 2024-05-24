@@ -1,0 +1,24 @@
+---
+title: "Posters"
+---
+
+In some venues, the main presentation format is a poster. Posters are a great way to present your work in a visual format, and to have one-on-one conversations with people who are interested in your work.
+
+One common mistake people make while making posters is to try to cram in too much information. Remember that the poster is to supplement you and not to replace you. 
+
+Please see below for two posters that we have made in the past.
+
+![](sample-poster-1.jpg)
+
+![](sample-poster-2.jpg)
+
+Please find the presentation files corresponding to the first poster
+1. [Apple Keynote](https://github.com/nipunbatra/nipunbatra.github.io/blob/main/slides/2017/aaai_poster.key)
+
+2. [MS Powerpoint](https://github.com/nipunbatra/nipunbatra.github.io/blob/main/slides/2017/aaai_poster.pptx)
+
+3. [Google Slides](https://docs.google.com/presentation/d/1mH50SOlfErQ683_DwXBcrxCixZ3DX3Mx/edit?usp=sharing&ouid=109104637369595830870&rtpof=true&sd=true)
+
+
+LaTeX users can use the following templates on [Overleaf](https://www.overleaf.com/gallery/tagged/poster) to make their posters. 
+

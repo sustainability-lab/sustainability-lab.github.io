@@ -1,0 +1,145 @@
+---
+title: Members
+output:
+  html_document:
+    self_contained: false
+---
+
+
+#### Faculty
+::: {layout-ncol=5}
+<a href="https://nipunbatra.github.io">
+  <img src="https://nipunbatra.github.io/images/nipun.jpg" class="cropped-image"><br/>
+</a>
+<span style="font-size: 0.8em;">Nipun Batra</span>
+
+:::
+
+#### PhD 
+
+::: {layout-ncol=5}
+<a href="https://rishi-a.github.io">
+  <img src="https://rishi-a.github.io/images/RISHIRAJ.jpg" class="cropped-image"><br/>
+</a>
+<span style="font-size: 0.8em;">Rishiraj Adhikary <br/>(July 2019 - present)</span>
+
+<a href="https://patel-zeel.github.io">
+  <img src="https://patel-zeel.github.io/images/profile_crop.png" class="cropped-image"><br/>
+</a>
+<span style="font-size: 0.8em;">Zeel Patel  <br/>(Jan 2020 - present)</span>
+
+<a href="https://rishabh-mondal.github.io">
+  <img src="https://rishabh-mondal.github.io/ris.jpg" class="cropped-image"><br/>
+</a>
+<span style="font-size: 0.8em;">Rishabh Mondal <br/> (June 2023 - present)</span>
+
+<a href="https://khush24shah.github.io">
+  <img src="https://khush24shah.github.io/images/Khush.jpeg" class="cropped-image"><br/>
+</a>
+<span style="font-size: 0.8em;">Khush Shah <br/> (July 2023 - present)</span>
+
+:::
+
+<style>
+.cropped-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 1px solid #777; /* Set a thin border on all sides */
+  border-bottom: 4px solid #777; /* Set a thicker border only at the bottom (slightly darker than tomato) */
+  border-radius: 2px; /* Optional: add rounded corners for a nicer look */
+  transition: border-color 0.3s; /* Add smooth transition for the border color */
+}
+
+.cropped-image:hover {
+  /* Change border color on hover */
+  border-bottom-color: #d9534f; /* Use the same slightly darker color on hover */
+}
+</style>
+
+
+#### MTech
+
+::: {layout-ncol=5}
+
+<a href="https://jaiswalsuraj487.github.io">
+  <img src="https://jaiswalsuraj487.github.io/images/profile_photo.jpg" class="cropped-image"><br/>
+</a>
+<span style="font-size: 0.8em;">Suraj Jaiswal  <br/>(July 2022 - present)</span>
+
+<img src="images/members/Ayush.jpg" class="cropped-image"><br/>
+<span style="font-size: 0.8em;">Ayush Srivastava  <br/>(July 2022 - present)</span>
+
+<img src="images/members/Poornima.jpg" class="cropped-image"><br/>
+<span style="font-size: 0.8em;">Poornima Bhatia  <br/>(July 2023 - present)</span>
+
+<img src="images/members/Shataxi.jpg" class="cropped-image"><br/>
+<span style="font-size: 0.8em;">Shataxi Dubey  <br/>(July 2023 - present)</span>
+
+<img src="images/members/Prince.jpg" class="cropped-image"><br/>
+<span style="font-size: 0.8em;">Prince Kumar  <br/>(July 2023 - present)</span>
+
+:::
+
+#### BTech
+
+::: {layout-ncol=2}
+
+- Vannsh Jani (BTech 2026)
+
+:::
+
+
+### Alumni
+
+
+#### BTech
+
+- Dhruv Patel (BTech 2024): MS at TAMU
+- Haikoo Khandor (BTech 2024): MS at TAMU
+- Progyan Das (BTech 2024): Applied Scientist at Microsoft
+- Madhav Kanda (BTech 2024): MS at UIUC
+- Aditi Agarwal (BTech 2024): Predoc at Google Deepmind
+- Utkarsh Mittal (BTech 2024): MS at NYU Tandon
+- Aadesh Desai (BTech 2023): MS at CMU
+- Eshan Gujarathi (BTech 2023): Predoc at IIT Madras
+- Gautam Vasistha (BTech 2023): Data Scientist as Skan.AI
+- Hitarth Gandhi (BTech 2023): MS at UC Irvine
+- Saagar Parikh (BTech 2023): MS at CMU
+- Xhitij Choudhary (BTech 2023): Data Scientist at Skan.AI
+- Chris Francis (BTech 2022): MS at UCSD
+- Dhruvi Lodhavia (BTech 2022): MS at UCSD
+- Hetvi Shastri (BTech 2022): PhD at UMass Amherst
+- Harsh Patel (BTech 2022): MS at UCSD
+- Palak Purohit (BTech 2022): MS at Caltech
+- Shivam Sahni (BTech 2022): MS at UCSD
+- Apoorv Agnihotri (BTech 2020): First job at Wadhwani AI -> Data Scientist at Rephrase.ai
+- Deepak Narayanan (BTech 2020): First job at Microsoft Research India -> MS at ETH Zurich
+- Kukunuri Rithwik (BTech 2020): First job at Jio -> Data Scientist at Nykaa
+- Soham Pachpande (BTech 2020): First job at  HSBC-> MS at UCSD -> SWE at Salesforce
+
+#### MTech
+
+- Ankita Jain (MTech 2022): First job at Oracle
+- Karan Kumar (MTech 2020): First job at Trading Technologies
+- Souvik Roy (MTech 2020): First job at eClerx
+
+#### Research Assistant
+
+- Kaushal Modi: Now a data scientist at InfiBeam
+- Prerna Khanna: Now a PhD student at Stony Brook
+- Tanmay Srivastava: Now a PhD student at Stony Brook
+- Rohit Patil: First job at Publicis Sapient
+
+### Outside IITGn Interns
+
+- Vibhuti Bansal (Summer 2022): Now at CRED
+- Rohit Khoiwal (Summer 2022)
+- Anand Hegde (Summer 2022)
+- Shobhit Belwal (Summer 2022)
+- Aryan Varshney (Summer 2022)
+- Ami Ashish Buch (Summer 2024)
+- Sajay Raj (Summer 2024)
+- Muhammad Zaid Hassan (Summer 2024)
+- Devodita Chakravarty (Summer 2024)
+- Omisha Guha (Summer 2024)

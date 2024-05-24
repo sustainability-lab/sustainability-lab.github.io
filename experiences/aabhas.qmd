@@ -1,0 +1,71 @@
+---
+title: "Curiosity Opens New Doors"
+author: "Aabhas Senapati"
+date: "2024-2-15"
+---
+
+![](../images/experiences/aabhas-1.jpg)
+
+## About me
+I am [Aabhas](https://aabhass.in/) Senapati, currently a 1st-year undergraduate student at Harvey Mudd College, Claremont, California. I did my schooling in Ahmedabad, post which I took a gap year before coming to college. It was in around grade 8 that I embarked on a journey of exploration into different domains from electronics and entrepreneurship to ecosystems. This path has led me through some of the best experiences and learning in my life, and my time working with Professor Nipun Batra and Ph.D. Rishiraj Adhikary has been one of the most memorable and pivotal parts of my journey till now.
+
+![](../images/experiences/aabhas-2.jpg)
+
+## Curiosity opens new doors
+This story starts back in 2019, when I was a grade 10 student at Zydus School for Excellence, Ahmedabad. It had been a couple of years since I had been self-exploring electronics and IoT-related projects and participating in online forums like Element 14 community and making various projects. One of my projects was [ThingFinder](https://to.aabhass.in/thingfinder), which I got incubated at GUSEC as a student-startup, without even fully understanding what a startup meant. This was probably one of the pivotal points, as it opened a plethora of opportunities in front of me, being part of the startup network in Gujarat, not just limited to grants and startup network, but also support from facilities like Nasscom at IIT Gandhinagar.
+
+It was one of the events by IBM at Nasscom, IITGn, that someone suggested to me given my curiosity to learn and work on projects, I should reach out to Professors at IIT Gandhinagar and potentially work with them to learn and grow further. This led me to then look up Professors at IIT Gandhinagar who worked on Projects on similar lines to my interest and cold-mailed them with long paragraphs about who I am, what I like to do, and why I wanted to work with them. Reading back the old emails it seems such childish and poorly drafted emails and LinkedIn messages, yet three out of the nineteen Professors responded. Prof. Batra was one of only three Professors who responded to the mail and connected me with his Ph.D. student Rishiraj Adhikary, and then invited me to meet at IIT Gandhinagar. On my first meeting, Prof. Batra encouraged me so much and told me to continue my projects and also said that he would be happy to have me work with him during the summer. I am so grateful for this, had he not identified my potential and given me the opportunity early on my path could look very different.
+
+## Now comes uncertainty
+I was very excited about this opportunity over the summer to be able to work at IIT Gandhinagar, especially given the fact that me and my peers were all preparing for JEE at Allen, from class 9, therefore getting to work at IIT before even attempting JEE, was something I was mildly proud about. But as they say, not everything is meant to work according to how you plan, and that’s exactly what happened, in 2020 came the coronavirus pandemic which disrupted my initial plans for the summer. It was not possible to be outside the home, and consequently, summer projects were also cancelled. Honestly at that point summer projects weren’t the priority either. But I still had a desire to work at IIT Gandhinagar, especially given that this was the only full-length summer break I would get before JEE I presumed. With the pandemic situation intensifying, I kind of forgot about working on a research project. But sometime during the summer unexpectedly, I got a message from Rishiraj bhaiya, that I would still be willing to work on a project remotely. While this was kind of unexpected given I had been dreaming to be at IIT Gandhinagar and work on a project in my fantasized view of a lab, I still was very excited to work on a project with them. This is how I ended up contributing my tiny bit of effort the Project [Naqaab](https://dl.acm.org/doi/10.1145/3410530.3414403), where I designed a very simple led response to the ambient PM 2.5 levels, and retrofitted this setup onto a mask. 
+
+As I worked on this Project, my only expected outcome was experience, but to my surprise despite my almost insignificant contribution to the larger project, Prof. Batra, and PhD. Rishiraj included me as a co-author for the poster at UbiComp. Back then, I probably didn’t realize how generous it was of them to have me there and shows how people at Sustainability Lab value your contributions. In a world where people don’t give credit for significant contributions to academic research, as I look back to it, as a high-school intern, with minimal contributions got more credit for my work than I deserved.
+
+This was my first experience working with the Sustainability Lab and Prof. Batra. After this, I also represented the project at the IRIS National Fair, but more or less this was like a good addition to my resume. Yet my desire to work at IIT in a proper research setting still remained unfulfilled.
+
+![](../images/experiences/aabhas-3.jpg)
+
+## Silver Lining in the Pandemic, and some Rejections
+While the pandemic didn’t just end in 2020, and as we all went through it and got in the new normal of the pandemic, it was not all bad, it also opened a door to a range of new possibilities, especially through online and international communities. Involving in these, I was motivated to pursue my extracurriculars more actively, and led me to apply to colleges in US. Prof. Batra actively supported me with the process and Letters of Recommendation, yet I met with rejections from all colleges I applied to. While this felt like a setback initially, it was an excuse to pursue my long-desired gap year. And this is where my journey circles back to Sustainability Lab, as I reached out to Prof. Batra if I could work with him, in my gap year once I finish my board exams.
+
+## A typical day doing Real Research
+This is after three years of first time interacting with Prof. Batra, as my friends were already planning to go to colleges, I was starting my gap year, with research working at Sustainability Lab IIT Gandhinagar. I was very excited as this was my first time staying by myself in a academic environment, and working on a full-fledged research environment. And definitely the experience, was very different and beyond my expectations. A typical day during that time was me waking up at around 7:30 am, finishing my chores and getting my breakfast, then going to lab around 9 am, and working on my targets for the week up till lunch, meeting new people at lunch and having sumptuous food, and then back at work up till dusk, then visiting other places around and playing foosball and air-hockey, having dinner, then playing volleyball, and back to conversations up till late night like 1 am and then going to sleep. And on a weekly basis preparing up a presentation with updates on the targets and progress on the Project.
+
+While this might sound very simple, unlike my expectation of the academic environment to be a monotonous one, it was much more spontaneous and fun especially because of such supportive around like Prof. Batra and PhD. Rishiraj, who always kept the environment an engaging one beyond just the work. I was not supervised on a daily basis if I came at a set time or not, what time did I leave, but rather was given a sense of autonomy where someday I could take a day off, and someday I would work all night. I never felt as if I was burnt out, and always was checked in by both of them if I was enjoying what I was doing, if I was eating food properly or not and so on. Spending 5 weeks, everyone around campus became like a family, not just at Sustainability Lab, but even the housekeeping staff, or people from other labs at IITGn. These memories and friendships are which I continue to cherish till day.
+
+![](../images/experiences/aabhas-4.jpg)
+
+## And Journey goes on
+While as my time of 5 weeks ended at Sustainability Lab, ended and I went on to embark to Cape Town for [RISE](https://risefortheworld.org/) summit, but my time with Sustainability Lab at IIT Gandhinagar has stayed like a connection forever. As I applied to colleges again in my Gap year, Prof. Batra assisted me with his full support, and owing to his support I made it into Harvey Mudd College, in Claremont, California. Before leaving to US, I went back to meet my friends and also Prof. Batra, and he also gifted me a book (Make Your Bed) with a personalized and touching message. But as I am now in College, the experiences I had back then, still continue to drive me and help in my journey here.
+
+![](../images/experiences/aabhas-5.jpg)
+
+## A deep dive into the projects:
+
+Naqaab: Given the ubiquity of masks during the pandemic and the high air pollution in large parts of the world, we used masks for health sensing and persuasion. We used masks to monitor health-related parameters such as temperature and lung activity. In our Project the smart mask, Naqaab, measured forced vital capacity (FVC) of the lung using a retrofitted microphone, aiding in early diagnosis of upper-lung disorders. I myself focussed on implementing the feature in Naqaab that measures pollution exposure and indicates via different LED colours for eco feedback based on local pollution levels. [Naqaab Presentation](https://docs.google.com/presentation/d/19TFbKn8H8j0PMhB-0bizQjeBTmaePXgRsZyXM5hEfxQ/edit?usp=sharing)
+
+CO2 Monitor and SpiroMask: This Project was an extension of the Project Naqaabm where it focussed on using microphone to capture casual breathing patterns and calculate breathing rates along with forced breathing parameters. This project not only relied on audio based input to calculate the same, but also carbon dioxide sensors to get the data. This therefore also required as an additional component of measuring the Ambient carbon dioxide levels to offset the measurements, and also testing other hypotheses relating to carbon dioxide levels in public space. I specifically during my 5 weeks focused on developing this Ambient and portable Carbon Dioxide level data logger. [SpiroMask Presentation](https://docs.google.com/presentation/d/16JVQTsL1U9xur-GMU3b9Mzha14Bd3G9uUwERGjq5wMI/edit?usp=sharing) [CO2 data logger](https://docs.google.com/presentation/d/1dy2I08udKtEpgQgN5CblKtYvFMq97nCq8lyygSqPTq4/edit?usp=sharing)
+
+```{=html}
+<div style="display: flex; justify-content: space-between;">
+  <img src="../images/experiences/aabhas-6.jpg" style="width: 33%;">
+  <img src="../images/experiences/aabhas-7.jpg" style="width: 33%;">
+  <img src="../images/experiences/aabhas-8.jpg" style="width: 33%;">
+</div>
+```
+
+## Reflections: 
+
+The opportunity to work at an Institution like IIT Gandhinagar under the Guidance of Prof. Batra, offered numerous learnings both pertaining to research and just in general and wanted to share those below.
+
+- The first and foremost is definitely curiosity and pursuing moonshot ideas, was it not those I wouldn’t have got this opportunity in the first place. And more than approaching such amazing and supportive spaces like Sustainability, which are open to anyone who is enthusiastic to learn.
+
+- Secondly is a rigorous and determined approach, definitely something I had to work a lot on especially coming from a background of exploration and not academic rigour I lacked this ability. But working on the research and with the advice that I got from both Prof. Batra, and PhD. Rishiraj, both always emphasized on the importance of pursuing perfection in the work we did, and not just making things work by chance. 
+
+- Then the next important lesson was documentation of one’s work, I heavily underrated its importance until I faced it the hard way, as working on projects, not only not having documentation hurts ones own progress, but also hampers other work. Most of the bottleneck in working on projects doing research I spent on figuring out how to navigate some errors which were not documented by other people. This underscores how important it is to document the work not just one’s milestones but also setbacks and errors, which is crucial for anyone to replicate the project in future.
+
+- In terms of a college/academic life, I also learnt the important role routine and discipline played, from eating food at right time, to doing your laundry, everything was important for a balanced and healthy time during the experience, and was a crucial skill that helps me till now. 
+
+- While it may seem contrary to the previous one, having spontaneity and engaging with new people around be it lab-mates or people from other labs, fostered some of the best conversations and friendship during my time. Be it a a random table on lunch, or someone at maker-space, or walking through the hallway, its these interactions that stay with us forever. This spontaneity is what enabled developing a human connection with people beyond professional or academic environment, not just as a professor or guide, but as a mentor, friend and well-wisher for life, who are always going to support and root for you in your journey.
+
+I am really grateful that I got such a transformative and life-changing opportunity to work with Sustainibility Lab, while it is definitely god’s grace and fate that I could get this experience, it is definitely to be highlighted that it wouldn’t be possible without supportive mentors like Prof. Batra and Rishiraj bhaiya, who gave space, opportunity and care to me in my journey. Definitely if you are reading this and considering to work at Sustainability lab, I can attest to the fact that the very least you would get is a bunch people who are there to support you in your journey in any way they can, it’s a space to not just grow academically or doing research but also a space to make friends and find lifelong mentors.

@@ -1,0 +1,46 @@
+---
+title: "Sustainability Lab: An Unforgettable Journey"
+author: "Ankita Jain"
+date: "2024-2-15"
+---
+
+## About Me
+
+Hello, If you're seeking a place to improve your life skills alongside top-notch research, you've landed in the perfect lab. 
+
+I'm Ankita, a Masters' graduate from the Batch of 2023, currently working as an MTS at Oracle, Bangalore. Although my current role involves a tech stack different from my Masters' degree, I cannot emphasize enough how instrumental this lab has been in shaping my career.
+
+Now that I've said that this lab helped me grow both as a researcher and an individual, I might have to provide valid evidence to support my argument because if there's one thing you learn from ML research, it is that even the most prominent theories require solid proofs 😊
+
+I joined the Sustainability Lab in January 2022 to pursue my thesis credits. I had some experience in ML before joining the lab but had never experienced research in its true essence until I landed here. I still clearly remember my first week; I was handed 10-12 papers to summarise. I found the task to be so daunting and was so terrified that I'd made a chore out of a fun task. Cut to 2 years later, I'm skilled enough to do that same task in less than a day, and the credit solely goes to the backbone of our lab, Prof.Nipun Batra. 
+
+## Research Experiences at SL
+
+Good research will only happen when you take on challenges and try things outside your current domain. I had multiple opportunities throughout my journey to learn new topics ranging from Bayesian Machine Learning, Conformal predictions, Active Learning, and Gaussian Processes to Distributed Systems and Computer Networks and Security. My work at SL majorly revolved around Active Learning and its applications in real-life problems. My thesis, "SpiroActive: Active Learning for Efficient Data Acquisition for Spirometry," involved applying AL techniques to predict lung health across age groups. I also worked on ActiveNILM as a part of the Probabilistic Machine Learning course (hands-down one of the best courses at IITGN), apart from small projects in courses like Computational Neuroscience and Advanced Biomedical Signal Processing.
+
+Please feel free to go through some of my work and reach out to me for discussions and new ideas 😃 
+
+Some of the highlights of my journey include   - Being a part of Google Research Week and IndoML 2023. - Being acknowledged by Prof.Kevin Murphy in his PML book. - Also being the first person in 2 years to be awarded the gold medal for outstanding research in the MTech batch, 2023.
+
+But the cherry on this cake was getting a surprise celebration after my MTech defense 😊
+
+## Culture at SL
+
+The research culture at SL is at par with the top labs worldwide. Prof.Nipun ensures that you not only do academic research but also understand its importance in the real world. You get to explore various fields and also have the freedom to connect with professors and students from across subjects and departments. I had the privilege of being able to work on multiple topics ranging from Energy disaggregation and SpiroActive to topics in the field of Neuroscience and CV. I've also participated in various brainstorming sessions that made me realize my love for research whenever I felt the burden of the field.  There were multiple times throughout my journey at SL when I hit roadblocks or faced rejections for my work, but I always had my mentor to back me up and support me in all my endeavours. You know you've found a mentor for a lifetime when you hit a downfall and still have the courage to keep going. From celebrating small victories to picking you up when you feel demotivated, Prof.Nipun will do his best to ensure you feel at home at SL. 
+
+## Tricks that helped me survive through my Masters journey
+
+1. **Consistency will always yield greater rewards in the long run.Be consistent with your work even if you still await immediate gains.**
+
+2. **Your mentor is your biggest supporter. Always reach out to them if you feel stuck, and be honest about your work and progress.**
+
+3. **Speak up, even if you feel your idea is dumb. Sometimes, the dumbest ideas result in the most remarkable breakthroughs.**
+
+4. **Your peers are your biggest critics. Discuss your ideas and findings and be open to review and feedback.**
+
+5. **Make friends and create memories that will last you a lifetime. Ultimately, it's not the papers or excellent research but the connections and friendships you make that matter.**
+
+
+## Memories at SL
+
+From late-night ideation discussions to team dinners, the Sustainability lab has given me many memories to cherish forever. Though I was the only Master's student among a big group of talented PhDs and BTechs, I was always given equal importance and have made connections that will last a lifetime. Besides Prof.Batra, I have been fortunate enough to work with some of the best people in the lab: Zeel Bhaiya, Rishi Bhaiya, Dhruv, Xhitij, Haikoo, Madhav, and Ayush. I'm thankful for all the life lessons, celebrations, and learnings, and I know I'll always have their support whenever needed.
