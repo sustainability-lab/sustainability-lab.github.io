@@ -1,94 +1,10 @@
 [
   {
-    "objectID": "posters.html",
-    "href": "posters.html",
-    "title": "Posters",
+    "objectID": "members.html",
+    "href": "members.html",
+    "title": "Members",
     "section": "",
-    "text": "In some venues, the main presentation format is a poster. Posters are a great way to present your work in a visual format, and to have one-on-one conversations with people who are interested in your work.\nOne common mistake people make while making posters is to try to cram in too much information. Remember that the poster is to supplement you and not to replace you.\nPlease see below for two posters that we have made in the past.\n\n\nPlease find the presentation files corresponding to the first poster 1. Apple Keynote\n\nMS Powerpoint\nGoogle Slides\n\nLaTeX users can use the following templates on Overleaf to make their posters."
-  },
-  {
-    "objectID": "technical-background.html",
-    "href": "technical-background.html",
-    "title": "Technical Background",
-    "section": "",
-    "text": "Git and GitHub\nThere are a ton of good resorces on Git and Github. I’m linking two such resources here: - YouTube video by Kevin Stratvert - Github skills\n\n\nPython Data Science Stack\n\nWe recommend students to study the Python for Data Science Handbook by Jake VanderPlas. It is a free online book that covers the basics of Python, NumPy, Pandas, Matplotlib, and Scikit-Learn. It is a great resource for beginners and intermediate students alike.\nWe recommend students regularly hone their skills solving exercises such as 100 Numpy exercises. Given that much of our work is in Torch-like frameworks, the students would also benefit by attempting to solve the exercises using PyTorch.\n\n\n\nObject-Oriented Programming in Python\nRealPython has a nice tutorial on Object-Oriented Programming in Python. We recommend students to go through the tutorial. They also have a corresponding video page.\n\n\nLaTeX\nWe typically use LaTeX for writing reports and papers. We recommend students to use Overleaf for students to get started. Overleaf has a nice 30 minute tutorial that covers the basics of LaTeX. We highly recommend students to go through the tutorial.\n\n\nCreating a Website and Blog\nWe highly recommend students create a simple website and a blog. We have been happily using Quarto for our website and blog. You may see in action in Nipun’s website and corresponding GitHub repo here; and Nipun’s blog and corresponding Github repo here.\nBoth of these are built via Github actions. Feel free to reuse these for creating your own website and blog. We will be happy to help you get started."
-  },
-  {
-    "objectID": "memories.html",
-    "href": "memories.html",
-    "title": "Group Photos",
-    "section": "",
-    "text": "Click on any picture to activate the “lightbox” mode. Use the arrow keys to navigate."
-  },
-  {
-    "objectID": "memories.html#may-2024",
-    "href": "memories.html#may-2024",
-    "title": "Group Photos",
-    "section": "May 2024",
-    "text": "May 2024"
-  },
-  {
-    "objectID": "memories.html#jan-2024",
-    "href": "memories.html#jan-2024",
-    "title": "Group Photos",
-    "section": "Jan 2024",
-    "text": "Jan 2024\n\n\n\n\n\nJan 2024 Alums from 2022 batch Harsh, Hetvi and Palak visited us."
-  },
-  {
-    "objectID": "memories.html#nov-2023",
-    "href": "memories.html#nov-2023",
-    "title": "Group Photos",
-    "section": "Nov 2023",
-    "text": "Nov 2023\n\n\n\n\n\n15 Nov 2023 Students working with us in the Fall 2023 semester."
-  },
-  {
-    "objectID": "memories.html#oct-2023",
-    "href": "memories.html#oct-2023",
-    "title": "Group Photos",
-    "section": "Oct 2023",
-    "text": "Oct 2023\n\n\n\n\n\nRishiraj was a finalist in the presitigous Gaetano Borriello Outstanding Student Award at ACM Ubicomp 2023"
-  },
-  {
-    "objectID": "memories.html#sept-2023",
-    "href": "memories.html#sept-2023",
-    "title": "Group Photos",
-    "section": "Sept 2023",
-    "text": "Sept 2023\n\n\n\n\n\n15 Sept 2023 Received the Young Alumni Award from IIIT Delhi."
-  },
-  {
-    "objectID": "memories.html#july-2023",
-    "href": "memories.html#july-2023",
-    "title": "Group Photos",
-    "section": "July 2023",
-    "text": "July 2023\n\n\n\n\n\nJuly 2023 at the 2023 batch convocation (and celebration of multiple awards!)\n\n\n\n\n\nAnkita winning the Gold Medal for Outstanding Research"
-  },
-  {
-    "objectID": "memories.html#may-2023",
-    "href": "memories.html#may-2023",
-    "title": "Group Photos",
-    "section": "May 2023",
-    "text": "May 2023\n\n\n\n\n\nMay 2023 dinner\n\n\n\n\n\nBatch of 2023: Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam\n\n\n\n\n\nCake by batch of 2023"
-  },
-  {
-    "objectID": "memories.html#july-2022",
-    "href": "memories.html#july-2022",
-    "title": "Group Photos",
-    "section": "July 2022",
-    "text": "July 2022\n\n\n\n\n\nWith a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)"
-  },
-  {
-    "objectID": "memories.html#dec-2021",
-    "href": "memories.html#dec-2021",
-    "title": "Group Photos",
-    "section": "Dec 2021",
-    "text": "Dec 2021\n\n\n\n\n\nCelebrating AAAI paper acceptance"
-  },
-  {
-    "objectID": "memories.html#nov-2021",
-    "href": "memories.html#nov-2021",
-    "title": "Group Photos",
-    "section": "Nov 2021",
-    "text": "Nov 2021\n\n\n\n\n\nApoorv’s “re” visit to the campus (others in frame: Rishiraj and Zeel)"
+    "text": "Faculty\n\n\n\n   Nipun Batra\n\n\n\n\n\nPhD\n\n\n\n   Rishiraj Adhikary (July 2019 - present)\n\n\n   Zeel Patel (Jan 2020 - present)\n\n\n   Rishabh Mondal  (June 2023 - present)\n\n\n   Khush Shah  (July 2023 - present)\n\n\n\n\n\n\nMTech\n\n\n\n   Suraj Jaiswal (July 2022 - present)\n\n\n Ayush Srivastava (July 2022 - present)\n\n\n Poornima Bhatia (July 2023 - present)\n\n\n Shataxi Dubey (July 2023 - present)\n\n\n Prince Kumar (July 2023 - present)\n\n\n\n\n\nBTech\n\n\n\n\nVannsh Jani (BTech 2026)\n\n\n\n\n\n\nAlumni\n\nBTech\n\nDhruv Patel (BTech 2024): MS at TAMU\nHaikoo Khandor (BTech 2024): MS at TAMU\nProgyan Das (BTech 2024): Applied Scientist at Microsoft\nMadhav Kanda (BTech 2024): MS at UIUC\nAditi Agarwal (BTech 2024): Predoc at Google Deepmind\nUtkarsh Mittal (BTech 2024): MS at NYU Tandon\nAadesh Desai (BTech 2023): MS at CMU\nEshan Gujarathi (BTech 2023): Predoc at IIT Madras\nGautam Vasistha (BTech 2023): Data Scientist as Skan.AI\nHitarth Gandhi (BTech 2023): MS at UC Irvine\nSaagar Parikh (BTech 2023): MS at CMU\nXhitij Choudhary (BTech 2023): Data Scientist at Skan.AI\nChris Francis (BTech 2022): MS at UCSD\nDhruvi Lodhavia (BTech 2022): MS at UCSD\nHetvi Shastri (BTech 2022): PhD at UMass Amherst\nHarsh Patel (BTech 2022): MS at UCSD\nPalak Purohit (BTech 2022): MS at Caltech\nShivam Sahni (BTech 2022): MS at UCSD\nApoorv Agnihotri (BTech 2020): First job at Wadhwani AI -&gt; Data Scientist at Rephrase.ai\nDeepak Narayanan (BTech 2020): First job at Microsoft Research India -&gt; MS at ETH Zurich\nKukunuri Rithwik (BTech 2020): First job at Jio -&gt; Data Scientist at Nykaa\nSoham Pachpande (BTech 2020): First job at HSBC-&gt; MS at UCSD -&gt; SWE at Salesforce\n\n\n\nMTech\n\nAnkita Jain (MTech 2022): First job at Oracle\nKaran Kumar (MTech 2020): First job at Trading Technologies\nSouvik Roy (MTech 2020): First job at eClerx\n\n\n\nResearch Assistant\n\nKaushal Modi: Now a data scientist at InfiBeam\nPrerna Khanna: Now a PhD student at Stony Brook\nTanmay Srivastava: Now a PhD student at Stony Brook\nRohit Patil: First job at Publicis Sapient\n\n\n\n\nOutside IITGn Interns\n\nVibhuti Bansal (Summer 2022): Now at CRED\nRohit Khoiwal (Summer 2022)\nAnand Hegde (Summer 2022)\nShobhit Belwal (Summer 2022)\nAryan Varshney (Summer 2022)\nAmi Ashish Buch (Summer 2024)\nSajay Raj (Summer 2024)\nMuhammad Zaid Hassan (Summer 2024)\nDevodita Chakravarty (Summer 2024)\nOmisha Guha (Summer 2024)"
   },
   {
     "objectID": "computational-resources.html",
@@ -98,53 +14,263 @@
     "text": "IIT Gandhinagar has a number of computational resources available for research and teaching purposes. Aside frim it, the department also has a number of workstations available for students and faculty members.\nThe following is the list of computational resources in our lab apart from the institute and departmental resources.\n\nServers\n\nRamanujan\n\n\n\n\nRAM\n512 GB (32 x 16)\n\n\nCPU\nAMD EPYC 7452 32-Core Processor\n\n\nNumber of CPUs\n64\n\n\nGPU\nNVIDIA A100-SXM4 (80 GB)\n\n\nNumber of GPUs\n4\n\n\n\n\nSustain\n\n\n\n\nRAM\n192 GB (32 x 6)\n\n\nCPU\nIntel(R) Xeon(R) Silver 4208 CPU @ 2.10GHz\n\n\nNumber of CPUs\n16\n\n\nGPU\nNVIDIA TITAN Xp (12 GB)\n\n\nNumber of GPUs\n1\n\n\n\n\n\nWorkstations\n\nAryabhatta"
   },
   {
-    "objectID": "experiences/hetvi.html",
-    "href": "experiences/hetvi.html",
-    "title": "The Growth Mindset: My Journey at the Sustainability Lab",
+    "objectID": "papers/index.html",
+    "href": "papers/index.html",
+    "title": "Publications",
     "section": "",
-    "text": "I am Hetvi Shastri. I graduated from IIT Gandhinagar with a BTech in Electrical Engineering and a minor in Computer Science in 2022. I am pursuing a Ph.D. in Computer Science at the University of Massachusetts, Amherst, advised by Prof. Prashant Shenoy.\nVisited lab in Jan 2024 with Palak and Harsh"
+    "text": "JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising\n\n\nRishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel\n\n\nACM Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) 2024; and ACM Ubicomp 2024\n\n\nPDF\n\n\nNews coverage\n\n\nYouTube\n\n\n\n\n\nRishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel. In ACM Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) 2024; and ACM Ubicomp 2024 [PDF] [News coverage] [YouTube]"
   },
   {
-    "objectID": "experiences/hetvi.html#about-me",
-    "href": "experiences/hetvi.html#about-me",
-    "title": "The Growth Mindset: My Journey at the Sustainability Lab",
-    "section": "About Me",
-    "text": "About Me\nI worked for around two years at the Sustainability lab. My first work was in the summer of 2021, where I worked on Neural network approaches for non-intrusive load monitoring (NILM). This work was accepted at ACM Buildsys 2021, and I presented virtually at the conference. During my final year, I worked on quantifying uncertainty in NILM, collaborating and mentoring summer interns (Vibhuti, Rohit, and Haikoo). This work was accepted at ACM Buildsys 2022, and I presented it at Boston. Besides this, I was a TA for the Machine Learning course (ES654) taught by Prof. Nipun Batra. I have taken two courses, Operating System and Machine Learning, with Prof. Nipun Batra. Having collaborated with Prof. Nipun Batra for almost three years, Sustainability Lab feels like a second home. So I have summed up a few learnings from my time at the lab which are even helping me during my graduate studies."
+    "objectID": "papers/index.html#section",
+    "href": "papers/index.html#section",
+    "title": "Publications",
+    "section": "",
+    "text": "JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising\n\n\nRishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel\n\n\nACM Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) 2024; and ACM Ubicomp 2024\n\n\nPDF\n\n\nNews coverage\n\n\nYouTube\n\n\n\n\n\nRishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel. In ACM Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) 2024; and ACM Ubicomp 2024 [PDF] [News coverage] [YouTube]"
   },
   {
-    "objectID": "experiences/hetvi.html#try-to-find-opportunities-inside-your-terrain-first-before-searching-outside.",
-    "href": "experiences/hetvi.html#try-to-find-opportunities-inside-your-terrain-first-before-searching-outside.",
-    "title": "The Growth Mindset: My Journey at the Sustainability Lab",
-    "section": "Try to find opportunities inside your terrain first before searching outside.",
-    "text": "Try to find opportunities inside your terrain first before searching outside.\nI used to believe that to get a good admission from a reputed university in the US, it is necessary to do a foreign research internship. I got a low rank in the entire electrical batch, which made it impossible for me to get a research internship through college. Still, I was so firm that I used to mail professors and Ph.D. students in the US and try to find some opportunity. Through this process, I got one reply from a Ph.D. student at CMU explaining to me that I should focus on doing good work rather than finding an internship at a good place. After reading this, I joined the Sustainability lab for my summer internship with Prof. Nipun Batra. I first encountered Prof. Nipun Batra during an Operating System course in the fall of 2021. After this, I took a machine learning course in the spring of 2021. His teaching style is very intuitive, which sparked my interest in machine learning. My summer internship work got me a paper at an international conference, and due to this, I received my Ph.D. admission at UMass Amherst. Through this experience, I learned that rather than running behind the tags, if you work hard at what you like, it pays off well."
+    "objectID": "papers/index.html#section-1",
+    "href": "papers/index.html#section-1",
+    "title": "Publications",
+    "section": "2023",
+    "text": "2023\n\n\n\n\nAIRDELHI: Fine-Grained Spatio-Temporal Particulate Matter Dataset From Delhi For ML based Modeling\n\n\nSachin Chauhan, Zeel Patel, Sayan Ranu, Rijurekha Sen, and Nipun Batra.\n\n\nNeurips 2023 (Dataset and Benchmarks\n\n\nPDF\n\n\n\n\n\n\n\nSpiroMask: measuring Lung function using consumer-grade masks\n\n\nRishiraj Adhikary, Dhruvi Lodhavia, Chris Francis, Rohit Patil, Tanmay Srivastava, Prerna Khanna, Nipun Batra, Joseph Breda, Jacob Peplinski, Shwetak Patel\n\n\nACM Transactions on Health 2023\n\n\nPDF\n\n\n\n\n“”\n. In ACM Transactions on Health"
   },
   {
-    "objectID": "experiences/hetvi.html#you-get-ample-opportunities-if-you-want-to-work.",
-    "href": "experiences/hetvi.html#you-get-ample-opportunities-if-you-want-to-work.",
-    "title": "The Growth Mindset: My Journey at the Sustainability Lab",
-    "section": "You get ample opportunities if you want to work.",
-    "text": "You get ample opportunities if you want to work.\nMy entire summer 2021 internship was online. This was the first time an online internship was organized, and initially, we faced a lot of difficulties, but things got better with the process as we kept on discussing ideas. During my internship, I was never treated as a junior. Even as an Electrical Engineering student, Prof. Nipun Batra consistently showed confidence in me, assigning me an independent project. My ideas were valued equally, and I was treated on par with Ph.D. students. He involved me in industry meetings, providing insights beyond academia. In my last year, Prof. Batra gave me the opportunity to be a Teaching Assistant and my first academic talk for the Machine Learning course. This experience significantly boosted my confidence. I even got an opportunity to guide interns in Summer 2022. With a collective effort, we submitted a full paper at Buildsys 2022, marking a successful collaboration. Most of my academic “first times”, like my first paper, first talk, and first research talk, have happened at the lab only because Nipun Sir has always shown great confidence in me, which motivated me to work. You will always get an opportunity at the Sustainability lab if you try to put some effort into learning."
+    "objectID": "papers/index.html#section-2",
+    "href": "papers/index.html#section-2",
+    "title": "Publications",
+    "section": "2022",
+    "text": "2022\n\n“I do not know”: Quantifying Uncertainty in Neural Network Based Approaches for Non-Intrusive Load Monitoring\nVibhuti Bansal, Rohit Khoiwal, Hetvi Shastri, Haikoo Khandor, Nipun Batra. In ACM Buildsys 2022 [PDF][Github]\n\n\nSamachar: Print News Media on Air Pollution in India\nKarm Patel, Rishiraj Adhikary, Zeel B Patel, Nipun Batra, Sarath Guttikunda. In ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (COMPASS) (COMPASS ’22) [PDF][Github]\n\n\nAccurate and Scalable Gaussian Processes for Fine-grained Air Quality Inference\nZeel B Patel, Palak Purohit, Harsh Patel, Shivam Sahni, and Nipun Batra. In: AAAI 2022, Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI-22).[PDF][Github]\n\n\nVastr-GAN: Versatile Apparel Synthesised from Text using a Robust Generative Adversarial Network\nShastri, Hetvi; Lodhavia, Dhruvi; Purohit, Palak; Kaoshik, Ronak; Batra, Nipun. In CODS COMAD 2022."
   },
   {
-    "objectID": "experiences/hetvi.html#small-things-will-impact-a-lot-in-the-long-term.",
-    "href": "experiences/hetvi.html#small-things-will-impact-a-lot-in-the-long-term.",
-    "title": "The Growth Mindset: My Journey at the Sustainability Lab",
-    "section": "Small things will impact a lot in the long term.",
-    "text": "Small things will impact a lot in the long term.\nDuring the paper submission process, it is pretty easy and fast to improve the writing without actually pointing out the mistakes in the student’s writing, but at the lab, I always got advice on what to improve and how it needed to be done. During my presentation at international conferences, Prof Nipun Batra helped me create and improve my presentation skills. I presented and recorded my presentation plenty of times, and he has patiently tried to improve my minute mistakes. We ultimately got positive reviews at the conference. During this experience, I learned that it would first seem a lot to do, but if you go with the flow, even small things impact on a large scale."
+    "objectID": "papers/index.html#section-3",
+    "href": "papers/index.html#section-3",
+    "title": "Publications",
+    "section": "2022",
+    "text": "2022\n\n“I do not know”: Quantifying Uncertainty in Neural Network Based Approaches for Non-Intrusive Load Monitoring\nVibhuti Bansal, Rohit Khoiwal, Hetvi Shastri, Haikoo Khandor, Nipun Batra. In ACM Buildsys 2022 [PDF][Github]\n\n\nSamachar: Print News Media on Air Pollution in India\nKarm Patel, Rishiraj Adhikary, Zeel B Patel, Nipun Batra, Sarath Guttikunda. In ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (COMPASS) (COMPASS ’22) [PDF][Github]\n\n\nAccurate and Scalable Gaussian Processes for Fine-grained Air Quality Inference\nZeel B Patel, Palak Purohit, Harsh Patel, Shivam Sahni, and Nipun Batra. In: AAAI 2022, Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI-22).[PDF][Github]\n\n\nVastr-GAN: Versatile Apparel Synthesised from Text using a Robust Generative Adversarial Network\nShastri, Hetvi; Lodhavia, Dhruvi; Purohit, Palak; Kaoshik, Ronak; Batra, Nipun. In CODS COMAD 2022."
   },
   {
-    "objectID": "experiences/hetvi.html#collaborative-learning-always-helps.",
-    "href": "experiences/hetvi.html#collaborative-learning-always-helps.",
-    "title": "The Growth Mindset: My Journey at the Sustainability Lab",
-    "section": "Collaborative learning always helps.",
-    "text": "Collaborative learning always helps.\nDuring my internship and project courses, we had lab meetings. Lab meetings used to be great, where people working on different projects learn about each other’s work. Through this process, even without actually working on the projects, you will tend to get insights and challenges about the project, which can be helpful to you in the future. During the lab meetings, everyone was involved and tried to provide ideas or feedback for someone else’s work. Knowing so many projects and getting a broad picture of the ongoing research areas was great."
+    "objectID": "papers/index.html#section-4",
+    "href": "papers/index.html#section-4",
+    "title": "Publications",
+    "section": "2021",
+    "text": "2021\n\nVartalaap: what drives #airquality discussions: politics, pollution or pseudo-science?\nRishiraj Adhikary, Zeel B. Patel, Tanmay Srivastava, Nipun Batra, Mayank Singh, Udit Bhatia, and Sarath Guttikunda. Proceedings of the ACM on Human-Computer Interaction 5, no. CSCW1 (2021)[PDF]\n\n\nNeural network approaches and dataset parser for NILM toolkit\nShastri, Hetvi; Batra, Nipun. In Proceedings of the 8th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (Buildsys)[PDF]\n\n\nExploring Hidden Markov Models\nKukunuri Rithwik, Rishiraj Adhikary, Mahika Om Jaguste, Nipun Batra and Ashish Tendulkar The 4th Workshop on Visualization for AI Explainability (VISxAI’21) [Link]"
   },
   {
-    "objectID": "experiences/hetvi.html#rather-than-results-try-to-create-meaningful-relations.",
-    "href": "experiences/hetvi.html#rather-than-results-try-to-create-meaningful-relations.",
-    "title": "The Growth Mindset: My Journey at the Sustainability Lab",
-    "section": "Rather than results, try to create meaningful relations.",
-    "text": "Rather than results, try to create meaningful relations.\nMy paper and admissions were small wins compared to what I have gained from my entire journey at the Sustainability Lab. By working with Prof. Nipun Batra for almost three years, rather than being a professional mentor, he has been my constant guide in all terms, from my health to my Ph.D. failures. Nipun Sir never fails to message me during my hard times in the US. I am grateful to have him as my lifelong mentor. Besides Prof. Nipun Batra, I have been fortunate enough to work and learn from some fantastic people in the lab: Zeel, Rishiraj, Dhruvi, Palak, Harsh, Shivam, Chris, Vibhuti, Haikoo, Rohit, Aadesh and Karm. I can always rely on them for guidance and support."
+    "objectID": "papers/index.html#section-5",
+    "href": "papers/index.html#section-5",
+    "title": "Publications",
+    "section": "2020",
+    "text": "2020\n\nActive Learning: A Visual Tour\nZeel B Patel, Nipun Batra. In VisXAI workshop at IEEE VIS. [Link]\n\n\nEdgeNILM: towards NILM on edge devices\nKukunuri, Rithwik, Anup Aglawe, Jainish Chauhan, Kratika Bhagtani, Rohan Patil, Sumit Walia, and Nipun Batra. In Proceedings of the 7th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation, pp. 90-99. 2020.[PDF]\n\n\nExploring Bayesian Optimization.\nApoorv Agnihotri, Nipun Batra In: Distill Journal 2020 [link]\n\n\nPlantDoc: A Dataset for Visual Plant Disease Detection.\nDavinder Singh, Naman Jain, Pranjali Jain, Pratik Kayal, Sudhakar Kumawat, Nipun Batra In: ACM India Joint International Conference on Data Science & Management of Data (CODS-COMAD 2020)[PDF]"
+  },
+  {
+    "objectID": "papers/index.html#section-6",
+    "href": "papers/index.html#section-6",
+    "title": "Publications",
+    "section": "2019",
+    "text": "2019\n\nActive Collaborative Sensing for Energy Breakdown\nYiling Jia, Nipun Batra, Hongning Wang, Kamin Whitehouse.\nIn: The 28th ACM International Conference on Information and Knowledge Management (CIKM’2019)[PDF]\n\n\nDemo Abstract: A demonstration of reproducible state-of-the-art energy disaggregation using NILMTK\nNipun Batra, Rithwik Kukunuri, Ayush Pandey, Raktim Malakar, Rajat Kumar, Odysseas Krystalakos, Mingjun Zhong, Paulo Meira, Oliver Parson.\nIn: The 6th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys ’19)[PDF]\n\n\nTowards reproducible state-of-the-art energy disaggregation\nNipun Batra, Rithwik Kukunuri, Ayush Pandey, Raktim Malakar, Rajat Kumar, Odysseas Krystalakos, Mingjun Zhong, Paulo Meira, Oliver Parson.\nIn: The 6th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys ’19)[PDF]\n\n\nA Tree-Structured Neural Network Model for Household Energy Breakdown\nYiling Jia, Nipun Batra, Hongning Wang, Kamin Whitehouse\nIn: Proceedings of the 2019 World Wide Web Conference (WWW ’19)[PDF]"
+  },
+  {
+    "objectID": "papers/index.html#section-7",
+    "href": "papers/index.html#section-7",
+    "title": "Publications",
+    "section": "2018",
+    "text": "2018\n\nRimor: Towards Identifying Anomalous Appliances in Buildings\nHaroon Rashid, Nipun Batra, Pushpendra Singh\nIn: Proceedings of the 5th Conference on Systems for Built Environments (Buildsys 18).[PDF]\n\n\nTransferring Decomposed Tensors for Scalable Energy Breakdown across Regions\nNipun Batra, Yiling Jia, Hongning Wang, Kamin Whitehouse\nIn: AAAI 2018, Thirty-Second AAAI Conference on Artificial Intelligence (AAAI-18).[PDF][Github]"
+  },
+  {
+    "objectID": "papers/index.html#section-8",
+    "href": "papers/index.html#section-8",
+    "title": "Publications",
+    "section": "2017",
+    "text": "2017\n\nSystems and Analytical Techniques Towards Practical Energy Breakdown for Homes\nNipun Batra\nIn: Ph.D. Thesis.[PDF]\n\n\nMatrix Factorisation for Scalable Energy Breakdown\nNipun Batra, Hongning Wang, Amarjeet Singh, Kamin Whitehouse.\nIn: AAAI 2017, Thirty-First AAAI Conference on Artificial Intelligence (AAAI-17).[PDF][Github][Poster]"
+  },
+  {
+    "objectID": "papers/index.html#section-9",
+    "href": "papers/index.html#section-9",
+    "title": "Publications",
+    "section": "2016",
+    "text": "2016\n\nGemello: Creating a Detailed Energy Breakdown from just the Monthly Electricity Bill\nNipun Batra, Amarjeet Singh, Kamin Whitehouse.\nIn: KDD 2016, 22nd ACM SIGKDD conference on knowledge discovery and data mining.[PDF][Github][Poster][Video]\n\n\nExploring The Value of Energy Disaggregation Through Actionable Feedback\nNipun Batra, Amarjeet Singh, Kamin Whitehouse.\nIn: 3rd International Workshop on Non-Intrusive Load Monitoring.[PDF][Slides][Talk]\n\n\nCreating a Detailed Energy Breakdown from just the Monthly Electricity Bill\nNipun Batra, Amarjeet Singh, Kamin Whitehouse.\nIn: 3rd International Workshop on Non-Intrusive Load Monitoring.[PDF][Slides][Talk]"
+  },
+  {
+    "objectID": "papers/index.html#section-10",
+    "href": "papers/index.html#section-10",
+    "title": "Publications",
+    "section": "2015",
+    "text": "2015\n\nIf You Measure It, Can You Improve It? Exploring The Value of Energy Disaggregation.\nNipun Batra, Amarjeet Singh, Kamin Whitehouse.\nIn: 2nd ACM International Conference on Embedded Systems For Energy-Efficient Built Environments (Buildsys 2015)[PDF][Github][Slides (.key)][Slides (.pdf)]\n\n\nNon Intrusive Load Monitoring: Systems, Metrics and Use Cases.\nNipun Batra\nIn: Doctoral Colloqium of the 13th ACM Conference on Embedded Networked Sensor Systems (SenSys 2015)[PDF][Slides (.key)][Slides (.pdf)][Best presentation award]\n\n\nDataport and NILMTK: A Building Data Set Designed for Non-intrusive Load Monitoring\nOliver Parson, Grant Fisher, April Hersey, Nipun Batra, Jack Kelly, Amarjeet Singh, William Knottenbelt, Alex Rogers.\nIn: 1st International Symposium on Signal Processing Applications in Smart Buildings at 3rd IEEE Global Conference on Signal and Information Processing, Orlando, FL, USA, 14-16 December, 2015. [PDF]"
+  },
+  {
+    "objectID": "papers/index.html#and-before",
+    "href": "papers/index.html#and-before",
+    "title": "Publications",
+    "section": "2013 and before",
+    "text": "2013 and before\n\nIt’s Different: Insights into home energy consumption in India\nNipun Batra, Manoj Gulati, Amarjeet Singh, Mani Srivastava.\nIn: 5th ACM Workshop On Embedded Systems For Energy-Efficient Buildings (Buildsys 2013)[PDF][Github][Dataset][Slides (.pptx)][Slides (.pdf)]\n\n\nINDiC: Improved Non-Intrusive load monitoring using load Division and Calibration\nNipun Batra, Haimonti Dutta, Amarjeet Singh\nIn: ICMLA 2013[PDF][Slides (.pptx)][Slides (.pdf)]\n\n\nExperiences with Occupancy Based Building Management Systems\nNipun Batra, Pandarasamy Arjunan, Amarjeet Singh, Pushpendra Singh\nIn: ISSNIP 2013[PDF]\n\n\nSensorAct: A Privacy and Security Aware Federated Middleware for Building Management\nPandarasamy Arjunan, Nipun Batra, Haksoo Choi, Amarjeet Singh, Pushpendra Singh, Mani Srivastava\nIn: Buildsys 2012[PDF]"
+  },
+  {
+    "objectID": "experiences.html",
+    "href": "experiences.html",
+    "title": "Alumni Experiences",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nMay 19, 2024\n\n\nFrom Chemical Engineer to AI Researcher - My Pathway Through Sustainability Lab\n\n\nAditi Agarwal\n\n\n\n\nMay 6, 2024\n\n\nSustainability Lab - The Big Booster in my career\n\n\nKarm Patel\n\n\n\n\n\nFeb 15, 2024\n\n\nSustainability Lab: An Unforgettable Journey\n\n\nAnkita Jain\n\n\n\n\nFeb 15, 2024\n\n\nCuriosity Opens New Doors\n\n\nAabhas Senapati\n\n\n\n\nJan 26, 2024\n\n\nThe Growth Mindset: My Journey at the Sustainability Lab\n\n\nHetvi Shastri\n\n\n\n\nJan 17, 2024\n\n\nDetours can sometimes be the best part of the journey!\n\n\nAadesh Desai\n\n\n\n\nDec 15, 2023\n\n\nFrom Thesis to Life Lessons: My learning curve at Sustainability Lab\n\n\nSouvik Roy\n\n\n\n\nDec 11, 2023\n\n\nNot just research, lifelong mentorship: My journey at Sustainability Lab\n\n\nKukunuri Rithwik\n\n\n\n\nNov 29, 2023\n\n\nSustainability Lab: A family atmosphere of learning and growth\n\n\nGautam Vashishtha\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "events.html",
+    "href": "events.html",
+    "title": "Events",
+    "section": "",
+    "text": "In this page, we include the events that we have organized or co-organized."
+  },
+  {
+    "objectID": "events.html#section",
+    "href": "events.html#section",
+    "title": "Events",
+    "section": "2023",
+    "text": "2023\nMEDFUSE: Medicine, Engineering, and Data Fusion for Health"
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News",
+    "section": "",
+    "text": "Dec 2021: Our AAAI 2022 paper on Accurate and Scalable Non-Stationary GPs gets accepted to AAAI 2022 :)\nNov 2021: Received a 5000 USD cloud credit grant from Google Research\nOct 2021: Rishiraj gets the prestigious USIEF Fullbright Fellowship\nOct 2021: Rishiraj wins the prestigious PMRF fellowship!\nSep 2021: Notes paper on adding neural network approaches to NILMTK-contrib accepted at Buildsys 2021\nSep 2021: Explainable on HMMs accepted to IEEE VisxAI workshop Link\nAug 2021: Teaching a course on Ubiquitous computing this semester Link\nMay 2021: Completed the ML course this semester with feedback 3.83/4 :)\nJan 2021: Completed the Introduction to Programming course this semester with feedback 3.73/4 :)\nFeb 2021: Serving as the publication chair for CODS-COMAD 2022\nDec 2020: Our paper on understanding air quality perceptions from social media accepted at ACM CSCW :)\nNov 2020: Got a grant from CISCO on edge non-intrusive load monitoring\nOct 2020: Got a grant from SERB on AI and sensor networks for air quality\nSep 2020: Got a grant from Google on COVID and air quality linkages\nMay 2020: Our Distill article on Bayesian Optimization got accepted\nFeb 2020: Organised a faculty development program on data science and analytics under the aegis of TEQIP (Pic with the group)\nFeb 2020: CSE@IITGN organised ACM India annual event. (Pic with Yann LeCun (Turing award), Shwetak Patel (ACM Compute Prize))\nJan 2020: Members of our lab attended and presented four posters at CODS COMAD 2020\nNov 2019: Spoke at INS Valsura on Machine Learning. Honoured to speak in front of officers from Indian Navy, Army and Air Force\nNov 2019: Gave a talk about our energy dis-aggregation work at ACM Buildsys 2019 in NYC!\nNov 2019: Gave a talk about our air quality work at Google, Bangalore\nApr 2019: Giving a talk on Computational Sustainability at Nirma University.\nMar 2019: Giving a talk on Computational Sustainability at ROCS 2019.\nJan 2019: Paper accepted in WWW! Details soon on Publications page.\nJan 2019: Teaching machine learning this semester. Class URL\nNov 2018: Haroon presented our paper in Buildsys 18!\nNov 2018: Awarded an Microsoft AI for Earth grant worth $15000 in Azure credits\nAug 2018: Took a research methods for CS bootcamp at IITGN. Slides,Youtube\nJuly 2018: Received a Titan XP GPU from NVidia via their grant program. Thanks, NVidia!\nJuly 2018: Teaching operating systems in the current semester at IITGN\nJuly 2018: Joined CSE at IITGN as an Assistant Professor\nJune 2018: Completed my postdoc at UVa. Been great working with Kamin, Hongning, and Yiling!\nFeb 2018: I’m presenting our work at AAAI in New Orleans\nNov 2017: I’m presenting our work on scalable energy breakdown at NSF CPS meeting"
+  },
+  {
+    "objectID": "values.html",
+    "href": "values.html",
+    "title": "Values",
+    "section": "",
+    "text": "Less but better: Publish one less paper, but make the ones you publish really strong. Show one less result in the meeting, but thoroughly analyse the ones you show."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sustainability Lab",
+    "section": "",
+    "text": "Sustainability lab develops sensing and machine learning solutions for various sustainability challenges."
+  },
+  {
+    "objectID": "server.html",
+    "href": "server.html",
+    "title": "Server Policy",
+    "section": "",
+    "text": "How to get access\nSend an email to Mr. Raviraj Sukhadiya, keeping Prof. Nipun Batra in cc. Mention the following details in your request: i) server name; ii) purpose for access.\n\n\nDon’ts\n\nDo not use the server for personal use or anything not related to the project. This includes any classwork or homework.\nDo not share your server credentials with anyone else.\n\n\n\nFair usage\n\nSometimes we have multiple projects running on the same server. Please be considerate of other projects and do not use up all the resources.\nSometimes we may allocate specific cores or GPUs to specific projects. Please do not use cores or GPUs that are not allocated to your project."
+  },
+  {
+    "objectID": "meetings.html",
+    "href": "meetings.html",
+    "title": "Meetings",
+    "section": "",
+    "text": "Whole Group Meetings\nWe typically meet once a week for about 45-50 mins. We usually cover a variety of topics, including: - Short updates from each person on their progress - Discussion of any issues that have come up - Presentations on topics/tools of interest to the group - Paper discussions\nWe expect students to volunteer to present on topics of interest to them. We also expect students to volunteer to present on papers.\n\n\nProject Meetings\nThe project meetings are tied to specific projects. We typically start with discussing the last meeting’s action items, then discuss any issues that have come up, and then discuss the next steps. The lead student on the project is responsible for setting the agenda and running the meeting. The lead student is also responsible for taking notes and posting them on the project’s repository.\n\n\nIndividual Meetings\n\nRefer to https://github.com/jbhuang0604/awesome-tips"
+  },
+  {
+    "objectID": "lor.html",
+    "href": "lor.html",
+    "title": "Letter of Recommendations",
+    "section": "",
+    "text": "How to ask for LOR article by Gautam Kamath"
+  },
+  {
+    "objectID": "experiences/aadesh.html",
+    "href": "experiences/aadesh.html",
+    "title": "Detours can sometimes be the best part of the journey!",
+    "section": "",
+    "text": "Udaan 2023, IIT Gandhinagar (Farewell Party)"
+  },
+  {
+    "objectID": "experiences/aadesh.html#about-me",
+    "href": "experiences/aadesh.html#about-me",
+    "title": "Detours can sometimes be the best part of the journey!",
+    "section": "About me",
+    "text": "About me\nBefore I start sharing my journey at the lab, I would like to shout out to anyone out there looking to do some exciting work in Machine Learning under the best of mentors and who wants to unleash the best of his or her potential, this is the place - Prof. Nipun Batra’s Sustainability Lab at Indian Institute of Technology, Gandhinagar.  \nHaving graduated with a B.Tech in Electrical Engineering with minors in Computer Science and Engineering from IITGN in July 2023, I am currently pursuing my Master’s In Electrical and Computer Engineering from Carnegie Mellon University, USA. My professional and personal learnings with the Sustainability Lab have helped me pursue my dream."
+  },
+  {
+    "objectID": "experiences/aadesh.html#sometimes-the-detours-are-the-best-part-of-the-journey",
+    "href": "experiences/aadesh.html#sometimes-the-detours-are-the-best-part-of-the-journey",
+    "title": "Detours can sometimes be the best part of the journey!",
+    "section": "Sometimes, the detours are the best part of the journey!",
+    "text": "Sometimes, the detours are the best part of the journey!\nIt was the third year of my undergrad, I was looking for a Foreign Academic Summer Internship in Machine Learning or Computer Vision. I was having a hard time finding an internship. It was the same time I had enrolled myself in Prof. Batra’s Machine Learning (ML) Course. Believe me, he is the best when it comes to teaching. It was the first time in my undergraduate studies when I felt like going to a class 😊. And it was his teachings that made me knock on the doors of the Sustainability Lab. I first met Prof. Batra and asked him if he could help me get an internship. I had no thoughts then on a summer internship under him, and the rest is history. I was very disappointed about not getting a foreign research internship, and even though he didn’t know me, he was all willing to help me out. I had finally found a mentor in him. From the very same semester, I started working with the Lab and then onwards there was no looking back. And now whenever I think about my BTech, this lab was a big part of it. \nI have worked on 4 different projects and some open-source contributions for one and a half years. When the entire world was going crazy behind deep neural networks, it was under him that I explored the probabilistic machine learning models. And got a whole new perspective on ML. My first-ever project was on Deep Gaussian Processes for Air Quality Inference, though this was a course project, it never felt that way. There was continuous guidance from him and his PhD Zeel Patel. Though we had limited time we were able to make significant contributions. We as undergrads (other collaborators Eshan Gujarathi, Saagar Parikh, and Sachin Yadav)  were able to publish our work as an extended abstract at ACM India, 6th Joint International Conference on Data Science and Management of Data CODS-COMAD 2023. I also had the privilege of presenting this work at the conference, and to our surprise, we were the only undergrads who had published their work. We recently got one citation, hurray my H-Index is now 1 😊."
+  },
+  {
+    "objectID": "experiences/aadesh.html#deep-dive",
+    "href": "experiences/aadesh.html#deep-dive",
+    "title": "Detours can sometimes be the best part of the journey!",
+    "section": "Deep Dive!",
+    "text": "Deep Dive!\nBuilding on my knowledge of Gaussian Processes (GPs), I delved deeper into the nitty-gritty of its working. In my third-year summer internship, I had the opportunity to work on Batched Gaussian Processes. It was this solo research that gave me a lot of confidence in myself and though it was difficult to understand the math behind GPs, Prof. Batra and other labmates were always there to help me out. Prof. Batra is extremely reachable, you just have to ask him and he will instantly set up a meeting and will explain everything with great passion every time. I just used to wonder at times, how passionate a person can be. The thing about this lab is that you don’t feel like you are working for the first time, so welcoming is the atmosphere. I still cherish the AB6 Workspace where we as a lab used to spend the entire day, have fun, and help each other. His feedback during research meetings might feel harsh at times but yes that always motivated me to work to the best of my potential. One of the best parts of working with this Lab is that Prof. Batra knows what our future goals are and accordingly assigns projects to students considering his/her interests. I still remember that he knew I was applying for a master’s and he put me on an application-based project and pushed me to publish a paper in AAAI or NeurIPS. Until then I had never even dreamt of such a publication. \nAnd guess what I was successful in publishing my work on Non-Intrusive Load Monitoring (NILM) using Bayesian deep learning strategies like Gaussian Processes in the NeurIPS workshop on Gaussian Processes in 2023 (collaborator: Gautam Vashishtha). A lot of credit goes to Prof. Batra and PhD Zeel. It was my experience of GPs from the summer that helped me quickly get going with this tough problem. And this work of mine has to be the highlight of my BTech. This work not only molded me into a good researcher but also taught me numerous life lessons. Prof. Batra’s dedication in academia as well as in day-to-day life always motivated me to do better each day. Every time I used to go with some updates on the work done, he would always point out even the minutest details, you might feel does it even matter. But believe me, it does, this makes you perfect at what you do, not only in research! I learned how to write good papers, and how to do productive research. “Drawing conclusions or insights is the key to any research problem” - were always the words of Prof. Nipun Batra!\nThis project had lots of ups and downs but he always pushed me whenever I felt low and felt like the project was not heading anywhere. But you have to trust Prof. Batra and follow his advice especially when you feel everything is going down the spiral. Prof. Batra’s words still echo in my ears, never run behind publications, and don’t think much about the end goal. Just focus on your current work, set smaller milestones, and keep producing results and you will never know when you will have a flurry of publications. Isn’t this relevant to anything you do in life, just focus on the present! My last work with this lab was on Multi Output models for air quality inference. Every new project feels like a new challenge but when you have an excellent mentor and support in the lab the job is half done. By the beginning of this project, I started enjoying research. To touch on another aspect, I had never realized the importance of open-source contributions unless I joined this Lab. The excellent environment at the lab of always helping ML society, helped me make contributions to Dr. Kevin Murphy’s (Google Researcher) Book."
+  },
+  {
+    "objectID": "experiences/aadesh.html#my-masters-applications",
+    "href": "experiences/aadesh.html#my-masters-applications",
+    "title": "Detours can sometimes be the best part of the journey!",
+    "section": "My Master’s applications",
+    "text": "My Master’s applications\nAny amount of words is not sufficient for the impact Prof. Batra and this lab had on my master’s application. Whether it be university selection, the application process, SoP, CV, or anything related he will always be there. I was just amazed by the way Prof. Batra reviewed my SOP and Resume word by word not only once but several times. I used to always get blunt feedback but that helped me prepare a strong application (studying today at one of the finest!). He always cares for his students, and even used to tell us to sleep well, focus on health, and then prioritize work. I have written more about the lessons I learned working with him, make sure you read that, if the above didn’t motivate you enough to join his lab."
+  },
+  {
+    "objectID": "experiences/aadesh.html#memories-and-friends-i-will-cherish-for-life.",
+    "href": "experiences/aadesh.html#memories-and-friends-i-will-cherish-for-life.",
+    "title": "Detours can sometimes be the best part of the journey!",
+    "section": "Memories and friends I will cherish for life.",
+    "text": "Memories and friends I will cherish for life.\nThere used to be Lab dinners and there you will see the best of Prof. Batra :), I remember once he showed his mimicry skills, it was hilarious! On Lab outings, his “Delhi ka ladka” comes out and he is extremely jovial to talk with. The lab celebrations on paper publications or any achievements, Prof. Batra personally greeted us the very best during our farewell dinner and the Akshardham dinner visits will always be remembered! But the best part which makes me emotional every time I read is the personalized message in a book he gave each of his graduating students. And I have even carried that to the USA, that just makes me believe every time I feel low. \nFinally, I will always miss having fun and working with Vibhuti Bansal, Eshan Gujarathi, Gautam Vashishtha, Saagar Parikh, Hitarth Gandhi, Progyan Das, Hetvi Shastri, Palak Purohit, Harsh Patel, Shivam Sahini, Sachin Yadav, Karm Patel, Hrushti Naik, Shreyashi Singh, and PhD Zeel Patel. I always miss lab meetings and learning from him. Thank you, Prof. Batra, Zeel, and other members of the lab for the wonderful memories and learnings. My experience at this lab has prepared me for my future goals! And I am sure if anytime I feel like I need some advice, Prof. Batra will just be a call away!\n\nAadesh Desai\n\nFeel Free to contact me anytime."
+  },
+  {
+    "objectID": "experiences/souvik.html",
+    "href": "experiences/souvik.html",
+    "title": "From Thesis to Life Lessons: My learning curve at Sustainability Lab",
+    "section": "",
+    "text": "About me\nI am Souvik Roy, an alumnus of IIT Gandhinagar, where I completed my MTech in Computer Science and Engineering in 2020. Currently, I am a Senior Consultant at eClerx, where I specialise in Data Analytics and Engineering for a global investment bank.\nI had the privilege to work with Prof. Nipun as one of his first M.Tech students. This post narrates my enriching experience under his mentorship.\n Picture 1: (Dec 2022) returned to college for a late convocation.\n\n\nResearch Endeavours and Milestones\nThe M.Tech program consisted of 50% coursework and 50% research. My work with Prof. Nipun started in January 2019, broadly focusing on air quality estimation.\n• Experimention with portable air quality sensors (Jan 2019 - Apr 2019)\nI measured PM2.5 exposure among construction workers and calibrated five sensors to plot and analyse the data.\n Picture 2: (Feb 2019) calibrating Atmos air quality sensors at my workspace\n\n\nDeveloping a Live Air quality dashboard (May 2019 - Jul 2019)\nI deployed 5 air quality sensors across the campus and created a live dashboard using JavaScript, Python (Flask), and Leaflet.js. This project was crucial in identifying high pollution activities and their timings.\n\nPicture 3: (May 2019) Installing an air quality sensor at IIT Gn\n\nPicture 4: (Jun 2019) Live air quality measurements across 5 locations on campus\nI got introduced to interdisciplinary research - the goal was to calculate the exposure of PM2.5 in our college bus route. I worked in Tinkerer’s lab with a mechanical engineer to design a 3D printed mount using MDF, which was mounted in the moving bus:\n\n• Estimating ground air quality using satellite data (Aug 2019 - Dec 2019)\nAir quality sensors were expensive and provided less spatial coverage, we used satellite-derived aerosol optical depth (AOD) and meteorological fields to estimate surface-level PM2.5 using a regression model.\nProf. Nipun encouraged me to write a short 1-page paper and submit it to CoDS-COMAD. I got my first short paper published [link] at ISB Hyderabad in January 2020. Fun fact: the presentation coincided with my birthday :)\n\nPicture 5: (Jan 2020) Presenting at CoDS-COMAD conference in ISB Hyderabad\n• Data Curation and Machine Learning (Jan 2020 - Jul 2020)\nGathered PM, AOD, and meteorological data for India through various sources and collated them in time and space. Used Ridge regression, random forest, time-series cross-validation for our analysis like seasonal variation in pollution. This study helped us in identifying the challenges for data curation and collocation for India.\nIf you are interested in learning more about the research, here are some links - [video][slides][pdf]\n\n\nBeyond Research\nThe learnings from Prof. Nipun that still resonate with me:\n\nDiscipline &gt; motivation\nPrioritise your health\nValuing the impact of work over accolades and recognition\n\nDuring my last semester in college, there was an abrupt change in our work due to lockdown and COVID. Prof. Nipun was supportive and understanding, guided me with my thesis and empathised during hard situations at home.\nProf. Nipun didn’t hand me solutions that cultivated a mindset of problem solving. This mindset helped me deal with different situations in my professional life too. I’d be forever grateful that I could have him as my thesis supervisor in college, and a lifelong mentor in life.\n\nPicture 6: A view from the terrace of my workspace, overlooking the Sabarmati river, was a constant reminder of how beautiful the campus is, and how privileged I was to be working there."
+  },
+  {
+    "objectID": "experiences/rithwik.html",
+    "href": "experiences/rithwik.html",
+    "title": "Not just research, lifelong mentorship: My journey at Sustainability Lab",
+    "section": "",
+    "text": "I am Kukunuri Rithwik. I passed out from IIT Gandhinagar with a BTech in Computer Science in 2020. I am currently working as an ML Scientist in the Search team at Nykaa. Prior to that, I worked as a Data Scientist at Reliance Jio in the IoT-ML team. In this post, I’ll talk about my experiences at Sustainability Lab.\nDuring the start of my fifth semester Computer Science, I began a journey to explore machine learning. The interest sparked in me during the preceding summer, where I had the opportunity to explore ML.\n\n\n\nReceiving my degree from Director, IITGn"
+  },
+  {
+    "objectID": "experiences/rithwik.html#about-me",
+    "href": "experiences/rithwik.html#about-me",
+    "title": "Not just research, lifelong mentorship: My journey at Sustainability Lab",
+    "section": "",
+    "text": "I am Kukunuri Rithwik. I passed out from IIT Gandhinagar with a BTech in Computer Science in 2020. I am currently working as an ML Scientist in the Search team at Nykaa. Prior to that, I worked as a Data Scientist at Reliance Jio in the IoT-ML team. In this post, I’ll talk about my experiences at Sustainability Lab.\nDuring the start of my fifth semester Computer Science, I began a journey to explore machine learning. The interest sparked in me during the preceding summer, where I had the opportunity to explore ML.\n\n\n\nReceiving my degree from Director, IITGn"
+  },
+  {
+    "objectID": "experiences/rithwik.html#embarking-on-the-ml-odyssey",
+    "href": "experiences/rithwik.html#embarking-on-the-ml-odyssey",
+    "title": "Not just research, lifelong mentorship: My journey at Sustainability Lab",
+    "section": "Embarking on the ML Odyssey",
+    "text": "Embarking on the ML Odyssey\nProf. Nipun just joined the campus. Seeing that his expertise was also at ML, I eagerly enrolled in a project course with him. Little did I anticipate that this decision would lead me to discover not just a project but a lifelong mentor and advisor.\nIn my first project under the guidance of Prof. Nipun, I decided to work on enhancing the resolution of time-series—a venture that not only enriched my technical skills but also laid the groundwork for my future endeavors.\nCollaborating with Prof. Hongning Wang from the University of Virginia was an add-on bonus. By working under the combined guidance of Prof. Nipun and Prof. Hongning, I explored a lot of cutting-edge methodologies that would shape my subsequent research initiatives."
+  },
+  {
+    "objectID": "experiences/rithwik.html#peer-collaboration-and-knowledge-sharing",
+    "href": "experiences/rithwik.html#peer-collaboration-and-knowledge-sharing",
+    "title": "Not just research, lifelong mentorship: My journey at Sustainability Lab",
+    "section": "Peer Collaboration and Knowledge Sharing",
+    "text": "Peer Collaboration and Knowledge Sharing\nThe weekly paper discussions within our peer group provided a platform for knowledge exchange. Sharing insights and updates on our respective research fostered a collaborative atmosphere, where each of us gained exposure to diverse machine learning innovations applied across various domains. This not only broadened my understanding but also facilitated the cross-pollination of ideas, because I often found myself in situations where I would start using methods that my peers have been using for solving an issue that they encountered."
+  },
+  {
+    "objectID": "experiences/rithwik.html#nilmtk-a-summer-endeavor",
+    "href": "experiences/rithwik.html#nilmtk-a-summer-endeavor",
+    "title": "Not just research, lifelong mentorship: My journey at Sustainability Lab",
+    "section": "NILMTK: A summer endeavor",
+    "text": "NILMTK: A summer endeavor\nDuring the summer, I had the opportunity to work on NILMTK, where my primary objective was to incorporate the latest state-of-the-art disaggregation algorithms into the toolkit. Over the next two months, my fellow summer interns and I successfully engineered a packaged solution. Soon, we also took the decision to publish a paper for the BuildSys conference regarding the same. It was my first experience with technical writing, I faced many challenges with the same. My initial draft was nowhere close to where it should be, it had incomplete explanations and other writing nuances. Prof. Nipun gave me pinpointed feedback and helped me get better at writing papers.\nAmidst the journey, life threw a curveball in the form of a severe stomach infection just two weeks prior to the paper submission deadline. Prof. Nipun not only empathized with my situation but also extended the gesture of taking me to a hospital in Ahmedabad. It led to realization that I had a mentor willing to go to great lengths to support me.\nOur efforts came to fruition, as the paper was accepted in the conference. The elation I felt upon acceptance was profound. This entire experience improved my technical abilities significantly."
+  },
+  {
+    "objectID": "experiences/rithwik.html#transformation-as-a-data-scientist",
+    "href": "experiences/rithwik.html#transformation-as-a-data-scientist",
+    "title": "Not just research, lifelong mentorship: My journey at Sustainability Lab",
+    "section": "Transformation as a Data Scientist",
+    "text": "Transformation as a Data Scientist\nDuring my final year at IIT Gandhinagar, I approached Prof. Nipun seeking guidance on transitioning to a full-time career in data science. Despite possessing solid knowledge of machine learning, my challenge was securing interview opportunities rather than a skill deficiency. With Prof. Nipun’s support, I gained access to interviews at esteemed organizations like Bidgely, Wadhwani AI, and Reliance Jio.\nI landed my first job as a data scientist at Reliance Jio, thanks to Prof. Nipun. He’s willing to leverage both his academic and professional networks, going above and beyond to ensure our success."
+  },
+  {
+    "objectID": "experiences/rithwik.html#edge-methodologies-in-nilm-a-swift-research-venture",
+    "href": "experiences/rithwik.html#edge-methodologies-in-nilm-a-swift-research-venture",
+    "title": "Not just research, lifelong mentorship: My journey at Sustainability Lab",
+    "section": "Edge Methodologies in NILM: A Swift Research Venture",
+    "text": "Edge Methodologies in NILM: A Swift Research Venture\nAmidst the abrupt conclusion of my time at IIT Gandhinagar due to the pandemic, I embarked on a remarkable research journey during my final semester. Prof. Nipun presented a unique opportunity – explore edge computing methodologies in the context of NILM, and submit our findings to Buildsys.\nWith the deadline just six weeks away, time was of essence. Within two days, we outlined methodologies and devised an action plan. Collaborating with fellow ML enthusiasts from IITGN, we worked collectively on the submission . My honed technical skills since the past two years facilitated rapid implementation of chosen methodologies. Similarly, my technical writing skills also have improved with the previous experiences. Soon, we were able to submit an excellent initial draft. Two months later, we got the news that our submission got accepted. I felt a sense of accomplishment as we delivered quality work within the tight six-week time frame."
+  },
+  {
+    "objectID": "experiences/rithwik.html#conclusion",
+    "href": "experiences/rithwik.html#conclusion",
+    "title": "Not just research, lifelong mentorship: My journey at Sustainability Lab",
+    "section": "Conclusion",
+    "text": "Conclusion\nI’ll end my note with an ML analogy Before joining the sustainability lab, my passion resembled an oscillating loss function—scattered and lacking direction. However, working with the lab acted as a compass, defining a clear long-term objective akin to choosing a performance metric to optimize for. Over the course of two years, I applied gradient descent in my efforts, taking numerous small steps toward the goal. The presence of an exceptional mentor, serving as an optimizer, ensured I stayed on the right path throughout the journey.\nThe sustainability lab has been instrumental in shaping who I am today. I’m forever thankful for the valuable experiences and insights gained under the guidance of Prof. Nipun."
   },
   {
     "objectID": "experiences/aditi.html",
@@ -152,62 +278,6 @@
     "title": "From Chemical Engineer to AI Researcher - My Pathway Through Sustainability Lab",
     "section": "",
     "text": "Abstract\nI am Aditi Agarwal, I have graduated IIT Gandhinagar as a Chemical Engineer with a Minors in Computer Science. I am currently working with Google DeepMind as a PreDoctoral Researcher. This page summarizes the 3 semesters I have worked with Sustainability Lab and how the experiences have completely changed my career trajectory and views about research!\nKeywords: Sustainability Lab, 11/10 Recommended, Real Flavour of Research, Best Mentor\nIntroduction\nIt would be an understatement to say that Sustainability Lab has completely changed the trajectory of my career. I had dreamt of being a Software Engineer from the age of 8. Computers were and are my Roman Empire, and younger me was always enticed by the idea of doing a job where I had to spend my entire day on a computer. How fascinating!\nComing to IIT Gandhinagar as a Chemical Engineering student, I always knew I would have to step the extra mile to achieve my goals. However, my journey was sweetened and streamlined by joining the Sustainability Lab and working under the guidance of Prof. Nipun Batra!\nNeural Network Newbie\nI joined the Sustainability Lab in my 6th semester. I remember the first time I visited Prof. Batra’s office, he asked me what I was interested in working on, and I naively mentioned that I wanted to build my own Neural Networks rather than using pre-trained models. Mind you, I had worked with two startups until then as a CV intern and an ML intern, but while I was able to ship code to production using fast.ai, play around with data, etc., I never had a core understanding of what Machine Learning really is. This is where the Sustainability Lab helped me.\nA class I did not sleep in\nI was also taking the coveted ES 654 course with Professor Batra at the time. I remember the first class of the course. Probably the only class in the entire duration of my BTech where I had a smile on my face throughout. Prof. Batra was showing us some videos on what AI is. I remember seeing a video of Amazon Go and being so fascinated and excited to finally learn a course because I wanted to and not because it was a graduation requirement. Simultaneously working with Sir in the lab, I remember, in the initial days, I took 3 weeks to correctly train a heteroskedastic MLP in Pytorch on a basic dataset. The catch was only to change the loss function, but my lack of understanding of core ML concepts led to me making numerous mistakes each time. What I really enjoyed during these three weeks was the fact that every time in the weekly meeting, Nipun Sir explained the loss function until I finally got it right. Then, I was extremely impatient, waiting every week to be given a “meatier” exercise rather than training a simple MLP. It is now that I realize how important this activity was for me. The latter half of the semester was smoother, and I was given a chance to play around with real-world data as well. That semester marked my first experience as a researcher as I also presented a poster at the UGRS.\nBrick by Brick\nIn my seventh semester, in the last few days of summer, Prof. Batra offered me the brick kilns project. This was the project that quite literally changed my career trajectory and defined my interests. The project aimed to use satellite data for the detection of brick kilns across India. The novelty lay in using techniques to minimize the data and maximize the metrics of the model. We were working on a rather challenging deadline of submitting a paper to a sub-track in AAAI’23 in a matter of 20 days. Every day, we had meetings in the office with Sir and we would spend hours in the AI lab, getting the code to work and receiving outcomes. This was my first experience writing a manuscript and also learning how to present one’s work. Mind you, I have always been into writing and reading fiction. I thought of academic writing as “boring and flavorless.” It was when the process of writing the manuscript started that I realized how important building a story is in a research paper. On 16 August 2023, at 1705 hours, we ended up submitting the manuscript. It did not matter that it was rejected. But those 20 days gave me the real flavor of research.\nWorking on a project that directly impacts numerous people, their livelihoods, and the climate fueled my intent to pursue a career in research. We continued working on the project throughout the semester. In my final semester, in a spur of the moment, I decided to take up extra credits and work on a project to develop a screening system for mental health issues in students. This was a project done in collaboration with another lab in the institute. Again, this turned out to be an interesting experience because we experimented with multiple techniques in the beginning and ended up pivoting our approach to make our results more explainable and ethical.\nThe Prof. Batra Effect\nWhat distinguishes the Sustainability Lab is Nipun Sir’s commitment to helping each and every student reach their full potential. As a Chemical Engineering student working in Computer Science and specifically in AI, I have more often than not had the feeling of not being good enough. Working with Prof. Batra has instilled a confidence in me that what matters is my work and not my branch. I owe my current position as a Pre-Doctoral Researcher at Google DeepMind to Prof. Batra for his invaluable guidance throughout. I remember running to him for interview help, preparation tips, how to write an SOP, tips on my personal website, and the LORs and personal notes. It was him who told me about the program at first and motivated me to apply for the same, not letting my doubts get the better of me. He always mentions, “Don’t self-reject.”\nI have always been an individual who focuses on getting results. My definition of results meant something positive and quantitative, a 5% boost in accuracy, or a reduction in loss. Anything less would annoy me and make me feel as if whatever I did in the week was futile. Mind you, Prof. Batra too is an individual who focuses on the results. But the primary difference here is his ideology about the result. For him, results mean the insights and conclusions that one draws from any task or activity. I have seen the transition in the way I now present my work. It is always introduced by the motivation and the “why.” Sometimes I don’t even have results, but I am more often than not content with what I am presenting. This ideological change was again part of the Sustainability Lab experience.\nLab Legends\nProf. Batra bid us all farewell with a book and a personalized note. Coincidentally, it is also my favorite book, “Deep Work” by Cal Newport (a book I have annotated heavily and try to apply at least 10% of it in my life). Nipun Sir’s sense of humor and jovial energy always made me look forward to the weekly meetings. I remember, when his office was moved to the new Academic Block, he sent us a video guide as to how one can reach his office. Another fond memory I have is him sending me the contact details of a doctor in Gandhinagar because he got to know that I had injured my hand playing squash. I have countless such anecdotes that show his genuine care and concern towards his students. My journey at SL would be incomplete without mentioning all the amazing colleagues who became friends: Suraj Jaiswal, Madhav Kanda, Dhruv Patel, Rishabh Mondal, Zeel Patel, Aadesh Desai, Eshan Gujarathi, Saagar Parikh. The lab dinner at Akshardham (I will not spoil the reason as to why we go to Akshardham). Little celebrations we have at the lab and fun conversations that take place before every meeting have left a positive imprint on me.\nConsider this little article as my LOR to the Sustainability Lab to whomever it may concern 😊\nThis lab holds a very integral part of my BTech, and if you are an IITGn student who’s thinking about doing an internship/project with somebody, I would 11/10 recommend you to work at the Sustainability Lab."
-  },
-  {
-    "objectID": "experiences/aabhas.html#about-me",
-    "href": "experiences/aabhas.html#about-me",
-    "title": "Curiosity Opens New Doors",
-    "section": "About me",
-    "text": "About me\nI am Aabhas Senapati, currently a 1st-year undergraduate student at Harvey Mudd College, Claremont, California. I did my schooling in Ahmedabad, post which I took a gap year before coming to college. It was in around grade 8 that I embarked on a journey of exploration into different domains from electronics and entrepreneurship to ecosystems. This path has led me through some of the best experiences and learning in my life, and my time working with Professor Nipun Batra and Ph.D. Rishiraj Adhikary has been one of the most memorable and pivotal parts of my journey till now."
-  },
-  {
-    "objectID": "experiences/aabhas.html#curiosity-opens-new-doors",
-    "href": "experiences/aabhas.html#curiosity-opens-new-doors",
-    "title": "Curiosity Opens New Doors",
-    "section": "Curiosity opens new doors",
-    "text": "Curiosity opens new doors\nThis story starts back in 2019, when I was a grade 10 student at Zydus School for Excellence, Ahmedabad. It had been a couple of years since I had been self-exploring electronics and IoT-related projects and participating in online forums like Element 14 community and making various projects. One of my projects was ThingFinder, which I got incubated at GUSEC as a student-startup, without even fully understanding what a startup meant. This was probably one of the pivotal points, as it opened a plethora of opportunities in front of me, being part of the startup network in Gujarat, not just limited to grants and startup network, but also support from facilities like Nasscom at IIT Gandhinagar.\nIt was one of the events by IBM at Nasscom, IITGn, that someone suggested to me given my curiosity to learn and work on projects, I should reach out to Professors at IIT Gandhinagar and potentially work with them to learn and grow further. This led me to then look up Professors at IIT Gandhinagar who worked on Projects on similar lines to my interest and cold-mailed them with long paragraphs about who I am, what I like to do, and why I wanted to work with them. Reading back the old emails it seems such childish and poorly drafted emails and LinkedIn messages, yet three out of the nineteen Professors responded. Prof. Batra was one of only three Professors who responded to the mail and connected me with his Ph.D. student Rishiraj Adhikary, and then invited me to meet at IIT Gandhinagar. On my first meeting, Prof. Batra encouraged me so much and told me to continue my projects and also said that he would be happy to have me work with him during the summer. I am so grateful for this, had he not identified my potential and given me the opportunity early on my path could look very different."
-  },
-  {
-    "objectID": "experiences/aabhas.html#now-comes-uncertainty",
-    "href": "experiences/aabhas.html#now-comes-uncertainty",
-    "title": "Curiosity Opens New Doors",
-    "section": "Now comes uncertainty",
-    "text": "Now comes uncertainty\nI was very excited about this opportunity over the summer to be able to work at IIT Gandhinagar, especially given the fact that me and my peers were all preparing for JEE at Allen, from class 9, therefore getting to work at IIT before even attempting JEE, was something I was mildly proud about. But as they say, not everything is meant to work according to how you plan, and that’s exactly what happened, in 2020 came the coronavirus pandemic which disrupted my initial plans for the summer. It was not possible to be outside the home, and consequently, summer projects were also cancelled. Honestly at that point summer projects weren’t the priority either. But I still had a desire to work at IIT Gandhinagar, especially given that this was the only full-length summer break I would get before JEE I presumed. With the pandemic situation intensifying, I kind of forgot about working on a research project. But sometime during the summer unexpectedly, I got a message from Rishiraj bhaiya, that I would still be willing to work on a project remotely. While this was kind of unexpected given I had been dreaming to be at IIT Gandhinagar and work on a project in my fantasized view of a lab, I still was very excited to work on a project with them. This is how I ended up contributing my tiny bit of effort the Project Naqaab, where I designed a very simple led response to the ambient PM 2.5 levels, and retrofitted this setup onto a mask.\nAs I worked on this Project, my only expected outcome was experience, but to my surprise despite my almost insignificant contribution to the larger project, Prof. Batra, and PhD. Rishiraj included me as a co-author for the poster at UbiComp. Back then, I probably didn’t realize how generous it was of them to have me there and shows how people at Sustainability Lab value your contributions. In a world where people don’t give credit for significant contributions to academic research, as I look back to it, as a high-school intern, with minimal contributions got more credit for my work than I deserved.\nThis was my first experience working with the Sustainability Lab and Prof. Batra. After this, I also represented the project at the IRIS National Fair, but more or less this was like a good addition to my resume. Yet my desire to work at IIT in a proper research setting still remained unfulfilled."
-  },
-  {
-    "objectID": "experiences/aabhas.html#silver-lining-in-the-pandemic-and-some-rejections",
-    "href": "experiences/aabhas.html#silver-lining-in-the-pandemic-and-some-rejections",
-    "title": "Curiosity Opens New Doors",
-    "section": "Silver Lining in the Pandemic, and some Rejections",
-    "text": "Silver Lining in the Pandemic, and some Rejections\nWhile the pandemic didn’t just end in 2020, and as we all went through it and got in the new normal of the pandemic, it was not all bad, it also opened a door to a range of new possibilities, especially through online and international communities. Involving in these, I was motivated to pursue my extracurriculars more actively, and led me to apply to colleges in US. Prof. Batra actively supported me with the process and Letters of Recommendation, yet I met with rejections from all colleges I applied to. While this felt like a setback initially, it was an excuse to pursue my long-desired gap year. And this is where my journey circles back to Sustainability Lab, as I reached out to Prof. Batra if I could work with him, in my gap year once I finish my board exams."
-  },
-  {
-    "objectID": "experiences/aabhas.html#a-typical-day-doing-real-research",
-    "href": "experiences/aabhas.html#a-typical-day-doing-real-research",
-    "title": "Curiosity Opens New Doors",
-    "section": "A typical day doing Real Research",
-    "text": "A typical day doing Real Research\nThis is after three years of first time interacting with Prof. Batra, as my friends were already planning to go to colleges, I was starting my gap year, with research working at Sustainability Lab IIT Gandhinagar. I was very excited as this was my first time staying by myself in a academic environment, and working on a full-fledged research environment. And definitely the experience, was very different and beyond my expectations. A typical day during that time was me waking up at around 7:30 am, finishing my chores and getting my breakfast, then going to lab around 9 am, and working on my targets for the week up till lunch, meeting new people at lunch and having sumptuous food, and then back at work up till dusk, then visiting other places around and playing foosball and air-hockey, having dinner, then playing volleyball, and back to conversations up till late night like 1 am and then going to sleep. And on a weekly basis preparing up a presentation with updates on the targets and progress on the Project.\nWhile this might sound very simple, unlike my expectation of the academic environment to be a monotonous one, it was much more spontaneous and fun especially because of such supportive around like Prof. Batra and PhD. Rishiraj, who always kept the environment an engaging one beyond just the work. I was not supervised on a daily basis if I came at a set time or not, what time did I leave, but rather was given a sense of autonomy where someday I could take a day off, and someday I would work all night. I never felt as if I was burnt out, and always was checked in by both of them if I was enjoying what I was doing, if I was eating food properly or not and so on. Spending 5 weeks, everyone around campus became like a family, not just at Sustainability Lab, but even the housekeeping staff, or people from other labs at IITGn. These memories and friendships are which I continue to cherish till day."
-  },
-  {
-    "objectID": "experiences/aabhas.html#and-journey-goes-on",
-    "href": "experiences/aabhas.html#and-journey-goes-on",
-    "title": "Curiosity Opens New Doors",
-    "section": "And Journey goes on",
-    "text": "And Journey goes on\nWhile as my time of 5 weeks ended at Sustainability Lab, ended and I went on to embark to Cape Town for RISE summit, but my time with Sustainability Lab at IIT Gandhinagar has stayed like a connection forever. As I applied to colleges again in my Gap year, Prof. Batra assisted me with his full support, and owing to his support I made it into Harvey Mudd College, in Claremont, California. Before leaving to US, I went back to meet my friends and also Prof. Batra, and he also gifted me a book (Make Your Bed) with a personalized and touching message. But as I am now in College, the experiences I had back then, still continue to drive me and help in my journey here."
-  },
-  {
-    "objectID": "experiences/aabhas.html#a-deep-dive-into-the-projects",
-    "href": "experiences/aabhas.html#a-deep-dive-into-the-projects",
-    "title": "Curiosity Opens New Doors",
-    "section": "A deep dive into the projects:",
-    "text": "A deep dive into the projects:\nNaqaab: Given the ubiquity of masks during the pandemic and the high air pollution in large parts of the world, we used masks for health sensing and persuasion. We used masks to monitor health-related parameters such as temperature and lung activity. In our Project the smart mask, Naqaab, measured forced vital capacity (FVC) of the lung using a retrofitted microphone, aiding in early diagnosis of upper-lung disorders. I myself focussed on implementing the feature in Naqaab that measures pollution exposure and indicates via different LED colours for eco feedback based on local pollution levels. Naqaab Presentation\nCO2 Monitor and SpiroMask: This Project was an extension of the Project Naqaabm where it focussed on using microphone to capture casual breathing patterns and calculate breathing rates along with forced breathing parameters. This project not only relied on audio based input to calculate the same, but also carbon dioxide sensors to get the data. This therefore also required as an additional component of measuring the Ambient carbon dioxide levels to offset the measurements, and also testing other hypotheses relating to carbon dioxide levels in public space. I specifically during my 5 weeks focused on developing this Ambient and portable Carbon Dioxide level data logger. SpiroMask Presentation CO2 data logger"
-  },
-  {
-    "objectID": "experiences/aabhas.html#reflections",
-    "href": "experiences/aabhas.html#reflections",
-    "title": "Curiosity Opens New Doors",
-    "section": "Reflections:",
-    "text": "Reflections:\nThe opportunity to work at an Institution like IIT Gandhinagar under the Guidance of Prof. Batra, offered numerous learnings both pertaining to research and just in general and wanted to share those below.\n\nThe first and foremost is definitely curiosity and pursuing moonshot ideas, was it not those I wouldn’t have got this opportunity in the first place. And more than approaching such amazing and supportive spaces like Sustainability, which are open to anyone who is enthusiastic to learn.\nSecondly is a rigorous and determined approach, definitely something I had to work a lot on especially coming from a background of exploration and not academic rigour I lacked this ability. But working on the research and with the advice that I got from both Prof. Batra, and PhD. Rishiraj, both always emphasized on the importance of pursuing perfection in the work we did, and not just making things work by chance.\nThen the next important lesson was documentation of one’s work, I heavily underrated its importance until I faced it the hard way, as working on projects, not only not having documentation hurts ones own progress, but also hampers other work. Most of the bottleneck in working on projects doing research I spent on figuring out how to navigate some errors which were not documented by other people. This underscores how important it is to document the work not just one’s milestones but also setbacks and errors, which is crucial for anyone to replicate the project in future.\nIn terms of a college/academic life, I also learnt the important role routine and discipline played, from eating food at right time, to doing your laundry, everything was important for a balanced and healthy time during the experience, and was a crucial skill that helps me till now.\nWhile it may seem contrary to the previous one, having spontaneity and engaging with new people around be it lab-mates or people from other labs, fostered some of the best conversations and friendship during my time. Be it a a random table on lunch, or someone at maker-space, or walking through the hallway, its these interactions that stay with us forever. This spontaneity is what enabled developing a human connection with people beyond professional or academic environment, not just as a professor or guide, but as a mentor, friend and well-wisher for life, who are always going to support and root for you in your journey.\n\nI am really grateful that I got such a transformative and life-changing opportunity to work with Sustainibility Lab, while it is definitely god’s grace and fate that I could get this experience, it is definitely to be highlighted that it wouldn’t be possible without supportive mentors like Prof. Batra and Rishiraj bhaiya, who gave space, opportunity and care to me in my journey. Definitely if you are reading this and considering to work at Sustainability lab, I can attest to the fact that the very least you would get is a bunch people who are there to support you in your journey in any way they can, it’s a space to not just grow academically or doing research but also a space to make friends and find lifelong mentors."
   },
   {
     "objectID": "experiences/gautam.html",
@@ -294,123 +364,109 @@
     "text": "Memories at SL\nFrom late-night ideation discussions to team dinners, the Sustainability lab has given me many memories to cherish forever. Though I was the only Master’s student among a big group of talented PhDs and BTechs, I was always given equal importance and have made connections that will last a lifetime. Besides Prof.Batra, I have been fortunate enough to work with some of the best people in the lab: Zeel Bhaiya, Rishi Bhaiya, Dhruv, Xhitij, Haikoo, Madhav, and Ayush. I’m thankful for all the life lessons, celebrations, and learnings, and I know I’ll always have their support whenever needed."
   },
   {
-    "objectID": "news.html",
-    "href": "news.html",
-    "title": "News",
-    "section": "",
-    "text": "Dec 2021: Our AAAI 2022 paper on Accurate and Scalable Non-Stationary GPs gets accepted to AAAI 2022 :)\nNov 2021: Received a 5000 USD cloud credit grant from Google Research\nOct 2021: Rishiraj gets the prestigious USIEF Fullbright Fellowship\nOct 2021: Rishiraj wins the prestigious PMRF fellowship!\nSep 2021: Notes paper on adding neural network approaches to NILMTK-contrib accepted at Buildsys 2021\nSep 2021: Explainable on HMMs accepted to IEEE VisxAI workshop Link\nAug 2021: Teaching a course on Ubiquitous computing this semester Link\nMay 2021: Completed the ML course this semester with feedback 3.83/4 :)\nJan 2021: Completed the Introduction to Programming course this semester with feedback 3.73/4 :)\nFeb 2021: Serving as the publication chair for CODS-COMAD 2022\nDec 2020: Our paper on understanding air quality perceptions from social media accepted at ACM CSCW :)\nNov 2020: Got a grant from CISCO on edge non-intrusive load monitoring\nOct 2020: Got a grant from SERB on AI and sensor networks for air quality\nSep 2020: Got a grant from Google on COVID and air quality linkages\nMay 2020: Our Distill article on Bayesian Optimization got accepted\nFeb 2020: Organised a faculty development program on data science and analytics under the aegis of TEQIP (Pic with the group)\nFeb 2020: CSE@IITGN organised ACM India annual event. (Pic with Yann LeCun (Turing award), Shwetak Patel (ACM Compute Prize))\nJan 2020: Members of our lab attended and presented four posters at CODS COMAD 2020\nNov 2019: Spoke at INS Valsura on Machine Learning. Honoured to speak in front of officers from Indian Navy, Army and Air Force\nNov 2019: Gave a talk about our energy dis-aggregation work at ACM Buildsys 2019 in NYC!\nNov 2019: Gave a talk about our air quality work at Google, Bangalore\nApr 2019: Giving a talk on Computational Sustainability at Nirma University.\nMar 2019: Giving a talk on Computational Sustainability at ROCS 2019.\nJan 2019: Paper accepted in WWW! Details soon on Publications page.\nJan 2019: Teaching machine learning this semester. Class URL\nNov 2018: Haroon presented our paper in Buildsys 18!\nNov 2018: Awarded an Microsoft AI for Earth grant worth $15000 in Azure credits\nAug 2018: Took a research methods for CS bootcamp at IITGN. Slides,Youtube\nJuly 2018: Received a Titan XP GPU from NVidia via their grant program. Thanks, NVidia!\nJuly 2018: Teaching operating systems in the current semester at IITGN\nJuly 2018: Joined CSE at IITGN as an Assistant Professor\nJune 2018: Completed my postdoc at UVa. Been great working with Kamin, Hongning, and Yiling!\nFeb 2018: I’m presenting our work at AAAI in New Orleans\nNov 2017: I’m presenting our work on scalable energy breakdown at NSF CPS meeting"
-  },
-  {
-    "objectID": "values.html",
-    "href": "values.html",
-    "title": "Values",
-    "section": "",
-    "text": "Less but better: Publish one less paper, but make the ones you publish really strong. Show one less result in the meeting, but thoroughly analyse the ones you show."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Sustainability Lab",
-    "section": "",
-    "text": "Sustainability lab develops sensing and machine learning solutions for various sustainability challenges."
-  },
-  {
-    "objectID": "expectations.html",
-    "href": "expectations.html",
-    "title": "Expectations",
-    "section": "",
-    "text": "Hard work: We are often working on cutting-edge research. This means that there is no clear path to success. We will have to try different things, and we will fail often. This is part of the process. I expect my students to work hard, and I expect them to be resilient.\nConsistency: We do expect some seasonal variation in productivity. However, often the difference between a good and great project is the consistency of effort.\nStriving for excellence: Often, the difference between a good and great project (or paper) is the last 10% of effort. I try to push my students to go the extra mile, and I expect the same from myself. This goes in various aspects of work, including writing, coding, and data analysis. As an example, I remember doing ten rounds of feedback with an undergraduate student from the group on their presentation for a conference. It was a lot of work, but the student ended up getting offers (higher studies) after the talk; and the student was appreciated by the session chair - “It is hard to believe that you are an undergraduate student”.\nClear, honest communication I try to be as clear as possible in my communication, and I expect the same from my students. I also expect my students to be honest with me. If you are struggling with something, let me know. If you are not interested in a project, let me know. If you are not happy with something, let me know. I you are unable to meet a deadline, let me know. Lack of communication is counterproductive.\nI also typically want to help create a path for my students to achieve their goals. Thus, I expect my students to be clear about their goals, or be proactive in discussing their goals with me.\nCulture of respect and collaboration: I expect my students to be respectful to each other, and to other members of the community. I also expect my students to be collaborative. This means that they should be willing to help each other, and to help other members of the community."
-  },
-  {
-    "objectID": "events.html",
-    "href": "events.html",
-    "title": "Events",
-    "section": "",
-    "text": "In this page, we include the events that we have organized or co-organized."
-  },
-  {
-    "objectID": "events.html#section",
-    "href": "events.html#section",
-    "title": "Events",
-    "section": "2023",
-    "text": "2023\nMEDFUSE: Medicine, Engineering, and Data Fusion for Health"
-  },
-  {
-    "objectID": "meetings.html",
-    "href": "meetings.html",
-    "title": "Meetings",
-    "section": "",
-    "text": "Whole Group Meetings\nWe typically meet once a week for about 45-50 mins. We usually cover a variety of topics, including: - Short updates from each person on their progress - Discussion of any issues that have come up - Presentations on topics/tools of interest to the group - Paper discussions\nWe expect students to volunteer to present on topics of interest to them. We also expect students to volunteer to present on papers.\n\n\nProject Meetings\nThe project meetings are tied to specific projects. We typically start with discussing the last meeting’s action items, then discuss any issues that have come up, and then discuss the next steps. The lead student on the project is responsible for setting the agenda and running the meeting. The lead student is also responsible for taking notes and posting them on the project’s repository.\n\n\nIndividual Meetings\n\nRefer to https://github.com/jbhuang0604/awesome-tips"
-  },
-  {
-    "objectID": "lor.html",
-    "href": "lor.html",
-    "title": "Letter of Recommendations",
-    "section": "",
-    "text": "How to ask for LOR article by Gautam Kamath"
-  },
-  {
-    "objectID": "writing-papers.html",
-    "href": "writing-papers.html",
-    "title": "Writing Papers",
-    "section": "",
-    "text": "Paper writing is a key part of research. This page contains some tips and tricks for writing papers. Paper writing is a skill that you will develop over time. But, it needs deliberate practice.\n\nPaper structure and Abstract\nI gave a talk (recording here, slides here) on how to write a paper. I recommend watching it. Other materials from the talk are available here.\n\n\nLaTeXify figures\nWe’d suggest using this latexification tool to make the matplotlib figures publication-ready. It helps in the following aspects:\n\nIt helps in setting the exact size of the figure relative to the column width or page width of the paper. After using this tool, manually setting the size within the \\begin{figure} block is rarely needed.\nWe can set the font size relative to the text font size in the paper to ensure fonts are not too small or too big.\nIt converts the fonts into latex fonts so that the fonts in the figures do not look different from the main text font.\n\n\nTip: You can find page width and column width with \\the\\textwidth and \\the\\columnwidth commands, respectively.\n\n\n\nSelf-contained figures and tables (and captions)\n\n\nTables\nWe follow this excellent small guide to making nice tables by Markus Püschel.\n\n\nComments in LaTeX\nWe typically create a macro corresponding to different author initials (I use \\nb for example) and then use that to create comments in the text. This is useful for commenting on the text, or for leaving notes to yourself. For example, I might write \\nb{I'm not sure about this sentence} and then I can search for all instances of \\nb to find all of my comments.\n\\newcommand{\\nb}[1]{{\\color{red}\\small \\iftoggle{hide}{}{\\textbf{Nipun's comment:} #1}}}\n\n\nActive v/s Passive Voice\n\n\nAmerican v/s British English\nThere are a few differences in spelling between American and British English. For example, the word “colour” in British English is spelled “color” in American English. The word “optimise” in British English is spelled “optimize” in American English. There are also some differences in grammar. I recommend picking one and sticking to it. Most of our previous papers have used British English (but often this depends on the set of co-authors).\n\n\nPaper timelines\n\n\nGrammarly and other AI tools\nI recommend students use Grammarly (or a similar) tool to check their writing once they have done a complete pass of editing. I do not recommend relying a lot on ChatGPT-like tools for writing papers as they can often lead to “correct” sounding but “incorrect” sentences."
-  },
-  {
-    "objectID": "server.html",
-    "href": "server.html",
-    "title": "Server Policy",
-    "section": "",
-    "text": "How to get access\nSend an email to Mr. Raviraj Sukhadiya, keeping Prof. Nipun Batra in cc. Mention the following details in your request: i) server name; ii) purpose for access.\n\n\nDon’ts\n\nDo not use the server for personal use or anything not related to the project. This includes any classwork or homework.\nDo not share your server credentials with anyone else.\n\n\n\nFair usage\n\nSometimes we have multiple projects running on the same server. Please be considerate of other projects and do not use up all the resources.\nSometimes we may allocate specific cores or GPUs to specific projects. Please do not use cores or GPUs that are not allocated to your project."
-  },
-  {
-    "objectID": "experiences/aadesh.html",
-    "href": "experiences/aadesh.html",
-    "title": "Detours can sometimes be the best part of the journey!",
-    "section": "",
-    "text": "Udaan 2023, IIT Gandhinagar (Farewell Party)"
-  },
-  {
-    "objectID": "experiences/aadesh.html#about-me",
-    "href": "experiences/aadesh.html#about-me",
-    "title": "Detours can sometimes be the best part of the journey!",
+    "objectID": "experiences/aabhas.html#about-me",
+    "href": "experiences/aabhas.html#about-me",
+    "title": "Curiosity Opens New Doors",
     "section": "About me",
-    "text": "About me\nBefore I start sharing my journey at the lab, I would like to shout out to anyone out there looking to do some exciting work in Machine Learning under the best of mentors and who wants to unleash the best of his or her potential, this is the place - Prof. Nipun Batra’s Sustainability Lab at Indian Institute of Technology, Gandhinagar.  \nHaving graduated with a B.Tech in Electrical Engineering with minors in Computer Science and Engineering from IITGN in July 2023, I am currently pursuing my Master’s In Electrical and Computer Engineering from Carnegie Mellon University, USA. My professional and personal learnings with the Sustainability Lab have helped me pursue my dream."
+    "text": "About me\nI am Aabhas Senapati, currently a 1st-year undergraduate student at Harvey Mudd College, Claremont, California. I did my schooling in Ahmedabad, post which I took a gap year before coming to college. It was in around grade 8 that I embarked on a journey of exploration into different domains from electronics and entrepreneurship to ecosystems. This path has led me through some of the best experiences and learning in my life, and my time working with Professor Nipun Batra and Ph.D. Rishiraj Adhikary has been one of the most memorable and pivotal parts of my journey till now."
   },
   {
-    "objectID": "experiences/aadesh.html#sometimes-the-detours-are-the-best-part-of-the-journey",
-    "href": "experiences/aadesh.html#sometimes-the-detours-are-the-best-part-of-the-journey",
-    "title": "Detours can sometimes be the best part of the journey!",
-    "section": "Sometimes, the detours are the best part of the journey!",
-    "text": "Sometimes, the detours are the best part of the journey!\nIt was the third year of my undergrad, I was looking for a Foreign Academic Summer Internship in Machine Learning or Computer Vision. I was having a hard time finding an internship. It was the same time I had enrolled myself in Prof. Batra’s Machine Learning (ML) Course. Believe me, he is the best when it comes to teaching. It was the first time in my undergraduate studies when I felt like going to a class 😊. And it was his teachings that made me knock on the doors of the Sustainability Lab. I first met Prof. Batra and asked him if he could help me get an internship. I had no thoughts then on a summer internship under him, and the rest is history. I was very disappointed about not getting a foreign research internship, and even though he didn’t know me, he was all willing to help me out. I had finally found a mentor in him. From the very same semester, I started working with the Lab and then onwards there was no looking back. And now whenever I think about my BTech, this lab was a big part of it. \nI have worked on 4 different projects and some open-source contributions for one and a half years. When the entire world was going crazy behind deep neural networks, it was under him that I explored the probabilistic machine learning models. And got a whole new perspective on ML. My first-ever project was on Deep Gaussian Processes for Air Quality Inference, though this was a course project, it never felt that way. There was continuous guidance from him and his PhD Zeel Patel. Though we had limited time we were able to make significant contributions. We as undergrads (other collaborators Eshan Gujarathi, Saagar Parikh, and Sachin Yadav)  were able to publish our work as an extended abstract at ACM India, 6th Joint International Conference on Data Science and Management of Data CODS-COMAD 2023. I also had the privilege of presenting this work at the conference, and to our surprise, we were the only undergrads who had published their work. We recently got one citation, hurray my H-Index is now 1 😊."
+    "objectID": "experiences/aabhas.html#curiosity-opens-new-doors",
+    "href": "experiences/aabhas.html#curiosity-opens-new-doors",
+    "title": "Curiosity Opens New Doors",
+    "section": "Curiosity opens new doors",
+    "text": "Curiosity opens new doors\nThis story starts back in 2019, when I was a grade 10 student at Zydus School for Excellence, Ahmedabad. It had been a couple of years since I had been self-exploring electronics and IoT-related projects and participating in online forums like Element 14 community and making various projects. One of my projects was ThingFinder, which I got incubated at GUSEC as a student-startup, without even fully understanding what a startup meant. This was probably one of the pivotal points, as it opened a plethora of opportunities in front of me, being part of the startup network in Gujarat, not just limited to grants and startup network, but also support from facilities like Nasscom at IIT Gandhinagar.\nIt was one of the events by IBM at Nasscom, IITGn, that someone suggested to me given my curiosity to learn and work on projects, I should reach out to Professors at IIT Gandhinagar and potentially work with them to learn and grow further. This led me to then look up Professors at IIT Gandhinagar who worked on Projects on similar lines to my interest and cold-mailed them with long paragraphs about who I am, what I like to do, and why I wanted to work with them. Reading back the old emails it seems such childish and poorly drafted emails and LinkedIn messages, yet three out of the nineteen Professors responded. Prof. Batra was one of only three Professors who responded to the mail and connected me with his Ph.D. student Rishiraj Adhikary, and then invited me to meet at IIT Gandhinagar. On my first meeting, Prof. Batra encouraged me so much and told me to continue my projects and also said that he would be happy to have me work with him during the summer. I am so grateful for this, had he not identified my potential and given me the opportunity early on my path could look very different."
   },
   {
-    "objectID": "experiences/aadesh.html#deep-dive",
-    "href": "experiences/aadesh.html#deep-dive",
-    "title": "Detours can sometimes be the best part of the journey!",
-    "section": "Deep Dive!",
-    "text": "Deep Dive!\nBuilding on my knowledge of Gaussian Processes (GPs), I delved deeper into the nitty-gritty of its working. In my third-year summer internship, I had the opportunity to work on Batched Gaussian Processes. It was this solo research that gave me a lot of confidence in myself and though it was difficult to understand the math behind GPs, Prof. Batra and other labmates were always there to help me out. Prof. Batra is extremely reachable, you just have to ask him and he will instantly set up a meeting and will explain everything with great passion every time. I just used to wonder at times, how passionate a person can be. The thing about this lab is that you don’t feel like you are working for the first time, so welcoming is the atmosphere. I still cherish the AB6 Workspace where we as a lab used to spend the entire day, have fun, and help each other. His feedback during research meetings might feel harsh at times but yes that always motivated me to work to the best of my potential. One of the best parts of working with this Lab is that Prof. Batra knows what our future goals are and accordingly assigns projects to students considering his/her interests. I still remember that he knew I was applying for a master’s and he put me on an application-based project and pushed me to publish a paper in AAAI or NeurIPS. Until then I had never even dreamt of such a publication. \nAnd guess what I was successful in publishing my work on Non-Intrusive Load Monitoring (NILM) using Bayesian deep learning strategies like Gaussian Processes in the NeurIPS workshop on Gaussian Processes in 2023 (collaborator: Gautam Vashishtha). A lot of credit goes to Prof. Batra and PhD Zeel. It was my experience of GPs from the summer that helped me quickly get going with this tough problem. And this work of mine has to be the highlight of my BTech. This work not only molded me into a good researcher but also taught me numerous life lessons. Prof. Batra’s dedication in academia as well as in day-to-day life always motivated me to do better each day. Every time I used to go with some updates on the work done, he would always point out even the minutest details, you might feel does it even matter. But believe me, it does, this makes you perfect at what you do, not only in research! I learned how to write good papers, and how to do productive research. “Drawing conclusions or insights is the key to any research problem” - were always the words of Prof. Nipun Batra!\nThis project had lots of ups and downs but he always pushed me whenever I felt low and felt like the project was not heading anywhere. But you have to trust Prof. Batra and follow his advice especially when you feel everything is going down the spiral. Prof. Batra’s words still echo in my ears, never run behind publications, and don’t think much about the end goal. Just focus on your current work, set smaller milestones, and keep producing results and you will never know when you will have a flurry of publications. Isn’t this relevant to anything you do in life, just focus on the present! My last work with this lab was on Multi Output models for air quality inference. Every new project feels like a new challenge but when you have an excellent mentor and support in the lab the job is half done. By the beginning of this project, I started enjoying research. To touch on another aspect, I had never realized the importance of open-source contributions unless I joined this Lab. The excellent environment at the lab of always helping ML society, helped me make contributions to Dr. Kevin Murphy’s (Google Researcher) Book."
+    "objectID": "experiences/aabhas.html#now-comes-uncertainty",
+    "href": "experiences/aabhas.html#now-comes-uncertainty",
+    "title": "Curiosity Opens New Doors",
+    "section": "Now comes uncertainty",
+    "text": "Now comes uncertainty\nI was very excited about this opportunity over the summer to be able to work at IIT Gandhinagar, especially given the fact that me and my peers were all preparing for JEE at Allen, from class 9, therefore getting to work at IIT before even attempting JEE, was something I was mildly proud about. But as they say, not everything is meant to work according to how you plan, and that’s exactly what happened, in 2020 came the coronavirus pandemic which disrupted my initial plans for the summer. It was not possible to be outside the home, and consequently, summer projects were also cancelled. Honestly at that point summer projects weren’t the priority either. But I still had a desire to work at IIT Gandhinagar, especially given that this was the only full-length summer break I would get before JEE I presumed. With the pandemic situation intensifying, I kind of forgot about working on a research project. But sometime during the summer unexpectedly, I got a message from Rishiraj bhaiya, that I would still be willing to work on a project remotely. While this was kind of unexpected given I had been dreaming to be at IIT Gandhinagar and work on a project in my fantasized view of a lab, I still was very excited to work on a project with them. This is how I ended up contributing my tiny bit of effort the Project Naqaab, where I designed a very simple led response to the ambient PM 2.5 levels, and retrofitted this setup onto a mask.\nAs I worked on this Project, my only expected outcome was experience, but to my surprise despite my almost insignificant contribution to the larger project, Prof. Batra, and PhD. Rishiraj included me as a co-author for the poster at UbiComp. Back then, I probably didn’t realize how generous it was of them to have me there and shows how people at Sustainability Lab value your contributions. In a world where people don’t give credit for significant contributions to academic research, as I look back to it, as a high-school intern, with minimal contributions got more credit for my work than I deserved.\nThis was my first experience working with the Sustainability Lab and Prof. Batra. After this, I also represented the project at the IRIS National Fair, but more or less this was like a good addition to my resume. Yet my desire to work at IIT in a proper research setting still remained unfulfilled."
   },
   {
-    "objectID": "experiences/aadesh.html#my-masters-applications",
-    "href": "experiences/aadesh.html#my-masters-applications",
-    "title": "Detours can sometimes be the best part of the journey!",
-    "section": "My Master’s applications",
-    "text": "My Master’s applications\nAny amount of words is not sufficient for the impact Prof. Batra and this lab had on my master’s application. Whether it be university selection, the application process, SoP, CV, or anything related he will always be there. I was just amazed by the way Prof. Batra reviewed my SOP and Resume word by word not only once but several times. I used to always get blunt feedback but that helped me prepare a strong application (studying today at one of the finest!). He always cares for his students, and even used to tell us to sleep well, focus on health, and then prioritize work. I have written more about the lessons I learned working with him, make sure you read that, if the above didn’t motivate you enough to join his lab."
+    "objectID": "experiences/aabhas.html#silver-lining-in-the-pandemic-and-some-rejections",
+    "href": "experiences/aabhas.html#silver-lining-in-the-pandemic-and-some-rejections",
+    "title": "Curiosity Opens New Doors",
+    "section": "Silver Lining in the Pandemic, and some Rejections",
+    "text": "Silver Lining in the Pandemic, and some Rejections\nWhile the pandemic didn’t just end in 2020, and as we all went through it and got in the new normal of the pandemic, it was not all bad, it also opened a door to a range of new possibilities, especially through online and international communities. Involving in these, I was motivated to pursue my extracurriculars more actively, and led me to apply to colleges in US. Prof. Batra actively supported me with the process and Letters of Recommendation, yet I met with rejections from all colleges I applied to. While this felt like a setback initially, it was an excuse to pursue my long-desired gap year. And this is where my journey circles back to Sustainability Lab, as I reached out to Prof. Batra if I could work with him, in my gap year once I finish my board exams."
   },
   {
-    "objectID": "experiences/aadesh.html#memories-and-friends-i-will-cherish-for-life.",
-    "href": "experiences/aadesh.html#memories-and-friends-i-will-cherish-for-life.",
-    "title": "Detours can sometimes be the best part of the journey!",
-    "section": "Memories and friends I will cherish for life.",
-    "text": "Memories and friends I will cherish for life.\nThere used to be Lab dinners and there you will see the best of Prof. Batra :), I remember once he showed his mimicry skills, it was hilarious! On Lab outings, his “Delhi ka ladka” comes out and he is extremely jovial to talk with. The lab celebrations on paper publications or any achievements, Prof. Batra personally greeted us the very best during our farewell dinner and the Akshardham dinner visits will always be remembered! But the best part which makes me emotional every time I read is the personalized message in a book he gave each of his graduating students. And I have even carried that to the USA, that just makes me believe every time I feel low. \nFinally, I will always miss having fun and working with Vibhuti Bansal, Eshan Gujarathi, Gautam Vashishtha, Saagar Parikh, Hitarth Gandhi, Progyan Das, Hetvi Shastri, Palak Purohit, Harsh Patel, Shivam Sahini, Sachin Yadav, Karm Patel, Hrushti Naik, Shreyashi Singh, and PhD Zeel Patel. I always miss lab meetings and learning from him. Thank you, Prof. Batra, Zeel, and other members of the lab for the wonderful memories and learnings. My experience at this lab has prepared me for my future goals! And I am sure if anytime I feel like I need some advice, Prof. Batra will just be a call away!\n\nAadesh Desai\n\nFeel Free to contact me anytime."
+    "objectID": "experiences/aabhas.html#a-typical-day-doing-real-research",
+    "href": "experiences/aabhas.html#a-typical-day-doing-real-research",
+    "title": "Curiosity Opens New Doors",
+    "section": "A typical day doing Real Research",
+    "text": "A typical day doing Real Research\nThis is after three years of first time interacting with Prof. Batra, as my friends were already planning to go to colleges, I was starting my gap year, with research working at Sustainability Lab IIT Gandhinagar. I was very excited as this was my first time staying by myself in a academic environment, and working on a full-fledged research environment. And definitely the experience, was very different and beyond my expectations. A typical day during that time was me waking up at around 7:30 am, finishing my chores and getting my breakfast, then going to lab around 9 am, and working on my targets for the week up till lunch, meeting new people at lunch and having sumptuous food, and then back at work up till dusk, then visiting other places around and playing foosball and air-hockey, having dinner, then playing volleyball, and back to conversations up till late night like 1 am and then going to sleep. And on a weekly basis preparing up a presentation with updates on the targets and progress on the Project.\nWhile this might sound very simple, unlike my expectation of the academic environment to be a monotonous one, it was much more spontaneous and fun especially because of such supportive around like Prof. Batra and PhD. Rishiraj, who always kept the environment an engaging one beyond just the work. I was not supervised on a daily basis if I came at a set time or not, what time did I leave, but rather was given a sense of autonomy where someday I could take a day off, and someday I would work all night. I never felt as if I was burnt out, and always was checked in by both of them if I was enjoying what I was doing, if I was eating food properly or not and so on. Spending 5 weeks, everyone around campus became like a family, not just at Sustainability Lab, but even the housekeeping staff, or people from other labs at IITGn. These memories and friendships are which I continue to cherish till day."
   },
   {
-    "objectID": "experiences/souvik.html",
-    "href": "experiences/souvik.html",
-    "title": "From Thesis to Life Lessons: My learning curve at Sustainability Lab",
+    "objectID": "experiences/aabhas.html#and-journey-goes-on",
+    "href": "experiences/aabhas.html#and-journey-goes-on",
+    "title": "Curiosity Opens New Doors",
+    "section": "And Journey goes on",
+    "text": "And Journey goes on\nWhile as my time of 5 weeks ended at Sustainability Lab, ended and I went on to embark to Cape Town for RISE summit, but my time with Sustainability Lab at IIT Gandhinagar has stayed like a connection forever. As I applied to colleges again in my Gap year, Prof. Batra assisted me with his full support, and owing to his support I made it into Harvey Mudd College, in Claremont, California. Before leaving to US, I went back to meet my friends and also Prof. Batra, and he also gifted me a book (Make Your Bed) with a personalized and touching message. But as I am now in College, the experiences I had back then, still continue to drive me and help in my journey here."
+  },
+  {
+    "objectID": "experiences/aabhas.html#a-deep-dive-into-the-projects",
+    "href": "experiences/aabhas.html#a-deep-dive-into-the-projects",
+    "title": "Curiosity Opens New Doors",
+    "section": "A deep dive into the projects:",
+    "text": "A deep dive into the projects:\nNaqaab: Given the ubiquity of masks during the pandemic and the high air pollution in large parts of the world, we used masks for health sensing and persuasion. We used masks to monitor health-related parameters such as temperature and lung activity. In our Project the smart mask, Naqaab, measured forced vital capacity (FVC) of the lung using a retrofitted microphone, aiding in early diagnosis of upper-lung disorders. I myself focussed on implementing the feature in Naqaab that measures pollution exposure and indicates via different LED colours for eco feedback based on local pollution levels. Naqaab Presentation\nCO2 Monitor and SpiroMask: This Project was an extension of the Project Naqaabm where it focussed on using microphone to capture casual breathing patterns and calculate breathing rates along with forced breathing parameters. This project not only relied on audio based input to calculate the same, but also carbon dioxide sensors to get the data. This therefore also required as an additional component of measuring the Ambient carbon dioxide levels to offset the measurements, and also testing other hypotheses relating to carbon dioxide levels in public space. I specifically during my 5 weeks focused on developing this Ambient and portable Carbon Dioxide level data logger. SpiroMask Presentation CO2 data logger"
+  },
+  {
+    "objectID": "experiences/aabhas.html#reflections",
+    "href": "experiences/aabhas.html#reflections",
+    "title": "Curiosity Opens New Doors",
+    "section": "Reflections:",
+    "text": "Reflections:\nThe opportunity to work at an Institution like IIT Gandhinagar under the Guidance of Prof. Batra, offered numerous learnings both pertaining to research and just in general and wanted to share those below.\n\nThe first and foremost is definitely curiosity and pursuing moonshot ideas, was it not those I wouldn’t have got this opportunity in the first place. And more than approaching such amazing and supportive spaces like Sustainability, which are open to anyone who is enthusiastic to learn.\nSecondly is a rigorous and determined approach, definitely something I had to work a lot on especially coming from a background of exploration and not academic rigour I lacked this ability. But working on the research and with the advice that I got from both Prof. Batra, and PhD. Rishiraj, both always emphasized on the importance of pursuing perfection in the work we did, and not just making things work by chance.\nThen the next important lesson was documentation of one’s work, I heavily underrated its importance until I faced it the hard way, as working on projects, not only not having documentation hurts ones own progress, but also hampers other work. Most of the bottleneck in working on projects doing research I spent on figuring out how to navigate some errors which were not documented by other people. This underscores how important it is to document the work not just one’s milestones but also setbacks and errors, which is crucial for anyone to replicate the project in future.\nIn terms of a college/academic life, I also learnt the important role routine and discipline played, from eating food at right time, to doing your laundry, everything was important for a balanced and healthy time during the experience, and was a crucial skill that helps me till now.\nWhile it may seem contrary to the previous one, having spontaneity and engaging with new people around be it lab-mates or people from other labs, fostered some of the best conversations and friendship during my time. Be it a a random table on lunch, or someone at maker-space, or walking through the hallway, its these interactions that stay with us forever. This spontaneity is what enabled developing a human connection with people beyond professional or academic environment, not just as a professor or guide, but as a mentor, friend and well-wisher for life, who are always going to support and root for you in your journey.\n\nI am really grateful that I got such a transformative and life-changing opportunity to work with Sustainibility Lab, while it is definitely god’s grace and fate that I could get this experience, it is definitely to be highlighted that it wouldn’t be possible without supportive mentors like Prof. Batra and Rishiraj bhaiya, who gave space, opportunity and care to me in my journey. Definitely if you are reading this and considering to work at Sustainability lab, I can attest to the fact that the very least you would get is a bunch people who are there to support you in your journey in any way they can, it’s a space to not just grow academically or doing research but also a space to make friends and find lifelong mentors."
+  },
+  {
+    "objectID": "experiences/hetvi.html",
+    "href": "experiences/hetvi.html",
+    "title": "The Growth Mindset: My Journey at the Sustainability Lab",
     "section": "",
-    "text": "About me\nI am Souvik Roy, an alumnus of IIT Gandhinagar, where I completed my MTech in Computer Science and Engineering in 2020. Currently, I am a Senior Consultant at eClerx, where I specialise in Data Analytics and Engineering for a global investment bank.\nI had the privilege to work with Prof. Nipun as one of his first M.Tech students. This post narrates my enriching experience under his mentorship.\n Picture 1: (Dec 2022) returned to college for a late convocation.\n\n\nResearch Endeavours and Milestones\nThe M.Tech program consisted of 50% coursework and 50% research. My work with Prof. Nipun started in January 2019, broadly focusing on air quality estimation.\n• Experimention with portable air quality sensors (Jan 2019 - Apr 2019)\nI measured PM2.5 exposure among construction workers and calibrated five sensors to plot and analyse the data.\n Picture 2: (Feb 2019) calibrating Atmos air quality sensors at my workspace\n\n\nDeveloping a Live Air quality dashboard (May 2019 - Jul 2019)\nI deployed 5 air quality sensors across the campus and created a live dashboard using JavaScript, Python (Flask), and Leaflet.js. This project was crucial in identifying high pollution activities and their timings.\n\nPicture 3: (May 2019) Installing an air quality sensor at IIT Gn\n\nPicture 4: (Jun 2019) Live air quality measurements across 5 locations on campus\nI got introduced to interdisciplinary research - the goal was to calculate the exposure of PM2.5 in our college bus route. I worked in Tinkerer’s lab with a mechanical engineer to design a 3D printed mount using MDF, which was mounted in the moving bus:\n\n• Estimating ground air quality using satellite data (Aug 2019 - Dec 2019)\nAir quality sensors were expensive and provided less spatial coverage, we used satellite-derived aerosol optical depth (AOD) and meteorological fields to estimate surface-level PM2.5 using a regression model.\nProf. Nipun encouraged me to write a short 1-page paper and submit it to CoDS-COMAD. I got my first short paper published [link] at ISB Hyderabad in January 2020. Fun fact: the presentation coincided with my birthday :)\n\nPicture 5: (Jan 2020) Presenting at CoDS-COMAD conference in ISB Hyderabad\n• Data Curation and Machine Learning (Jan 2020 - Jul 2020)\nGathered PM, AOD, and meteorological data for India through various sources and collated them in time and space. Used Ridge regression, random forest, time-series cross-validation for our analysis like seasonal variation in pollution. This study helped us in identifying the challenges for data curation and collocation for India.\nIf you are interested in learning more about the research, here are some links - [video][slides][pdf]\n\n\nBeyond Research\nThe learnings from Prof. Nipun that still resonate with me:\n\nDiscipline &gt; motivation\nPrioritise your health\nValuing the impact of work over accolades and recognition\n\nDuring my last semester in college, there was an abrupt change in our work due to lockdown and COVID. Prof. Nipun was supportive and understanding, guided me with my thesis and empathised during hard situations at home.\nProf. Nipun didn’t hand me solutions that cultivated a mindset of problem solving. This mindset helped me deal with different situations in my professional life too. I’d be forever grateful that I could have him as my thesis supervisor in college, and a lifelong mentor in life.\n\nPicture 6: A view from the terrace of my workspace, overlooking the Sabarmati river, was a constant reminder of how beautiful the campus is, and how privileged I was to be working there."
+    "text": "I am Hetvi Shastri. I graduated from IIT Gandhinagar with a BTech in Electrical Engineering and a minor in Computer Science in 2022. I am pursuing a Ph.D. in Computer Science at the University of Massachusetts, Amherst, advised by Prof. Prashant Shenoy.\nVisited lab in Jan 2024 with Palak and Harsh"
+  },
+  {
+    "objectID": "experiences/hetvi.html#about-me",
+    "href": "experiences/hetvi.html#about-me",
+    "title": "The Growth Mindset: My Journey at the Sustainability Lab",
+    "section": "About Me",
+    "text": "About Me\nI worked for around two years at the Sustainability lab. My first work was in the summer of 2021, where I worked on Neural network approaches for non-intrusive load monitoring (NILM). This work was accepted at ACM Buildsys 2021, and I presented virtually at the conference. During my final year, I worked on quantifying uncertainty in NILM, collaborating and mentoring summer interns (Vibhuti, Rohit, and Haikoo). This work was accepted at ACM Buildsys 2022, and I presented it at Boston. Besides this, I was a TA for the Machine Learning course (ES654) taught by Prof. Nipun Batra. I have taken two courses, Operating System and Machine Learning, with Prof. Nipun Batra. Having collaborated with Prof. Nipun Batra for almost three years, Sustainability Lab feels like a second home. So I have summed up a few learnings from my time at the lab which are even helping me during my graduate studies."
+  },
+  {
+    "objectID": "experiences/hetvi.html#try-to-find-opportunities-inside-your-terrain-first-before-searching-outside.",
+    "href": "experiences/hetvi.html#try-to-find-opportunities-inside-your-terrain-first-before-searching-outside.",
+    "title": "The Growth Mindset: My Journey at the Sustainability Lab",
+    "section": "Try to find opportunities inside your terrain first before searching outside.",
+    "text": "Try to find opportunities inside your terrain first before searching outside.\nI used to believe that to get a good admission from a reputed university in the US, it is necessary to do a foreign research internship. I got a low rank in the entire electrical batch, which made it impossible for me to get a research internship through college. Still, I was so firm that I used to mail professors and Ph.D. students in the US and try to find some opportunity. Through this process, I got one reply from a Ph.D. student at CMU explaining to me that I should focus on doing good work rather than finding an internship at a good place. After reading this, I joined the Sustainability lab for my summer internship with Prof. Nipun Batra. I first encountered Prof. Nipun Batra during an Operating System course in the fall of 2021. After this, I took a machine learning course in the spring of 2021. His teaching style is very intuitive, which sparked my interest in machine learning. My summer internship work got me a paper at an international conference, and due to this, I received my Ph.D. admission at UMass Amherst. Through this experience, I learned that rather than running behind the tags, if you work hard at what you like, it pays off well."
+  },
+  {
+    "objectID": "experiences/hetvi.html#you-get-ample-opportunities-if-you-want-to-work.",
+    "href": "experiences/hetvi.html#you-get-ample-opportunities-if-you-want-to-work.",
+    "title": "The Growth Mindset: My Journey at the Sustainability Lab",
+    "section": "You get ample opportunities if you want to work.",
+    "text": "You get ample opportunities if you want to work.\nMy entire summer 2021 internship was online. This was the first time an online internship was organized, and initially, we faced a lot of difficulties, but things got better with the process as we kept on discussing ideas. During my internship, I was never treated as a junior. Even as an Electrical Engineering student, Prof. Nipun Batra consistently showed confidence in me, assigning me an independent project. My ideas were valued equally, and I was treated on par with Ph.D. students. He involved me in industry meetings, providing insights beyond academia. In my last year, Prof. Batra gave me the opportunity to be a Teaching Assistant and my first academic talk for the Machine Learning course. This experience significantly boosted my confidence. I even got an opportunity to guide interns in Summer 2022. With a collective effort, we submitted a full paper at Buildsys 2022, marking a successful collaboration. Most of my academic “first times”, like my first paper, first talk, and first research talk, have happened at the lab only because Nipun Sir has always shown great confidence in me, which motivated me to work. You will always get an opportunity at the Sustainability lab if you try to put some effort into learning."
+  },
+  {
+    "objectID": "experiences/hetvi.html#small-things-will-impact-a-lot-in-the-long-term.",
+    "href": "experiences/hetvi.html#small-things-will-impact-a-lot-in-the-long-term.",
+    "title": "The Growth Mindset: My Journey at the Sustainability Lab",
+    "section": "Small things will impact a lot in the long term.",
+    "text": "Small things will impact a lot in the long term.\nDuring the paper submission process, it is pretty easy and fast to improve the writing without actually pointing out the mistakes in the student’s writing, but at the lab, I always got advice on what to improve and how it needed to be done. During my presentation at international conferences, Prof Nipun Batra helped me create and improve my presentation skills. I presented and recorded my presentation plenty of times, and he has patiently tried to improve my minute mistakes. We ultimately got positive reviews at the conference. During this experience, I learned that it would first seem a lot to do, but if you go with the flow, even small things impact on a large scale."
+  },
+  {
+    "objectID": "experiences/hetvi.html#collaborative-learning-always-helps.",
+    "href": "experiences/hetvi.html#collaborative-learning-always-helps.",
+    "title": "The Growth Mindset: My Journey at the Sustainability Lab",
+    "section": "Collaborative learning always helps.",
+    "text": "Collaborative learning always helps.\nDuring my internship and project courses, we had lab meetings. Lab meetings used to be great, where people working on different projects learn about each other’s work. Through this process, even without actually working on the projects, you will tend to get insights and challenges about the project, which can be helpful to you in the future. During the lab meetings, everyone was involved and tried to provide ideas or feedback for someone else’s work. Knowing so many projects and getting a broad picture of the ongoing research areas was great."
+  },
+  {
+    "objectID": "experiences/hetvi.html#rather-than-results-try-to-create-meaningful-relations.",
+    "href": "experiences/hetvi.html#rather-than-results-try-to-create-meaningful-relations.",
+    "title": "The Growth Mindset: My Journey at the Sustainability Lab",
+    "section": "Rather than results, try to create meaningful relations.",
+    "text": "Rather than results, try to create meaningful relations.\nMy paper and admissions were small wins compared to what I have gained from my entire journey at the Sustainability Lab. By working with Prof. Nipun Batra for almost three years, rather than being a professional mentor, he has been my constant guide in all terms, from my health to my Ph.D. failures. Nipun Sir never fails to message me during my hard times in the US. I am grateful to have him as my lifelong mentor. Besides Prof. Nipun Batra, I have been fortunate enough to work and learn from some fantastic people in the lab: Zeel, Rishiraj, Dhruvi, Palak, Harsh, Shivam, Chris, Vibhuti, Haikoo, Rohit, Aadesh and Karm. I can always rely on them for guidance and support."
   },
   {
     "objectID": "experiences/karm.html",
@@ -462,167 +518,6 @@
     "text": "Final notes\nThis entire journey has been incredible for me; I truly enjoyed it, and it has significantly shaped my career. None of this would have been possible without Prof. Nipun’s support. I’m fortunate to have him as a lifetime advisor. :)"
   },
   {
-    "objectID": "experiences/rithwik.html",
-    "href": "experiences/rithwik.html",
-    "title": "Not just research, lifelong mentorship: My journey at Sustainability Lab",
-    "section": "",
-    "text": "I am Kukunuri Rithwik. I passed out from IIT Gandhinagar with a BTech in Computer Science in 2020. I am currently working as an ML Scientist in the Search team at Nykaa. Prior to that, I worked as a Data Scientist at Reliance Jio in the IoT-ML team. In this post, I’ll talk about my experiences at Sustainability Lab.\nDuring the start of my fifth semester Computer Science, I began a journey to explore machine learning. The interest sparked in me during the preceding summer, where I had the opportunity to explore ML.\n\n\n\nReceiving my degree from Director, IITGn"
-  },
-  {
-    "objectID": "experiences/rithwik.html#about-me",
-    "href": "experiences/rithwik.html#about-me",
-    "title": "Not just research, lifelong mentorship: My journey at Sustainability Lab",
-    "section": "",
-    "text": "I am Kukunuri Rithwik. I passed out from IIT Gandhinagar with a BTech in Computer Science in 2020. I am currently working as an ML Scientist in the Search team at Nykaa. Prior to that, I worked as a Data Scientist at Reliance Jio in the IoT-ML team. In this post, I’ll talk about my experiences at Sustainability Lab.\nDuring the start of my fifth semester Computer Science, I began a journey to explore machine learning. The interest sparked in me during the preceding summer, where I had the opportunity to explore ML.\n\n\n\nReceiving my degree from Director, IITGn"
-  },
-  {
-    "objectID": "experiences/rithwik.html#embarking-on-the-ml-odyssey",
-    "href": "experiences/rithwik.html#embarking-on-the-ml-odyssey",
-    "title": "Not just research, lifelong mentorship: My journey at Sustainability Lab",
-    "section": "Embarking on the ML Odyssey",
-    "text": "Embarking on the ML Odyssey\nProf. Nipun just joined the campus. Seeing that his expertise was also at ML, I eagerly enrolled in a project course with him. Little did I anticipate that this decision would lead me to discover not just a project but a lifelong mentor and advisor.\nIn my first project under the guidance of Prof. Nipun, I decided to work on enhancing the resolution of time-series—a venture that not only enriched my technical skills but also laid the groundwork for my future endeavors.\nCollaborating with Prof. Hongning Wang from the University of Virginia was an add-on bonus. By working under the combined guidance of Prof. Nipun and Prof. Hongning, I explored a lot of cutting-edge methodologies that would shape my subsequent research initiatives."
-  },
-  {
-    "objectID": "experiences/rithwik.html#peer-collaboration-and-knowledge-sharing",
-    "href": "experiences/rithwik.html#peer-collaboration-and-knowledge-sharing",
-    "title": "Not just research, lifelong mentorship: My journey at Sustainability Lab",
-    "section": "Peer Collaboration and Knowledge Sharing",
-    "text": "Peer Collaboration and Knowledge Sharing\nThe weekly paper discussions within our peer group provided a platform for knowledge exchange. Sharing insights and updates on our respective research fostered a collaborative atmosphere, where each of us gained exposure to diverse machine learning innovations applied across various domains. This not only broadened my understanding but also facilitated the cross-pollination of ideas, because I often found myself in situations where I would start using methods that my peers have been using for solving an issue that they encountered."
-  },
-  {
-    "objectID": "experiences/rithwik.html#nilmtk-a-summer-endeavor",
-    "href": "experiences/rithwik.html#nilmtk-a-summer-endeavor",
-    "title": "Not just research, lifelong mentorship: My journey at Sustainability Lab",
-    "section": "NILMTK: A summer endeavor",
-    "text": "NILMTK: A summer endeavor\nDuring the summer, I had the opportunity to work on NILMTK, where my primary objective was to incorporate the latest state-of-the-art disaggregation algorithms into the toolkit. Over the next two months, my fellow summer interns and I successfully engineered a packaged solution. Soon, we also took the decision to publish a paper for the BuildSys conference regarding the same. It was my first experience with technical writing, I faced many challenges with the same. My initial draft was nowhere close to where it should be, it had incomplete explanations and other writing nuances. Prof. Nipun gave me pinpointed feedback and helped me get better at writing papers.\nAmidst the journey, life threw a curveball in the form of a severe stomach infection just two weeks prior to the paper submission deadline. Prof. Nipun not only empathized with my situation but also extended the gesture of taking me to a hospital in Ahmedabad. It led to realization that I had a mentor willing to go to great lengths to support me.\nOur efforts came to fruition, as the paper was accepted in the conference. The elation I felt upon acceptance was profound. This entire experience improved my technical abilities significantly."
-  },
-  {
-    "objectID": "experiences/rithwik.html#transformation-as-a-data-scientist",
-    "href": "experiences/rithwik.html#transformation-as-a-data-scientist",
-    "title": "Not just research, lifelong mentorship: My journey at Sustainability Lab",
-    "section": "Transformation as a Data Scientist",
-    "text": "Transformation as a Data Scientist\nDuring my final year at IIT Gandhinagar, I approached Prof. Nipun seeking guidance on transitioning to a full-time career in data science. Despite possessing solid knowledge of machine learning, my challenge was securing interview opportunities rather than a skill deficiency. With Prof. Nipun’s support, I gained access to interviews at esteemed organizations like Bidgely, Wadhwani AI, and Reliance Jio.\nI landed my first job as a data scientist at Reliance Jio, thanks to Prof. Nipun. He’s willing to leverage both his academic and professional networks, going above and beyond to ensure our success."
-  },
-  {
-    "objectID": "experiences/rithwik.html#edge-methodologies-in-nilm-a-swift-research-venture",
-    "href": "experiences/rithwik.html#edge-methodologies-in-nilm-a-swift-research-venture",
-    "title": "Not just research, lifelong mentorship: My journey at Sustainability Lab",
-    "section": "Edge Methodologies in NILM: A Swift Research Venture",
-    "text": "Edge Methodologies in NILM: A Swift Research Venture\nAmidst the abrupt conclusion of my time at IIT Gandhinagar due to the pandemic, I embarked on a remarkable research journey during my final semester. Prof. Nipun presented a unique opportunity – explore edge computing methodologies in the context of NILM, and submit our findings to Buildsys.\nWith the deadline just six weeks away, time was of essence. Within two days, we outlined methodologies and devised an action plan. Collaborating with fellow ML enthusiasts from IITGN, we worked collectively on the submission . My honed technical skills since the past two years facilitated rapid implementation of chosen methodologies. Similarly, my technical writing skills also have improved with the previous experiences. Soon, we were able to submit an excellent initial draft. Two months later, we got the news that our submission got accepted. I felt a sense of accomplishment as we delivered quality work within the tight six-week time frame."
-  },
-  {
-    "objectID": "experiences/rithwik.html#conclusion",
-    "href": "experiences/rithwik.html#conclusion",
-    "title": "Not just research, lifelong mentorship: My journey at Sustainability Lab",
-    "section": "Conclusion",
-    "text": "Conclusion\nI’ll end my note with an ML analogy Before joining the sustainability lab, my passion resembled an oscillating loss function—scattered and lacking direction. However, working with the lab acted as a compass, defining a clear long-term objective akin to choosing a performance metric to optimize for. Over the course of two years, I applied gradient descent in my efforts, taking numerous small steps toward the goal. The presence of an exceptional mentor, serving as an optimizer, ensured I stayed on the right path throughout the journey.\nThe sustainability lab has been instrumental in shaping who I am today. I’m forever thankful for the valuable experiences and insights gained under the guidance of Prof. Nipun."
-  },
-  {
-    "objectID": "members.html",
-    "href": "members.html",
-    "title": "Members",
-    "section": "",
-    "text": "Faculty\n\n\n\n   Nipun Batra\n\n\n\n\n\nPhD\n\n\n\n   Rishiraj Adhikary (July 2019 - present)\n\n\n   Zeel Patel (Jan 2020 - present)\n\n\n   Rishabh Mondal  (June 2023 - present)\n\n\n   Khush Shah  (July 2023 - present)\n\n\n\n\n\n\nMTech\n\n\n\n   Suraj Jaiswal (July 2022 - present)\n\n\n Ayush Srivastava (July 2022 - present)\n\n\n Poornima Bhatia (July 2023 - present)\n\n\n Shataxi Dubey (July 2023 - present)\n\n\n Prince Kumar (July 2023 - present)\n\n\n\n\n\nBTech\n\n\n\n\nVannsh Jani (BTech 2026)\n\n\n\n\n\n\nAlumni\n\nBTech\n\nDhruv Patel (BTech 2024): MS at TAMU\nHaikoo Khandor (BTech 2024): MS at TAMU\nProgyan Das (BTech 2024): Applied Scientist at Microsoft\nMadhav Kanda (BTech 2024): MS at UIUC\nAditi Agarwal (BTech 2024): Predoc at Google Deepmind\nUtkarsh Mittal (BTech 2024): MS at NYU Tandon\nAadesh Desai (BTech 2023): MS at CMU\nEshan Gujarathi (BTech 2023): Predoc at IIT Madras\nGautam Vasistha (BTech 2023): Data Scientist as Skan.AI\nHitarth Gandhi (BTech 2023): MS at UC Irvine\nSaagar Parikh (BTech 2023): MS at CMU\nXhitij Choudhary (BTech 2023): Data Scientist at Skan.AI\nChris Francis (BTech 2022): MS at UCSD\nDhruvi Lodhavia (BTech 2022): MS at UCSD\nHetvi Shastri (BTech 2022): PhD at UMass Amherst\nHarsh Patel (BTech 2022): MS at UCSD\nPalak Purohit (BTech 2022): MS at Caltech\nShivam Sahni (BTech 2022): MS at UCSD\nApoorv Agnihotri (BTech 2020): First job at Wadhwani AI -&gt; Data Scientist at Rephrase.ai\nDeepak Narayanan (BTech 2020): First job at Microsoft Research India -&gt; MS at ETH Zurich\nKukunuri Rithwik (BTech 2020): First job at Jio -&gt; Data Scientist at Nykaa\nSoham Pachpande (BTech 2020): First job at HSBC-&gt; MS at UCSD -&gt; SWE at Salesforce\n\n\n\nMTech\n\nAnkita Jain (MTech 2022): First job at Oracle\nKaran Kumar (MTech 2020): First job at Trading Technologies\nSouvik Roy (MTech 2020): First job at eClerx\n\n\n\nResearch Assistant\n\nKaushal Modi: Now a data scientist at InfiBeam\nPrerna Khanna: Now a PhD student at Stony Brook\nTanmay Srivastava: Now a PhD student at Stony Brook\nRohit Patil: First job at Publicis Sapient\n\n\n\n\nOutside IITGn Interns\n\nVibhuti Bansal (Summer 2022): Now at CRED\nRohit Khoiwal (Summer 2022)\nAnand Hegde (Summer 2022)\nShobhit Belwal (Summer 2022)\nAryan Varshney (Summer 2022)\nAmi Ashish Buch (Summer 2024)\nSajay Raj (Summer 2024)\nMuhammad Zaid Hassan (Summer 2024)\nDevodita Chakravarty (Summer 2024)\nOmisha Guha (Summer 2024)"
-  },
-  {
-    "objectID": "papers/index.html",
-    "href": "papers/index.html",
-    "title": "Publications",
-    "section": "",
-    "text": "JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising\n\n\nRishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel\n\n\nACM Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) 2024; and ACM Ubicomp 2024\n\n      \n\n\n\n\nRishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel. In ACM Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) 2024; and ACM Ubicomp 2024 [PDF] [News coverage] [YouTube]"
-  },
-  {
-    "objectID": "papers/index.html#section",
-    "href": "papers/index.html#section",
-    "title": "Publications",
-    "section": "",
-    "text": "JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising\n\n\nRishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel\n\n\nACM Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) 2024; and ACM Ubicomp 2024\n\n      \n\n\n\n\nRishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel. In ACM Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) 2024; and ACM Ubicomp 2024 [PDF] [News coverage] [YouTube]"
-  },
-  {
-    "objectID": "papers/index.html#section-1",
-    "href": "papers/index.html#section-1",
-    "title": "Publications",
-    "section": "2023",
-    "text": "2023\n\n“Fine-Grained Spatio-Temporal Particulate Matter Dataset From Delhi For ML based Modeling”\nSachin Chauhan,Zeel Patel,Sayan Ranu,Rijurekha Sen,and Nipun Batra. In NeurIPS, 2023\n\n\n“SpiroMask: measuring Lung function using consumer-grade masks”\nRishiraj Adhikary, Dhruvi Lodhavia, Chris Francis, Rohit Patil, Tanmay Srivastava, Prerna Khanna, Nipun Batra, Joseph Breda, Jacob Peplinski, Shwetak Patel. In ACM Transactions on Health"
-  },
-  {
-    "objectID": "papers/index.html#section-2",
-    "href": "papers/index.html#section-2",
-    "title": "Publications",
-    "section": "2022",
-    "text": "2022\n\n“I do not know”: Quantifying Uncertainty in Neural Network Based Approaches for Non-Intrusive Load Monitoring\nVibhuti Bansal, Rohit Khoiwal, Hetvi Shastri, Haikoo Khandor, Nipun Batra. In ACM Buildsys 2022 [PDF][Github]\n\n\nSamachar: Print News Media on Air Pollution in India\nKarm Patel, Rishiraj Adhikary, Zeel B Patel, Nipun Batra, Sarath Guttikunda. In ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (COMPASS) (COMPASS ’22) [PDF][Github]\n\n\nAccurate and Scalable Gaussian Processes for Fine-grained Air Quality Inference\nZeel B Patel, Palak Purohit, Harsh Patel, Shivam Sahni, and Nipun Batra. In: AAAI 2022, Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI-22).[PDF][Github]\n\n\nVastr-GAN: Versatile Apparel Synthesised from Text using a Robust Generative Adversarial Network\nShastri, Hetvi; Lodhavia, Dhruvi; Purohit, Palak; Kaoshik, Ronak; Batra, Nipun. In CODS COMAD 2022."
-  },
-  {
-    "objectID": "papers/index.html#section-3",
-    "href": "papers/index.html#section-3",
-    "title": "Publications",
-    "section": "2021",
-    "text": "2021\n\nVartalaap: what drives #airquality discussions: politics, pollution or pseudo-science?\nRishiraj Adhikary, Zeel B. Patel, Tanmay Srivastava, Nipun Batra, Mayank Singh, Udit Bhatia, and Sarath Guttikunda. Proceedings of the ACM on Human-Computer Interaction 5, no. CSCW1 (2021)[PDF]\n\n\nNeural network approaches and dataset parser for NILM toolkit\nShastri, Hetvi; Batra, Nipun. In Proceedings of the 8th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (Buildsys)[PDF]\n\n\nExploring Hidden Markov Models\nKukunuri Rithwik, Rishiraj Adhikary, Mahika Om Jaguste, Nipun Batra and Ashish Tendulkar The 4th Workshop on Visualization for AI Explainability (VISxAI’21) [Link]"
-  },
-  {
-    "objectID": "papers/index.html#section-4",
-    "href": "papers/index.html#section-4",
-    "title": "Publications",
-    "section": "2020",
-    "text": "2020\n\nActive Learning: A Visual Tour\nZeel B Patel, Nipun Batra. In VisXAI workshop at IEEE VIS. [Link]\n\n\nEdgeNILM: towards NILM on edge devices\nKukunuri, Rithwik, Anup Aglawe, Jainish Chauhan, Kratika Bhagtani, Rohan Patil, Sumit Walia, and Nipun Batra. In Proceedings of the 7th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation, pp. 90-99. 2020.[PDF]\n\n\nExploring Bayesian Optimization.\nApoorv Agnihotri, Nipun Batra In: Distill Journal 2020 [link]\n\n\nPlantDoc: A Dataset for Visual Plant Disease Detection.\nDavinder Singh, Naman Jain, Pranjali Jain, Pratik Kayal, Sudhakar Kumawat, Nipun Batra In: ACM India Joint International Conference on Data Science & Management of Data (CODS-COMAD 2020)[PDF]"
-  },
-  {
-    "objectID": "papers/index.html#section-5",
-    "href": "papers/index.html#section-5",
-    "title": "Publications",
-    "section": "2019",
-    "text": "2019\n\nActive Collaborative Sensing for Energy Breakdown\nYiling Jia, Nipun Batra, Hongning Wang, Kamin Whitehouse.\nIn: The 28th ACM International Conference on Information and Knowledge Management (CIKM’2019)[PDF]\n\n\nDemo Abstract: A demonstration of reproducible state-of-the-art energy disaggregation using NILMTK\nNipun Batra, Rithwik Kukunuri, Ayush Pandey, Raktim Malakar, Rajat Kumar, Odysseas Krystalakos, Mingjun Zhong, Paulo Meira, Oliver Parson.\nIn: The 6th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys ’19)[PDF]\n\n\nTowards reproducible state-of-the-art energy disaggregation\nNipun Batra, Rithwik Kukunuri, Ayush Pandey, Raktim Malakar, Rajat Kumar, Odysseas Krystalakos, Mingjun Zhong, Paulo Meira, Oliver Parson.\nIn: The 6th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys ’19)[PDF]\n\n\nA Tree-Structured Neural Network Model for Household Energy Breakdown\nYiling Jia, Nipun Batra, Hongning Wang, Kamin Whitehouse\nIn: Proceedings of the 2019 World Wide Web Conference (WWW ’19)[PDF]"
-  },
-  {
-    "objectID": "papers/index.html#section-6",
-    "href": "papers/index.html#section-6",
-    "title": "Publications",
-    "section": "2018",
-    "text": "2018\n\nRimor: Towards Identifying Anomalous Appliances in Buildings\nHaroon Rashid, Nipun Batra, Pushpendra Singh\nIn: Proceedings of the 5th Conference on Systems for Built Environments (Buildsys 18).[PDF]\n\n\nTransferring Decomposed Tensors for Scalable Energy Breakdown across Regions\nNipun Batra, Yiling Jia, Hongning Wang, Kamin Whitehouse\nIn: AAAI 2018, Thirty-Second AAAI Conference on Artificial Intelligence (AAAI-18).[PDF][Github]"
-  },
-  {
-    "objectID": "papers/index.html#section-7",
-    "href": "papers/index.html#section-7",
-    "title": "Publications",
-    "section": "2017",
-    "text": "2017\n\nSystems and Analytical Techniques Towards Practical Energy Breakdown for Homes\nNipun Batra\nIn: Ph.D. Thesis.[PDF]\n\n\nMatrix Factorisation for Scalable Energy Breakdown\nNipun Batra, Hongning Wang, Amarjeet Singh, Kamin Whitehouse.\nIn: AAAI 2017, Thirty-First AAAI Conference on Artificial Intelligence (AAAI-17).[PDF][Github][Poster]"
-  },
-  {
-    "objectID": "papers/index.html#section-8",
-    "href": "papers/index.html#section-8",
-    "title": "Publications",
-    "section": "2016",
-    "text": "2016\n\nGemello: Creating a Detailed Energy Breakdown from just the Monthly Electricity Bill\nNipun Batra, Amarjeet Singh, Kamin Whitehouse.\nIn: KDD 2016, 22nd ACM SIGKDD conference on knowledge discovery and data mining.[PDF][Github][Poster][Video]\n\n\nExploring The Value of Energy Disaggregation Through Actionable Feedback\nNipun Batra, Amarjeet Singh, Kamin Whitehouse.\nIn: 3rd International Workshop on Non-Intrusive Load Monitoring.[PDF][Slides][Talk]\n\n\nCreating a Detailed Energy Breakdown from just the Monthly Electricity Bill\nNipun Batra, Amarjeet Singh, Kamin Whitehouse.\nIn: 3rd International Workshop on Non-Intrusive Load Monitoring.[PDF][Slides][Talk]"
-  },
-  {
-    "objectID": "papers/index.html#section-9",
-    "href": "papers/index.html#section-9",
-    "title": "Publications",
-    "section": "2015",
-    "text": "2015\n\nIf You Measure It, Can You Improve It? Exploring The Value of Energy Disaggregation.\nNipun Batra, Amarjeet Singh, Kamin Whitehouse.\nIn: 2nd ACM International Conference on Embedded Systems For Energy-Efficient Built Environments (Buildsys 2015)[PDF][Github][Slides (.key)][Slides (.pdf)]\n\n\nNon Intrusive Load Monitoring: Systems, Metrics and Use Cases.\nNipun Batra\nIn: Doctoral Colloqium of the 13th ACM Conference on Embedded Networked Sensor Systems (SenSys 2015)[PDF][Slides (.key)][Slides (.pdf)][Best presentation award]\n\n\nDataport and NILMTK: A Building Data Set Designed for Non-intrusive Load Monitoring\nOliver Parson, Grant Fisher, April Hersey, Nipun Batra, Jack Kelly, Amarjeet Singh, William Knottenbelt, Alex Rogers.\nIn: 1st International Symposium on Signal Processing Applications in Smart Buildings at 3rd IEEE Global Conference on Signal and Information Processing, Orlando, FL, USA, 14-16 December, 2015. [PDF]"
-  },
-  {
-    "objectID": "papers/index.html#section-10",
-    "href": "papers/index.html#section-10",
-    "title": "Publications",
-    "section": "2014",
-    "text": "2014\n\nNILMTK v0. 2: A Non-intrusive Load Monitoring Toolkit for Large Scale Data Sets\nJack Kelly, Nipun Batra, Oliver Parson, Haimonti Dutta, William Knottenbelt, Alex Rogers, Amarjeet Singh, Mani Srivastava.\nIn: First ACM International Conference on Embedded Systems For Energy-Efficient Built Environments (Buildsys 2014)[PDF][Demo notebook][Poster][Best demo award]\n\n\nBits and Watts: Improving energy disaggregation performance using power line communication modems\nNipun Batra, Manoj Gulati, Puneet Jain, Kamin Whitehouse, Amarjeet Singh.\nIn: First ACM International Conference on Embedded Systems For Energy-Efficient Built Environments (Buildsys 2014)[PDF][Poster]\n\n\nNILMTK: An Open Source Toolkit for Non-intrusive Load Monitoring\nNipun Batra, Jack Kelly, Oliver Parson, Haimonti Dutta, William Knottenbelt, Alex Rogers, Amarjeet Singh, Mani Srivastava\nIn: 5th International Conference on Future Energy Systems (ACM e-Energy), Cambridge, UK. 2014[PDF][Slides (.pptx)][Slides (.pdf)]\n\n\nA comparison of non-intrusive load monitoring methods for commercial and residential buildings\nNipun Batra, Oliver Parson, Mario Berges, Amarjeet Singh, Alex Rogers\nTech. report[PDF]\n\n\nData Driven Energy Efficiency in Buildings\nNipun Batra, Amarjeet Singh, Pushpendra Singh, Haimonti Dutta, Venkatesh Sarangan, Mani Srivastava\nIn: PhD. qualifiers report, IIIT Delhi[PDF][Slides (.pdf)]"
-  },
-  {
-    "objectID": "papers/index.html#and-before",
-    "href": "papers/index.html#and-before",
-    "title": "Publications",
-    "section": "2013 and before",
-    "text": "2013 and before\n\nIt’s Different: Insights into home energy consumption in India\nNipun Batra, Manoj Gulati, Amarjeet Singh, Mani Srivastava.\nIn: 5th ACM Workshop On Embedded Systems For Energy-Efficient Buildings (Buildsys 2013)[PDF][Github][Dataset][Slides (.pptx)][Slides (.pdf)]\n\n\nINDiC: Improved Non-Intrusive load monitoring using load Division and Calibration\nNipun Batra, Haimonti Dutta, Amarjeet Singh\nIn: ICMLA 2013[PDF][Slides (.pptx)][Slides (.pdf)]\n\n\nExperiences with Occupancy Based Building Management Systems\nNipun Batra, Pandarasamy Arjunan, Amarjeet Singh, Pushpendra Singh\nIn: ISSNIP 2013[PDF]\n\n\nSensorAct: A Privacy and Security Aware Federated Middleware for Building Management\nPandarasamy Arjunan, Nipun Batra, Haksoo Choi, Amarjeet Singh, Pushpendra Singh, Mani Srivastava\nIn: Buildsys 2012[PDF]"
-  },
-  {
-    "objectID": "experiences.html",
-    "href": "experiences.html",
-    "title": "Alumni Experiences",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nMay 19, 2024\n\n\nFrom Chemical Engineer to AI Researcher - My Pathway Through Sustainability Lab\n\n\nAditi Agarwal\n\n\n\n\nMay 6, 2024\n\n\nSustainability Lab - The Big Booster in my career\n\n\nKarm Patel\n\n\n\n\n\nFeb 15, 2024\n\n\nSustainability Lab: An Unforgettable Journey\n\n\nAnkita Jain\n\n\n\n\nFeb 15, 2024\n\n\nCuriosity Opens New Doors\n\n\nAabhas Senapati\n\n\n\n\nJan 26, 2024\n\n\nThe Growth Mindset: My Journey at the Sustainability Lab\n\n\nHetvi Shastri\n\n\n\n\nJan 17, 2024\n\n\nDetours can sometimes be the best part of the journey!\n\n\nAadesh Desai\n\n\n\n\nDec 15, 2023\n\n\nFrom Thesis to Life Lessons: My learning curve at Sustainability Lab\n\n\nSouvik Roy\n\n\n\n\nDec 11, 2023\n\n\nNot just research, lifelong mentorship: My journey at Sustainability Lab\n\n\nKukunuri Rithwik\n\n\n\n\nNov 29, 2023\n\n\nSustainability Lab: A family atmosphere of learning and growth\n\n\nGautam Vashishtha\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "reading.html",
     "href": "reading.html",
     "title": "Reading Group",
@@ -630,10 +525,115 @@
     "text": "2024\nMay 15\n\nForecasting\n\nLarge Language Models are Few-Shot Health Learners\nLeveraging Language Foundation Models for Human Mobility Forecasting\n\n\n\nHealth\n\nLarge Language Models are Few-Shot Health Learners\n``It Is a Moving Process’’: Understanding the Evolution of Explainability Needs of Clinicians in Pulmonary Medicine\n\n\n\nActive Learning + Spatio temporal\n\nDeep Bayesian Active Learning for Accelerating Stochastic Simulation\nActive Learning on a Budget: Opposite Strategies Suit High and Low Budgets\nDeep Distributed Fusion Network for Air Quality Prediction\n\n\n\n\nObject Detection + Sustainable Vision\n\nYou Only Look Once: Unified, Real-Time Object Detection\nGenerating Interpretable Poverty Maps using Object Detection in Satellite Images"
   },
   {
-    "objectID": "papers/index.html#mymodal-title",
-    "href": "papers/index.html#mymodal-title",
+    "objectID": "writing-papers.html",
+    "href": "writing-papers.html",
+    "title": "Writing Papers",
+    "section": "",
+    "text": "Paper writing is a key part of research. This page contains some tips and tricks for writing papers. Paper writing is a skill that you will develop over time. But, it needs deliberate practice.\n\nPaper structure and Abstract\nI gave a talk (recording here, slides here) on how to write a paper. I recommend watching it. Other materials from the talk are available here.\n\n\nLaTeXify figures\nWe’d suggest using this latexification tool to make the matplotlib figures publication-ready. It helps in the following aspects:\n\nIt helps in setting the exact size of the figure relative to the column width or page width of the paper. After using this tool, manually setting the size within the \\begin{figure} block is rarely needed.\nWe can set the font size relative to the text font size in the paper to ensure fonts are not too small or too big.\nIt converts the fonts into latex fonts so that the fonts in the figures do not look different from the main text font.\n\n\nTip: You can find page width and column width with \\the\\textwidth and \\the\\columnwidth commands, respectively.\n\n\n\nSelf-contained figures and tables (and captions)\n\n\nTables\nWe follow this excellent small guide to making nice tables by Markus Püschel.\n\n\nComments in LaTeX\nWe typically create a macro corresponding to different author initials (I use \\nb for example) and then use that to create comments in the text. This is useful for commenting on the text, or for leaving notes to yourself. For example, I might write \\nb{I'm not sure about this sentence} and then I can search for all instances of \\nb to find all of my comments.\n\\newcommand{\\nb}[1]{{\\color{red}\\small \\iftoggle{hide}{}{\\textbf{Nipun's comment:} #1}}}\n\n\nActive v/s Passive Voice\n\n\nAmerican v/s British English\nThere are a few differences in spelling between American and British English. For example, the word “colour” in British English is spelled “color” in American English. The word “optimise” in British English is spelled “optimize” in American English. There are also some differences in grammar. I recommend picking one and sticking to it. Most of our previous papers have used British English (but often this depends on the set of co-authors).\n\n\nPaper timelines\n\n\nGrammarly and other AI tools\nI recommend students use Grammarly (or a similar) tool to check their writing once they have done a complete pass of editing. I do not recommend relying a lot on ChatGPT-like tools for writing papers as they can often lead to “correct” sounding but “incorrect” sentences."
+  },
+  {
+    "objectID": "expectations.html",
+    "href": "expectations.html",
+    "title": "Expectations",
+    "section": "",
+    "text": "Hard work: We are often working on cutting-edge research. This means that there is no clear path to success. We will have to try different things, and we will fail often. This is part of the process. I expect my students to work hard, and I expect them to be resilient.\nConsistency: We do expect some seasonal variation in productivity. However, often the difference between a good and great project is the consistency of effort.\nStriving for excellence: Often, the difference between a good and great project (or paper) is the last 10% of effort. I try to push my students to go the extra mile, and I expect the same from myself. This goes in various aspects of work, including writing, coding, and data analysis. As an example, I remember doing ten rounds of feedback with an undergraduate student from the group on their presentation for a conference. It was a lot of work, but the student ended up getting offers (higher studies) after the talk; and the student was appreciated by the session chair - “It is hard to believe that you are an undergraduate student”.\nClear, honest communication I try to be as clear as possible in my communication, and I expect the same from my students. I also expect my students to be honest with me. If you are struggling with something, let me know. If you are not interested in a project, let me know. If you are not happy with something, let me know. I you are unable to meet a deadline, let me know. Lack of communication is counterproductive.\nI also typically want to help create a path for my students to achieve their goals. Thus, I expect my students to be clear about their goals, or be proactive in discussing their goals with me.\nCulture of respect and collaboration: I expect my students to be respectful to each other, and to other members of the community. I also expect my students to be collaborative. This means that they should be willing to help each other, and to help other members of the community."
+  },
+  {
+    "objectID": "technical-background.html",
+    "href": "technical-background.html",
+    "title": "Technical Background",
+    "section": "",
+    "text": "Git and GitHub\nThere are a ton of good resorces on Git and Github. I’m linking two such resources here: - YouTube video by Kevin Stratvert - Github skills\n\n\nPython Data Science Stack\n\nWe recommend students to study the Python for Data Science Handbook by Jake VanderPlas. It is a free online book that covers the basics of Python, NumPy, Pandas, Matplotlib, and Scikit-Learn. It is a great resource for beginners and intermediate students alike.\nWe recommend students regularly hone their skills solving exercises such as 100 Numpy exercises. Given that much of our work is in Torch-like frameworks, the students would also benefit by attempting to solve the exercises using PyTorch.\n\n\n\nObject-Oriented Programming in Python\nRealPython has a nice tutorial on Object-Oriented Programming in Python. We recommend students to go through the tutorial. They also have a corresponding video page.\n\n\nLaTeX\nWe typically use LaTeX for writing reports and papers. We recommend students to use Overleaf for students to get started. Overleaf has a nice 30 minute tutorial that covers the basics of LaTeX. We highly recommend students to go through the tutorial.\n\n\nCreating a Website and Blog\nWe highly recommend students create a simple website and a blog. We have been happily using Quarto for our website and blog. You may see in action in Nipun’s website and corresponding GitHub repo here; and Nipun’s blog and corresponding Github repo here.\nBoth of these are built via Github actions. Feel free to reuse these for creating your own website and blog. We will be happy to help you get started."
+  },
+  {
+    "objectID": "posters.html",
+    "href": "posters.html",
+    "title": "Posters",
+    "section": "",
+    "text": "In some venues, the main presentation format is a poster. Posters are a great way to present your work in a visual format, and to have one-on-one conversations with people who are interested in your work.\nOne common mistake people make while making posters is to try to cram in too much information. Remember that the poster is to supplement you and not to replace you.\nPlease see below for two posters that we have made in the past.\n\n\nPlease find the presentation files corresponding to the first poster 1. Apple Keynote\n\nMS Powerpoint\nGoogle Slides\n\nLaTeX users can use the following templates on Overleaf to make their posters."
+  },
+  {
+    "objectID": "memories.html",
+    "href": "memories.html",
+    "title": "Group Photos",
+    "section": "",
+    "text": "Click on any picture to activate the “lightbox” mode. Use the arrow keys to navigate."
+  },
+  {
+    "objectID": "memories.html#may-2024",
+    "href": "memories.html#may-2024",
+    "title": "Group Photos",
+    "section": "May 2024",
+    "text": "May 2024"
+  },
+  {
+    "objectID": "memories.html#jan-2024",
+    "href": "memories.html#jan-2024",
+    "title": "Group Photos",
+    "section": "Jan 2024",
+    "text": "Jan 2024\n\n\n\n\n\nJan 2024 Alums from 2022 batch Harsh, Hetvi and Palak visited us."
+  },
+  {
+    "objectID": "memories.html#nov-2023",
+    "href": "memories.html#nov-2023",
+    "title": "Group Photos",
+    "section": "Nov 2023",
+    "text": "Nov 2023\n\n\n\n\n\n15 Nov 2023 Students working with us in the Fall 2023 semester."
+  },
+  {
+    "objectID": "memories.html#oct-2023",
+    "href": "memories.html#oct-2023",
+    "title": "Group Photos",
+    "section": "Oct 2023",
+    "text": "Oct 2023\n\n\n\n\n\nRishiraj was a finalist in the presitigous Gaetano Borriello Outstanding Student Award at ACM Ubicomp 2023"
+  },
+  {
+    "objectID": "memories.html#sept-2023",
+    "href": "memories.html#sept-2023",
+    "title": "Group Photos",
+    "section": "Sept 2023",
+    "text": "Sept 2023\n\n\n\n\n\n15 Sept 2023 Received the Young Alumni Award from IIIT Delhi."
+  },
+  {
+    "objectID": "memories.html#july-2023",
+    "href": "memories.html#july-2023",
+    "title": "Group Photos",
+    "section": "July 2023",
+    "text": "July 2023\n\n\n\n\n\nJuly 2023 at the 2023 batch convocation (and celebration of multiple awards!)\n\n\n\n\n\nAnkita winning the Gold Medal for Outstanding Research"
+  },
+  {
+    "objectID": "memories.html#may-2023",
+    "href": "memories.html#may-2023",
+    "title": "Group Photos",
+    "section": "May 2023",
+    "text": "May 2023\n\n\n\n\n\nMay 2023 dinner\n\n\n\n\n\nBatch of 2023: Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam\n\n\n\n\n\nCake by batch of 2023"
+  },
+  {
+    "objectID": "memories.html#july-2022",
+    "href": "memories.html#july-2022",
+    "title": "Group Photos",
+    "section": "July 2022",
+    "text": "July 2022\n\n\n\n\n\nWith a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)"
+  },
+  {
+    "objectID": "memories.html#dec-2021",
+    "href": "memories.html#dec-2021",
+    "title": "Group Photos",
+    "section": "Dec 2021",
+    "text": "Dec 2021\n\n\n\n\n\nCelebrating AAAI paper acceptance"
+  },
+  {
+    "objectID": "memories.html#nov-2021",
+    "href": "memories.html#nov-2021",
+    "title": "Group Photos",
+    "section": "Nov 2021",
+    "text": "Nov 2021\n\n\n\n\n\nApoorv’s “re” visit to the campus (others in frame: Rishiraj and Zeel)"
+  },
+  {
+    "objectID": "papers/index.html#section-11",
+    "href": "papers/index.html#section-11",
     "title": "Publications",
-    "section": "Look at this cool chart!",
-    "text": "Look at this cool chart!"
+    "section": "2014",
+    "text": "2014\n\nNILMTK v0. 2: A Non-intrusive Load Monitoring Toolkit for Large Scale Data Sets\nJack Kelly, Nipun Batra, Oliver Parson, Haimonti Dutta, William Knottenbelt, Alex Rogers, Amarjeet Singh, Mani Srivastava.\nIn: First ACM International Conference on Embedded Systems For Energy-Efficient Built Environments (Buildsys 2014)[PDF][Demo notebook][Poster][Best demo award]\n\n\nBits and Watts: Improving energy disaggregation performance using power line communication modems\nNipun Batra, Manoj Gulati, Puneet Jain, Kamin Whitehouse, Amarjeet Singh.\nIn: First ACM International Conference on Embedded Systems For Energy-Efficient Built Environments (Buildsys 2014)[PDF][Poster]\n\n\nNILMTK: An Open Source Toolkit for Non-intrusive Load Monitoring\nNipun Batra, Jack Kelly, Oliver Parson, Haimonti Dutta, William Knottenbelt, Alex Rogers, Amarjeet Singh, Mani Srivastava\nIn: 5th International Conference on Future Energy Systems (ACM e-Energy), Cambridge, UK. 2014[PDF][Slides (.pptx)][Slides (.pdf)]\n\n\nA comparison of non-intrusive load monitoring methods for commercial and residential buildings\nNipun Batra, Oliver Parson, Mario Berges, Amarjeet Singh, Alex Rogers\nTech. report[PDF]\n\n\nData Driven Energy Efficiency in Buildings\nNipun Batra, Amarjeet Singh, Pushpendra Singh, Haimonti Dutta, Venkatesh Sarangan, Mani Srivastava\nIn: PhD. qualifiers report, IIIT Delhi[PDF][Slides (.pdf)]"
   }
 ]
