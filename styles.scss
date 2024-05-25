@@ -60,3 +60,9 @@ body {
   .paper-button:hover {
     background-color: #21618C;
   }
+
+  .separator {
+    width: 100%;
+    border-top: 1px solid #eee; /* Adjust the color and width as needed */
+    margin: 20px 0; /* Adjust the spacing as needed */
+  }
