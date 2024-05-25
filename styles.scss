@@ -28,12 +28,14 @@ body {
   }
   
   .paper-image {
-    width: 20%;
-    margin-right: 20px;
+    width: 35%;
+    height: auto;
+    margin-right: 10px;
+    object-fit: contain; /* Ensure the image fits within the container */
   }
   
   .paper-details {
-    width: 80%;
+    width: 65%;
   }
 
   .paper-details p {

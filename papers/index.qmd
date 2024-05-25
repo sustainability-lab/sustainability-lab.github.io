@@ -4,19 +4,16 @@ title: Publications
 ## 2024 
 
 <div class="paper">
-<img src="https://nipunbatra.github.io/images/nipun.jpg" class="paper-image">
+<img src="2024/jouleseye.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising</p>
 <p>Rishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel</p>
 <p><i>ACM Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) 2024</i>; and <i>ACM Ubicomp 2024</i></p>
-<a href="../papers/2024/IMWUT_JoulesEye.pdf" style="text-decoration: none; color: blue;">
-<img src="https://camo.githubusercontent.com/68ea8dfbd317873bb12b167f8f83e63995d1104866026fc65119b2833e5686a7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7064662d4546333933393f7374796c653d666f722d7468652d6261646765266c6f676f3d61646f62656163726f626174726561646572266c6f676f436f6c6f723d776869746526636f6c6f723d626c61636b266c6162656c436f6c6f723d656331633234" alt="YouTube">
-</a>
-<a href="https://indianexpress.com/article/cities/ahmedabad/research-scholar-at-iitgn-develops-device-to-overcome-fitness-monitoring-limitations-9180741/" style="text-decoration: none; color: blue;">
-<img src="https://img.shields.io/badge/News-IndianExpress-red" alt="News coverage">
-</a>
-<a href="https://www.youtube.com/watch?v=5J9KqrDnj20" style="text-decoration: none; color: blue;"><img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" alt="YouTube"></a>
+<button class="paper-button"><a href="../papers/2024/IMWUT_JoulesEye.pdf" style="text-decoration: none; color: white;">PDF</a></button>
+<button class="paper-button"><a href="https://indianexpress.com/article/cities/ahmedabad/research-scholar-at-iitgn-develops-device-to-overcome-fitness-monitoring-limitations-9180741/" style="text-decoration: none; color: white;">News coverage</a></button>
+<button class="paper-button"><a href="https://www.youtube.com/watch?v=5J9KqrDnj20" style="text-decoration: none; color: white;">YouTube</a></button>
 </div>
+
 </div>
 
 
@@ -26,13 +23,31 @@ Rishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel. In ACM Interactive, Mo
 
 ## 2023
 
-#### "Fine-Grained Spatio-Temporal Particulate Matter Dataset From Delhi For ML based Modeling"
+<div class="paper">
+<img src="2023/airdelhi.png" class="paper-image">
+<div class="paper-details">
+<p class="paper-title">AIRDELHI: Fine-Grained Spatio-Temporal Particulate Matter Dataset From Delhi For ML based Modeling</p>
+<p>Sachin Chauhan, Zeel Patel, Sayan Ranu, Rijurekha Sen, and Nipun Batra.</p>
+<p><i>Neurips 2023 (Dataset and Benchmarks</i></p>
+<button class="paper-button"><a href="../papers/2023/airdelhi.pdf" style="text-decoration: none; color: white;">PDF</a></button>
+</div>
+</div>
 
-Sachin Chauhan,Zeel Patel,Sayan Ranu,Rijurekha Sen,and Nipun Batra. In NeurIPS, 2023
 
-#### "SpiroMask: measuring Lung function using consumer-grade masks"
+<div class="paper">
+<img src="2023/spiromask-hero.png" class="paper-image">
+<div class="paper-details">
+<p class="paper-title">SpiroMask: measuring Lung function using consumer-grade masks</p>
+<p>Rishiraj Adhikary, Dhruvi Lodhavia, Chris Francis, Rohit Patil, Tanmay Srivastava, Prerna Khanna, Nipun Batra, Joseph Breda, Jacob Peplinski, Shwetak Patel</p>
+<p><i>ACM Transactions on Health 2023</i></p>
+<button class="paper-button"><a href="../papers/2023/spiromask.pdf" style="text-decoration: none; color: white;">PDF</a></button>
+</div>
+</div>
 
-Rishiraj Adhikary, Dhruvi Lodhavia, Chris Francis, Rohit Patil, Tanmay Srivastava, Prerna Khanna, Nipun Batra, Joseph Breda, Jacob Peplinski, Shwetak Patel. In ACM Transactions on Health 
+
+#### ""
+
+. In ACM Transactions on Health 
 
 
 
