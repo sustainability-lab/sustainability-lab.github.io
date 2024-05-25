@@ -17,10 +17,6 @@ title: Publications
 </div>
 
 
-#### JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising
-
-Rishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel. In ACM Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) 2024; and ACM Ubicomp 2024 [[PDF](../papers/2024/IMWUT_JoulesEye.pdf)] [[News coverage](https://indianexpress.com/article/cities/ahmedabad/research-scholar-at-iitgn-develops-device-to-overcome-fitness-monitoring-limitations-9180741/)] [[YouTube](https://www.youtube.com/watch?v=5J9KqrDnj20)]
-
 ## 2023
 
 <div class="paper">
@@ -32,6 +28,8 @@ Rishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel. In ACM Interactive, Mo
 <button class="paper-button"><a href="../papers/2023/airdelhi.pdf" style="text-decoration: none; color: white;">PDF</a></button>
 </div>
 </div>
+
+<div class="separator"></div>
 
 
 <div class="paper">
