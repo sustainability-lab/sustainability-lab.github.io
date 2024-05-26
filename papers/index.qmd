@@ -48,7 +48,8 @@ title: Publications
 
 #### "I do not know": Quantifying Uncertainty in Neural Network Based Approaches for Non-Intrusive Load Monitoring
 
-Vibhuti Bansal, Rohit Khoiwal, Hetvi Shastri, Haikoo Khandor, Nipun Batra. In ACM Buildsys 2022 [[PDF](../papers/2022/buildsys22-nilm.pdf)][[Github](https://github.com/VibhutiBansal-11/NILM_Uncertainty)]
+Vibhuti Bansal, Rohit Khoiwal, Hetvi Shastri, Haikoo Khandor, Nipun Batra. In ACM Buildsys 2022 [[PDF](../papers/2022/buildsys22-nilm.pdf)][[Github](https://github.com/VibhutiBansal-11/NILM_Uncertainty)][[Slides (keynote)](../slides/2021/batra-buildsys21-slides.key)] [[Slides (pdf)](../slides/2021/batra-buildsys21-slides.pdf)]
+
 
 
 #### Samachar: Print News Media on Air Pollution in India
@@ -72,7 +73,7 @@ Rishiraj Adhikary, Zeel B. Patel, Tanmay Srivastava, Nipun Batra, Mayank Singh, 
 
 #### Neural network approaches and dataset parser for NILM toolkit
 
-Shastri, Hetvi; Batra, Nipun. In Proceedings of the 8th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (Buildsys)[[PDF]](../papers/2021/buildsys.pdf) [[Slides (keynote)](../slides/2021/batra-buildsys21-slides.key)] [[Slides (pdf)](../slides/2021/batra-buildsys21-slides.pdf)
+Shastri, Hetvi; Batra, Nipun. In Proceedings of the 8th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (Buildsys)[[PDF]](../papers/2021/buildsys.pdf) 
 
 #### Exploring Hidden Markov Models
 Kukunuri Rithwik, Rishiraj Adhikary, Mahika Om Jaguste, Nipun Batra and Ashish Tendulkar
