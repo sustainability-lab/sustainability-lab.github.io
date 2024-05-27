@@ -50,12 +50,17 @@ title: Publications
 
 Vibhuti Bansal, Rohit Khoiwal, Hetvi Shastri, Haikoo Khandor, Nipun Batra. In ACM Buildsys 2022 [[PDF](../papers/2022/buildsys22-nilm.pdf)][[Github](https://github.com/VibhutiBansal-11/NILM_Uncertainty)][[Slides (keynote)](../slides/2021/batra-buildsys21-slides.key)] [[Slides (pdf)](../slides/2021/batra-buildsys21-slides.pdf)]
 
-
-
-#### Samachar: Print News Media on Air Pollution in India
-
-Karm Patel, Rishiraj Adhikary, Zeel B Patel, Nipun Batra, Sarath Guttikunda. In ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (COMPASS) (COMPASS '22)
-\[[PDF](../papers/2022/compass22-samachaar.pdf)\]\[[Github](https://github.com/karm-patel/Samachar-News-media-on-air-pollution)\]
+<div class="separator"></div>
+<div class="paper">
+<img src="../papers/2022/compass-india.png" class="paper-image">
+<div class="paper-details">
+<p class="paper-title">Samachar: Print News Media on Air Pollution in India</p>
+<p>Karm Patel, Rishiraj Adhikary, Zeel B Patel, Nipun Batra, Sarath Guttikunda</p>
+<p><i>ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (COMPASS) (COMPASS '22)</i></p>
+<a href="../papers/2022/compass22-samachaar.pdf" class="paper-button">PDF</a>
+<a href="https://github.com/karm-patel/Samachar-News-media-on-air-pollution" class="paper-button">Github</a>
+</div>
+</div>
 
 #### Accurate and Scalable Gaussian Processes for Fine-grained Air Quality Inference
 
