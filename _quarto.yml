@@ -24,6 +24,8 @@ website:
         text: News
       - href: computational-resources.qmd
         text: Computational Resources
+      - href: media.qmd
+        text: Media coverage
       - section: Lab Notebook
         contents:
           - href: values.qmd
