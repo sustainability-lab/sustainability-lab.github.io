@@ -80,6 +80,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p><i>The 9th ACM International Conference on Systems for Energy-Efficient Built Environments (BuildSys 2022)</i></p>
 <a href="../papers/2022/buildsys22-nilm.pdf" class="paper-button">PDF</a>
 <a href="https://github.com/VibhutiBansal-11/NILM_Uncertainty" class="paper-button">Github</a>
+<a href="https://www.youtube.com/watch?v=wt0zuNb-9mo" class="paper-button">Youtube</a>
 <a href="../slides/2021/batra-buildsys21-slides.pdf" class="paper-button">Slides (PDF)</a>
 </div>
 </div>
@@ -230,10 +231,11 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <img src="2019/CIKM19_ActiveCollabSensing.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">Active Collaborative Sensing for Energy Breakdown</p>
-<p>ling Jia, Nipun Batra, Hongning Wang, Kamin Whitehouse</p>
+<p>Yiling Jia, Nipun Batra, Hongning Wang, Kamin Whitehouse</p>
 <p><i>The 28th ACM International Conference on Information and Knowledge Management (CIKM'2019)</i></p>
 <a href="2019\batra_CIKM_19.pdf" class="paper-button">PDF</a>
 <a href="https://github.com/yilingjia/ActSense" class="paper-button">Github</a>
+<a href="../slides/2019/ActiveSensing_CIKM2019.pdf" class="paper-button">Slides (PDF)</a>
 </div>
 </div>
 
