@@ -141,8 +141,8 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p><i>Proceedings of the ACM on Human-Computer Interaction 5, no. CSCW1 (2021)</i></p>
 <a href="2021/vartalaap.pdf" class="paper-button">PDF</a>
 <a href="https://github.com/rishi-a/Vartalaap" class="paper-button">Github</a>
-<a href="../slides/2019/CSCW-Full-Presentation.pdf" class="paper-button">Slides (PDF)</a>
-<a href="../slides/2019\/SCW-Full-Presentation.pdf" class="paper-button">Slides (pptx)</a>
+<a href="../slides/2021/CSCW-Full-Presentation.pdf" class="paper-button">Slides (PDF)</a>
+<a href="../slides/2021/CSCW-Full-Presentation.pdf" class="paper-button">Slides (pptx)</a>
 </div>
 </div>
 
