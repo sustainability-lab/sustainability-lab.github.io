@@ -318,10 +318,11 @@ ul.task-list li input[type="checkbox"] {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border: 1px solid #777; /* Set a thin border on all sides */
-  border-bottom: 4px solid #777; /* Set a thicker border only at the bottom (slightly darker than tomato) */
-  border-radius: 2px; /* Optional: add rounded corners for a nicer look */
-  transition: border-color 0.3s; /* Add smooth transition for the border color */
+  overflow-clip-margin: unset;        /* AYUSH :  Added to remove pixelation from the profile images*/
+  border: 1px solid #777;             /* Set a thin border on all sides */
+  border-bottom: 4px solid #777;      /* Set a thicker border only at the bottom (slightly darker than tomato) */
+  border-radius: 2px;                 /* Optional: add rounded corners for a nicer look */
+  transition: border-color 0.3s;      /* Add smooth transition for the border color */
 }
 
 .cropped-image:hover {
@@ -341,7 +342,7 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://jaiswalsuraj487.github.io"> <img src="https://jaiswalsuraj487.github.io/images/profile_photo.jpg" class="cropped-image"><br> </a> <span style="font-size: 0.8em;">Suraj Jaiswal <br>(July 2022 - present)</span></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
-<p><img src="images/members/Ayush.jpg" class="cropped-image"><br> <span style="font-size: 0.8em;">Ayush Srivastava <br>(July 2022 - present)</span></p>
+<p><a href="https://ayushshrivstava.github.io/"> <img src="images/members/Ayush.jpg" class="cropped-image"><br> </a> <span style="font-size: 0.8em;">Ayush Srivastava <br>(July 2022 - present)</span></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
 <p><img src="images/members/Poornima.jpg" class="cropped-image"><br> <span style="font-size: 0.8em;">Poornima Bhatia <br>(July 2023 - present)</span></p>
