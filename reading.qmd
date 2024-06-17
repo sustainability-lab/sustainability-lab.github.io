@@ -1,9 +1,41 @@
 ---
 title: "Reading Group"
 ---
+<head>
+<style>
+    details summary {
+      font-size: 20px;
+      cursor: pointer; 
+      margin-left:30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0; 
+    }
+    th, td {
+      border: 1px solid #ccc;
+      font-size: 17px;
+      padding: 8px;
+      text-align: left;
+      vertical-align: middle;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    li {
+        font-size: 17px;
+    }
+    /* ul {
+        margin-top: 0px;
+        margin-left:20px;
+    } */
+</style>
+</head>
 
-### 2024
-May 15
+<!-- ## 2024
+
+### May 15
 
 #### Forecasting
 - Large Language Models are Few-Shot Health Learners
@@ -18,9 +50,111 @@ May 15
 - Active Learning on a Budget: Opposite Strategies Suit High and Low Budgets
 - Deep Distributed Fusion Network for Air Quality Prediction
 
-### Object Detection + Sustainable Vision
+#### Object Detection + Sustainable Vision
 - You Only Look Once: Unified, Real-Time Object Detection
 - Generating Interpretable Poverty Maps using Object Detection in Satellite Images
+ -->
+<body>
+
+<details>
+<summary style ="font-size: 25px;margin-left:0px;">Pending Reading List</summary>
+<div style="margin-left:30px;">
+<h4>Health</h4> 
+<ul style="margin: 0px;">
+    <li>Leveraging Language Foundation Models for Human Mobility Forecasting</li>
+    <li>"It Is a Moving Process’’: Understanding the Evolution of Explainability Needs of Clinicians in Pulmonary Medicine</li>
+</ul>
+<h4>Active Learning</h4>
+<ul style="margin: 0px;">
+    <li>Deep Bayesian Active Learning for Accelerating Stochastic Simulation</li>
+    <li>Active Learning on a Budget: Opposite Strategies Suit High and Low Budgets</li>
+</ul>
+<h4>Spatio temporal</h4>
+<ul style="margin: 0px;">
+    <li>Deep Distributed Fusion Network for Air Quality Prediction</li>
+    <li>Generating Interpretable Poverty Maps using Object Detection in Satellite Images</li>
+</ul>
+<h4>Object Detection</h4>
+<ul style="margin: 0px;">
+    <li>None</li>
+</ul>
+</div>
+</details>
 
 
+<details open>
+<summary style ="font-size: 25px;margin-left:0px;">2024</summary>
 
+<details open>
+  <summary>June</summary>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 20%;">Category</th>
+                <th style="width: 20%;">Presenter</th>
+                <th style="width: 60%;">Topics</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Mock Defence</td>
+                <td>Ayush Shrivastava</td>
+                <td>Sensing Respiration and Sleep Apnea using Thermal Imaging in Real World Conditions</td>
+            </tr>
+            <tr>
+                <td>Suraj Jaiswal</td>
+                <td>Large Scale Brick Kiln Detection and Compliance Monitoring from Satellite Imagery</td>
+            </tr>
+            <tr>
+                    <td>Active Learning</td>
+                    <td>Sataxi Dubey</td>
+                    <td><a href ="https://portalrecerca.uab.cat/en/publications/active-learning-for-deep-detection-neural-networks">Active Learning for Deep detection neural networks</a></td>
+            </tr>
+            <tr>
+                    <td rowspan="2">Object Detection</td>
+                    <td>Shiva Singh</td>
+                    <td><a href="https://jmlr.org/papers/volume17/15-239/15-239.pdf">Domain Adversarial Training of Neural Networks</a></td>
+            </tr>
+            <tr>
+                    <td>Vansh Jani</td>
+                    <td><a href="https://www3.cs.stonybrook.edu/~minhhoai/papers/Self-Supervised_Scene_Adaptation_CVPR23.pdf">Object Detection with Self-supervised Scene Adaptation</a></td>
+            </tr>
+        </tbody>
+    </table>
+</details>
+
+<details>
+  <summary>May</summary>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 20%;">Category</th>
+                <th style="width: 20%;">Presenter</th>
+                <th style="width: 60%;">Topics</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Health</td>
+                <td rowspan="2">Rishiraj Adhikary</td>
+                <td><a href="https://deepai.org/publication/large-language-models-are-few-shot-health-learners">Large Language Models are Few-Shot Health Learners</a></td>
+            </tr>
+            <tr>
+                <td>[Thesis Presentaion] Exploring Health and Wellness through Respiratory Sensing</td>
+            </tr>
+            <tr>
+                <td>Large Language Models</td>
+                <td>Sajay Raj and <br>Muhammad Zaid</td>
+                <td><a href="https://labelbox.com/guides/zero-shot-learning-few-shot-learning-fine-tuning/">Zero-shot, Few-shot and Finetuning LLMs today for a few tasks</a></td>
+            </tr>
+            <tr>
+                <td>Object Detection</td>
+                <td>Vansh Jani</td>
+                <td><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7780460">You Only Look Once: Unified, Real-Time Object Detection</a></td>
+            </tr>
+        </tbody>
+    </table>
+</details> 
+</details>
+
+</body>
