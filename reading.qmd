@@ -97,6 +97,21 @@ title: "Reading Group"
         </thead>
         <tbody>
             <tr>
+                <td>Self Supervised Learning</td>
+                <td>Rishabh Mondal</td>
+                <td><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Chen_Low-Res_Leads_the_Way_Improving_Generalization_for_Super-Resolution_by_Self-Supervised_CVPR_2024_paper.pdf">Low-Res Leads the Way: Improving Generalization for Super-Resolution by Self-Supervised Learning</a></td>
+            </tr>
+            <tr>
+                <td>Air Quality</td>
+                <td>Devodita Chakravarty</td>
+                <td><a href="https://www.sciencedirect.com/science/article/pii/S0034425723001608?ref=pdf_download&fr=RR-2&rr=898b95770ecc8af9">Predicting air quality via multimodal AI and satellite imagery</a></td>
+            </tr>
+            <tr>
+                <td>Health Sensing</td>
+                <td>Mohit Maurya</td>
+                <td><a href="https://dl.acm.org/doi/10.1145/3659607">BreathPro: Monitoring Breathing Mode during Running with Earables</a></td>
+            </tr>
+            <tr>
                 <td rowspan="2">Mock Defence</td>
                 <td>Ayush Shrivastava</td>
                 <td>Sensing Respiration and Sleep Apnea using Thermal Imaging in Real World Conditions</td>
@@ -107,7 +122,7 @@ title: "Reading Group"
             </tr>
             <tr>
                     <td>Active Learning</td>
-                    <td>Sataxi Dubey</td>
+                    <td>Shataxi Dubey</td>
                     <td><a href ="https://portalrecerca.uab.cat/en/publications/active-learning-for-deep-detection-neural-networks">Active Learning for Deep detection neural networks</a></td>
             </tr>
             <tr>
@@ -123,7 +138,7 @@ title: "Reading Group"
     </table>
 </details>
 
-<details>
+<details open>
   <summary>May</summary>
     <table>
         <thead>
