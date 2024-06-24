@@ -8,6 +8,12 @@ lightbox: auto
 
 Click on any picture to activate the "lightbox" mode. Use the arrow keys to navigate.
 
+## June 2024
+![](images/memories/2024-June-AyushSurajDefense2.png){group="my-gallery"
+description="[Ayush and Suraj succesfully defends their Masters Thesis]{.large-caption-text}"}
+
+[Ayush and Suraj succesfully defends their Masters Thesis]{.large-caption-text}
+
 ## May 2024
 ![](images/memories/batch24.jpg){group="my-gallery"
 description="[Batch of 2024]{.large-caption-text}"}
