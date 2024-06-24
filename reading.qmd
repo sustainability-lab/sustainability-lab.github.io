@@ -13,12 +13,14 @@ title: "Reading Group"
       border-collapse: collapse;
       margin: 10px 0; 
     }
-    th, td {
-      border: 1px solid #ccc;
-      font-size: 17px;
-      padding: 8px;
-      text-align: left;
-      vertical-align: middle;
+    th, td  {
+        border: 1px solid #ccc;
+        border-left:0;
+        border-right:0;
+        font-size: 17px;
+        padding: 8px;
+        text-align: left;
+        vertical-align: middle;
     }
     th {
       background-color: #f4f4f4;
