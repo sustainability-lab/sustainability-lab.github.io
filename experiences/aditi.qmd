@@ -17,7 +17,7 @@ It would be an understatement to say that Sustainability Lab has completely chan
 
 Coming to IIT Gandhinagar as a Chemical Engineering student, I always knew I would have to step the extra mile to achieve my goals. However, my journey was sweetened and streamlined by joining the Sustainability Lab and working under the guidance of Prof. Nipun Batra!
 
-### Neural Network Newbi
+### Neural Network Newbie
 
 I joined the Sustainability Lab in my 6th semester. I remember the first time I visited Prof. Batra’s office, he asked me what I was interested in working on, and I naively mentioned that I wanted to build my own Neural Networks rather than using pre-trained models. Mind you, I had worked with two startups until then as a CV intern and an ML intern, but while I was able to ship code to production using fast.ai, play around with data, etc., I never had a core understanding of what Machine Learning really is. This is where the Sustainability Lab helped me.
 
