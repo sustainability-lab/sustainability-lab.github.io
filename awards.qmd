@@ -1,0 +1,24 @@
+---
+title: "Awards"
+---
+
+<br>
+
+## Awards and Distinctions
+
+- Zeel Patel wins the <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research India</a> Phd Award 2024
+- Rishiraj Adhikary was a finalist for the UbiComp [Gaetano Borriello Outstanding Student Award](https://ubicomp.org/sc/awards.html) 2023
+- Prof. Nipun Batra received the <a href="https://x.com/nipun_batra/status/1702672278436135241">Young Alumni Award<a> from IIIT Delhi on 15 Nov 2023
+- Ankita Jain winning the Gold Medal for Outstanding Research at <a href="https://iitgn.ac.in/convocation/archives/2023/">IITGN convocation 2023</a>
+- Ankita Jain winning thePresident’s Gold Medal, MTech at <a href="https://iitgn.ac.in/convocation/archives/2023/">IITGN convocation 2023</a>
+
+## Student Fellowships
+
+- Rishiraj Adhikary gets the USIEF's <a href="https://www.usief.org.in/Fulbright-Nehru-Doctoral-Research-Fellowships.aspx">Fulbright-Nehru Doctoral Research Fellowship 2022</a>
+- Rishiraj Adhikary wins the <a href="https://www.pmrf.in/">Prime Minister Research fellowship (PMRF) 2022</a>
+
+## Honorable Mentions
+
+- Rishiraj was selected for the prestigious <a href="https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html">Heidelberg Laureate Forum</a>, becoming one of only 200 individuals worldwide to meet laureates from various fields, including Turing Award winners.
+- Zeel Patel is a co-author in <a href="https://probml.github.io/pml-book/book2.html">"Probabilistic Machine Learning: Advanced Topics"</a> book authored by <a href="https://www.cs.ubc.ca/~murphyk/">Kevin P. Murphy</a>
+- Zeel Patel was a Google Summer of Code (GSoC) contributor at <a href="https://www.tensorflow.org/">TensorFlow</a> in 2022 under the mentorship of <a href="https://www.cs.ubc.ca/~murphyk/">Kevin P. Murphy</a>

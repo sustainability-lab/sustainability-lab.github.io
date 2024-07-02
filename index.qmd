@@ -1,8 +1,164 @@
 ---
-title: "Sustainability Lab"
+# title: "Sustainability Lab"
 ---
 
-![](images/logo.png)
-
+<!-- ![](images/logo.png) -->
+<img src="images/logo2.png" width=90%   style="display: block;margin-left: auto;margin-right: auto;">
+<p style="text-align:center;">
 Sustainability lab develops sensing and machine learning solutions for various sustainability challenges. 
+</p>
 
+<br>
+
+## Faculty
+
+<a href="https://nipunbatra.github.io">
+  <img src="https://nipunbatra.github.io/images/nipun.jpg" class="cropped-image" style="float: left; margin: 0 15px 0 0;" alt="Prof Nipun Batra">
+</a>
+
+### Prof. Nipun Batra
+Nipun Batra is an Assistant Professor of Computer Science at IIT Gandhinagar. He completed his postdoctoral research at the University of Virginia and earned his PhD from IIIT Delhi. His research group focuses on utilizing machine learning and sensing technologies to address computational sustainability challenges, particularly in smart buildings, air quality, and healthcare.
+
+<br>
+
+## PhD 
+
+::: {layout-ncol=4}
+<a href="https://rishi-a.github.io">
+  <img src="https://rishi-a.github.io/images/RISHIRAJ.jpg" class="cropped-image"><br/>
+</a>
+<span>Rishiraj Adhikary <br/>(Jul 2019 - present)</span>
+
+<a href="https://patel-zeel.github.io">
+  <img src="https://patel-zeel.github.io/images/profile_crop.png" class="cropped-image"><br/>
+</a>
+<span>Zeel Patel  <br/>(Jan 2020 - present)</span>
+
+<a href="https://rishabh-mondal.github.io">
+  <img src="https://rishabh-mondal.github.io/ris.jpg" class="cropped-image"><br/>
+</a>
+<span>Rishabh Mondal <br/> (Jun 2023 - present)</span>
+
+<a href="https://khush24shah.github.io">
+  <img src="https://khush24shah.github.io/images/Khush.jpeg" class="cropped-image"><br/>
+</a>
+<span>Khush Shah <br/> (Jul 2023 - present)</span>
+
+<a href="https://ayushshrivstava.github.io/">
+  <img src="images/members/Ayush.jpg" class="cropped-image"><br/>
+</a>
+<span>Ayush Srivastava <br/>(Jul 2024 - present)</span>
+
+:::
+
+<style>
+.cropped-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  overflow-clip-margin: unset;        /* AYUSH :  Added to remove pixelation from the profile images*/
+  border: 1px solid #777;             /* Set a thin border on all sides */
+  border-bottom: 4px solid #777;      /* Set a thicker border only at the bottom (slightly darker than tomato) */
+  border-radius: 4px;                 /* Optional: add rounded corners for a nicer look */
+  transition: border-color 0.3s;      /* Add smooth transition for the border color */
+}
+
+.cropped-image:hover {
+  /* Change border color on hover */
+  border-bottom-color: #d9534f; /* Use the same slightly darker color on hover */
+}
+</style>
+
+
+## MTech
+
+::: {layout-ncol=4}
+
+<a href="https://jaiswalsuraj487.github.io">
+  <img src="https://jaiswalsuraj487.github.io/images/profile_photo.jpg" class="cropped-image"><br/>
+</a>
+<span>Suraj Jaiswal  <br/>(Jul 2022 - present)</span>
+
+<img src="images/members/Poornima.jpg" class="cropped-image"><br/>
+<span>Poornima Bhatia  <br/>(Jul 2023 - present)</span>
+
+<img src="images/members/Shataxi.jpg" class="cropped-image"><br/>
+<span>Shataxi Dubey  <br/>(Jul 2023 - present)</span>
+
+<img src="images/members/Prince.jpg" class="cropped-image"><br/>
+<span>Prince Kumar  <br/>(Jul 2023 - present)</span>
+
+:::
+
+
+## BTech
+
+::: {layout-ncol=4}
+
+<a href="https://vannshjani.github.io/Blogs/">
+  <img src="images/members/Vannsh.jpg" class="cropped-image"><br/>
+</a>
+<span>Vannsh Jani  <br/>(Aug 2023 - present)</span>
+
+
+<img src="images/members/Yash.jpg" class="cropped-image"><br/>
+<span>Yash Bachwana <br/>(May 2024 - Present)</span>
+
+:::
+
+
+## Alumni
+
+
+### BTech
+
+- Dhruv Patel (BTech 2024): MS at TAMU
+- Haikoo Khandor (BTech 2024): MS at TAMU
+- Progyan Das (BTech 2024): Applied Scientist at Microsoft
+- Madhav Kanda (BTech 2024): MS at UIUC
+- Aditi Agarwal (BTech 2024): Predoc at Google Deepmind
+- Utkarsh Mittal (BTech 2024): MS at NYU Tandon
+- Aadesh Desai (BTech 2023): MS at CMU
+- Eshan Gujarathi (BTech 2023): Predoc at IIT Madras
+- Gautam Vasistha (BTech 2023): Data Scientist as Skan.AI
+- Hitarth Gandhi (BTech 2023): MS at UC Irvine
+- Saagar Parikh (BTech 2023): MS at CMU
+- Xhitij Choudhary (BTech 2023): Data Scientist at Skan.AI
+- Chris Francis (BTech 2022): MS at UCSD
+- Dhruvi Lodhavia (BTech 2022): MS at UCSD
+- Hetvi Shastri (BTech 2022): PhD at UMass Amherst
+- Harsh Patel (BTech 2022): MS at UCSD
+- Palak Purohit (BTech 2022): MS at Caltech
+- Shivam Sahni (BTech 2022): MS at UCSD
+- Apoorv Agnihotri (BTech 2020): First job at Wadhwani AI -> Data Scientist at Rephrase.ai
+- Deepak Narayanan (BTech 2020): First job at Microsoft Research India -> MS at ETH Zurich
+- Kukunuri Rithwik (BTech 2020): First job at Jio -> Data Scientist at Nykaa
+- Soham Pachpande (BTech 2020): First job at  HSBC-> MS at UCSD -> SWE at Salesforce
+
+### MTech
+
+- Ayush Shrivastava (Mtech 2024): PhD at IIT Gandhinagar
+- Suraj Jaiswal (Mtech 2024): First job at Neuroreef-labs
+- Ankita Jain (MTech 2023): First job at Oracle
+- Karan Kumar (MTech 2020): First job at Trading Technologies
+- Souvik Roy (MTech 2020): First job at eClerx
+
+### Research Assistant
+
+- Kaushal Modi: Now a data scientist at InfiBeam
+- Prerna Khanna: Now a PhD student at Stony Brook
+- Tanmay Srivastava: Now a PhD student at Stony Brook
+- Rohit Patil: First job at Publicis Sapient
+
+### Outside IITGn Interns
+
+- Vibhuti Bansal (Summer 2022): Now at CRED
+- Rohit Khoiwal (Summer 2022)
+- Anand Hegde (Summer 2022)
+- Shobhit Belwal (Summer 2022)
+- Aryan Varshney (Summer 2022)
+- Ami Ashish Buch (Summer 2024)
+- Sajay Raj (Summer 2024)
+- Muhammad Zaid Hassan (Summer 2024)
+- Devodita Chakravarty (Summer 2024)
+- Omisha Guha (Summer 2024)

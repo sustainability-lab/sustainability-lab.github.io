@@ -13,7 +13,7 @@ img {
   object-fit: cover;
 }
 div{
-    width:100%;
+    /* width:100%; */
     display:inline-block
 }
 </style>
@@ -24,7 +24,7 @@ div{
 <div class="separator"></div>
 
 <div>
-<img src="images/media/JoulesEye_Hackster.io.png" width="400">
+<img src="images/media/JoulesEye_Hackster.io.png">
 
 ### JoulesEye project
 Our work, [JoulesEye](https://dl.acm.org/doi/abs/10.1145/3631422), which we collaborated on with Prof [Mayank Goel](http://www.mayankgoel.com/), has received extensive coverage from various media outlets like [Hackster.io](https://www.hackster.io/news/your-wearable-is-lying-to-you-28f2e5f56338), [Medium](https://www.hackster.io/news/your-wearable-is-lying-to-you-28f2e5f56338), [Indian Express](https://indianexpress.com/article/cities/ahmedabad/research-scholar-at-iitgn-develops-device-to-overcome-fitness-monitoring-limitations-9180741/), [CMU News](https://www.cs.cmu.edu/news/2024/jouleseye), [Indian Education Dairy](https://indiaeducationdiary.in/thermal-camera-detects-breathing-patterns-to-enhance-exercise-calorie-estimates/), [ZME Science](https://www.zmescience.com/science/news-science/smartwatch-thermal-camera-calories/), [Knowridge](https://knowridge.com/2024/04/thermal-camera-could-boost-exercise-tracking-accuracy/), [TechXplore](https://techxplore.com/news/2024-04-thermal-camera-calorie.html), [EurekaAlert](https://www.eurekalert.org/news-releases/1040652).
@@ -32,11 +32,11 @@ Our work, [JoulesEye](https://dl.acm.org/doi/abs/10.1145/3631422), which we coll
 
 <div class="separator"></div>
 
-<div>
+<div style=" width:100%;">
 <img src="images/media/GaetanoAward.png">
 
 ### UBICOMP Gaetano Borriello Outstanding Student Award
-Our PhD student, [Rishiraj Adhikary](https://rishi-a.github.io) was a finalist for the UbiComp [Gaetano Borriello Outstanding Student Award](https://ubicomp.org/sc/awards.html) 2023.
+Our PhD student, [Rishiraj Adhikary](https://rishi-a.github.io) was a finalist for the UbiComp [Gaetano Borriello Outstanding Student Award](https://ubicomp.org/sc/awards.html) 2023. Named in honor of the late Gaetano Borriello, this award recognizes “a student who is making outstanding research contributions to, and provides leadership in, the field of Ubiquitous and Pervasive Computing“
 </div>
 
 <div class="separator"></div>
@@ -51,7 +51,7 @@ Our work, [SpiroMask](https://dl.acm.org/doi/10.1145/3570167) was covered compre
 <div class="separator"></div>
 
 <div>
-<img src="images/media/educationtimes-fulbright.png" width="400">
+<img src="images/media/educationtimes-fulbright.png">
 
 ### PhD student Rishiraj's Fullbright Nehru Fellowship
 Our PhD student, [Rishiraj Adhikary](https://rishi-a.github.io) won the prestigious Fullbright Nehru fellowship and visited CMU to work with Prof. [Mayank Goel](http://www.mayankgoel.com/) for 9 months. This achievement was covered by the following media channels: [Education Times](https://www.educationtimes.com/article/scholarships/91766182/cross-domain-knowledge-helped-phd-student-get-fullbright-nehru-doctoral-research-fellowship), [Indian Express](https://indianexpress.com/article/cities/ahmedabad/iitgn-phd-scholar-bags-fulbright-nehru-fellowship-7928541/), [Ahmedabad Mirror](https://ahmedabadmirror.com/iitgns-phd-scholar-awarded-fellowship/81833150.html), [India Education Diary](https://indiaeducationdiary.in/iit-gandhinagar-phd-scholar-bags-the-prestigious-fulbright-nehru-doctoral-research-fellowship-2022-23/), [Careers 360](https://news.careers360.com/iit-gandhinagar-computer-science-engineering-phd-scholar-wins-fulbright-nehru-doctoral-research-fellowship-2022-23).
