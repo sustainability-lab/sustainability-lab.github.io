@@ -10,7 +10,6 @@ title: News
       /* margin-left:30px; */
     }
     table {
-      width: 120%;
       border-collapse: collapse;
       margin: 10px 0;
       margin-left:30px; 
@@ -27,44 +26,37 @@ title: News
 
 <body>
 
-<details open>
-<summary>2024</summary>
+## 2024
 <table>
     <colgroup>
-       <col span="1" style="width: 10%;">
-       <col span="1" style="width: 90%;">
+       <col span="1" style="width: 11%;">
     </colgroup>
-    <!-- <tr>
+    <tr>
         <td>Jun 2024</td>
-        <td>Zeel wons the prestigious Microsoft Research India PhD Award!</td>
-    </tr> -->
+        <td>Zeel wins the prestigious Microsoft Research India PhD Award!</td>
+    </tr>
     <tr>
         <td>Jun 2024</td>
         <td>Ayush and Suraj succesfully defends their Masters thesis!</td>
     </tr>
     <tr>
         <td>Apr 2024</td>
-        <td>Rishiraj got selected for the prestigious <a href="https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html">Heidelberg Laureate Forum</a>. Becomes among one of 200 people around the world who got to meet multiple fields and Turing award winners.</td>
+        <td>Rishiraj was selected for the prestigious <a href="https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html">Heidelberg Laureate Forum</a>, becoming one of only 200 individuals worldwide to meet laureates from various fields, including Turing Award winners.</td>
+    </tr>
+    <tr>
+        <td>Jan 2024</td>
+        <td>Our paper titled "JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising" got accepted in <a href="https://dl.acm.org/toc/imwut/2023/7/4">IMWUT 2024</a></td>
     </tr>
     <tr>
         <td>Jan 2024</td>
         <td>Shataxi, Prince and Poornima joins Sustainability lab. Welcome! </td>
     </tr>
-    <tr>
-        <td></td>
-        <td></td>
-    </tr>
 </table>
-</details>
 
-----
-
-<details open>
-<summary>2023</summary>
+## 2023
 <table>
     <colgroup>
-       <col span="1" style="width: 10%;">
-       <col span="1" style="width: 90%;">
+       <col span="1" style="width: 11%;">
     </colgroup>
     <tr>
         <td>Dec 2023</td>
@@ -95,16 +87,13 @@ title: News
         <td>Ayush and Suraj joins Sustainability lab. Welcome!</td>
     </tr>
 </table>
-</details>
 
-----
 
-<details open>
-<summary>2022</summary>
+## 2022
+
 <table>
     <colgroup>
-       <col span="1" style="width: 10%;">
-       <col span="1" style="width: 90%;">
+       <col span="1" style="width: 11%;">
     </colgroup>
     <tr>
         <td>Nov 2022</td>
@@ -147,16 +136,12 @@ title: News
         <td>Ankita joins Sustainability lab. Welcome!</td>
     </tr>
 </table>
-</details>
 
-----
+## 2021
 
-<details open>
-<summary>2021</summary>
 <table>
     <colgroup>
-       <col span="1" style="width: 10%;">
-       <col span="1" style="width: 90%;">
+       <col span="1" style="width: 11%;">
     </colgroup>
     <tr>
         <td>Dec 2021</td>
@@ -203,16 +188,12 @@ title: News
         <td></td>
     </tr>
 </table>
-</details>
 
-----
+## 2020
 
-<details>
-<summary>2020</summary>
 <table>
     <colgroup>
-       <col span="1" style="width: 10%;">
-       <col span="1" style="width: 90%;">
+       <col span="1" style="width: 11%;">
     </colgroup>
     <tr>
         <td>Dec 2020</td>
@@ -255,16 +236,13 @@ title: News
         <td>Members of our lab attended and presented four posters at CODS COMAD 2020</td>
     </tr>
 </table>
-</details>
 
-----
 
-<details>
-<summary>2019</summary>
+## 2019
+
 <table>
     <colgroup>
-       <col span="1" style="width: 10%;">
-       <col span="1" style="width: 90%;">
+       <col span="1" style="width: 11%;">
     </colgroup>
     <tr>
         <td>Nov 2019</td>
@@ -295,16 +273,12 @@ title: News
         <td>Teaching machine learning this semester. Class URL</td>
     </tr>
 </table>
-</details>
 
-----
+## 2018
 
-<details>
-<summary>2018</summary>
 <table>
     <colgroup>
-       <col span="1" style="width: 10%;">
-       <col span="1" style="width: 90%;">
+       <col span="1" style="width: 11%;">
     </colgroup>
     <tr>
         <td>Nov 2018</td>
@@ -331,8 +305,6 @@ title: News
         <td>Joined CSE at IITGN as an Assistant Professor</td>
     </tr>
 </table>
-</details>
 
-----
 
 </body>
