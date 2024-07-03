@@ -124,4 +124,4 @@ The following is the list of computational resources in our lab apart from the i
 
 ### Relative Performances
 
-<img src="images\benchmark_speedup.png" width=100%>
+<img src="images/benchmark_speedup.png" width=100%>
