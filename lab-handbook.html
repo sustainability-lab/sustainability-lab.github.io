@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sustainability Lab</title>
+<title>Lab-Handbook – Sustainability Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -122,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Lab Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./lab-handbook.html"> 
+    <a class="nav-link active" href="./lab-handbook.html" aria-current="page"> 
 <span class="menu-text">Lab Handbook</span></a>
   </li>  
 </ul>
@@ -142,191 +176,144 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#faculty" id="toc-faculty" class="nav-link active" data-scroll-target="#faculty">Faculty</a>
+  <li><a href="#values" id="toc-values" class="nav-link active" data-scroll-target="#values">Values</a></li>
+  <li><a href="#expectations" id="toc-expectations" class="nav-link" data-scroll-target="#expectations">Expectations</a></li>
+  <li><a href="#meetings" id="toc-meetings" class="nav-link" data-scroll-target="#meetings">Meetings</a></li>
+  <li><a href="#letter-of-recommendations" id="toc-letter-of-recommendations" class="nav-link" data-scroll-target="#letter-of-recommendations">Letter of Recommendations</a></li>
+  <li><a href="#server-policy" id="toc-server-policy" class="nav-link" data-scroll-target="#server-policy">Server Policy</a></li>
+  <li><a href="#communicating-research" id="toc-communicating-research" class="nav-link" data-scroll-target="#communicating-research">Communicating Research</a>
   <ul class="collapse">
-  <li><a href="#prof.-nipun-batra" id="toc-prof.-nipun-batra" class="nav-link" data-scroll-target="#prof.-nipun-batra">Prof.&nbsp;Nipun Batra</a></li>
+  <li><a href="#writing-papers" id="toc-writing-papers" class="nav-link" data-scroll-target="#writing-papers">Writing Papers</a></li>
+  <li><a href="#poster" id="toc-poster" class="nav-link" data-scroll-target="#poster">Poster</a></li>
   </ul></li>
-  <li><a href="#phd" id="toc-phd" class="nav-link" data-scroll-target="#phd">PhD</a></li>
-  <li><a href="#mtech" id="toc-mtech" class="nav-link" data-scroll-target="#mtech">MTech</a></li>
-  <li><a href="#btech" id="toc-btech" class="nav-link" data-scroll-target="#btech">BTech</a></li>
-  <li><a href="#alumni" id="toc-alumni" class="nav-link" data-scroll-target="#alumni">Alumni</a>
-  <ul class="collapse">
-  <li><a href="#btech-1" id="toc-btech-1" class="nav-link" data-scroll-target="#btech-1">BTech</a></li>
-  <li><a href="#mtech-1" id="toc-mtech-1" class="nav-link" data-scroll-target="#mtech-1">MTech</a></li>
-  <li><a href="#research-assistant" id="toc-research-assistant" class="nav-link" data-scroll-target="#research-assistant">Research Assistant</a></li>
-  <li><a href="#outside-iitgn-interns" id="toc-outside-iitgn-interns" class="nav-link" data-scroll-target="#outside-iitgn-interns">Outside IITGn Interns</a></li>
-  </ul></li>
+  <li><a href="#technical-background" id="toc-technical-background" class="nav-link" data-scroll-target="#technical-background">Technical Background</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lab-Handbook</h1>
+</div>
 
 
 
-<!-- ![](images/logo.png) -->
-<img src="images/logo2.png" width="90%" style="display: block;margin-left: auto;margin-right: auto;">
-<p style="text-align:center;">
-Sustainability lab develops sensing and machine learning solutions for various sustainability challenges.
-</p>
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
 <p><br></p>
-<section id="faculty" class="level2">
-<h2 class="anchored" data-anchor-id="faculty">Faculty</h2>
-<p><a href="https://nipunbatra.github.io"> <img src="https://nipunbatra.github.io/images/nipun.jpg" class="cropped-image" style="float: left; margin: 0 15px 0 0;" alt="Prof Nipun Batra"> </a></p>
-<section id="prof.-nipun-batra" class="level3">
-<h3 class="anchored" data-anchor-id="prof.-nipun-batra">Prof.&nbsp;Nipun Batra</h3>
-<p>Nipun Batra is an Assistant Professor of Computer Science at IIT Gandhinagar. He completed his postdoctoral research at the University of Virginia and earned his PhD from IIIT Delhi. His research group focuses on utilizing machine learning and sensing technologies to address computational sustainability challenges, particularly in smart buildings, air quality, and healthcare.</p>
-<p><br></p>
+<section id="values" class="level2">
+<h2 class="anchored" data-anchor-id="values">Values</h2>
+<p><strong>Less but better</strong>: Publish one less paper, but make the ones you publish really strong. Show one less result in the meeting, but thoroughly analyse the ones you show.</p>
 </section>
+<section id="expectations" class="level2">
+<h2 class="anchored" data-anchor-id="expectations">Expectations</h2>
+<p><strong>Hard work</strong>: We are often working on cutting-edge research. This means that there is no clear path to success. We will have to try different things, and we will fail often. This is part of the process. I expect my students to work hard, and I expect them to be resilient.</p>
+<p><strong>Consistency</strong>: We do expect some seasonal variation in productivity. However, often the difference between a good and great project is the consistency of effort.</p>
+<p><strong>Striving for excellence</strong>: Often, the difference between a good and great project (or paper) is the last 10% of effort. I try to push my students to go the extra mile, and I expect the same from myself. This goes in various aspects of work, including writing, coding, and data analysis. As an example, I remember doing ten rounds of feedback with an undergraduate student from the group on their presentation for a conference. It was a lot of work, but the student ended up getting offers (higher studies) after the talk; and the student was appreciated by the session chair - “It is hard to believe that you are an undergraduate student”.</p>
+<p><strong>Clear, honest communication</strong> I try to be as clear as possible in my communication, and I expect the same from my students. I also expect my students to be honest with me. If you are struggling with something, let me know. If you are not interested in a project, let me know. If you are not happy with something, let me know. I you are unable to meet a deadline, let me know. Lack of communication is counterproductive.</p>
+<p>I also typically want to help create a path for my students to achieve their goals. Thus, I expect my students to be clear about their goals, or be proactive in discussing their goals with me.</p>
+<p><strong>Culture of respect and collaboration</strong>: I expect my students to be respectful to each other, and to other members of the community. I also expect my students to be collaborative. This means that they should be willing to help each other, and to help other members of the community.</p>
 </section>
-<section id="phd" class="level2">
-<h2 class="anchored" data-anchor-id="phd">PhD</h2>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="4">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><a href="https://rishi-a.github.io"> <img src="https://rishi-a.github.io/images/RISHIRAJ.jpg" class="cropped-image"><br> </a> <span>Rishiraj Adhikary <br>(Jul 2019 - present)</span></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><a href="https://patel-zeel.github.io"> <img src="https://patel-zeel.github.io/images/profile_crop.png" class="cropped-image"><br> </a> <span>Zeel Patel <br>(Jan 2020 - present)</span></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><a href="https://rishabh-mondal.github.io"> <img src="https://rishabh-mondal.github.io/ris.jpg" class="cropped-image"><br> </a> <span>Rishabh Mondal <br> (Jun 2023 - present)</span></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><a href="https://khush24shah.github.io"> <img src="https://khush24shah.github.io/images/Khush.jpeg" class="cropped-image"><br> </a> <span>Khush Shah <br> (Jul 2023 - present)</span></p>
-</div>
-</div>
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><a href="https://ayushshrivstava.github.io/"> <img src="images/members/Ayush.jpg" class="cropped-image"><br> </a> <span>Ayush Srivastava <br>(Jul 2024 - present)</span></p>
-</div>
-</div>
-</div>
-<style>
-.cropped-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  overflow-clip-margin: unset;        /* AYUSH :  Added to remove pixelation from the profile images*/
-  border: 1px solid #777;             /* Set a thin border on all sides */
-  border-bottom: 4px solid #777;      /* Set a thicker border only at the bottom (slightly darker than tomato) */
-  border-radius: 4px;                 /* Optional: add rounded corners for a nicer look */
-  transition: border-color 0.3s;      /* Add smooth transition for the border color */
-}
-
-.cropped-image:hover {
-  /* Change border color on hover */
-  border-bottom-color: #d9534f; /* Use the same slightly darker color on hover */
-}
-</style>
+<section id="meetings" class="level2">
+<h2 class="anchored" data-anchor-id="meetings">Meetings</h2>
+<p><strong>Whole Group Meetings</strong>: We typically meet once a week for about 45-50 mins. We usually cover a variety of topics, including: - Short updates from each person on their progress - Discussion of any issues that have come up - Presentations on topics/tools of interest to the group - Paper discussions</p>
+<p>We expect students to volunteer to present on topics of interest to them. We also expect students to volunteer to present on papers.</p>
+<p><strong>Project Meetings</strong>: The project meetings are tied to specific projects. We typically start with discussing the last meeting’s action items, then discuss any issues that have come up, and then discuss the next steps. The lead student on the project is responsible for setting the agenda and running the meeting. The lead student is also responsible for taking notes and posting them on the project’s repository.</p>
+<p><strong>Individual Meetings</strong>: Refer to https://github.com/jbhuang0604/awesome-tips</p>
 </section>
-<section id="mtech" class="level2">
-<h2 class="anchored" data-anchor-id="mtech">MTech</h2>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="4">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><a href="https://jaiswalsuraj487.github.io"> <img src="https://jaiswalsuraj487.github.io/images/profile_photo.jpg" class="cropped-image"><br> </a> <span>Suraj Jaiswal <br>(Jul 2022 - present)</span></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><img src="images/members/Poornima.jpg" class="cropped-image"><br> <span>Poornima Bhatia <br>(Jul 2023 - present)</span></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><img src="images/members/Shataxi.jpg" class="cropped-image"><br> <span>Shataxi Dubey <br>(Jul 2023 - present)</span></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><img src="images/members/Prince.jpg" class="cropped-image"><br> <span>Prince Kumar <br>(Jul 2023 - present)</span></p>
-</div>
-</div>
-</div>
+<section id="letter-of-recommendations" class="level2">
+<h2 class="anchored" data-anchor-id="letter-of-recommendations">Letter of Recommendations</h2>
+<p>Please this beautiful blogpost from Gautam Kamath. <a href="https://kamathematics.wordpress.com/2021/08/18/how-to-ask-for-a-letter-of-recommendation/">How to ask for LOR article by Gautam Kamath</a></p>
 </section>
-<section id="btech" class="level2">
-<h2 class="anchored" data-anchor-id="btech">BTech</h2>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="4">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><a href="https://vannshjani.github.io/Blogs/"> <img src="images/members/Vannsh.jpg" class="cropped-image"><br> </a> <span>Vannsh Jani <br>(Aug 2023 - present)</span></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><img src="images/members/Yash.jpg" class="cropped-image"><br> <span>Yash Bachwana <br>(May 2024 - Present)</span></p>
-</div>
-</div>
-</div>
-</section>
-<section id="alumni" class="level2">
-<h2 class="anchored" data-anchor-id="alumni">Alumni</h2>
-<section id="btech-1" class="level3">
-<h3 class="anchored" data-anchor-id="btech-1">BTech</h3>
+<section id="server-policy" class="level2">
+<h2 class="anchored" data-anchor-id="server-policy">Server Policy</h2>
+<p><strong>How to get access</strong>: Send an email to Mr.&nbsp;<a href="raviraj.s@iitgn.ac.in">Raviraj Sukhadiya</a>, keeping Prof.&nbsp;<a href="nipun.batra@iitgn.ac.in">Nipun Batra</a> in cc. Mention the following details in your request: i) server name; ii) purpose for access.</p>
+<p><strong>Don’ts</strong>:</p>
 <ul>
-<li>Dhruv Patel (BTech 2024): MS at TAMU</li>
-<li>Haikoo Khandor (BTech 2024): MS at TAMU</li>
-<li>Progyan Das (BTech 2024): Applied Scientist at Microsoft</li>
-<li>Madhav Kanda (BTech 2024): MS at UIUC</li>
-<li>Aditi Agarwal (BTech 2024): Predoc at Google Deepmind</li>
-<li>Utkarsh Mittal (BTech 2024): MS at NYU Tandon</li>
-<li>Aadesh Desai (BTech 2023): MS at CMU</li>
-<li>Eshan Gujarathi (BTech 2023): Predoc at IIT Madras</li>
-<li>Gautam Vasistha (BTech 2023): Data Scientist as Skan.AI</li>
-<li>Hitarth Gandhi (BTech 2023): MS at UC Irvine</li>
-<li>Saagar Parikh (BTech 2023): MS at CMU</li>
-<li>Xhitij Choudhary (BTech 2023): Data Scientist at Skan.AI</li>
-<li>Chris Francis (BTech 2022): MS at UCSD</li>
-<li>Dhruvi Lodhavia (BTech 2022): MS at UCSD</li>
-<li>Hetvi Shastri (BTech 2022): PhD at UMass Amherst</li>
-<li>Harsh Patel (BTech 2022): MS at UCSD</li>
-<li>Palak Purohit (BTech 2022): MS at Caltech</li>
-<li>Shivam Sahni (BTech 2022): MS at UCSD</li>
-<li>Apoorv Agnihotri (BTech 2020): First job at Wadhwani AI -&gt; Data Scientist at Rephrase.ai</li>
-<li>Deepak Narayanan (BTech 2020): First job at Microsoft Research India -&gt; MS at ETH Zurich</li>
-<li>Kukunuri Rithwik (BTech 2020): First job at Jio -&gt; Data Scientist at Nykaa</li>
-<li>Soham Pachpande (BTech 2020): First job at HSBC-&gt; MS at UCSD -&gt; SWE at Salesforce</li>
+<li>Do not use the server for personal use or anything not related to the project. This includes any classwork or homework.</li>
+<li>Do not share your server credentials with anyone else.</li>
+</ul>
+<p><strong>Fair usage</strong>:</p>
+<ul>
+<li>Sometimes we have multiple projects running on the same server. Please be considerate of other projects and do not use up all the resources.</li>
+<li>Sometimes we may allocate specific cores or GPUs to specific projects. Please do not use cores or GPUs that are not allocated to your project.</li>
 </ul>
 </section>
-<section id="mtech-1" class="level3">
-<h3 class="anchored" data-anchor-id="mtech-1">MTech</h3>
-<ul>
-<li>Ayush Shrivastava (Mtech 2024): PhD at IIT Gandhinagar</li>
-<li>Suraj Jaiswal (Mtech 2024): First job at Neuroreef-labs</li>
-<li>Ankita Jain (MTech 2023): First job at Oracle</li>
-<li>Karan Kumar (MTech 2020): First job at Trading Technologies</li>
-<li>Souvik Roy (MTech 2020): First job at eClerx</li>
-</ul>
+<section id="communicating-research" class="level2">
+<h2 class="anchored" data-anchor-id="communicating-research">Communicating Research</h2>
+<section id="writing-papers" class="level3">
+<h3 class="anchored" data-anchor-id="writing-papers">Writing Papers</h3>
+<p>Paper writing is a key part of research. This page contains some tips and tricks for writing papers. Paper writing is a skill that you will develop over time. But, it needs deliberate practice.</p>
+<p><strong>Paper structure and Abstract</strong>: I gave a talk (<a href="https://www.youtube.com/watch?v=LoCoplWgvp4">recording here</a>, <a href="https://github.com/nipunbatra/CS-Research-Methods-Bootcamp/blob/master/RM101.pdf">slides here</a>) on how to write a paper. I recommend watching it. Other materials from the talk are available <a href="https://github.com/nipunbatra/CS-Research-Methods-Bootcamp">here</a>.</p>
+<p><strong>LaTeXify figures</strong>: We’d suggest using <a href="https://nipunbatra.github.io/lab/papers.html#latexify-figures">this latexification tool</a> to make the <code>matplotlib</code> figures publication-ready. It helps in the following aspects:</p>
+<ol type="1">
+<li>It helps in setting the exact size of the figure relative to the column width or page width of the paper. After using this tool, manually setting the size within the <code>\begin{figure}</code> block is rarely needed.</li>
+<li>We can set the font size relative to the text font size in the paper to ensure fonts are not too small or too big.</li>
+<li>It converts the fonts into latex fonts so that the fonts in the figures do not look different from the main text font.</li>
+</ol>
+<blockquote class="blockquote">
+<p>Tip: You can find page width and column width with <code>\the\textwidth</code> and <code>\the\columnwidth</code> commands, respectively.</p>
+</blockquote>
+<p><strong>Self-contained figures and tables (and captions)</strong></p>
+<p><strong>Tables</strong>: We follow this excellent <a href="https://people.inf.ethz.ch/markusp/teaching/guides/guide-tables.pdf">small guide to making nice tables</a> by Markus Püschel.</p>
+<p><strong>Comments in LaTeX</strong>: We typically create a macro corresponding to different author initials (I use <code>\nb</code> for example) and then use that to create comments in the text. This is useful for commenting on the text, or for leaving notes to yourself. For example, I might write <code>\nb{I'm not sure about this sentence}</code> and then I can search for all instances of <code>\nb</code> to find all of my comments.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\newcommand</span>{<span class="ex">\nb</span>}[1]{{<span class="fu">\color</span>{red}<span class="fu">\small</span> <span class="fu">\iftoggle</span>{hide}{}{<span class="fu">\textbf</span>{Nipun's comment:} #1}}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>American v/s British English</strong>: There are a few differences in spelling between American and British English. For example, the word “colour” in British English is spelled “color” in American English. The word “optimise” in British English is spelled “optimize” in American English. There are also some differences in grammar. I recommend picking one and sticking to it. Most of our previous papers have used British English (but often this depends on the set of co-authors).</p>
+<p><strong>Grammarly and other AI tools</strong>: I recommend students use Grammarly (or a similar) tool to check their writing once they have done a complete pass of editing. I do not recommend relying a lot on ChatGPT-like tools for writing papers as they can often lead to “correct” sounding but “incorrect” sentences.</p>
 </section>
-<section id="research-assistant" class="level3">
-<h3 class="anchored" data-anchor-id="research-assistant">Research Assistant</h3>
-<ul>
-<li>Kaushal Modi: Now a data scientist at InfiBeam</li>
-<li>Prerna Khanna: Now a PhD student at Stony Brook</li>
-<li>Tanmay Srivastava: Now a PhD student at Stony Brook</li>
-<li>Rohit Patil: First job at Publicis Sapient</li>
-</ul>
+<section id="poster" class="level3">
+<h3 class="anchored" data-anchor-id="poster">Poster</h3>
+<p>In some venues, the main presentation format is a poster. Posters are a great way to present your work in a visual format, and to have one-on-one conversations with people who are interested in your work.</p>
+<p>One common mistake people make while making posters is to try to cram in too much information. Remember that the poster is to supplement you and not to replace you.</p>
+<p>Please see below for two posters that we have made in the past.</p>
+<section id="sample-poster-1" class="level4">
+<h4 class="anchored" data-anchor-id="sample-poster-1">Sample Poster 1</h4>
+<!-- ![](images/sample/sample-poster-1.jpg) -->
+<p><img src="images/sample/sample-poster-1.jpg" style="width:80%;display: block;margin-left: auto;margin-right: auto;"></p>
 </section>
-<section id="outside-iitgn-interns" class="level3">
-<h3 class="anchored" data-anchor-id="outside-iitgn-interns">Outside IITGn Interns</h3>
+<section id="sample-poster-2" class="level4">
+<h4 class="anchored" data-anchor-id="sample-poster-2">Sample Poster 2</h4>
+<!-- ![](images/sample/sample-poster-2.jpg) -->
+<p><img src="images/sample/sample-poster-2.jpg" style="width:80%;display: block;margin-left: auto;margin-right: auto;"></p>
+<p>Please find the presentation files corresponding to the first poster 1. <a href="https://github.com/nipunbatra/nipunbatra.github.io/blob/main/slides/2017/aaai_poster.key">Apple Keynote</a></p>
+<ol start="2" type="1">
+<li><p><a href="https://github.com/nipunbatra/nipunbatra.github.io/blob/main/slides/2017/aaai_poster.pptx">MS Powerpoint</a></p></li>
+<li><p><a href="https://docs.google.com/presentation/d/1mH50SOlfErQ683_DwXBcrxCixZ3DX3Mx/edit?usp=sharing&amp;ouid=109104637369595830870&amp;rtpof=true&amp;sd=true">Google Slides</a></p></li>
+</ol>
+<p>LaTeX users can use the following templates on <a href="https://www.overleaf.com/gallery/tagged/poster">Overleaf</a> to make their posters.</p>
+</section>
+</section>
+</section>
+<section id="technical-background" class="level2">
+<h2 class="anchored" data-anchor-id="technical-background">Technical Background</h2>
+<p><strong>Git and GitHub</strong>: There are a ton of good resorces on Git and Github. I’m linking two such resources here:</p>
 <ul>
-<li>Vibhuti Bansal (Summer 2022): Now at CRED</li>
-<li>Rohit Khoiwal (Summer 2022)</li>
-<li>Anand Hegde (Summer 2022)</li>
-<li>Shobhit Belwal (Summer 2022)</li>
-<li>Aryan Varshney (Summer 2022)</li>
-<li>Ami Ashish Buch (Summer 2024)</li>
-<li>Sajay Raj (Summer 2024)</li>
-<li>Muhammad Zaid Hassan (Summer 2024)</li>
-<li>Devodita Chakravarty (Summer 2024)</li>
-<li>Omisha Guha (Summer 2024)</li>
+<li><a href="https://www.youtube.com/watch?v=tRZGeaHPoaw">YouTube video by Kevin Stratvert</a></li>
+<li><a href="https://github.com/skills/introduction-to-github">Github skills</a></li>
 </ul>
+<p><strong>Python Data Science Stack</strong>:</p>
+<ul>
+<li>We recommend students to study the <a href="https://jakevdp.github.io/PythonDataScienceHandbook/">Python for Data Science Handbook</a> by Jake VanderPlas. It is a free online book that covers the basics of Python, NumPy, Pandas, Matplotlib, and Scikit-Learn. It is a great resource for beginners and intermediate students alike.</li>
+<li>We recommend students regularly hone their skills solving exercises such as <a href="https://github.com/rougier/numpy-100">100 Numpy exercises</a>. Given that much of our work is in Torch-like frameworks, the students would also benefit by attempting to solve the exercises using PyTorch.</li>
+</ul>
+<p><strong>Object-Oriented Programming in Python</strong>: RealPython has a nice <a href="https://realpython.com/python3-object-oriented-programming/">tutorial</a> on Object-Oriented Programming in Python. We recommend students to go through the tutorial. They also have a corresponding <a href="https://realpython.com/courses/python-basics-oop/">video</a> page.</p>
+<p><strong>LaTeX</strong>: We typically use LaTeX for writing reports and papers. We recommend students to use <a href="https://www.overleaf.com/">Overleaf</a> for students to get started. Overleaf has a nice 30 minute <a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes">tutorial</a> that covers the basics of LaTeX. We highly recommend students to go through the tutorial.</p>
+<p><strong>Creating a Website and Blog</strong>: We highly recommend students create a simple website and a blog. We have been happily using Quarto for our website and blog. You may see in action in <a href="https://nipunbatra.github.io/">Nipun’s website</a> and corresponding GitHub repo <a href="https://github.com/nipunbatra/nipunbatra.github.io">here</a>; and <a href="https://nipunbatra.github.io/blog/">Nipun’s blog</a> and corresponding Github repo <a href="https://github.com/nipunbatra/blog">here</a>.</p>
+<p>Both of these are built via Github actions. Feel free to reuse these for creating your own website and blog. We will be happy to help you get started.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
