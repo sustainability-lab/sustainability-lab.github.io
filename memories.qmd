@@ -8,6 +8,8 @@ lightbox: auto
 
 Click on any picture to activate the "lightbox" mode. Use the arrow keys to navigate.
 
+# 2024
+
 ## June 2024
 ![](images/memories/2024-June-AyushSurajDefense2.png){group="my-gallery"
 description="[Ayush and Suraj succesfully defends their Masters Thesis]{.large-caption-text}"}
@@ -26,6 +28,8 @@ description="[Lab dinner May 2024]{.large-caption-text}"}
 description="[Jan 2024 Alums from 2022 batch Harsh, Hetvi and Palak visited us]{.large-caption-text}"}
 
 [Jan 2024 Alums from 2022 batch Harsh, Hetvi and Palak visited us.]{.large-caption-text}
+
+# 2023
 
 ## Nov 2023
 ![](images/memories/2023-Fall.jpg){group="my-gallery"
@@ -73,6 +77,7 @@ description="[Cake by batch of 2023]{.large-caption-text}"}
 
 [Cake by batch of 2023]{.large-caption-text}
 
+# 2022
 
 ## July 2022
 
@@ -81,6 +86,7 @@ description="[With a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, P
 
 [With a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)]{.large-caption-text}
 
+# 2021
 
 ## Dec 2021
 
@@ -102,12 +108,3 @@ description="[Apoorv's \"re\" visit to the campus (others in frame: Rishiraj and
       font-size: large ;
    }
 </style>
-
-
-
-
-
-
-
-
-

@@ -4,56 +4,83 @@ project:
 
 website:
   title: "Sustainability Lab"
-  sidebar:
-    contents:
-      - href: index.qmd
-        text: Home
-      - href: members.qmd
-        text: Team
-      - href: experiences.qmd
-        text: Alumni Experiences
-      - href: memories.qmd
-        text: Group Pictures
-      - href: papers
+  navbar:
+    search: True
+    left:
+      - href: papers/index.qmd
         text: Publications
-      - href: events.qmd
-        text: Events
-      - href: reading.qmd
-        text: Reading Group
+      - href: awards.qmd
+        text: Awards
       - href: news.qmd
         text: News
-      - href: computational-resources.qmd
-        text: Computational Resources
       - href: media.qmd
         text: Media coverage
-      - section: Lab Notebook
-        contents:
-          - href: values.qmd
-            text: Values
-          - href: expectations.qmd
-            text: Expectations
-          - section: Communicating Research
-            contents:
-              - href: writing-papers.qmd
-                text: Papers
-              - href: posters.qmd
-                text: Posters
-              - href: talks.qmd
-                text: Talks
-              - href: media.qmd
-                text: Media
-          - href: technical-background.qmd
-            text: Technical Background
-          - href: meetings.qmd
-            text: Meetings
-          - href: lor.qmd
-            text: Letters of Recommendation
-          - href: server.qmd
-            text: Server Policy 
+      - href: memories.qmd
+        text: Group Photos
+      - href: experiences.qmd
+        text: Alumni Experience
+      - href: reading.qmd
+        text: Reading Group 
+      - href: computational-resources.qmd
+        text: Lab Resources
+      - href: lab-handbook.qmd
+        text: Lab Handbook
+        
+  # sidebar:
+  #   contents:
+  #     - href: index.qmd
+  #       text: Home
+  #     - href: members.qmd
+  #       text: Team
+  #     - href: experiences.qmd
+  #       text: Alumni Experiences
+  #     - href: memories.qmd
+  #       text: Group Pictures
+  #     - href: papers
+  #       text: Publications
+  #     - href: events.qmd
+  #       text: Events
+  #     - href: reading.qmd
+  #       text: Reading Group
+  #     - href: news.qmd
+  #       text: News
+  #     - href: computational-resources.qmd
+  #       text: Computational Resources
+  #     - href: media.qmd
+  #       text: Media coverage
+  #     - section: Lab Notebook
+  #       contents:
+  #         - href: values.qmd
+  #           text: Values
+  #         - href: expectations.qmd
+  #           text: Expectations
+  #         - section: Communicating Research
+  #           contents:
+  #             - href: writing-papers.qmd
+  #               text: Papers
+  #             - href: posters.qmd
+  #               text: Posters
+  #             - href: talks.qmd
+  #               text: Talks
+  #             - href: media.qmd
+  #               text: Media
+  #         - href: technical-background.qmd
+  #           text: Technical Background
+  #         - href: meetings.qmd
+  #           text: Meetings
+  #         - href: lor.qmd
+  #           text: Letters of Recommendation
+  #         - href: server.qmd
+  #           text: Server Policy 
+
           
           
 format:
   html:
+    page-layout: full
+    toc: true
+    grid:
+      margin-width: 14%
     theme:
       light: [litera, styles.scss]
       dark: [darkly, styles-dark.scss]

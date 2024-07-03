@@ -1,0 +1,133 @@
+---
+title: Lab-Handbook
+---
+<br>
+
+## Values
+
+**Less but better**: Publish one less paper, but make the ones you publish really strong. Show one less result in the meeting, but thoroughly analyse the ones you show.
+
+
+## Expectations
+
+**Hard work**: We are often working on cutting-edge research. This means that there is no clear path to success. We will have to try different things, and we will fail often. This is part of the process. I expect my students to work hard, and I expect them to be resilient.
+
+**Consistency**: We do expect some seasonal variation in productivity. However, often the difference between a good and great project is the consistency of effort. 
+
+**Striving for excellence**: Often, the difference between a good and great project (or paper) is the last 10% of effort. I try to push my students to go the extra mile, and I expect the same from myself. This goes in various aspects of work, including writing, coding, and data analysis. As an example, I remember doing ten rounds of feedback with an undergraduate student from the group on their presentation for a conference. It was a lot of work, but the student ended up getting offers (higher studies) after the talk; and the student was appreciated by the session chair - "It is hard to believe that you are an undergraduate student".
+
+**Clear, honest communication** I try to be as clear as possible in my communication, and I expect the same from my students. I also expect my students to be honest with me. If you are struggling with something, let me know. If you are not interested in a project, let me know. If you are not happy with something, let me know. I you are unable to meet a deadline, let me know. Lack of communication is counterproductive.
+
+I also typically want to help create a path for my students to achieve their goals. Thus, I expect my students to be clear about their goals, or be proactive in discussing their goals with me. 
+
+**Culture of respect and collaboration**: I expect my students to be respectful to each other, and to other members of the community. I also expect my students to be collaborative. This means that they should be willing to help each other, and to help other members of the community.
+
+## Meetings
+
+
+**Whole Group Meetings**: We typically meet once a week for about 45-50 mins. We usually cover a variety of topics, including:
+- Short updates from each person on their progress
+- Discussion of any issues that have come up
+- Presentations on topics/tools of interest to the group
+- Paper discussions
+
+We expect students to volunteer to present on topics of interest to them. We also expect students to volunteer to present on papers.
+
+**Project Meetings**: The project meetings are tied to specific projects. We typically start with discussing the last meeting's action items, then discuss any issues that have come up, and then discuss the next steps. The lead student on the project is responsible for setting the agenda and running the meeting. The lead student is also responsible for taking notes and posting them on the project's repository.
+
+**Individual Meetings**: Refer to https://github.com/jbhuang0604/awesome-tips
+
+## Letter of Recommendations
+Please this beautiful blogpost from Gautam Kamath. [How to ask for LOR article by Gautam Kamath](https://kamathematics.wordpress.com/2021/08/18/how-to-ask-for-a-letter-of-recommendation/)
+
+## Server Policy
+
+**How to get access**: Send an email to Mr. [Raviraj Sukhadiya](raviraj.s@iitgn.ac.in), keeping Prof. [Nipun Batra](nipun.batra@iitgn.ac.in) in cc. Mention the following details in your request: i) server name; ii) purpose for access.
+
+**Don'ts**: 
+
+- Do not use the server for personal use or anything not related to the project. This includes any classwork or homework.
+- Do not share your server credentials with anyone else.
+
+**Fair usage**:
+
+- Sometimes we have multiple projects running on the same server. Please be considerate of other projects and do not use up all the resources.
+- Sometimes we may allocate specific cores or GPUs to specific projects. Please do not use cores or GPUs that are not allocated to your project.
+
+## Communicating Research
+
+### Writing Papers
+Paper writing is a key part of research. This page contains some tips and tricks for writing papers. Paper writing is a skill that you will develop over time. But, it needs deliberate practice. 
+
+**Paper structure and Abstract**: I gave a talk ([recording here](https://www.youtube.com/watch?v=LoCoplWgvp4), [slides here](https://github.com/nipunbatra/CS-Research-Methods-Bootcamp/blob/master/RM101.pdf)) on how to write a paper. I recommend watching it. Other materials from the talk are available [here](https://github.com/nipunbatra/CS-Research-Methods-Bootcamp).
+
+**LaTeXify figures**: We'd suggest using [this latexification tool](https://nipunbatra.github.io/lab/papers.html#latexify-figures) to make the `matplotlib` figures publication-ready. It helps in the following aspects:
+
+1. It helps in setting the exact size of the figure relative to the column width or page width of the paper. After using this tool, manually setting the size within the `\begin{figure}` block is rarely needed.
+1. We can set the font size relative to the text font size in the paper to ensure fonts are not too small or too big.
+1. It converts the fonts into latex fonts so that the fonts in the figures do not look different from the main text font.
+
+> Tip: You can find page width and column width with `\the\textwidth` and  `\the\columnwidth` commands, respectively.
+
+**Self-contained figures and tables (and captions)**
+
+**Tables**: We follow this excellent [small guide to making nice tables](https://people.inf.ethz.ch/markusp/teaching/guides/guide-tables.pdf) by Markus Püschel.
+
+**Comments in LaTeX**: We typically create a macro corresponding to different author initials (I use `\nb` for example) and then use that to create comments in the text. This is useful for commenting on the text, or for leaving notes to yourself. For example, I might write `\nb{I'm not sure about this sentence}` and then I can search for all instances of `\nb` to find all of my comments.
+
+```tex
+\newcommand{\nb}[1]{{\color{red}\small \iftoggle{hide}{}{\textbf{Nipun's comment:} #1}}}
+```
+
+**American v/s British English**: There are a few differences in spelling between American and British English. For example, the word "colour" in British English is spelled "color" in American English. The word "optimise" in British English is spelled "optimize" in American English. There are also some differences in grammar. I recommend picking one and sticking to it. Most of our previous papers have used British English (but often this depends on the set of co-authors).
+
+
+**Grammarly and other AI tools**: I recommend students use Grammarly (or a similar) tool to check their writing once they have done a complete pass of editing. I do not recommend relying a lot on ChatGPT-like tools for writing papers as they can often lead to "correct" sounding but "incorrect" sentences.
+
+
+### Poster
+In some venues, the main presentation format is a poster. Posters are a great way to present your work in a visual format, and to have one-on-one conversations with people who are interested in your work.
+
+One common mistake people make while making posters is to try to cram in too much information. Remember that the poster is to supplement you and not to replace you. 
+
+Please see below for two posters that we have made in the past.
+
+#### Sample Poster 1
+<!-- ![](images/sample/sample-poster-1.jpg) -->
+<img src="images/sample/sample-poster-1.jpg" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
+
+
+#### Sample Poster 2
+<!-- ![](images/sample/sample-poster-2.jpg) -->
+<img src="images/sample/sample-poster-2.jpg" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
+
+Please find the presentation files corresponding to the first poster
+1. [Apple Keynote](https://github.com/nipunbatra/nipunbatra.github.io/blob/main/slides/2017/aaai_poster.key)
+
+2. [MS Powerpoint](https://github.com/nipunbatra/nipunbatra.github.io/blob/main/slides/2017/aaai_poster.pptx)
+
+3. [Google Slides](https://docs.google.com/presentation/d/1mH50SOlfErQ683_DwXBcrxCixZ3DX3Mx/edit?usp=sharing&ouid=109104637369595830870&rtpof=true&sd=true)
+
+
+LaTeX users can use the following templates on [Overleaf](https://www.overleaf.com/gallery/tagged/poster) to make their posters.
+
+
+## Technical Background
+
+**Git and GitHub**: There are a ton of good resorces on Git and Github. I'm linking two such resources here:
+
+- [YouTube video by Kevin Stratvert](https://www.youtube.com/watch?v=tRZGeaHPoaw)
+- [Github skills](https://github.com/skills/introduction-to-github)
+
+**Python Data Science Stack**: 
+
+- We recommend students to study the [Python for Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) by Jake VanderPlas. It is a free online book that covers the basics of Python, NumPy, Pandas, Matplotlib, and Scikit-Learn. It is a great resource for beginners and intermediate students alike.
+- We recommend students regularly hone their skills solving exercises such as [100 Numpy exercises](https://github.com/rougier/numpy-100). Given that much of our work is in Torch-like frameworks, the students would also benefit by attempting to solve the exercises using PyTorch.
+
+**Object-Oriented Programming in Python**: RealPython has a nice [tutorial](https://realpython.com/python3-object-oriented-programming/) on Object-Oriented Programming in Python. We recommend students to go through the tutorial. They also have a corresponding [video](https://realpython.com/courses/python-basics-oop/) page. 
+
+**LaTeX**: We typically use LaTeX for writing reports and papers. We recommend students to use [Overleaf](https://www.overleaf.com/) for students to get started. Overleaf has a nice 30 minute [tutorial](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) that covers the basics of LaTeX. We highly recommend students to go through the tutorial.
+
+**Creating a Website and Blog**: We highly recommend students create a simple website and a blog. We have been happily using Quarto for our website and blog. You may see in action in [Nipun's website](https://nipunbatra.github.io/) and corresponding GitHub repo [here](https://github.com/nipunbatra/nipunbatra.github.io); and [Nipun's blog](https://nipunbatra.github.io/blog/) and corresponding Github repo [here](https://github.com/nipunbatra/blog).
+
+Both of these are built via Github actions. Feel free to reuse these for creating your own website and blog. We will be happy to help you get started.
