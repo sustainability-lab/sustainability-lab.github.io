@@ -6,6 +6,12 @@ filters:
 lightbox: auto
 ---
 
+<!-- ![](images/logo.png) -->
+<img src="images/logo2.png" width=90%   style="display: block;margin-left: auto;margin-right: auto;">
+<p style="text-align:center;">
+Sustainability lab develops sensing and machine learning solutions for various sustainability challenges. 
+</p>
+
 <style>
 /* Hide the individual images */
 .large-caption-text img {
@@ -63,12 +69,6 @@ description="[Celebrating AAAI 2022 paper acceptance]{.large-caption-text}"}
 description="[Apoorv's \"re\" visit to the campus (others in frame: Rishiraj and Zeel)]{.large-caption-text}"}
 
 </div>
-
-<!-- ![](images/logo.png) -->
-<img src="images/logo2.png" width=90%   style="display: block;margin-left: auto;margin-right: auto;">
-<p style="text-align:center;">
-Sustainability lab develops sensing and machine learning solutions for various sustainability challenges. 
-</p>
 
 <br>
 
