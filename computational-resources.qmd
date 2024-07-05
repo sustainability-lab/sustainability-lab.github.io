@@ -28,6 +28,11 @@ IIT Gandhinagar has a number of computational resources available for research a
 The following is the list of computational resources in our lab apart from the institute and departmental resources.
 
 ### Servers
+Our servers are named after great mathematicians/scientists:
+
+- Ramanujan (रामानुजन): Srinivasa Ramanujan made groundbreaking contributions to number theory.
+- Bhaskar (भास्कर): Bhaskar (aka Bhaskar II) is known for his work Siddhānta Shiromani (सिद्धांत शिरोमणि) which includes advances in algebra, calculus, and astronomy.
+- Aryabhata (आर्यभट): Aryabhata is well-known for inventing the concept of zero (शून्य) and the place value system. He is also said to be one of the faculty members of the famous Nalanda University (नालंदा विद्यालय).
 
 <table>
     <tr>
