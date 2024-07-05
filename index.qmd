@@ -1,5 +1,6 @@
 ---
 # title: "Sustainability Lab"
+toc: false
 ---
 
 <!-- ![](images/logo.png) -->
