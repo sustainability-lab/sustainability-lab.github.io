@@ -1,7 +1,68 @@
 ---
 # title: "Sustainability Lab"
 toc: false
+filters:
+   - lightbox
+lightbox: auto
 ---
+
+<style>
+/* Hide the individual images */
+.large-caption-text img {
+  font-size: large;
+  display: none;
+}
+</style>
+
+## Group Photos (Click on the photo for slideshow)
+
+![](images/memories/2024-June-AyushSurajDefense2.png){group="my-gallery"
+description="[Ayush and Suraj succesfully defends their Masters Thesis]{.large-caption-text}"}
+
+<div class="large-caption-text">
+![](images/memories/batch24.jpg){group="my-gallery"
+description="[Batch of 2024]{.large-caption-text}"}
+
+![](images/memories/summer24.jpg){group="my-gallery"
+description="[Lab dinner May 2024]{.large-caption-text}"}
+
+![](images/memories/2024-alum-visit.jpg){group="my-gallery"
+description="[Jan 2024 Alums from 2022 batch Harsh, Hetvi and Palak visited us]{.large-caption-text}"}
+
+![](images/memories/2023-Fall.jpg){group="my-gallery"
+description="[15 Nov 2023 Students working with us in the Fall 2023 semester.]{.large-caption-text}"}
+
+![](images/memories/rishiraj-award.jpeg){group="my-gallery"
+description="[Rishiraj was a finalist in the presitigous Gaetano Borriello Outstanding Student Award at ACM Ubicomp 2023]{.large-caption-text}"}
+
+![](images/memories/2023-Sept-Young_Alumni.jpg){group="my-gallery"
+description="[15 Sept 2023 Received the Young Alumni Award from IIIT Delhi.]{.large-caption-text}"}
+
+![](images/memories/2023-July-all.jpg){group="my-gallery"
+description="[July 2023 at the 2023 batch convocation (and celebration of multiple awards!)]{.large-caption-text}"}
+
+![](images/memories/ankita-gm-2-3.png){group="my-gallery"
+description="[Ankita winning the Gold Medal for Outstanding Research]{.large-caption-text}"}
+
+![](images/memories/2023-July.jpg){group="my-gallery"
+description="[May 2023 dinner]{.large-caption-text}"}
+
+![](images/memories/2023-group.jpg){group="my-gallery"
+description="[Batch of 2023 :Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam]{.large-caption-text}"}
+
+![](images/memories/2023-cake.jpg){group="my-gallery"
+description="[Cake by batch of 2023]{.large-caption-text}"}
+
+![](images/memories/2022-group-subset.jpg){group="my-gallery"
+description="[With a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)]{.large-caption-text}"}
+
+![](images/memories/2021-AAAI.jpg){group="my-gallery"
+description="[Celebrating AAAI 2022 paper acceptance]{.large-caption-text}"}
+
+![](images/memories/2021-Nov-Apoorv.jpg){group="my-gallery"
+description="[Apoorv's \"re\" visit to the campus (others in frame: Rishiraj and Zeel)]{.large-caption-text}"}
+
+</div>
 
 <!-- ![](images/logo.png) -->
 <img src="images/logo2.png" width=90%   style="display: block;margin-left: auto;margin-right: auto;">
