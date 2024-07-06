@@ -186,7 +186,7 @@
     "href": "memories.html#nov-2021",
     "title": "Group Photos",
     "section": "Nov 2021",
-    "text": "Nov 2021\n\nApoorv’s “re” visit to the campus (others in frame: Rishiraj and Zeel)\n\n\n\n\n\nAyush and Suraj succesfully defends their Masters Thesis\n\n\nBatch of 2024\n\n\nLab dinner May 2024\n\n\nJan 2024 Alums from 2022 batch Harsh, Hetvi and Palak visited us\n\n\n15 Nov 2023 Students working with us in the Fall 2023 semester.\n\n\nRishiraj was a finalist in the presitigous Gaetano Borriello Outstanding Student Award at ACM Ubicomp 2023\n\n\n15 Sept 2023 Received the Young Alumni Award from IIIT Delhi.\n\n\nJuly 2023 at the 2023 batch convocation (and celebration of multiple awards!)\n\n\nAnkita winning the Gold Medal for Outstanding Research\n\n\nMay 2023 dinner\n\n\nBatch of 2023 :Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam\n\n\nCake by batch of 2023\n\n\nWith a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)\n\n\nCelebrating AAAI paper acceptance\n\n\nApoorv’s “re” visit to the campus (others in frame: Rishiraj and Zeel)"
+    "text": "Nov 2021\n\nApoorv’s “re” visit to the campus (others in frame: Rishiraj and Zeel)"
   },
   {
     "objectID": "experiences.html",
@@ -446,6 +446,13 @@
     "title": "Server Policy",
     "section": "",
     "text": "How to get access\nSend an email to Mr. Raviraj Sukhadiya, keeping Prof. Nipun Batra in cc. Mention the following details in your request: i) server name; ii) purpose for access.\n\n\nDon’ts\n\nDo not use the server for personal use or anything not related to the project. This includes any classwork or homework.\nDo not share your server credentials with anyone else.\n\n\n\nFair usage\n\nSometimes we have multiple projects running on the same server. Please be considerate of other projects and do not use up all the resources.\nSometimes we may allocate specific cores or GPUs to specific projects. Please do not use cores or GPUs that are not allocated to your project."
+  },
+  {
+    "objectID": "lab-handbook.html#computational-resources",
+    "href": "lab-handbook.html#computational-resources",
+    "title": "Lab-Handbook",
+    "section": "Computational Resources",
+    "text": "Computational Resources\nIIT Gandhinagar has a number of computational resources available for research and teaching purposes. Aside from it, the department also has a number of workstations available for students and faculty members.\nThe following is the list of computational resources in our lab apart from the institute and departmental resources.\n\nServers\nOur servers are named after great mathematicians/scientists:\n\nRamanujan (रामानुजन): Srinivasa Ramanujan made groundbreaking contributions to number theory.\nBhaskar (भास्कर): Bhaskar (aka Bhaskar II) is known for his work Siddhānta Shiromani (सिद्धांत शिरोमणि) which includes advances in algebra, calculus, and astronomy.\nAryabhata (आर्यभट): Aryabhata is well-known for inventing the concept of zero (शून्य) and the place value system. He is also said to be one of the faculty members of the famous Nalanda University (नालंदा विद्यालय).\n\n\n\n\n\n\nRamanujan\n\n\nBhaskar\n\n\nSustain\n\n\n\n\nRAM\n\n\n512 GB (32 x 16)\n\n\nTo be Updated\n\n\n192 GB (32 x 6)\n\n\n\n\nCPU\n\n\nAMD EPYC 7452 32-Core Processor\n\n\nTo be Updated\n\n\nIntel(R) Xeon(R) Silver 4208 CPU @ 2.10GHz\n\n\n\n\nNumber of CPUs\n\n\n64\n\n\nTo be Updated\n\n\n16\n\n\n\n\nGPU\n\n\nNVIDIA A100-SXM4 (80GB)\n\n\nNVIDIA RTX A5000 (24GB)\n\n\nNVIDIA RTX A4000 (16GB)\n\n\n\n\nNumber of GPUs\n\n\n4\n\n\n1\n\n\n2\n\n\n\n\n\n\n\nWorkstations\n\n\n\n\n\nAryabhatta\n\n\n\n\nRAM\n\n\nTo be Updated\n\n\n\n\nCPU\n\n\nTo be Updated\n\n\n\n\nNumber of CPUs\n\n\nTo be Updated\n\n\n\n\nGPU\n\n\nNVIDIA RTX A2000\n\n\n\n\nNumber of GPUs\n\n\n1\n\n\n\n\n\n\nRelative Performances"
   },
   {
     "objectID": "lab-handbook.html#values",
