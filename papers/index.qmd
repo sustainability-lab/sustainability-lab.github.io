@@ -47,7 +47,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <img src="2023/airdelhi.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">AIRDELHI: Fine-Grained Spatio-Temporal Particulate Matter Dataset From Delhi For ML based Modeling</p>
-<p>Sachin Chauhan, Zeel Patel, Sayan Ranu, Rijurekha Sen, and Nipun Batra.</p>
+<p>Sachin Chauhan, Zeel B Patel, Sayan Ranu, Rijurekha Sen, and Nipun Batra.</p>
 <p><i>Datasets and Benchmarks Track, NeurIPS 2023, the Thirty-seventh Annual Conference on Neural Information Processing Systems</i></p>
 <a href="../papers/2023/airdelhi.pdf" class="paper-button">PDF</a>
 <a href="https://github.com/sachin-iitd/DelhiPMDatasetBenchmark" class="paper-button">Github</a>
