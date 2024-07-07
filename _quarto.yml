@@ -19,10 +19,10 @@ website:
         text: Group Photos
       - href: experiences.qmd
         text: Alumni Experience
-      - href: reading.qmd
-        text: Reading Group 
-      - href: computational-resources.qmd
-        text: Lab Resources
+      # - href: reading.qmd
+        # text: Reading Group 
+      # - href: computational-resources.qmd
+        # text: Lab Resources
       - href: lab-handbook.qmd
         text: Lab Handbook
         
