@@ -49,7 +49,7 @@ title: News
     </tr>
     <tr>
         <td>Jan 2024</td>
-        <td>Shataxi, Prince and Poornima joins Sustainability lab. Welcome! </td>
+        <td>Shataxi, Prince and Poornima join Sustainability lab. Welcome! </td>
     </tr>
 </table>
 
@@ -76,15 +76,15 @@ title: News
     </tr>
     <tr>
         <td>Jun 2023</td>
-        <td>Khush and Rishabh joins Sustainability lab. Welcome!</td>
+        <td>Khush and Rishabh join Sustainability lab. Welcome!</td>
     </tr>
     <tr>
         <td>Jun 2023</td>
-        <td>Ankita Succesfully Defends her Masters thesis!</td>
+        <td>Ankita succesfully defends her Masters thesis!</td>
     </tr>
     <tr>
         <td>Jan 2023</td>
-        <td>Ayush and Suraj joins Sustainability lab. Welcome!</td>
+        <td>Ayush and Suraj join Sustainability lab. Welcome!</td>
     </tr>
 </table>
 
