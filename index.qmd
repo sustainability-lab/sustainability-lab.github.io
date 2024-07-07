@@ -163,11 +163,6 @@ Nipun Batra is an Assistant Professor of Computer Science at IIT Gandhinagar. He
 <img src="images/members/Prince.jpg" class="cropped-image"><br/>
 <span>Prince Kumar<br/>(Jul 2023 - present)</span>
 
-<a href="https://khush24shah.github.io">
-  <img src="https://khush24shah.github.io/images/Khush.jpeg" class="cropped-image"><br/>
-</a>
-<span>Khush Shah<br/>(Jul 2023 - present)</span>
-
 :::
 
 
