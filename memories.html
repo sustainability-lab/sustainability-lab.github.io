@@ -42,6 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -130,39 +133,11 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2024</a>
-  <ul class="collapse">
-  <li><a href="#june-2024" id="toc-june-2024" class="nav-link" data-scroll-target="#june-2024">June 2024</a></li>
-  <li><a href="#may-2024" id="toc-may-2024" class="nav-link" data-scroll-target="#may-2024">May 2024</a></li>
-  <li><a href="#jan-2024" id="toc-jan-2024" class="nav-link" data-scroll-target="#jan-2024">Jan 2024</a></li>
-  </ul></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2023</a>
-  <ul class="collapse">
-  <li><a href="#nov-2023" id="toc-nov-2023" class="nav-link" data-scroll-target="#nov-2023">Nov 2023</a></li>
-  <li><a href="#oct-2023" id="toc-oct-2023" class="nav-link" data-scroll-target="#oct-2023">Oct 2023</a></li>
-  <li><a href="#sept-2023" id="toc-sept-2023" class="nav-link" data-scroll-target="#sept-2023">Sept 2023</a></li>
-  <li><a href="#july-2023" id="toc-july-2023" class="nav-link" data-scroll-target="#july-2023">July 2023</a></li>
-  <li><a href="#may-2023" id="toc-may-2023" class="nav-link" data-scroll-target="#may-2023">May 2023</a></li>
-  </ul></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2022</a>
-  <ul class="collapse">
-  <li><a href="#july-2022" id="toc-july-2022" class="nav-link" data-scroll-target="#july-2022">July 2022</a></li>
-  </ul></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2021</a>
-  <ul class="collapse">
-  <li><a href="#dec-2021" id="toc-dec-2021" class="nav-link" data-scroll-target="#dec-2021">Dec 2021</a></li>
-  <li><a href="#nov-2021" id="toc-nov-2021" class="nav-link" data-scroll-target="#nov-2021">Nov 2021</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -171,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -189,9 +164,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
   .carousel-inner img {
-    width: 100%; /* Scale the image to fit the carousel container */
+    width: 100%; /*Scale the image to fit the carousel container */
     height: auto; /* Maintain aspect ratio */
-    max-height: 500px; /* Set a maximum height for the images */
+    max-height: 500px; /*Set a maximum height for the images*/
+    /* overflow-clip-margin: unset; */
+    object-fit: cover;
   }
   .carousel-caption {
     position: absolute;
@@ -208,7 +185,6 @@ ul.task-list li input[type="checkbox"] {
     bottom: 20px; /* Adjust this value if needed to fit the design */
   }
 </style>
-<div class="{raw}">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 <!-- Indicators -->
 <ol class="carousel-indicators">
@@ -225,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
 <img src="images/memories/batch24.jpg" alt="Los Angeles">
 <div class="carousel-caption">
 <h3 class="anchored">
-Batch of 2024
+Lab dinner with Batch of 2024
 </h3>
 <p>
 May 2024
@@ -233,66 +209,134 @@ May 2024
 </div>
 </div>
 <div class="item">
-<p><img src="images/memories/2024-alum-visit.jpg" alt="Chicago"></p>
+<img src="images/memories/2024-alum-visit.jpg">
+<div class="carousel-caption">
+<h3 class="anchored">
+Alums from 2022 batch Harsh, Hetvi and Palak visited us
+</h3>
+<p>
+Jan 2024
+</p>
+</div>
 </div>
 <div class="item">
-<p><img src="images/memories/2023-Fall.jpg" alt="New York"></p>
+<img src="images/memories/2023-Fall.jpg">
+<div class="carousel-caption">
+<h3 class="anchored">
+Students working with us in the Fall 2023 semester
+</h3>
+<p>
+Nov 2023
+</p>
+</div>
+</div>
+<div class="item">
+<img src="images/memories/2023-July-all.jpg">
+<div class="carousel-caption">
+<h3 class="anchored">
+After the 2023 batch convocation (and celebration of multiple awards!)
+</h3>
+<p>
+July 2023
+</p>
+</div>
+</div>
+<div class="item">
+<img src="images/memories/2023-July.jpg">
+<div class="carousel-caption">
+<h3 class="anchored">
+Lab dinner with Batch of 2023
+</h3>
+<p>
+May 2023
+</p>
+</div>
+</div>
+<div class="item">
+<img src="images/memories/2023-group.jpg">
+<div class="carousel-caption">
+<h3 class="anchored">
+Batch of 2023 :Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam
+</h3>
+<p>
+May 2023
+</p>
+</div>
+</div>
+<div class="item">
+<img src="images/memories/2022-group-subset.jpg">
+<div class="carousel-caption">
+<h3 class="anchored">
+With a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)
+</h3>
+<p>
+July 2022
+</p>
 </div>
 </div>
 <!-- Left and right controls -->
 <p><a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span> </a></p>
 </div>
-</div>
-<p>Click on any picture to activate the “lightbox” mode. Use the arrow keys to navigate.</p>
+<section id="memories" class="level1">
+<h1>Memories</h1>
+<p style="font-size:18px">
+Click on any picture to activate the “lightbox” mode. Use the arrow keys to navigate.
+</p>
+</section>
 <section id="section" class="level1">
 <h1>2024</h1>
 <section id="june-2024" class="level2">
 <h2 class="anchored" data-anchor-id="june-2024">June 2024</h2>
-<p><img src="images/memories/2024-June-AyushSurajDefense2.png" class="img-fluid" data-group="my-gallery" data-description="[Ayush and Suraj succesfully defends their Masters Thesis]{.large-caption-text}"></p>
+<p><a href="images/memories/2024-June-AyushSurajDefense2.png" class="lightbox" data-gallery="my-gallery" data-glightbox="description: .lightbox-desc-1;"><img src="images/memories/2024-June-AyushSurajDefense2.png" class="img-fluid"></a></p>
 <p><span class="large-caption-text">Ayush and Suraj succesfully defends their Masters Thesis</span></p>
 </section>
 <section id="may-2024" class="level2">
 <h2 class="anchored" data-anchor-id="may-2024">May 2024</h2>
-<p><img src="images/memories/batch24.jpg" class="img-fluid" data-group="my-gallery" data-description="[Batch of 2024]{.large-caption-text}"></p>
-<p><img src="images/memories/summer24.jpg" class="img-fluid" data-group="my-gallery" data-description="[Lab dinner May 2024]{.large-caption-text}"></p>
+<p><a href="images/memories/batch24.jpg" class="lightbox" data-gallery="my-gallery" data-glightbox="description: .lightbox-desc-2;"><img src="images/memories/batch24.jpg" class="img-fluid"></a></p>
+<p><a href="images/memories/summer24.jpg" class="lightbox" data-gallery="my-gallery" data-glightbox="description: .lightbox-desc-3;"><img src="images/memories/summer24.jpg" class="img-fluid"></a></p>
 </section>
 <section id="jan-2024" class="level2">
 <h2 class="anchored" data-anchor-id="jan-2024">Jan 2024</h2>
-<p><img src="images/memories/2024-alum-visit.jpg" class="img-fluid" data-group="my-gallery" data-description="[Jan 2024 Alums from 2022 batch Harsh, Hetvi and Palak visited us]{.large-caption-text}"></p>
+<p><a href="images/memories/2024-alum-visit.jpg" class="lightbox" data-gallery="my-gallery" data-glightbox="description: .lightbox-desc-4;"><img src="images/memories/2024-alum-visit.jpg" class="img-fluid"></a></p>
 <p><span class="large-caption-text">Jan 2024 Alums from 2022 batch Harsh, Hetvi and Palak visited us.</span></p>
 </section>
 </section>
 <section id="section-1" class="level1">
 <h1>2023</h1>
+<section id="dec-2023" class="level2">
+<h2 class="anchored" data-anchor-id="dec-2023">Dec 2023</h2>
+<p><a href="images/memories/Mayank_visit.jpg" class="lightbox" data-gallery="my-gallery" data-glightbox="description: .lightbox-desc-5;"><img src="images/memories/Mayank_visit.jpg" class="img-fluid"></a></p>
+<p><span class="large-caption-text">15 Dec 2023 Prof Mayank Goel from CMU visited sustainability lab</span></p>
+</section>
 <section id="nov-2023" class="level2">
 <h2 class="anchored" data-anchor-id="nov-2023">Nov 2023</h2>
-<p><img src="images/memories/2023-Fall.jpg" class="img-fluid" data-group="my-gallery" data-description="[15 Nov 2023 Students working with us in the Fall 2023 semester.]{.large-caption-text}"></p>
+<p><a href="images/memories/2023-Fall.jpg" class="lightbox" data-gallery="my-gallery" data-glightbox="description: .lightbox-desc-6;"><img src="images/memories/2023-Fall.jpg" class="img-fluid"></a></p>
 <p><span class="large-caption-text">15 Nov 2023 Students working with us in the Fall 2023 semester.</span></p>
 </section>
 <section id="oct-2023" class="level2">
 <h2 class="anchored" data-anchor-id="oct-2023">Oct 2023</h2>
-<p><img src="images/memories/rishiraj-award.jpeg" class="img-fluid" data-group="my-gallery" data-description="[Rishiraj was a finalist in the presitigous Gaetano Borriello Outstanding Student Award at ACM Ubicomp 2023]{.large-caption-text}"></p>
+<p><a href="images/memories/rishiraj-award.jpeg" class="lightbox" data-gallery="my-gallery" data-glightbox="description: .lightbox-desc-7;"><img src="images/memories/rishiraj-award.jpeg" class="img-fluid"></a></p>
 <p><span class="large-caption-text">Rishiraj was a finalist in the presitigous Gaetano Borriello Outstanding Student Award at ACM Ubicomp 2023</span></p>
 </section>
 <section id="sept-2023" class="level2">
 <h2 class="anchored" data-anchor-id="sept-2023">Sept 2023</h2>
-<p><img src="images/memories/2023-Sept-Young_Alumni.jpg" class="img-fluid" data-group="my-gallery" data-description="[15 Sept 2023 Received the Young Alumni Award from IIIT Delhi.]{.large-caption-text}"></p>
+<p><a href="images/memories/2023-Sept-Young_Alumni.jpg" class="lightbox" data-gallery="my-gallery" data-glightbox="description: .lightbox-desc-8;"><img src="images/memories/2023-Sept-Young_Alumni.jpg" class="img-fluid"></a></p>
 <p><span class="large-caption-text">15 Sept 2023 Received the Young Alumni Award from IIIT Delhi.</span></p>
 </section>
 <section id="july-2023" class="level2">
 <h2 class="anchored" data-anchor-id="july-2023">July 2023</h2>
-<p><img src="images/memories/2023-July-all.jpg" class="img-fluid" data-group="my-gallery" data-description="[July 2023 at the 2023 batch convocation (and celebration of multiple awards!)]{.large-caption-text}"></p>
+<p><a href="images/memories/2023-July-all.jpg" class="lightbox" data-gallery="my-gallery" data-glightbox="description: .lightbox-desc-9;"><img src="images/memories/2023-July-all.jpg" class="img-fluid"></a></p>
 <p><span class="large-caption-text">July 2023 at the 2023 batch convocation (and celebration of multiple awards!)</span></p>
-<p><img src="images/memories/ankita-gm-2-3.png" class="img-fluid" data-group="my-gallery" data-description="[Ankita winning the Gold Medal for Outstanding Research]{.large-caption-text}"></p>
+<p><a href="images/memories/ankita-gm-2-3.png" class="lightbox" data-gallery="my-gallery" data-glightbox="description: .lightbox-desc-10;"><img src="images/memories/ankita-gm-2-3.png" class="img-fluid"></a></p>
 <p><span class="large-caption-text">Ankita winning the Gold Medal for Outstanding Research</span></p>
 </section>
 <section id="may-2023" class="level2">
 <h2 class="anchored" data-anchor-id="may-2023">May 2023</h2>
-<p><img src="images/memories/2023-July.jpg" class="img-fluid" data-group="my-gallery" data-description="[May 2023 dinner]{.large-caption-text}"></p>
+<p><a href="images/memories/2023-July.jpg" class="lightbox" data-gallery="my-gallery" data-glightbox="description: .lightbox-desc-11;"><img src="images/memories/2023-July.jpg" class="img-fluid"></a></p>
 <p><span class="large-caption-text">May 2023 dinner</span></p>
-<p><img src="images/memories/2023-group.jpg" class="img-fluid" data-group="my-gallery" data-description="[Batch of 2023 :Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam]{.large-caption-text}"></p>
+<p><a href="images/memories/2023-group.jpg" class="lightbox" data-gallery="my-gallery" data-glightbox="description: .lightbox-desc-12;"><img src="images/memories/2023-group.jpg" class="img-fluid"></a></p>
 <p><span class="large-caption-text">Batch of 2023: Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam</span></p>
-<p><img src="images/memories/2023-cake.jpg" class="img-fluid" data-group="my-gallery" data-description="[Cake by batch of 2023]{.large-caption-text}"></p>
+<p><a href="images/memories/2023-cake.jpg" class="lightbox" data-gallery="my-gallery" data-glightbox="description: .lightbox-desc-13;"><img src="images/memories/2023-cake.jpg" class="img-fluid"></a></p>
 <p><span class="large-caption-text">Cake by batch of 2023</span></p>
 </section>
 </section>
@@ -300,7 +344,7 @@ May 2024
 <h1>2022</h1>
 <section id="july-2022" class="level2">
 <h2 class="anchored" data-anchor-id="july-2022">July 2022</h2>
-<p><img src="images/memories/2022-group-subset.jpg" class="img-fluid" data-group="my-gallery" data-description="[With a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)]{.large-caption-text}"></p>
+<p><a href="images/memories/2022-group-subset.jpg" class="lightbox" data-gallery="my-gallery" data-glightbox="description: .lightbox-desc-14;"><img src="images/memories/2022-group-subset.jpg" class="img-fluid"></a></p>
 <p><span class="large-caption-text">With a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)</span></p>
 </section>
 </section>
@@ -308,12 +352,12 @@ May 2024
 <h1>2021</h1>
 <section id="dec-2021" class="level2">
 <h2 class="anchored" data-anchor-id="dec-2021">Dec 2021</h2>
-<p><img src="images/memories/2021-AAAI.jpg" class="img-fluid" data-group="my-gallery" data-description="[Celebrating AAAI paper acceptance]{.large-caption-text}"></p>
+<p><a href="images/memories/2021-AAAI.jpg" class="lightbox" data-gallery="my-gallery" data-glightbox="description: .lightbox-desc-15;"><img src="images/memories/2021-AAAI.jpg" class="img-fluid"></a></p>
 <p><span class="large-caption-text">Celebrating AAAI paper acceptance</span></p>
 </section>
 <section id="nov-2021" class="level2">
 <h2 class="anchored" data-anchor-id="nov-2021">Nov 2021</h2>
-<p><img src="images/memories/2021-Nov-Apoorv.jpg" class="img-fluid" data-group="my-gallery" data-description="[Apoorv's &quot;re&quot; visit to the campus (others in frame: Rishiraj and Zeel)]{.large-caption-text}"></p>
+<p><a href="images/memories/2021-Nov-Apoorv.jpg" class="lightbox" data-gallery="my-gallery" data-glightbox="description: .lightbox-desc-16;"><img src="images/memories/2021-Nov-Apoorv.jpg" class="img-fluid"></a></p>
 <p><span class="large-caption-text">Apoorv’s “re” visit to the campus (others in frame: Rishiraj and Zeel)</span></p>
 <style>
    .large-caption-text{
@@ -324,6 +368,57 @@ May 2024
 
 </section>
 </section>
+</div>
+<div class="hidden" aria-hidden="true">
+<div class="glightbox-desc lightbox-desc-1">
+<p><span class="large-caption-text">Ayush and Suraj succesfully defends their Masters Thesis</span></p>
+</div>
+<div class="glightbox-desc lightbox-desc-2">
+<p><span class="large-caption-text">Batch of 2024</span></p>
+</div>
+<div class="glightbox-desc lightbox-desc-3">
+<p><span class="large-caption-text">Lab dinner May 2024</span></p>
+</div>
+<div class="glightbox-desc lightbox-desc-4">
+<p><span class="large-caption-text">Jan 2024 Alums from 2022 batch Harsh, Hetvi and Palak visited us</span></p>
+</div>
+<div class="glightbox-desc lightbox-desc-5">
+<p><span class="large-caption-text">15 Dec 2023 Prof Mayank Goel from CMU visited sustainability lab</span></p>
+</div>
+<div class="glightbox-desc lightbox-desc-6">
+<p><span class="large-caption-text">15 Nov 2023 Students working with us in the Fall 2023 semester.</span></p>
+</div>
+<div class="glightbox-desc lightbox-desc-7">
+<p><span class="large-caption-text">Rishiraj was a finalist in the presitigous Gaetano Borriello Outstanding Student Award at ACM Ubicomp 2023</span></p>
+</div>
+<div class="glightbox-desc lightbox-desc-8">
+<p><span class="large-caption-text">15 Sept 2023 Received the Young Alumni Award from IIIT Delhi.</span></p>
+</div>
+<div class="glightbox-desc lightbox-desc-9">
+<p><span class="large-caption-text">July 2023 at the 2023 batch convocation (and celebration of multiple awards!)</span></p>
+</div>
+<div class="glightbox-desc lightbox-desc-10">
+<p><span class="large-caption-text">Ankita winning the Gold Medal for Outstanding Research</span></p>
+</div>
+<div class="glightbox-desc lightbox-desc-11">
+<p><span class="large-caption-text">May 2023 dinner</span></p>
+</div>
+<div class="glightbox-desc lightbox-desc-12">
+<p><span class="large-caption-text">Batch of 2023 :Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam</span></p>
+</div>
+<div class="glightbox-desc lightbox-desc-13">
+<p><span class="large-caption-text">Cake by batch of 2023</span></p>
+</div>
+<div class="glightbox-desc lightbox-desc-14">
+<p><span class="large-caption-text">With a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)</span></p>
+</div>
+<div class="glightbox-desc lightbox-desc-15">
+<p><span class="large-caption-text">Celebrating AAAI paper acceptance</span></p>
+</div>
+<div class="glightbox-desc lightbox-desc-16">
+<p><span class="large-caption-text">Apoorv’s “re” visit to the campus (others in frame: Rishiraj and Zeel)</span></p>
+</div>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -891,6 +986,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","selector":".lightbox","loop":false,"openEffect":"zoom"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
