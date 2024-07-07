@@ -19,7 +19,7 @@ lightbox: auto
       margin: 10px 0; 
     }
     th, td  {
-        /* border: 1px solid #ccc; */
+        border: 1px solid #ccc;
         border-left:0;
         border-right:0;
         font-size: 19px;
@@ -83,7 +83,7 @@ description="[Apoorv's \"re\" visit to the campus (others in frame: Rishiraj and
 
 <!-- ![](images/logo.png) -->
 
-<img src="images/logo2.png" width=90%   style="display: block;margin-left: auto;margin-right: auto;">
+<img src="images/logo_transparent.png" width=90% style="display: block;margin-left: auto;margin-right: auto; background-color: white;">
 <p style="text-align:center;">
 Sustainability lab develops sensing and machine learning solutions for various sustainability challenges. 
 </p>
@@ -112,7 +112,7 @@ Nipun Batra is an Assistant Professor of Computer Science at IIT Gandhinagar. He
 <a href="https://patel-zeel.github.io">
   <img src="https://patel-zeel.github.io/images/profile_crop.png" class="cropped-image"><br/>
 </a>
-<span>Zeel Patel<br/>(Jan 2020 - present)</span>
+<span>Zeel B Patel<br/>(Jan 2020 - present)</span>
 
 <a href="https://rishabh-mondal.github.io">
   <img src="https://rishabh-mondal.github.io/ris.jpg" class="cropped-image"><br/>
@@ -120,7 +120,7 @@ Nipun Batra is an Assistant Professor of Computer Science at IIT Gandhinagar. He
 <span>Rishabh Mondal<br/>(Jun 2023 - present)</span>
 
 <a href="https://ayushshrivstava.github.io/">
-  <img src="images/members/Ayush _small.JPG" class="cropped-image"><br/>
+  <img src="images/members/Ayush.jpg" class="cropped-image"><br/>
 </a>
 <span>Ayush Srivastava<br/>(Jul 2024 - present)</span>
 
@@ -149,7 +149,7 @@ Nipun Batra is an Assistant Professor of Computer Science at IIT Gandhinagar. He
 
 ::: {layout-ncol=4}
 
-<a href="images/members/suraj.jpg">
+<a href="https://jaiswalsuraj487.github.io">
   <img src="https://jaiswalsuraj487.github.io/images/profile_photo.jpg" class="cropped-image"><br/>
 </a>
 <span>Suraj Jaiswal<br/>(Jul 2022 - present)</span>

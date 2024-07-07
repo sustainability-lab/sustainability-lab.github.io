@@ -158,20 +158,20 @@ Our servers are named after great mathematicians/scientists:
     </tr>
     <tr>
         <td>RAM</td>
-        <td>512 GB (32 x 16)</td>
-        <td>To be Updated</td>
-        <td>192 GB (32 x 6)</td>
+        <td>512 GB (16 x 32GB)</td>
+        <td>64 GB (1 x 64GB)</td>
+        <td>192 GB (6 x 32GB)</td>
     </tr>
     <tr>
         <td>CPU</td>
-        <td>AMD EPYC 7452 32-Core Processor</td>
-        <td>To be Updated</td>
+        <td>AMD EPYC 7452 32-Core Processor @ 2.30 GHz</td>
+        <td>Intel Gold ICX 6326 @ 2.90 GHz</td>
         <td>Intel(R) Xeon(R) Silver 4208 CPU @ 2.10GHz</td>
     </tr>
     <tr>
         <td>Number of CPUs</td>
         <td>64</td> 
-        <td>To be Updated</td>
+        <td>32</td>
         <td>16</td>
     </tr>
     <tr>
@@ -220,15 +220,15 @@ Our servers are named after great mathematicians/scientists:
     </tr>
     <tr>
         <td>RAM</td>
-        <td>To be Updated</td>
+        <td>32 GB</td>
     </tr>
     <tr>
         <td>CPU</td>
-        <td>To be Updated</td>
+        <td>Intel Core i9-13900</td>
     </tr>
     <tr>
         <td>Number of CPUs</td>
-        <td>To be Updated</td> 
+        <td>24</td> 
     </tr>
     <tr>
         <td>GPU</td>
