@@ -6,14 +6,31 @@ filters:
 lightbox: auto
 ---
 
+<head>
 <style>
-/* Hide the individual images */
-.large-caption-text img {
-  font-size: large;
-  display: none;
-}
+    /* Hide the individual images */
+    .large-caption-text img {
+      font-size: large;
+      display: none;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0; 
+    }
+    th, td  {
+        /* border: 1px solid #ccc; */
+        border-left:0;
+        border-right:0;
+        font-size: 19px;
+        padding: 5px;
+        text-align: left;
+        vertical-align: middle;
+    }
 </style>
+</head>
 
+<!-- 
 ## Group Photos (Click on the photo for slideshow)
 
 ![](images/memories/2024-June-AyushSurajDefense2.png){group="my-gallery"
@@ -62,9 +79,10 @@ description="[Celebrating AAAI 2022 paper acceptance]{.large-caption-text}"}
 ![](images/memories/2021-Nov-Apoorv.jpg){group="my-gallery"
 description="[Apoorv's \"re\" visit to the campus (others in frame: Rishiraj and Zeel)]{.large-caption-text}"}
 
-</div>
+</div> -->
 
 <!-- ![](images/logo.png) -->
+
 <img src="images/logo2.png" width=90%   style="display: block;margin-left: auto;margin-right: auto;">
 <p style="text-align:center;">
 Sustainability lab develops sensing and machine learning solutions for various sustainability challenges. 
@@ -89,27 +107,22 @@ Nipun Batra is an Assistant Professor of Computer Science at IIT Gandhinagar. He
 <a href="https://rishi-a.github.io">
   <img src="https://rishi-a.github.io/images/RISHIRAJ.jpg" class="cropped-image"><br/>
 </a>
-<span>Rishiraj Adhikary <br/>(Jul 2019 - present)</span>
+<span>Rishiraj Adhikary<br/>(Jul 2019 - present)</span>
 
 <a href="https://patel-zeel.github.io">
   <img src="https://patel-zeel.github.io/images/profile_crop.png" class="cropped-image"><br/>
 </a>
-<span>Zeel Patel  <br/>(Jan 2020 - present)</span>
+<span>Zeel Patel<br/>(Jan 2020 - present)</span>
 
 <a href="https://rishabh-mondal.github.io">
   <img src="https://rishabh-mondal.github.io/ris.jpg" class="cropped-image"><br/>
 </a>
-<span>Rishabh Mondal <br/> (Jun 2023 - present)</span>
-
-<a href="https://khush24shah.github.io">
-  <img src="https://khush24shah.github.io/images/Khush.jpeg" class="cropped-image"><br/>
-</a>
-<span>Khush Shah <br/> (Jul 2023 - present)</span>
+<span>Rishabh Mondal<br/>(Jun 2023 - present)</span>
 
 <a href="https://ayushshrivstava.github.io/">
-  <img src="images/members/Ayush.jpg" class="cropped-image"><br/>
+  <img src="images/members/Ayush _small.JPG" class="cropped-image"><br/>
 </a>
-<span>Ayush Srivastava <br/>(Jul 2024 - present)</span>
+<span>Ayush Srivastava<br/>(Jul 2024 - present)</span>
 
 :::
 
@@ -136,19 +149,24 @@ Nipun Batra is an Assistant Professor of Computer Science at IIT Gandhinagar. He
 
 ::: {layout-ncol=4}
 
-<a href="https://jaiswalsuraj487.github.io">
+<a href="images/members/suraj.jpg">
   <img src="https://jaiswalsuraj487.github.io/images/profile_photo.jpg" class="cropped-image"><br/>
 </a>
-<span>Suraj Jaiswal  <br/>(Jul 2022 - present)</span>
+<span>Suraj Jaiswal<br/>(Jul 2022 - present)</span>
 
 <img src="images/members/Poornima.jpg" class="cropped-image"><br/>
-<span>Poornima Bhatia  <br/>(Jul 2023 - present)</span>
+<span>Poornima Bhatia<br/>(Jul 2023 - present)</span>
 
 <img src="images/members/Shataxi.jpg" class="cropped-image"><br/>
-<span>Shataxi Dubey  <br/>(Jul 2023 - present)</span>
+<span>Shataxi Dubey<br/>(Jul 2023 - present)</span>
 
 <img src="images/members/Prince.jpg" class="cropped-image"><br/>
-<span>Prince Kumar  <br/>(Jul 2023 - present)</span>
+<span>Prince Kumar<br/>(Jul 2023 - present)</span>
+
+<a href="https://khush24shah.github.io">
+  <img src="https://khush24shah.github.io/images/Khush.jpeg" class="cropped-image"><br/>
+</a>
+<span>Khush Shah<br/>(Jul 2023 - present)</span>
 
 :::
 
@@ -224,3 +242,71 @@ Nipun Batra is an Assistant Professor of Computer Science at IIT Gandhinagar. He
 - Muhammad Zaid Hassan (Summer 2024)
 - Devodita Chakravarty (Summer 2024)
 - Omisha Guha (Summer 2024)
+
+
+## Funds and Grants Obtained
+
+<b>Summary: 7 sponsored projects, approximately 3.2 crore INR raised in last 6 years</b>
+<!-- 
+- Active Air: Active Learning for Air Quality Station Deployment GUJCOST in 2022 (Amount: ≈ Rs. 17lacs)
+- Fine-grained air quality exposure modeling and forecasting using machine learning Ministry of Earth Sciences in 2022 (Amount: ≈ Rs. 60lacs)
+- Edge Non-intrusive Load Monitoring Cisco Research in 2020 (Amount: USD46,200 ≈ Rs. 34lacs)
+- Impact of air pollution on COVID-related secondary exacerbations Google in 2020 (Amount: USD50,000 ≈ Rs. 37lacs)
+- AI and Sensor Networks for Air-quality Monitoring SERB in 2020 (Amount: Rs. 30lacs)
+- Physics Guided Data Science Approach for Predictive Understanding of Hydrological Processes DSTSTARS in 2019 (Amount : Rs. 84lacs)
+- Scalable air-quality estimation using multi-modal data Microsoft AI for Earth Grant in 2018 (AMount : USD30000 or Rs. 22lacs in Azure credits)
+- Scalable Sensing and Analytics for Sustainability IIT Gandhinagar Internal Grant in 2018 (Amount : ≈ Rs. 30lacs)
+- Machine Learning Approaches for Scalable Air Quality Sensing in India NVidia GPUgrant in 2018 (Amount : ≈ Rs. 1.3lacs) -->
+
+<table>
+  <tr>
+    <th width = 70%>Project</th>
+    <th>Amount</th>
+    <th>Year</th>
+  </tr>
+  <tr>
+    <td>Active Air: Active Learning for Air Quality Station Deployment GUJCOST</td>
+    <td>Rs 17lacs</td>
+    <td>2022</td>
+  </tr>
+  <tr>
+    <td>Fine-grained air quality exposure modeling and forecasting using machine learning Ministry of Earth Sciences</td>
+    <td>≈ Rs 60lacs</td>
+    <td>2022</td>
+  </tr>
+  <tr>
+    <td>Edge Non-intrusive Load Monitoring Cisco Research</td>
+    <td>USD 46,200 ≈ Rs 34lacs</td>
+    <td>2020</td>
+  </tr>
+  <tr>
+    <td>Impact of air pollution on COVID-related secondary exacerbations Google</td>
+    <td>USD50,000 ≈ Rs. 37lacs</td>
+    <td>2020</td>
+  </tr>
+  <tr>
+    <td>AI and Sensor Networks for Air-quality Monitoring SERB</td>
+    <td>Rs 30lacs</td>
+    <td>2020</td>
+  </tr>
+  <tr>
+    <td>Physics Guided Data Science Approach for Predictive Understanding of Hydrological Processes DSTSTARS</td>
+    <td>Rs 84lacs</td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td>Scalable air-quality estimation using multi-modal data Microsoft AI for Earth Grant</td>
+    <td>USD 30,000 ≈ Rs 22lacs in Azure credits</td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td>Scalable Sensing and Analytics for Sustainability IIT Gandhinagar Internal Grant</td>
+    <td>≈ Rs 30lacs</td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td>Machine Learning Approaches for Scalable Air Quality Sensing in India NVidia GPU grant</td>
+    <td>≈ Rs 1.3lacs</td>
+    <td>2018</td>
+  </tr>
+</table>
