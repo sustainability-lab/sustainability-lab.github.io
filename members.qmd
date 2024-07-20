@@ -139,11 +139,22 @@ output:
    <li data-target="#myCarousel" data-slide-to="5"></li>
    <li data-target="#myCarousel" data-slide-to="6"></li>
    <li data-target="#myCarousel" data-slide-to="7"></li>
+   <li data-target="#myCarousel" data-slide-to="8"></li>
+
 </ol>
 
 <!-- Wrapper for slides -->
 <div class="carousel-inner">
+
 <div class="item active">
+<img src="images/memories/compass24.jpg" alt="Los Angeles">
+<div class="carousel-caption">
+<h3>Sustainability Lab at ACM Compass'24, IIIT Delhi</h3>
+<p>Jul 2024</p>
+</div>
+</div>
+
+<div class="item">
 <img src="images/memories/batch24.jpg" alt="Los Angeles">
 <div class="carousel-caption">
 <h3>Lab dinner with Batch of 2024</h3>
