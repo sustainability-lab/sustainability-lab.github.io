@@ -1,7 +1,6 @@
 ---
 title: Lab-Handbook
 ---
-<br>
 
 <head>
 <style>
@@ -154,14 +153,13 @@ I also typically want to help create a path for my students to achieve their goa
 
 ## Meetings
 
-
 **Whole Group Meetings**: We typically meet once a week for about 45-50 mins. We usually cover a variety of topics, including:
 - Short updates from each person on their progress
 - Discussion of any issues that have come up
 - Presentations on topics/tools of interest to the group
 - Paper discussions
 
-We expect students to volunteer to present on topics of interest to them. We also expect students to volunteer to present on papers. To know more about what gets discussed in our meetings visit <a href="reading.qmd">Readings page</a>.
+We expect students to volunteer to present on topics of interest to them. We also expect students to volunteer to present on papers. To know more about what gets discussed in our group meetings please visit our <a href="reading.qmd">Reading Page</a>.
 
 **Project Meetings**: The project meetings are tied to specific projects. We typically start with discussing the last meeting's action items, then discuss any issues that have come up, and then discuss the next steps. The lead student on the project is responsible for setting the agenda and running the meeting. The lead student is also responsible for taking notes and posting them on the project's repository.
 

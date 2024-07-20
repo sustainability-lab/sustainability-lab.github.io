@@ -4,22 +4,23 @@ title: Media Coverage
 
 <head>
 <style>
-img {
+.body-content img {
   float: left;
-  /* border: 1px solid black; */
   margin: 0px 15px 0px 0px;
-  width:300px;
-  height:300px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
 }
-div{
-    /* width:100%; */
-    display:inline-block
+.body-content div {
+  display: inline-block;
 }
 </style>
 </head>
 
 <body>
+
+
+<div class="body-content">
 
 <div class="separator"></div>
 
@@ -59,4 +60,6 @@ Our PhD student, [Rishiraj Adhikary](https://rishi-a.github.io) won the prestigi
 
 <div class="separator"></div>
     
+</div>
+
 </body>
