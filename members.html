@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Members</title>
+<title>Lab Members</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -86,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
-<span class="menu-text"><img src="images/logo2.png" style="height: 60px !important;"></span></a>
+<span class="menu-text"><img src="./images/logo.png" style="height: 90px !important;"></span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./members.html" aria-current="page"> 
@@ -110,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./memories.html"> 
-<span class="menu-text">Group Photos</span></a>
+<span class="menu-text">Memories</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./experiences.html"> 
@@ -138,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Members</h1>
+<h1 class="title">Lab Members</h1>
 </div>
 
 
@@ -155,8 +155,31 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<p><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></p>
 <style>
-  
+  .cropped-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    overflow-clip-margin: unset;        /* AYUSH :  Added to remove pixelation from the profile images*/
+    border: 1px solid #777;             /* Set a thin border on all sides */
+    border-bottom: 4px solid #777;      /* Set a thicker border only at the bottom (slightly darker than tomato) */
+    border-radius: 4px;                 /* Optional: add rounded corners for a nicer look */
+    transition: border-color 0.3s;      /* Add smooth transition for the border color */
+  }
+
+  .cropped-image:hover {
+    /* Change border color on hover */
+    border-bottom-color: #d9534f; /* Use the same slightly darker color on hover */
+  }
+  p,span,li{
+    font-size:18px;
+  }
+  carousel{
+    
+  }
   .carousel-inner img {
     width: 100%; /*Scale the image to fit the carousel container */
     height: auto; /* Maintain aspect ratio */
@@ -184,7 +207,9 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://nipunbatra.github.io"> <img src="https://nipunbatra.github.io/images/nipun.jpg" class="cropped-image" style="float: left; margin: 0 15px 0 0;" alt="Prof Nipun Batra"> </a></p>
 <section id="prof.-nipun-batra" class="level3">
 <h3 class="anchored" data-anchor-id="prof.-nipun-batra">Prof.&nbsp;Nipun Batra</h3>
-<p>Nipun Batra is an Assistant Professor of Computer Science at IIT Gandhinagar. He completed his postdoctoral research at the University of Virginia and earned his PhD from IIIT Delhi. His research group focuses on utilizing machine learning and sensing technologies to address computational sustainability challenges, particularly in smart buildings, air quality, and healthcare.</p>
+<p>
+Nipun Batra is an Assistant Professor of Computer Science at IIT Gandhinagar. He completed his postdoctoral research at the University of Virginia and earned his PhD from IIIT Delhi. His research group focuses on utilizing machine learning and sensing technologies to address computational sustainability challenges, particularly in smart buildings, air quality, and healthcare.
+</p>
 <p><br></p>
 </section>
 </section>
@@ -209,23 +234,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<style>
-.cropped-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  overflow-clip-margin: unset;        /* AYUSH :  Added to remove pixelation from the profile images*/
-  border: 1px solid #777;             /* Set a thin border on all sides */
-  border-bottom: 4px solid #777;      /* Set a thicker border only at the bottom (slightly darker than tomato) */
-  border-radius: 4px;                 /* Optional: add rounded corners for a nicer look */
-  transition: border-color 0.3s;      /* Add smooth transition for the border color */
-}
-
-.cropped-image:hover {
-  /* Change border color on hover */
-  border-bottom-color: #d9534f; /* Use the same slightly darker color on hover */
-}
-</style>
 </section>
 <section id="mtech" class="level2">
 <h2 class="anchored" data-anchor-id="mtech">MTech</h2>
@@ -235,16 +243,13 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-layout-panel" data-layout-ncol="4">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><a href="https://jaiswalsuraj487.github.io"> <img src="https://jaiswalsuraj487.github.io/images/profile_photo.jpg" class="cropped-image"><br> </a> <span>Suraj Jaiswal<br>(Jul 2022 - present)</span></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
 <p><img src="images/members/Poornima.jpg" class="cropped-image"><br> <span>Poornima Bhatia<br>(Jul 2023 - present)</span></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><img src="images/members/Shataxi.jpg" class="cropped-image"><br> <span>Shataxi Dubey<br>(Jul 2023 - present)</span></p>
+<p><img src="images/members/Prince.jpg" class="cropped-image"><br> <span>Prince Kumar<br>(Jul 2023 - present)</span></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><img src="images/members/Prince.jpg" class="cropped-image"><br> <span>Prince Kumar<br>(Jul 2023 - present)</span></p>
+<p><img src="images/members/Shataxi.jpg" class="cropped-image"><br> <span>Shataxi Dubey<br>(Jul 2023 - present)</span></p>
 </div>
 </div>
 </div>
@@ -265,16 +270,136 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
+<section id="group-photos" class="level2">
+<h2 class="anchored" data-anchor-id="group-photos">Group Photos</h2>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active">
+</li>
+<li data-target="#myCarousel" data-slide-to="1">
+</li>
+<li data-target="#myCarousel" data-slide-to="2">
+</li>
+<li data-target="#myCarousel" data-slide-to="3">
+</li>
+<li data-target="#myCarousel" data-slide-to="4">
+</li>
+<li data-target="#myCarousel" data-slide-to="5">
+</li>
+<li data-target="#myCarousel" data-slide-to="6">
+</li>
+<li data-target="#myCarousel" data-slide-to="7">
+</li>
+<li data-target="#myCarousel" data-slide-to="8">
+</li>
+</ol>
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+<div class="item active">
+<img src="images/memories/compass24.jpg" alt="Los Angeles">
+<div class="carousel-caption">
+<h3 class="anchored">
+Sustainability Lab at ACM Compass’24, IIIT Delhi
+</h3>
+<p>
+Jul 2024
+</p>
+</div>
+</div>
+<div class="item">
+<img src="images/memories/batch24.jpg" alt="Los Angeles">
+<div class="carousel-caption">
+<h3 class="anchored">
+Lab dinner with Batch of 2024
+</h3>
+<p>
+May 2024
+</p>
+</div>
+</div>
+<div class="item">
+<img src="images/memories/2024-alum-visit.jpg">
+<div class="carousel-caption">
+<h3 class="anchored">
+Alums from 2022 batch Harsh, Hetvi and Palak visited us
+</h3>
+<p>
+Jan 2024
+</p>
+</div>
+</div>
+<div class="item">
+<img src="images/memories/2023-Fall.jpg">
+<div class="carousel-caption">
+<h3 class="anchored">
+Students working with us in the Fall 2023 semester
+</h3>
+<p>
+Nov 2023
+</p>
+</div>
+</div>
+<div class="item">
+<img src="images/memories/2023-July-all.jpg">
+<div class="carousel-caption">
+<h3 class="anchored">
+After the 2023 batch convocation (and celebration of multiple awards!)
+</h3>
+<p>
+July 2023
+</p>
+</div>
+</div>
+<div class="item">
+<img src="images/memories/2023-July.jpg">
+<div class="carousel-caption">
+<h3 class="anchored">
+Lab dinner with Batch of 2023
+</h3>
+<p>
+May 2023
+</p>
+</div>
+</div>
+<div class="item">
+<img src="images/memories/2023-group.jpg">
+<div class="carousel-caption">
+<h3 class="anchored">
+Batch of 2023 :Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam
+</h3>
+<p>
+May 2023
+</p>
+</div>
+</div>
+<div class="item">
+<img src="images/memories/2022-group-subset.jpg">
+<div class="carousel-caption">
+<h3 class="anchored">
+With a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)
+</h3>
+<p>
+July 2022
+</p>
+</div>
+</div>
+<!-- Left and right controls -->
+<p><a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span> </a></p>
+</div>
 <section id="alumni" class="level2">
 <h2 class="anchored" data-anchor-id="alumni">Alumni</h2>
 <section id="btech-1" class="level3">
 <h3 class="anchored" data-anchor-id="btech-1">BTech</h3>
 <ul>
+<li>Aditi Agarwal (BTech 2024): Predoc at Google Deepmind</li>
 <li>Dhruv Patel (BTech 2024): MS at TAMU</li>
 <li>Haikoo Khandor (BTech 2024): MS at TAMU</li>
-<li>Progyan Das (BTech 2024): Applied Scientist at Microsoft</li>
+<li>Inderjeet Bhullar : First Job at Skan.ai</li>
+<li>Kalash Kankariya : First job at Skan.ai</li>
 <li>Madhav Kanda (BTech 2024): MS at UIUC</li>
-<li>Aditi Agarwal (BTech 2024): Predoc at Google Deepmind</li>
+<li>Progyan Das (BTech 2024): Applied Scientist at Microsoft</li>
+<li>Rahul Chembakasseril : First job at Skan.ai</li>
 <li>Utkarsh Mittal (BTech 2024): MS at NYU Tandon</li>
 <li>Aadesh Desai (BTech 2023): MS at CMU</li>
 <li>Eshan Gujarathi (BTech 2023): Predoc at IIT Madras</li>
@@ -330,6 +455,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 </section>
+</section>
+</div>
 </section>
 
 </main> <!-- /main -->
