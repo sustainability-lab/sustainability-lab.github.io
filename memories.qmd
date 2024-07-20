@@ -1,127 +1,28 @@
 ---
-title: "Group Photos"
+title: "Memories"
 author: ""
 filters:
    - lightbox
 lightbox: auto
 ---
-
-<!-- Include Bootstrap CSS and JS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
 <style>
-  .carousel-inner img {
-    width: 100%; /*Scale the image to fit the carousel container */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 600px; /*Set a maximum height for the images*/
-    /* overflow-clip-margin: unset; */
-    object-fit: cover;
-  }
-  .carousel-caption {
-    position: absolute;
-    bottom: 60px; /* Adjust this value to ensure the caption is above the indicators */
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: #fff; /* White text */
-    padding: 10px; /* Padding around the text */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
-  }
-  .carousel-indicators {
-    bottom: 20px; /* Adjust this value if needed to fit the design */
-  }
+   .large-caption-text{
+      font-size: large ;
+   }
 </style>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-<!-- Indicators -->
-<ol class="carousel-indicators">
-   <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-   <li data-target="#myCarousel" data-slide-to="1"></li>
-   <li data-target="#myCarousel" data-slide-to="2"></li>
-</ol>
-
-<!-- Wrapper for slides -->
-<div class="carousel-inner">
-<div class="item active">
-<img src="images/memories/batch24.jpg" alt="Los Angeles">
-<div class="carousel-caption">
-<h3>Lab dinner with Batch of 2024</h3>
-<p>May 2024</p>
-</div>
-</div>
-
-<div class="item">
-<img src="images/memories/2024-alum-visit.jpg">
-<div class="carousel-caption">
-<h3>Alums from 2022 batch Harsh, Hetvi and Palak visited us</h3>
-<p>Jan 2024</p>
-</div>
-</div>
-
-<div class="item">
-<img src="images/memories/2023-Fall.jpg">
-<div class="carousel-caption">
-<h3>Students working with us in the Fall 2023 semester</h3>
-<p>Nov 2023</p>
-</div>
-</div>
-
-<div class="item">
-<img src="images/memories/2023-July-all.jpg">
-<div class="carousel-caption">
-<h3>After the 2023 batch convocation (and celebration of multiple awards!)</h3>
-<p>July 2023</p>
-</div>
-</div>
-
-<div class="item">
-<img src="images/memories/2023-July.jpg">
-<div class="carousel-caption">
-<h3>Lab dinner with Batch of 2023</h3>
-<p>May 2023</p>
-</div>
-</div>
-
-<div class="item">
-<img src="images/memories/2023-group.jpg">
-<div class="carousel-caption">
-<h3>Batch of 2023 :Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam</h3>
-<p>May 2023</p>
-</div>
-</div> 
-
-<div class="item">
-<img src="images/memories/2022-group-subset.jpg">
-<div class="carousel-caption">
-<h3>With a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)</h3>
-<p>July 2022</p>
-</div>
-</div> 
-
-<!-- Left and right controls -->
-<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-<span class="glyphicon glyphicon-chevron-left"></span>
-<span class="sr-only">Previous</span>
-</a>
-<a class="right carousel-control" href="#myCarousel" data-slide="next">
-<span class="glyphicon glyphicon-chevron-right"></span>
-<span class="sr-only">Next</span>
-</a>
-</div>
-
-
-
-# Memories  
-
-<p style="font-size:18px">Click on any picture to activate the "lightbox" mode. Use the arrow keys to navigate.</p>
+<p>Click on any picture to activate the "lightbox" mode. Use the arrow keys to navigate.</p>
 
 # 2024
 
+## July 2024
+![](images/memories/compass24.jpg){group="my-gallery"
+description="[Sustainability lab at ACM Compass'24 at IIIT Delhi]{.large-caption-text}"}
+
+[Sustainability lab at ACM Compass'24 at IIIT Delhi]{.large-caption-text}
+
 ## June 2024
-![](images/memories/2024-June-AyushSurajDefense2.png){group="my-gallery"
+![](images/memories/AyushSurajDefence.png){group="my-gallery"
 description="[Ayush and Suraj succesfully defends their Masters Thesis]{.large-caption-text}"}
 
 [Ayush and Suraj succesfully defends their Masters Thesis]{.large-caption-text}
@@ -219,8 +120,3 @@ description="[Apoorv's \"re\" visit to the campus (others in frame: Rishiraj and
 
 [Apoorv's "re" visit to the campus (others in frame: Rishiraj and Zeel)]{.large-caption-text}
 
-<style>
-   .large-caption-text{
-      font-size: large ;
-   }
-</style>
