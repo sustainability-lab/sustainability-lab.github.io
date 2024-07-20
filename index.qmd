@@ -4,15 +4,18 @@ toc: false
 filters:
    - lightbox
 lightbox: auto
+title: "Sustainability Lab"
 ---
+
+
+<!-- Include Bootstrap CSS and JS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 
 <head>
 <style>
-    /* Hide the individual images */
-    .large-caption-text img {
-      font-size: large;
-      display: none;
-    }
     table {
       width: 100%;
       border-collapse: collapse;
@@ -27,233 +30,85 @@ lightbox: auto
         text-align: left;
         vertical-align: middle;
     }
+    .carousel-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .carousel-inner img { 
+      height: auto; /* Maintain aspect ratio */
+      max-height: 600px; /* Set a maximum height for the images */
+      margin: 0 auto; /* Center horizontally */
+    }
+    .carousel-caption {
+      position: absolute;
+      bottom: 0px; /* Stick the caption to the bottom */
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5); /*Semi-transparent background */
+      color: #fff; /* White text */
+      padding: 0px; /* Padding around the text */
+      border-radius: 10px; /* No rounded corners */
+      box-shadow: none; /* No shadow effect */
+    }
+
 </style>
 </head>
 
-<!-- 
-## Group Photos (Click on the photo for slideshow)
+<!-- <img src="images/logo_transparent.png" width=80% style="display: block;margin-left: auto;margin-right: auto; background-color: white;"> -->
 
-![](images/memories/2024-June-AyushSurajDefense2.png){group="my-gallery"
-description="[Ayush and Suraj succesfully defends their Masters Thesis]{.large-caption-text}"}
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-<div class="large-caption-text">
-![](images/memories/batch24.jpg){group="my-gallery"
-description="[Batch of 2024]{.large-caption-text}"}
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+<div class="item active">
+<img src="images/mainpage/JoulesEye_1.png">
+<div class="carousel-caption">
+<h3>JoulesEye Concept</h3>
+</div>
+</div>
 
-![](images/memories/summer24.jpg){group="my-gallery"
-description="[Lab dinner May 2024]{.large-caption-text}"}
+<div class="item">
+<img src="images/mainpage/JoulesEye_2.png">
+<div class="carousel-caption">
+<h3>Prototyping JoulesEye</h3>
+</div>
+</div>
 
-![](images/memories/2024-alum-visit.jpg){group="my-gallery"
-description="[Jan 2024 Alums from 2022 batch Harsh, Hetvi and Palak visited us]{.large-caption-text}"}
+<div class="item">
+<img src="images/mainpage/SpiroMask.png">
+<div class="carousel-caption">
+<h3>SpiroMask</h3>
+</div>
+</div>
 
-![](images/memories/2023-Fall.jpg){group="my-gallery"
-description="[15 Nov 2023 Students working with us in the Fall 2023 semester.]{.large-caption-text}"}
+<div class="item">
+<img src="images/mainpage/ContRespiration.png">
+<div class="carousel-caption">
+<h3>Towards Continuous Respiration Rate Detection While Walking</h3>
+</div>
+</div>
 
-![](images/memories/rishiraj-award.jpeg){group="my-gallery"
-description="[Rishiraj was a finalist in the presitigous Gaetano Borriello Outstanding Student Award at ACM Ubicomp 2023]{.large-caption-text}"}
-
-![](images/memories/2023-Sept-Young_Alumni.jpg){group="my-gallery"
-description="[15 Sept 2023 Received the Young Alumni Award from IIIT Delhi.]{.large-caption-text}"}
-
-![](images/memories/2023-July-all.jpg){group="my-gallery"
-description="[July 2023 at the 2023 batch convocation (and celebration of multiple awards!)]{.large-caption-text}"}
-
-![](images/memories/ankita-gm-2-3.png){group="my-gallery"
-description="[Ankita winning the Gold Medal for Outstanding Research]{.large-caption-text}"}
-
-![](images/memories/2023-July.jpg){group="my-gallery"
-description="[May 2023 dinner]{.large-caption-text}"}
-
-![](images/memories/2023-group.jpg){group="my-gallery"
-description="[Batch of 2023 :Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam]{.large-caption-text}"}
-
-![](images/memories/2023-cake.jpg){group="my-gallery"
-description="[Cake by batch of 2023]{.large-caption-text}"}
-
-![](images/memories/2022-group-subset.jpg){group="my-gallery"
-description="[With a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)]{.large-caption-text}"}
-
-![](images/memories/2021-AAAI.jpg){group="my-gallery"
-description="[Celebrating AAAI 2022 paper acceptance]{.large-caption-text}"}
-
-![](images/memories/2021-Nov-Apoorv.jpg){group="my-gallery"
-description="[Apoorv's \"re\" visit to the campus (others in frame: Rishiraj and Zeel)]{.large-caption-text}"}
-
-</div> -->
-
-<!-- ![](images/logo.png) -->
-
-<img src="images/logo_transparent.png" width=90% style="display: block;margin-left: auto;margin-right: auto; background-color: white;">
-<p style="text-align:center;">
-Sustainability lab develops sensing and machine learning solutions for various sustainability challenges. 
-</p>
-
-<br>
-
-## Faculty
-
-<a href="https://nipunbatra.github.io">
-  <img src="https://nipunbatra.github.io/images/nipun.jpg" class="cropped-image" style="float: left; margin: 0 15px 0 0;" alt="Prof Nipun Batra">
+<!-- Left and right controls -->
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"></span>
+<span class="sr-only">Previous</span>
 </a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"></span>
+<span class="sr-only">Next</span>
 
-### Prof. Nipun Batra
-Nipun Batra is an Assistant Professor of Computer Science at IIT Gandhinagar. He completed his postdoctoral research at the University of Virginia and earned his PhD from IIIT Delhi. His research group focuses on utilizing machine learning and sensing technologies to address computational sustainability challenges, particularly in smart buildings, air quality, and healthcare.
-
-<br>
-
-## PhD 
-
-::: {layout-ncol=4}
-<a href="https://rishi-a.github.io">
-  <img src="https://rishi-a.github.io/images/RISHIRAJ.jpg" class="cropped-image"><br/>
 </a>
-<span>Rishiraj Adhikary<br/>(Jul 2019 - present)</span>
+</div>
 
-<a href="https://patel-zeel.github.io">
-  <img src="https://patel-zeel.github.io/images/profile_crop.png" class="cropped-image"><br/>
-</a>
-<span>Zeel B Patel<br/>(Jan 2020 - present)</span>
-
-<a href="https://rishabh-mondal.github.io">
-  <img src="https://rishabh-mondal.github.io/ris.jpg" class="cropped-image"><br/>
-</a>
-<span>Rishabh Mondal<br/>(Jun 2023 - present)</span>
-
-<a href="https://ayushshrivstava.github.io/">
-  <img src="images/members/Ayush.jpg" class="cropped-image"><br/>
-</a>
-<span>Ayush Srivastava<br/>(Jul 2024 - present)</span>
-
-:::
-
-<style>
-.cropped-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  overflow-clip-margin: unset;        /* AYUSH :  Added to remove pixelation from the profile images*/
-  border: 1px solid #777;             /* Set a thin border on all sides */
-  border-bottom: 4px solid #777;      /* Set a thicker border only at the bottom (slightly darker than tomato) */
-  border-radius: 4px;                 /* Optional: add rounded corners for a nicer look */
-  transition: border-color 0.3s;      /* Add smooth transition for the border color */
-}
-
-.cropped-image:hover {
-  /* Change border color on hover */
-  border-bottom-color: #d9534f; /* Use the same slightly darker color on hover */
-}
-</style>
-
-
-## MTech
-
-::: {layout-ncol=4}
-
-<a href="https://jaiswalsuraj487.github.io">
-  <img src="https://jaiswalsuraj487.github.io/images/profile_photo.jpg" class="cropped-image"><br/>
-</a>
-<span>Suraj Jaiswal<br/>(Jul 2022 - present)</span>
-
-<img src="images/members/Poornima.jpg" class="cropped-image"><br/>
-<span>Poornima Bhatia<br/>(Jul 2023 - present)</span>
-
-<img src="images/members/Shataxi.jpg" class="cropped-image"><br/>
-<span>Shataxi Dubey<br/>(Jul 2023 - present)</span>
-
-<img src="images/members/Prince.jpg" class="cropped-image"><br/>
-<span>Prince Kumar<br/>(Jul 2023 - present)</span>
-
-:::
-
-
-## BTech
-
-::: {layout-ncol=4}
-
-<a href="https://vannshjani.github.io/Blogs/">
-  <img src="images/members/Vannsh.jpg" class="cropped-image"><br/>
-</a>
-<span>Vannsh Jani  <br/>(Aug 2023 - present)</span>
-
-
-<img src="images/members/Yash.jpg" class="cropped-image"><br/>
-<span>Yash Bachwana <br/>(May 2024 - Present)</span>
-
-:::
-
-
-## Alumni
-
-
-### BTech
-
-- Dhruv Patel (BTech 2024): MS at TAMU
-- Haikoo Khandor (BTech 2024): MS at TAMU
-- Progyan Das (BTech 2024): Applied Scientist at Microsoft
-- Madhav Kanda (BTech 2024): MS at UIUC
-- Aditi Agarwal (BTech 2024): Predoc at Google Deepmind
-- Utkarsh Mittal (BTech 2024): MS at NYU Tandon
-- Aadesh Desai (BTech 2023): MS at CMU
-- Eshan Gujarathi (BTech 2023): Predoc at IIT Madras
-- Gautam Vasistha (BTech 2023): Data Scientist as Skan.AI
-- Hitarth Gandhi (BTech 2023): MS at UC Irvine
-- Saagar Parikh (BTech 2023): MS at CMU
-- Xhitij Choudhary (BTech 2023): Data Scientist at Skan.AI
-- Chris Francis (BTech 2022): MS at UCSD
-- Dhruvi Lodhavia (BTech 2022): MS at UCSD
-- Hetvi Shastri (BTech 2022): PhD at UMass Amherst
-- Harsh Patel (BTech 2022): MS at UCSD
-- Palak Purohit (BTech 2022): MS at Caltech
-- Shivam Sahni (BTech 2022): MS at UCSD
-- Apoorv Agnihotri (BTech 2020): First job at Wadhwani AI -> Data Scientist at Rephrase.ai
-- Deepak Narayanan (BTech 2020): First job at Microsoft Research India -> MS at ETH Zurich
-- Kukunuri Rithwik (BTech 2020): First job at Jio -> Data Scientist at Nykaa
-- Soham Pachpande (BTech 2020): First job at  HSBC-> MS at UCSD -> SWE at Salesforce
-
-### MTech
-
-- Ayush Shrivastava (Mtech 2024): PhD at IIT Gandhinagar
-- Suraj Jaiswal (Mtech 2024): First job at Neuroreef-labs
-- Ankita Jain (MTech 2023): First job at Oracle
-- Karan Kumar (MTech 2020): First job at Trading Technologies
-- Souvik Roy (MTech 2020): First job at eClerx
-
-### Research Assistant
-
-- Kaushal Modi: Now a data scientist at InfiBeam
-- Prerna Khanna: Now a PhD student at Stony Brook
-- Tanmay Srivastava: Now a PhD student at Stony Brook
-- Rohit Patil: First job at Publicis Sapient
-
-### Outside IITGn Interns
-
-- Vibhuti Bansal (Summer 2022): Now at CRED
-- Rohit Khoiwal (Summer 2022)
-- Anand Hegde (Summer 2022)
-- Shobhit Belwal (Summer 2022)
-- Aryan Varshney (Summer 2022)
-- Ami Ashish Buch (Summer 2024)
-- Sajay Raj (Summer 2024)
-- Muhammad Zaid Hassan (Summer 2024)
-- Devodita Chakravarty (Summer 2024)
-- Omisha Guha (Summer 2024)
-
+---
 
 ## Funds and Grants Obtained
 
-<b>Summary: 7 sponsored projects, approximately 3.2 crore INR raised in last 6 years</b>
-<!-- 
-- Active Air: Active Learning for Air Quality Station Deployment GUJCOST in 2022 (Amount: ≈ Rs. 17lacs)
-- Fine-grained air quality exposure modeling and forecasting using machine learning Ministry of Earth Sciences in 2022 (Amount: ≈ Rs. 60lacs)
-- Edge Non-intrusive Load Monitoring Cisco Research in 2020 (Amount: USD46,200 ≈ Rs. 34lacs)
-- Impact of air pollution on COVID-related secondary exacerbations Google in 2020 (Amount: USD50,000 ≈ Rs. 37lacs)
-- AI and Sensor Networks for Air-quality Monitoring SERB in 2020 (Amount: Rs. 30lacs)
-- Physics Guided Data Science Approach for Predictive Understanding of Hydrological Processes DSTSTARS in 2019 (Amount : Rs. 84lacs)
-- Scalable air-quality estimation using multi-modal data Microsoft AI for Earth Grant in 2018 (AMount : USD30000 or Rs. 22lacs in Azure credits)
-- Scalable Sensing and Analytics for Sustainability IIT Gandhinagar Internal Grant in 2018 (Amount : ≈ Rs. 30lacs)
-- Machine Learning Approaches for Scalable Air Quality Sensing in India NVidia GPUgrant in 2018 (Amount : ≈ Rs. 1.3lacs) -->
+<b style="font-size:19px;">7 sponsored projects, approximately 3.2 crore INR raised in last 6 years</b>
 
-<table>
+<table style="width:100%;">
   <tr>
     <th width = 70%>Project</th>
     <th>Amount</th>

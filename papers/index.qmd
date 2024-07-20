@@ -25,7 +25,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 ## 2024 
 
 <div class="paper">
-<img src="2024/jouleseye.png" class="paper-image" style="height:200px;">
+<img src="2024/jouleseye.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising</p>
 <p>Rishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel</p>
@@ -121,7 +121,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="separator"></div>
 
 <div class="paper">
-<img src="2022/Vastr-Gan.png" class="paper-image" style="height:200px;">
+<img src="2022/Vastr-Gan.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">Vastr-GAN: Versatile Apparel Synthesised from Text using a Robust Generative Adversarial Network</p>
 <p>Shastri, Hetvi; Lodhavia, Dhruvi; Purohit, Palak; Kaoshik, Ronak; Batra, Nipun</p>
@@ -165,7 +165,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="separator"></div>
 
 <div class="paper">
-<img src="2021/VisXAI21_HMM.png" class="paper-image" style="height:200px;">
+<img src="2021/VisXAI21_HMM.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">Exploring Hidden Markov Models : An interactive illustration</p>
 <p>Kukunuri Rithwik, Rishiraj Adhikary, Mahika Om Jaguste, Nipun Batra and Ashish Tendulkar</p>
@@ -482,7 +482,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="separator"></div>
 
 <div class="paper">
-<img src="2014/Phd_Qual14.png" class="paper-image" style="height:200px">
+<img src="2014/Phd_Qual14.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">Data Driven Energy Efficiency in Buildings</p>
 <p>Nipun Batra, Amarjeet Singh, Pushpendra Singh, Haimonti Dutta, Venkatesh Sarangan, Mani Srivastava</p>
@@ -495,7 +495,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 ## 2013 and before
 
 <div class="paper">
-<img src="2013/builsys13_ItsDifferent.png" class="paper-image" style="height:200px">
+<img src="2013/builsys13_ItsDifferent.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">It’s Different: Insights into home energy consumption in India</p>
 <p>Nipun Batra, Manoj Gulati, Amarjeet Singh, Mani Srivastava</p>
@@ -511,7 +511,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="separator"></div>
 
 <div class="paper">
-<img src="2013/ICMLA13_INDIC.png" class="paper-image" style="height:200px">
+<img src="2013/ICMLA13_INDIC.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">INDiC: Improved Non-Intrusive load monitoring using load Division and Calibration</p>
 <p>Nipun Batra, Haimonti Dutta, Amarjeet Singh </p>
@@ -525,7 +525,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="separator"></div>
 
 <div class="paper">
-<img src="2013/ISSNIP13_OBMS.png" class="paper-image" style="height:200px">
+<img src="2013/ISSNIP13_OBMS.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">Experiences with Occupancy Based Building Management Systems</p>
 <p>Nipun Batra, Pandarasamy Arjunan, Amarjeet Singh, Pushpendra Singh  </p>
@@ -537,7 +537,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="separator"></div>
 
 <div class="paper">
-<img src="2012/buildsys12_SensorAct.png" class="paper-image" style="height:200px">
+<img src="2012/buildsys12_SensorAct.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">SensorAct: A Privacy and Security Aware Federated Middleware for Building Management</p>
 <p>Pandarasamy Arjunan, Nipun Batra, Haksoo Choi, Amarjeet Singh, Pushpendra Singh, Mani Srivastava  </p>
