@@ -7,7 +7,7 @@ website:
   navbar:
     search: true
     left:
-      - text: "<img src='images/logo2.png' style='height: 60px !important;'>"
+      - text: "<img src='/images/logo.png' style='height: 90px !important;'>"
         href: index.qmd  # Ensure this points to your homepage or desired page
       - href: members.qmd 
         text: Team
@@ -20,13 +20,9 @@ website:
       - href: media.qmd
         text: Media coverage
       - href: memories.qmd
-        text: Group Photos
+        text: Memories
       - href: experiences.qmd
         text: Alumni Experience
-      # - href: reading.qmd
-        # text: Reading Group 
-      # - href: computational-resources.qmd
-        # text: Lab Resources 
       - href: lab-handbook.qmd
         text: Lab Handbook    
 

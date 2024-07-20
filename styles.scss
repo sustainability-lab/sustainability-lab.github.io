@@ -11,12 +11,29 @@ kbd,
     background-color: #f6f5f5 !important;
 }
 
+// .navbar {
+//     // padding-top: 0.25rem;
+//     // padding-bottom: 0.5rem; 
+//     // height: 100%;
+//     font-family: $font-family;
+//     font-size: large;
+//     display:flex;
+//     vertical-align:bottom;
+// }
+
 .navbar {
-    // padding-top: 0.25rem;
-    // padding-bottom: 0.5rem; 
-    // height: 100%;
-    font-family: $font-family;
-    font-size: large;
+  font-family: $font-family;
+  font-size: large;
+  display: flex;
+  align-items: center; /* Center items vertically */  
+  height: 100px; /* Set a specific height for the navbar */
+  padding: 0; /* Remove padding if necessary */
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  align-items: center; /* Ensure nav items are centered vertically */
+  height: 100%; /* Full height of the navbar */
 }
 
 /* Apply the font-family to body to ensure all text uses Nunito */
