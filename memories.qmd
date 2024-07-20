@@ -15,7 +15,7 @@ lightbox: auto
   .carousel-inner img {
     width: 100%; /*Scale the image to fit the carousel container */
     height: auto; /* Maintain aspect ratio */
-    max-height: 500px; /*Set a maximum height for the images*/
+    max-height: 600px; /*Set a maximum height for the images*/
     /* overflow-clip-margin: unset; */
     object-fit: cover;
   }
