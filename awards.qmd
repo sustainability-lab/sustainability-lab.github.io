@@ -2,8 +2,6 @@
 title: "Awards"
 ---
 
-<br>
-
 ## Awards and Distinctions
 
 - Zeel B Patel wins the <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research India</a> Phd Award 2024
