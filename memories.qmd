@@ -15,8 +15,14 @@ lightbox: auto
 
 # 2024
 
+## July 2024
+![](images/memories/compass24.jpg){group="my-gallery"
+description="[Sustainability lab at ACM Compass'24 at IIIT Delhi]{.large-caption-text}"}
+
+[Sustainability lab at ACM Compass'24 at IIIT Delhi]{.large-caption-text}
+
 ## June 2024
-![](images/memories/2024-June-AyushSurajDefense2.png){group="my-gallery"
+![](images/memories/AyushSurajDefence.png){group="my-gallery"
 description="[Ayush and Suraj succesfully defends their Masters Thesis]{.large-caption-text}"}
 
 [Ayush and Suraj succesfully defends their Masters Thesis]{.large-caption-text}
