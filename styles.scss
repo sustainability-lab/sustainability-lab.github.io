@@ -12,8 +12,9 @@ kbd,
 }
 
 .navbar {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem; 
+    // padding-top: 0.25rem;
+    // padding-bottom: 0.5rem; 
+    // height: 100%;
     font-family: $font-family;
     font-size: large;
 }
@@ -30,6 +31,7 @@ body {
   
   .paper-image {
     width: 35%;
+    height:200px;
     height: auto;
     margin-right: 10px;
     object-fit: contain; /* Ensure the image fits within the container */
