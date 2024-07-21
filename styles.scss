@@ -26,7 +26,7 @@ kbd,
   font-size: large;
   display: flex;
   align-items: center; /* Center items vertically */  
-  height: 100px; /* Set a specific height for the navbar */
+  height: auto; /* Adjust the height as needed */
   padding: 0; /* Remove padding if necessary */
 }
 
