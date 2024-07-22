@@ -3,13 +3,14 @@ project:
   output-dir: docs
   
 website:
-  # title: "Sustainability Lab"
+  title: "Sustainability Lab"
   navbar:
+    title: False
     search: true
     left:
       - text: "<img src='/images/logo.png' style='height: 90px !important;'>"
-        href: index.qmd  # Ensure this points to your homepage or desired page
-      - href: members.qmd 
+        href: index.qmd  
+      - href: members.qmd
         text: Team
       - href: papers/index.qmd
         text: Publications
