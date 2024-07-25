@@ -33,6 +33,14 @@ title: News
     </colgroup>
     <tr>
         <td>Jun 2024</td>
+        <td>Prof. Nipun Batra delivered a talk on "Smart Health Sensing for Sustainable Future" at <a href="https://www.pdpu.ac.in">Pandit Deendayal Energy University</a></td>
+    </tr>
+    <tr>
+        <td>Jul 2024</td>
+        <td>Prof. Nipun Batra delivered the <a href="https://compass.acm.org/doctoral-and-masters-consortium/">Doctoral Consortium keynote talk</a> titled "Within and Beyond: Lessons in Computational Sustainability" at <a href="https://compass.acm.org">ACM Compass'24</a> </td>
+    </tr>
+    <tr>
+        <td>Jun 2024</td>
         <td>Zeel wins the prestigious Microsoft Research India PhD Award!</td>
     </tr>
     <tr>
