@@ -1,0 +1,37 @@
+---
+title: "From Beginner to Data Scientist: My Journey at Sustainability Lab"
+author: "Yeeshu R Dhurandhar"
+date: "2024-07-25"
+---
+
+# From Beginner to Data Scientist: My Journey at Sustainability Lab
+
+I am R Yeeshu Dhurandhar, an alumnus of IIT Gandhinagar. I graduated in 2024 with majors in Electrical Engineering and dual minors in CSE and AI. Currently, I am working as a Data Scientist at Skan.AI. This narrative shares my enriching journey with Prof. Nipun Batra and the Sustainability Lab, which transformed me and provided me with a deep understanding of ML.
+
+## Discovering Machine Learning and Beyond
+My journey with Prof. Batra began in my sixth semester with the Machine Learning course. Prior to this, my exposure to ML was minimal, but I was eager to dive into this fascinating domain, and this course helped with this. Prof. Batra’s teaching style is incredibly engaging. He has a knack for using precise terminology and encourages students to think critically. Each slide in his lectures is crafted to prompt the next step of thinking, fostering an environment where students are continually engaged. I particularly cherished the after-class discussions, where we delved into thought-provoking questions with him. The assignments and projects in his courses were rigorous and immensely educational. They provided a solid foundation and deep understanding of the subject matter.
+
+## Immersive Research Experience
+
+In my seventh semester, I enrolled in the Probabilistic Machine Learning course and a project course under Prof. Batra. Initially, I had little research experience and was new to the topic we were exploring. However, this project course proved to be an excellent starting point for beginners like me. We had initial discussions about the project and assigned some tasks for the next week. I remember that our team met two days before the actual meeting with sir. That was the time when I realized that research can not be done at the last moment. It requires time to internalize things. Post this learning, I distributed the work over the week and things went well. In those days, we used to have long discussions in his office, during which we tried to understand conformal prediction deeply. Those discussions gave multiple new ideas on different directions for the research and provided a true essence of how the research happens. Throughout the semester, we worked under him and eventually submitted a paper. Prof. Batra’s fairness in acknowledging contributions is exemplary. Unlike other institutions where professors might publish papers without student recognition, he ensures that credit is given based on actual contributions.
+
+## Guiding My Master’s Journey
+
+Among many reasons, one of the big reasons I have great respect for Professor Batra is his unwavering dedication to his students' growth. He puts forth tremendous effort to support and guide us in our careers. During my MS application process, Prof. Batra helped me define timelines for writing SOPs and CVs and preparing for tests, which was crucial for meeting deadlines and maintaining quality. His proactive approach in reviewing SOPs and CVs, along with assisting in university selection, demonstrated his genuine motivation for our success. He also connected us with relevant alumni to further aid our applications.
+
+## Career Guidance and Support
+
+Whenever I have career-related doubts, Professor Batra is always the first person who comes to mind. This is the case even now, as I have graduated from college. After my internship at Skan.AI, I received a pre-placement offer while also considering pursuing a master's degree abroad. Faced with the dilemma of accepting the PPO or requesting a letter of recommendation from my mentor, I turned to Professor Batra for advice. He recommended accepting the PPO, a decision that has proven to be excellent. I am extremely grateful for his guidance, which ultimately led me to my current role as a Data Scientist at Skan.AI.
+
+## Teaching Assistance Experience
+
+In my eighth semester, I had the privilege of serving as a Teaching Assistant for the Machine Learning course. This experience was invaluable, as it allowed me to revisit the ML content, prepare industrial-level code, and experience the teaching field. What stood out most was Professor Batra's immense trust in us, entrusting us with significant responsibilities that fostered a sense of importance and responsibility.
+
+During meetings with Professor Batra regarding TA work, we occasionally forgot small concepts we had studied the previous year. In these instances, he never made us feel uncomfortable and patiently explained the details. Moreover, Prof. Batra’s understanding and consideration during personal issues further highlighted his supportive nature.
+As a TA, I had the rare and rewarding opportunity to teach a class of 250 students. This experience allowed me to explore the teaching field and realize how challenging it is to keep a large class engaged for 1.5 hours. It deepened my respect for Professor Batra's exceptional teaching abilities.
+
+## Lessons for Life!
+Prof. Batra’s influence extends beyond academics. He instilled in us the importance of respecting time, maintaining discipline, and adhering to what is right rather than what feels good. He made us learn the importance of honesty.
+
+In conclusion, my journey with Prof. Nipun Batra and the Sustainability Lab has been transformative. His guidance, support, and teaching have not only shaped my academic and professional career but also enriched my personal growth.
+
