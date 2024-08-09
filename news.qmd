@@ -33,7 +33,7 @@ title: News
     </colgroup>
     <tr>
         <td>Aug 2024</td>
-        <td>Devodita Chakravarty has won the Bhalodia-Khetan Summer Research Excellence Award for the project titled 'ML for Sustainability: Satellite Data Preprocessing for Detecting Pollution Sources Using Computer Vision.' The award includes a cash prize of ₹50,000 and a Certificate of Excellence."</td>
+        <td>Devodita Chakravarty won the Bhalodia-Khetan Summer Research Excellence Award for the project titled 'ML for Sustainability: Satellite Data Preprocessing for Detecting Pollution Sources Using Computer Vision.' The award includes a cash prize of ₹50,000 and a Certificate of Excellence."</td>
     </tr>
     <tr>
         <td>Jul 2024</td>
