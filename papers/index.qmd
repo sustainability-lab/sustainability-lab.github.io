@@ -25,6 +25,57 @@ STORED AS A TEMPLATE FOR FUTURE USE
 ## 2024 
 
 <div class="paper">
+<img src="2024/NILM_AL.png" class="paper-image">
+<div class="paper-details">
+<p class="paper-title">Benchmarking Active Learning for NILM</p>
+<p>Dhruv Patel, Ankita Kumari Jain, Haikoo Khandor, Xhitij Choudhary, Nipun Batra</p>
+<p><i>arXiv 2024</i></p>
+<a href="https://arxiv.org/abs/2411.15805" class="paper-button">arXiv</a>
+<!-- <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/brick_kiln_interactive_visualize" class="paper-button">HuggingFace</a> -->
+</div>
+</div>
+
+<div class="paper">
+<img src="2024/SpiroActive.png" class="paper-image">
+<div class="paper-details">
+<p class="paper-title">SpiroActive: Active Learning for Efficient Data Acquisition for Spirometry</p>
+<p>Ankita Kumari Jain, Nitish Sharma, Madhav Kanda, Nipun Batra</p>
+<p><i>arXiv 2024</i></p>
+<a href="https://arxiv.org/abs/2410.22950" class="paper-button">arXiv</a>
+<!-- <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/brick_kiln_interactive_visualize" class="paper-button">HuggingFace</a> -->
+</div>
+</div>
+
+<div class="paper">
+<img src="2024/Space_to_policy.png" class="paper-image">
+<div class="paper-details">
+<p class="paper-title">Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data</p>
+<p>Zeel B Patel, Rishabh Mondal, Shataxi Dubey, Suraj Jaiswal, Sarath Guttikunda, Nipun Batra</p>
+<p><i>arXiv 2024</i></p>
+<a href="https://arxiv.org/abs/2412.04065" class="paper-button">arXiv</a>
+<a href="https://docs.google.com/presentation/d/19jIDm3kSZlOdnhgIIvWf8tZNjMx0dRcCmp0Z3nZVUEw/edit?usp=sharing" class="paper-button">Google AQ Summit 2024</a>
+<a href="https://docs.google.com/presentation/d/1PniVOoJEedGP-5N4hSqg21xjSv7v2uT4xSKNe1qB2vo/edit?usp=sharing" class="paper-button">IITD Talk</a>
+<a href="https://huggingface.co/spaces/SustainabilityLabIITGN/brick_kiln_interactive_visualize" class="paper-button">HuggingFace</a>
+</div>
+</div>
+
+<div class="paper">
+<img src="2024/VayuBuddy_diagram.png" class="paper-image">
+<div class="paper-details">
+<p class="paper-title">VayuBuddy: an LLM-Powered Chatbot to Democratize Air Quality Insights</p>
+<p>Zeel B Patel, Yash Bachwana, Nitish Sharma, Sarath Guttikunda, Nipun Batra</p>
+<p><i>arXiv 2024</i></p>
+<a href="https://arxiv.org/abs/2411.12760" class="paper-button">arXiv</a>
+<a href="https://docs.google.com/presentation/d/1E3rXyLsp7dWBI4LSL7eOpKLXzjShEawxIUv8vTNVU0Y/edit?usp=sharing" class="paper-button">Google AQ Summit 2024</a>
+<a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuBuddy" class="paper-button">HuggingFace</a>
+<a href="https://www.divyabhaskar.co.in/epaper/detail-page/ahmedabad-city-bhaskar/44/2024-12-17" class="paper-button">News: Divya Bhaskar</a>
+<a href="https://epaper.indianexpress.com/3953344/Ahmedabad/December-17-2024#page/3/2" class="paper-button">News: Indian Express</a>
+<a href="https://epaper.ahmedabadmirror.com/3953285/Ahmedabad-Mirror/Dec-17-2024#page/5/2" class="paper-button">News: Ahmedabad Mirror</a>
+<a href="https://chitralekha.com/news/vayubuddy-empowering-communities-to-breathe-cleaner-air/" class="paper-button">News: Chitralekha</a>
+</div>
+</div>
+
+<div class="paper">
 <img src="2024/jouleseye.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising</p>
