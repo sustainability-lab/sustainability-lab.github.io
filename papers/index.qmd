@@ -47,7 +47,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 </div>
 
 <div class="paper">
-<img src="2024/Space_to_policy.png" class="paper-image">
+<img src="2024/Brick_Kilns.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data</p>
 <p>Zeel B Patel, Rishabh Mondal, Shataxi Dubey, Suraj Jaiswal, Sarath Guttikunda, Nipun Batra</p>
