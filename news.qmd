@@ -26,6 +26,22 @@ title: News
 
 <body>
 
+## 2025
+<table>
+    <colgroup>
+       <col span="1" style="width: 11%;">
+    </colgroup>
+    <tr>
+        <td>Jan 2025</td>
+        <td>Shrimay Shah and Dhruv Gupta won the Third Prize in the Undergraduate Research Showcase for their project titled "Brick Kilns Detection and Compliance Study, guided by Prof. Nipun Batra."</td>
+    </tr>
+    <tr>
+        <td>Jan 2025</td>
+        <td>Tanu and Meenakshi join Sustainability Lab as Junior Research Fellows. Welcome!</td>
+    </tr>
+
+</table>
+
 ## 2024
 <table>
     <colgroup>
