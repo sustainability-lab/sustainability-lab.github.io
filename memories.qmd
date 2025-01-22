@@ -13,6 +13,14 @@ lightbox: auto
 
 <p>Click on any picture to activate the "lightbox" mode. Use the arrow keys to navigate.</p>
 
+# 2025
+
+## Jan 2025
+![](images/memories/Curiosity.jpg){group="my-gallery"
+description="[Sustainability lab at Curiosity Carnival'25 at IITGN.]{.large-caption-text}"}
+
+[Sustainability lab at Curiosity Carnival'25 at IITGN.]{.large-caption-text}
+
 # 2024
 
 ## July 2024
