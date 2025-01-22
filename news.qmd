@@ -39,6 +39,10 @@ title: News
         <td>Jan 2025</td>
         <td>Tanu and Meenakshi join Sustainability Lab as Junior Research Fellows. Welcome!</td>
     </tr>
+    <tr>
+        <td>Jan 2025</td>
+        <td>Dr. Rishiraj Adhikary succesfully defends his Phd thesis, Congratulations!</td>
+    </tr>
 
 </table>
 
