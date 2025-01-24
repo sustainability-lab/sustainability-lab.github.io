@@ -69,10 +69,6 @@ output:
 ## PhD 
 
 ::: {layout-ncol=4}
-<a href="https://rishi-a.github.io">
-  <img src="https://rishi-a.github.io/images/RISHIRAJ.jpg" class="cropped-image"><br/>
-</a>
-<span>Rishiraj Adhikary<br/>(Jul 2019 - present)</span>
 
 <a href="https://patel-zeel.github.io">
   <img src="https://patel-zeel.github.io/images/profile_crop.png" class="cropped-image"><br/>
@@ -91,8 +87,15 @@ output:
 
 :::
 
+## PhD Alumni
 
+::: {layout-ncol=4}
+<a href="https://rishi-a.github.io">
+  <img src="https://rishi-a.github.io/images/RISHIRAJ.jpg" class="cropped-image"><br/>
+</a>
+<span>Rishiraj Adhikary<br/>(Jul 2019 - Jan 2025)</span>
 
+:::
 
 ## MTech
 
