@@ -85,6 +85,11 @@ output:
 </a>
 <span>Ayush Srivastava<br/>(Jul 2024 - present)</span>
 
+<a href="">
+  <img src="images/members/Ujjwal.jpg" class="cropped-image"><br/>
+</a>
+<span>Ujjwal K. Gupta<br/>(Jul 2024 - present)</span>
+
 :::
 
 ## PhD Alumni
