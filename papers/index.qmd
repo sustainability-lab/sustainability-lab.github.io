@@ -287,7 +287,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p class="paper-title">Active Collaborative Sensing for Energy Breakdown</p>
 <p>Yiling Jia, Nipun Batra, Hongning Wang, Kamin Whitehouse</p>
 <p><i>The 28th ACM International Conference on Information and Knowledge Management (CIKM'2019)</i></p>
-<a href="2019\batra_CIKM_19.pdf" class="paper-button">PDF</a>
+<a href="2019/batra_CIKM_19.pdf" class="paper-button">PDF</a>
 <a href="https://github.com/yilingjia/ActSense" class="paper-button">Github</a>
 <a href="../slides/2019/ActiveSensing_CIKM2019.pdf" class="paper-button">Slides (PDF)</a>
 </div>
