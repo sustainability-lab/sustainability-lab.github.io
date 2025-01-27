@@ -1,5 +1,4 @@
 ---
-title: "Sustainability Lab"
 toc: false
 ---
 <!-- Include Bootstrap CSS and JS -->
@@ -94,59 +93,12 @@ toc: false
 
 <br>
 
-## Funds and Grants Obtained
+## Funding Oraganisations
 
-<b style="font-size:19px;">7 sponsored projects, approximately 3.2 crore INR raised in last 6 years</b>
+<div style="text-align: center; margin-top: 20px;">
+  <img src="images/mainpage/Funding organisations.png" alt="Funding Organization" style="max-width: 100%; height: auto; width: 1000px;">
+</div>
 
-<table style="width:100%;">
-  <tr>
-    <th width = 70%>Project</th>
-    <th>Amount</th>
-    <th>Year</th>
-  </tr>
-  <tr>
-    <td>Active Air: Active Learning for Air Quality Station Deployment GUJCOST</td>
-    <td>Rs 17lacs</td>
-    <td>2022</td>
-  </tr>
-  <tr>
-    <td>Fine-grained air quality exposure modeling and forecasting using machine learning Ministry of Earth Sciences</td>
-    <td>≈ Rs 60lacs</td>
-    <td>2022</td>
-  </tr>
-  <tr>
-    <td>Edge Non-intrusive Load Monitoring Cisco Research</td>
-    <td>USD 46,200 ≈ Rs 34lacs</td>
-    <td>2020</td>
-  </tr>
-  <tr>
-    <td>Impact of air pollution on COVID-related secondary exacerbations Google</td>
-    <td>USD50,000 ≈ Rs. 37lacs</td>
-    <td>2020</td>
-  </tr>
-  <tr>
-    <td>AI and Sensor Networks for Air-quality Monitoring SERB</td>
-    <td>Rs 30lacs</td>
-    <td>2020</td>
-  </tr>
-  <tr>
-    <td>Physics Guided Data Science Approach for Predictive Understanding of Hydrological Processes DSTSTARS</td>
-    <td>Rs 84lacs</td>
-    <td>2019</td>
-  </tr>
-  <tr>
-    <td>Scalable air-quality estimation using multi-modal data Microsoft AI for Earth Grant</td>
-    <td>USD 30,000 ≈ Rs 22lacs in Azure credits</td>
-    <td>2018</td>
-  </tr>
-  <tr>
-    <td>Scalable Sensing and Analytics for Sustainability IIT Gandhinagar Internal Grant</td>
-    <td>≈ Rs 30lacs</td>
-    <td>2018</td>
-  </tr>
-  <tr>
-    <td>Machine Learning Approaches for Scalable Air Quality Sensing in India NVidia GPU grant</td>
-    <td>≈ Rs 1.3lacs</td>
-    <td>2018</td>
-  </tr>
-</table>
+
+## Join Us
+### Embark on a journey to drive innovation in sustainability with our lab! [Apply Now](https://docs.google.com/forms/d/e/1FAIpQLSeU2KoY-yAsFKCtlUZ8BH8gMEMwhV8z6L8WdaOtPB7TsJQrRg/viewform)
