@@ -1,0 +1,43 @@
+---
+title: Openings
+toc: false
+output:
+  html_document:
+    self_contained: false
+---
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<style>
+  .cropped-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    overflow-clip-margin: unset;        /* AYUSH :  Added to remove pixelation from the profile images*/
+    border: 1px solid #777;             /* Set a thin border on all sides */
+    border-bottom: 4px solid #777;      /* Set a thicker border only at the bottom (slightly darker than tomato) */
+    border-radius: 4px;                 /* Optional: add rounded corners for a nicer look */
+    transition: border-color 0.3s;      /* Add smooth transition for the border color */
+  }
+
+  .cropped-image:hover {
+    /* Change border color on hover */
+    border-bottom-color: #d9534f; /* Use the same slightly darker color on hover */
+  }
+  p,span,li{
+    font-size:18px;
+  }
+</style>
+
+### JRF Opening
+
+Join us as a Junior Research Fellow in the Sustainability Lab! [Apply Now](https://docs.google.com/forms/d/e/1FAIpQLSeU2KoY-yAsFKCtlUZ8BH8gMEMwhV8z6L8WdaOtPB7TsJQrRg/viewform)
+
+### SRIP Opening
+
+Join us through the Summer Research Internship Program in the following domains:
+
+1. AI for Sustainibility. [Apply Now](https://docs.google.com/forms/d/e/1FAIpQLSeKCn-LWayPg14NGk3zpwNy-wvAaya8GG8-HwkFgvq-AFDWPA/viewform)
+2. AI/Sensing for Health. [Apply Now](https://docs.google.com/forms/d/e/1FAIpQLScIcCd-KHaTYjQICCgW3O_84osDP__UZKsvf0x100q3rmiF6w/viewform)
