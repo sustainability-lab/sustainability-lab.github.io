@@ -51,8 +51,9 @@ output:
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
   }
   .carousel-indicators {
-    bottom: 20px; /* Adjust this value if needed to fit the design */
-  }
+    display: none !important;
+}
+
 </style>
 
 ## Faculty
