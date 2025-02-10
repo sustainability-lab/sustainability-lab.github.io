@@ -10,22 +10,29 @@ website:
     left:
       - text: "<img src='/images/logo.png' style='height: 90px !important;'>"
         href: index.qmd  
-      - href: members.qmd
-        text: Team
+      - text: People
+        menu:
+          - text: Current Team
+            href: members.qmd
+          - text: Alumni
+            href: alumni.qmd
+          - text: Alumni Experiences
+            href: experiences.qmd
+          - text: Memories
+            href: memories.qmd
       - href: papers/index.qmd
         text: Publications
-      - href: awards.qmd
-        text: Awards
+      - href: openings.qmd
+        text: Openings
+      - href: lab-handbook.qmd
+        text: Lab Handbook  
       - href: news.qmd
         text: News
       - href: media.qmd
         text: Media coverage
-      - href: memories.qmd
-        text: Memories
-      - href: experiences.qmd
-        text: Alumni Experience
-      - href: lab-handbook.qmd
-        text: Lab Handbook    
+      - href: awards.qmd
+        text: Awards
+  
 
 format:
   html:
