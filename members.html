@@ -86,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
-<span class="menu-text"><img src="./images/logo.png" style="height: 90px !important;"></span></a>
+<span class="menu-text"><img id="theme-logo" data-light-src="images/logo_light.png" data-dark-src="images/logo_dark.png" src="images/logo_light.png" style="height: 90px !important;"></span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./members.html" aria-current="page"> 
@@ -199,8 +199,9 @@ ul.task-list li input[type="checkbox"] {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
   }
   .carousel-indicators {
-    bottom: 20px; /* Adjust this value if needed to fit the design */
-  }
+    display: none !important;
+}
+
 </style>
 <section id="faculty" class="level2">
 <h2 class="anchored" data-anchor-id="faculty">Faculty</h2>
@@ -1068,6 +1069,26 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>
+  function updateLogo() {
+    const logo = document.getElementById("theme-logo");
+    if (!logo) return;
+
+    const isDarkMode = document.body.classList.contains("quarto-dark");
+    const newSrc = isDarkMode ? logo.dataset.darkSrc : logo.dataset.lightSrc;
+
+    if (logo.src !== newSrc) {
+      logo.src = newSrc;
+    }
+  }
+
+  // Detect theme change
+  const observer = new MutationObserver(updateLogo);
+  observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
+
+  // Ensure correct logo on initial load
+  document.addEventListener("DOMContentLoaded", updateLogo);
+</script>
 
 
 
