@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - images/**  # Ensures all images are copied
 
 website:
   title: "Sustainability Lab"
