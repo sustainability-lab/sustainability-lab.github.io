@@ -1,14 +1,130 @@
+# project:
+#   type: website
+#   output-dir: docs
+  
+# website:
+#   title: "Sustainability Lab"
+#   navbar:
+#     title: False
+#     search: true
+#     left:
+#       - text: "<img src='/images/logo_dark_new.png' style='height: 90px !important;'>"
+#         href: index.qmd  
+#       - href: members.qmd
+#         text: Team
+#       - href: papers/index.qmd
+#         text: Publications
+#       - href: awards.qmd
+#         text: Awards
+#       - href: news.qmd
+#         text: News
+#       - href: media.qmd
+#         text: Media coverage
+#       - href: memories.qmd
+#         text: Memories
+#       - href: experiences.qmd
+#         text: Alumni Experience
+#       - href: lab-handbook.qmd
+#         text: Lab Handbook    
+
+# format:
+#   html:
+#     page-layout: full
+#     toc: true
+#     grid:
+#       margin-width: 14%
+#     theme:
+#       light: [litera, styles.scss]
+#       dark: [darkly, styles-dark.scss]
+#     highlight-style: a11y-dark
+#     mainfont: "Roboto"
+#     code-copy: true
+#     code-overflow: wrap
+
+# execute:
+#   freeze: auto
+
+
+# project:
+#   type: website
+#   output-dir: docs
+  
+# website:
+#   title: "Sustainability Lab"
+#   navbar:
+#     title: False
+#     search: true
+#     left:
+#       - text: "<img id='theme-logo' data-light-src='images/logo_light_new.png' data-dark-src='/images/logo_dark_new.png' src='/images/logo_light_new.png' style='height: 90px !important;'>"
+#         href: index.qmd  
+#       - href: members.qmd
+#         text: Team
+#       - href: papers/index.qmd
+#         text: Publications
+#       - href: awards.qmd
+#         text: Awards
+#       - href: news.qmd
+#         text: News
+#       - href: media.qmd
+#         text: Media coverage
+#       - href: memories.qmd
+#         text: Memories
+#       - href: experiences.qmd
+#         text: Alumni Experience
+#       - href: lab-handbook.qmd
+#         text: Lab Handbook    
+
+# format:
+#   html:
+#     page-layout: full
+#     toc: true
+#     grid:
+#       margin-width: 14%
+#     theme:
+#       light: [litera, styles.scss]
+#       dark: [darkly, styles-dark.scss]
+#     highlight-style: a11y-dark
+#     mainfont: "Roboto"
+#     code-copy: true
+#     code-overflow: wrap
+
+# execute:
+#   freeze: auto
+
+# include-after-body:    # Switch between light and dark logo
+#   text: |
+#     <script>
+#       function updateLogo() {
+#         const isDarkMode = document.body.classList.contains("quarto-dark");
+#         const logo = document.getElementById("theme-logo");
+#         if (logo) {
+#           logo.src = isDarkMode ? logo.dataset.darkSrc : logo.dataset.lightSrc;
+#         }
+#       }
+
+#       // Observe theme change
+#       const observer = new MutationObserver(updateLogo);
+#       observer.observe(document.body, {
+#         attributes: true,
+#         attributeFilter: ["class"]
+#       });
+
+#       // Run on initial load
+#       updateLogo();
+#     </script>
+
+
 project:
   type: website
   output-dir: docs
-  
+
 website:
   title: "Sustainability Lab"
   navbar:
     title: False
     search: true
     left:
-      - text: "<img src='/images/logo.png' style='height: 90px !important;'>"
+      - text: "<img id='theme-logo' data-light-src='images/logo_light.png' data-dark-src='images/logo_dark.png' src='images/logo_light.png' style='height: 90px !important;'>"
         href: index.qmd  
       - href: members.qmd
         text: Team
@@ -43,3 +159,26 @@ format:
 
 execute:
   freeze: auto
+
+include-after-body:  # JavaScript for switching logos on theme change
+  text: |
+    <script>
+      function updateLogo() {
+        const logo = document.getElementById("theme-logo");
+        if (!logo) return;
+
+        const isDarkMode = document.body.classList.contains("quarto-dark");
+        const newSrc = isDarkMode ? logo.dataset.darkSrc : logo.dataset.lightSrc;
+
+        if (logo.src !== newSrc) {
+          logo.src = newSrc;
+        }
+      }
+
+      // Detect theme change
+      const observer = new MutationObserver(updateLogo);
+      observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
+
+      // Ensure correct logo on initial load
+      document.addEventListener("DOMContentLoaded", updateLogo);
+    </script>
