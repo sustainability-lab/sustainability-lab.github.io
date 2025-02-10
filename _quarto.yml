@@ -1,14 +1,16 @@
 project:
   type: website
   output-dir: docs
-  
+  resources:
+    - images/**  # Ensures all images are copied
+
 website:
   title: "Sustainability Lab"
   navbar:
     title: False
     search: true
     left:
-      - text: "<img src='/images/logo.png' style='height: 90px !important;'>"
+      - text: "<img id='theme-logo' data-light-src='images/logo_light.png' data-dark-src='images/logo_dark.png' src='images/logo_light.png' style='height: 90px !important;'>"
         href: index.qmd  
       - text: People
         menu:
@@ -50,3 +52,26 @@ format:
 
 execute:
   freeze: auto
+
+include-after-body:  # JavaScript for switching logos on theme change
+  text: |
+    <script>
+      function updateLogo() {
+        const logo = document.getElementById("theme-logo");
+        if (!logo) return;
+
+        const isDarkMode = document.body.classList.contains("quarto-dark");
+        const newSrc = isDarkMode ? logo.dataset.darkSrc : logo.dataset.lightSrc;
+
+        if (logo.src !== newSrc) {
+          logo.src = newSrc;
+        }
+      }
+
+      // Detect theme change
+      const observer = new MutationObserver(updateLogo);
+      observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
+
+      // Ensure correct logo on initial load
+      document.addEventListener("DOMContentLoaded", updateLogo);
+    </script>
