@@ -1,0 +1,95 @@
+---
+title: Alumni
+toc: false
+output:
+  html_document:
+    self_contained: false
+---
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<style>
+  .cropped-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    overflow-clip-margin: unset;        /* AYUSH :  Added to remove pixelation from the profile images*/
+    border: 1px solid #777;             /* Set a thin border on all sides */
+    border-bottom: 4px solid #777;      /* Set a thicker border only at the bottom (slightly darker than tomato) */
+    border-radius: 4px;                 /* Optional: add rounded corners for a nicer look */
+    transition: border-color 0.3s;      /* Add smooth transition for the border color */
+  }
+
+  .cropped-image:hover {
+    /* Change border color on hover */
+    border-bottom-color: #d9534f; /* Use the same slightly darker color on hover */
+  }
+  p,span,li{
+    font-size:18px;
+  }
+</style>
+
+## PhD
+
+::: {layout-ncol=4}
+<a href="https://rishi-a.github.io">
+  <img src="https://rishi-a.github.io/images/RISHIRAJ.jpg" class="cropped-image"><br/>
+</a>
+<span>Rishiraj Adhikary<br/>(Jul 2019 - Jan 2025)</span>
+
+::: 
+
+
+### BTech
+- Aditi Agarwal (BTech 2024): Predoc at Google Deepmind
+- Dhruv Patel (BTech 2024): MS at TAMU
+- Haikoo Khandor (BTech 2024): MS at TAMU
+- Inderjeet Bhullar : First Job at Skan.ai
+- Kalash Kankariya : First job at Skan.ai
+- Madhav Kanda (BTech 2024): MS at UIUC
+- Progyan Das (BTech 2024): Applied Scientist at Microsoft
+- Rahul Chembakasseril : First job at Skan.ai
+- Utkarsh Mittal (BTech 2024): MS at NYU Tandon
+- Aadesh Desai (BTech 2023): MS at CMU
+- Eshan Gujarathi (BTech 2023): Predoc at IIT Madras
+- Gautam Vasistha (BTech 2023): Data Scientist as Skan.AI
+- Hitarth Gandhi (BTech 2023): MS at UC Irvine
+- Saagar Parikh (BTech 2023): MS at CMU
+- Xhitij Choudhary (BTech 2023): Data Scientist at Skan.AI
+- Chris Francis (BTech 2022): MS at UCSD
+- Dhruvi Lodhavia (BTech 2022): MS at UCSD
+- Hetvi Shastri (BTech 2022): PhD at UMass Amherst
+- Harsh Patel (BTech 2022): MS at UCSD
+- Palak Purohit (BTech 2022): MS at Caltech
+- Shivam Sahni (BTech 2022): MS at UCSD
+- Apoorv Agnihotri (BTech 2020): First job at Wadhwani AI -> Data Scientist at Rephrase.ai
+- Deepak Narayanan (BTech 2020): First job at Microsoft Research India -> MS at ETH Zurich
+- Kukunuri Rithwik (BTech 2020): First job at Jio -> Data Scientist at Nykaa
+- Soham Pachpande (BTech 2020): First job at  HSBC-> MS at UCSD -> SWE at Salesforce
+
+### MTech
+- Ayush Shrivastava (Mtech 2024): PhD at IIT Gandhinagar
+- Suraj Jaiswal (Mtech 2024): First job at Neuroreef-labs
+- Ankita Jain (MTech 2023): First job at Oracle
+- Karan Kumar (MTech 2020): First job at Trading Technologies
+- Souvik Roy (MTech 2020): First job at eClerx
+
+### Research Assistant
+- Kaushal Modi: Now a data scientist at InfiBeam
+- Prerna Khanna: Now a PhD student at Stony Brook
+- Tanmay Srivastava: Now a PhD student at Stony Brook
+- Rohit Patil: First job at Publicis Sapient
+
+### Outside IITGn Interns
+- Vibhuti Bansal (Summer 2022): Now at CRED
+- Rohit Khoiwal (Summer 2022)
+- Anand Hegde (Summer 2022)
+- Shobhit Belwal (Summer 2022)
+- Aryan Varshney (Summer 2022)
+- Ami Ashish Buch (Summer 2024)
+- Sajay Raj (Summer 2024)
+- Muhammad Zaid Hassan (Summer 2024)
+- Devodita Chakravarty (Summer 2024)
+- Omisha Guha (Summer 2024)
