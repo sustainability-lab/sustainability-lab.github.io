@@ -29,6 +29,12 @@ description="[Sustainability lab dinner after Dr. Rishiraj's successful Phd defe
 
 # 2024
 
+## Dec 2024
+![](images/memories/2024-dec-alum-meet.jpg){group="my-gallery"
+description="[Alum Meetup Homecoming 2024]{.large-caption-text}"}
+
+[Alum Meetup Homecoming 2024]{.large-caption-text}
+
 ## July 2024
 ![](images/memories/compass24.jpg){group="my-gallery"
 description="[Sustainability lab at ACM Compass'24 at IIIT Delhi]{.large-caption-text}"}
