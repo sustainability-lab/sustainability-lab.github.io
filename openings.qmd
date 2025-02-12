@@ -6,31 +6,6 @@ output:
     self_contained: false
 ---
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-<style>
-  .cropped-image {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    overflow-clip-margin: unset;        /* AYUSH :  Added to remove pixelation from the profile images*/
-    border: 1px solid #777;             /* Set a thin border on all sides */
-    border-bottom: 4px solid #777;      /* Set a thicker border only at the bottom (slightly darker than tomato) */
-    border-radius: 4px;                 /* Optional: add rounded corners for a nicer look */
-    transition: border-color 0.3s;      /* Add smooth transition for the border color */
-  }
-
-  .cropped-image:hover {
-    /* Change border color on hover */
-    border-bottom-color: #d9534f; /* Use the same slightly darker color on hover */
-  }
-  p,span,li{
-    font-size:18px;
-  }
-</style>
-
 ### Junior/Senior Research Fellow Opening
 
 Join us as a Junior/Senior Research Fellow in the Sustainability Lab! [Apply Now](https://docs.google.com/forms/d/e/1FAIpQLSeU2KoY-yAsFKCtlUZ8BH8gMEMwhV8z6L8WdaOtPB7TsJQrRg/viewform)
