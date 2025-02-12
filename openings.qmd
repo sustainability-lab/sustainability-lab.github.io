@@ -31,13 +31,20 @@ output:
   }
 </style>
 
-### JRF Opening
+### Junior Research Fellow Opening
 
 Join us as a Junior Research Fellow in the Sustainability Lab! [Apply Now](https://docs.google.com/forms/d/e/1FAIpQLSeU2KoY-yAsFKCtlUZ8BH8gMEMwhV8z6L8WdaOtPB7TsJQrRg/viewform)
 
-### SRIP Opening
+### Summer Research Intern Opening
 
 Join us through the Summer Research Internship Program in the following domains:
 
-1. AI for Sustainibility. [Apply Now](https://docs.google.com/forms/d/e/1FAIpQLSeKCn-LWayPg14NGk3zpwNy-wvAaya8GG8-HwkFgvq-AFDWPA/viewform)
-2. AI/Sensing for Health. [Apply Now](https://docs.google.com/forms/d/e/1FAIpQLScIcCd-KHaTYjQICCgW3O_84osDP__UZKsvf0x100q3rmiF6w/viewform)
+1. AI for Sustainibility
+2. AI/Sensing for Health
+3. Exposition and Visualisation
+
+Find our projects labelled: IP0NB0000019 and IP0NB0000020 on IIT Gandhinagar [SRIP portal](https://srip.iitgn.ac.in/registration/)
+
+### 6 months internships
+
+Contact the PI for 6 months internships. 
