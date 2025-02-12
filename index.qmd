@@ -93,7 +93,7 @@ toc: false
 
 <br>
 
-## Funding Oraganisations
+## Funding Organisations
 
 <div style="text-align: center; margin-top: 20px;">
   <img src="images/mainpage/Funding organisations.png" alt="Funding Organization" style="max-width: 100%; height: auto; width: 1000px;">
