@@ -1,0 +1,40 @@
+---
+title: "Sustainability Lab: The Taste of True Research"
+author: "Devodita Chakravarty"
+date: "2025-2-27"
+---
+
+## About Me
+Hi! My name is Devodita Chakravarty. In the Summer of 2024, I had the opportunity to intern at the Sustainability Lab (SL) under Prof. Nipun Batra as part of IIT Gandhinagar’s Summer Research Internship Program (SRIP). I am currently a third-year undergraduate at IIT Kharagpur pursuing a dual degree in Mechanical Engineering with a minor in CSE and a research enthusiast.
+
+---
+
+## Brick Kilns - More than just another project!
+My interest in Computer Vision (CV) started as a fascination with interpreting and analyzing images computationally. At IIT Kharagpur, I am part of the Autonomous Ground Vehicles Group, where I explored CV to some extent. I was eager to learn more about how it can be applied to real-world scenarios. That’s when I came across the IITGN SRIP portal. The project that immediately caught my attention was Prof. Nipun's. This project led me to realize the true power of CV! I still remember the excitement of getting great results, especially when they were visually evident. This wasn’t just another academic project; it had real-world implications. Brick kiln detection and monitoring is a growing area of research, and being part of such an evolving domain was both challenging and exciting. The work in this project has been ongoing for a while, demonstrating its potential impact.
+
+![IITGN](../images/experiences/devodita-1.png)
+_Poster Presentation at SRIP._
+
+
+## The Lab Culture - Where Research Comes to Life
+Here, I experienced the essence of research, which goes beyond a great project statement to the collaboration of great minds. This lab showed me exactly that. Soon after joining, I connected with Zeel and Rishabh, who helped me understand the project and navigate the learning curve. Prof. Nipun encouraged me to explore foundational works to gain a better grasp of the project. I also had the opportunity to explore other groundbreaking research happening in the lab. This highlighted the diverse nature of the lab and the spirit of mutual collaboration. In my project, I received additional guidance from Suraj and Shataxi. Regular meetings with Prof. Nipun allowed us to discuss interesting papers, where he would ask thought-provoking questions that pushed us to think beyond the obvious. This cultivated in me a deeper sense of research and strengthened my motivation to pursue it further. Prof. Nipun was personally invested in our project, which I truly appreciated.
+
+![Group Picture](../images/experiences/devodita-2.png)  
+_A picture with the group (being not much of a picture person, this is the best I had)._
+
+
+
+## A Cherry on the Top - SRE Award
+Research in itself became a rewarding experience with this incredible group, but receiving formal recognition made it even more special. The collective effort put into the project was truly worthwhile. The moments spent discussing improvements, brainstorming ways to integrate Super Resolution techniques, refining the project pipeline, and working late nights running experiments were invaluable. I was honored with the Bhalodia-Khetan Summer Research Excellence Award for SRIP 2024, receiving a certificate and Rs. 50,000. This recognition was unexpected, as the work at IITGN felt more like an exciting journey rather than a monotonous research task. I now believe that research becomes enjoyable when you are working on the right project with an enthusiastic advisor and a supportive team. Sustainability Lab embodies this perfectly.
+
+![Award Ceremony](../images/experiences/devodita-3.png)  
+_Prof. Nipun receiving the award on my behalf._
+
+
+
+## Some Final Words
+If you are someone looking to explore research or work on a project that will become one of your best memories, **Sustainability Lab (SL)** is the place to be. This project has had a lasting impact on me, even beyond IITGN, as it helped me become part of the Vision and AI Lab (VAL) at IISc for a research project. The lab culture at SL played a significant role in shaping my approach to research, making me more confident and prepared.
+
+This entire journey has been incredible. I truly cherished it, and it has significantly shaped my outlook for the future. Prof. Nipun’s support has been instrumental, and I am fortunate to have had such valuable guidance. I am deeply grateful for all the learning experiences and mentorship along the way.
+
+Feel free to connect with me here: [LinkedIn](https://www.linkedin.com/in/devodita/)
