@@ -1,6 +1,8 @@
 @import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap';
 
 $font-family: "Roboto", sans-serif;
+$font-family-serif: "Roboto", sans-serif;
+
 $primary: #2c2c2c;
 
 /*-- scss:rules --*/
@@ -11,7 +13,7 @@ body {
 }
 
 p, span, li, h1, h2, h3, h4, h5, h6 {
-    color: inherit !important; /* Inherit color from body */
+    color: #e0e0e0 !important; /* Ensure all text is readable */
 }
 
 kbd, .kbd {
@@ -19,19 +21,19 @@ kbd, .kbd {
 }
 
 .navbar {
-    font-family: $font-family;
+    font-family: $font-family;  /* Ensure consistency */
     font-size: large;
-    background-color: $primary !important;
+    background-color: #2c2c2c !important; /* Ensure navbar matches dark mode */
     display: flex;
-    align-items: center;
-    height: auto;
-    padding: 0;
+    align-items: center; /* Center items vertically */
+    height: auto; /* Adjust height dynamically */
+    padding: 0; /* Remove padding if necessary */
 }
 
 .navbar .navbar-nav {
     display: flex;
-    align-items: center;
-    height: 100%;
+    align-items: center; /* Ensure nav items are centered vertically */
+    height: 100%; /* Full height of the navbar */
 }
 
 .cropped-image {
@@ -44,10 +46,10 @@ kbd, .kbd {
 }
 
 .dropdown-item {
-    color: #e0e0e0 !important;
+    color: #e0e0e0 !important; /* Set text color */
 }
 
 .dropdown-item:hover, .dropdown-item:focus {
-    background-color: #444 !important;
-    color: #ffffff !important;
+    background-color: #444 !important; /* Darker background on hover */
+    color: #ffffff !important; /* Ensure text remains visible */
 }
