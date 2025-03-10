@@ -21,13 +21,9 @@ kbd, .kbd {
 }
 
 .navbar {
-    font-size: large;
-    background-color: #2c2c2c !important; /* Ensure navbar matches dark mode */
-}
-
-.navbar {
     font-family: $font-family;  /* Ensure consistency */
     font-size: large;
+    background-color: #2c2c2c !important; /* Ensure navbar matches dark mode */
     display: flex;
     align-items: center; /* Center items vertically */
     height: auto; /* Adjust height dynamically */
@@ -45,6 +41,15 @@ kbd, .kbd {
 }
 
 .dropdown-menu {
-
     background-color: #222 !important;
+    border: none !important;
+}
+
+.dropdown-item {
+    color: #e0e0e0 !important; /* Set text color */
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #444 !important; /* Darker background on hover */
+    color: #ffffff !important; /* Ensure text remains visible */
 }
