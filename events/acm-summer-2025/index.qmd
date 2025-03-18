@@ -1,0 +1,72 @@
+---
+title: "ACM India Summer School 2025"
+format: html
+toc: true
+page-layout: full
+categories: [events, summer school]
+---
+
+# ACM India Summer School 2025  
+**Hosted by IIT Gandhinagar, Gandhinagar**  
+📅 **02–13 June 2025**
+
+## Overview
+The ACM Summer School on AI for Social Good at IIT Gandhinagar offers an **intensive 11-day program** on AI techniques applied to social good domains such as **healthcare, sustainability, and agriculture**.  
+
+The school will feature **expert talks, hands-on tutorials, and panel discussions**, fostering both **technical expertise** and **interdisciplinary collaboration**.
+
+## 🏛 Host Institution
+**IIT Gandhinagar**  
+📍 **Palaj, Gandhinagar, Gujarat, 382055**
+
+## 🏫 Local & Academic Coordinators
+**Local Coordinator**  
+👤 **Nipun Batra**  
+📧 [nipun.batra@iitgn.ac.in](mailto:nipun.batra@iitgn.ac.in)  
+
+**Academic Coordinator**  
+👤 **Anirban Dasgupta**  
+📧 [anirbandg@iitgn.ac.in](mailto:anirbandg@iitgn.ac.in)  
+
+## 🎯 Topics Covered
+
+### **AI for Social Good Domains**
+- AI for Healthcare  
+- AI for Sustainability  
+- AI for Agriculture  
+
+### **Technical Topics**
+- Object Detection  
+- Bandits and Reinforcement Learning  
+- Time Series Modeling  
+- Large Language Models (LLMs)  
+- Fairness & Explainability in AI  
+- Self-Supervised Learning  
+- Bayesian ML  
+- Graph Neural Networks  
+- Multimodal Learning  
+
+## 🎤 Confirmed Speakers
+- **Manish Gupta**, Google India *(Keynote)*  
+- **Venkat Padmanabhan**, Microsoft Research India *(Keynote)*  
+- **Sayan Ranu**, IIT Delhi  
+- **Tavpritesh Sethi**, IIIT Delhi  
+- **Nipun Batra**, IIT Gandhinagar  
+- **Anirban Dasgupta**, IIT Gandhinagar  
+- **Udit Bhatia**, IIT Gandhinagar  
+
+_(More speakers to be added soon)_
+
+## 📖 Prerequisites
+Students should have prior knowledge of:  
+- Machine Learning  
+- Probability, Statistics & Data Visualization  
+- Basics of Computer Vision & NLP  
+
+## 🖥 Software Requirements
+- **Python**  
+
+## 📅 Schedule  
+👉 **[Click here for the detailed schedule](acm-summer-2025-schedule.qmd)**  
+
+---

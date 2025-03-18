@@ -34,6 +34,10 @@ website:
         text: Media coverage
       - href: awards.qmd
         text: Awards
+      - text: Events
+        menu:
+          - text: "ACM India Summer School 2025"
+          - href: events/acm-summer-2025/index.qmd
   
 
 format:
