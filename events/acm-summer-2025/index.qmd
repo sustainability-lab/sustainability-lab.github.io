@@ -67,6 +67,6 @@ Students should have prior knowledge of:
 - **Python**  
 
 ## 📅 Schedule  
-👉 **[Click here for the detailed schedule](acm-summer-2025-schedule.qmd)**  
+👉 **[Click here for the detailed schedule](schedule.qmd)**  
 
 ---
