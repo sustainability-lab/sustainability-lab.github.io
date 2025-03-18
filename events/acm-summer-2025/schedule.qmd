@@ -1,0 +1,14 @@
+---
+title: "ACM India Summer School 2025 – Schedule"
+format: html
+toc: true
+page-layout: full
+categories: [events, summer school]
+---
+
+# 📅 ACM India Summer School 2025 – Schedule  
+📍 IIT Gandhinagar | 📆 **02–13 June 2025**
+
+::: {.panel-tabset}
+
+### Week 1  
