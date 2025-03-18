@@ -4,8 +4,12 @@ title: "Events"
 
 In this page, we include the events that we have organized or co-organized.
 
+## 2025
+ACM India Summer School on AI for Social Good
+Link: [ACM India Summer School 2025](./acm-summer-2025)
+
 ## 2023
 
 MEDFUSE: Medicine, Engineering, and Data Fusion for Health
 
-![](images/events/MEDFUSE_NEW.png)
+![](../images/events/MEDFUSE_NEW.png)
