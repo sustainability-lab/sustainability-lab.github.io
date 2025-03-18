@@ -36,8 +36,12 @@ website:
         text: Awards
       - text: Events
         menu:
-          - text: "ACM India Summer School 2025"
-            href: events/acm-summer-2025/index.qmd
+          - text: Events Home
+            href: events/index.qmd
+            menu:
+              - text: "ACM India Summer School 2025"
+                href: events/acm-summer-2025/index.qmd
+            
   
 
 format:
