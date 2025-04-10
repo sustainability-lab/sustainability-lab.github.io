@@ -76,17 +76,17 @@ All payments are **non-refundable**. Please apply **after careful consideration*
 
 ### 📅 Important Dates
 
-- **Last date for application**:  
-  🗓️ **Sunday, April 13, 2025 (11:59 PM IST)**  
-- **Announcement of selections**:  
+- **Last date for application**
+  🗓️ **Sunday, April 13, 2025 (1159 PM IST)**  
+- **Announcement of selections**
   🗓️ **Wednesday, April 23, 2025**  
-- **Payment of fees by selected students**:  
+- **Payment of fees by selected students**  
   🗓️ **Wednesday, April 30, 2025**
 
 ## 📝 Selection & Registration
 
-- **Selection**: Based on data submitted in the application. Selected students will be notified by email.  
-- **Registration**: Only selected students must pay **non-refundable fees (₹3000 + 18% GST)** which includes **lodging and boarding** at the venue.  
+- **Selection** Based on data submitted in the application. Selected students will be notified by email.  
+- **Registration** Only selected students must pay **non-refundable fees (₹3000 + 18% GST)** which includes **lodging and boarding** at the venue.  
   - A **non-shareable payment link** will be sent to selected students.  
   - Once selected to a school, **you cannot switch** to another.  
   - **Ensure you pay and register** to be fair to those not selected. 
@@ -99,7 +99,7 @@ All payments are **non-refundable**. Please apply **after careful consideration*
 - No travel support is provided.  
 - Each day includes **lectures + hands-on tutorials**.  
 - Some schools may host **industry sessions** on career opportunities.  
-- Top students may receive **internship opportunities** and an **all-expense-paid trip** to:  
+- Top students may receive **internship opportunities** and an **all-expense-paid trip** to
   🏆 **ACM India ARCS Symposium & Annual Event 2026**  
   📍 **IIT Hyderabad, Feb–Mar 2026**
 
