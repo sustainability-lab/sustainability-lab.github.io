@@ -6,9 +6,9 @@ page-layout: full
 categories: [events, summer school]
 ---
 
-```{=markdown}
-[Overview](index.qmd) • [Schedule](schedule.qmd) • [Selected](selected.qmd) 
-```
+[Overview](index.qmd) | [Schedule](schedule.qmd) | [Selected Participants](selected.qmd) | [All Events](../index.qmd)
+
+
 
 
 # 📅 ACM India Summer School 2025 – Schedule  
