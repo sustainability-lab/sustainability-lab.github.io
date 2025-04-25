@@ -1,7 +1,7 @@
 ---
 title: "ACM India Summer School 2025: AI for Social Good"
 format: html
-toc: true
+toc: false
 page-layout: full
 ---
 
