@@ -2,7 +2,7 @@
 title: "ACM India Summer School 2025: AI for Social Good"
 format: html
 toc: false
-page-layout: article
+page-layout: full
 ---
 
 ::: {.event-navigation}
@@ -18,13 +18,13 @@ Welcome to the ACM India Summer School 2025 on **AI for Social Good** at **IIT G
 
 ---
 
-## 🏠 Accommodation
+## 🏠 Accommodation and Meals
 
 - You will be **provided hostel accommodation on campus**.
-- Check-in: 01 June 2025 (afternoon onwards)
-- Check-out: 14 June 2025 (morning)
-- Basic bedding will be provided.
+- Check-in: 01 June 2025 
+- Check-out: 14 June 2025
 - **No accommodation charge** – included in the program.
+- **Meals**: Breakfast, lunch, and dinner will be provided on campus.
 
 ---
 
@@ -55,9 +55,9 @@ Welcome to the ACM India Summer School 2025 on **AI for Social Good** at **IIT G
 ## 🚆 Travel Guidance
 
 - Railway Stations: Depending on your train, you may be able to choose:
-    - **Gandhinagar Capital (GNC)** (~15 km from campus)
-    - **Sabarmati Junction (SBI)** (~30 km from campus)
-    - **Ahmedabad Junction (ADI)** (~30 km from campus)
+    - **Gandhinagar Capital (GNC)** 
+    - **Sabarmati Junction (SBI)** 
+    - **Ahmedabad Junction (ADI)** 
 - Nearest Airport: **Sardar Vallabhbhai Patel International Airport (AMD)** (~20 km)
 - From Ahmedabad, take a cab or bus to **IIT Gandhinagar, Palaj Campus**
 
