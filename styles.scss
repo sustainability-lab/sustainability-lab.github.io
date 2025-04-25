@@ -87,3 +87,31 @@ body {
     border-top: 1px solid #eee; /* Adjust the color and width as needed */
     margin: 20px 0; /* Adjust the spacing as needed */
   }
+
+  .event-navigation {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+    a {
+      padding: 8px 16px;
+      color: #495057;
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 4px;
+      
+      &:hover {
+        background-color: #e9ecef;
+        color: #212529;
+      }
+      
+      &.active {
+        background-color: #0d6efd;
+        color: white;
+      }
+    }
+  }

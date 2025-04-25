@@ -53,3 +53,22 @@ kbd, .kbd {
     background-color: #444 !important; /* Darker background on hover */
     color: #ffffff !important; /* Ensure text remains visible */
 }
+
+.event-navigation {
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    
+    a {
+      color: #c4c7ca;
+      
+      &:hover {
+        background-color: #333333;
+        color: #ffffff;
+      }
+      
+      &.active {
+        background-color: #0d6efd; // You can keep this consistent or change
+        color: white;
+      }
+    }
+  }
