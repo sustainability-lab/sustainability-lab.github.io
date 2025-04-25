@@ -6,10 +6,11 @@ page-layout: full
 categories: [events, summer school]
 ---
 
-::: {.callout appearance="simple"}
-### Navigation
-[Overview](index.qmd) | [Schedule](schedule.qmd) | [Information for Selected Participants](selected.qmd) | [All Events](../index.qmd)
-
+::: {.event-navigation}
+[Overview](index.qmd)
+[Schedule]{.active}
+[Selected Participants](selected.qmd)
+[All Events](../index.qmd)
 :::
 
 
