@@ -1,9 +1,7 @@
 ---
-title: "ACM India Summer School 2025"
 format: html
 toc: true
 page-layout: full
-categories: [events, summer school]
 ---
 
 ::: {.event-navigation}
