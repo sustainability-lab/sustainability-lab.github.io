@@ -1,0 +1,87 @@
+---
+title: Information for Selected Participants
+page-layout: article
+---
+
+# 🎉 Congratulations on Your Selection!
+
+Welcome to the ACM India Summer School 2025 on **AI for Social Good** at **IIT Gandhinagar**. Below are essential details to help you prepare for your participation.
+
+---
+
+## 🏠 Accommodation
+
+- You will be **provided hostel accommodation on campus**.
+- Check-in: 01 June 2025 (afternoon onwards)
+- Check-out: 14 June 2025 (morning)
+- Basic bedding will be provided.
+- **No accommodation charge** – included in the program.
+
+---
+
+## 💰 Fee Structure
+
+| Component                  | Amount         |
+|---------------------------|----------------|
+| Application Fee           | ₹150 + 18% GST |
+| Program Fee (on selection) | ₹3000 + 18% GST |
+| Accommodation & Meals     | Included       |
+| Travel                    | Self-arranged  |
+
+---
+
+## 🧳 What to Bring
+
+- Government ID card (for hostel check-in)
+- Laptop with Python installed
+- Notebook, pens, charger, power bank
+- Comfortable clothing for Gujarat heat
+- Water bottle, umbrella, etc.
+- Toiletries (soap, shampoo, etc.)
+- Any personal items you may need
+- Enthusiasm to learn and collaborate!
+
+---
+
+## 🚆 Travel Guidance
+
+- Railway Stations: Depending on your train, you may be able to choose:
+    - **Gandhinagar Capital (GNC)** (~15 km from campus)
+    - **Sabarmati Junction (SBI)** (~30 km from campus)
+    - **Ahmedabad Junction (ADI)** (~30 km from campus)
+- Nearest Airport: **Sardar Vallabhbhai Patel International Airport (AMD)** (~20 km)
+- From Ahmedabad, take a cab or bus to **IIT Gandhinagar, Palaj Campus**
+
+
+> 🗺️ IIT Gandhinagar Address:  
+> Indian Institute of Technology Gandhinagar,  
+> Palaj, Gandhinagar – 382055, Gujarat
+
+---
+
+
+## 🙋 FAQs
+
+**Q. Can I arrive a day earlier or stay a day later?**  
+No, accommodation is only available from **01 June to 14 June**.
+
+**Q. Can I change to another school?**  
+No. Once selected, switching is not allowed.
+
+**Q. Will I get a certificate?**  
+Yes. **Full attendance** is required for certification.
+
+**Q. What if I have dietary restrictions?**
+Please inform us in advance. We will do our best to accommodate your needs. We will be sharing a form for this.
+
+
+
+---
+
+## ✉️ Contact
+
+Feel free to reach out:
+
+- [Nipun Batra](mailto:nipun.batra@iitgn.ac.in)
+
+We look forward to welcoming you to IIT Gandhinagar!
