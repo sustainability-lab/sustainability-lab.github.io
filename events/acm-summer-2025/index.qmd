@@ -6,9 +6,11 @@ page-layout: full
 categories: [events, summer school]
 ---
 
-[Overview](index.qmd) | [Schedule](schedule.qmd) | [Selected Participants](selected.qmd) | [All Events](../index.qmd)
+::: {.callout appearance="simple"}
+### Navigation
+[Overview](index.qmd) | [Schedule](schedule.qmd) | [Information for Selected Participants](selected.qmd) | [All Events](../index.qmd)
 
-
+:::
 
 # ACM India Summer School 2025  
 **Hosted by IIT Gandhinagar, Gandhinagar**  
