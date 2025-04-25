@@ -55,20 +55,23 @@ kbd, .kbd {
 }
 
 .event-navigation {
-    background-color: #1a1a1a;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
     a {
-      color: #c4c7ca;
-      
+      color: #ccc;
+      border: 1px solid transparent;
+
       &:hover {
-        background-color: #333333;
-        color: #ffffff;
+        background-color: #2c2c2c;
+        color: #fff;
+        border: 1px solid #444;
       }
-      
+
       &.active {
-        background-color: #0d6efd; // You can keep this consistent or change
+        background-color: #0d6efd;
         color: white;
+        border: 1px solid #0a58ca;
       }
     }
   }

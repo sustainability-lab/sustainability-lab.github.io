@@ -90,28 +90,35 @@ body {
 
   .event-navigation {
     display: flex;
-    justify-content: space-around;
-    background-color: #f8f9fa;
-    padding: 12px;
-    border-radius: 8px;
-    margin-bottom: 25px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 16px 24px;
+    border-radius: 12px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  
     a {
-      padding: 8px 16px;
-      color: #495057;
+      padding: 10px 18px;
+      color: #333;
       text-decoration: none;
       font-weight: 500;
-      border-radius: 4px;
-      
+      border-radius: 6px;
+      transition: all 0.2s ease-in-out;
+      border: 1px solid transparent;
+  
       &:hover {
-        background-color: #e9ecef;
-        color: #212529;
+        background-color: #f1f3f5;
+        color: #000;
+        border: 1px solid #ced4da;
       }
-      
+  
       &.active {
         background-color: #0d6efd;
         color: white;
+        border: 1px solid #0b5ed7;
       }
     }
   }
+  
