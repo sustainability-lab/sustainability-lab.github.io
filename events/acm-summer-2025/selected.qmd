@@ -1,14 +1,15 @@
 ---
-title: Information for Selected Participants
+title: "ACM India Summer School 2025: AI for Social Good"
+format: html
 page-layout: article
 ---
 
 ::: {.event-navigation}
 [Overview](index.qmd)
-[Schedule]{schedule.qmd}
-[Selected Participants](.active)
-[All Events](../index.qmd)
+[Schedule](schedule.qmd)
+[Selected Participants](selected.qmd)
 :::
+
 
 # 🎉 Congratulations on Your Selection!
 
