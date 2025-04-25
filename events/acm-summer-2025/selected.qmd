@@ -3,6 +3,11 @@ title: Information for Selected Participants
 page-layout: article
 ---
 
+```{=markdown}
+[Overview](index.qmd) • [Schedule](schedule.qmd) • [Selected](selected.qmd) 
+```
+
+
 # 🎉 Congratulations on Your Selection!
 
 Welcome to the ACM India Summer School 2025 on **AI for Social Good** at **IIT Gandhinagar**. Below are essential details to help you prepare for your participation.
