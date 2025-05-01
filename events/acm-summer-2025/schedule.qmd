@@ -11,11 +11,160 @@ page-layout: full
 [Selected Participants](selected.qmd)
 :::
 
-
-
 # 📅 ACM India Summer School 2025 – Schedule  
 📍 IIT Gandhinagar | 📆 **02–13 June 2025**
 
 ::: {.panel-tabset}
 
-### Week 1  
+
+
+
+#### 2025-06-02 00:00:00
+
+| Time | Event |
+|------|-------|
+| 08:30:00 - 09:00:00 | Registration |
+| 09:00:00 - 09:30:00 | Opening Session |
+| 10:30:00 - 11:00:00 | Break |
+| 11:00:00 - 11:30:00 | Speaker: Prasant Misra (TCS Research) Topic: Information Processing Techniques for Mobile Sensing at Scale |
+| 12:30:00 - 13:00:00 | Lunch Break |
+| 14:00:00 - 14:30:00 | Speaker: Nipun BatraTopic: Sleep Apnea sensing |
+| 15:30:00 - 16:00:00 | Break |
+| 16:00:00 - 16:30:00 | Speaker/TA: Nipun Batra Tutorial / Lab Topic: |
+
+
+#### 2025-06-03 00:00:00
+
+| Time | Event |
+|------|-------|
+| 09:00:00 - 09:30:00 | Keynote: Venkat Padmnabhan (Microsoft Research India) |
+| 10:30:00 - 11:00:00 | Break |
+| 11:00:00 - 11:30:00 | Speaker: Shailesh Deshpande (TCS Research) Topic: Remote Sensing for Sustainability |
+| 12:30:00 - 13:00:00 | Lunch Break |
+| 14:00:00 - 14:30:00 | Speaker: Pallavi Bharadwaj (IIT Gandhinagar)Topic: EVs |
+| 15:30:00 - 16:00:00 | Break |
+| 16:00:00 - 16:30:00 | Speaker/TA: TCS Research Tutorial / Lab Topic:  (1) Optimization (classical/data-driven with application to EV/Mobility) or (2) Remote Sensing |
+
+
+#### 2025-06-04 00:00:00
+
+| Time | Event |
+|------|-------|
+| 09:00:00 - 09:30:00 | Speaker: Nipun Topic: Energy Disaggregation |
+| 10:30:00 - 11:00:00 | Break |
+| 11:00:00 - 11:30:00 | Udit (Theory): Network and optimization for food security |
+| 12:30:00 - 13:00:00 | Lunch Break |
+| 14:00:00 - 14:30:00 | Speaker: Topic: |
+| 15:30:00 - 16:00:00 | Break |
+| 16:00:00 - 16:30:00 | Speaker/TA: Tutorial / Lab Topic: VLMs |
+
+
+#### 2025-06-05 00:00:00
+
+| Time | Event |
+|------|-------|
+| 09:00:00 - 09:30:00 | Speaker: Topic: |
+| 10:30:00 - 11:00:00 | Break |
+| 11:00:00 - 11:30:00 | Udit : Physics guided machine learning for water and floods |
+| 12:30:00 - 13:00:00 | Lunch Break |
+| 14:00:00 - 14:30:00 | Speaker: Topic: |
+| 15:30:00 - 16:00:00 | Break |
+| 16:00:00 - 16:30:00 | Speaker/TA: Tutorial / Lab Topic: LLM finetuning |
+
+
+#### 2025-06-06 00:00:00
+
+| Time | Event |
+|------|-------|
+| 09:00:00 - 09:30:00 | Speaker: Nipun Topic: VayuBuddy: LLMs for air quality informatics |
+| 10:30:00 - 11:00:00 | Break |
+| 11:00:00 - 11:30:00 | Udit (Tutorial) |
+| 12:30:00 - 13:00:00 | Lunch Break |
+| 14:00:00 - 14:30:00 | Speaker: Topic: |
+| 15:30:00 - 16:00:00 | Break |
+| 16:00:00 - 16:30:00 | Speaker/TA: Tutorial / Lab Topic: |
+
+
+#### 2025-06-07 00:00:00
+
+| Time | Event |
+|------|-------|
+| 09:00:00 - 09:30:00 | Holiday |
+
+
+#### 2025-06-08 00:00:00
+
+| Time | Event |
+|------|-------|
+| 10:30:00 - 11:00:00 | Break |
+| 12:30:00 - 13:00:00 | Lunch Break |
+| 14:00:00 - 14:30:00 | Speaker: Topic: Alok (Google Deepmind India) |
+| 15:30:00 - 16:00:00 | Break |
+| 16:00:00 - 16:30:00 | Speaker/TA: Tutorial / Lab Topic: Alok (Google Deepmind India) |
+
+
+#### 2025-06-09 00:00:00
+
+| Time | Event |
+|------|-------|
+| 09:00:00 - 09:30:00 | Speaker: Nipun Topic: Brick Kiln detection from satellite imagery |
+| 10:30:00 - 11:00:00 | Break |
+| 11:00:00 - 11:30:00 | Speaker: Topic: |
+| 12:30:00 - 13:00:00 | Lunch Break |
+| 14:00:00 - 14:30:00 | Speaker: Topic: |
+| 15:30:00 - 16:00:00 | Break |
+| 16:00:00 - 16:30:00 | Speaker/TA: Tutorial / Lab Topic: |
+
+
+#### 2025-06-10 00:00:00
+
+| Time | Event |
+|------|-------|
+| 09:00:00 - 09:30:00 | Speaker: Jigar Doshi   Building Socially Impactful Solutions using AI - Public Health |
+| 10:30:00 - 11:00:00 | Break |
+| 11:00:00 - 11:30:00 | Speaker: Jigar Doshi   Building Socially Impactful Solutions using AI - Agriculture and Climate |
+| 12:30:00 - 13:00:00 | Lunch Break |
+| 14:00:00 - 14:30:00 | "Speaker: Vaibhav Rajan (Google DeepMind) Topic: Personalized Treatment Planning Models for Cancer" |
+| 15:30:00 - 16:00:00 | Break |
+| 16:00:00 - 16:30:00 | Speaker/TA: Tutorial / Lab Topic: |
+
+
+#### 2025-06-11 00:00:00
+
+| Time | Event |
+|------|-------|
+| 09:00:00 - 09:30:00 | Tavpritesh Sethi (IIIT-Delhi) Causal Models |
+| 10:30:00 - 11:00:00 | Break |
+| 11:00:00 - 11:30:00 | Speaker: Vaibhav Rajan (Google DeepMind) Topic: Personalized Treatment Planning Models for Cancer |
+| 12:30:00 - 13:00:00 | Lunch Break |
+| 14:00:00 - 14:30:00 | Sayan Ranu (IIT Delhi) Graph neural networks |
+| 15:30:00 - 16:00:00 | Break |
+| 16:00:00 - 16:30:00 | Sayan Ranu (IIT Delhi)Graph neural networks hands-on (Requires TA) |
+
+
+#### 2025-06-12 00:00:00
+
+| Time | Event |
+|------|-------|
+| 09:00:00 - 09:30:00 | Sayan Ranu (IIT Delhi) Pollution monitoring using GNNs |
+| 10:30:00 - 11:00:00 | Break |
+| 11:00:00 - 11:30:00 | Sayan Ranu (IIT Delhi) Graph condensation for low-resource environments |
+| 12:30:00 - 13:00:00 | Lunch Break |
+| 14:00:00 - 14:30:00 | Tavpritesh Sethi (IIIT-Delhi) Health Systems Preparedness with Data and AI |
+| 15:30:00 - 16:00:00 | Break |
+| 16:00:00 - 16:30:00 | Speaker/TA: Tutorial / Lab Topic: |
+
+
+#### 2025-06-13 00:00:00
+
+| Time | Event |
+|------|-------|
+| 09:00:00 - 09:30:00 | Keynote: Manish Gupta (Google Deepmind) |
+| 10:30:00 - 11:00:00 | Break |
+| 11:00:00 - 11:30:00 | Mohit Jain (Microsoft Research India) |
+| 12:30:00 - 13:00:00 | Lunch Break |
+| 14:00:00 - 14:30:00 | Mohit Jain (Microsoft Research India) |
+| 15:30:00 - 16:00:00 | Break |
+| 16:00:00 - 16:30:00 | Convocation and Certificate; Feedback |
+
+:::
