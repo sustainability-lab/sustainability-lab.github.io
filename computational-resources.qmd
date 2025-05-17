@@ -43,33 +43,39 @@ Our servers are named after great mathematicians/scientists:
     </tr>
     <tr>
         <td>RAM</td>
-        <td>512 GB (32 x 16)</td>
-        <td>To be Updated</td>
-        <td>192 GB (32 x 6)</td>
+        <td>512 GB (16 x 32GB)</td>
+        <td>256 GB (4 x 64GB)</td>
+        <td>192 GB (6 x 32GB)</td>
     </tr>
     <tr>
         <td>CPU</td>
-        <td>AMD EPYC 7452 32-Core Processor</td>
-        <td>To be Updated</td>
+        <td>AMD EPYC 7452 32-Core Processor @ 2.30 GHz</td>
+        <td>Intel Gold ICX 6326 @ 2.90 GHz</td>
         <td>Intel(R) Xeon(R) Silver 4208 CPU @ 2.10GHz</td>
+    </tr>
+    <tr>
+        <td>Storag</td>
+        <td>8 TB</td> 
+        <td>5 TB</td>
+        <td>2 TB</td>
     </tr>
     <tr>
         <td>Number of CPUs</td>
         <td>64</td> 
-        <td>To be Updated</td>
+        <td>32</td>
         <td>16</td>
     </tr>
     <tr>
         <td>GPU</td>
-        <td>NVIDIA A100-SXM4 (80GB)</td>
-        <td>NVIDIA RTX A5000 (24GB)</td>
-        <td>NVIDIA RTX A4000 (16GB)</td>
+        <td>4 x NVIDIA A100-SXM4 (80GB)</td>
+        <td>2 x NVIDIA RTX A5000 (24GB)</td>
+        <td>2 x NVIDIA RTX A4000 (16GB)</td>
     </tr>
     <tr>
-        <td>Number of GPUs</td>
-        <td>4</td>
-        <td>1</td>
-        <td>2</td>
+        <td>Total VRAM</td>
+        <td>320 GB</td>
+        <td>48 GB</td>
+        <td>32 GB</td>
     </tr>
 </table>
 
@@ -98,30 +104,41 @@ Our servers are named after great mathematicians/scientists:
 
 ### Workstations
 
-<table style="width:50%;">
+<table style="width:75%;">
     <tr>
         <th style="width:25%;"></th>
         <th style="width:25%;">Aryabhata</th>
+        <th style="width:25%;">Vikram</th>
     </tr>
     <tr>
         <td>RAM</td>
-        <td>To be Updated</td>
+        <td>32 GB</td>
+        <td>64 GB</td>
     </tr>
     <tr>
         <td>CPU</td>
-        <td>To be Updated</td>
+        <td>Intel Core i9-13900</td>
+        <td>Intel Core i9-14700</td>
+    </tr>
+    <tr>
+        <td>Storage</td>
+        <td>2 TB</td>
+        <td>4 TB</td> 
     </tr>
     <tr>
         <td>Number of CPUs</td>
-        <td>To be Updated</td> 
+        <td>24</td>
+        <td>32</td> 
     </tr>
     <tr>
         <td>GPU</td>
-        <td>NVIDIA RTX A2000</td>
+        <td>1 x NVIDIA RTX Titan XP (12 GB)</td>
+        <td>1 x NVIDIA RTX A2000 (12 GB)</td>
     </tr>
     <tr>
-        <td>Number of GPUs</td>
-        <td>1</td>
+        <td>Total VRAM</td>
+        <td>12 GB</td>
+        <td>12 GB</td>
     </tr>
 </table>
 
@@ -129,4 +146,21 @@ Our servers are named after great mathematicians/scientists:
 
 ### Relative Performances
 
-<img src="images/benchmark_speedup.png" width=100%>
+<img src="images/GPU_Speedup.png" width=100%>
+
+<img src="images/CPU_Speedup.png" width=100%>
+
+
+## Server Policy
+
+**How to get access**: Send an email to Mr. [Raviraj Sukhadiya](raviraj.s@iitgn.ac.in), keeping Prof. [Nipun Batra](nipun.batra@iitgn.ac.in) in cc. Mention the following details in your request: i) server name; ii) purpose for access.
+
+**Don'ts**: 
+
+- Do not use the server for personal use or anything not related to the project. This includes any classwork or homework.
+- Do not share your server credentials with anyone else.
+
+**Fair usage**:
+
+- Sometimes we have multiple projects running on the same server. Please be considerate of other projects and do not use up all the resources.
+- Sometimes we may allocate specific cores or GPUs to specific projects. Please do not use cores or GPUs that are not allocated to your project.
