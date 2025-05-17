@@ -44,7 +44,7 @@ Our servers are named after great mathematicians/scientists:
     <tr>
         <td>RAM</td>
         <td>512 GB (16 x 32GB)</td>
-        <td>64 GB (1 x 64GB)</td>
+        <td>256 GB (4 x 64GB)</td>
         <td>192 GB (6 x 32GB)</td>
     </tr>
     <tr>
@@ -61,15 +61,15 @@ Our servers are named after great mathematicians/scientists:
     </tr>
     <tr>
         <td>GPU</td>
-        <td>NVIDIA A100-SXM4 (80GB)</td>
-        <td>NVIDIA RTX A5000 (24GB)</td>
-        <td>NVIDIA RTX A4000 (16GB)</td>
+        <td>4 x NVIDIA A100-SXM4 (80GB)</td>
+        <td>2 x NVIDIA RTX A5000 (24GB)</td>
+        <td>2 x NVIDIA RTX A4000 (16GB)</td>
     </tr>
     <tr>
-        <td>Number of GPUs</td>
-        <td>4</td>
-        <td>1</td>
-        <td>2</td>
+        <td>Total VRAM</td>
+        <td>320 GB</td>
+        <td>48 GB</td>
+        <td>32 GB</td>
     </tr>
 </table>
 
@@ -98,30 +98,36 @@ Our servers are named after great mathematicians/scientists:
 
 ### Workstations
 
-<table style="width:50%;">
+<table style="width:75%;">
     <tr>
         <th style="width:25%;"></th>
         <th style="width:25%;">Aryabhata</th>
+        <th style="width:25%;">Bhaskar</th>
     </tr>
     <tr>
         <td>RAM</td>
         <td>32 GB</td>
+        <td>64 GB</td>
     </tr>
     <tr>
         <td>CPU</td>
         <td>Intel Core i9-13900</td>
+        <td>Intel Core i9-14700</td>
     </tr>
     <tr>
         <td>Number of CPUs</td>
-        <td>24</td> 
+        <td>24</td>
+        <td>32</td> 
     </tr>
     <tr>
         <td>GPU</td>
-        <td>NVIDIA RTX A2000</td>
+        <td>1 x NVIDIA RTX Titan XP (12 GB)</td>
+        <td>1 x NVIDIA RTX A2000 (12 GB)</td>
     </tr>
     <tr>
-        <td>Number of GPUs</td>
-        <td>1</td>
+        <td>Total VRAM</td>
+        <td>12 GB</td>
+        <td>12 GB</td>
     </tr>
 </table>
 
@@ -129,8 +135,9 @@ Our servers are named after great mathematicians/scientists:
 
 ### Relative Performances
 
-<img src="images/benchmark_speedup.png" width=100%>
+<img src="images/GPU_Speedup.png" width=100%>
 
+<img src="images/CPU_Speedup.png" width=100%>
 
 ## Values
 
