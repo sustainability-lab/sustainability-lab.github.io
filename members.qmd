@@ -136,7 +136,7 @@ output:
 :::
 
 
-## BTech
+<!-- ## BTech
 
 ::: {layout-ncol=4}
 
@@ -149,7 +149,7 @@ output:
 <img src="images/members/Yash.jpg" class="cropped-image"><br/>
 <span>Yash Bachwana <br/>(May 2024 - Present)</span>
 
-:::
+::: -->
 
 ## Group Photos
 
