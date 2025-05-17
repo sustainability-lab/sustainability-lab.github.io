@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.29">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -71,14 +71,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-a85b8e33ea8f0b235709a7eb17d07876.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-a85b8e33ea8f0b235709a7eb17d07876.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-a85b8e33ea8f0b235709a7eb17d07876.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-732fb9ccd080a018ca85ca5d15770f52.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-732fb9ccd080a018ca85ca5d15770f52.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-732fb9ccd080a018ca85ca5d15770f52.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fb11ee79efc78878172a11ddd1a99912.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-df737bed884eec321005072ddc157300.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-fb11ee79efc78878172a11ddd1a99912.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6830f154e888eb2bfec20612fc02ad8b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-fb90e3d9573e48d6ddfedf626b4057dc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-6830f154e888eb2bfec20612fc02ad8b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -264,6 +264,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleColorMode(toAlternate);
       setStyleSentinel(toAlternate);
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
     };
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
@@ -461,7 +462,7 @@ RAM
 512 GB (16 x 32GB)
 </td>
 <td>
-64 GB (1 x 64GB)
+256 GB (4 x 64GB)
 </td>
 <td>
 192 GB (6 x 32GB)
@@ -500,27 +501,27 @@ Number of CPUs
 GPU
 </td>
 <td>
-NVIDIA A100-SXM4 (80GB)
+4 x NVIDIA A100-SXM4 (80GB)
 </td>
 <td>
-NVIDIA RTX A5000 (24GB)
+2 x NVIDIA RTX A5000 (24GB)
 </td>
 <td>
-NVIDIA RTX A4000 (16GB)
+2 x NVIDIA RTX A4000 (16GB)
 </td>
 </tr>
 <tr>
 <td>
-Number of GPUs
+Total VRAM
 </td>
 <td>
-4
+320 GB
 </td>
 <td>
-1
+48 GB
 </td>
 <td>
-2
+32 GB
 </td>
 </tr>
 </tbody></table>
@@ -547,12 +548,15 @@ Number of GPUs
 </section>
 <section id="workstations" class="level3">
 <h3 class="anchored" data-anchor-id="workstations">Workstations</h3>
-<table style="width:50%;">
+<table style="width:75%;">
 <tbody><tr>
 <th style="width:25%;">
 </th>
 <th style="width:25%;">
 Aryabhata
+</th>
+<th style="width:25%;">
+Bhaskar
 </th>
 </tr>
 <tr>
@@ -562,6 +566,9 @@ RAM
 <td>
 32 GB
 </td>
+<td>
+64 GB
+</td>
 </tr>
 <tr>
 <td>
@@ -569,6 +576,9 @@ CPU
 </td>
 <td>
 Intel Core i9-13900
+</td>
+<td>
+Intel Core i9-14700
 </td>
 </tr>
 <tr>
@@ -578,21 +588,30 @@ Number of CPUs
 <td>
 24
 </td>
+<td>
+32
+</td>
 </tr>
 <tr>
 <td>
 GPU
 </td>
 <td>
-NVIDIA RTX A2000
+1 x NVIDIA RTX Titan XP (12 GB)
+</td>
+<td>
+1 x NVIDIA RTX A2000 (12 GB)
 </td>
 </tr>
 <tr>
 <td>
-Number of GPUs
+Total VRAM
 </td>
 <td>
-1
+12 GB
+</td>
+<td>
+12 GB
 </td>
 </tr>
 </tbody></table>
@@ -600,7 +619,8 @@ Number of GPUs
 </section>
 <section id="relative-performances" class="level3">
 <h3 class="anchored" data-anchor-id="relative-performances">Relative Performances</h3>
-<p><img src="images/benchmark_speedup.png" width="100%"></p>
+<p><img src="images/GPU_Speedup.png" width="100%"></p>
+<p><img src="images/CPU_Speedup.png" width="100%"></p>
 </section>
 </section>
 <section id="values" class="level2">
