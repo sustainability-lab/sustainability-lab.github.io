@@ -54,6 +54,12 @@ Our servers are named after great mathematicians/scientists:
         <td>Intel(R) Xeon(R) Silver 4208 CPU @ 2.10GHz</td>
     </tr>
     <tr>
+        <td>Storag</td>
+        <td>8 TB</td> 
+        <td>5 TB</td>
+        <td>2 TB</td>
+    </tr>
+    <tr>
         <td>Number of CPUs</td>
         <td>64</td> 
         <td>32</td>
@@ -102,7 +108,7 @@ Our servers are named after great mathematicians/scientists:
     <tr>
         <th style="width:25%;"></th>
         <th style="width:25%;">Aryabhata</th>
-        <th style="width:25%;">Bhaskar</th>
+        <th style="width:25%;">Vikram</th>
     </tr>
     <tr>
         <td>RAM</td>
@@ -113,6 +119,11 @@ Our servers are named after great mathematicians/scientists:
         <td>CPU</td>
         <td>Intel Core i9-13900</td>
         <td>Intel Core i9-14700</td>
+    </tr>
+    <tr>
+        <td>Storage</td>
+        <td>2 TB</td>
+        <td>4 TB</td> 
     </tr>
     <tr>
         <td>Number of CPUs</td>
