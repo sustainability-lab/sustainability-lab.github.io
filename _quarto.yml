@@ -26,8 +26,17 @@ website:
         text: Publications
       - href: openings.qmd
         text: Openings
-      - href: lab-handbook.qmd
-        text: Lab Handbook  
+      # - href: lab-handbook.qmd
+      - text: Lab Handbook  
+        menu:
+          # - text: Lab Handbook
+          #   href: lab-handbook.qmd
+          - text: Computational Resources
+            href: computational-resources.qmd
+          - text: Lab Culture
+            href: lab_culture.qmd
+          - text : Upskilling
+            href: upskilling.qmd
       - href: news.qmd
         text: News
       - href: media.qmd

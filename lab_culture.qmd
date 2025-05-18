@@ -1,0 +1,39 @@
+---
+title: Lab-Culture
+---
+
+## Values
+
+**Less but better**: Publish one less paper, but make the ones you publish really strong. Show one less result in the meeting, but thoroughly analyse the ones you show.
+
+
+## Expectations
+
+**Hard work**: We are often working on cutting-edge research. This means that there is no clear path to success. We will have to try different things, and we will fail often. This is part of the process. I expect my students to work hard, and I expect them to be resilient.
+
+**Consistency**: We do expect some seasonal variation in productivity. However, often the difference between a good and great project is the consistency of effort. 
+
+**Striving for excellence**: Often, the difference between a good and great project (or paper) is the last 10% of effort. I try to push my students to go the extra mile, and I expect the same from myself. This goes in various aspects of work, including writing, coding, and data analysis. As an example, I remember doing ten rounds of feedback with an undergraduate student from the group on their presentation for a conference. It was a lot of work, but the student ended up getting offers (higher studies) after the talk; and the student was appreciated by the session chair - "It is hard to believe that you are an undergraduate student".
+
+**Clear, honest communication** I try to be as clear as possible in my communication, and I expect the same from my students. I also expect my students to be honest with me. If you are struggling with something, let me know. If you are not interested in a project, let me know. If you are not happy with something, let me know. I you are unable to meet a deadline, let me know. Lack of communication is counterproductive.
+
+I also typically want to help create a path for my students to achieve their goals. Thus, I expect my students to be clear about their goals, or be proactive in discussing their goals with me. 
+
+**Culture of respect and collaboration**: I expect my students to be respectful to each other, and to other members of the community. I also expect my students to be collaborative. This means that they should be willing to help each other, and to help other members of the community.
+
+## Meetings
+
+**Whole Group Meetings**: We typically meet once a week for about 45-50 mins. We usually cover a variety of topics, including:
+- Short updates from each person on their progress
+- Discussion of any issues that have come up
+- Presentations on topics/tools of interest to the group
+- Paper discussions
+
+We expect students to volunteer to present on topics of interest to them. We also expect students to volunteer to present on papers. To know more about what gets discussed in our group meetings please visit our <a href="reading.qmd">Reading Page</a>.
+
+**Project Meetings**: The project meetings are tied to specific projects. We typically start with discussing the last meeting's action items, then discuss any issues that have come up, and then discuss the next steps. The lead student on the project is responsible for setting the agenda and running the meeting. The lead student is also responsible for taking notes and posting them on the project's repository.
+
+**Individual Meetings**: Please refer to this <a href="https://github.com/jbhuang0604/awesome-tips">material</a>
+
+## Letter of Recommendations
+Please this beautiful blogpost from Gautam Kamath. [How to ask for LOR article by Gautam Kamath](https://kamathematics.wordpress.com/2021/08/18/how-to-ask-for-a-letter-of-recommendation/)
