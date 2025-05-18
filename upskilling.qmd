@@ -1,0 +1,81 @@
+---
+title: Upskilling
+---
+
+## Communicating Research
+
+### Writing Papers
+Paper writing is a key part of research. This page contains some tips and tricks for writing papers. Paper writing is a skill that you will develop over time. But, it needs deliberate practice. 
+
+**Paper structure and Abstract**: I gave a talk ([recording here](https://www.youtube.com/watch?v=LoCoplWgvp4), [slides here](https://github.com/nipunbatra/CS-Research-Methods-Bootcamp/blob/master/RM101.pdf)) on how to write a paper. I recommend watching it. Other materials from the talk are available [here](https://github.com/nipunbatra/CS-Research-Methods-Bootcamp).
+
+**LaTeXify figures**: We'd suggest using [this latexification tool](https://nipunbatra.github.io/lab/papers.html#latexify-figures) to make the `matplotlib` figures publication-ready. It helps in the following aspects:
+
+1. It helps in setting the exact size of the figure relative to the column width or page width of the paper. After using this tool, manually setting the size within the `\begin{figure}` block is rarely needed.
+1. We can set the font size relative to the text font size in the paper to ensure fonts are not too small or too big.
+1. It converts the fonts into latex fonts so that the fonts in the figures do not look different from the main text font.
+
+> Tip: You can find page width and column width with `\the\textwidth` and  `\the\columnwidth` commands, respectively.
+
+**Self-contained figures and tables (and captions)**
+
+**Tables**: We follow this excellent [small guide to making nice tables](https://people.inf.ethz.ch/markusp/teaching/guides/guide-tables.pdf) by Markus Püschel.
+
+**Comments in LaTeX**: We typically create a macro corresponding to different author initials (I use `\nb` for example) and then use that to create comments in the text. This is useful for commenting on the text, or for leaving notes to yourself. For example, I might write `\nb{I'm not sure about this sentence}` and then I can search for all instances of `\nb` to find all of my comments.
+
+```tex
+\newcommand{\nb}[1]{{\color{red}\small \iftoggle{hide}{}{\textbf{Nipun's comment:} #1}}}
+```
+
+**American v/s British English**: There are a few differences in spelling between American and British English. For example, the word "colour" in British English is spelled "color" in American English. The word "optimise" in British English is spelled "optimize" in American English. There are also some differences in grammar. I recommend picking one and sticking to it. Most of our previous papers have used British English (but often this depends on the set of co-authors).
+
+
+**Grammarly and other AI tools**: I recommend students use Grammarly (or a similar) tool to check their writing once they have done a complete pass of editing. I do not recommend relying a lot on ChatGPT-like tools for writing papers as they can often lead to "correct" sounding but "incorrect" sentences.
+
+
+### Poster
+In some venues, the main presentation format is a poster. Posters are a great way to present your work in a visual format, and to have one-on-one conversations with people who are interested in your work.
+
+One common mistake people make while making posters is to try to cram in too much information. Remember that the poster is to supplement you and not to replace you. 
+
+Please see below for two posters that we have made in the past.
+
+#### Sample Poster 1
+<!-- ![](images/sample/sample-poster-1.jpg) -->
+<img src="images/sample/sample-poster-1.jpg" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
+
+
+#### Sample Poster 2
+<!-- ![](images/sample/sample-poster-2.jpg) -->
+<img src="images/sample/sample-poster-2.jpg" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
+
+Please find the presentation files corresponding to the first poster
+1. [Apple Keynote](https://github.com/nipunbatra/nipunbatra.github.io/blob/main/slides/2017/aaai_poster.key)
+
+2. [MS Powerpoint](https://github.com/nipunbatra/nipunbatra.github.io/blob/main/slides/2017/aaai_poster.pptx)
+
+3. [Google Slides](https://docs.google.com/presentation/d/1mH50SOlfErQ683_DwXBcrxCixZ3DX3Mx/edit?usp=sharing&ouid=109104637369595830870&rtpof=true&sd=true)
+
+
+LaTeX users can use the following templates on [Overleaf](https://www.overleaf.com/gallery/tagged/poster) to make their posters.
+
+
+## Technical Background
+
+**Git and GitHub**: There are a ton of good resorces on Git and Github. I'm linking two such resources here:
+
+- [YouTube video by Kevin Stratvert](https://www.youtube.com/watch?v=tRZGeaHPoaw)
+- [Github skills](https://github.com/skills/introduction-to-github)
+
+**Python Data Science Stack**: 
+
+- We recommend students to study the [Python for Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) by Jake VanderPlas. It is a free online book that covers the basics of Python, NumPy, Pandas, Matplotlib, and Scikit-Learn. It is a great resource for beginners and intermediate students alike.
+- We recommend students regularly hone their skills solving exercises such as [100 Numpy exercises](https://github.com/rougier/numpy-100). Given that much of our work is in Torch-like frameworks, the students would also benefit by attempting to solve the exercises using PyTorch.
+
+**Object-Oriented Programming in Python**: RealPython has a nice [tutorial](https://realpython.com/python3-object-oriented-programming/) on Object-Oriented Programming in Python. We recommend students to go through the tutorial. They also have a corresponding [video](https://realpython.com/courses/python-basics-oop/) page. 
+
+**LaTeX**: We typically use LaTeX for writing reports and papers. We recommend students to use [Overleaf](https://www.overleaf.com/) for students to get started. Overleaf has a nice 30 minute [tutorial](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) that covers the basics of LaTeX. We highly recommend students to go through the tutorial.
+
+**Creating a Website and Blog**: We highly recommend students create a simple website and a blog. We have been happily using Quarto for our website and blog. You may see in action in [Nipun's website](https://nipunbatra.github.io/) and corresponding GitHub repo [here](https://github.com/nipunbatra/nipunbatra.github.io); and [Nipun's blog](https://nipunbatra.github.io/blog/) and corresponding Github repo [here](https://github.com/nipunbatra/blog).
+
+Both of these are built via Github actions. Feel free to reuse these for creating your own website and blog. We will be happy to help you get started.
