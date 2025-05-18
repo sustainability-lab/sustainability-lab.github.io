@@ -284,10 +284,25 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./openings.html"> 
 <span class="menu-text">Openings</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./lab-handbook.html"> 
-<span class="menu-text">Lab Handbook</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lab-handbook" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Lab Handbook</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-lab-handbook">    
+        <li>
+    <a class="dropdown-item" href="./computational-resources.html">
+ <span class="dropdown-text">Computational Resources</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./lab_culture.html">
+ <span class="dropdown-text">Lab Culture</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./upskilling.html">
+ <span class="dropdown-text">Upskilling</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./news.html"> 
 <span class="menu-text">News</span></a>
@@ -338,6 +353,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#workstations" id="toc-workstations" class="nav-link" data-scroll-target="#workstations">Workstations</a></li>
   <li><a href="#relative-performances" id="toc-relative-performances" class="nav-link" data-scroll-target="#relative-performances">Relative Performances</a></li>
   </ul></li>
+  <li><a href="#server-policy" id="toc-server-policy" class="nav-link" data-scroll-target="#server-policy">Server Policy</a></li>
   </ul>
 </nav>
     </div>
@@ -413,13 +429,13 @@ Sustain
 RAM
 </td>
 <td>
-512 GB (32 x 16)
+512 GB (16 x 32GB)
 </td>
 <td>
-To be Updated
+256 GB (4 x 64GB)
 </td>
 <td>
-192 GB (32 x 6)
+192 GB (6 x 32GB)
 </td>
 </tr>
 <tr>
@@ -427,13 +443,27 @@ To be Updated
 CPU
 </td>
 <td>
-AMD EPYC 7452 32-Core Processor
+AMD EPYC 7452 32-Core Processor @ 2.30 GHz
 </td>
 <td>
-To be Updated
+Intel Gold ICX 6326 @ 2.90 GHz
 </td>
 <td>
 Intel(R) Xeon(R) Silver 4208 CPU @ 2.10GHz
+</td>
+</tr>
+<tr>
+<td>
+Storag
+</td>
+<td>
+8 TB
+</td>
+<td>
+5 TB
+</td>
+<td>
+2 TB
 </td>
 </tr>
 <tr>
@@ -444,7 +474,7 @@ Number of CPUs
 64
 </td>
 <td>
-To be Updated
+32
 </td>
 <td>
 16
@@ -455,27 +485,27 @@ To be Updated
 GPU
 </td>
 <td>
-NVIDIA A100-SXM4 (80GB)
+4 x NVIDIA A100-SXM4 (80GB)
 </td>
 <td>
-NVIDIA RTX A5000 (24GB)
+2 x NVIDIA RTX A5000 (24GB)
 </td>
 <td>
-NVIDIA RTX A4000 (16GB)
+2 x NVIDIA RTX A4000 (16GB)
 </td>
 </tr>
 <tr>
 <td>
-Number of GPUs
+Total VRAM
 </td>
 <td>
-4
+320 GB
 </td>
 <td>
-1
+48 GB
 </td>
 <td>
-2
+32 GB
 </td>
 </tr>
 </tbody></table>
@@ -502,12 +532,15 @@ Number of GPUs
 </section>
 <section id="workstations" class="level3">
 <h3 class="anchored" data-anchor-id="workstations">Workstations</h3>
-<table style="width:50%;">
+<table style="width:75%;">
 <tbody><tr>
 <th style="width:25%;">
 </th>
 <th style="width:25%;">
 Aryabhata
+</th>
+<th style="width:25%;">
+Vikram
 </th>
 </tr>
 <tr>
@@ -515,7 +548,10 @@ Aryabhata
 RAM
 </td>
 <td>
-To be Updated
+32 GB
+</td>
+<td>
+64 GB
 </td>
 </tr>
 <tr>
@@ -523,7 +559,21 @@ To be Updated
 CPU
 </td>
 <td>
-To be Updated
+Intel Core i9-13900
+</td>
+<td>
+Intel Core i9-14700
+</td>
+</tr>
+<tr>
+<td>
+Storage
+</td>
+<td>
+2 TB
+</td>
+<td>
+4 TB
 </td>
 </tr>
 <tr>
@@ -531,7 +581,10 @@ To be Updated
 Number of CPUs
 </td>
 <td>
-To be Updated
+24
+</td>
+<td>
+32
 </td>
 </tr>
 <tr>
@@ -539,15 +592,21 @@ To be Updated
 GPU
 </td>
 <td>
-NVIDIA RTX A2000
+1 x NVIDIA RTX Titan XP (12 GB)
+</td>
+<td>
+1 x NVIDIA RTX A2000 (12 GB)
 </td>
 </tr>
 <tr>
 <td>
-Number of GPUs
+Total VRAM
 </td>
 <td>
-1
+12 GB
+</td>
+<td>
+12 GB
 </td>
 </tr>
 </tbody></table>
@@ -555,10 +614,25 @@ Number of GPUs
 </section>
 <section id="relative-performances" class="level3">
 <h3 class="anchored" data-anchor-id="relative-performances">Relative Performances</h3>
-<p><img src="images/benchmark_speedup.png" width="100%"></p>
-
-
+<p><img src="images/GPU_Speedup.png" width="100%"></p>
+<p><img src="images/CPU_Speedup.png" width="100%"></p>
 </section>
+</section>
+<section id="server-policy" class="level2">
+<h2 class="anchored" data-anchor-id="server-policy">Server Policy</h2>
+<p><strong>How to get access</strong>: Send an email to Mr.&nbsp;<a href="raviraj.s@iitgn.ac.in">Raviraj Sukhadiya</a>, keeping Prof.&nbsp;<a href="nipun.batra@iitgn.ac.in">Nipun Batra</a> in cc. Mention the following details in your request: i) server name; ii) purpose for access.</p>
+<p><strong>Don’ts</strong>:</p>
+<ul>
+<li>Do not use the server for personal use or anything not related to the project. This includes any classwork or homework.</li>
+<li>Do not share your server credentials with anyone else.</li>
+</ul>
+<p><strong>Fair usage</strong>:</p>
+<ul>
+<li>Sometimes we have multiple projects running on the same server. Please be considerate of other projects and do not use up all the resources.</li>
+<li>Sometimes we may allocate specific cores or GPUs to specific projects. Please do not use cores or GPUs that are not allocated to your project.</li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->
