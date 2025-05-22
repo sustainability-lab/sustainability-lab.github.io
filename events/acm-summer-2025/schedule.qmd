@@ -24,45 +24,17 @@ page-layout: full
 
 <div id="schedule-table"></div>
 
-<!-- SheetJS for reading Excel -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-
 <!-- Tabulator -->
 <link href="https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css" rel="stylesheet">
 <script src="https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
 
+<!-- D3 for CSV parsing -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
 <script>
-async function loadAndRenderSchedule(filePath) {
-  const res = await fetch(filePath);
-  const data = await res.arrayBuffer();
-  const workbook = XLSX.read(data, { type: 'array' });
-  const sheet = workbook.Sheets[workbook.SheetNames[0]];
-  const json = XLSX.utils.sheet_to_json(sheet, { header: 1 });
-
-  const [header, ...rows] = json;
-  const startIdx = header.indexOf("Start Time");
-  const endIdx = header.indexOf("End Time");
-
-  const dateCols = header.slice(endIdx + 1);
-
-  const tableData = [];
-  dateCols.forEach((date, dIdx) => {
-    rows.forEach(row => {
-      const start = row[startIdx];
-      const end = row[endIdx];
-      const event = row[endIdx + 1 + dIdx];
-      if (event) {
-        tableData.push({
-          Date: date,
-          Time: (start && end) ? `${start} – ${end}` : "",
-          Event: event.trim()
-        });
-      }
-    });
-  });
-
+d3.csv("schedule.csv").then(function(data) {
   new Tabulator("#schedule-table", {
-    data: tableData,
+    data: data,
     layout: "fitColumns",
     pagination: true,
     paginationSize: 10,
@@ -72,7 +44,8 @@ async function loadAndRenderSchedule(filePath) {
       { title: "Event", field: "Event", widthGrow: 3 }
     ]
   });
-}
+});
+</script>
 
 loadAndRenderSchedule("schedule.xlsx");
 </script>
