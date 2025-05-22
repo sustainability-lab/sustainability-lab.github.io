@@ -20,65 +20,45 @@ format: html
 page-layout: full
 ---
 
-<div id="schedule-table"></div>
+::: {.panel-tabset}
+<!-- Tabs auto-generated via JS -->
+<div id="tabset-container">Loading schedule...</div>
+:::
 
-<!-- Tabulator -->
-<link href="https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css" rel="stylesheet">
-<script src="https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
-
-<!-- D3 -->
 <script src="https://d3js.org/d3.v7.min.js"></script>
 
 <script>
-d3.csv("schedule.csv").then(function(raw) {
-  const startTime = raw.map(row => row["Start Time"]);
-  const endTime = raw.map(row => row["End Time"]);
+d3.csv("schedule.csv").then(function(data) {
+  const dateColumns = Object.keys(data[0]).filter(d => d !== "Start Time" && d !== "End Time");
 
-  const dateColumns = Object.keys(raw[0]).filter(k => !["Start Time", "End Time"].includes(k));
-  let tableData = [];
+  const container = document.getElementById("tabset-container");
 
   dateColumns.forEach(date => {
-    raw.forEach((row, i) => {
-      const event = row[date]?.trim();
-      if (event) {
-        tableData.push({
-          Date: date,
-          Time: `${startTime[i] || ""} – ${endTime[i] || ""}`,
-          Event: event
-        });
+    let html = `<div class="panel" data-title="${date}"><table><thead><tr><th>Time</th><th>Event</th></tr></thead><tbody>`;
+    data.forEach(row => {
+      const start = row["Start Time"] || "";
+      const end = row["End Time"] || "";
+      const event = row[date];
+      if (event && event.trim() !== "") {
+        const time = (start && end) ? `${start} – ${end}` : "";
+        html += `<tr><td>${time}</td><td>${event}</td></tr>`;
       }
     });
-  });
-
-  new Tabulator("#schedule-table", {
-    data: tableData,
-    layout: "fitColumns",
-    pagination: true,
-    paginationSize: 10,
-    columns: [
-      { title: "Date", field: "Date", headerFilter: true },
-      { title: "Time", field: "Time" },
-      {
-        title: "Event",
-        field: "Event",
-        formatter: function(cell) {
-          const val = cell.getValue();
-          const lower = val.toLowerCase();
-
-          if (lower.includes("break")) {
-            return `<div style="background:#eee;padding:4px;">${val}</div>`;
-          } else if (lower.includes("lunch")) {
-            return `<div style="background:#fff8dc;padding:4px;">${val}</div>`;
-          } else if (lower.includes("keynote")) {
-            return `<div style="background:#d0e7ff;padding:4px;">${val}</div>`;
-          } else if (lower.includes("tutorial") || lower.includes("lab")) {
-            return `<div style="background:#e6ffe6;padding:4px;">${val}</div>`;
-          } else {
-            return val;
-          }
-        }
-      }
-    ]
+    html += "</tbody></table></div>";
+    container.innerHTML += html;
   });
 });
 </script>
+
+<style>
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+th, td {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+</style>
