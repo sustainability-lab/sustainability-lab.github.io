@@ -676,14 +676,7 @@
     "href": "events/acm-summer-2025/schedule.html",
     "title": "Schedule – ACM India Summer School 2025",
     "section": "",
-    "text": "Overview Schedule Selected Participants"
-  },
-  {
-    "objectID": "events/acm-summer-2025/schedule.html#interactive-schedule",
-    "href": "events/acm-summer-2025/schedule.html#interactive-schedule",
-    "title": "Schedule – ACM India Summer School 2025",
-    "section": "📅 Interactive Schedule",
-    "text": "📅 Interactive Schedule\n\n\n\n\n\n\n\n\n\nloadAndRenderSchedule(“schedule.xlsx”);"
+    "text": "Overview Schedule Selected Participants\n\n\n📅 ACM India Summer School 2025 – Schedule\n📍 IIT Gandhinagar | 📆 02–13 June 2025"
   },
   {
     "objectID": "events/acm-summer-2025/index.html",
