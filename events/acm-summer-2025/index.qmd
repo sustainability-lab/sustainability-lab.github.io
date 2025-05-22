@@ -62,6 +62,7 @@ The school will feature **expert talks, hands-on tutorials, and panel discussion
 - **Ratnesh Pasi**, IIT Gandhinagar  
 - **Raviraj Sukhadiya**, IIT Gandhinagar  
 - **Rishabh Mondal**, IIT Gandhinagar 
+- **Suruchi Hardaha**, IIT Gandhinagar 
 - **Vinayak Rana**, IIT Gandhinagar  
 
 ## 📖 Prerequisites
