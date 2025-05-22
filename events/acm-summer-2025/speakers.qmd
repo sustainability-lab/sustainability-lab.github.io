@@ -1,0 +1,157 @@
+---
+title: "Speakers – ACM India Summer School 2025"
+format: html
+page-layout: full
+---
+
+::: {.event-navigation}
+[Overview](index.qmd)
+[Schedule](schedule.qmd)
+[Selected Participants](selected.qmd)
+[Speakers](speakers.qmd)
+:::
+
+# 🎤 ACM India Summer School 2025 – Speakers
+
+📍 IIT Gandhinagar | 📆 **02–13 June 2025**
+
+---
+
+### **Prof. Rajat Moona**
+*Director, IIT Gandhinagar*  
+Opening the summer school with welcome remarks.
+
+---
+
+### **Prof. Anirban Dasgupta**
+*Professor, IIT Gandhinagar*  
+Co-coordinator. Focuses on algorithmic foundations of ML, fairness, and networks.
+
+---
+
+### **Prof. Nipun Batra**
+*Associate Professor, IIT Gandhinagar*  
+Co-coordinator. Works on AI for sustainability, air quality, and smart sensing.
+
+---
+
+### **Dr. Venkat Padmanabhan**
+*Deputy Managing Director, Microsoft Research India*  
+Keynote speaker. Leader in mobile systems and AI for societal impact.
+
+---
+
+### **Dr. Manish Gupta**
+*Director, Google DeepMind India*  
+Keynote speaker. Focused on ML at scale and social impact applications.
+
+---
+
+### **Dr. Jigar Doshi**
+Talks on AI for public health, agriculture, and climate sustainability.
+
+---
+
+### **Dr. Prasant Misra**
+*Principal Scientist, TCS Research*  
+Expert in mobile sensing and information processing at scale.
+
+---
+
+### **Dr. Shailesh Deshpande**
+*Scientist, TCS Research*  
+Remote sensing expert; also conducting optimization labs.
+
+---
+
+### **Prof. Udit Bhatia**
+*Assistant Professor, IIT Gandhinagar*  
+Expert in physics-guided ML, floods, and networked infrastructure.
+
+---
+
+### **Prof. Shanmuganathan Raman**
+*Professor, IIT Gandhinagar*  
+Specializes in vision-based AI including pose estimation.
+
+---
+
+### **Prof. Krishna Prasad**
+*Associate Professor, IIT Gandhinagar*  
+Researches Brain-Computer Interfaces and neuro-AI.
+
+---
+
+### **Prof. Manisha Padala**
+*Assistant Professor, IIT Gandhinagar*  
+Works on fairness in federated learning and adversarial ML.
+
+---
+
+### **Dr. Vaibhav Rajan**
+*Scientist, Google DeepMind*  
+Talks on ML for personalized cancer treatment and biomedical AI.
+
+---
+
+### **Prof. Sayan Ranu**
+*Professor, IIT Delhi*  
+Works on graph neural networks, GNN condensation, and pollution monitoring.
+
+---
+
+### **Dr. Mohit Jain**
+*Researcher, Microsoft Research India*  
+Focuses on HCI and AI applications in healthcare and inclusion.
+
+---
+
+### **Prof. Pallavi Bharadwaj**
+*Assistant Professor, IIT Gandhinagar*  
+Works on sustainable mobility and electric vehicles.
+
+---
+
+### **Prof. Yogesh Kumar Meena**
+*Assistant Professor, IIT Gandhinagar*  
+Specialist in accessibility technologies and inclusive design.
+
+---
+
+### **Prof. Vaibhav Tripathi**
+*Assistant Professor, IIT Gandhinagar*  
+Explores connectome-based predictive modeling and brain imaging.
+
+---
+
+### **Dr. Rishiraj Adhikary / Niladri**
+*Jio Platforms*  
+Talk on AI-driven solutions (exact topic TBD).
+
+---
+
+### **Alok Talekar**
+*Researcher, Google DeepMind India*  
+Lectures and labs on advanced AI techniques (topics TBD).
+
+---
+
+### **Prof. Manish Jain**
+*Professor, IIT Gandhinagar (CCL Lab)*  
+Teaches on meta-learning and "learning to learn."
+
+---
+
+### **Prof. Tavpritesh Sethi**
+*Associate Professor, IIIT Delhi*  
+Causal modeling and AI for health system preparedness.
+
+---
+
+### **Dr. Bimal**
+*ISRO SAC*  
+Talk on satellite applications (topic TBD).
+
+---
+
+_(More speaker details will be added as confirmed.)_

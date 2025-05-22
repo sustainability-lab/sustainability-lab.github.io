@@ -9,6 +9,7 @@ page-layout: full
 [Overview](index.qmd)
 [Schedule](schedule.qmd)
 [Selected Participants](selected.qmd)
+[Speakers](speakers.qmd)
 :::
 
 
