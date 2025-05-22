@@ -1,7 +1,6 @@
 ---
-title: "ACM India Summer School 2025: AI for Social Good"
+title: "Schedule – ACM India Summer School 2025"
 format: html
-toc: false
 page-layout: full
 ---
 
@@ -9,76 +8,87 @@ page-layout: full
 [Overview](index.qmd)
 [Schedule](schedule.qmd)
 [Selected Participants](selected.qmd)
+[Speakers](speakers.qmd)
 :::
 
-# 📅 ACM India Summer School 2025 – Schedule  
+# 📅 ACM India Summer School 2025 – Schedule
+
 📍 IIT Gandhinagar | 📆 **02–13 June 2025**
 
 ---
-title: "Schedule – ACM India Summer School 2025"
-format: html
-page-layout: full
----
 
-<div id="schedule-table"></div>
+<div id="date-buttons" style="margin-bottom: 1rem;"></div>
+<div id="timetable-container"></div>
 
-<!-- Tabulator -->
-<link href="https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css" rel="stylesheet">
-<script src="https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
-
-<!-- D3 -->
 <script src="https://d3js.org/d3.v7.min.js"></script>
-
 <script>
-d3.csv("schedule.csv").then(function(raw) {
-  const startTime = raw.map(row => row["Start Time"]);
-  const endTime = raw.map(row => row["End Time"]);
+d3.csv("schedule.csv").then(function(data) {
+  // Get all date columns except Start Time and End Time
+  const dateColumns = Object.keys(data[0]).filter(d => d !== "Start Time" && d !== "End Time");
+  
+  const btnContainer = document.getElementById("date-buttons");
+  const tableContainer = document.getElementById("timetable-container");
 
-  const dateColumns = Object.keys(raw[0]).filter(k => !["Start Time", "End Time"].includes(k));
-  let tableData = [];
-
-  dateColumns.forEach(date => {
-    raw.forEach((row, i) => {
-      const event = row[date]?.trim();
-      if (event) {
-        tableData.push({
-          Date: date,
-          Time: `${startTime[i] || ""} – ${endTime[i] || ""}`,
-          Event: event
-        });
+  // Function to render schedule table for a given date
+  function renderTable(date) {
+    let html = `<table><thead><tr><th>Time</th><th>Event</th></tr></thead><tbody>`;
+    data.forEach(row => {
+      const start = row["Start Time"] || "";
+      const end = row["End Time"] || "";
+      const event = row[date];
+      if (event && event.trim() !== "") {
+        const time = (start && end) ? `${start} – ${end}` : "";
+        html += `<tr><td>${time}</td><td>${event.replace(/\n/g, "<br>")}</td></tr>`;
       }
     });
-  });
+    html += "</tbody></table>";
+    tableContainer.innerHTML = html;
+  }
 
-  new Tabulator("#schedule-table", {
-    data: tableData,
-    layout: "fitColumns",
-    pagination: true,
-    paginationSize: 10,
-    columns: [
-      { title: "Date", field: "Date", headerFilter: true },
-      { title: "Time", field: "Time" },
-      {
-        title: "Event",
-        field: "Event",
-        formatter: function(cell) {
-          const val = cell.getValue();
-          const lower = val.toLowerCase();
+  // Create buttons for each date
+  dateColumns.forEach((date, idx) => {
+    const btn = document.createElement("button");
+    btn.textContent = date;
+    btn.style.marginRight = "0.5rem";
+    btn.style.padding = "0.3rem 0.8rem";
+    btn.style.cursor = "pointer";
+    btn.style.border = "1px solid #007BFF";
+    btn.style.backgroundColor = "white";
+    btn.style.color = "#007BFF";
+    btn.style.borderRadius = "4px";
 
-          if (lower.includes("break")) {
-            return `<div style="background:#eee;padding:4px;">${val}</div>`;
-          } else if (lower.includes("lunch")) {
-            return `<div style="background:#fff8dc;padding:4px;">${val}</div>`;
-          } else if (lower.includes("keynote")) {
-            return `<div style="background:#d0e7ff;padding:4px;">${val}</div>`;
-          } else if (lower.includes("tutorial") || lower.includes("lab")) {
-            return `<div style="background:#e6ffe6;padding:4px;">${val}</div>`;
-          } else {
-            return val;
-          }
-        }
-      }
-    ]
+    btn.onclick = () => {
+      renderTable(date);
+      // Style active button
+      [...btnContainer.children].forEach(b => {
+        b.style.backgroundColor = "white";
+        b.style.color = "#007BFF";
+      });
+      btn.style.backgroundColor = "#007BFF";
+      btn.style.color = "white";
+    };
+
+    btnContainer.appendChild(btn);
+    
+    // Automatically click first button to show initial table
+    if (idx === 0) btn.click();
   });
 });
 </script>
+
+<style>
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+th, td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+</style>

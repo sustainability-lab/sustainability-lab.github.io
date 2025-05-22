@@ -1,38 +1,103 @@
 Start Time,End Time,2 June,3 June,4 June,5 June,6 June,7 June,8 June,9 June,10 June,11 June,12 June,13 June
 ,,,,,,,,,,,,,
 8:30 AM,9:00 AM,Registration,,,,,,,,,,,
-9:00 AM,9:30 AM,Opening Remarks: Prof. Rajat Moona IIT Gandhinagar; Program Introduction: Anirban Dasgupta and Nipun Batra,Keynote: Venkat Padmnabhan (Microsoft Research India),Speaker: Nipun Topic: Energy Disaggregation,"Speaker: Jigar Doshi 
+9:00 AM,10:30 AM,"Opening Remarks: Prof. Rajat Moona (IIT Gandhinagar)
 
-Building Socially Impactful Solutions using AI - Public Health","Speaker: Jigar Doshi 
+Program Introduction: Prof. Anirban Dasgupta and Prof. Nipun Batra (IIT Gandhinagar)",Keynote: Dr. Venkat Padmnabhan (Microsoft Research India),"Speaker: Prof. Nipun Batra (IIT Gandhinagar) 
 
-Building Socially Impactful Solutions using AI - Agriculture and Climate",Holiday,Speaker: Dr. Bimal (ISRO SAC) Topic: TBD,Speaker: Nipun Topic: Brick Kiln detection from satellite imagery,Speaker: Nipun Topic: VayuBuddy: LLMs for air quality informatics,"Tavpritesh Sethi (IIIT-Delhi)
-Causal Models",Sayan Ranu (IIT Delhi) Pollution monitoring using GNNs,Keynote: Manish Gupta (Google Deepmind)
-9:30 AM,10:00 AM,,,,,,,,,,,,
-10:00 AM,10:30 AM,,,,,,,,,,,,
+Topic: Energy Disaggregation","Speaker: Dr. Jigar Doshi 
+
+Topic: Building Socially Impactful Solutions using AI - Public Health","Speaker: Dr. Jigar Doshi 
+
+Topic: Building Socially Impactful Solutions using AI - Agriculture and Climate",Holiday,"Speaker: Dr. Bimal (ISRO SAC) 
+
+Topic: TBD","Speaker: Prof. Nipun Batra (IIT Gandhinagar)
+
+Topic: Brick Kiln detection from satellite imagery","Speaker: Prof. Nipun Batra (IIT Gandhinagar)
+
+Topic: VayuBuddy: LLMs for air quality informatics","Speaker: Prof. Tavpritesh Sethi (IIIT-Delhi)
+
+Topic: Causal Models","Speaker: Prof. Sayan Ranu (IIT Delhi) 
+
+Topic: Pollution monitoring using GNNs",Keynote: Dr. Manish Gupta (Google Deepmind)
 10:30 AM,11:00 AM,Break,Break,Break,Break,Break,,Break,Break,Break,Break,Break,Break
-11:00 AM,11:30 AM,"Speaker: Prasant Misra (TCS Research)
-Topic: Information Processing Techniques for Mobile Sensing at Scale","Speaker: Shailesh Deshpande (TCS Research)
-Topic: Remote Sensing for Sustainability",Udit (Theory): Network and optimization for food security,Udit : Physics guided machine learning for water and floods,Udit (Tutorial),,Speaker: Shanmuga Topic: AI for Pose Estimation,Speaker: Krishna Topic: Brain Computer Interfacing,Speaker: Manisha Topic: Adversarial Attack on Fairness in FL,"Speaker: Vaibhav Rajan (Google DeepMind)
-Topic: Personalized Treatment Planning Models for Cancer",Sayan Ranu (IIT Delhi) Graph condensation for low-resource environments,Mohit Jain (Microsoft Research India)
-11:30 AM,12:00 PM,,,,,,,,,,,,
-12:00 PM,12:30 PM,,,,,,,,,,,,
-12:30 PM,1:00 PM,Lunch Break,Lunch Break,Lunch Break,Lunch Break,Lunch Break,,Lunch Break,Lunch Break,Lunch Break,Lunch Break,Lunch Break,Lunch Break
-1:00 PM,1:30 PM,,,,,,,,,,,,
-1:30 PM,2:00 PM,,,,,,,,,,,,
-2:00 PM,2:30 PM,Speaker: Nipun BatraTopic: Sleep Apnea sensing,Speaker: Pallavi Bharadwaj (IIT Gandhinagar)Topic: EVs,"Speaker: Yogesh Kumar Meena Topic: Accessibility interfaces and emerging markets
-",Speaker: Vaibhav Tripathi Topic: Connectome based Predictive Modeling,"Speaker: Niladri/Rishiraj (Jio)
-Topic:",,Speaker: Topic: Alok (Google Deepmind India),Speaker: Topic:,"""Speaker: Vaibhav Rajan (Google DeepMind)
-Topic: Personalized Treatment Planning Models for Cancer""",Sayan Ranu (IIT Delhi) Graph neural networks,"Tavpritesh Sethi (IIIT-Delhi)
-Health Systems Preparedness with Data and AI
+11:00 AM,12:30 AM,"Speaker: Dr. Prasant Misra (TCS Research)
 
-",Mohit Jain (Microsoft Research India)
-2:30 PM,3:00 PM,,,,,,,,,,,,
-3:00 PM,3:30 PM,,,,,,,,,,,,
+Topic: Information Processing Techniques for Mobile Sensing at Scale","Speaker: Dr. Shailesh Deshpande (TCS Research)
+
+Topic: Remote Sensing for Sustainability","Speaker: Prof. Udit Bhatia (IIT Gandhinagar)
+
+Topic: Network and optimization for food security","Speaker: Prof. Udit Bhatia (IIT Gandhinagar)
+
+Topic: Physics-guided machine learning for water and floods","Speaker/TA: Prof. Udit Bhatia (IIT Gandhinagar)
+Tutorial / Lab 
+
+Topic: ",,"Speaker: Prof. Shanmuga (IIT Gandhinagar) 
+
+Topic: AI for Pose Estimation","Speaker: Prof. Krishna Prasad (IIT Gandhinagar)
+
+Topic: Brain Computer Interfacing","Speaker: Prof. Manisha Padala (IIT Gandhinagar)
+
+Topic: Adversarial Attack on Fairness in FL","Speaker: Dr. Vaibhav Rajan (Google DeepMind)
+
+Topic: Personalized Treatment Planning Models for Cancer","Speaker: Prof. Sayan Ranu (IIT Delhi) 
+
+Topic: Graph condensation for low-resource environments","Speaker: Dr. Mohit Jain (Microsoft Research India)
+
+Topic: "
+12:30 PM,2:00 PM,Lunch Break,Lunch Break,Lunch Break,Lunch Break,Lunch Break,,Lunch Break,Lunch Break,Lunch Break,Lunch Break,Lunch Break,Lunch Break
+2:00 PM,3:30 PM,"Speaker: Prof. Nipun Batra (IIT Gandhinagar) 
+
+Topic: Sleep Apnea sensing","Speaker: Prof. Pallavi Bharadwaj (IIT Gandhinagar)
+
+Topic: EVs","Speaker: Prof. Yogesh Kumar Meena (IIT Gandhinagar) 
+
+Topic: Accessibility interfaces and emerging markets","Speaker: Prof. Vaibhav Tripathi (IIT Gandhinagar)
+
+Topic: Connectome-based Predictive Modeling","Speaker: Niladri / Dr. Rishiraj Adhikary (Jio)
+
+Topic:",,"Speaker: Alok Talekar (Google Deepmind India)
+
+Topic:","Speaker: Prof. Manish Jain (IIT Gandhinagar - CCL) 
+
+Topic: Learning to learn","Speaker: Dr. Vaibhav Rajan (Google DeepMind)
+
+Topic: Personalized Treatment Planning Models for Cancer","Speaker: Prof. Sayan Ranu (IIT Delhi) 
+
+Topic: Graph neural networks","Speaker: Prof. Tavpritesh Sethi (IIIT-Delhi)
+
+Topic: Health Systems Preparedness with Data and AI","Speaker: Dr. Mohit Jain (Microsoft Research India)
+
+Topic: "
 3:30 PM,4:00 PM,Break,Break,Break,Break,Break,,Break,Break,Break,Break,Break,Break
-4:00 PM,4:30 PM,Speaker/TA: Nipun Batra Tutorial / Lab Topic: Object Detection (Zeel),"Speaker/TA: TCS Research
-Tutorial / Lab Topic: 
-Optimization",Speaker/TA: Tutorial / Lab Topic: VLMs (Zeel/Ayush/Shataxi),"Speaker/TA: Himanshu 
-Tutorial / Lab Topic: LLM finetuning",Speaker/TA: Tutorial / Lab Topic: Meta learning,,Speaker/TA: Tutorial / Lab Topic: Alok (Google Deepmind India),Speaker/TA: Tutorial / Lab Topic: Active Learning (Vinayak + Suruchi),Speaker/TA: Tutorial / Lab Topic: SSL Vision Text/RL,"Sayan Ranu (IIT Delhi)Graph neural networks hands-on
-(Requires TA)",Speaker/TA: Tutorial / Lab Topic: Ujjwal,Convocation and Certificate; Feedback
-4:30 PM,5:00 PM,,,,,,,,,,,,
-5:00 PM,5:30 PM,,,,,,,,,,,,
+4:00 PM,5:30 PM,"Speaker/TA: Ayush Shrivastava (IIT Gandhinagar) 
+Tutorial / Lab 
+
+Topic: Object Detection","Speaker/TA: Dr. Shaliesh Deshpande (TCS Research)
+Tutorial / Lab 
+
+Topic: Optimization","Speaker/TA: Shataxi Dubey (IIT Gandhinagar) 
+Tutorial / Lab 
+
+Topic: VLMs","Speaker/TA: Himanshu 
+Tutorial / Lab 
+
+Topic: LLM finetuning","Speaker/TA: Zeel B Patel 
+Tutorial / Lab 
+
+Topic: Meta learning",,"Speaker/TA: Alok Talekar (Google Deepmind India)
+Tutorial / Lab 
+
+Topic: ","Speaker/TA: Zeel B Patel and Vinayak Rana and Suruchi Hardaha 
+Tutorial / Lab 
+
+Topic: Active Learning","Speaker/TA: Rishabh Mondal 
+Tutorial / Lab 
+
+Topic: SSL Vision ","Speaker: Sayan Ranu (IIT Delhi) 
+
+Topic: Graph neural networks hands-on
+(Requires TA)","Speaker: Dr. Ujjwal Gupta (ISRO SAC) 
+Tutorial / Lab 
+
+Topic: Remote sensing Hands-on",Convocation and Certificate; Feedback
