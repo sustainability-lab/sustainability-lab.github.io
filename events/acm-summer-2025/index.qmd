@@ -9,6 +9,7 @@ page-layout: full
 [Overview](index.qmd)
 [Schedule](schedule.qmd)
 [Selected Participants](selected.qmd)
+[Speakers](speakers.qmd)
 :::
 
 
@@ -52,16 +53,16 @@ The school will feature **expert talks, hands-on tutorials, and panel discussion
 - Graph Neural Networks  
 - Multimodal Learning  
 
-## 🎤 Confirmed Speakers
-- **Manish Gupta**, Google India *(Keynote)*  
-- **Venkat Padmanabhan**, Microsoft Research India *(Keynote)*  
-- **Sayan Ranu**, IIT Delhi  
-- **Tavpritesh Sethi**, IIIT Delhi  
-- **Nipun Batra**, IIT Gandhinagar  
-- **Anirban Dasgupta**, IIT Gandhinagar  
-- **Udit Bhatia**, IIT Gandhinagar  
-
-_(More speakers to be added soon)_
+## Organizers
+- **Dr. Anirban Dasgupta**, IIT Gandhinagar (Professor) 
+- **Dr. Nipun Batra**, IIT Gandhinagar (Professor)  
+- **Ayush Shrivastava**, IIT Gandhinagar   
+- **Abhay Pisharodi**, IIT Gandhinagar  
+- **Diya Thakor**, IIT Gandhinagar  
+- **Ratnesh Pasi**, IIT Gandhinagar  
+- **Raviraj Sukhadiya**, IIT Gandhinagar  
+- **Rishabh Mondal**, IIT Gandhinagar 
+- **Vinayak Rana**, IIT Gandhinagar  
 
 ## 📖 Prerequisites
 Students should have prior knowledge of:  
