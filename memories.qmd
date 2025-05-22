@@ -15,6 +15,17 @@ lightbox: auto
 
 # 2025
 
+## May 2025
+![](images/memories/2025-Akshardham-all.jpg){group="my-gallery"
+description="[Akshardham visit and dinner]{.large-caption-text}"}
+
+[Akshardham visit and dinner]{.large-caption-text}
+
+![](images/memories/2025-Akshardham-finalyear.jpg){group="my-gallery"
+description="[Graduating Batch]{.large-caption-text}"}
+
+[Graduating Batch]{.large-caption-text}
+
 ## Jan 2025
 ![](images/memories/Curiosity.jpg){group="my-gallery"
 description="[Sustainability lab at Curiosity Carnival'25 at IITGN.]{.large-caption-text}"}
