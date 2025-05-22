@@ -1,7 +1,6 @@
 ---
-title: "ACM India Summer School 2025: AI for Social Good"
+title: "Schedule – ACM India Summer School 2025"
 format: html
-toc: false
 page-layout: full
 ---
 
@@ -9,43 +8,70 @@ page-layout: full
 [Overview](index.qmd)
 [Schedule](schedule.qmd)
 [Selected Participants](selected.qmd)
+[Speakers](speakers.qmd)
 :::
 
-# 📅 ACM India Summer School 2025 – Schedule  
+# 📅 ACM India Summer School 2025 – Schedule
+
 📍 IIT Gandhinagar | 📆 **02–13 June 2025**
 
 ---
-title: "Schedule – ACM India Summer School 2025"
-format: html
-page-layout: full
----
 
-::: {.panel-tabset}
-<!-- Tabs auto-generated via JS -->
-<div id="tabset-container">Loading schedule...</div>
-:::
+<div id="date-buttons" style="margin-bottom: 1rem;"></div>
+<div id="timetable-container"></div>
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
-
 <script>
 d3.csv("schedule.csv").then(function(data) {
+  // Get all date columns except Start Time and End Time
   const dateColumns = Object.keys(data[0]).filter(d => d !== "Start Time" && d !== "End Time");
+  
+  const btnContainer = document.getElementById("date-buttons");
+  const tableContainer = document.getElementById("timetable-container");
 
-  const container = document.getElementById("tabset-container");
-
-  dateColumns.forEach(date => {
-    let html = `<div class="panel" data-title="${date}"><table><thead><tr><th>Time</th><th>Event</th></tr></thead><tbody>`;
+  // Function to render schedule table for a given date
+  function renderTable(date) {
+    let html = `<table><thead><tr><th>Time</th><th>Event</th></tr></thead><tbody>`;
     data.forEach(row => {
       const start = row["Start Time"] || "";
       const end = row["End Time"] || "";
       const event = row[date];
       if (event && event.trim() !== "") {
         const time = (start && end) ? `${start} – ${end}` : "";
-        html += `<tr><td>${time}</td><td>${event}</td></tr>`;
+        html += `<tr><td>${time}</td><td>${event.replace(/\n/g, "<br>")}</td></tr>`;
       }
     });
-    html += "</tbody></table></div>";
-    container.innerHTML += html;
+    html += "</tbody></table>";
+    tableContainer.innerHTML = html;
+  }
+
+  // Create buttons for each date
+  dateColumns.forEach((date, idx) => {
+    const btn = document.createElement("button");
+    btn.textContent = date;
+    btn.style.marginRight = "0.5rem";
+    btn.style.padding = "0.3rem 0.8rem";
+    btn.style.cursor = "pointer";
+    btn.style.border = "1px solid #007BFF";
+    btn.style.backgroundColor = "white";
+    btn.style.color = "#007BFF";
+    btn.style.borderRadius = "4px";
+
+    btn.onclick = () => {
+      renderTable(date);
+      // Style active button
+      [...btnContainer.children].forEach(b => {
+        b.style.backgroundColor = "white";
+        b.style.color = "#007BFF";
+      });
+      btn.style.backgroundColor = "#007BFF";
+      btn.style.color = "white";
+    };
+
+    btnContainer.appendChild(btn);
+    
+    // Automatically click first button to show initial table
+    if (idx === 0) btn.click();
   });
 });
 </script>
@@ -54,11 +80,15 @@ d3.csv("schedule.csv").then(function(data) {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 th, td {
-  padding: 6px;
+  padding: 8px;
   border: 1px solid #ccc;
   text-align: left;
+}
+button:hover {
+  background-color: #0056b3;
+  color: white;
 }
 </style>
