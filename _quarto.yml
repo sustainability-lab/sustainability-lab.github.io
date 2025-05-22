@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources:
     - images/**  # Ensures all images are copied
+    - events/acm-summer-2025/
 
 website:
   title: "Sustainability Lab"
