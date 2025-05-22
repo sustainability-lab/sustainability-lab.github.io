@@ -683,7 +683,7 @@
     "href": "events/acm-summer-2025/schedule.html#interactive-schedule",
     "title": "Schedule – ACM India Summer School 2025",
     "section": "📅 Interactive Schedule",
-    "text": "📅 Interactive Schedule"
+    "text": "📅 Interactive Schedule\n\n\n\n\n\n\n\n\n\nloadAndRenderSchedule(“schedule.xlsx”);"
   },
   {
     "objectID": "events/acm-summer-2025/index.html",
