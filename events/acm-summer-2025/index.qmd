@@ -1,0 +1,116 @@
+---
+title: "ACM India Summer School 2025: AI for Social Good"
+format: html
+toc: false
+page-layout: full
+---
+
+::: {.event-navigation}
+[Overview](index.qmd)
+[Schedule](schedule.qmd)
+[Selected Participants](selected.qmd)
+:::
+
+
+# ACM India Summer School 2025  
+**Hosted by IIT Gandhinagar, Gandhinagar**  
+📅 **02–13 June 2025**
+
+## Overview
+The ACM Summer School on AI for Social Good at IIT Gandhinagar offers an **intensive 11-day program** on AI techniques applied to social good domains such as **healthcare, sustainability, and agriculture**.  
+
+The school will feature **expert talks, hands-on tutorials, and panel discussions**, fostering both **technical expertise** and **interdisciplinary collaboration**.
+
+## 🏛 Host Institution
+**IIT Gandhinagar**  
+📍 **Palaj, Gandhinagar, Gujarat, 382055**
+
+## 🏫 Local & Academic Coordinators
+**Local Coordinator**  
+👤 **Nipun Batra**  
+📧 [nipun.batra@iitgn.ac.in](mailto:nipun.batra@iitgn.ac.in)  
+
+**Academic Coordinator**  
+👤 **Anirban Dasgupta**  
+📧 [anirbandg@iitgn.ac.in](mailto:anirbandg@iitgn.ac.in)  
+
+## 🎯 Topics Covered
+
+### **AI for Social Good Domains**
+- AI for Healthcare  
+- AI for Sustainability  
+- AI for Agriculture  
+
+### **Technical Topics**
+- Object Detection  
+- Bandits and Reinforcement Learning  
+- Time Series Modeling  
+- Large Language Models (LLMs)  
+- Fairness & Explainability in AI  
+- Self-Supervised Learning  
+- Bayesian ML  
+- Graph Neural Networks  
+- Multimodal Learning  
+
+## 🎤 Confirmed Speakers
+- **Manish Gupta**, Google India *(Keynote)*  
+- **Venkat Padmanabhan**, Microsoft Research India *(Keynote)*  
+- **Sayan Ranu**, IIT Delhi  
+- **Tavpritesh Sethi**, IIIT Delhi  
+- **Nipun Batra**, IIT Gandhinagar  
+- **Anirban Dasgupta**, IIT Gandhinagar  
+- **Udit Bhatia**, IIT Gandhinagar  
+
+_(More speakers to be added soon)_
+
+## 📖 Prerequisites
+Students should have prior knowledge of:  
+- Machine Learning  
+- Probability, Statistics & Data Visualization  
+- Basics of Computer Vision & NLP  
+
+## 🖥 Software Requirements
+- **Python**  
+
+## 📌 Applying for the Summer Schools
+
+The application fee for this school program is **₹150 + 18% GST**.  
+You can give **first and second preference** in the application form.  
+All payments are **non-refundable**. Please apply **after careful consideration** since demand is high and seats are limited.
+
+👉 **[Apply for the Summer Schools 2025 here](https://docs.google.com/forms/d/e/1FAIpQLScsgmXp-i_895k_J4hES6e0BoO9yq3heN8fOfhLSy6hZMDp9Q/viewform)**  
+
+### 📅 Important Dates
+
+- **Last date for application**
+  🗓️ **Sunday, April 13, 2025 (1159 PM IST)**  
+- **Announcement of selections**
+  🗓️ **Wednesday, April 23, 2025**  
+- **Payment of fees by selected students**  
+  🗓️ **Wednesday, April 30, 2025**
+
+## 📝 Selection & Registration
+
+- **Selection** Based on data submitted in the application. Selected students will be notified by email.  
+- **Registration** Only selected students must pay **non-refundable fees (₹3000 + 18% GST)** which includes **lodging and boarding** at the venue.  
+  - A **non-shareable payment link** will be sent to selected students.  
+  - Once selected to a school, **you cannot switch** to another.  
+  - **Ensure you pay and register** to be fair to those not selected. 
+
+---
+
+## ℹ️ General Information
+
+- The schools will be **in-person** only.  
+- Selected students must arrange **travel on their own**.  
+- No travel support is provided.  
+- Each day includes **lectures + hands-on tutorials**.  
+- Some schools may host **industry sessions** on career opportunities.  
+- Top students may receive **internship opportunities** and an **all-expense-paid trip** to
+  🏆 **ACM India ARCS Symposium & Annual Event 2026**  
+  📍 **IIT Hyderabad, Feb–Mar 2026**
+
+## 📅 Schedule  
+👉 **[Click here for the detailed schedule](schedule.qmd)**  
+
+---

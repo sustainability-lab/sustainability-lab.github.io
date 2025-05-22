@@ -1,0 +1,51 @@
+---
+title: "ACM India Summer School 2025: AI for Social Good"
+format: html
+toc: false
+page-layout: full
+---
+
+::: {.event-navigation}
+[Overview](index.qmd)
+[Schedule](schedule.qmd)
+[Selected Participants](selected.qmd)
+:::
+
+# 📅 ACM India Summer School 2025 – Schedule  
+📍 IIT Gandhinagar | 📆 **02–13 June 2025**
+
+---
+title: "Schedule – ACM India Summer School 2025"
+format: html
+page-layout: full
+---
+
+## 📅 Interactive Schedule
+
+<div id="schedule-table"></div>
+
+<!-- Tabulator -->
+<link href="https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css" rel="stylesheet">
+<script src="https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
+
+<!-- D3 for CSV parsing -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<script>
+d3.csv("schedule.csv").then(function(data) {
+  new Tabulator("#schedule-table", {
+    data: data,
+    layout: "fitColumns",
+    pagination: true,
+    paginationSize: 10,
+    columns: [
+      { title: "Date", field: "Date", sorter: "string", widthGrow: 1 },
+      { title: "Time", field: "Time", widthGrow: 1 },
+      { title: "Event", field: "Event", widthGrow: 3 }
+    ]
+  });
+});
+</script>
+
+loadAndRenderSchedule("schedule.xlsx");
+</script>
