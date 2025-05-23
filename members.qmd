@@ -10,56 +10,10 @@ output:
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-<style>
-  .cropped-image {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    overflow-clip-margin: unset;        /* AYUSH :  Added to remove pixelation from the profile images*/
-    border: 1px solid #777;             /* Set a thin border on all sides */
-    border-bottom: 4px solid #777;      /* Set a thicker border only at the bottom (slightly darker than tomato) */
-    border-radius: 4px;                 /* Optional: add rounded corners for a nicer look */
-    transition: border-color 0.3s;      /* Add smooth transition for the border color */
-  }
-
-  .cropped-image:hover {
-    /* Change border color on hover */
-    border-bottom-color: #d9534f; /* Use the same slightly darker color on hover */
-  }
-  p,span,li{
-    font-size:18px;
-  }
-  carousel{
-    
-  }
-  .carousel-inner img {
-    width: 100%; /*Scale the image to fit the carousel container */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 600px; /*Set a maximum height for the images*/
-    /* overflow-clip-margin: unset; */
-    object-fit: cover;
-  }
-  .carousel-caption {
-    position: absolute;
-    bottom: 60px; /* Adjust this value to ensure the caption is above the indicators */
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: #fff; /* White text */
-    padding: 10px; /* Padding around the text */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
-  }
-  .carousel-indicators {
-    display: none !important;
-}
-
-</style>
-
 ## Faculty
 
 <a href="https://nipunbatra.github.io">
-  <img src="https://nipunbatra.github.io/images/nipun.jpg" class="cropped-image" style="float: left; margin: 0 15px 0 0;" alt="Prof Nipun Batra">
+  <img src="https://nipunbatra.github.io/images/nipun.jpg" class="cropped-image faculty-image" alt="Prof Nipun Batra">
 </a>
 
 ### Prof. Nipun Batra
@@ -74,22 +28,22 @@ output:
 <a href="https://patel-zeel.github.io">
   <img src="https://patel-zeel.github.io/images/profile_crop.png" class="cropped-image"><br/>
 </a>
-<span>Zeel B Patel<br/>(Jan 2020 - present)</span>
+<div class="member-info"><span>Zeel B Patel<br/>(Jan 2020 - present)</span></div>
 
 <a href="https://rishabh-mondal.github.io">
   <img src="https://rishabh-mondal.github.io/ris.jpg" class="cropped-image"><br/>
 </a>
-<span>Rishabh Mondal<br/>(Jun 2023 - present)</span>
+<div class="member-info"><span>Rishabh Mondal<br/>(Jun 2023 - present)</span></div>
 
 <a href="https://ayushshrivstava.github.io/">
   <img src="images/members/Ayush.jpg" class="cropped-image"><br/>
 </a>
-<span>Ayush Srivastava<br/>(Jul 2024 - present)</span>
+<div class="member-info"><span>Ayush Srivastava<br/>(Jul 2024 - present)</span></div>
 
 <a href="">
   <img src="images/members/Ujjwal.jpg" class="cropped-image"><br/>
 </a>
-<span>Ujjwal K. Gupta<br/>(Jul 2024 - present)</span>
+<div class="member-info"><span>Ujjwal K. Gupta<br/>(Jul 2024 - present)</span></div>
 
 :::
 
@@ -97,29 +51,29 @@ output:
 
 ::: {layout-ncol=4}
 
-<img src="images/members/Poornima.jpg" class="cropped-image"><br/>
-<span>Poornima Bhatia<br/>(Jul 2023 - present)</span>
+<div class="member-info"><img src="images/members/Poornima.jpg" class="cropped-image"><br/>
+<span>Poornima Bhatia<br/>(Jul 2023 - present)</span></div>
 
-<img src="images/members/Prince.jpg" class="cropped-image"><br/>
-<span>Prince Kumar<br/>(Jul 2023 - present)</span>
+<div class="member-info"><img src="images/members/Prince.jpg" class="cropped-image"><br/>
+<span>Prince Kumar<br/>(Jul 2023 - present)</span></div>
 
-<img src="images/members/Shataxi.jpg" class="cropped-image"><br/>
-<span>Shataxi Dubey<br/>(Jul 2023 - present)</span>
+<div class="member-info"><img src="images/members/Shataxi.jpg" class="cropped-image"><br/>
+<span>Shataxi Dubey<br/>(Jul 2023 - present)</span></div>
 
-<img src="images/members/Abhay.jpg" class="cropped-image"><br/>
-<span>Abhay Pisharodi<br/>(Jul 2024 - present)</span>
+<div class="member-info"><img src="images/members/Abhay.jpg" class="cropped-image"><br/>
+<span>Abhay Pisharodi<br/>(Jul 2024 - present)</span></div>
 
-<img src="images/members/Abhyudaya.jpg" class="cropped-image"><br/>
-<span>Abhyudaya Nair<br/>(Jul 2024 - present)</span>
+<div class="member-info"><img src="images/members/Abhyudaya.jpg" class="cropped-image"><br/>
+<span>Abhyudaya Nair<br/>(Jul 2024 - present)</span></div>
 
-<img src="images/members/Diya.png" class="cropped-image"><br/>
-<span>Diya Thakor<br/>(Jul 2024 - present)</span>
+<div class="member-info"><img src="images/members/Diya.png" class="cropped-image"><br/>
+<span>Diya Thakor<br/>(Jul 2024 - present)</span></div>
 
-<img src="images/members/Vinayak.jpg" class="cropped-image"><br/>
-<span>Vinayak Rana<br/>(Jul 2024 - present)</span>
+<div class="member-info"><img src="images/members/Vinayak.jpg" class="cropped-image"><br/>
+<span>Vinayak Rana<br/>(Jul 2024 - present)</span></div>
 
-<img src="images/members/Suruchi.jpg" class="cropped-image"><br/>
-<span>Suruchi Hardaha<br/>(Jul 2024 - present)</span>
+<div class="member-info"><img src="images/members/Suruchi.jpg" class="cropped-image"><br/>
+<span>Suruchi Hardaha<br/>(Jul 2024 - present)</span></div>
 
 :::
 
@@ -127,11 +81,11 @@ output:
 
 ::: {layout-ncol=4}
 
-<img src="images/members/Tanu.jpeg" class="cropped-image"><br/>
-<span>Tanu Tiwari<br/>(Oct 2024 - present)</span>
+<div class="member-info"><img src="images/members/Tanu.jpeg" class="cropped-image"><br/>
+<span>Tanu Tiwari<br/>(Oct 2024 - present)</span></div>
 
-<img src="images/members/Meenakshi.jpg" class="cropped-image"><br/>
-<span>Meenakshi Prakash<br/>(Jan 2025 - Present)</span>
+<div class="member-info"><img src="images/members/Meenakshi.jpg" class="cropped-image"><br/>
+<span>Meenakshi Prakash<br/>(Jan 2025 - Present)</span></div>
 
 :::
 
@@ -154,7 +108,7 @@ output:
 ## Group Photos
 
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide members-carousel" data-ride="carousel">
 <!-- Indicators -->
 <ol class="carousel-indicators">
    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>

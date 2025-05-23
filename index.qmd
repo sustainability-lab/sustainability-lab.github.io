@@ -6,49 +6,7 @@ toc: false
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<head>
-<style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 10px 0; 
-    }
-    th, td  {
-        border: 1px solid #ccc;
-        border-left:0;
-        border-right:0;
-        font-size: 19px;
-        padding: 5px;
-        text-align: left;
-        vertical-align: middle;
-    }
-    .carousel-inner {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-    }
-    .carousel-inner img { 
-      height: auto; /* Maintain aspect ratio */
-      max-height: 600px; /* Set a maximum height for the images */
-      margin: 0 auto; /* Center horizontally */
-    }
-    .carousel-caption {
-      position: absolute;
-      bottom: 0px; /* Stick the caption to the bottom */
-      left: 0;
-      right: 0;
-      background: rgba(0, 0, 0, 0.5); /*Semi-transparent background */
-      color: #fff; /* White text */
-      padding: 0px; /* Padding around the text */
-      border-radius: 10px; /* No rounded corners */
-      box-shadow: none; /* No shadow effect */
-    }
-
-</style>
-</head>
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide index-carousel" data-ride="carousel">
 <!-- Wrapper for slides -->
 <div class="carousel-inner">
 <div class="item active">
@@ -96,9 +54,12 @@ toc: false
 ## Funding Organisations
 
 <div style="text-align: center; margin-top: 20px;">
-  <img src="images/mainpage/Funding organisations.png" alt="Funding Organization" style="max-width: 100%; height: auto; width: 1000px;">
+  <img src="images/mainpage/Funding organisations.png" alt="Funding Organization" class="funding-org-image">
 </div>
 
 
 ## Join Us
-### Embark on a journey to drive innovation in sustainability with our lab! [Apply Now](https://docs.google.com/forms/d/e/1FAIpQLSeU2KoY-yAsFKCtlUZ8BH8gMEMwhV8z6L8WdaOtPB7TsJQrRg/viewform)
+<div style="text-align: center; margin-top: 20px; margin-bottom: 40px;">
+  <h3 style="margin-bottom: 20px;">Embark on a journey to drive innovation in sustainability with our lab!</h3>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeU2KoY-yAsFKCtlUZ8BH8gMEMwhV8z6L8WdaOtPB7TsJQrRg/viewform" class="btn btn-success btn-lg" target="_blank" rel="noopener noreferrer">Apply Now</a>
+</div>

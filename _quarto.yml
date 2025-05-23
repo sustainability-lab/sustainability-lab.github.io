@@ -66,6 +66,9 @@ format:
     mainfont: "Roboto"
     code-copy: true
     code-overflow: wrap
+    include-in-header:
+      - text: |
+          <link rel="icon" href="images/favicon.png" type="image/png">
 
 execute:
   freeze: auto

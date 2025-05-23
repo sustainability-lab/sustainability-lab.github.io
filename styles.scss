@@ -69,17 +69,21 @@ body {
   
   .paper-button {
     display: inline-block;
-    padding: 5px 5px;
-    margin: 4px 0;
-    background-color: #2E86C1; /* Change this to your desired button color */
+    padding: 8px 12px; /* Increased padding */
+    margin: 5px 3px; /* Adjusted margin for better spacing */
+    background-color: #2E86C1; 
     color: white;
     text-decoration: none;
-    font-size: 13px;
-    border-radius: 5px;
+    font-size: 14px; /* Slightly increased font size */
+    border-radius: 8px; /* More modern border-radius */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Add pointer cursor */
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition */
   }
   
   .paper-button:hover {
-    background-color: #21618C;
+    background-color: #21618C; /* Darken on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow on hover */
   }
 
   .separator {
@@ -122,3 +126,130 @@ body {
     }
   }
   
+/* Added from index.qmd */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0; 
+}
+th, td  {
+    border: 1px solid #ccc;
+    border-left:0;
+    border-right:0;
+    font-size: 19px;
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+}
+/* Prefixed with .index-carousel to avoid conflict */
+.index-carousel .carousel-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.index-carousel .carousel-inner img { 
+  height: auto; /* Maintain aspect ratio */
+  max-height: 600px; /* Set a maximum height for the images */
+  margin: 0 auto; /* Center horizontally */
+  border-radius: 8px; /* Add rounded corners to the images */
+}
+.index-carousel .carousel-caption {
+  position: absolute;
+  bottom: 20px; /* Adjust caption position */
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.65); /*Slightly darker semi-transparent background */
+  color: #fff; /* White text */
+  padding: 15px; /* Add more padding */
+  border-radius: 0 0 8px 8px; /* Rounded corners only at the bottom, matching image */
+  text-align: center; /* Center caption text */
+}
+
+.index-carousel .carousel-caption h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.funding-org-image {
+  max-width: 100%;
+  height: auto;
+  width: 1000px; /* Consider if this should be less rigid, e.g., max-width: 800px and margin: auto for centering */
+  display: block; /* To enable margin auto centering if width is less than 100% */
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px solid #eee; /* Subtle bottom border */
+  padding-bottom: 10px; /* Space between image and border */
+}
+
+/* Added from members.qmd */
+.cropped-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  overflow-clip-margin: unset;
+  border: 1px solid #777;
+  border-bottom: 4px solid #777;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.cropped-image:hover {
+  border-bottom-color: #d9534f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Added subtle shadow on hover */
+}
+
+.member-info span { /* Added for consistent styling of member names and tenures */
+  display: block; /* Ensures <br> inside span works as expected */
+  font-size: 16px; /* Consistent font size */
+  line-height: 1.4; /* Improved line spacing */
+  margin-top: 8px;  /* Space between image and text */
+  text-align: center; /* Center text under images */
+}
+
+/* carousel rule was empty, so it's removed. */
+
+/* Prefixed with .members-carousel to avoid conflict */
+.members-carousel .carousel-inner img { 
+  width: 100%; 
+  height: auto; 
+  max-height: 600px; 
+  object-fit: cover;
+  border-radius: 8px; /* Added rounded corners */
+}
+.members-carousel .carousel-caption {
+  position: absolute;
+  bottom: 20px;  /* Adjusted for consistency */
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.65); /* Darker background for better readability */
+  color: #fff; 
+  padding: 15px; /* Increased padding */
+  border-radius: 0 0 8px 8px; /* Rounded corners at the bottom */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  text-align: center; /* Center caption text */
+}
+
+.members-carousel .carousel-caption h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px; /* Adjusted font size */
+  font-weight: bold;
+}
+
+.members-carousel .carousel-caption p {
+  margin-bottom: 0;
+  font-size: 14px; /* Adjusted font size */
+}
+
+/* This rule from members.qmd applies to all carousels.
+   It was identical to a rule in index.qmd, so I've kept only one copy. */
+.carousel-indicators {
+  display: none !important;
+}
+
+.faculty-image {
+  float: left;
+  margin: 0 15px 0 0;
+}
