@@ -469,39 +469,46 @@
     "text": "Less but better: Publish one less paper, but make the ones you publish really strong. Show one less result in the meeting, but thoroughly analyse the ones you show."
   },
   {
+    "objectID": "members.html",
+    "href": "members.html",
+    "title": "Lab Members",
+    "section": "",
+    "text": "&lt;a href=\"https://nipunbatra.github.io\" class=\"member-link\"&gt;\n  &lt;img src=\"https://nipunbatra.github.io/images/nipun.jpg\" class=\"member-image\" alt=\"Prof Nipun Batra\"&gt;\n&lt;/a&gt;\n&lt;h3 class=\"member-name\"&gt;Prof. Nipun Batra&lt;/h3&gt;\n&lt;div class=\"faculty-info\"&gt;\n  &lt;p&gt;Nipun Batra is an Associate Professor of Computer Science at IIT Gandhinagar. He completed his postdoctoral research at the University of Virginia and earned his PhD from IIIT Delhi. His research group focuses on utilizing machine learning and sensing technologies to address computational sustainability challenges, particularly in smart buildings, air quality, and healthcare.&lt;/p&gt;\n&lt;/div&gt;"
+  },
+  {
     "objectID": "members.html#faculty",
     "href": "members.html#faculty",
     "title": "Lab Members",
-    "section": "Faculty",
-    "text": "Faculty\n  \n\nProf. Nipun Batra\n\nNipun Batra is an Associate Professor of Computer Science at IIT Gandhinagar. He completed his postdoctoral research at the University of Virginia and earned his PhD from IIIT Delhi. His research group focuses on utilizing machine learning and sensing technologies to address computational sustainability challenges, particularly in smart buildings, air quality, and healthcare."
+    "section": "",
+    "text": "&lt;a href=\"https://nipunbatra.github.io\" class=\"member-link\"&gt;\n  &lt;img src=\"https://nipunbatra.github.io/images/nipun.jpg\" class=\"member-image\" alt=\"Prof Nipun Batra\"&gt;\n&lt;/a&gt;\n&lt;h3 class=\"member-name\"&gt;Prof. Nipun Batra&lt;/h3&gt;\n&lt;div class=\"faculty-info\"&gt;\n  &lt;p&gt;Nipun Batra is an Associate Professor of Computer Science at IIT Gandhinagar. He completed his postdoctoral research at the University of Virginia and earned his PhD from IIIT Delhi. His research group focuses on utilizing machine learning and sensing technologies to address computational sustainability challenges, particularly in smart buildings, air quality, and healthcare.&lt;/p&gt;\n&lt;/div&gt;"
   },
   {
-    "objectID": "members.html#phd",
-    "href": "members.html#phd",
+    "objectID": "members.html#phd-students",
+    "href": "members.html#phd-students",
     "title": "Lab Members",
-    "section": "PhD",
-    "text": "PhD\n\n\n\n  \n\n\nZeel B Patel(Jan 2020 - present)\n\n\n  \n\n\nRishabh Mondal(Jun 2023 - present)\n\n\n\n\n  \n\n\nAyush Srivastava(Jul 2024 - present)\n\n\n  \n\n\nUjjwal K. Gupta(Jul 2024 - present)"
+    "section": "PhD Students",
+    "text": "PhD Students\n\n\n&lt;div class=\"member-card\"&gt;\n  &lt;a href=\"https://patel-zeel.github.io\" class=\"member-link\"&gt;\n    &lt;img src=\"https://patel-zeel.github.io/images/profile_crop.png\" class=\"member-image\" alt=\"Zeel B Patel\"&gt;\n  &lt;/a&gt;\n  &lt;h4 class=\"member-name\"&gt;Zeel B Patel&lt;/h4&gt;\n  &lt;p class=\"member-duration\"&gt;Jan 2020 - present&lt;/p&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"member-card\"&gt;\n  &lt;a href=\"https://rishabh-mondal.github.io\" class=\"member-link\"&gt;\n    &lt;img src=\"https://rishabh-mondal.github.io/ris.jpg\" class=\"member-image\" alt=\"Rishabh Mondal\"&gt;\n  &lt;/a&gt;\n  &lt;h4 class=\"member-name\"&gt;Rishabh Mondal&lt;/h4&gt;\n  &lt;p class=\"member-duration\"&gt;Jun 2023 - present&lt;/p&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"member-card\"&gt;\n  &lt;a href=\"https://ayushshrivstava.github.io/\" class=\"member-link\"&gt;\n    &lt;img src=\"images/members/Ayush.jpg\" class=\"member-image\" alt=\"Ayush Srivastava\"&gt;\n  &lt;/a&gt;\n  &lt;h4 class=\"member-name\"&gt;Ayush Srivastava&lt;/h4&gt;\n  &lt;p class=\"member-duration\"&gt;Jul 2024 - present&lt;/p&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"member-card\"&gt;\n  &lt;img src=\"images/members/Ujjwal.jpg\" class=\"member-image\" alt=\"Ujjwal K. Gupta\"&gt;\n  &lt;h4 class=\"member-name\"&gt;Ujjwal K. Gupta&lt;/h4&gt;\n  &lt;p class=\"member-duration\"&gt;Jul 2024 - present&lt;/p&gt;\n&lt;/div&gt;"
   },
   {
-    "objectID": "members.html#mtech",
-    "href": "members.html#mtech",
+    "objectID": "members.html#mtech-students",
+    "href": "members.html#mtech-students",
     "title": "Lab Members",
-    "section": "MTech",
-    "text": "MTech\n\n\n\n Poornima Bhatia(Jul 2023 - present)\n\n\n Prince Kumar(Jul 2023 - present)\n\n\n Shataxi Dubey(Jul 2023 - present)\n\n\n Abhay Pisharodi(Jul 2024 - present)\n\n\n\n\n Abhyudaya Nair(Jul 2024 - present)\n\n\n Diya Thakor(Jul 2024 - present)\n\n\n Vinayak Rana(Jul 2024 - present)\n\n\n Suruchi Hardaha(Jul 2024 - present)"
+    "section": "MTech Students",
+    "text": "MTech Students\n\n\n&lt;div class=\"member-card\"&gt;\n  &lt;img src=\"images/members/Poornima.jpg\" class=\"member-image\" alt=\"Poornima Bhatia\"&gt;\n  &lt;h4 class=\"member-name\"&gt;Poornima Bhatia&lt;/h4&gt;\n  &lt;p class=\"member-duration\"&gt;Jul 2023 - present&lt;/p&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"member-card\"&gt;\n  &lt;img src=\"images/members/Prince.jpg\" class=\"member-image\" alt=\"Prince Kumar\"&gt;\n  &lt;h4 class=\"member-name\"&gt;Prince Kumar&lt;/h4&gt;\n  &lt;p class=\"member-duration\"&gt;Jul 2023 - present&lt;/p&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"member-card\"&gt;\n  &lt;img src=\"images/members/Shataxi.jpg\" class=\"member-image\" alt=\"Shataxi Dubey\"&gt;\n  &lt;h4 class=\"member-name\"&gt;Shataxi Dubey&lt;/h4&gt;\n  &lt;p class=\"member-duration\"&gt;Jul 2023 - present&lt;/p&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"member-card\"&gt;\n  &lt;img src=\"images/members/Abhay.jpg\" class=\"member-image\" alt=\"Abhay Pisharodi\"&gt;\n  &lt;h4 class=\"member-name\"&gt;Abhay Pisharodi&lt;/h4&gt;\n  &lt;p class=\"member-duration\"&gt;Jul 2024 - present&lt;/p&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"member-card\"&gt;\n  &lt;img src=\"images/members/Abhyudaya.jpg\" class=\"member-image\" alt=\"Abhyudaya Nair\"&gt;\n  &lt;h4 class=\"member-name\"&gt;Abhyudaya Nair&lt;/h4&gt;\n  &lt;p class=\"member-duration\"&gt;Jul 2024 - present&lt;/p&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"member-card\"&gt;\n  &lt;img src=\"images/members/Diya.png\" class=\"member-image\" alt=\"Diya Thakor\"&gt;\n  &lt;h4 class=\"member-name\"&gt;Diya Thakor&lt;/h4&gt;\n  &lt;p class=\"member-duration\"&gt;Jul 2024 - present&lt;/p&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"member-card\"&gt;\n  &lt;img src=\"images/members/Vinayak.jpg\" class=\"member-image\" alt=\"Vinayak Rana\"&gt;\n  &lt;h4 class=\"member-name\"&gt;Vinayak Rana&lt;/h4&gt;\n  &lt;p class=\"member-duration\"&gt;Jul 2024 - present&lt;/p&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"member-card\"&gt;\n  &lt;img src=\"images/members/Suruchi.jpg\" class=\"member-image\" alt=\"Suruchi Hardaha\"&gt;\n  &lt;h4 class=\"member-name\"&gt;Suruchi Hardaha&lt;/h4&gt;\n  &lt;p class=\"member-duration\"&gt;Jul 2024 - present&lt;/p&gt;\n&lt;/div&gt;"
   },
   {
     "objectID": "members.html#junior-research-fellows",
     "href": "members.html#junior-research-fellows",
     "title": "Lab Members",
     "section": "Junior Research Fellows",
-    "text": "Junior Research Fellows\n\n\n\n Tanu Tiwari(Oct 2024 - present)\n\n\n Meenakshi Prakash(Jan 2025 - Present)"
+    "text": "Junior Research Fellows\n\n\n&lt;div class=\"member-card\"&gt;\n  &lt;img src=\"images/members/Tanu.jpeg\" class=\"member-image\" alt=\"Tanu Tiwari\"&gt;\n  &lt;h4 class=\"member-name\"&gt;Tanu Tiwari&lt;/h4&gt;\n  &lt;p class=\"member-duration\"&gt;Oct 2024 - present&lt;/p&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"member-card\"&gt;\n  &lt;img src=\"images/members/Meenakshi.jpg\" class=\"member-image\" alt=\"Meenakshi Prakash\"&gt;\n  &lt;h4 class=\"member-name\"&gt;Meenakshi Prakash&lt;/h4&gt;\n  &lt;p class=\"member-duration\"&gt;Jan 2025 - Present&lt;/p&gt;\n&lt;/div&gt;"
   },
   {
-    "objectID": "members.html#group-photos",
-    "href": "members.html#group-photos",
+    "objectID": "members.html#lab-memories",
+    "href": "members.html#lab-memories",
     "title": "Lab Members",
-    "section": "Group Photos",
-    "text": "Group Photos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSustainability Lab at ACM Compass’24, IIIT Delhi\n\n\nJul 2024\n\n\n\n\n\n\n\nLab dinner with Batch of 2024\n\n\nMay 2024\n\n\n\n\n\n\n\nAlums from 2022 batch Harsh, Hetvi and Palak visited us\n\n\nJan 2024\n\n\n\n\n\n\n\nStudents working with us in the Fall 2023 semester\n\n\nNov 2023\n\n\n\n\n\n\n\nAfter the 2023 batch convocation (and celebration of multiple awards!)\n\n\nJuly 2023\n\n\n\n\n\n\n\nLab dinner with Batch of 2023\n\n\nMay 2023\n\n\n\n\n\n\n\nBatch of 2023 :Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam\n\n\nMay 2023\n\n\n\n\n\n\n\nWith a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)\n\n\nJuly 2022\n\n\n\n\n  Previous    Next"
+    "section": "Lab Memories",
+    "text": "Lab Memories\n\n\n&lt;div class=\"gallery-item\"&gt;\n  &lt;img src=\"images/memories/compass24.jpg\" class=\"gallery-image\" alt=\"ACM Compass 2024\"&gt;\n  &lt;div class=\"gallery-caption\"&gt;\n    &lt;h4&gt;ACM Compass'24&lt;/h4&gt;\n    &lt;p&gt;Sustainability Lab at IIIT Delhi, Jul 2024&lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"gallery-item\"&gt;\n  &lt;img src=\"images/memories/batch24.jpg\" class=\"gallery-image\" alt=\"Batch 2024 Dinner\"&gt;\n  &lt;div class=\"gallery-caption\"&gt;\n    &lt;h4&gt;Lab Dinner&lt;/h4&gt;\n    &lt;p&gt;Batch of 2024, May 2024&lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"gallery-item\"&gt;\n  &lt;img src=\"images/memories/2024-alum-visit.jpg\" class=\"gallery-image\" alt=\"Alumni Visit\"&gt;\n  &lt;div class=\"gallery-caption\"&gt;\n    &lt;h4&gt;Alumni Visit&lt;/h4&gt;\n    &lt;p&gt;2022 batch alumni Harsh, Hetvi and Palak, Jan 2024&lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"gallery-item\"&gt;\n  &lt;img src=\"images/memories/2023-Fall.jpg\" class=\"gallery-image\" alt=\"Fall 2023\"&gt;\n  &lt;div class=\"gallery-caption\"&gt;\n    &lt;h4&gt;Fall 2023 Semester&lt;/h4&gt;\n    &lt;p&gt;Students working with us, Nov 2023&lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"gallery-item\"&gt;\n  &lt;img src=\"images/memories/2023-July-all.jpg\" class=\"gallery-image\" alt=\"Convocation 2023\"&gt;\n  &lt;div class=\"gallery-caption\"&gt;\n    &lt;h4&gt;Convocation Celebration&lt;/h4&gt;\n    &lt;p&gt;2023 batch convocation and awards, July 2023&lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"gallery-item\"&gt;\n  &lt;img src=\"images/memories/2023-July.jpg\" class=\"gallery-image\" alt=\"Dinner May 2023\"&gt;\n  &lt;div class=\"gallery-caption\"&gt;\n    &lt;h4&gt;Lab Dinner&lt;/h4&gt;\n    &lt;p&gt;Batch of 2023, May 2023&lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"gallery-item\"&gt;\n  &lt;img src=\"images/memories/2023-group.jpg\" class=\"gallery-image\" alt=\"Group Photo 2023\"&gt;\n  &lt;div class=\"gallery-caption\"&gt;\n    &lt;h4&gt;Group Photo&lt;/h4&gt;\n    &lt;p&gt;Batch of 2023: Saagar, Aadesh, Xhitij, Nipun, Zeel, Ankita, Eshan, Hitarth, Gautam&lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"gallery-item\"&gt;\n  &lt;img src=\"images/memories/2022-group-subset.jpg\" class=\"gallery-image\" alt=\"Group Photo 2022\"&gt;\n  &lt;div class=\"gallery-caption\"&gt;\n    &lt;h4&gt;Group Photo&lt;/h4&gt;\n    &lt;p&gt;Subset of batch 2022: Harsh, Hetvi, Nipun, Dhruvi, Palak&lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;"
   },
   {
     "objectID": "reading.html",

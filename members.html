@@ -367,233 +367,327 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<p><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></p>
+<style>
+.member-card {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.member-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+  display: block;
+}
+
+.member-image:hover {
+  border-color: #007bff;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.member-name {
+  font-weight: 600;
+  color: #333;
+  margin: 0.5rem 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+.member-duration {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.member-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.member-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-title {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.faculty-section {
+  margin-bottom: 3rem;
+}
+
+.faculty-info {
+  max-width: 800px;
+  margin: 1rem auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.gallery-container {
+  margin: 3rem 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.gallery-caption h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.gallery-caption p {
+  margin: 0;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+</style>
 <section id="faculty" class="level2">
 <h2 class="anchored" data-anchor-id="faculty">Faculty</h2>
-<p><a href="https://nipunbatra.github.io"> <img src="https://nipunbatra.github.io/images/nipun.jpg" class="cropped-image faculty-image" alt="Prof Nipun Batra"> </a></p>
-<section id="prof.-nipun-batra" class="level3">
-<h3 class="anchored" data-anchor-id="prof.-nipun-batra">Prof.&nbsp;Nipun Batra</h3>
-<p>
-Nipun Batra is an Associate Professor of Computer Science at IIT Gandhinagar. He completed his postdoctoral research at the University of Virginia and earned his PhD from IIIT Delhi. His research group focuses on utilizing machine learning and sensing technologies to address computational sustainability challenges, particularly in smart buildings, air quality, and healthcare.
-</p>
-<p><br></p>
-</section>
-</section>
-<section id="phd" class="level2">
-<h2 class="anchored" data-anchor-id="phd">PhD</h2>
-<div class="quarto-layout-panel" data-layout-ncol="4">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<a href="https://patel-zeel.github.io"> <img src="https://patel-zeel.github.io/images/profile_crop.png" class="cropped-image"><br> </a>
-</div>
-<div class="member-info quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<span>Zeel B Patel<br>(Jan 2020 - present)</span>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<a href="https://rishabh-mondal.github.io"> <img src="https://rishabh-mondal.github.io/ris.jpg" class="cropped-image"><br> </a>
-</div>
-<div class="member-info quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<span>Rishabh Mondal<br>(Jun 2023 - present)</span>
-</div>
-</div>
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<a href="https://ayushshrivstava.github.io/"> <img src="images/members/Ayush.jpg" class="cropped-image"><br> </a>
-</div>
-<div class="member-info quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<span>Ayush Srivastava<br>(Jul 2024 - present)</span>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<a href=""> <img src="images/members/Ujjwal.jpg" class="cropped-image"><br> </a>
-</div>
-<div class="member-info quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<span>Ujjwal K. Gupta<br>(Jul 2024 - present)</span>
-</div>
+<div class="faculty-section">
+<div class="member-card">
+<pre><code>&lt;a href="https://nipunbatra.github.io" class="member-link"&gt;
+  &lt;img src="https://nipunbatra.github.io/images/nipun.jpg" class="member-image" alt="Prof Nipun Batra"&gt;
+&lt;/a&gt;
+&lt;h3 class="member-name"&gt;Prof. Nipun Batra&lt;/h3&gt;
+&lt;div class="faculty-info"&gt;
+  &lt;p&gt;Nipun Batra is an Associate Professor of Computer Science at IIT Gandhinagar. He completed his postdoctoral research at the University of Virginia and earned his PhD from IIIT Delhi. His research group focuses on utilizing machine learning and sensing technologies to address computational sustainability challenges, particularly in smart buildings, air quality, and healthcare.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
 </div>
 </div>
 </section>
-<section id="mtech" class="level2">
-<h2 class="anchored" data-anchor-id="mtech">MTech</h2>
-<div class="quarto-layout-panel" data-layout-ncol="4">
-<div class="quarto-layout-row">
-<div class="member-info quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<img src="images/members/Poornima.jpg" class="cropped-image"><br> <span>Poornima Bhatia<br>(Jul 2023 - present)</span>
+<section id="phd-students" class="level2">
+<h2 class="anchored" data-anchor-id="phd-students">PhD Students</h2>
+<div class="row">
+<div class="col-md-3 col-sm-6">
+<pre><code>&lt;div class="member-card"&gt;
+  &lt;a href="https://patel-zeel.github.io" class="member-link"&gt;
+    &lt;img src="https://patel-zeel.github.io/images/profile_crop.png" class="member-image" alt="Zeel B Patel"&gt;
+  &lt;/a&gt;
+  &lt;h4 class="member-name"&gt;Zeel B Patel&lt;/h4&gt;
+  &lt;p class="member-duration"&gt;Jan 2020 - present&lt;/p&gt;
+&lt;/div&gt;</code></pre>
 </div>
-<div class="member-info quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<img src="images/members/Prince.jpg" class="cropped-image"><br> <span>Prince Kumar<br>(Jul 2023 - present)</span>
+<div class="col-md-3 col-sm-6">
+<pre><code>&lt;div class="member-card"&gt;
+  &lt;a href="https://rishabh-mondal.github.io" class="member-link"&gt;
+    &lt;img src="https://rishabh-mondal.github.io/ris.jpg" class="member-image" alt="Rishabh Mondal"&gt;
+  &lt;/a&gt;
+  &lt;h4 class="member-name"&gt;Rishabh Mondal&lt;/h4&gt;
+  &lt;p class="member-duration"&gt;Jun 2023 - present&lt;/p&gt;
+&lt;/div&gt;</code></pre>
 </div>
-<div class="member-info quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<img src="images/members/Shataxi.jpg" class="cropped-image"><br> <span>Shataxi Dubey<br>(Jul 2023 - present)</span>
+<div class="col-md-3 col-sm-6">
+<pre><code>&lt;div class="member-card"&gt;
+  &lt;a href="https://ayushshrivstava.github.io/" class="member-link"&gt;
+    &lt;img src="images/members/Ayush.jpg" class="member-image" alt="Ayush Srivastava"&gt;
+  &lt;/a&gt;
+  &lt;h4 class="member-name"&gt;Ayush Srivastava&lt;/h4&gt;
+  &lt;p class="member-duration"&gt;Jul 2024 - present&lt;/p&gt;
+&lt;/div&gt;</code></pre>
 </div>
-<div class="member-info quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<img src="images/members/Abhay.jpg" class="cropped-image"><br> <span>Abhay Pisharodi<br>(Jul 2024 - present)</span>
+<div class="col-md-3 col-sm-6">
+<pre><code>&lt;div class="member-card"&gt;
+  &lt;img src="images/members/Ujjwal.jpg" class="member-image" alt="Ujjwal K. Gupta"&gt;
+  &lt;h4 class="member-name"&gt;Ujjwal K. Gupta&lt;/h4&gt;
+  &lt;p class="member-duration"&gt;Jul 2024 - present&lt;/p&gt;
+&lt;/div&gt;</code></pre>
 </div>
 </div>
-<div class="quarto-layout-row">
-<div class="member-info quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<img src="images/members/Abhyudaya.jpg" class="cropped-image"><br> <span>Abhyudaya Nair<br>(Jul 2024 - present)</span>
+</section>
+<section id="mtech-students" class="level2">
+<h2 class="anchored" data-anchor-id="mtech-students">MTech Students</h2>
+<div class="row">
+<div class="col-md-3 col-sm-6">
+<pre><code>&lt;div class="member-card"&gt;
+  &lt;img src="images/members/Poornima.jpg" class="member-image" alt="Poornima Bhatia"&gt;
+  &lt;h4 class="member-name"&gt;Poornima Bhatia&lt;/h4&gt;
+  &lt;p class="member-duration"&gt;Jul 2023 - present&lt;/p&gt;
+&lt;/div&gt;</code></pre>
 </div>
-<div class="member-info quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<img src="images/members/Diya.png" class="cropped-image"><br> <span>Diya Thakor<br>(Jul 2024 - present)</span>
+<div class="col-md-3 col-sm-6">
+<pre><code>&lt;div class="member-card"&gt;
+  &lt;img src="images/members/Prince.jpg" class="member-image" alt="Prince Kumar"&gt;
+  &lt;h4 class="member-name"&gt;Prince Kumar&lt;/h4&gt;
+  &lt;p class="member-duration"&gt;Jul 2023 - present&lt;/p&gt;
+&lt;/div&gt;</code></pre>
 </div>
-<div class="member-info quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<img src="images/members/Vinayak.jpg" class="cropped-image"><br> <span>Vinayak Rana<br>(Jul 2024 - present)</span>
+<div class="col-md-3 col-sm-6">
+<pre><code>&lt;div class="member-card"&gt;
+  &lt;img src="images/members/Shataxi.jpg" class="member-image" alt="Shataxi Dubey"&gt;
+  &lt;h4 class="member-name"&gt;Shataxi Dubey&lt;/h4&gt;
+  &lt;p class="member-duration"&gt;Jul 2023 - present&lt;/p&gt;
+&lt;/div&gt;</code></pre>
 </div>
-<div class="member-info quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<img src="images/members/Suruchi.jpg" class="cropped-image"><br> <span>Suruchi Hardaha<br>(Jul 2024 - present)</span>
+<div class="col-md-3 col-sm-6">
+<pre><code>&lt;div class="member-card"&gt;
+  &lt;img src="images/members/Abhay.jpg" class="member-image" alt="Abhay Pisharodi"&gt;
+  &lt;h4 class="member-name"&gt;Abhay Pisharodi&lt;/h4&gt;
+  &lt;p class="member-duration"&gt;Jul 2024 - present&lt;/p&gt;
+&lt;/div&gt;</code></pre>
 </div>
+<div class="col-md-3 col-sm-6">
+<pre><code>&lt;div class="member-card"&gt;
+  &lt;img src="images/members/Abhyudaya.jpg" class="member-image" alt="Abhyudaya Nair"&gt;
+  &lt;h4 class="member-name"&gt;Abhyudaya Nair&lt;/h4&gt;
+  &lt;p class="member-duration"&gt;Jul 2024 - present&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<div class="col-md-3 col-sm-6">
+<pre><code>&lt;div class="member-card"&gt;
+  &lt;img src="images/members/Diya.png" class="member-image" alt="Diya Thakor"&gt;
+  &lt;h4 class="member-name"&gt;Diya Thakor&lt;/h4&gt;
+  &lt;p class="member-duration"&gt;Jul 2024 - present&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<div class="col-md-3 col-sm-6">
+<pre><code>&lt;div class="member-card"&gt;
+  &lt;img src="images/members/Vinayak.jpg" class="member-image" alt="Vinayak Rana"&gt;
+  &lt;h4 class="member-name"&gt;Vinayak Rana&lt;/h4&gt;
+  &lt;p class="member-duration"&gt;Jul 2024 - present&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<div class="col-md-3 col-sm-6">
+<pre><code>&lt;div class="member-card"&gt;
+  &lt;img src="images/members/Suruchi.jpg" class="member-image" alt="Suruchi Hardaha"&gt;
+  &lt;h4 class="member-name"&gt;Suruchi Hardaha&lt;/h4&gt;
+  &lt;p class="member-duration"&gt;Jul 2024 - present&lt;/p&gt;
+&lt;/div&gt;</code></pre>
 </div>
 </div>
 </section>
 <section id="junior-research-fellows" class="level2">
 <h2 class="anchored" data-anchor-id="junior-research-fellows">Junior Research Fellows</h2>
-<div class="quarto-layout-panel" data-layout-ncol="4">
-<div class="quarto-layout-row">
-<div class="member-info quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<img src="images/members/Tanu.jpeg" class="cropped-image"><br> <span>Tanu Tiwari<br>(Oct 2024 - present)</span>
+<div class="row">
+<div class="col-md-3 col-sm-6">
+<pre><code>&lt;div class="member-card"&gt;
+  &lt;img src="images/members/Tanu.jpeg" class="member-image" alt="Tanu Tiwari"&gt;
+  &lt;h4 class="member-name"&gt;Tanu Tiwari&lt;/h4&gt;
+  &lt;p class="member-duration"&gt;Oct 2024 - present&lt;/p&gt;
+&lt;/div&gt;</code></pre>
 </div>
-<div class="member-info quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<img src="images/members/Meenakshi.jpg" class="cropped-image"><br> <span>Meenakshi Prakash<br>(Jan 2025 - Present)</span>
+<div class="col-md-3 col-sm-6">
+<pre><code>&lt;div class="member-card"&gt;
+  &lt;img src="images/members/Meenakshi.jpg" class="member-image" alt="Meenakshi Prakash"&gt;
+  &lt;h4 class="member-name"&gt;Meenakshi Prakash&lt;/h4&gt;
+  &lt;p class="member-duration"&gt;Jan 2025 - Present&lt;/p&gt;
+&lt;/div&gt;</code></pre>
 </div>
 </div>
-</div>
-<!-- ## BTech
-
-::: {layout-ncol=4}
-
-<a href="https://vannshjani.github.io/Blogs/">
-  <img src="images/members/Vannsh.jpg" class="cropped-image"><br/>
-</a>
-<span>Vannsh Jani  <br/>(Aug 2023 - present)</span>
-
-
-<img src="images/members/Yash.jpg" class="cropped-image"><br/>
-<span>Yash Bachwana <br/>(May 2024 - Present)</span>
-
-::: -->
 </section>
-<section id="group-photos" class="level2">
-<h2 class="anchored" data-anchor-id="group-photos">Group Photos</h2>
-<div id="myCarousel" class="carousel slide members-carousel" data-ride="carousel">
-<!-- Indicators -->
-<ol class="carousel-indicators">
-<li data-target="#myCarousel" data-slide-to="0" class="active">
-</li>
-<li data-target="#myCarousel" data-slide-to="1">
-</li>
-<li data-target="#myCarousel" data-slide-to="2">
-</li>
-<li data-target="#myCarousel" data-slide-to="3">
-</li>
-<li data-target="#myCarousel" data-slide-to="4">
-</li>
-<li data-target="#myCarousel" data-slide-to="5">
-</li>
-<li data-target="#myCarousel" data-slide-to="6">
-</li>
-<li data-target="#myCarousel" data-slide-to="7">
-</li>
-<li data-target="#myCarousel" data-slide-to="8">
-</li>
-</ol>
-<!-- Wrapper for slides -->
-<div class="carousel-inner">
-<div class="item active">
-<img src="images/memories/compass24.jpg" alt="Los Angeles">
-<div class="carousel-caption">
-<h3 class="anchored">
-Sustainability Lab at ACM Compass’24, IIIT Delhi
-</h3>
-<p>
-Jul 2024
-</p>
+<section id="lab-memories" class="level2">
+<h2 class="anchored" data-anchor-id="lab-memories">Lab Memories</h2>
+<div class="gallery-container">
+<div class="gallery-grid">
+<pre><code>&lt;div class="gallery-item"&gt;
+  &lt;img src="images/memories/compass24.jpg" class="gallery-image" alt="ACM Compass 2024"&gt;
+  &lt;div class="gallery-caption"&gt;
+    &lt;h4&gt;ACM Compass'24&lt;/h4&gt;
+    &lt;p&gt;Sustainability Lab at IIIT Delhi, Jul 2024&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="gallery-item"&gt;
+  &lt;img src="images/memories/batch24.jpg" class="gallery-image" alt="Batch 2024 Dinner"&gt;
+  &lt;div class="gallery-caption"&gt;
+    &lt;h4&gt;Lab Dinner&lt;/h4&gt;
+    &lt;p&gt;Batch of 2024, May 2024&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="gallery-item"&gt;
+  &lt;img src="images/memories/2024-alum-visit.jpg" class="gallery-image" alt="Alumni Visit"&gt;
+  &lt;div class="gallery-caption"&gt;
+    &lt;h4&gt;Alumni Visit&lt;/h4&gt;
+    &lt;p&gt;2022 batch alumni Harsh, Hetvi and Palak, Jan 2024&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="gallery-item"&gt;
+  &lt;img src="images/memories/2023-Fall.jpg" class="gallery-image" alt="Fall 2023"&gt;
+  &lt;div class="gallery-caption"&gt;
+    &lt;h4&gt;Fall 2023 Semester&lt;/h4&gt;
+    &lt;p&gt;Students working with us, Nov 2023&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="gallery-item"&gt;
+  &lt;img src="images/memories/2023-July-all.jpg" class="gallery-image" alt="Convocation 2023"&gt;
+  &lt;div class="gallery-caption"&gt;
+    &lt;h4&gt;Convocation Celebration&lt;/h4&gt;
+    &lt;p&gt;2023 batch convocation and awards, July 2023&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="gallery-item"&gt;
+  &lt;img src="images/memories/2023-July.jpg" class="gallery-image" alt="Dinner May 2023"&gt;
+  &lt;div class="gallery-caption"&gt;
+    &lt;h4&gt;Lab Dinner&lt;/h4&gt;
+    &lt;p&gt;Batch of 2023, May 2023&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="gallery-item"&gt;
+  &lt;img src="images/memories/2023-group.jpg" class="gallery-image" alt="Group Photo 2023"&gt;
+  &lt;div class="gallery-caption"&gt;
+    &lt;h4&gt;Group Photo&lt;/h4&gt;
+    &lt;p&gt;Batch of 2023: Saagar, Aadesh, Xhitij, Nipun, Zeel, Ankita, Eshan, Hitarth, Gautam&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="gallery-item"&gt;
+  &lt;img src="images/memories/2022-group-subset.jpg" class="gallery-image" alt="Group Photo 2022"&gt;
+  &lt;div class="gallery-caption"&gt;
+    &lt;h4&gt;Group Photo&lt;/h4&gt;
+    &lt;p&gt;Subset of batch 2022: Harsh, Hetvi, Nipun, Dhruvi, Palak&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
-</div>
-<div class="item">
-<img src="images/memories/batch24.jpg" alt="Los Angeles">
-<div class="carousel-caption">
-<h3 class="anchored">
-Lab dinner with Batch of 2024
-</h3>
-<p>
-May 2024
-</p>
-</div>
-</div>
-<div class="item">
-<img src="images/memories/2024-alum-visit.jpg">
-<div class="carousel-caption">
-<h3 class="anchored">
-Alums from 2022 batch Harsh, Hetvi and Palak visited us
-</h3>
-<p>
-Jan 2024
-</p>
-</div>
-</div>
-<div class="item">
-<img src="images/memories/2023-Fall.jpg">
-<div class="carousel-caption">
-<h3 class="anchored">
-Students working with us in the Fall 2023 semester
-</h3>
-<p>
-Nov 2023
-</p>
-</div>
-</div>
-<div class="item">
-<img src="images/memories/2023-July-all.jpg">
-<div class="carousel-caption">
-<h3 class="anchored">
-After the 2023 batch convocation (and celebration of multiple awards!)
-</h3>
-<p>
-July 2023
-</p>
-</div>
-</div>
-<div class="item">
-<img src="images/memories/2023-July.jpg">
-<div class="carousel-caption">
-<h3 class="anchored">
-Lab dinner with Batch of 2023
-</h3>
-<p>
-May 2023
-</p>
-</div>
-</div>
-<div class="item">
-<img src="images/memories/2023-group.jpg">
-<div class="carousel-caption">
-<h3 class="anchored">
-Batch of 2023 :Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam
-</h3>
-<p>
-May 2023
-</p>
-</div>
-</div>
-<div class="item">
-<img src="images/memories/2022-group-subset.jpg">
-<div class="carousel-caption">
-<h3 class="anchored">
-With a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)
-</h3>
-<p>
-July 2022
-</p>
-</div>
-</div>
-<!-- Left and right controls -->
-<p><a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span> </a></p>
 </div>
 
 
-</div>
 </section>
 
 </main> <!-- /main -->
