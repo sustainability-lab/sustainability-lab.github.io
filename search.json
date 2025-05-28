@@ -301,88 +301,319 @@
     "text": "2018\n\n\n\n\n\n\nNov 2018\n\n\nHaroon presented our paper in Buildsys 18!\n\n\n\n\nNov 2018\n\n\nAwarded an Microsoft AI for Earth grant worth $15000 in Azure credits\n\n\n\n\nAug 2018\n\n\nTook a research methods for CS bootcamp at IITGN. Slides,Youtube\n\n\n\n\nJuly 2018\n\n\nReceived a Titan XP GPU from NVidia via their grant program. Thanks, NVidia!\n\n\n\n\nJuly 2018\n\n\nTeaching operating systems in the current semester at IITGN\n\n\n\n\nJuly 2018\n\n\nJoined CSE at IITGN as an Assistant Professor"
   },
   {
-    "objectID": "events/index.html",
-    "href": "events/index.html",
-    "title": "Events",
+    "objectID": "design-kit.html",
+    "href": "design-kit.html",
+    "title": "Sustainability Lab",
     "section": "",
-    "text": "In this page, we include the events that we have organized or co-organized."
+    "text": "Download: logo_light.svg\n&lt;svg viewBox=\"0 0 480 120\" xmlns=\"http://www.w3.org/2000/svg\"&gt;\n  &lt;title&gt;Sustainability Lab Logo - Light Mode&lt;/title&gt;\n  &lt;line x1=\"110\" y1=\"85\" x2=\"110\" y2=\"35\" stroke=\"#444444\" stroke-width=\"2\" stroke-linecap=\"round\"/&gt;\n  &lt;line x1=\"110\" y1=\"85\" x2=\"150\" y2=\"85\" stroke=\"#444444\" stroke-width=\"2\" stroke-linecap=\"round\"/&gt;\n  &lt;path d=\"M 90.0 84.7 L 91.4 84.5 ... L 130.0 35.3\"\n        fill=\"none\"\n        stroke=\"#000000\"\n        stroke-width=\"3.5\"\n        stroke-linecap=\"round\"/&gt;\n  &lt;text x=\"165\" y=\"65\" font-family=\"system-ui, sans-serif\" font-size=\"32\" font-weight=\"400\" fill=\"#111111\" letter-spacing=\"0.5px\"&gt;\n    SUSTAINABILITY\n  &lt;/text&gt;\n  &lt;text x=\"165\" y=\"85\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"300\" fill=\"#555555\" letter-spacing=\"3px\"&gt;\n    LAB\n  &lt;/text&gt;\n&lt;/svg&gt;"
   },
   {
-    "objectID": "events/index.html#section",
-    "href": "events/index.html#section",
-    "title": "Events",
-    "section": "2025",
-    "text": "2025\nACM India Summer School on AI for Social Good Link: ACM India Summer School 2025"
+    "objectID": "design-kit.html#light-theme-logo",
+    "href": "design-kit.html#light-theme-logo",
+    "title": "Sustainability Lab",
+    "section": "",
+    "text": "Download: logo_light.svg\n&lt;svg viewBox=\"0 0 480 120\" xmlns=\"http://www.w3.org/2000/svg\"&gt;\n  &lt;title&gt;Sustainability Lab Logo - Light Mode&lt;/title&gt;\n  &lt;line x1=\"110\" y1=\"85\" x2=\"110\" y2=\"35\" stroke=\"#444444\" stroke-width=\"2\" stroke-linecap=\"round\"/&gt;\n  &lt;line x1=\"110\" y1=\"85\" x2=\"150\" y2=\"85\" stroke=\"#444444\" stroke-width=\"2\" stroke-linecap=\"round\"/&gt;\n  &lt;path d=\"M 90.0 84.7 L 91.4 84.5 ... L 130.0 35.3\"\n        fill=\"none\"\n        stroke=\"#000000\"\n        stroke-width=\"3.5\"\n        stroke-linecap=\"round\"/&gt;\n  &lt;text x=\"165\" y=\"65\" font-family=\"system-ui, sans-serif\" font-size=\"32\" font-weight=\"400\" fill=\"#111111\" letter-spacing=\"0.5px\"&gt;\n    SUSTAINABILITY\n  &lt;/text&gt;\n  &lt;text x=\"165\" y=\"85\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"300\" fill=\"#555555\" letter-spacing=\"3px\"&gt;\n    LAB\n  &lt;/text&gt;\n&lt;/svg&gt;"
   },
   {
-    "objectID": "events/index.html#section-1",
-    "href": "events/index.html#section-1",
-    "title": "Events",
-    "section": "2023",
-    "text": "2023\nMEDFUSE: Medicine, Engineering, and Data Fusion for Health"
+    "objectID": "design-kit.html#dark-theme-logo",
+    "href": "design-kit.html#dark-theme-logo",
+    "title": "Sustainability Lab",
+    "section": "Dark Theme Logo",
+    "text": "Dark Theme Logo\nDownload: logo_dark.svg\n&lt;svg viewBox=\"0 0 480 120\" xmlns=\"http://www.w3.org/2000/svg\"&gt;\n  &lt;title&gt;Sustainability Lab Logo - Dark Mode&lt;/title&gt;\n  &lt;line x1=\"110\" y1=\"85\" x2=\"110\" y2=\"35\" stroke=\"#CCCCCC\" stroke-width=\"2\" stroke-linecap=\"round\"/&gt;\n  &lt;line x1=\"110\" y1=\"85\" x2=\"150\" y2=\"85\" stroke=\"#CCCCCC\" stroke-width=\"2\" stroke-linecap=\"round\"/&gt;\n  &lt;path d=\"M 90.0 84.7 L 91.4 84.5 ... L 130.0 35.3\"\n        fill=\"none\"\n        stroke=\"#FFFFFF\"\n        stroke-width=\"3.5\"\n        stroke-linecap=\"round\"/&gt;\n  &lt;text x=\"165\" y=\"65\" font-family=\"system-ui, sans-serif\" font-size=\"32\" font-weight=\"400\" fill=\"#FFFFFF\" letter-spacing=\"0.5px\"&gt;\n    SUSTAINABILITY\n  &lt;/text&gt;\n  &lt;text x=\"165\" y=\"85\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"300\" fill=\"#AAAAAA\" letter-spacing=\"3px\"&gt;\n    LAB\n  &lt;/text&gt;\n&lt;/svg&gt;"
   },
   {
-    "objectID": "events/acm-summer-2025/selected.html",
-    "href": "events/acm-summer-2025/selected.html",
+    "objectID": "design-kit.html#coloured-theme-logo",
+    "href": "design-kit.html#coloured-theme-logo",
+    "title": "Sustainability Lab",
+    "section": "Coloured Theme Logo",
+    "text": "Coloured Theme Logo\nDownload: logo_colored.svg\n&lt;svg viewBox=\"0 0 480 120\" xmlns=\"http://www.w3.org/2000/svg\"&gt;\n  &lt;title&gt;Sustainability Lab Logo - Modern Teal&lt;/title&gt;\n  &lt;line x1=\"110\" y1=\"85\" x2=\"110\" y2=\"35\" stroke=\"#5C9EAD\" stroke-width=\"2\" stroke-linecap=\"round\"/&gt;\n  &lt;line x1=\"110\" y1=\"85\" x2=\"150\" y2=\"85\" stroke=\"#5C9EAD\" stroke-width=\"2\" stroke-linecap=\"round\"/&gt;\n  &lt;path d=\"M 90.0 84.7 L 91.4 84.5 ... L 130.0 35.3\" \n        fill=\"none\" \n        stroke=\"#2F5F5F\" \n        stroke-width=\"3.5\" \n        stroke-linecap=\"round\"/&gt;\n  &lt;text x=\"165\" y=\"65\" font-family=\"system-ui, sans-serif\" font-size=\"32\" font-weight=\"400\" fill=\"#2F5F5F\" letter-spacing=\"0.5px\"&gt;\n    SUSTAINABILITY\n  &lt;/text&gt;\n  &lt;text x=\"165\" y=\"85\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"300\" fill=\"#4A7F7F\" letter-spacing=\"3px\"&gt;\n    LAB\n  &lt;/text&gt;\n&lt;/svg&gt;"
+  },
+  {
+    "objectID": "design-kit.html#favicon",
+    "href": "design-kit.html#favicon",
+    "title": "Sustainability Lab",
+    "section": "Favicon",
+    "text": "Favicon\nDownload:logo_favicon.svg\n&lt;svg viewBox=\"0 0 480 120\" xmlns=\"http://www.w3.org/2000/svg\"&gt;\n  &lt;title&gt;Sustainability Lab Logo - Favicon&lt;/title&gt;\n  &lt;line x1=\"110\" y1=\"85\" x2=\"110\" y2=\"35\" stroke=\"#444444\" stroke-width=\"2\" stroke-linecap=\"round\"/&gt;\n  &lt;line x1=\"110\" y1=\"85\" x2=\"150\" y2=\"85\" stroke=\"#444444\" stroke-width=\"2\" stroke-linecap=\"round\"/&gt;\n  &lt;path d=\"M 90.0 84.7 L 91.4 84.5 ... L 130.0 35.3\"\n        fill=\"none\"\n        stroke=\"#000000\"\n        stroke-width=\"3.5\"\n        stroke-linecap=\"round\"/&gt;\n&lt;/svg&gt;"
+  },
+  {
+    "objectID": "events/acm-summer-2025/index.html",
+    "href": "events/acm-summer-2025/index.html",
     "title": "ACM India Summer School 2025: AI for Social Good",
     "section": "",
     "text": "Overview Schedule Selected Participants Speakers"
   },
   {
-    "objectID": "events/acm-summer-2025/selected.html#accommodation-and-meals",
-    "href": "events/acm-summer-2025/selected.html#accommodation-and-meals",
+    "objectID": "events/acm-summer-2025/index.html#overview",
+    "href": "events/acm-summer-2025/index.html#overview",
     "title": "ACM India Summer School 2025: AI for Social Good",
-    "section": "🏠 Accommodation and Meals",
-    "text": "🏠 Accommodation and Meals\n\nYou will be provided hostel accommodation on campus.\nCheck-in: 01 June 2025\nCheck-out: 14 June 2025\nNo accommodation charge – included in the program.\nMeals: Breakfast, lunch, and dinner will be provided on campus."
+    "section": "Overview",
+    "text": "Overview\nThe ACM Summer School on AI for Social Good at IIT Gandhinagar offers an intensive 11-day program on AI techniques applied to social good domains such as healthcare, sustainability, and agriculture.\nThe school will feature expert talks, hands-on tutorials, and panel discussions, fostering both technical expertise and interdisciplinary collaboration."
   },
   {
-    "objectID": "events/acm-summer-2025/selected.html#fee-structure",
-    "href": "events/acm-summer-2025/selected.html#fee-structure",
+    "objectID": "events/acm-summer-2025/index.html#host-institution",
+    "href": "events/acm-summer-2025/index.html#host-institution",
     "title": "ACM India Summer School 2025: AI for Social Good",
-    "section": "💰 Fee Structure",
-    "text": "💰 Fee Structure\n\n\n\nComponent\nAmount\n\n\n\n\nApplication Fee\n₹150 + 18% GST\n\n\nProgram Fee (on selection)\n₹3000 + 18% GST\n\n\nAccommodation & Meals\nIncluded\n\n\nTravel\nSelf-arranged"
+    "section": "🏛 Host Institution",
+    "text": "🏛 Host Institution\nIIT Gandhinagar\n📍 Palaj, Gandhinagar, Gujarat, 382055"
   },
   {
-    "objectID": "events/acm-summer-2025/selected.html#what-to-bring",
-    "href": "events/acm-summer-2025/selected.html#what-to-bring",
+    "objectID": "events/acm-summer-2025/index.html#local-academic-coordinators",
+    "href": "events/acm-summer-2025/index.html#local-academic-coordinators",
     "title": "ACM India Summer School 2025: AI for Social Good",
-    "section": "🧳 What to Bring",
-    "text": "🧳 What to Bring\n\nGovernment ID card (for hostel check-in)\nLaptop with Python installed\nNotebook, pens, charger, power bank\nComfortable clothing for Gujarat heat\nWater bottle, umbrella, etc.\nToiletries (soap, shampoo, etc.)\nAny personal items you may need\nEnthusiasm to learn and collaborate!"
+    "section": "🏫 Local & Academic Coordinators",
+    "text": "🏫 Local & Academic Coordinators\nLocal Coordinator\n👤 Nipun Batra\n📧 nipun.batra@iitgn.ac.in\nAcademic Coordinator\n👤 Anirban Dasgupta\n📧 anirbandg@iitgn.ac.in"
   },
   {
-    "objectID": "events/acm-summer-2025/selected.html#travel-guidance",
-    "href": "events/acm-summer-2025/selected.html#travel-guidance",
+    "objectID": "events/acm-summer-2025/index.html#topics-covered",
+    "href": "events/acm-summer-2025/index.html#topics-covered",
     "title": "ACM India Summer School 2025: AI for Social Good",
-    "section": "🚆 Travel Guidance",
-    "text": "🚆 Travel Guidance\n\nRailway Stations: Depending on your train, you may be able to choose:\n\nGandhinagar Capital (GNC)\nSabarmati Junction (SBI)\nAhmedabad Junction (ADI)\n\nNearest Airport: Sardar Vallabhbhai Patel International Airport (AMD) (~20 km)\nFrom Ahmedabad, take a cab or bus to IIT Gandhinagar, Palaj Campus\n\n\n🗺️ IIT Gandhinagar Address:\nIndian Institute of Technology Gandhinagar,\nPalaj, Gandhinagar – 382055, Gujarat"
+    "section": "🎯 Topics Covered",
+    "text": "🎯 Topics Covered\n\nAI for Social Good Domains\n\nAI for Healthcare\n\nAI for Sustainability\n\nAI for Agriculture\n\n\n\nTechnical Topics\n\nObject Detection\n\nBandits and Reinforcement Learning\n\nTime Series Modeling\n\nLarge Language Models (LLMs)\n\nFairness & Explainability in AI\n\nSelf-Supervised Learning\n\nBayesian ML\n\nGraph Neural Networks\n\nMultimodal Learning"
   },
   {
-    "objectID": "events/acm-summer-2025/selected.html#faqs",
-    "href": "events/acm-summer-2025/selected.html#faqs",
+    "objectID": "events/acm-summer-2025/index.html#organizers",
+    "href": "events/acm-summer-2025/index.html#organizers",
     "title": "ACM India Summer School 2025: AI for Social Good",
-    "section": "🙋 FAQs",
-    "text": "🙋 FAQs\nQ. Can I arrive a day earlier or stay a day later?\nNo, accommodation is only available from 01 June to 14 June.\nQ. Can I change to another school?\nNo. Once selected, switching is not allowed.\nQ. Will I get a certificate?\nYes. Full attendance is required for certification.\nQ. What if I have dietary restrictions? Please inform us in advance. We will do our best to accommodate your needs. We will be sharing a form for this."
+    "section": "Organizers",
+    "text": "Organizers\n\nDr. Anirban Dasgupta, IIT Gandhinagar (Professor)\nDr. Nipun Batra, IIT Gandhinagar (Professor)\n\nAyush Shrivastava, IIT Gandhinagar\n\nAbhay Pisharodi, IIT Gandhinagar\n\nDiya Thakor, IIT Gandhinagar\n\nRatnesh Pasi, IIT Gandhinagar\n\nRaviraj Sukhadiya, IIT Gandhinagar\n\nRishabh Mondal, IIT Gandhinagar\nSuruchi Hardaha, IIT Gandhinagar\nVinayak Rana, IIT Gandhinagar"
   },
   {
-    "objectID": "events/acm-summer-2025/selected.html#contact",
-    "href": "events/acm-summer-2025/selected.html#contact",
+    "objectID": "events/acm-summer-2025/index.html#prerequisites",
+    "href": "events/acm-summer-2025/index.html#prerequisites",
     "title": "ACM India Summer School 2025: AI for Social Good",
-    "section": "✉️ Contact",
-    "text": "✉️ Contact\nFeel free to reach out:\n\nNipun Batra\n\nWe look forward to welcoming you to IIT Gandhinagar!"
+    "section": "📖 Prerequisites",
+    "text": "📖 Prerequisites\nStudents should have prior knowledge of:\n- Machine Learning\n- Probability, Statistics & Data Visualization\n- Basics of Computer Vision & NLP"
   },
   {
-    "objectID": "events/acm-summer-2025/speakers.html",
-    "href": "events/acm-summer-2025/speakers.html",
-    "title": "Speakers – ACM India Summer School 2025",
+    "objectID": "events/acm-summer-2025/index.html#software-requirements",
+    "href": "events/acm-summer-2025/index.html#software-requirements",
+    "title": "ACM India Summer School 2025: AI for Social Good",
+    "section": "🖥 Software Requirements",
+    "text": "🖥 Software Requirements\n\nPython"
+  },
+  {
+    "objectID": "events/acm-summer-2025/index.html#applying-for-the-summer-schools",
+    "href": "events/acm-summer-2025/index.html#applying-for-the-summer-schools",
+    "title": "ACM India Summer School 2025: AI for Social Good",
+    "section": "📌 Applying for the Summer Schools",
+    "text": "📌 Applying for the Summer Schools\nThe application fee for this school program is ₹150 + 18% GST.\nYou can give first and second preference in the application form.\nAll payments are non-refundable. Please apply after careful consideration since demand is high and seats are limited.\n👉 Apply for the Summer Schools 2025 here\n\n📅 Important Dates\n\nLast date for application 🗓️ Sunday, April 13, 2025 (1159 PM IST)\n\nAnnouncement of selections 🗓️ Wednesday, April 23, 2025\n\nPayment of fees by selected students\n🗓️ Wednesday, April 30, 2025"
+  },
+  {
+    "objectID": "events/acm-summer-2025/index.html#selection-registration",
+    "href": "events/acm-summer-2025/index.html#selection-registration",
+    "title": "ACM India Summer School 2025: AI for Social Good",
+    "section": "📝 Selection & Registration",
+    "text": "📝 Selection & Registration\n\nSelection Based on data submitted in the application. Selected students will be notified by email.\n\nRegistration Only selected students must pay non-refundable fees (₹3000 + 18% GST) which includes lodging and boarding at the venue.\n\nA non-shareable payment link will be sent to selected students.\n\nOnce selected to a school, you cannot switch to another.\n\nEnsure you pay and register to be fair to those not selected."
+  },
+  {
+    "objectID": "events/acm-summer-2025/index.html#ℹ-general-information",
+    "href": "events/acm-summer-2025/index.html#ℹ-general-information",
+    "title": "ACM India Summer School 2025: AI for Social Good",
+    "section": "ℹ️ General Information",
+    "text": "ℹ️ General Information\n\nThe schools will be in-person only.\n\nSelected students must arrange travel on their own.\n\nNo travel support is provided.\n\nEach day includes lectures + hands-on tutorials.\n\nSome schools may host industry sessions on career opportunities.\n\nTop students may receive internship opportunities and an all-expense-paid trip to 🏆 ACM India ARCS Symposium & Annual Event 2026\n📍 IIT Hyderabad, Feb–Mar 2026"
+  },
+  {
+    "objectID": "events/acm-summer-2025/index.html#schedule",
+    "href": "events/acm-summer-2025/index.html#schedule",
+    "title": "ACM India Summer School 2025: AI for Social Good",
+    "section": "📅 Schedule",
+    "text": "📅 Schedule\n👉 Click here for the detailed schedule"
+  },
+  {
+    "objectID": "events/acm-summer-2025/schedule.html",
+    "href": "events/acm-summer-2025/schedule.html",
+    "title": "Schedule – ACM India Summer School 2025",
     "section": "",
-    "text": "Overview Schedule Selected Participants Speakers\n\n\n🎤 ACM India Summer School 2025 – Speakers\n📍 IIT Gandhinagar | 📆 02–13 June 2025\n\n\nProf. Rajat Moona\nDirector, IIT Gandhinagar\nOpening the summer school with welcome remarks.\n\n\n\nProf. Anirban Dasgupta\nProfessor, IIT Gandhinagar\nCo-coordinator. Focuses on algorithmic foundations of ML, fairness, and networks.\n\n\n\nProf. Nipun Batra\nAssociate Professor, IIT Gandhinagar\nCo-coordinator. Works on AI for sustainability, air quality, and smart sensing.\n\n\n\nDr. Venkat Padmanabhan\nDeputy Managing Director, Microsoft Research India\nKeynote speaker. Leader in mobile systems and AI for societal impact.\n\n\n\nDr. Manish Gupta\nDirector, Google DeepMind India\nKeynote speaker. Focused on ML at scale and social impact applications.\n\n\n\nDr. Jigar Doshi\nTalks on AI for public health, agriculture, and climate sustainability.\n\n\n\nDr. Prasant Misra\nPrincipal Scientist, TCS Research\nExpert in mobile sensing and information processing at scale.\n\n\n\nDr. Shailesh Deshpande\nScientist, TCS Research\nRemote sensing expert; also conducting optimization labs.\n\n\n\nProf. Udit Bhatia\nAssistant Professor, IIT Gandhinagar\nExpert in physics-guided ML, floods, and networked infrastructure.\n\n\n\nProf. Shanmuganathan Raman\nProfessor, IIT Gandhinagar\nSpecializes in vision-based AI including pose estimation.\n\n\n\nProf. Krishna Prasad\nAssociate Professor, IIT Gandhinagar\nResearches Brain-Computer Interfaces and neuro-AI.\n\n\n\nProf. Manisha Padala\nAssistant Professor, IIT Gandhinagar\nWorks on fairness in federated learning and adversarial ML.\n\n\n\nDr. Vaibhav Rajan\nScientist, Google DeepMind\nTalks on ML for personalized cancer treatment and biomedical AI.\n\n\n\nProf. Sayan Ranu\nProfessor, IIT Delhi\nWorks on graph neural networks, GNN condensation, and pollution monitoring.\n\n\n\nDr. Mohit Jain\nResearcher, Microsoft Research India\nFocuses on HCI and AI applications in healthcare and inclusion.\n\n\n\nProf. Pallavi Bharadwaj\nAssistant Professor, IIT Gandhinagar\nWorks on sustainable mobility and electric vehicles.\n\n\n\nProf. Yogesh Kumar Meena\nAssistant Professor, IIT Gandhinagar\nSpecialist in accessibility technologies and inclusive design.\n\n\n\nProf. Vaibhav Tripathi\nAssistant Professor, IIT Gandhinagar\nExplores connectome-based predictive modeling and brain imaging.\n\n\n\nDr. Rishiraj Adhikary / Niladri\nJio Platforms\nTalk on AI-driven solutions (exact topic TBD).\n\n\n\nAlok Talekar\nResearcher, Google DeepMind India\nLectures and labs on advanced AI techniques (topics TBD).\n\n\n\nProf. Manish Jain\nProfessor, IIT Gandhinagar (CCL Lab)\nTeaches on meta-learning and “learning to learn.”\n\n\n\nProf. Tavpritesh Sethi\nAssociate Professor, IIIT Delhi\nCausal modeling and AI for health system preparedness.\n\n\n\nDr. Bimal\nISRO SAC\nTalk on satellite applications (topic TBD).\n\n(More speaker details will be added as confirmed.)"
+    "text": "Overview Schedule Selected Participants Speakers"
   },
   {
-    "objectID": "meetings.html",
-    "href": "meetings.html",
-    "title": "Meetings",
+    "objectID": "events/acm-summer-2025/schedule.html#iit-gandhinagar-0213-june-2025-download-schedule",
+    "href": "events/acm-summer-2025/schedule.html#iit-gandhinagar-0213-june-2025-download-schedule",
+    "title": "Schedule – ACM India Summer School 2025",
+    "section": "📍 IIT Gandhinagar | 📆 02–13 June 2025 | 📄 Download Schedule",
+    "text": "📍 IIT Gandhinagar | 📆 02–13 June 2025 | 📄 Download Schedule"
+  },
+  {
+    "objectID": "index.html#funding-organisations",
+    "href": "index.html#funding-organisations",
+    "title": "Sustainability Lab",
+    "section": "Funding Organisations",
+    "text": "Funding Organisations"
+  },
+  {
+    "objectID": "index.html#join-us",
+    "href": "index.html#join-us",
+    "title": "Sustainability Lab",
+    "section": "Join Us",
+    "text": "Join Us\n\nEmbark on a journey to drive innovation in sustainability with our lab! Apply Now"
+  },
+  {
+    "objectID": "technical-background.html",
+    "href": "technical-background.html",
+    "title": "Technical Background",
     "section": "",
-    "text": "Whole Group Meetings\nWe typically meet once a week for about 45-50 mins. We usually cover a variety of topics, including: - Short updates from each person on their progress - Discussion of any issues that have come up - Presentations on topics/tools of interest to the group - Paper discussions\nWe expect students to volunteer to present on topics of interest to them. We also expect students to volunteer to present on papers.\n\n\nProject Meetings\nThe project meetings are tied to specific projects. We typically start with discussing the last meeting’s action items, then discuss any issues that have come up, and then discuss the next steps. The lead student on the project is responsible for setting the agenda and running the meeting. The lead student is also responsible for taking notes and posting them on the project’s repository.\n\n\nIndividual Meetings\n\nRefer to https://github.com/jbhuang0604/awesome-tips"
+    "text": "Git and GitHub\nThere are a ton of good resorces on Git and Github. I’m linking two such resources here: - YouTube video by Kevin Stratvert - Github skills\n\n\nPython Data Science Stack\n\nWe recommend students to study the Python for Data Science Handbook by Jake VanderPlas. It is a free online book that covers the basics of Python, NumPy, Pandas, Matplotlib, and Scikit-Learn. It is a great resource for beginners and intermediate students alike.\nWe recommend students regularly hone their skills solving exercises such as 100 Numpy exercises. Given that much of our work is in Torch-like frameworks, the students would also benefit by attempting to solve the exercises using PyTorch.\n\n\n\nObject-Oriented Programming in Python\nRealPython has a nice tutorial on Object-Oriented Programming in Python. We recommend students to go through the tutorial. They also have a corresponding video page.\n\n\nLaTeX\nWe typically use LaTeX for writing reports and papers. We recommend students to use Overleaf for students to get started. Overleaf has a nice 30 minute tutorial that covers the basics of LaTeX. We highly recommend students to go through the tutorial.\n\n\nCreating a Website and Blog\nWe highly recommend students create a simple website and a blog. We have been happily using Quarto for our website and blog. You may see in action in Nipun’s website and corresponding GitHub repo here; and Nipun’s blog and corresponding Github repo here.\nBoth of these are built via Github actions. Feel free to reuse these for creating your own website and blog. We will be happy to help you get started."
+  },
+  {
+    "objectID": "computational-resources.html",
+    "href": "computational-resources.html",
+    "title": "Lab Resources",
+    "section": "",
+    "text": "IIT Gandhinagar has a number of computational resources available for research and teaching purposes. Aside from it, the department also has a number of workstations available for students and faculty members.\nThe following is the list of computational resources in our lab apart from the institute and departmental resources.\n\n\nOur servers are named after great mathematicians/scientists:\n\nRamanujan (रामानुजन): Srinivasa Ramanujan made groundbreaking contributions to number theory.\nBhaskar (भास्कर): Bhaskar (aka Bhaskar II) is known for his work Siddhānta Shiromani (सिद्धांत शिरोमणि) which includes advances in algebra, calculus, and astronomy.\nAryabhata (आर्यभट): Aryabhata is well-known for inventing the concept of zero (शून्य) and the place value system. He is also said to be one of the faculty members of the famous Nalanda University (नालंदा विद्यालय).\n\n\n\n\n\n\nRamanujan\n\n\nBhaskar\n\n\nSustain\n\n\n\n\nRAM\n\n\n512 GB (16 x 32GB)\n\n\n256 GB (4 x 64GB)\n\n\n192 GB (6 x 32GB)\n\n\n\n\nCPU\n\n\nAMD EPYC 7452 32-Core Processor @ 2.30 GHz\n\n\nIntel Gold ICX 6326 @ 2.90 GHz\n\n\nIntel(R) Xeon(R) Silver 4208 CPU @ 2.10GHz\n\n\n\n\nStorag\n\n\n8 TB\n\n\n5 TB\n\n\n2 TB\n\n\n\n\nNumber of CPUs\n\n\n64\n\n\n32\n\n\n16\n\n\n\n\nGPU\n\n\n4 x NVIDIA A100-SXM4 (80GB)\n\n\n2 x NVIDIA RTX A5000 (24GB)\n\n\n2 x NVIDIA RTX A4000 (16GB)\n\n\n\n\nTotal VRAM\n\n\n320 GB\n\n\n48 GB\n\n\n32 GB\n\n\n\n\n\n\n\n\n\n\n\n\n\nAryabhata\n\n\nVikram\n\n\n\n\nRAM\n\n\n32 GB\n\n\n64 GB\n\n\n\n\nCPU\n\n\nIntel Core i9-13900\n\n\nIntel Core i9-14700\n\n\n\n\nStorage\n\n\n2 TB\n\n\n4 TB\n\n\n\n\nNumber of CPUs\n\n\n24\n\n\n32\n\n\n\n\nGPU\n\n\n1 x NVIDIA RTX Titan XP (12 GB)\n\n\n1 x NVIDIA RTX A2000 (12 GB)\n\n\n\n\nTotal VRAM\n\n\n12 GB\n\n\n12 GB"
+  },
+  {
+    "objectID": "computational-resources.html#computational-resources",
+    "href": "computational-resources.html#computational-resources",
+    "title": "Lab Resources",
+    "section": "",
+    "text": "IIT Gandhinagar has a number of computational resources available for research and teaching purposes. Aside from it, the department also has a number of workstations available for students and faculty members.\nThe following is the list of computational resources in our lab apart from the institute and departmental resources.\n\n\nOur servers are named after great mathematicians/scientists:\n\nRamanujan (रामानुजन): Srinivasa Ramanujan made groundbreaking contributions to number theory.\nBhaskar (भास्कर): Bhaskar (aka Bhaskar II) is known for his work Siddhānta Shiromani (सिद्धांत शिरोमणि) which includes advances in algebra, calculus, and astronomy.\nAryabhata (आर्यभट): Aryabhata is well-known for inventing the concept of zero (शून्य) and the place value system. He is also said to be one of the faculty members of the famous Nalanda University (नालंदा विद्यालय).\n\n\n\n\n\n\nRamanujan\n\n\nBhaskar\n\n\nSustain\n\n\n\n\nRAM\n\n\n512 GB (16 x 32GB)\n\n\n256 GB (4 x 64GB)\n\n\n192 GB (6 x 32GB)\n\n\n\n\nCPU\n\n\nAMD EPYC 7452 32-Core Processor @ 2.30 GHz\n\n\nIntel Gold ICX 6326 @ 2.90 GHz\n\n\nIntel(R) Xeon(R) Silver 4208 CPU @ 2.10GHz\n\n\n\n\nStorag\n\n\n8 TB\n\n\n5 TB\n\n\n2 TB\n\n\n\n\nNumber of CPUs\n\n\n64\n\n\n32\n\n\n16\n\n\n\n\nGPU\n\n\n4 x NVIDIA A100-SXM4 (80GB)\n\n\n2 x NVIDIA RTX A5000 (24GB)\n\n\n2 x NVIDIA RTX A4000 (16GB)\n\n\n\n\nTotal VRAM\n\n\n320 GB\n\n\n48 GB\n\n\n32 GB\n\n\n\n\n\n\n\n\n\n\n\n\n\nAryabhata\n\n\nVikram\n\n\n\n\nRAM\n\n\n32 GB\n\n\n64 GB\n\n\n\n\nCPU\n\n\nIntel Core i9-13900\n\n\nIntel Core i9-14700\n\n\n\n\nStorage\n\n\n2 TB\n\n\n4 TB\n\n\n\n\nNumber of CPUs\n\n\n24\n\n\n32\n\n\n\n\nGPU\n\n\n1 x NVIDIA RTX Titan XP (12 GB)\n\n\n1 x NVIDIA RTX A2000 (12 GB)\n\n\n\n\nTotal VRAM\n\n\n12 GB\n\n\n12 GB"
+  },
+  {
+    "objectID": "computational-resources.html#server-policy",
+    "href": "computational-resources.html#server-policy",
+    "title": "Lab Resources",
+    "section": "Server Policy",
+    "text": "Server Policy\nHow to get access: Send an email to Mr. Raviraj Sukhadiya, keeping Prof. Nipun Batra in cc. Mention the following details in your request: i) server name; ii) purpose for access.\nDon’ts:\n\nDo not use the server for personal use or anything not related to the project. This includes any classwork or homework.\nDo not share your server credentials with anyone else.\n\nFair usage:\n\nSometimes we have multiple projects running on the same server. Please be considerate of other projects and do not use up all the resources.\nSometimes we may allocate specific cores or GPUs to specific projects. Please do not use cores or GPUs that are not allocated to your project."
+  },
+  {
+    "objectID": "openings.html",
+    "href": "openings.html",
+    "title": "Openings",
+    "section": "",
+    "text": "Junior/Senior Research Fellow Opening\nJoin us as a Junior/Senior Research Fellow in the Sustainability Lab! Apply Now\n\n\nSummer Research Intern Opening\nJoin us through the Summer Research Internship Program in the following domains:\n\nAI for Sustainibility\nAI/Sensing for Health\nExposition and Visualisation\n\nFind our projects labelled: IP0NB0000019 and IP0NB0000020 on IIT Gandhinagar SRIP portal\n\n\n6 months internships\nContact the PI for 6 months internships."
+  },
+  {
+    "objectID": "values.html",
+    "href": "values.html",
+    "title": "Values",
+    "section": "",
+    "text": "Less but better: Publish one less paper, but make the ones you publish really strong. Show one less result in the meeting, but thoroughly analyse the ones you show."
+  },
+  {
+    "objectID": "members.html#faculty",
+    "href": "members.html#faculty",
+    "title": "Lab Members",
+    "section": "Faculty",
+    "text": "Faculty\n  \n\nProf. Nipun Batra\n\nNipun Batra is an Associate Professor of Computer Science at IIT Gandhinagar. He completed his postdoctoral research at the University of Virginia and earned his PhD from IIIT Delhi. His research group focuses on utilizing machine learning and sensing technologies to address computational sustainability challenges, particularly in smart buildings, air quality, and healthcare."
+  },
+  {
+    "objectID": "members.html#phd",
+    "href": "members.html#phd",
+    "title": "Lab Members",
+    "section": "PhD",
+    "text": "PhD\n\n\n\n   Zeel B Patel(Jan 2020 - present)\n\n\n   Rishabh Mondal(Jun 2023 - present)\n\n\n   Ayush Srivastava(Jul 2024 - present)\n\n\n   Ujjwal K. Gupta(Jul 2024 - present)"
+  },
+  {
+    "objectID": "members.html#mtech",
+    "href": "members.html#mtech",
+    "title": "Lab Members",
+    "section": "MTech",
+    "text": "MTech\n\n\n\n Poornima Bhatia(Jul 2023 - present)\n\n\n Prince Kumar(Jul 2023 - present)\n\n\n Shataxi Dubey(Jul 2023 - present)\n\n\n Abhay Pisharodi(Jul 2024 - present)\n\n\n\n\n Abhyudaya Nair(Jul 2024 - present)\n\n\n Diya Thakor(Jul 2024 - present)\n\n\n Vinayak Rana(Jul 2024 - present)\n\n\n Suruchi Hardaha(Jul 2024 - present)"
+  },
+  {
+    "objectID": "members.html#junior-research-fellows",
+    "href": "members.html#junior-research-fellows",
+    "title": "Lab Members",
+    "section": "Junior Research Fellows",
+    "text": "Junior Research Fellows\n\n\n\n Tanu Tiwari(Oct 2024 - present)\n\n\n Meenakshi Prakash(Jan 2025 - Present)"
+  },
+  {
+    "objectID": "members.html#group-photos",
+    "href": "members.html#group-photos",
+    "title": "Lab Members",
+    "section": "Group Photos",
+    "text": "Group Photos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSustainability Lab at ACM Compass’24, IIIT Delhi\n\n\nJul 2024\n\n\n\n\n\n\n\nLab dinner with Batch of 2024\n\n\nMay 2024\n\n\n\n\n\n\n\nAlums from 2022 batch Harsh, Hetvi and Palak visited us\n\n\nJan 2024\n\n\n\n\n\n\n\nStudents working with us in the Fall 2023 semester\n\n\nNov 2023\n\n\n\n\n\n\n\nAfter the 2023 batch convocation (and celebration of multiple awards!)\n\n\nJuly 2023\n\n\n\n\n\n\n\nLab dinner with Batch of 2023\n\n\nMay 2023\n\n\n\n\n\n\n\nBatch of 2023 :Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam\n\n\nMay 2023\n\n\n\n\n\n\n\nWith a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)\n\n\nJuly 2022\n\n\n\n\n  Previous    Next"
+  },
+  {
+    "objectID": "reading.html",
+    "href": "reading.html",
+    "title": "Reading Group",
+    "section": "",
+    "text": "Pending Reading List\n\n\n\n\n\nLeveraging Language Foundation Models for Human Mobility Forecasting\n\n\n“It Is a Moving Process’’: Understanding the Evolution of Explainability Needs of Clinicians in Pulmonary Medicine\n\n\n\n\n\nDeep Bayesian Active Learning for Accelerating Stochastic Simulation\n\n\nActive Learning on a Budget: Opposite Strategies Suit High and Low Budgets\n\n\n\n\n\nDeep Distributed Fusion Network for Air Quality Prediction\n\n\nGenerating Interpretable Poverty Maps using Object Detection in Satellite Images\n\n\n\n\n\nNone"
+  },
+  {
+    "objectID": "reading.html#section",
+    "href": "reading.html#section",
+    "title": "Reading Group",
+    "section": "2024",
+    "text": "2024\n\nJune\n\n\n\n\nCategory\n\n\nPresenter/Date\n\n\nTopics\n\n\n\n\n\n\nSelf Supervised Learning\n\n\nRishabh Mondal[21-Jun-2024]\n\n\nLow-Res Leads the Way: Improving Generalization for Super-Resolution by Self-Supervised Learning\n\n\n\n\nAir Quality\n\n\nDevodita Chakravarty[20-Jun-2024]\n\n\nPredicting air quality via multimodal AI and satellite imagery\n\n\n\n\nHealth Sensing\n\n\nMohit Maurya[19-Jun-2024]\n\n\nBreathPro: Monitoring Breathing Mode during Running with Earables\n\n\n\n\nMock Defence\n\n\nSuraj Jaiswal[17-Jun-2024]\n\n\nLarge Scale Brick Kiln Detection and Compliance Monitoring from Satellite Imagery\n\n\n\n\nAyush Shrivastava[11-Jun-2024]\n\n\nSensing Respiration and Sleep Apnea using Thermal Imaging in Real World Conditions\n\n\n\n\nActive Learning\n\n\nShataxi Dubey[13-Jun-2024]\n\n\nActive Learning for Deep detection neural networks\n\n\n\n\nObject Detection\n\n\nShiva Singh[12-Jun-2024]\n\n\nDomain Adversarial Training of Neural Networks\n\n\n\n\nVansh Jani[12-Jun-2024]\n\n\nObject Detection with Self-supervised Scene Adaptation\n\n\n\n\n\n\nMay\n\n\n\n\nCategory\n\n\nPresenter\n\n\nTopics\n\n\n\n\n\n\nHealth\n\n\nRishiraj Adhikary[23-May-2024]\n\n\nLarge Language Models are Few-Shot Health Learners\n\n\n\n\n[Thesis Presentaion] Exploring Health and Wellness through Respiratory Sensing\n\n\n\n\nLarge Language Models\n\n\nSajay Raj and Muhammad Zaid[20-May-2024]\n\n\nZero-shot, Few-shot and Finetuning LLMs today for a few tasks\n\n\n\n\nObject Detection\n\n\nVansh Jani[17-May-2024]\n\n\nYou Only Look Once: Unified, Real-Time Object Detection"
+  },
+  {
+    "objectID": "lab-handbook.html",
+    "href": "lab-handbook.html",
+    "title": "Lab-Handbook",
+    "section": "",
+    "text": "IIT Gandhinagar has a number of computational resources available for research and teaching purposes. Aside from it, the department also has a number of workstations available for students and faculty members.\nThe following is the list of computational resources in our lab apart from the institute and departmental resources.\n\n\nOur servers are named after great mathematicians/scientists:\n\nRamanujan (रामानुजन): Srinivasa Ramanujan made groundbreaking contributions to number theory.\nBhaskar (भास्कर): Bhaskar (aka Bhaskar II) is known for his work Siddhānta Shiromani (सिद्धांत शिरोमणि) which includes advances in algebra, calculus, and astronomy.\nAryabhata (आर्यभट): Aryabhata is well-known for inventing the concept of zero (शून्य) and the place value system. He is also said to be one of the faculty members of the famous Nalanda University (नालंदा विद्यालय).\n\n\n\n\n\n\nRamanujan\n\n\nBhaskar\n\n\nSustain\n\n\n\n\nRAM\n\n\n512 GB (16 x 32GB)\n\n\n256 GB (4 x 64GB)\n\n\n192 GB (6 x 32GB)\n\n\n\n\nCPU\n\n\nAMD EPYC 7452 32-Core Processor @ 2.30 GHz\n\n\nIntel Gold ICX 6326 @ 2.90 GHz\n\n\nIntel(R) Xeon(R) Silver 4208 CPU @ 2.10GHz\n\n\n\n\nStorag\n\n\n8 TB\n\n\n5 TB\n\n\n2 TB\n\n\n\n\nNumber of CPUs\n\n\n64\n\n\n32\n\n\n16\n\n\n\n\nGPU\n\n\n4 x NVIDIA A100-SXM4 (80GB)\n\n\n2 x NVIDIA RTX A5000 (24GB)\n\n\n2 x NVIDIA RTX A4000 (16GB)\n\n\n\n\nTotal VRAM\n\n\n320 GB\n\n\n48 GB\n\n\n32 GB\n\n\n\n\n\n\n\n\n\n\n\n\n\nAryabhata\n\n\nVikram\n\n\n\n\nRAM\n\n\n32 GB\n\n\n64 GB\n\n\n\n\nCPU\n\n\nIntel Core i9-13900\n\n\nIntel Core i9-14700\n\n\n\n\nStorage\n\n\n2 TB\n\n\n4 TB\n\n\n\n\nNumber of CPUs\n\n\n24\n\n\n32\n\n\n\n\nGPU\n\n\n1 x NVIDIA RTX Titan XP (12 GB)\n\n\n1 x NVIDIA RTX A2000 (12 GB)\n\n\n\n\nTotal VRAM\n\n\n12 GB\n\n\n12 GB"
+  },
+  {
+    "objectID": "lab-handbook.html#computational-resources",
+    "href": "lab-handbook.html#computational-resources",
+    "title": "Lab-Handbook",
+    "section": "",
+    "text": "IIT Gandhinagar has a number of computational resources available for research and teaching purposes. Aside from it, the department also has a number of workstations available for students and faculty members.\nThe following is the list of computational resources in our lab apart from the institute and departmental resources.\n\n\nOur servers are named after great mathematicians/scientists:\n\nRamanujan (रामानुजन): Srinivasa Ramanujan made groundbreaking contributions to number theory.\nBhaskar (भास्कर): Bhaskar (aka Bhaskar II) is known for his work Siddhānta Shiromani (सिद्धांत शिरोमणि) which includes advances in algebra, calculus, and astronomy.\nAryabhata (आर्यभट): Aryabhata is well-known for inventing the concept of zero (शून्य) and the place value system. He is also said to be one of the faculty members of the famous Nalanda University (नालंदा विद्यालय).\n\n\n\n\n\n\nRamanujan\n\n\nBhaskar\n\n\nSustain\n\n\n\n\nRAM\n\n\n512 GB (16 x 32GB)\n\n\n256 GB (4 x 64GB)\n\n\n192 GB (6 x 32GB)\n\n\n\n\nCPU\n\n\nAMD EPYC 7452 32-Core Processor @ 2.30 GHz\n\n\nIntel Gold ICX 6326 @ 2.90 GHz\n\n\nIntel(R) Xeon(R) Silver 4208 CPU @ 2.10GHz\n\n\n\n\nStorag\n\n\n8 TB\n\n\n5 TB\n\n\n2 TB\n\n\n\n\nNumber of CPUs\n\n\n64\n\n\n32\n\n\n16\n\n\n\n\nGPU\n\n\n4 x NVIDIA A100-SXM4 (80GB)\n\n\n2 x NVIDIA RTX A5000 (24GB)\n\n\n2 x NVIDIA RTX A4000 (16GB)\n\n\n\n\nTotal VRAM\n\n\n320 GB\n\n\n48 GB\n\n\n32 GB\n\n\n\n\n\n\n\n\n\n\n\n\n\nAryabhata\n\n\nVikram\n\n\n\n\nRAM\n\n\n32 GB\n\n\n64 GB\n\n\n\n\nCPU\n\n\nIntel Core i9-13900\n\n\nIntel Core i9-14700\n\n\n\n\nStorage\n\n\n2 TB\n\n\n4 TB\n\n\n\n\nNumber of CPUs\n\n\n24\n\n\n32\n\n\n\n\nGPU\n\n\n1 x NVIDIA RTX Titan XP (12 GB)\n\n\n1 x NVIDIA RTX A2000 (12 GB)\n\n\n\n\nTotal VRAM\n\n\n12 GB\n\n\n12 GB"
+  },
+  {
+    "objectID": "lab-handbook.html#values",
+    "href": "lab-handbook.html#values",
+    "title": "Lab-Handbook",
+    "section": "Values",
+    "text": "Values\nLess but better: Publish one less paper, but make the ones you publish really strong. Show one less result in the meeting, but thoroughly analyse the ones you show."
+  },
+  {
+    "objectID": "lab-handbook.html#expectations",
+    "href": "lab-handbook.html#expectations",
+    "title": "Lab-Handbook",
+    "section": "Expectations",
+    "text": "Expectations\nHard work: We are often working on cutting-edge research. This means that there is no clear path to success. We will have to try different things, and we will fail often. This is part of the process. I expect my students to work hard, and I expect them to be resilient.\nConsistency: We do expect some seasonal variation in productivity. However, often the difference between a good and great project is the consistency of effort.\nStriving for excellence: Often, the difference between a good and great project (or paper) is the last 10% of effort. I try to push my students to go the extra mile, and I expect the same from myself. This goes in various aspects of work, including writing, coding, and data analysis. As an example, I remember doing ten rounds of feedback with an undergraduate student from the group on their presentation for a conference. It was a lot of work, but the student ended up getting offers (higher studies) after the talk; and the student was appreciated by the session chair - “It is hard to believe that you are an undergraduate student”.\nClear, honest communication I try to be as clear as possible in my communication, and I expect the same from my students. I also expect my students to be honest with me. If you are struggling with something, let me know. If you are not interested in a project, let me know. If you are not happy with something, let me know. I you are unable to meet a deadline, let me know. Lack of communication is counterproductive.\nI also typically want to help create a path for my students to achieve their goals. Thus, I expect my students to be clear about their goals, or be proactive in discussing their goals with me.\nCulture of respect and collaboration: I expect my students to be respectful to each other, and to other members of the community. I also expect my students to be collaborative. This means that they should be willing to help each other, and to help other members of the community."
+  },
+  {
+    "objectID": "lab-handbook.html#meetings",
+    "href": "lab-handbook.html#meetings",
+    "title": "Lab-Handbook",
+    "section": "Meetings",
+    "text": "Meetings\nWhole Group Meetings: We typically meet once a week for about 45-50 mins. We usually cover a variety of topics, including: - Short updates from each person on their progress - Discussion of any issues that have come up - Presentations on topics/tools of interest to the group - Paper discussions\nWe expect students to volunteer to present on topics of interest to them. We also expect students to volunteer to present on papers. To know more about what gets discussed in our group meetings please visit our Reading Page.\nProject Meetings: The project meetings are tied to specific projects. We typically start with discussing the last meeting’s action items, then discuss any issues that have come up, and then discuss the next steps. The lead student on the project is responsible for setting the agenda and running the meeting. The lead student is also responsible for taking notes and posting them on the project’s repository.\nIndividual Meetings: Please refer to this material"
+  },
+  {
+    "objectID": "lab-handbook.html#letter-of-recommendations",
+    "href": "lab-handbook.html#letter-of-recommendations",
+    "title": "Lab-Handbook",
+    "section": "Letter of Recommendations",
+    "text": "Letter of Recommendations\nPlease this beautiful blogpost from Gautam Kamath. How to ask for LOR article by Gautam Kamath"
+  },
+  {
+    "objectID": "lab-handbook.html#server-policy",
+    "href": "lab-handbook.html#server-policy",
+    "title": "Lab-Handbook",
+    "section": "Server Policy",
+    "text": "Server Policy\nHow to get access: Send an email to Mr. Raviraj Sukhadiya, keeping Prof. Nipun Batra in cc. Mention the following details in your request: i) server name; ii) purpose for access.\nDon’ts:\n\nDo not use the server for personal use or anything not related to the project. This includes any classwork or homework.\nDo not share your server credentials with anyone else.\n\nFair usage:\n\nSometimes we have multiple projects running on the same server. Please be considerate of other projects and do not use up all the resources.\nSometimes we may allocate specific cores or GPUs to specific projects. Please do not use cores or GPUs that are not allocated to your project."
+  },
+  {
+    "objectID": "lab-handbook.html#communicating-research",
+    "href": "lab-handbook.html#communicating-research",
+    "title": "Lab-Handbook",
+    "section": "Communicating Research",
+    "text": "Communicating Research\n\nWriting Papers\nPaper writing is a key part of research. This page contains some tips and tricks for writing papers. Paper writing is a skill that you will develop over time. But, it needs deliberate practice.\nPaper structure and Abstract: I gave a talk (recording here, slides here) on how to write a paper. I recommend watching it. Other materials from the talk are available here.\nLaTeXify figures: We’d suggest using this latexification tool to make the matplotlib figures publication-ready. It helps in the following aspects:\n\nIt helps in setting the exact size of the figure relative to the column width or page width of the paper. After using this tool, manually setting the size within the \\begin{figure} block is rarely needed.\nWe can set the font size relative to the text font size in the paper to ensure fonts are not too small or too big.\nIt converts the fonts into latex fonts so that the fonts in the figures do not look different from the main text font.\n\n\nTip: You can find page width and column width with \\the\\textwidth and \\the\\columnwidth commands, respectively.\n\nSelf-contained figures and tables (and captions)\nTables: We follow this excellent small guide to making nice tables by Markus Püschel.\nComments in LaTeX: We typically create a macro corresponding to different author initials (I use \\nb for example) and then use that to create comments in the text. This is useful for commenting on the text, or for leaving notes to yourself. For example, I might write \\nb{I'm not sure about this sentence} and then I can search for all instances of \\nb to find all of my comments.\n\\newcommand{\\nb}[1]{{\\color{red}\\small \\iftoggle{hide}{}{\\textbf{Nipun's comment:} #1}}}\nAmerican v/s British English: There are a few differences in spelling between American and British English. For example, the word “colour” in British English is spelled “color” in American English. The word “optimise” in British English is spelled “optimize” in American English. There are also some differences in grammar. I recommend picking one and sticking to it. Most of our previous papers have used British English (but often this depends on the set of co-authors).\nGrammarly and other AI tools: I recommend students use Grammarly (or a similar) tool to check their writing once they have done a complete pass of editing. I do not recommend relying a lot on ChatGPT-like tools for writing papers as they can often lead to “correct” sounding but “incorrect” sentences.\n\n\nPoster\nIn some venues, the main presentation format is a poster. Posters are a great way to present your work in a visual format, and to have one-on-one conversations with people who are interested in your work.\nOne common mistake people make while making posters is to try to cram in too much information. Remember that the poster is to supplement you and not to replace you.\nPlease see below for two posters that we have made in the past.\n\nSample Poster 1\n\n\n\n\nSample Poster 2\n\n\nPlease find the presentation files corresponding to the first poster 1. Apple Keynote\n\nMS Powerpoint\nGoogle Slides\n\nLaTeX users can use the following templates on Overleaf to make their posters."
+  },
+  {
+    "objectID": "lab-handbook.html#technical-background",
+    "href": "lab-handbook.html#technical-background",
+    "title": "Lab-Handbook",
+    "section": "Technical Background",
+    "text": "Technical Background\nGit and GitHub: There are a ton of good resorces on Git and Github. I’m linking two such resources here:\n\nYouTube video by Kevin Stratvert\nGithub skills\n\nPython Data Science Stack:\n\nWe recommend students to study the Python for Data Science Handbook by Jake VanderPlas. It is a free online book that covers the basics of Python, NumPy, Pandas, Matplotlib, and Scikit-Learn. It is a great resource for beginners and intermediate students alike.\nWe recommend students regularly hone their skills solving exercises such as 100 Numpy exercises. Given that much of our work is in Torch-like frameworks, the students would also benefit by attempting to solve the exercises using PyTorch.\n\nObject-Oriented Programming in Python: RealPython has a nice tutorial on Object-Oriented Programming in Python. We recommend students to go through the tutorial. They also have a corresponding video page.\nLaTeX: We typically use LaTeX for writing reports and papers. We recommend students to use Overleaf for students to get started. Overleaf has a nice 30 minute tutorial that covers the basics of LaTeX. We highly recommend students to go through the tutorial.\nCreating a Website and Blog: We highly recommend students create a simple website and a blog. We have been happily using Quarto for our website and blog. You may see in action in Nipun’s website and corresponding GitHub repo here; and Nipun’s blog and corresponding Github repo here.\nBoth of these are built via Github actions. Feel free to reuse these for creating your own website and blog. We will be happy to help you get started."
+  },
+  {
+    "objectID": "media.html",
+    "href": "media.html",
+    "title": "Media Coverage",
+    "section": "",
+    "text": "VayuBuddy project\nOur work, VayuBuddy, has received coverage from various media outlets like Indian Express, Ahmedabad Mirror, Chitralekha and Divya Bhaskar.\n\n\n\n\n\n\n\n\nJoulesEye project\nOur work, JoulesEye, which we collaborated on with Prof Mayank Goel, has received extensive coverage from various media outlets like Hackster.io, Medium, Indian Express, CMU News, Indian Education Dairy, ZME Science, Knowridge, TechXplore, EurekaAlert.\n\n\n\n\n\n\n\n\nUBICOMP Gaetano Borriello Outstanding Student Award\nOur PhD student, Rishiraj Adhikary was a finalist for the UbiComp Gaetano Borriello Outstanding Student Award 2023. Named in honor of the late Gaetano Borriello, this award recognizes “a student who is making outstanding research contributions to, and provides leadership in, the field of Ubiquitous and Pervasive Computing“\n\n\n\n\n\n\n\n\nSpiroMask project\nOur work, SpiroMask was covered comprehensively by The Ahmedabad Mirror on 3rd November 2022. A technical article was also written on EdgeImpulse.\n\n\n\n\n\n\n\n\nPhD student Rishiraj’s Fullbright Nehru Fellowship\nOur PhD student, Rishiraj Adhikary won the prestigious Fullbright Nehru fellowship and visited CMU to work with Prof. Mayank Goel for 9 months. This achievement was covered by the following media channels: Education Times, Indian Express, Ahmedabad Mirror, India Education Diary, Careers 360."
+  },
+  {
+    "objectID": "writing-papers.html",
+    "href": "writing-papers.html",
+    "title": "Writing Papers",
+    "section": "",
+    "text": "Paper writing is a key part of research. This page contains some tips and tricks for writing papers. Paper writing is a skill that you will develop over time. But, it needs deliberate practice.\n\nPaper structure and Abstract\nI gave a talk (recording here, slides here) on how to write a paper. I recommend watching it. Other materials from the talk are available here.\n\n\nLaTeXify figures\nWe’d suggest using this latexification tool to make the matplotlib figures publication-ready. It helps in the following aspects:\n\nIt helps in setting the exact size of the figure relative to the column width or page width of the paper. After using this tool, manually setting the size within the \\begin{figure} block is rarely needed.\nWe can set the font size relative to the text font size in the paper to ensure fonts are not too small or too big.\nIt converts the fonts into latex fonts so that the fonts in the figures do not look different from the main text font.\n\n\nTip: You can find page width and column width with \\the\\textwidth and \\the\\columnwidth commands, respectively.\n\n\n\nSelf-contained figures and tables (and captions)\n\n\nTables\nWe follow this excellent small guide to making nice tables by Markus Püschel.\n\n\nComments in LaTeX\nWe typically create a macro corresponding to different author initials (I use \\nb for example) and then use that to create comments in the text. This is useful for commenting on the text, or for leaving notes to yourself. For example, I might write \\nb{I'm not sure about this sentence} and then I can search for all instances of \\nb to find all of my comments.\n\\newcommand{\\nb}[1]{{\\color{red}\\small \\iftoggle{hide}{}{\\textbf{Nipun's comment:} #1}}}\n\n\nActive v/s Passive Voice\n\n\nAmerican v/s British English\nThere are a few differences in spelling between American and British English. For example, the word “colour” in British English is spelled “color” in American English. The word “optimise” in British English is spelled “optimize” in American English. There are also some differences in grammar. I recommend picking one and sticking to it. Most of our previous papers have used British English (but often this depends on the set of co-authors).\n\n\nPaper timelines\n\n\nGrammarly and other AI tools\nI recommend students use Grammarly (or a similar) tool to check their writing once they have done a complete pass of editing. I do not recommend relying a lot on ChatGPT-like tools for writing papers as they can often lead to “correct” sounding but “incorrect” sentences."
   },
   {
     "objectID": "memories.html",
@@ -504,277 +735,88 @@
     "text": "Nov 2021\n\nApoorv’s “re” visit to the campus (others in frame: Rishiraj and Zeel)\n\n\n\n\nAkshardham visit and dinner\n\n\nGraduating Batch\n\n\nSustainability lab at Curiosity Carnival’25 at IITGN.\n\n\nSustainability lab dinner after Dr. Rishiraj’s successful Phd defence.\n\n\nAlum Meetup Homecoming 2024\n\n\nSustainability lab at ACM Compass’24 at IIIT Delhi\n\n\nAyush and Suraj succesfully defends their Masters Thesis\n\n\nBatch of 2024\n\n\nLab dinner May 2024\n\n\nJan 2024 Alums from 2022 batch Harsh, Hetvi and Palak visited us\n\n\n15 Dec 2023 Prof Mayank Goel from CMU visited sustainability lab\n\n\n15 Nov 2023 Students working with us in the Fall 2023 semester.\n\n\nRishiraj was a finalist in the presitigous Gaetano Borriello Outstanding Student Award at ACM Ubicomp 2023\n\n\n15 Sept 2023 Received the Young Alumni Award from IIIT Delhi.\n\n\nJuly 2023 at the 2023 batch convocation (and celebration of multiple awards!)\n\n\nAnkita winning the Gold Medal for Outstanding Research\n\n\nMay 2023 dinner\n\n\nBatch of 2023 :Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam\n\n\nCake by batch of 2023\n\n\nWith a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)\n\n\nCelebrating AAAI paper acceptance\n\n\nApoorv’s “re” visit to the campus (others in frame: Rishiraj and Zeel)"
   },
   {
-    "objectID": "writing-papers.html",
-    "href": "writing-papers.html",
-    "title": "Writing Papers",
+    "objectID": "meetings.html",
+    "href": "meetings.html",
+    "title": "Meetings",
     "section": "",
-    "text": "Paper writing is a key part of research. This page contains some tips and tricks for writing papers. Paper writing is a skill that you will develop over time. But, it needs deliberate practice.\n\nPaper structure and Abstract\nI gave a talk (recording here, slides here) on how to write a paper. I recommend watching it. Other materials from the talk are available here.\n\n\nLaTeXify figures\nWe’d suggest using this latexification tool to make the matplotlib figures publication-ready. It helps in the following aspects:\n\nIt helps in setting the exact size of the figure relative to the column width or page width of the paper. After using this tool, manually setting the size within the \\begin{figure} block is rarely needed.\nWe can set the font size relative to the text font size in the paper to ensure fonts are not too small or too big.\nIt converts the fonts into latex fonts so that the fonts in the figures do not look different from the main text font.\n\n\nTip: You can find page width and column width with \\the\\textwidth and \\the\\columnwidth commands, respectively.\n\n\n\nSelf-contained figures and tables (and captions)\n\n\nTables\nWe follow this excellent small guide to making nice tables by Markus Püschel.\n\n\nComments in LaTeX\nWe typically create a macro corresponding to different author initials (I use \\nb for example) and then use that to create comments in the text. This is useful for commenting on the text, or for leaving notes to yourself. For example, I might write \\nb{I'm not sure about this sentence} and then I can search for all instances of \\nb to find all of my comments.\n\\newcommand{\\nb}[1]{{\\color{red}\\small \\iftoggle{hide}{}{\\textbf{Nipun's comment:} #1}}}\n\n\nActive v/s Passive Voice\n\n\nAmerican v/s British English\nThere are a few differences in spelling between American and British English. For example, the word “colour” in British English is spelled “color” in American English. The word “optimise” in British English is spelled “optimize” in American English. There are also some differences in grammar. I recommend picking one and sticking to it. Most of our previous papers have used British English (but often this depends on the set of co-authors).\n\n\nPaper timelines\n\n\nGrammarly and other AI tools\nI recommend students use Grammarly (or a similar) tool to check their writing once they have done a complete pass of editing. I do not recommend relying a lot on ChatGPT-like tools for writing papers as they can often lead to “correct” sounding but “incorrect” sentences."
+    "text": "Whole Group Meetings\nWe typically meet once a week for about 45-50 mins. We usually cover a variety of topics, including: - Short updates from each person on their progress - Discussion of any issues that have come up - Presentations on topics/tools of interest to the group - Paper discussions\nWe expect students to volunteer to present on topics of interest to them. We also expect students to volunteer to present on papers.\n\n\nProject Meetings\nThe project meetings are tied to specific projects. We typically start with discussing the last meeting’s action items, then discuss any issues that have come up, and then discuss the next steps. The lead student on the project is responsible for setting the agenda and running the meeting. The lead student is also responsible for taking notes and posting them on the project’s repository.\n\n\nIndividual Meetings\n\nRefer to https://github.com/jbhuang0604/awesome-tips"
   },
   {
-    "objectID": "media.html",
-    "href": "media.html",
-    "title": "Media Coverage",
+    "objectID": "events/acm-summer-2025/speakers.html",
+    "href": "events/acm-summer-2025/speakers.html",
+    "title": "Speakers – ACM India Summer School 2025",
     "section": "",
-    "text": "VayuBuddy project\nOur work, VayuBuddy, has received coverage from various media outlets like Indian Express, Ahmedabad Mirror, Chitralekha and Divya Bhaskar.\n\n\n\n\n\n\n\n\nJoulesEye project\nOur work, JoulesEye, which we collaborated on with Prof Mayank Goel, has received extensive coverage from various media outlets like Hackster.io, Medium, Indian Express, CMU News, Indian Education Dairy, ZME Science, Knowridge, TechXplore, EurekaAlert.\n\n\n\n\n\n\n\n\nUBICOMP Gaetano Borriello Outstanding Student Award\nOur PhD student, Rishiraj Adhikary was a finalist for the UbiComp Gaetano Borriello Outstanding Student Award 2023. Named in honor of the late Gaetano Borriello, this award recognizes “a student who is making outstanding research contributions to, and provides leadership in, the field of Ubiquitous and Pervasive Computing“\n\n\n\n\n\n\n\n\nSpiroMask project\nOur work, SpiroMask was covered comprehensively by The Ahmedabad Mirror on 3rd November 2022. A technical article was also written on EdgeImpulse.\n\n\n\n\n\n\n\n\nPhD student Rishiraj’s Fullbright Nehru Fellowship\nOur PhD student, Rishiraj Adhikary won the prestigious Fullbright Nehru fellowship and visited CMU to work with Prof. Mayank Goel for 9 months. This achievement was covered by the following media channels: Education Times, Indian Express, Ahmedabad Mirror, India Education Diary, Careers 360."
+    "text": "Overview Schedule Selected Participants Speakers\n\n\n🎤 ACM India Summer School 2025 – Speakers\n📍 IIT Gandhinagar | 📆 02–13 June 2025\n\n\nProf. Rajat Moona\nDirector, IIT Gandhinagar\nOpening the summer school with welcome remarks.\n\n\n\nProf. Anirban Dasgupta\nProfessor, IIT Gandhinagar\nCo-coordinator. Focuses on algorithmic foundations of ML, fairness, and networks.\n\n\n\nProf. Nipun Batra\nAssociate Professor, IIT Gandhinagar\nCo-coordinator. Works on AI for sustainability, air quality, and smart sensing.\n\n\n\nDr. Venkat Padmanabhan\nDeputy Managing Director, Microsoft Research India\nKeynote speaker. Leader in mobile systems and AI for societal impact.\n\n\n\nDr. Manish Gupta\nDirector, Google DeepMind India\nKeynote speaker. Focused on ML at scale and social impact applications.\n\n\n\nDr. Jigar Doshi\nTalks on AI for public health, agriculture, and climate sustainability.\n\n\n\nDr. Prasant Misra\nPrincipal Scientist, TCS Research\nExpert in mobile sensing and information processing at scale.\n\n\n\nDr. Shailesh Deshpande\nScientist, TCS Research\nRemote sensing expert; also conducting optimization labs.\n\n\n\nProf. Udit Bhatia\nAssistant Professor, IIT Gandhinagar\nExpert in physics-guided ML, floods, and networked infrastructure.\n\n\n\nProf. Shanmuganathan Raman\nProfessor, IIT Gandhinagar\nSpecializes in vision-based AI including pose estimation.\n\n\n\nProf. Krishna Prasad\nAssociate Professor, IIT Gandhinagar\nResearches Brain-Computer Interfaces and neuro-AI.\n\n\n\nProf. Manisha Padala\nAssistant Professor, IIT Gandhinagar\nWorks on fairness in federated learning and adversarial ML.\n\n\n\nDr. Vaibhav Rajan\nScientist, Google DeepMind\nTalks on ML for personalized cancer treatment and biomedical AI.\n\n\n\nProf. Sayan Ranu\nProfessor, IIT Delhi\nWorks on graph neural networks, GNN condensation, and pollution monitoring.\n\n\n\nDr. Mohit Jain\nResearcher, Microsoft Research India\nFocuses on HCI and AI applications in healthcare and inclusion.\n\n\n\nProf. Pallavi Bharadwaj\nAssistant Professor, IIT Gandhinagar\nWorks on sustainable mobility and electric vehicles.\n\n\n\nProf. Yogesh Kumar Meena\nAssistant Professor, IIT Gandhinagar\nSpecialist in accessibility technologies and inclusive design.\n\n\n\nProf. Vaibhav Tripathi\nAssistant Professor, IIT Gandhinagar\nExplores connectome-based predictive modeling and brain imaging.\n\n\n\nDr. Rishiraj Adhikary / Niladri\nJio Platforms\nTalk on AI-driven solutions (exact topic TBD).\n\n\n\nAlok Talekar\nResearcher, Google DeepMind India\nLectures and labs on advanced AI techniques (topics TBD).\n\n\n\nProf. Manish Jain\nProfessor, IIT Gandhinagar (CCL Lab)\nTeaches on meta-learning and “learning to learn.”\n\n\n\nProf. Tavpritesh Sethi\nAssociate Professor, IIIT Delhi\nCausal modeling and AI for health system preparedness.\n\n\n\nDr. Bimal\nISRO SAC\nTalk on satellite applications (topic TBD).\n\n(More speaker details will be added as confirmed.)"
   },
   {
-    "objectID": "lab-handbook.html",
-    "href": "lab-handbook.html",
-    "title": "Lab-Handbook",
-    "section": "",
-    "text": "IIT Gandhinagar has a number of computational resources available for research and teaching purposes. Aside from it, the department also has a number of workstations available for students and faculty members.\nThe following is the list of computational resources in our lab apart from the institute and departmental resources.\n\n\nOur servers are named after great mathematicians/scientists:\n\nRamanujan (रामानुजन): Srinivasa Ramanujan made groundbreaking contributions to number theory.\nBhaskar (भास्कर): Bhaskar (aka Bhaskar II) is known for his work Siddhānta Shiromani (सिद्धांत शिरोमणि) which includes advances in algebra, calculus, and astronomy.\nAryabhata (आर्यभट): Aryabhata is well-known for inventing the concept of zero (शून्य) and the place value system. He is also said to be one of the faculty members of the famous Nalanda University (नालंदा विद्यालय).\n\n\n\n\n\n\nRamanujan\n\n\nBhaskar\n\n\nSustain\n\n\n\n\nRAM\n\n\n512 GB (16 x 32GB)\n\n\n256 GB (4 x 64GB)\n\n\n192 GB (6 x 32GB)\n\n\n\n\nCPU\n\n\nAMD EPYC 7452 32-Core Processor @ 2.30 GHz\n\n\nIntel Gold ICX 6326 @ 2.90 GHz\n\n\nIntel(R) Xeon(R) Silver 4208 CPU @ 2.10GHz\n\n\n\n\nStorag\n\n\n8 TB\n\n\n5 TB\n\n\n2 TB\n\n\n\n\nNumber of CPUs\n\n\n64\n\n\n32\n\n\n16\n\n\n\n\nGPU\n\n\n4 x NVIDIA A100-SXM4 (80GB)\n\n\n2 x NVIDIA RTX A5000 (24GB)\n\n\n2 x NVIDIA RTX A4000 (16GB)\n\n\n\n\nTotal VRAM\n\n\n320 GB\n\n\n48 GB\n\n\n32 GB\n\n\n\n\n\n\n\n\n\n\n\n\n\nAryabhata\n\n\nVikram\n\n\n\n\nRAM\n\n\n32 GB\n\n\n64 GB\n\n\n\n\nCPU\n\n\nIntel Core i9-13900\n\n\nIntel Core i9-14700\n\n\n\n\nStorage\n\n\n2 TB\n\n\n4 TB\n\n\n\n\nNumber of CPUs\n\n\n24\n\n\n32\n\n\n\n\nGPU\n\n\n1 x NVIDIA RTX Titan XP (12 GB)\n\n\n1 x NVIDIA RTX A2000 (12 GB)\n\n\n\n\nTotal VRAM\n\n\n12 GB\n\n\n12 GB"
-  },
-  {
-    "objectID": "lab-handbook.html#computational-resources",
-    "href": "lab-handbook.html#computational-resources",
-    "title": "Lab-Handbook",
-    "section": "",
-    "text": "IIT Gandhinagar has a number of computational resources available for research and teaching purposes. Aside from it, the department also has a number of workstations available for students and faculty members.\nThe following is the list of computational resources in our lab apart from the institute and departmental resources.\n\n\nOur servers are named after great mathematicians/scientists:\n\nRamanujan (रामानुजन): Srinivasa Ramanujan made groundbreaking contributions to number theory.\nBhaskar (भास्कर): Bhaskar (aka Bhaskar II) is known for his work Siddhānta Shiromani (सिद्धांत शिरोमणि) which includes advances in algebra, calculus, and astronomy.\nAryabhata (आर्यभट): Aryabhata is well-known for inventing the concept of zero (शून्य) and the place value system. He is also said to be one of the faculty members of the famous Nalanda University (नालंदा विद्यालय).\n\n\n\n\n\n\nRamanujan\n\n\nBhaskar\n\n\nSustain\n\n\n\n\nRAM\n\n\n512 GB (16 x 32GB)\n\n\n256 GB (4 x 64GB)\n\n\n192 GB (6 x 32GB)\n\n\n\n\nCPU\n\n\nAMD EPYC 7452 32-Core Processor @ 2.30 GHz\n\n\nIntel Gold ICX 6326 @ 2.90 GHz\n\n\nIntel(R) Xeon(R) Silver 4208 CPU @ 2.10GHz\n\n\n\n\nStorag\n\n\n8 TB\n\n\n5 TB\n\n\n2 TB\n\n\n\n\nNumber of CPUs\n\n\n64\n\n\n32\n\n\n16\n\n\n\n\nGPU\n\n\n4 x NVIDIA A100-SXM4 (80GB)\n\n\n2 x NVIDIA RTX A5000 (24GB)\n\n\n2 x NVIDIA RTX A4000 (16GB)\n\n\n\n\nTotal VRAM\n\n\n320 GB\n\n\n48 GB\n\n\n32 GB\n\n\n\n\n\n\n\n\n\n\n\n\n\nAryabhata\n\n\nVikram\n\n\n\n\nRAM\n\n\n32 GB\n\n\n64 GB\n\n\n\n\nCPU\n\n\nIntel Core i9-13900\n\n\nIntel Core i9-14700\n\n\n\n\nStorage\n\n\n2 TB\n\n\n4 TB\n\n\n\n\nNumber of CPUs\n\n\n24\n\n\n32\n\n\n\n\nGPU\n\n\n1 x NVIDIA RTX Titan XP (12 GB)\n\n\n1 x NVIDIA RTX A2000 (12 GB)\n\n\n\n\nTotal VRAM\n\n\n12 GB\n\n\n12 GB"
-  },
-  {
-    "objectID": "lab-handbook.html#values",
-    "href": "lab-handbook.html#values",
-    "title": "Lab-Handbook",
-    "section": "Values",
-    "text": "Values\nLess but better: Publish one less paper, but make the ones you publish really strong. Show one less result in the meeting, but thoroughly analyse the ones you show."
-  },
-  {
-    "objectID": "lab-handbook.html#expectations",
-    "href": "lab-handbook.html#expectations",
-    "title": "Lab-Handbook",
-    "section": "Expectations",
-    "text": "Expectations\nHard work: We are often working on cutting-edge research. This means that there is no clear path to success. We will have to try different things, and we will fail often. This is part of the process. I expect my students to work hard, and I expect them to be resilient.\nConsistency: We do expect some seasonal variation in productivity. However, often the difference between a good and great project is the consistency of effort.\nStriving for excellence: Often, the difference between a good and great project (or paper) is the last 10% of effort. I try to push my students to go the extra mile, and I expect the same from myself. This goes in various aspects of work, including writing, coding, and data analysis. As an example, I remember doing ten rounds of feedback with an undergraduate student from the group on their presentation for a conference. It was a lot of work, but the student ended up getting offers (higher studies) after the talk; and the student was appreciated by the session chair - “It is hard to believe that you are an undergraduate student”.\nClear, honest communication I try to be as clear as possible in my communication, and I expect the same from my students. I also expect my students to be honest with me. If you are struggling with something, let me know. If you are not interested in a project, let me know. If you are not happy with something, let me know. I you are unable to meet a deadline, let me know. Lack of communication is counterproductive.\nI also typically want to help create a path for my students to achieve their goals. Thus, I expect my students to be clear about their goals, or be proactive in discussing their goals with me.\nCulture of respect and collaboration: I expect my students to be respectful to each other, and to other members of the community. I also expect my students to be collaborative. This means that they should be willing to help each other, and to help other members of the community."
-  },
-  {
-    "objectID": "lab-handbook.html#meetings",
-    "href": "lab-handbook.html#meetings",
-    "title": "Lab-Handbook",
-    "section": "Meetings",
-    "text": "Meetings\nWhole Group Meetings: We typically meet once a week for about 45-50 mins. We usually cover a variety of topics, including: - Short updates from each person on their progress - Discussion of any issues that have come up - Presentations on topics/tools of interest to the group - Paper discussions\nWe expect students to volunteer to present on topics of interest to them. We also expect students to volunteer to present on papers. To know more about what gets discussed in our group meetings please visit our Reading Page.\nProject Meetings: The project meetings are tied to specific projects. We typically start with discussing the last meeting’s action items, then discuss any issues that have come up, and then discuss the next steps. The lead student on the project is responsible for setting the agenda and running the meeting. The lead student is also responsible for taking notes and posting them on the project’s repository.\nIndividual Meetings: Please refer to this material"
-  },
-  {
-    "objectID": "lab-handbook.html#letter-of-recommendations",
-    "href": "lab-handbook.html#letter-of-recommendations",
-    "title": "Lab-Handbook",
-    "section": "Letter of Recommendations",
-    "text": "Letter of Recommendations\nPlease this beautiful blogpost from Gautam Kamath. How to ask for LOR article by Gautam Kamath"
-  },
-  {
-    "objectID": "lab-handbook.html#server-policy",
-    "href": "lab-handbook.html#server-policy",
-    "title": "Lab-Handbook",
-    "section": "Server Policy",
-    "text": "Server Policy\nHow to get access: Send an email to Mr. Raviraj Sukhadiya, keeping Prof. Nipun Batra in cc. Mention the following details in your request: i) server name; ii) purpose for access.\nDon’ts:\n\nDo not use the server for personal use or anything not related to the project. This includes any classwork or homework.\nDo not share your server credentials with anyone else.\n\nFair usage:\n\nSometimes we have multiple projects running on the same server. Please be considerate of other projects and do not use up all the resources.\nSometimes we may allocate specific cores or GPUs to specific projects. Please do not use cores or GPUs that are not allocated to your project."
-  },
-  {
-    "objectID": "lab-handbook.html#communicating-research",
-    "href": "lab-handbook.html#communicating-research",
-    "title": "Lab-Handbook",
-    "section": "Communicating Research",
-    "text": "Communicating Research\n\nWriting Papers\nPaper writing is a key part of research. This page contains some tips and tricks for writing papers. Paper writing is a skill that you will develop over time. But, it needs deliberate practice.\nPaper structure and Abstract: I gave a talk (recording here, slides here) on how to write a paper. I recommend watching it. Other materials from the talk are available here.\nLaTeXify figures: We’d suggest using this latexification tool to make the matplotlib figures publication-ready. It helps in the following aspects:\n\nIt helps in setting the exact size of the figure relative to the column width or page width of the paper. After using this tool, manually setting the size within the \\begin{figure} block is rarely needed.\nWe can set the font size relative to the text font size in the paper to ensure fonts are not too small or too big.\nIt converts the fonts into latex fonts so that the fonts in the figures do not look different from the main text font.\n\n\nTip: You can find page width and column width with \\the\\textwidth and \\the\\columnwidth commands, respectively.\n\nSelf-contained figures and tables (and captions)\nTables: We follow this excellent small guide to making nice tables by Markus Püschel.\nComments in LaTeX: We typically create a macro corresponding to different author initials (I use \\nb for example) and then use that to create comments in the text. This is useful for commenting on the text, or for leaving notes to yourself. For example, I might write \\nb{I'm not sure about this sentence} and then I can search for all instances of \\nb to find all of my comments.\n\\newcommand{\\nb}[1]{{\\color{red}\\small \\iftoggle{hide}{}{\\textbf{Nipun's comment:} #1}}}\nAmerican v/s British English: There are a few differences in spelling between American and British English. For example, the word “colour” in British English is spelled “color” in American English. The word “optimise” in British English is spelled “optimize” in American English. There are also some differences in grammar. I recommend picking one and sticking to it. Most of our previous papers have used British English (but often this depends on the set of co-authors).\nGrammarly and other AI tools: I recommend students use Grammarly (or a similar) tool to check their writing once they have done a complete pass of editing. I do not recommend relying a lot on ChatGPT-like tools for writing papers as they can often lead to “correct” sounding but “incorrect” sentences.\n\n\nPoster\nIn some venues, the main presentation format is a poster. Posters are a great way to present your work in a visual format, and to have one-on-one conversations with people who are interested in your work.\nOne common mistake people make while making posters is to try to cram in too much information. Remember that the poster is to supplement you and not to replace you.\nPlease see below for two posters that we have made in the past.\n\nSample Poster 1\n\n\n\n\nSample Poster 2\n\n\nPlease find the presentation files corresponding to the first poster 1. Apple Keynote\n\nMS Powerpoint\nGoogle Slides\n\nLaTeX users can use the following templates on Overleaf to make their posters."
-  },
-  {
-    "objectID": "lab-handbook.html#technical-background",
-    "href": "lab-handbook.html#technical-background",
-    "title": "Lab-Handbook",
-    "section": "Technical Background",
-    "text": "Technical Background\nGit and GitHub: There are a ton of good resorces on Git and Github. I’m linking two such resources here:\n\nYouTube video by Kevin Stratvert\nGithub skills\n\nPython Data Science Stack:\n\nWe recommend students to study the Python for Data Science Handbook by Jake VanderPlas. It is a free online book that covers the basics of Python, NumPy, Pandas, Matplotlib, and Scikit-Learn. It is a great resource for beginners and intermediate students alike.\nWe recommend students regularly hone their skills solving exercises such as 100 Numpy exercises. Given that much of our work is in Torch-like frameworks, the students would also benefit by attempting to solve the exercises using PyTorch.\n\nObject-Oriented Programming in Python: RealPython has a nice tutorial on Object-Oriented Programming in Python. We recommend students to go through the tutorial. They also have a corresponding video page.\nLaTeX: We typically use LaTeX for writing reports and papers. We recommend students to use Overleaf for students to get started. Overleaf has a nice 30 minute tutorial that covers the basics of LaTeX. We highly recommend students to go through the tutorial.\nCreating a Website and Blog: We highly recommend students create a simple website and a blog. We have been happily using Quarto for our website and blog. You may see in action in Nipun’s website and corresponding GitHub repo here; and Nipun’s blog and corresponding Github repo here.\nBoth of these are built via Github actions. Feel free to reuse these for creating your own website and blog. We will be happy to help you get started."
-  },
-  {
-    "objectID": "reading.html",
-    "href": "reading.html",
-    "title": "Reading Group",
-    "section": "",
-    "text": "Pending Reading List\n\n\n\n\n\nLeveraging Language Foundation Models for Human Mobility Forecasting\n\n\n“It Is a Moving Process’’: Understanding the Evolution of Explainability Needs of Clinicians in Pulmonary Medicine\n\n\n\n\n\nDeep Bayesian Active Learning for Accelerating Stochastic Simulation\n\n\nActive Learning on a Budget: Opposite Strategies Suit High and Low Budgets\n\n\n\n\n\nDeep Distributed Fusion Network for Air Quality Prediction\n\n\nGenerating Interpretable Poverty Maps using Object Detection in Satellite Images\n\n\n\n\n\nNone"
-  },
-  {
-    "objectID": "reading.html#section",
-    "href": "reading.html#section",
-    "title": "Reading Group",
-    "section": "2024",
-    "text": "2024\n\nJune\n\n\n\n\nCategory\n\n\nPresenter/Date\n\n\nTopics\n\n\n\n\n\n\nSelf Supervised Learning\n\n\nRishabh Mondal[21-Jun-2024]\n\n\nLow-Res Leads the Way: Improving Generalization for Super-Resolution by Self-Supervised Learning\n\n\n\n\nAir Quality\n\n\nDevodita Chakravarty[20-Jun-2024]\n\n\nPredicting air quality via multimodal AI and satellite imagery\n\n\n\n\nHealth Sensing\n\n\nMohit Maurya[19-Jun-2024]\n\n\nBreathPro: Monitoring Breathing Mode during Running with Earables\n\n\n\n\nMock Defence\n\n\nSuraj Jaiswal[17-Jun-2024]\n\n\nLarge Scale Brick Kiln Detection and Compliance Monitoring from Satellite Imagery\n\n\n\n\nAyush Shrivastava[11-Jun-2024]\n\n\nSensing Respiration and Sleep Apnea using Thermal Imaging in Real World Conditions\n\n\n\n\nActive Learning\n\n\nShataxi Dubey[13-Jun-2024]\n\n\nActive Learning for Deep detection neural networks\n\n\n\n\nObject Detection\n\n\nShiva Singh[12-Jun-2024]\n\n\nDomain Adversarial Training of Neural Networks\n\n\n\n\nVansh Jani[12-Jun-2024]\n\n\nObject Detection with Self-supervised Scene Adaptation\n\n\n\n\n\n\nMay\n\n\n\n\nCategory\n\n\nPresenter\n\n\nTopics\n\n\n\n\n\n\nHealth\n\n\nRishiraj Adhikary[23-May-2024]\n\n\nLarge Language Models are Few-Shot Health Learners\n\n\n\n\n[Thesis Presentaion] Exploring Health and Wellness through Respiratory Sensing\n\n\n\n\nLarge Language Models\n\n\nSajay Raj and Muhammad Zaid[20-May-2024]\n\n\nZero-shot, Few-shot and Finetuning LLMs today for a few tasks\n\n\n\n\nObject Detection\n\n\nVansh Jani[17-May-2024]\n\n\nYou Only Look Once: Unified, Real-Time Object Detection"
-  },
-  {
-    "objectID": "members.html#faculty",
-    "href": "members.html#faculty",
-    "title": "Lab Members",
-    "section": "Faculty",
-    "text": "Faculty\n  \n\nProf. Nipun Batra\n\nNipun Batra is an Associate Professor of Computer Science at IIT Gandhinagar. He completed his postdoctoral research at the University of Virginia and earned his PhD from IIIT Delhi. His research group focuses on utilizing machine learning and sensing technologies to address computational sustainability challenges, particularly in smart buildings, air quality, and healthcare."
-  },
-  {
-    "objectID": "members.html#phd",
-    "href": "members.html#phd",
-    "title": "Lab Members",
-    "section": "PhD",
-    "text": "PhD\n\n\n\n   Zeel B Patel(Jan 2020 - present)\n\n\n   Rishabh Mondal(Jun 2023 - present)\n\n\n   Ayush Srivastava(Jul 2024 - present)\n\n\n   Ujjwal K. Gupta(Jul 2024 - present)"
-  },
-  {
-    "objectID": "members.html#mtech",
-    "href": "members.html#mtech",
-    "title": "Lab Members",
-    "section": "MTech",
-    "text": "MTech\n\n\n\n Poornima Bhatia(Jul 2023 - present)\n\n\n Prince Kumar(Jul 2023 - present)\n\n\n Shataxi Dubey(Jul 2023 - present)\n\n\n Abhay Pisharodi(Jul 2024 - present)\n\n\n\n\n Abhyudaya Nair(Jul 2024 - present)\n\n\n Diya Thakor(Jul 2024 - present)\n\n\n Vinayak Rana(Jul 2024 - present)\n\n\n Suruchi Hardaha(Jul 2024 - present)"
-  },
-  {
-    "objectID": "members.html#junior-research-fellows",
-    "href": "members.html#junior-research-fellows",
-    "title": "Lab Members",
-    "section": "Junior Research Fellows",
-    "text": "Junior Research Fellows\n\n\n\n Tanu Tiwari(Oct 2024 - present)\n\n\n Meenakshi Prakash(Jan 2025 - Present)"
-  },
-  {
-    "objectID": "members.html#group-photos",
-    "href": "members.html#group-photos",
-    "title": "Lab Members",
-    "section": "Group Photos",
-    "text": "Group Photos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSustainability Lab at ACM Compass’24, IIIT Delhi\n\n\nJul 2024\n\n\n\n\n\n\n\nLab dinner with Batch of 2024\n\n\nMay 2024\n\n\n\n\n\n\n\nAlums from 2022 batch Harsh, Hetvi and Palak visited us\n\n\nJan 2024\n\n\n\n\n\n\n\nStudents working with us in the Fall 2023 semester\n\n\nNov 2023\n\n\n\n\n\n\n\nAfter the 2023 batch convocation (and celebration of multiple awards!)\n\n\nJuly 2023\n\n\n\n\n\n\n\nLab dinner with Batch of 2023\n\n\nMay 2023\n\n\n\n\n\n\n\nBatch of 2023 :Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam\n\n\nMay 2023\n\n\n\n\n\n\n\nWith a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)\n\n\nJuly 2022\n\n\n\n\n  Previous    Next"
-  },
-  {
-    "objectID": "values.html",
-    "href": "values.html",
-    "title": "Values",
-    "section": "",
-    "text": "Less but better: Publish one less paper, but make the ones you publish really strong. Show one less result in the meeting, but thoroughly analyse the ones you show."
-  },
-  {
-    "objectID": "openings.html",
-    "href": "openings.html",
-    "title": "Openings",
-    "section": "",
-    "text": "Junior/Senior Research Fellow Opening\nJoin us as a Junior/Senior Research Fellow in the Sustainability Lab! Apply Now\n\n\nSummer Research Intern Opening\nJoin us through the Summer Research Internship Program in the following domains:\n\nAI for Sustainibility\nAI/Sensing for Health\nExposition and Visualisation\n\nFind our projects labelled: IP0NB0000019 and IP0NB0000020 on IIT Gandhinagar SRIP portal\n\n\n6 months internships\nContact the PI for 6 months internships."
-  },
-  {
-    "objectID": "computational-resources.html",
-    "href": "computational-resources.html",
-    "title": "Lab Resources",
-    "section": "",
-    "text": "IIT Gandhinagar has a number of computational resources available for research and teaching purposes. Aside from it, the department also has a number of workstations available for students and faculty members.\nThe following is the list of computational resources in our lab apart from the institute and departmental resources.\n\n\nOur servers are named after great mathematicians/scientists:\n\nRamanujan (रामानुजन): Srinivasa Ramanujan made groundbreaking contributions to number theory.\nBhaskar (भास्कर): Bhaskar (aka Bhaskar II) is known for his work Siddhānta Shiromani (सिद्धांत शिरोमणि) which includes advances in algebra, calculus, and astronomy.\nAryabhata (आर्यभट): Aryabhata is well-known for inventing the concept of zero (शून्य) and the place value system. He is also said to be one of the faculty members of the famous Nalanda University (नालंदा विद्यालय).\n\n\n\n\n\n\nRamanujan\n\n\nBhaskar\n\n\nSustain\n\n\n\n\nRAM\n\n\n512 GB (16 x 32GB)\n\n\n256 GB (4 x 64GB)\n\n\n192 GB (6 x 32GB)\n\n\n\n\nCPU\n\n\nAMD EPYC 7452 32-Core Processor @ 2.30 GHz\n\n\nIntel Gold ICX 6326 @ 2.90 GHz\n\n\nIntel(R) Xeon(R) Silver 4208 CPU @ 2.10GHz\n\n\n\n\nStorag\n\n\n8 TB\n\n\n5 TB\n\n\n2 TB\n\n\n\n\nNumber of CPUs\n\n\n64\n\n\n32\n\n\n16\n\n\n\n\nGPU\n\n\n4 x NVIDIA A100-SXM4 (80GB)\n\n\n2 x NVIDIA RTX A5000 (24GB)\n\n\n2 x NVIDIA RTX A4000 (16GB)\n\n\n\n\nTotal VRAM\n\n\n320 GB\n\n\n48 GB\n\n\n32 GB\n\n\n\n\n\n\n\n\n\n\n\n\n\nAryabhata\n\n\nVikram\n\n\n\n\nRAM\n\n\n32 GB\n\n\n64 GB\n\n\n\n\nCPU\n\n\nIntel Core i9-13900\n\n\nIntel Core i9-14700\n\n\n\n\nStorage\n\n\n2 TB\n\n\n4 TB\n\n\n\n\nNumber of CPUs\n\n\n24\n\n\n32\n\n\n\n\nGPU\n\n\n1 x NVIDIA RTX Titan XP (12 GB)\n\n\n1 x NVIDIA RTX A2000 (12 GB)\n\n\n\n\nTotal VRAM\n\n\n12 GB\n\n\n12 GB"
-  },
-  {
-    "objectID": "computational-resources.html#computational-resources",
-    "href": "computational-resources.html#computational-resources",
-    "title": "Lab Resources",
-    "section": "",
-    "text": "IIT Gandhinagar has a number of computational resources available for research and teaching purposes. Aside from it, the department also has a number of workstations available for students and faculty members.\nThe following is the list of computational resources in our lab apart from the institute and departmental resources.\n\n\nOur servers are named after great mathematicians/scientists:\n\nRamanujan (रामानुजन): Srinivasa Ramanujan made groundbreaking contributions to number theory.\nBhaskar (भास्कर): Bhaskar (aka Bhaskar II) is known for his work Siddhānta Shiromani (सिद्धांत शिरोमणि) which includes advances in algebra, calculus, and astronomy.\nAryabhata (आर्यभट): Aryabhata is well-known for inventing the concept of zero (शून्य) and the place value system. He is also said to be one of the faculty members of the famous Nalanda University (नालंदा विद्यालय).\n\n\n\n\n\n\nRamanujan\n\n\nBhaskar\n\n\nSustain\n\n\n\n\nRAM\n\n\n512 GB (16 x 32GB)\n\n\n256 GB (4 x 64GB)\n\n\n192 GB (6 x 32GB)\n\n\n\n\nCPU\n\n\nAMD EPYC 7452 32-Core Processor @ 2.30 GHz\n\n\nIntel Gold ICX 6326 @ 2.90 GHz\n\n\nIntel(R) Xeon(R) Silver 4208 CPU @ 2.10GHz\n\n\n\n\nStorag\n\n\n8 TB\n\n\n5 TB\n\n\n2 TB\n\n\n\n\nNumber of CPUs\n\n\n64\n\n\n32\n\n\n16\n\n\n\n\nGPU\n\n\n4 x NVIDIA A100-SXM4 (80GB)\n\n\n2 x NVIDIA RTX A5000 (24GB)\n\n\n2 x NVIDIA RTX A4000 (16GB)\n\n\n\n\nTotal VRAM\n\n\n320 GB\n\n\n48 GB\n\n\n32 GB\n\n\n\n\n\n\n\n\n\n\n\n\n\nAryabhata\n\n\nVikram\n\n\n\n\nRAM\n\n\n32 GB\n\n\n64 GB\n\n\n\n\nCPU\n\n\nIntel Core i9-13900\n\n\nIntel Core i9-14700\n\n\n\n\nStorage\n\n\n2 TB\n\n\n4 TB\n\n\n\n\nNumber of CPUs\n\n\n24\n\n\n32\n\n\n\n\nGPU\n\n\n1 x NVIDIA RTX Titan XP (12 GB)\n\n\n1 x NVIDIA RTX A2000 (12 GB)\n\n\n\n\nTotal VRAM\n\n\n12 GB\n\n\n12 GB"
-  },
-  {
-    "objectID": "computational-resources.html#server-policy",
-    "href": "computational-resources.html#server-policy",
-    "title": "Lab Resources",
-    "section": "Server Policy",
-    "text": "Server Policy\nHow to get access: Send an email to Mr. Raviraj Sukhadiya, keeping Prof. Nipun Batra in cc. Mention the following details in your request: i) server name; ii) purpose for access.\nDon’ts:\n\nDo not use the server for personal use or anything not related to the project. This includes any classwork or homework.\nDo not share your server credentials with anyone else.\n\nFair usage:\n\nSometimes we have multiple projects running on the same server. Please be considerate of other projects and do not use up all the resources.\nSometimes we may allocate specific cores or GPUs to specific projects. Please do not use cores or GPUs that are not allocated to your project."
-  },
-  {
-    "objectID": "technical-background.html",
-    "href": "technical-background.html",
-    "title": "Technical Background",
-    "section": "",
-    "text": "Git and GitHub\nThere are a ton of good resorces on Git and Github. I’m linking two such resources here: - YouTube video by Kevin Stratvert - Github skills\n\n\nPython Data Science Stack\n\nWe recommend students to study the Python for Data Science Handbook by Jake VanderPlas. It is a free online book that covers the basics of Python, NumPy, Pandas, Matplotlib, and Scikit-Learn. It is a great resource for beginners and intermediate students alike.\nWe recommend students regularly hone their skills solving exercises such as 100 Numpy exercises. Given that much of our work is in Torch-like frameworks, the students would also benefit by attempting to solve the exercises using PyTorch.\n\n\n\nObject-Oriented Programming in Python\nRealPython has a nice tutorial on Object-Oriented Programming in Python. We recommend students to go through the tutorial. They also have a corresponding video page.\n\n\nLaTeX\nWe typically use LaTeX for writing reports and papers. We recommend students to use Overleaf for students to get started. Overleaf has a nice 30 minute tutorial that covers the basics of LaTeX. We highly recommend students to go through the tutorial.\n\n\nCreating a Website and Blog\nWe highly recommend students create a simple website and a blog. We have been happily using Quarto for our website and blog. You may see in action in Nipun’s website and corresponding GitHub repo here; and Nipun’s blog and corresponding Github repo here.\nBoth of these are built via Github actions. Feel free to reuse these for creating your own website and blog. We will be happy to help you get started."
-  },
-  {
-    "objectID": "index.html#funding-organisations",
-    "href": "index.html#funding-organisations",
-    "title": "Sustainability Lab",
-    "section": "Funding Organisations",
-    "text": "Funding Organisations"
-  },
-  {
-    "objectID": "index.html#join-us",
-    "href": "index.html#join-us",
-    "title": "Sustainability Lab",
-    "section": "Join Us",
-    "text": "Join Us\n\nEmbark on a journey to drive innovation in sustainability with our lab! Apply Now"
-  },
-  {
-    "objectID": "events/acm-summer-2025/schedule.html",
-    "href": "events/acm-summer-2025/schedule.html",
-    "title": "Schedule – ACM India Summer School 2025",
-    "section": "",
-    "text": "Overview Schedule Selected Participants Speakers\n\n\n📅 ACM India Summer School 2025 – Schedule\n📍 IIT Gandhinagar | 📆 02–13 June 2025"
-  },
-  {
-    "objectID": "events/acm-summer-2025/index.html",
-    "href": "events/acm-summer-2025/index.html",
+    "objectID": "events/acm-summer-2025/selected.html",
+    "href": "events/acm-summer-2025/selected.html",
     "title": "ACM India Summer School 2025: AI for Social Good",
     "section": "",
     "text": "Overview Schedule Selected Participants Speakers"
   },
   {
-    "objectID": "events/acm-summer-2025/index.html#overview",
-    "href": "events/acm-summer-2025/index.html#overview",
+    "objectID": "events/acm-summer-2025/selected.html#accommodation-and-meals",
+    "href": "events/acm-summer-2025/selected.html#accommodation-and-meals",
     "title": "ACM India Summer School 2025: AI for Social Good",
-    "section": "Overview",
-    "text": "Overview\nThe ACM Summer School on AI for Social Good at IIT Gandhinagar offers an intensive 11-day program on AI techniques applied to social good domains such as healthcare, sustainability, and agriculture.\nThe school will feature expert talks, hands-on tutorials, and panel discussions, fostering both technical expertise and interdisciplinary collaboration."
+    "section": "🏠 Accommodation and Meals",
+    "text": "🏠 Accommodation and Meals\n\nYou will be provided hostel accommodation on campus.\nCheck-in: 01 June 2025\nCheck-out: 14 June 2025\nNo accommodation charge – included in the program.\nMeals: Breakfast, lunch, and dinner will be provided on campus."
   },
   {
-    "objectID": "events/acm-summer-2025/index.html#host-institution",
-    "href": "events/acm-summer-2025/index.html#host-institution",
+    "objectID": "events/acm-summer-2025/selected.html#fee-structure",
+    "href": "events/acm-summer-2025/selected.html#fee-structure",
     "title": "ACM India Summer School 2025: AI for Social Good",
-    "section": "🏛 Host Institution",
-    "text": "🏛 Host Institution\nIIT Gandhinagar\n📍 Palaj, Gandhinagar, Gujarat, 382055"
+    "section": "💰 Fee Structure",
+    "text": "💰 Fee Structure\n\n\n\nComponent\nAmount\n\n\n\n\nApplication Fee\n₹150 + 18% GST\n\n\nProgram Fee (on selection)\n₹3000 + 18% GST\n\n\nAccommodation & Meals\nIncluded\n\n\nTravel\nSelf-arranged"
   },
   {
-    "objectID": "events/acm-summer-2025/index.html#local-academic-coordinators",
-    "href": "events/acm-summer-2025/index.html#local-academic-coordinators",
+    "objectID": "events/acm-summer-2025/selected.html#what-to-bring",
+    "href": "events/acm-summer-2025/selected.html#what-to-bring",
     "title": "ACM India Summer School 2025: AI for Social Good",
-    "section": "🏫 Local & Academic Coordinators",
-    "text": "🏫 Local & Academic Coordinators\nLocal Coordinator\n👤 Nipun Batra\n📧 nipun.batra@iitgn.ac.in\nAcademic Coordinator\n👤 Anirban Dasgupta\n📧 anirbandg@iitgn.ac.in"
+    "section": "🧳 What to Bring",
+    "text": "🧳 What to Bring\n\nGovernment ID card (for hostel check-in)\nLaptop with Python installed\nNotebook, pens, charger, power bank\nComfortable clothing for Gujarat heat\nWater bottle, umbrella, etc.\nToiletries (soap, shampoo, etc.)\nAny personal items you may need\nEnthusiasm to learn and collaborate!"
   },
   {
-    "objectID": "events/acm-summer-2025/index.html#topics-covered",
-    "href": "events/acm-summer-2025/index.html#topics-covered",
+    "objectID": "events/acm-summer-2025/selected.html#travel-guidance",
+    "href": "events/acm-summer-2025/selected.html#travel-guidance",
     "title": "ACM India Summer School 2025: AI for Social Good",
-    "section": "🎯 Topics Covered",
-    "text": "🎯 Topics Covered\n\nAI for Social Good Domains\n\nAI for Healthcare\n\nAI for Sustainability\n\nAI for Agriculture\n\n\n\nTechnical Topics\n\nObject Detection\n\nBandits and Reinforcement Learning\n\nTime Series Modeling\n\nLarge Language Models (LLMs)\n\nFairness & Explainability in AI\n\nSelf-Supervised Learning\n\nBayesian ML\n\nGraph Neural Networks\n\nMultimodal Learning"
+    "section": "🚆 Travel Guidance",
+    "text": "🚆 Travel Guidance\n\nRailway Stations: Depending on your train, you may be able to choose:\n\nGandhinagar Capital (GNC)\nSabarmati Junction (SBI)\nAhmedabad Junction (ADI)\n\nNearest Airport: Sardar Vallabhbhai Patel International Airport (AMD) (~20 km)\nFrom Ahmedabad, take a cab or bus to IIT Gandhinagar, Palaj Campus\n\n\n🗺️ IIT Gandhinagar Address:\nIndian Institute of Technology Gandhinagar,\nPalaj, Gandhinagar – 382055, Gujarat"
   },
   {
-    "objectID": "events/acm-summer-2025/index.html#organizers",
-    "href": "events/acm-summer-2025/index.html#organizers",
+    "objectID": "events/acm-summer-2025/selected.html#faqs",
+    "href": "events/acm-summer-2025/selected.html#faqs",
     "title": "ACM India Summer School 2025: AI for Social Good",
-    "section": "Organizers",
-    "text": "Organizers\n\nDr. Anirban Dasgupta, IIT Gandhinagar (Professor)\nDr. Nipun Batra, IIT Gandhinagar (Professor)\n\nAyush Shrivastava, IIT Gandhinagar\n\nAbhay Pisharodi, IIT Gandhinagar\n\nDiya Thakor, IIT Gandhinagar\n\nRatnesh Pasi, IIT Gandhinagar\n\nRaviraj Sukhadiya, IIT Gandhinagar\n\nRishabh Mondal, IIT Gandhinagar\nSuruchi Hardaha, IIT Gandhinagar\nVinayak Rana, IIT Gandhinagar"
+    "section": "🙋 FAQs",
+    "text": "🙋 FAQs\nQ. Can I arrive a day earlier or stay a day later?\nNo, accommodation is only available from 01 June to 14 June.\nQ. Can I change to another school?\nNo. Once selected, switching is not allowed.\nQ. Will I get a certificate?\nYes. Full attendance is required for certification.\nQ. What if I have dietary restrictions? Please inform us in advance. We will do our best to accommodate your needs. We will be sharing a form for this."
   },
   {
-    "objectID": "events/acm-summer-2025/index.html#prerequisites",
-    "href": "events/acm-summer-2025/index.html#prerequisites",
+    "objectID": "events/acm-summer-2025/selected.html#contact",
+    "href": "events/acm-summer-2025/selected.html#contact",
     "title": "ACM India Summer School 2025: AI for Social Good",
-    "section": "📖 Prerequisites",
-    "text": "📖 Prerequisites\nStudents should have prior knowledge of:\n- Machine Learning\n- Probability, Statistics & Data Visualization\n- Basics of Computer Vision & NLP"
+    "section": "✉️ Contact",
+    "text": "✉️ Contact\nFeel free to reach out:\n\nNipun Batra\n\nWe look forward to welcoming you to IIT Gandhinagar!"
   },
   {
-    "objectID": "events/acm-summer-2025/index.html#software-requirements",
-    "href": "events/acm-summer-2025/index.html#software-requirements",
-    "title": "ACM India Summer School 2025: AI for Social Good",
-    "section": "🖥 Software Requirements",
-    "text": "🖥 Software Requirements\n\nPython"
+    "objectID": "events/index.html",
+    "href": "events/index.html",
+    "title": "Events",
+    "section": "",
+    "text": "In this page, we include the events that we have organized or co-organized."
   },
   {
-    "objectID": "events/acm-summer-2025/index.html#applying-for-the-summer-schools",
-    "href": "events/acm-summer-2025/index.html#applying-for-the-summer-schools",
-    "title": "ACM India Summer School 2025: AI for Social Good",
-    "section": "📌 Applying for the Summer Schools",
-    "text": "📌 Applying for the Summer Schools\nThe application fee for this school program is ₹150 + 18% GST.\nYou can give first and second preference in the application form.\nAll payments are non-refundable. Please apply after careful consideration since demand is high and seats are limited.\n👉 Apply for the Summer Schools 2025 here\n\n📅 Important Dates\n\nLast date for application 🗓️ Sunday, April 13, 2025 (1159 PM IST)\n\nAnnouncement of selections 🗓️ Wednesday, April 23, 2025\n\nPayment of fees by selected students\n🗓️ Wednesday, April 30, 2025"
+    "objectID": "events/index.html#section",
+    "href": "events/index.html#section",
+    "title": "Events",
+    "section": "2025",
+    "text": "2025\nACM India Summer School on AI for Social Good Link: ACM India Summer School 2025"
   },
   {
-    "objectID": "events/acm-summer-2025/index.html#selection-registration",
-    "href": "events/acm-summer-2025/index.html#selection-registration",
-    "title": "ACM India Summer School 2025: AI for Social Good",
-    "section": "📝 Selection & Registration",
-    "text": "📝 Selection & Registration\n\nSelection Based on data submitted in the application. Selected students will be notified by email.\n\nRegistration Only selected students must pay non-refundable fees (₹3000 + 18% GST) which includes lodging and boarding at the venue.\n\nA non-shareable payment link will be sent to selected students.\n\nOnce selected to a school, you cannot switch to another.\n\nEnsure you pay and register to be fair to those not selected."
-  },
-  {
-    "objectID": "events/acm-summer-2025/index.html#ℹ-general-information",
-    "href": "events/acm-summer-2025/index.html#ℹ-general-information",
-    "title": "ACM India Summer School 2025: AI for Social Good",
-    "section": "ℹ️ General Information",
-    "text": "ℹ️ General Information\n\nThe schools will be in-person only.\n\nSelected students must arrange travel on their own.\n\nNo travel support is provided.\n\nEach day includes lectures + hands-on tutorials.\n\nSome schools may host industry sessions on career opportunities.\n\nTop students may receive internship opportunities and an all-expense-paid trip to 🏆 ACM India ARCS Symposium & Annual Event 2026\n📍 IIT Hyderabad, Feb–Mar 2026"
-  },
-  {
-    "objectID": "events/acm-summer-2025/index.html#schedule",
-    "href": "events/acm-summer-2025/index.html#schedule",
-    "title": "ACM India Summer School 2025: AI for Social Good",
-    "section": "📅 Schedule",
-    "text": "📅 Schedule\n👉 Click here for the detailed schedule"
+    "objectID": "events/index.html#section-1",
+    "href": "events/index.html#section-1",
+    "title": "Events",
+    "section": "2023",
+    "text": "2023\nMEDFUSE: Medicine, Engineering, and Data Fusion for Health"
   },
   {
     "objectID": "lab_culture.html",
