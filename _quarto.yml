@@ -11,7 +11,7 @@ website:
     title: False
     search: true
     left:
-      - text: "<img id='theme-logo' data-light-src='/images/logo_light.png' data-dark-src='/images/logo_dark.png' src='/images/logo_light.png' style='height: 90px !important;'>"
+      - text: "<img id='theme-logo' data-light-src='/images/logo_light.svg' data-dark-src='/images/logo_dark.svg' src='/images/logo_light.png' style='height: 90px !important;'>"
         href: index.qmd  
       - text: People
         menu:
