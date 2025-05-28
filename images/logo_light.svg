@@ -1,0 +1,22 @@
+<svg viewBox="0 0 480 120" xmlns="http://www.w3.org/2000/svg">
+  <title>Sustainability Lab Logo - Light Mode</title>
+  
+  <!-- Axes -->
+  <line x1="110" y1="85" x2="110" y2="35" stroke="#444444" stroke-width="2" stroke-linecap="round"/>
+  <line x1="110" y1="85" x2="150" y2="85" stroke="#444444" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Sigmoid S -->
+  <path d="M 90.0 84.7 L 91.4 84.5 L 92.8 84.3 L 94.1 84.1 L 95.5 83.7 L 96.9 83.2 L 98.3 82.5 L 99.7 81.5 L 101.0 80.2 L 102.4 78.5 L 103.8 76.3 L 105.2 73.5 L 106.6 70.2 L 107.9 66.3 L 109.3 62.1 L 110.7 57.9 L 112.1 53.7 L 113.4 49.8 L 114.8 46.5 L 116.2 43.7 L 117.6 41.5 L 119.0 39.8 L 120.3 38.5 L 121.7 37.5 L 123.1 36.8 L 124.5 36.3 L 125.9 35.9 L 127.2 35.7 L 128.6 35.5 L 130.0 35.3"
+        fill="none"
+        stroke="#000000"
+        stroke-width="3.5"
+        stroke-linecap="round"/>
+
+  <!-- Text -->
+  <text x="165" y="65" font-family="system-ui, sans-serif" font-size="32" font-weight="400" fill="#111111" letter-spacing="0.5px">
+    SUSTAINABILITY
+  </text>
+  <text x="165" y="85" font-family="system-ui, sans-serif" font-size="18" font-weight="300" fill="#555555" letter-spacing="3px">
+    LAB
+  </text>
+</svg>
