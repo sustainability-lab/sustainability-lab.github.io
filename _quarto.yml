@@ -38,6 +38,8 @@ website:
             href: lab_culture.qmd
           - text : Upskilling
             href: upskilling.qmd
+          - text: Design Kit
+            href: design-kit.qmd
       - href: news.qmd
         text: News
       - href: media.qmd
