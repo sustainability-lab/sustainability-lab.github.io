@@ -47,7 +47,6 @@ toc: false
 
 </style>
 </head>
-
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 <!-- Wrapper for slides -->
 <div class="carousel-inner">
@@ -62,6 +61,13 @@ toc: false
 <img src="images/mainpage/JoulesEye_2.png">
 <div class="carousel-caption">
 <h3>Prototyping JoulesEye</h3>
+</div>
+</div>
+
+<div class="item">
+<img src="images/mainpage/space-to-policy.png">
+<div class="carousel-caption">
+<h3>Space to Policy</h3>
 </div>
 </div>
 
