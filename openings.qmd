@@ -6,20 +6,99 @@ output:
     self_contained: false
 ---
 
-### Junior/Senior Research Fellow Opening
+<!-- Add Google Fonts & Basic Styling -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+  }
 
-Join us as a Junior/Senior Research Fellow in the Sustainability Lab! [Apply Now](https://docs.google.com/forms/d/e/1FAIpQLSeU2KoY-yAsFKCtlUZ8BH8gMEMwhV8z6L8WdaOtPB7TsJQrRg/viewform)
+  .card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.2s ease;
+  }
 
-### Summer Research Intern Opening
+  .card:hover {
+    transform: translateY(-4px);
+  }
 
-Join us through the Summer Research Internship Program in the following domains:
+  h2, h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
 
-1. AI for Sustainibility
-2. AI/Sensing for Health
-3. Exposition and Visualisation
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 
-Find our projects labelled: IP0NB0000019 and IP0NB0000020 on IIT Gandhinagar [SRIP portal](https://srip.iitgn.ac.in/registration/)
+  .apply-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
 
-### 6 months internships
+  .apply-btn:hover {
+    background-color: #0056b3;
+  }
 
-Contact the PI for 6 months internships. 
+  .pdf-link {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 15px;
+    color: #007bff;
+    text-decoration: underline;
+  }
+
+  ul {
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  .emoji {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+</style>
+
+<div class="card">
+  <h3>🔬 Research Associate I Position</h3>
+  <p>Join us as a Research Associate I in the <strong>Sustainability Lab</strong> and contribute to high-impact, interdisciplinary research.</p>
+  <a class="apply-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdGfvKw3anCtGTqXy2Wa7Z1dX_AkOf_FqflFROZrtN-VKmWmg/viewform" target="_blank">Apply Now</a>
+  <br>
+  <a class="pdf-link" href="https://drive.google.com/file/d/1y_-sJ2LeYvsZZZhJ9EU6NEZCUm8ylKnf/view?usp=sharing" target="_blank">      View Detailed</a>
+</div>
+
+<div class="card">
+  <h3>🔬 Junior/Senior Research Fellow</h3>
+  <p>Be a part of cutting-edge research as a Junior or Senior Research Fellow in the <strong>Sustainability Lab</strong>.</p>
+  <a class="apply-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeU2KoY-yAsFKCtlUZ8BH8gMEMwhV8z6L8WdaOtPB7TsJQrRg/viewform" target="_blank">Apply Now</a>
+</div>
+
+<div class="card">
+  <h3>🔬 Summer Research Internship</h3>
+  <p>Join our Summer Internship Program and work on exciting projects in the following domains:</p>
+  <ul>
+    <li>🤖 AI for Sustainability</li>
+    <li>🧬 AI/Sensing for Health</li>
+    <li>📊 Exposition and Visualization</li>
+  </ul>
+  <p>Explore projects <strong>IP0NB0000019</strong> and <strong>IP0NB0000020</strong> on the IIT Gandhinagar <a href="https://srip.iitgn.ac.in/registration/" target="_blank">SRIP Portal</a>.</p>
+</div>
+
+<div class="card">
+  <h3>🔬 6-Month Internships</h3>
+  <p>Looking for a 6-month internship? Get in touch with the Principal Investigator (PI) directly to explore personalized opportunities in sustainability and AI research.</p>
+</div>
