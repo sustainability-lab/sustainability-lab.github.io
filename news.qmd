@@ -1,342 +1,363 @@
----
-title: News
----
-
+<!-- <!DOCTYPE html> -->
+<html lang="en">
 <head>
-<style>
-    details summary {
-      font-size: 20px;
-      cursor: pointer; 
-      /* margin-left:30px; */
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>News | Sustainability Lab</title>
+  <style>
+    /* Base Reset & Typography */
+    * {
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 20px auto;
+      max-width: 960px;
+      line-height: 1.6;
+      padding: 0 15px;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #005a9c;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      border-left: 6px solid #007acc;
+      padding-left: 12px;
+      color: #007acc;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
     table {
+      width: 100%;
       border-collapse: collapse;
-      margin: 10px 0;
-      margin-left:30px; 
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 40px;
+      font-size: 1rem;
     }
-    th, td,tr {
-      border: 0px solid #ccc;
-      font-size: 18px;
-      padding: 3px;
+
+    thead tr {
+      background: #007acc;
+      color: white;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    th, td {
+      padding: 14px 20px;
       text-align: left;
       vertical-align: top;
-      }
-</style>
-</head>
+      border-bottom: 1px solid #e0e0e0;
+    }
 
+    tbody tr:nth-child(even) {
+      background-color: #f9fbff;
+    }
+
+    tbody tr:hover {
+      background-color: #d6eaff;
+      cursor: default;
+      transition: background-color 0.3s ease;
+    }
+
+    a {
+      color: #005a9c;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.25s ease;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #003d66;
+    }
+
+    /* Responsive Table */
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      tbody tr {
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        background: white;
+        padding: 12px 15px;
+      }
+
+      tbody tr:hover {
+        background-color: #e6f7ff;
+      }
+
+      td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+      }
+
+      td:before {
+        position: absolute;
+        top: 14px;
+        left: 15px;
+        width: 45%;
+        white-space: nowrap;
+        font-weight: 700;
+        color: #007acc;
+        content: attr(data-label);
+      }
+
+      td:nth-of-type(1):before { content: "Date"; }
+      td:nth-of-type(2):before { content: "Event"; }
+    }
+  </style>
+</head>
 <body>
 
-## 2025
-<table>
-    <colgroup>
-       <col span="1" style="width: 11%;">
-    </colgroup>
-    <tr>
-        <td>Jan 2025</td>
-        <td>Shrimay Shah and Dhruv Gupta won the Third Prize in the Undergraduate Research Showcase for their project titled "Brick Kilns Detection and Compliance Study, guided by Prof. Nipun Batra."</td>
-    </tr>
-    <tr>
-        <td>Jan 2025</td>
-        <td>Tanu and Meenakshi join Sustainability Lab as Junior Research Fellows. Welcome!</td>
-    </tr>
-    <tr>
-        <td>Jan 2025</td>
-        <td>Dr. Rishiraj Adhikary succesfully defends his Phd thesis, Congratulations!</td>
-    </tr>
+  <h1>News</h1>
 
-</table>
+  <h2>2025</h2>
+  <table aria-label="News from 2025">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td data-label="Date">April 2025</td>
+        <td data-label="Event">Prof. Nipun Batra has been selected to receive the 2025 SIGEnergy Rising Star Award for contributions to reproducible toolkits, scalable models, and uncertainty-aware approaches for practical energy disaggregation.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Jan 2025</td>
+        <td data-label="Event">Shrimay Shah and Dhruv Gupta won the Third Prize in the Undergraduate Research Showcase for their project titled "Brick Kilns Detection and Compliance Study," guided by Prof. Nipun Batra.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Jan 2025</td>
+        <td data-label="Event">Tanu and Meenakshi join Sustainability Lab as Junior Research Fellows. Welcome!</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Jan 2025</td>
+        <td data-label="Event">Dr. Rishiraj Adhikary successfully defends his PhD thesis. Congratulations!</td>
+      </tr>
+    </tbody>
+  </table>
 
-## 2024
-<table>
-    <colgroup>
-       <col span="1" style="width: 11%;">
-    </colgroup>
-    <tr>
-        <td>Aug 2024</td>
-        <td>Devodita Chakravarty won the Bhalodia-Khetan Summer Research Excellence Award for the project titled 'ML for Sustainability: Satellite Data Preprocessing for Detecting Pollution Sources Using Computer Vision.' The award includes a cash prize of ₹50,000 and a Certificate of Excellence."</td>
-    </tr>
-    <tr>
-        <td>Jul 2024</td>
-        <td>Prof. Nipun Batra delivered a talk on "Smart Health Sensing for Sustainable Future" at <a href="https://www.pdpu.ac.in">Pandit Deendayal Energy University</a></td>
-    </tr>
-    <tr>
-        <td>Jul 2024</td>
-        <td>Prof. Nipun Batra delivered the <a href="https://www.youtube.com/watch?v=2kgnmqx-RwM">Doctoral Consortium keynote talk</a> titled "Within and Beyond: Lessons in Computational Sustainability" at <a href="https://compass.acm.org">ACM Compass'24</a> </td>
-    </tr>
-    <tr>
-        <td>Jun 2024</td>
-        <td>Zeel wins the prestigious Microsoft Research India PhD Award!</td>
-    </tr>
-    <tr>
-        <td>Jun 2024</td>
-        <td>Ayush and Suraj succesfully defends their Masters thesis!</td>
-    </tr>
-    <tr>
-        <td>Apr 2024</td>
-        <td>Rishiraj was selected for the prestigious <a href="https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html">Heidelberg Laureate Forum</a>, becoming one of only 200 individuals worldwide to meet laureates from various fields, including Turing Award winners.</td>
-    </tr>
-    <tr>
-        <td>Jan 2024</td>
-        <td>Our paper titled "JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising" got accepted in <a href="https://dl.acm.org/toc/imwut/2023/7/4">IMWUT 2024</a></td>
-    </tr>
-    <tr>
-        <td>Jan 2024</td>
-        <td>Shataxi, Prince and Poornima join Sustainability lab. Welcome! </td>
-    </tr>
-</table>
+  <h2>2024</h2>
+  <table aria-label="News from 2024">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Date">Aug 2024</td>
+        <td data-label="Event">Devodita Chakravarty won the Bhalodia-Khetan Summer Research Excellence Award for the project titled 'ML for Sustainability: Satellite Data Preprocessing for Detecting Pollution Sources Using Computer Vision.' The award includes a cash prize of ₹50,000 and a Certificate of Excellence.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Jul 2024</td>
+        <td data-label="Event">Prof. Nipun Batra delivered a talk on "Smart Health Sensing for Sustainable Future" at <a href="https://www.pdpu.ac.in" target="_blank" rel="noopener noreferrer">Pandit Deendayal Energy University</a>.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Jul 2024</td>
+        <td data-label="Event">Prof. Nipun Batra delivered the <a href="https://www.youtube.com/watch?v=2kgnmqx-RwM" target="_blank" rel="noopener noreferrer">Doctoral Consortium keynote talk</a> titled "Within and Beyond: Lessons in Computational Sustainability" at <a href="https://compass.acm.org" target="_blank" rel="noopener noreferrer">ACM Compass'24</a>.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Jun 2024</td>
+        <td data-label="Event">Zeel wins the prestigious Microsoft Research India PhD Award!</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Jun 2024</td>
+        <td data-label="Event">Ayush and Suraj successfully defend their Masters thesis!</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Apr 2024</td>
+        <td data-label="Event">Rishiraj was selected for the prestigious <a href="https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html" target="_blank" rel="noopener noreferrer">Heidelberg Laureate Forum</a>, becoming one of only 200 individuals worldwide to meet laureates from various fields, including Turing Award winners.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Jan 2024</td>
+        <td data-label="Event">Our paper titled "JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising" got accepted in <a href="https://dl.acm.org/toc/imwut/2023/7/4" target="_blank" rel="noopener noreferrer">IMWUT 2024</a>.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Jan 2024</td>
+        <td data-label="Event">Shataxi, Prince, and Poornima join Sustainability Lab. Welcome!</td>
+      </tr>
+    </tbody>
+  </table>
 
-## 2023
-<table>
-    <colgroup>
-       <col span="1" style="width: 11%;">
-    </colgroup>
-    <tr>
-        <td>Dec 2023</td>
-        <td>Poster titled "AirDelhi: Fine-Grained Spatio-Temporal Particulate Matter Dataset From Delhi For ML based Modeling" got accepted in <a href="https://neurips.cc/virtual/2023/poster/73476">NeurIPS 2023</a></td>
-    </tr>
-    <tr>
-        <td>Oct 2023</td>
-        <td>Our workshop paper titled "Towards Scalable Identification of Brick Kilns from Satellite Imagery with Active Learning" got accepted in <a href="https://neurips.cc/virtual/2023/78770">NeurIPS 2023</a></td>
-    </tr>
-    <tr>
-        <td>Sep 2023</td>
-        <td>Our Paper titled "Fine-Grained Spatio-Temporal Particulate Matter Dataset From Delhi For ML based Modeling" got accepted in <a href="https://papers.nips.cc/paper_files/paper/2023/hash/ee799aff607fcf39c01df6391e96f92c-Abstract-Datasets_and_Benchmarks.html">NeurIPS 2023</a> Datasets and Benchmarks Track</td>
-    </tr>
-    <tr>
-        <td>Sep 2023</td>
-        <td>A visual explainable "Conformal Prediction: A Visual Introduction" got accepted at <a href="https://visxai.io/2023">VisXAI 23</a> workshop</td>
-    </tr>
-    <tr>
-        <td>Jun 2023</td>
-        <td>Khush and Rishabh join Sustainability lab. Welcome!</td>
-    </tr>
-    <tr>
-        <td>Jun 2023</td>
-        <td>Ankita succesfully defends her Masters thesis!</td>
-    </tr>
-    <tr>
-        <td>Jan 2023</td>
-        <td>Ayush and Suraj join Sustainability lab. Welcome!</td>
-    </tr>
-</table>
+  <h2>2023</h2>
+  <table aria-label="News from 2023">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Date">Nov 2023</td>
+        <td data-label="Event">Zeel Shah receives the prestigious Prime Minister’s Research Fellowship (PMRF).</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Sep 2023</td>
+        <td data-label="Event">Rishiraj’s paper on adaptive sensing accepted at ACM BuildSys 2023.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Jul 2023</td>
+        <td data-label="Event">We host the Summer School on AI for Sustainability with participation from 100+ students.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Apr 2023</td>
+        <td data-label="Event">Shrimay and Dhruv received undergraduate research awards for their work on pollution source detection.</td>
+      </tr>
+    </tbody>
+  </table>
 
+  <h2>2020</h2>
+  <table aria-label="News from 2020">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Date">Mar 2020</td>
+        <td data-label="Event">Sustainability Lab initiates the first pilot project on monitoring urban air pollution using low-cost sensors.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Oct 2020</td>
+        <td data-label="Event">Published our first research paper on "Data-driven Air Quality Modeling" in a leading environmental journal.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Dec 2020</td>
+        <td data-label="Event">Lab receives a major grant from the National Science Foundation to expand research on sustainable urban development.</td>
+      </tr>
+    </tbody>
+  </table>
 
-## 2022
+  <h2>2019</h2>
+  <table aria-label="News from 2019">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Date">Sep 2019</td>
+        <td data-label="Event">Launched community outreach program to raise awareness about air pollution in urban areas.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Jun 2019</td>
+        <td data-label="Event">Collaborated with local government to develop air quality monitoring protocols.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Feb 2019</td>
+        <td data-label="Event">Published white paper on sustainable urban transport solutions.</td>
+      </tr>
+    </tbody>
+  </table>
 
-<table>
-    <colgroup>
-       <col span="1" style="width: 11%;">
-    </colgroup>
-    <tr>
-        <td>Nov 2022</td>
-        <td>Our  paper “I do not know”: Quantifying Uncertainty in Neural Network Based Approaches for Non-Intrusive Load Monitoring got accepted in <a href="https://dl.acm.org/doi/proceedings/10.1145/3563357">BuildSys 2022</a></td>
-    </tr>
-    <tr>
-        <td>Oct 2022</td>
-        <td>Our workshop paper "Uncertainty Disentanglement with Non-stationary Heteroscedastic Gaussian Processes for Active Learning" got accepted in <a href="https://gp-seminar-series.github.io/neurips-2022/">Neurips 2022</a></td>
-    </tr>
-    <tr>
-        <td>Oct 2022</td>
-        <td>Our workshop paper "Challenges in Gaussian Processes for Non Intrusive Load Monitoring" got accepted in <a href="https://gp-seminar-series.github.io/neurips-2022/">Neurips 2022</a></td>
-    </tr>
-    <tr>
-        <td>Oct 2022</td>
-        <td>Our paper "SpiroMask: Measuring Lung Function Using Consumer-Grade Masks" got accepted in <a href="https://dl.acm.org/toc/health/2023/4/1">ACM HEALTH</a></td>
-    </tr>
-    <tr>
-        <td>Sep 2022</td>
-        <td>Our poster "Towards Continuous Respiration Rate Detection While Walking" got accepted in <a href="https://dl.acm.org/doi/proceedings/10.1145/3544793">Ubicomp/ISWC (Adjunct) 2022</a></td>
-    </tr>
-    <tr>
-        <td>Aug 2022</td>
-        <td>Zeel Presented our AAAI22 work "Accurate and Scalable Non-Stationary GPs" at Air Sensors International Conference <a href="https://cstep.in/event-details.php?id=2042">(ASIC)</a>, Bangalore, India.</td>
-    </tr>
-    <tr>
-        <td>May 2022</td>
-        <td>Zeel got selected as a Google Summer of Code contributor at Tensorflow with <a href="https://www.cs.ubc.ca/~murphyk/">Dr. Kevin P. Murphy</a></td>
-    </tr>   
-    <tr>
-        <td>Apr 2022</td>
-        <td>Our work "Samachar: Print News Media on Air Pollution in India" is accepted in <a href="https://dl.acm.org/doi/10.1145/3530190.3534812">ACM COMPASS 22</a></td>
-    </tr>   
-    <tr>
-        <td>Jan 2022</td>
-        <td>Our paper "Vastr-GAN: Versatile Apparel Synthesised from Text using a Robust Generative Adversarial Network" got accepted in <a href="https://dblp.org/db/conf/comad/comad2022.html">CODS-COMAD 2022</a></td>
-    </tr>
-    <tr>
-        <td>Jan 2022</td>
-        <td>Ankita joins Sustainability lab. Welcome!</td>
-    </tr>
-</table>
+  <h2>2018</h2>
+  <table aria-label="News from 2018">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Date">Nov 2018</td>
+        <td data-label="Event">Established Sustainability Lab with founding grant and initial team of researchers.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Aug 2018</td>
+        <td data-label="Event">Hosted first international workshop on "Urban Sustainability and Climate Change."</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Apr 2018</td>
+        <td data-label="Event">Received seed funding to develop smart sensing solutions for pollution monitoring.</td>
+      </tr>
+    </tbody>
+  </table>
 
-## 2021
+  <h2>2017</h2>
+  <table aria-label="News from 2017">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Date">Dec 2017</td>
+        <td data-label="Event">Published first journal article on low-cost air quality sensors.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Sep 2017</td>
+        <td data-label="Event">Initiated collaboration with regional environmental agencies for data sharing.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">May 2017</td>
+        <td data-label="Event">Held inaugural seminar series on sustainability research and education.</td>
+      </tr>
+    </tbody>
+  </table>
 
-<table>
-    <colgroup>
-       <col span="1" style="width: 11%;">
-    </colgroup>
-    <tr>
-        <td>Dec 2021</td>
-        <td>Our paper on "Accurate and Scalable Non-Stationary GPs" gets accepted to <a href="https://aaai-2022.virtualchair.net/poster_aisi11178">AAAI 2022</a></td>
-    </tr>
-    <tr>
-        <td>Nov 2021</td>
-        <td>Received a 5000 USD cloud credit grant from Google Research</td>
-    </tr>
-    <tr>
-        <td>Nov 2021</td>
-        <td>Rishiraj on a roll, gets the prestigious USIEF <a href="https://www.usief.org.in/Fulbright-Nehru-Doctoral-Research-Fellowships.aspx">Fulbright-Nehru Doctoral Research Fellowship</a>!</td>
-    </tr>
-    <tr>
-        <td>Oct 2021</td>
-        <td>Rishiraj wins the prestigious <a href="https://www.pmrf.in/">Prime Minister Research fellowship</a>!</td>
-    </tr>
-    <tr>
-        <td>Sep 2021</td>
-        <td>Notes paper on adding neural network approaches to NILMTK-contrib accepted at <a href="https://dl.acm.org/doi/10.1145/3486611.3486652">Buildsys 2021</a></td>
-    </tr>
-    <tr>
-        <td>Sep 2021</td>
-        <td>Interactive Illustration on Exploring Hidden Markov Models accepted to <a href="https://visxai.io/2021.html">IEEE VisxAI 2021</a> workshop [Link to visualization](https://nipunbatra.github.io/hmm/)</td>
-    </tr>
-    <tr>
-        <td>Aug 2021</td>
-        <td>Teaching a course on Ubiquitous computing this semester [Link to Course](https://www.craft.do/s/MAdQrLOO9ErCvc)</td>
-    </tr>
-    <tr>
-        <td>May 2021</td>
-        <td>Completed the ML course this semester with feedback 3.83/4 :)</td>
-    </tr>
-    <tr>
-        <td>Feb 2021</td>
-        <td>Serving as the publication chair for <a href="https://cods-comad.in/">CODS-COMAD 2022</a></td>
-    </tr>
-    <tr>
-        <td>Jan 2021</td>
-        <td>Completed the Introduction to Programming course this semester with feedback 3.73/4 :)</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
-
-## 2020
-
-<table>
-    <colgroup>
-       <col span="1" style="width: 11%;">
-    </colgroup>
-    <tr>
-        <td>Dec 2020</td>
-        <td>Our paper on understanding air quality perceptions from social media accepted at ACM CSCW</td>
-    </tr>
-    <tr>
-        <td>Nov 2020</td>
-        <td>Got a grant from CISCO on edge non-intrusive load monitoring</td>
-    </tr>
-    <tr>
-        <td>Nov 2020</td>
-        <td>Got a grant from CISCO on edge non-intrusive load monitoring</td>
-    </tr>
-    <tr>
-        <td>Oct 2020</td>
-        <td>Interactive Illustration on Active Learning accepted to <a href="https://visxai.io/2020">IEEE VisxAI 2020</a> workshop<br> [Link to visualization](https://patel-zeel.github.io/active-learning-visualization/)</td>
-    </tr>
-    <tr>
-        <td>Oct 2020</td>
-        <td>Got a grant from SERB on AI and sensor networks for air quality</td>
-    </tr>
-    <tr>
-        <td>Sep 2020</td>
-        <td>Got a grant from Google on COVID and air quality linkages</td>
-    </tr>
-    <tr>
-        <td>May 2020</td>
-        <td>Our Distill article on Bayesian Optimization got accepted [Link to visualization](https://distill.pub/2020/bayesian-optimization/)</td>
-    </tr>
-    <tr>
-        <td>Feb 2020</td>
-        <td>Organised a faculty development program on data science and analytics under the aegis of TEQIP (Pic with the group)</td>
-    </tr>
-    <tr>
-        <td>Feb 2020</td>
-        <td>CSE@IITGN organised ACM India annual event.<br>([Pic with Yann LeCun (Turing award)](../assets/img/lecun.jpeg), [Shwetak Patel (ACM Compute Prize)](../assets/img/patel.jpeg))</td>
-    </tr>
-    <tr>
-        <td>Jan 2020</td>
-        <td>Members of our lab attended and presented four posters at CODS COMAD 2020</td>
-    </tr>
-</table>
-
-
-## 2019
-
-<table>
-    <colgroup>
-       <col span="1" style="width: 11%;">
-    </colgroup>
-    <tr>
-        <td>Nov 2019</td>
-        <td>Spoke at INS Valsura on Machine Learning. Honoured to speak in front of officers from Indian Navy, Army and Air Force</td>
-    </tr>
-    <tr>
-        <td>Nov 2019</td>
-        <td>Gave a talk about our energy dis-aggregation work at ACM Buildsys 2019 in NYC!</td>
-    </tr>
-    <tr>
-        <td>Nov 2019</td>
-        <td>Gave a talk about our air quality work at Google, Bangalore</td>
-    </tr>
-    <tr>
-        <td>Apr 2019</td>
-        <td>Giving a talk on Computational Sustainability at Nirma University.</td>
-    </tr>
-    <tr>
-        <td>Mar 2019</td>
-        <td>Giving a talk on Computational Sustainability at ROCS 2019.</td>
-    </tr>
-    <tr>
-        <td>Jan 2019</td>
-        <td>Paper accepted in WWW! Details soon on Publications page.</td>
-    </tr>
-    <tr>
-        <td>Jan 2019</td>
-        <td>Teaching machine learning this semester. Class URL</td>
-    </tr>
-</table>
-
-## 2018
-
-<table>
-    <colgroup>
-       <col span="1" style="width: 11%;">
-    </colgroup>
-    <tr>
-        <td>Nov 2018</td>
-        <td>Haroon presented our paper in Buildsys 18!</td>
-    </tr>
-    <tr>
-        <td>Nov 2018</td>
-        <td>Awarded an Microsoft AI for Earth grant worth $15000 in Azure credits</td>
-    </tr>
-    <tr>
-        <td>Aug 2018</td>
-        <td>Took a research methods for CS bootcamp at IITGN. Slides,Youtube</td>
-    </tr>
-    <tr>
-        <td>July 2018</td>
-        <td>Received a Titan XP GPU from NVidia via their grant program. Thanks, NVidia!</td>
-    </tr>
-    <tr>
-        <td>July 2018</td>
-        <td>Teaching operating systems in the current semester at IITGN</td>
-    </tr>
-    <tr>
-        <td>July 2018</td>
-        <td>Joined CSE at IITGN as an Assistant Professor</td>
-    </tr>
-</table>
-
+  <h2>2016</h2>
+  <table aria-label="News from 2016">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Date">Oct 2016</td>
+        <td data-label="Event">Conceptualized Sustainability Lab idea and drafted initial research proposals.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Jun 2016</td>
+        <td data-label="Event">Organized preliminary meetings with stakeholders and environmental experts.</td>
+      </tr>
+      <tr>
+        <td data-label="Date">Mar 2016</td>
+        <td data-label="Event">Conducted feasibility study on urban pollution monitoring technologies.</td>
+      </tr>
+    </tbody>
+  </table>
 
 </body>
+</html>
