@@ -148,6 +148,10 @@
       </tr>
     </thead>
     <tbody>
+        <tr>
+        <td data-label="Date">April 2025</td>
+        <td data-label="Event">Prof. Nipun Batra has been selected to receive the 2025 SIGEnergy Rising Star Award for contributions to reproducible toolkits, scalable models, and uncertainty-aware approaches for practical energy disaggregation.</td>
+      </tr>
       <tr>
         <td data-label="Date">Jan 2025</td>
         <td data-label="Event">Shrimay Shah and Dhruv Gupta won the Third Prize in the Undergraduate Research Showcase for their project titled "Brick Kilns Detection and Compliance Study," guided by Prof. Nipun Batra.</td>
