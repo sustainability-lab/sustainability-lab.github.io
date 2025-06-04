@@ -371,91 +371,374 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- Add Google Fonts & Basic Styling -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+<p><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"></p>
 <style>
-  body {
+body {
     font-family: 'Inter', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    padding: 20px;
-  }
+    line-height: 1.6;
+}
 
-  .card {
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 16px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.hero .subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.content-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+
+.content-card h2 {
+    color: #2563eb;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.content-card p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #4b5563;
+    margin-bottom: 16px;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 24px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+    border-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.1);
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.benefit-item h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.benefit-item p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.stat-item {
+    text-align: center;
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #2563eb;
+}
+
+.stat-number {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #2563eb;
+    display: block;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.position-card {
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    padding: 20px;
-    margin-bottom: 30px;
-    transition: transform 0.2s ease;
-  }
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    margin-bottom: 24px;
+    border-left: 4px solid #2563eb;
+    transition: all 0.3s ease;
+}
 
-  .card:hover {
-    transform: translateY(-4px);
-  }
+.position-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
 
-  h2, h3 {
+.position-card h3 {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin-bottom: 16px;
     font-weight: 600;
-    margin-bottom: 10px;
-  }
+}
 
-  p {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
+.highlight-box {
+    background: #eff6ff;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
 
-  .apply-btn {
+.highlight-box strong {
+    color: #1d4ed8;
+}
+
+.btn {
     display: inline-block;
-    background-color: #007bff;
-    color: white !important;
-    padding: 10px 20px;
-    border-radius: 6px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.btn-secondary:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+.testimonial {
+    background: #f8fafc;
+    border-left: 4px solid #10b981;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.testimonial .author {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.culture-highlight {
+    background: #fef3c7;
+    color: #92400e;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+.quick-links {
+    background: #e7f3ff;
+    padding: 24px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+.quick-links h4 {
+    margin-bottom: 16px;
+    color: #0066cc;
+}
+
+.quick-links a {
+    display: inline-block;
+    margin-right: 16px;
+    margin-bottom: 8px;
+    color: #0066cc;
     font-weight: 500;
     text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
+}
 
-  .apply-btn:hover {
-    background-color: #0056b3;
-  }
-
-  .pdf-link {
-    display: inline-block;
-    margin-top: 8px;
-    font-size: 15px;
-    color: #007bff;
+.quick-links a:hover {
     text-decoration: underline;
-  }
+}
 
-  ul {
-    margin-left: 20px;
-    margin-top: 5px;
-  }
+.center-text {
+    text-align: center;
+}
 
-  .emoji {
-    font-size: 20px;
-    margin-right: 8px;
-  }
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero {
+        padding: 40px 20px;
+    }
+    
+    .benefits-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .content-card {
+        padding: 24px;
+    }
+}
 </style>
-<div class="card">
+<div class="hero">
+<h1>
+🚀 Join Our Research Mission
+</h1>
+<p class="subtitle">
+Shape the future of sustainability through cutting-edge AI research at IIT Gandhinagar
+</p>
+</div>
+<section id="our-vision" class="level2">
+<h2 class="anchored" data-anchor-id="our-vision">Our Vision</h2>
+<div class="content-card">
+<p>At the Sustainability Lab, we envision a world where artificial intelligence serves as a powerful force for environmental and social good. Our mission is to develop innovative, data-driven solutions that address the most pressing sustainability challenges of our time.</p>
+<p>We believe in the transformative potential of AI to monitor environmental changes, optimize resource usage, improve healthcare accessibility, and create sustainable systems that benefit both people and the planet. Through rigorous research, collaborative partnerships, and real-world applications, we strive to bridge the gap between cutting-edge technology and meaningful societal impact.</p>
+<p>Our work spans across domains including environmental monitoring, climate solutions, health sensing technologies, and data visualization for policy-making. We are committed to producing research that is not only academically excellent but also practically relevant and ethically responsible.</p>
+</div>
+</section>
+<section id="why-join-sustainability-lab" class="level2">
+<h2 class="anchored" data-anchor-id="why-join-sustainability-lab">Why Join Sustainability Lab?</h2>
+<div class="content-card">
+<div class="benefits-container">
+<div class="benefit-item">
+<span class="benefit-icon">🏆</span>
+<h4 class="anchored">
+Award-Winning Research
+</h4>
+<p>
+SIGEnergy Rising Star Award 2025, Best thesis among others
+</p>
+</div>
+<div class="benefit-item">
+<span class="benefit-icon">🌟</span>
+<h4 class="anchored">
+Stellar Alumni Network
+</h4>
+<p>
+Graduates at Google DeepMind, Microsoft, CMU, NYU, UCSD
+</p>
+</div>
+<div class="benefit-item">
+<span class="benefit-icon">💻</span>
+<h4 class="anchored">
+World-Class Resources
+</h4>
+<p>
+NVIDIA A100 GPUs, comprehensive computational infrastructure
+</p>
+</div>
+<div class="benefit-item">
+<span class="benefit-icon">🤝</span>
+<h4 class="anchored">
+Collaborative Culture
+</h4>
+<p>
+Excellence, respect, and clear communication valued
+</p>
+</div>
+</div>
+<div class="stats-container">
+<div class="stat-item">
+<p><span class="stat-number">50+</span> <span class="stat-label">Alumni Placed</span></p>
+</div>
+<div class="stat-item">
+<p><span class="stat-number">320GB</span> <span class="stat-label">GPU Memory</span></p>
+</div>
+<div class="stat-item">
+<p><span class="stat-number">6+</span> <span class="stat-label">Years Research</span></p>
+</div>
+</div>
+<div class="quick-links">
+<h4 class="anchored">
+📚 Learn More About Our Community
+</h4>
+<p><a href="./alumni.html">👥 Meet Our Alumni</a> <a href="./experiences.html">💬 Alumni Experiences</a> <a href="./members.html">🔬 Current Team</a> <a href="./awards.html">🏆 Awards &amp; Recognition</a> <a href="./lab_culture.html">🌱 Lab Culture</a></p>
+</div>
+</div>
+</section>
+<section id="open-positions" class="level2">
+<h2 class="anchored" data-anchor-id="open-positions">Open Positions</h2>
+<div class="position-card">
 <h3 class="anchored">
 🔬 Research Associate I Position
 </h3>
 <p>
 Join us as a Research Associate I in the <strong>Sustainability Lab</strong> and contribute to high-impact, interdisciplinary research.
 </p>
-<p><a class="apply-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdGfvKw3anCtGTqXy2Wa7Z1dX_AkOf_FqflFROZrtN-VKmWmg/viewform" target="_blank">Apply Now</a> <br> <a class="pdf-link" href="https://drive.google.com/file/d/1y_-sJ2LeYvsZZZhJ9EU6NEZCUm8ylKnf/view?usp=sharing" target="_blank"> View Detailed</a></p>
+<div class="highlight-box">
+<p><strong>💡 Perfect for:</strong> Recent graduates looking to gain research experience before pursuing higher studies or industry roles.</p>
 </div>
-<div class="card">
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdGfvKw3anCtGTqXy2Wa7Z1dX_AkOf_FqflFROZrtN-VKmWmg/viewform" target="_blank" class="btn btn-primary">Apply Now</a> <a href="https://drive.google.com/file/d/1y_-sJ2LeYvsZZZhJ9EU6NEZCUm8ylKnf/view?usp=sharing" target="_blank" class="btn btn-secondary">View Detailed Requirements</a></p>
+</div>
+<div class="position-card">
 <h3 class="anchored">
 🔬 Junior/Senior Research Fellow
 </h3>
 <p>
 Be a part of cutting-edge research as a Junior or Senior Research Fellow in the <strong>Sustainability Lab</strong>.
 </p>
-<p><a class="apply-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeU2KoY-yAsFKCtlUZ8BH8gMEMwhV8z6L8WdaOtPB7TsJQrRg/viewform" target="_blank">Apply Now</a></p>
+<div class="highlight-box">
+<p><strong>💡 Perfect for:</strong> Researchers seeking to make significant contributions to AI for sustainability with potential for co-authorship on high-impact publications.</p>
 </div>
-<div class="card">
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeU2KoY-yAsFKCtlUZ8BH8gMEMwhV8z6L8WdaOtPB7TsJQrRg/viewform" target="_blank" class="btn btn-primary">Apply Now</a></p>
+</div>
+<div class="position-card">
 <h3 class="anchored">
 🔬 Summer Research Internship
 </h3>
@@ -463,30 +746,72 @@ Be a part of cutting-edge research as a Junior or Senior Research Fellow in the 
 Join our Summer Internship Program and work on exciting projects in the following domains:
 </p>
 <ul>
-<li>
-🤖 AI for Sustainability
+<li>🤖 <strong>AI for Sustainability:</strong> Environmental monitoring, climate solutions, brick kiln detection</li>
+<li>🧬 <strong>AI/Sensing for Health:</strong> Respiratory monitoring, SpiroMask, JoulesEye technologies<br>
 </li>
-<li>
-🧬 AI/Sensing for Health
-</li>
-<li>
-📊 Exposition and Visualization
-</li>
+<li>📊 <strong>Exposition and Visualization:</strong> Data storytelling and interactive systems</li>
 </ul>
-<p>
-Explore projects <strong>IP0NB0000019</strong> and <strong>IP0NB0000020</strong> on the IIT Gandhinagar <a href="https://srip.iitgn.ac.in/registration/" target="_blank">SRIP Portal</a>.
-</p>
+<div class="highlight-box">
+<p><strong>🎯 SRIP Portal:</strong> Explore projects <strong>IP0NB0000019</strong> and <strong>IP0NB0000020</strong> on the <a href="https://srip.iitgn.ac.in/registration/" target="_blank">IIT Gandhinagar SRIP Portal</a>.</p>
 </div>
-<div class="card">
+<p><strong>💡 Perfect for:</strong> Undergraduate and early graduate students seeking hands-on research experience in cutting-edge AI applications.</p>
+</div>
+<div class="position-card">
 <h3 class="anchored">
 🔬 6-Month Internships
 </h3>
 <p>
 Looking for a 6-month internship? Get in touch with the Principal Investigator (PI) directly to explore personalized opportunities in sustainability and AI research.
 </p>
+<div class="highlight-box">
+<p><strong>💡 Perfect for:</strong> Students wanting deep, sustained research experience with flexible timelines and personalized mentorship.</p>
+</div>
+<p><a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-primary">Contact Prof.&nbsp;Nipun Batra</a> <a href="./computational-resources.html" class="btn btn-secondary">View Our Resources</a></p>
+</div>
+</section>
+<section id="what-our-alumni-say" class="level2">
+<h2 class="anchored" data-anchor-id="what-our-alumni-say">What Our Alumni Say</h2>
+<div class="content-card">
+<div class="testimonial">
+<p>
+“Working at Sustainability Lab gave me the foundation I needed for my role at Google DeepMind. The research experience and mentorship were invaluable.”
+</p>
+<p class="author">
+— Aditi Agarwal, BTech 2024, now Predoc at Google DeepMind
+</p>
+</div>
+<section id="alumni-success-stories" class="level3">
+<h3 class="anchored" data-anchor-id="alumni-success-stories">🎓 Alumni Success Stories</h3>
+<p>Our graduates have gone on to amazing opportunities:</p>
+<ul>
+<li><strong>Industry:</strong> Google DeepMind, Microsoft, Skan.ai, Oracle, Salesforce</li>
+<li><strong>Academia:</strong> PhD programs at UMass Amherst, Stony Brook; MS at CMU, NYU, UCSD, UIUC<br>
+</li>
+<li><strong>Recognition:</strong> Fulbright Fellows, Microsoft Research PhD Awards, PMRFs</li>
+</ul>
+<p><a href="./alumni.html" class="btn btn-secondary">👥 See Full Alumni List</a> <a href="./experiences.html" class="btn btn-secondary">📖 Read Their Stories</a></p>
+</section>
+</div>
+</section>
+<section id="ready-to-join" class="level2">
+<h2 class="anchored" data-anchor-id="ready-to-join">Ready to Join?</h2>
+<div class="content-card center-text">
+<p>Whether you’re interested in environmental monitoring, health sensing, or AI for social good, we have opportunities that match your passion.</p>
+<div class="culture-highlight">
+<p>Our lab culture emphasizes <strong>“less but better”</strong> - we focus on high-quality research that makes a real impact.</p>
+</div>
+<div class="quick-links">
+<h4 class="anchored">
+📋 Before You Apply
+</h4>
+<p><a href="./lab_culture.html">🌱 Understand Our Culture</a> <a href="./expectations.html">📈 Review Expectations</a> <a href="./computational-resources.html">💻 See Our Resources</a> <a href="./upskilling.html">📚 Technical Requirements</a></p>
+</div>
+<p><em>Join a lab where your research can change the world. Where every project matters. Where your growth is our priority.</em></p>
+<p><strong>🌟 The future of sustainability starts with you. 🌟</strong></p>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
