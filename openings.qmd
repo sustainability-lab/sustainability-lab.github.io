@@ -285,6 +285,14 @@ body {
     text-align: center;
 }
 
+.welcome-note {
+    background: #f0fff4;
+    border: 1px solid #86efac;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px 0;
+}
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.2rem;
@@ -391,6 +399,10 @@ We believe in the transformative potential of AI to monitor environmental change
 
 ## Open Positions
 
+<div class="welcome-note">
+<strong>🌟 Don't see the perfect position?</strong> We welcome applications from passionate researchers at any time! Position listings may not reflect all current opportunities - exceptional candidates often create their own paths.
+</div>
+
 <div class="position-card">
 <h3>🔬 Research Associate I Position</h3>
 <p>Join us as a Research Associate I in the <strong>Sustainability Lab</strong> and contribute to high-impact, interdisciplinary research.</p>
@@ -415,7 +427,7 @@ We believe in the transformative potential of AI to monitor environmental change
 </div>
 
 <div class="position-card">
-<h3>🔬 Summer Research Internship</h3>
+<h3>🔬 Summer Research Internship (SRIP 2026)</h3>
 <p>Join our Summer Internship Program and work on exciting projects in the following domains:</p>
 
 - 🤖 **AI for Sustainability:** Environmental monitoring, climate solutions, brick kiln detection
@@ -423,7 +435,7 @@ We believe in the transformative potential of AI to monitor environmental change
 - 📊 **Exposition and Visualization:** Data storytelling and interactive systems
 
 <div class="highlight-box">
-<strong>🎯 SRIP Portal:</strong> Explore projects <strong>IP0NB0000019</strong> and <strong>IP0NB0000020</strong> on the <a href="https://srip.iitgn.ac.in/registration/" target="_blank">IIT Gandhinagar SRIP Portal</a>.
+<strong>🎯 SRIP 2026:</strong> Applications typically open in February for summer programs. Check the <a href="https://srip.iitgn.ac.in/registration/" target="_blank">IIT Gandhinagar SRIP Portal</a> for updates. Our project codes were <strong>IP0NB0000019</strong> and <strong>IP0NB0000020</strong> in SRIP 2025.
 </div>
 
 **💡 Perfect for:** Undergraduate and early graduate students seeking hands-on research experience in cutting-edge AI applications.
@@ -440,6 +452,30 @@ We believe in the transformative potential of AI to monitor environmental change
 <a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-primary">Contact Prof. Nipun Batra</a>
 <a href="computational-resources.qmd" class="btn btn-secondary">View Our Resources</a>
 </div>
+
+## 📧 How to Apply
+
+::: {.content-card}
+
+### When writing to us, please include:
+
+**📋 Essential Details:**
+• **Duration & Start Date:** How long can you commit and when can you start?
+• **CV/Resume:** Your most recent version
+• **Research Interests:** Which areas excite you most?
+
+**🔬 Show Your Interest:**
+• **Papers:** Mention 1-2 papers from our lab you've read and what interested you
+• **Motivation:** Why AI for sustainability? Why our lab specifically?
+• **Background:** Relevant coursework, projects, or experience
+
+<div class="highlight-box">
+<strong>💡 Pro Tip:</strong> Browse our <a href="publications.qmd">publications</a> first to understand our work. Quality of engagement matters more than lengthy emails!
+</div>
+
+**🎯 New to research?** No problem! We welcome first-time researchers and provide mentorship to help you grow.
+
+:::
 
 ## What Our Alumni Say
 
@@ -470,14 +506,6 @@ Whether you're interested in environmental monitoring, health sensing, or AI for
 
 <div class="culture-highlight">
 Our lab culture emphasizes <strong>"less but better"</strong> - we focus on high-quality research that makes a real impact.
-</div>
-
-<div class="quick-links">
-<h4>📋 Before You Apply</h4>
-<a href="lab_culture.qmd">🌱 Understand Our Culture</a>
-<a href="expectations.qmd">📈 Review Expectations</a>
-<a href="computational-resources.qmd">💻 See Our Resources</a>
-<a href="upskilling.qmd">📚 Technical Requirements</a>
 </div>
 
 *Join a lab where your research can change the world. Where every project matters. Where your growth is our priority.*
