@@ -331,7 +331,7 @@ We believe in the transformative potential of AI to monitor environmental change
 <div class="benefit-item">
 <span class="benefit-icon">🏆</span>
 <h4>Award-Winning Research</h4>
-<p>Prof. Nipun Batra received the SIGEnergy Rising Star Award 2025</p>
+<p>SIGEnergy Rising Star Award 2025, Leading PhD fellowships, MTech best thesis</p>
 </div>
 
 <div class="benefit-item">
