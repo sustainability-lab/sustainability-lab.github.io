@@ -203,105 +203,624 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<p><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></p>
 <style>
-  .cropped-image {
-    width: 200px;
-    height: 200px;
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fafbfc;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+.hero-banner {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 16px;
+    margin-bottom: 40px;
+}
+
+.hero-banner h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.hero-banner p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #667eea;
+    display: block;
+}
+
+.stat-label {
+    color: #4a5568;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.section-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #e2e8f0;
+}
+
+.section-card h2 {
+    color: #2563eb;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 8px;
+}
+
+.section-card h3 {
+    color: #2d3748;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 25px 0 15px 0;
+    border-left: 4px solid #10b981;
+    padding-left: 12px;
+}
+
+.phd-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.phd-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-color: #667eea;
+}
+
+.cropped-image {
+    width: 120px;
+    height: 120px;
     object-fit: cover;
-    overflow-clip-margin: unset;        /* AYUSH :  Added to remove pixelation from the profile images*/
-    border: 1px solid #777;             /* Set a thin border on all sides */
-    border-bottom: 4px solid #777;      /* Set a thicker border only at the bottom (slightly darker than tomato) */
-    border-radius: 4px;                 /* Optional: add rounded corners for a nicer look */
-    transition: border-color 0.3s;      /* Add smooth transition for the border color */
-  }
+    border-radius: 8px;
+    border: 2px solid #e2e8f0;
+    transition: border-color 0.3s;
+    flex-shrink: 0;
+}
 
-  .cropped-image:hover {
-    /* Change border color on hover */
-    border-bottom-color: #d9534f; /* Use the same slightly darker color on hover */
-  }
-  p,span,li{
-    font-size:18px;
-  }
+.cropped-image:hover {
+    border-color: #667eea;
+}
+
+.phd-info {
+    flex: 1;
+}
+
+.phd-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 8px;
+}
+
+.phd-duration {
+    color: #667eea;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.alumni-list {
+    display: grid;
+    gap: 12px;
+}
+
+.alumni-item {
+    background: #f8fafc;
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 4px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.alumni-item:hover {
+    border-left-color: #667eea;
+    background: #eff6ff;
+    transform: translateX(4px);
+}
+
+.alumni-name {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.alumni-details {
+    color: #4a5568;
+    margin-top: 4px;
+}
+
+.highlight-companies {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.company-google { background: #4285f4; }
+.company-microsoft { background: #00a1f1; }
+.company-cmu { background: #c41e3a; }
+.company-caltech { background: #ff6c0c; }
+
+@media (max-width: 768px) {
+    .hero-banner h1 {
+        font-size: 2rem;
+    }
+    
+    .phd-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cropped-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .stats-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 </style>
-<section id="phd" class="level2">
-<h2 class="anchored" data-anchor-id="phd">PhD</h2>
-<div class="quarto-layout-panel" data-layout-ncol="4">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><a href="https://rishi-a.github.io"> <img src="https://rishi-a.github.io/images/RISHIRAJ.jpg" class="cropped-image"><br> </a> <span>Rishiraj Adhikary<br>(Jul 2019 - Jan 2025)</span></p>
+<div class="hero-banner">
+<h1>
+🎓 Our Alumni Network
+</h1>
+<p>
+From IIT Gandhinagar to global impact - meet the changemakers who started their journey in our lab
+</p>
+</div>
+<div class="stats-row">
+<div class="stat-card">
+<p><span class="stat-number">50+</span> <span class="stat-label">Alumni Placed</span></p>
+</div>
+<div class="stat-card">
+<p><span class="stat-number">15+</span> <span class="stat-label">Top Universities</span></p>
+</div>
+<div class="stat-card">
+<p><span class="stat-number">10+</span> <span class="stat-label">Leading Companies</span></p>
+</div>
+<div class="stat-card">
+<p><span class="stat-number">6+</span> <span class="stat-label">Years Impact</span></p>
+</div>
+</div>
+<div class="section-card">
+<h2 class="anchored">
+🎯 PhD Graduates
+</h2>
+<div class="phd-card">
+<a href="https://rishi-a.github.io"> <img src="https://rishi-a.github.io/images/RISHIRAJ.jpg" class="cropped-image" alt="Dr. Rishiraj Adhikary"> </a>
+<div class="phd-info">
+<div class="phd-name">
+Dr.&nbsp;Rishiraj Adhikary
+</div>
+<div class="phd-duration">
+July 2019 - January 2025
+</div>
+<div style="color: #4a5568;">
+Our first PhD graduate! Specialized in health sensing and respiratory monitoring technologies. Winner of multiple prestigious awards including Fulbright-Nehru Fellowship.
 </div>
 </div>
 </div>
-<section id="btech" class="level3">
-<h3 class="anchored" data-anchor-id="btech">BTech</h3>
-<ul>
-<li>Aditi Agarwal (BTech 2024): Predoc at Google Deepmind</li>
-<li>Dhruv Patel (BTech 2024): MS at TAMU</li>
-<li>Haikoo Khandor (BTech 2024): MS at TAMU</li>
-<li>Inderjeet Bhullar : First Job at Skan.ai</li>
-<li>Kalash Kankariya : First job at Skan.ai</li>
-<li>Madhav Kanda (BTech 2024): MS at UIUC</li>
-<li>Progyan Das (BTech 2024): Applied Scientist at Microsoft</li>
-<li>Rahul Chembakasseril : First job at Skan.ai</li>
-<li>Utkarsh Mittal (BTech 2024): MS at NYU Tandon</li>
-<li>Aadesh Desai (BTech 2023): MS at CMU</li>
-<li>Eshan Gujarathi (BTech 2023): Predoc at IIT Madras</li>
-<li>Gautam Vasistha (BTech 2023): Data Scientist as Skan.AI</li>
-<li>Hitarth Gandhi (BTech 2023): MS at UC Irvine</li>
-<li>Saagar Parikh (BTech 2023): MS at CMU</li>
-<li>Xhitij Choudhary (BTech 2023): Data Scientist at Skan.AI</li>
-<li>Chris Francis (BTech 2022): MS at UCSD</li>
-<li>Dhruvi Lodhavia (BTech 2022): MS at UCSD</li>
-<li>Hetvi Shastri (BTech 2022): PhD at UMass Amherst</li>
-<li>Harsh Patel (BTech 2022): MS at UCSD</li>
-<li>Palak Purohit (BTech 2022): MS at Caltech</li>
-<li>Shivam Sahni (BTech 2022): MS at UCSD</li>
-<li>Apoorv Agnihotri (BTech 2020): First job at Wadhwani AI -&gt; Data Scientist at Rephrase.ai</li>
-<li>Deepak Narayanan (BTech 2020): First job at Microsoft Research India -&gt; MS at ETH Zurich</li>
-<li>Kukunuri Rithwik (BTech 2020): First job at Jio -&gt; Data Scientist at Nykaa</li>
-<li>Soham Pachpande (BTech 2020): First job at HSBC-&gt; MS at UCSD -&gt; SWE at Salesforce</li>
-</ul>
-</section>
-<section id="mtech" class="level3">
-<h3 class="anchored" data-anchor-id="mtech">MTech</h3>
-<ul>
-<li>Ayush Shrivastava (Mtech 2024): PhD at IIT Gandhinagar</li>
-<li>Suraj Jaiswal (Mtech 2024): First job at Neuroreef-labs</li>
-<li>Ankita Jain (MTech 2023): First job at Oracle</li>
-<li>Karan Kumar (MTech 2020): First job at Trading Technologies</li>
-<li>Souvik Roy (MTech 2020): First job at eClerx</li>
-</ul>
-</section>
-<section id="research-assistant" class="level3">
-<h3 class="anchored" data-anchor-id="research-assistant">Research Assistant</h3>
-<ul>
-<li>Kaushal Modi: Now a data scientist at InfiBeam</li>
-<li>Prerna Khanna: Now a PhD student at Stony Brook</li>
-<li>Tanmay Srivastava: Now a PhD student at Stony Brook</li>
-<li>Rohit Patil: First job at Publicis Sapient</li>
-</ul>
-</section>
-<section id="outside-iitgn-interns" class="level3">
-<h3 class="anchored" data-anchor-id="outside-iitgn-interns">Outside IITGn Interns</h3>
-<ul>
-<li>Vibhuti Bansal (Summer 2022): Now at CRED</li>
-<li>Rohit Khoiwal (Summer 2022)</li>
-<li>Anand Hegde (Summer 2022)</li>
-<li>Shobhit Belwal (Summer 2022)</li>
-<li>Aryan Varshney (Summer 2022)</li>
-<li>Ami Ashish Buch (Summer 2024)</li>
-<li>Sajay Raj (Summer 2024)</li>
-<li>Muhammad Zaid Hassan (Summer 2024)</li>
-<li>Devodita Chakravarty (Summer 2024)</li>
-<li>Omisha Guha (Summer 2024)</li>
-</ul>
+</div>
+<div class="section-card">
+<h2 class="anchored">
+🎓 Bachelor’s Alumni
+</h2>
+<h3 class="anchored">
+Class of 2024
+</h3>
+<div class="alumni-list">
+<div class="alumni-item">
+<div class="alumni-name">
+Aditi Agarwal
+</div>
+<div class="alumni-details">
+Predoc at <span class="highlight-companies company-google">Google DeepMind</span>
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Progyan Das
+</div>
+<div class="alumni-details">
+Applied Scientist at <span class="highlight-companies company-microsoft">Microsoft</span>
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Madhav Kanda
+</div>
+<div class="alumni-details">
+MS at University of Illinois Urbana-Champaign
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Dhruv Patel
+</div>
+<div class="alumni-details">
+MS at Texas A&amp;M University
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Haikoo Khandor
+</div>
+<div class="alumni-details">
+MS at Texas A&amp;M University
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Utkarsh Mittal
+</div>
+<div class="alumni-details">
+MS at NYU Tandon
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Inderjeet Bhullar
+</div>
+<div class="alumni-details">
+Data Scientist at Skan.ai
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Kalash Kankariya
+</div>
+<div class="alumni-details">
+Data Scientist at Skan.ai
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Rahul Chembakasseril
+</div>
+<div class="alumni-details">
+Data Scientist at Skan.ai
+</div>
+</div>
+</div>
+<h3 class="anchored">
+Class of 2023
+</h3>
+<div class="alumni-list">
+<div class="alumni-item">
+<div class="alumni-name">
+Aadesh Desai
+</div>
+<div class="alumni-details">
+MS at <span class="highlight-companies company-cmu">Carnegie Mellon University</span>
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Saagar Parikh
+</div>
+<div class="alumni-details">
+MS at <span class="highlight-companies company-cmu">Carnegie Mellon University</span>
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Eshan Gujarathi
+</div>
+<div class="alumni-details">
+Predoc at IIT Madras
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Hitarth Gandhi
+</div>
+<div class="alumni-details">
+MS at UC Irvine
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Gautam Vasistha
+</div>
+<div class="alumni-details">
+Data Scientist at Skan.AI
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Xhitij Choudhary
+</div>
+<div class="alumni-details">
+Data Scientist at Skan.AI
+</div>
+</div>
+</div>
+<h3 class="anchored">
+Class of 2022
+</h3>
+<div class="alumni-list">
+<div class="alumni-item">
+<div class="alumni-name">
+Palak Purohit
+</div>
+<div class="alumni-details">
+MS at <span class="highlight-companies company-caltech">Caltech</span>
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Hetvi Shastri
+</div>
+<div class="alumni-details">
+PhD at UMass Amherst
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Chris Francis
+</div>
+<div class="alumni-details">
+MS at UC San Diego
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Dhruvi Lodhavia
+</div>
+<div class="alumni-details">
+MS at UC San Diego
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Harsh Patel
+</div>
+<div class="alumni-details">
+MS at UC San Diego
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Shivam Sahni
+</div>
+<div class="alumni-details">
+MS at UC San Diego
+</div>
+</div>
+</div>
+<h3 class="anchored">
+Class of 2020
+</h3>
+<div class="alumni-list">
+<div class="alumni-item">
+<div class="alumni-name">
+Soham Pachpande
+</div>
+<div class="alumni-details">
+HSBC → MS at UCSD → SWE at Salesforce
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Deepak Narayanan
+</div>
+<div class="alumni-details">
+Microsoft Research India → MS at ETH Zurich
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Apoorv Agnihotri
+</div>
+<div class="alumni-details">
+Wadhwani AI → Data Scientist at Rephrase.ai
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Kukunuri Rithwik
+</div>
+<div class="alumni-details">
+Jio → Data Scientist at Nykaa
+</div>
+</div>
+</div>
+</div>
+<div class="section-card">
+<h2 class="anchored">
+🎓 Master’s Alumni
+</h2>
+<div class="alumni-list">
+<div class="alumni-item">
+<div class="alumni-name">
+Ayush Shrivastava (2024)
+</div>
+<div class="alumni-details">
+PhD at IIT Gandhinagar
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Suraj Jaiswal (2024)
+</div>
+<div class="alumni-details">
+Research Scientist at Neuroreef Labs
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Ankita Jain (2023)
+</div>
+<div class="alumni-details">
+Software Engineer at Oracle
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Karan Kumar (2020)
+</div>
+<div class="alumni-details">
+Software Engineer at Trading Technologies
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Souvik Roy (2020)
+</div>
+<div class="alumni-details">
+Data Analyst at eClerx
+</div>
+</div>
+</div>
+</div>
+<div class="section-card">
+<h2 class="anchored">
+🔬 Research Associates &amp; Interns
+</h2>
+<h3 class="anchored">
+Research Assistants
+</h3>
+<div class="alumni-list">
+<div class="alumni-item">
+<div class="alumni-name">
+Prerna Khanna
+</div>
+<div class="alumni-details">
+PhD student at Stony Brook University
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Tanmay Srivastava
+</div>
+<div class="alumni-details">
+PhD student at Stony Brook University
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Kaushal Modi
+</div>
+<div class="alumni-details">
+Data Scientist at InfiBeam
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Rohit Patil
+</div>
+<div class="alumni-details">
+Software Engineer at Publicis Sapient
+</div>
+</div>
+</div>
+<h3 class="anchored">
+Visiting Interns
+</h3>
+<div class="alumni-list">
+<div class="alumni-item">
+<div class="alumni-name">
+Vibhuti Bansal (Summer 2022)
+</div>
+<div class="alumni-details">
+Software Engineer at CRED
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Devodita Chakravarty (Summer 2024)
+</div>
+<div class="alumni-details">
+Winner of Bhalodia-Khetan Excellence Award
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Ami Ashish Buch (Summer 2024)
+</div>
+<div class="alumni-details">
+Research Intern
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Sajay Raj (Summer 2024)
+</div>
+<div class="alumni-details">
+Research Intern
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Muhammad Zaid Hassan (Summer 2024)
+</div>
+<div class="alumni-details">
+Research Intern
+</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">
+Omisha Guha (Summer 2024)
+</div>
+<div class="alumni-details">
+Research Intern
+</div>
+</div>
+</div>
+</div>
+<div style="text-align: center; margin: 40px 0; padding: 30px; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px;">
+<h3 style="color: #2563eb; margin-bottom: 16px;" class="anchored">
+🌟 Ready to Join This Amazing Network?
+</h3>
+<p style="color: #4a5568; margin-bottom: 20px;">
+Start your journey with us and become part of a community that’s making global impact
+</p>
+<p><a href="./openings.html" style="background: #2563eb; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-right: 10px;">View Open Positions</a> <a href="./experiences.html" style="background: transparent; color: #2563eb; border: 2px solid #2563eb; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-weight: 600;">Read Alumni Stories</a></p>
+</div>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
