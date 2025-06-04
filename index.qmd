@@ -1,110 +1,383 @@
 ---
 toc: false
 ---
-<!-- Include Bootstrap CSS and JS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<head>
 <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 10px 0; 
-    }
-    th, td  {
-        border: 1px solid #ccc;
-        border-left:0;
-        border-right:0;
-        font-size: 19px;
-        padding: 5px;
-        text-align: left;
-        vertical-align: middle;
-    }
-    .carousel-inner {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-    }
-    .carousel-inner img { 
-      height: auto; /* Maintain aspect ratio */
-      max-height: 600px; /* Set a maximum height for the images */
-      margin: 0 auto; /* Center horizontally */
-    }
-    .carousel-caption {
-      position: absolute;
-      bottom: 0px; /* Stick the caption to the bottom */
-      left: 0;
-      right: 0;
-      background: rgba(0, 0, 0, 0.5); /*Semi-transparent background */
-      color: #fff; /* White text */
-      padding: 0px; /* Padding around the text */
-      border-radius: 10px; /* No rounded corners */
-      box-shadow: none; /* No shadow effect */
-    }
+.hero-section {
+    text-align: center;
+    padding: 60px 20px 40px;
+    margin-bottom: 40px;
+}
 
+.hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tagline {
+    font-size: 1.3rem;
+    opacity: 0.8;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-weight: 400;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.hero-btn.primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.hero-btn.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    text-decoration: none;
+    color: white;
+}
+
+.hero-btn.secondary {
+    border-color: #667eea;
+    color: #667eea;
+}
+
+.hero-btn.secondary:hover {
+    background: #667eea;
+    color: white;
+    text-decoration: none;
+}
+
+.featured-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin: 40px 0;
+}
+
+.project-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid var(--bs-border-color, #e5e7eb);
+    background: var(--bs-body-bg, white);
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background: var(--bs-secondary-bg, #f8f9fa);
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--bs-heading-color, #1f2937);
+}
+
+.project-card p {
+    color: var(--bs-secondary-color, #6b7280);
+    line-height: 1.5;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.tag {
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+    padding: 3px 10px;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.project-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.project-link:hover {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+.compact-section {
+    margin: 50px 0;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    background: var(--bs-secondary-bg, #f8f9fa);
+}
+
+.compact-section h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: var(--bs-heading-color, #1f2937);
+}
+
+.funding-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.join-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 50px 30px;
+    border-radius: 12px;
+    margin: 50px 0;
+}
+
+.join-section h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.join-section p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.join-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.join-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.join-btn.primary {
+    background: white;
+    color: #667eea;
+}
+
+.join-btn.primary:hover {
+    background: #f8f9fa;
+    color: #667eea;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.join-btn.secondary {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.join-btn.secondary:hover {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+    color: var(--bs-heading-color, #1f2937);
+}
+
+.section-subtitle {
+    color: var(--bs-secondary-color, #6b7280);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+    
+    .tagline {
+        font-size: 1.1rem;
+    }
+    
+    .featured-projects {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-buttons,
+    .join-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .compact-section,
+    .join-section {
+        padding: 30px 20px;
+    }
+}
+
+/* Dark mode specific adjustments */
+@media (prefers-color-scheme: dark) {
+    .project-card {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    
+    .project-card:hover {
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+    
+    .tag {
+        background: rgba(102, 126, 234, 0.2);
+    }
+}
 </style>
-</head>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-<!-- Wrapper for slides -->
-<div class="carousel-inner">
-<div class="item active">
-<img src="images/mainpage/JoulesEye_1.png">
-<div class="carousel-caption">
-<h3>JoulesEye Concept</h3>
+
+<div class="hero-section">
+<h1>Sustainability Lab</h1>
+<p class="tagline">Harnessing AI to create a sustainable future where technology serves both people and planet</p>
+
+<div class="hero-buttons">
+<a href="openings.qmd" class="hero-btn primary">Join Our Mission</a>
+<a href="papers/index.qmd" class="hero-btn secondary">View Research</a>
+<a href="flyer.pdf" class="hero-btn secondary" target="_blank">Lab Flyer</a>
 </div>
 </div>
 
-<div class="item">
-<img src="images/mainpage/JoulesEye_2.png">
-<div class="carousel-caption">
-<h3>Prototyping JoulesEye</h3>
+## Featured Research
+
+<p class="section-subtitle">Cutting-edge projects at the intersection of AI and sustainability</p>
+
+<div class="featured-projects">
+
+<div class="project-card">
+<img src="images/mainpage/JoulesEye_1.png" alt="JoulesEye Project" class="project-image">
+<div class="project-content">
+<h3>JoulesEye</h3>
+<p>Revolutionary energy expenditure estimation and respiration sensing from thermal imagery during exercise.</p>
+<div class="project-tags">
+<span class="tag">Health Sensing</span>
+<span class="tag">Thermal Imaging</span>
+<span class="tag">AI/ML</span>
+</div>
+<a href="papers/jouleseye.qmd" class="project-link">Learn More →</a>
 </div>
 </div>
 
-<div class="item">
-<img src="images/mainpage/space-to-policy.png">
-<div class="carousel-caption">
-<h3>Space to Policy</h3>
-</div>
-</div>
-
-<div class="item">
-<img src="images/mainpage/SpiroMask.png">
-<div class="carousel-caption">
+<div class="project-card">
+<img src="images/mainpage/SpiroMask.png" alt="SpiroMask Project" class="project-image">
+<div class="project-content">
 <h3>SpiroMask</h3>
+<p>Smart respiratory monitoring system transforming regular face masks into health sensing devices.</p>
+<div class="project-tags">
+<span class="tag">Healthcare</span>
+<span class="tag">IoT</span>
+<span class="tag">Respiratory Health</span>
+</div>
+<a href="papers/spiromask.qmd" class="project-link">Learn More →</a>
 </div>
 </div>
 
-<div class="item">
-<img src="images/mainpage/ContRespiration.png">
-<div class="carousel-caption">
-<h3>Towards Continuous Respiration Rate Detection While Walking</h3>
+<div class="project-card">
+<img src="images/mainpage/space-to-policy.png" alt="Space to Policy Project" class="project-image">
+<div class="project-content">
+<h3>Space to Policy</h3>
+<p>Using satellite imagery and AI to monitor environmental compliance and inform policy decisions.</p>
+<div class="project-tags">
+<span class="tag">Satellite Data</span>
+<span class="tag">Policy</span>
+<span class="tag">Environmental</span>
+</div>
+<a href="papers/space-to-policy.qmd" class="project-link">Learn More →</a>
 </div>
 </div>
 
-<!-- Left and right controls -->
-<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-<span class="glyphicon glyphicon-chevron-left"></span>
-<span class="sr-only">Previous</span>
-</a>
-<a class="right carousel-control" href="#myCarousel" data-slide="next">
-<span class="glyphicon glyphicon-chevron-right"></span>
-<span class="sr-only">Next</span>
-
-</a>
+<div class="project-card">
+<img src="images/mainpage/ContRespiration.png" alt="Continuous Respiration Project" class="project-image">
+<div class="project-content">
+<h3>Continuous Respiration Detection</h3>
+<p>Advanced algorithms for real-time respiration rate monitoring during physical activity.</p>
+<div class="project-tags">
+<span class="tag">Wearables</span>
+<span class="tag">Signal Processing</span>
+<span class="tag">Health Tech</span>
+</div>
+<a href="papers/continuous-respiration.qmd" class="project-link">Learn More →</a>
+</div>
 </div>
 
-<br>
-
-## Funding Organisations
-
-<div style="text-align: center; margin-top: 20px;">
-  <img src="images/mainpage/Funding organisations.png" alt="Funding Organization" style="max-width: 100%; height: auto; width: 1000px;">
 </div>
 
+<div style="text-align: center; margin-top: 30px;">
+<a href="papers/index.qmd" class="project-link" style="font-size: 1.1rem;">View All Publications →</a>
+</div>
 
-## Join Us
-### Embark on a journey to drive innovation in sustainability with our lab! [Apply Now](https://docs.google.com/forms/d/e/1FAIpQLSeU2KoY-yAsFKCtlUZ8BH8gMEMwhV8z6L8WdaOtPB7TsJQrRg/viewform)
+## Funding Partners
+
+<div class="compact-section">
+<img src="images/mainpage/Funding organisations.png" alt="Funding Organizations" class="funding-image">
+</div>
+
+<div class="join-section">
+<h2>🚀 Join Our Mission</h2>
+<p>Embark on a journey to drive innovation in sustainability through cutting-edge AI research.</p>
+
+<div class="join-buttons">
+<a href="openings.qmd" class="join-btn primary">View Positions</a>
+<a href="lab_culture.qmd" class="join-btn secondary">Our Culture</a>
+<a href="members.qmd" class="join-btn secondary">Meet the Team</a>
+</div>
+
+<div style="margin-top: 30px; font-size: 0.9rem; opacity: 0.8;">
+<p><strong>Ready to make an impact?</strong> 🌟</p>
+</div>
+</div>
