@@ -15,57 +15,163 @@ output:
     width: 200px;
     height: 200px;
     object-fit: cover;
-    overflow-clip-margin: unset;        /* AYUSH :  Added to remove pixelation from the profile images*/
-    border: 1px solid #777;             /* Set a thin border on all sides */
-    border-bottom: 4px solid #777;      /* Set a thicker border only at the bottom (slightly darker than tomato) */
-    border-radius: 4px;                 /* Optional: add rounded corners for a nicer look */
-    transition: border-color 0.3s;      /* Add smooth transition for the border color */
+    overflow-clip-margin: unset;
+    border: 1px solid #777;
+    border-bottom: 4px solid #777;
+    border-radius: 4px;
+    transition: border-color 0.3s;
   }
 
   .cropped-image:hover {
-    /* Change border color on hover */
-    border-bottom-color: #d9534f; /* Use the same slightly darker color on hover */
+    border-bottom-color: #d9534f;
   }
+  
   p,span,li{
     font-size:18px;
   }
-  carousel{
-    
-  }
+  
   .carousel-inner img {
-    width: 100%; /*Scale the image to fit the carousel container */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 600px; /*Set a maximum height for the images*/
-    /* overflow-clip-margin: unset; */
+    width: 100%;
+    height: auto;
+    max-height: 600px;
     object-fit: cover;
   }
+  
   .carousel-caption {
     position: absolute;
-    bottom: 60px; /* Adjust this value to ensure the caption is above the indicators */
+    bottom: 60px;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: #fff; /* White text */
-    padding: 10px; /* Padding around the text */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
+  
   .carousel-indicators {
     display: none !important;
-}
+  }
 
+  /* New styles for improvements */
+  .faculty-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    margin-bottom: 40px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .faculty-image {
+    flex-shrink: 0;
+  }
+
+  .faculty-content {
+    flex: 1;
+  }
+
+  .research-keywords {
+    color: #667eea;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 4px;
+  }
+
+  .alumni-banner {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 40px 0;
+  }
+
+  .alumni-banner h3 {
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+  }
+
+  .alumni-btn {
+    background: white;
+    color: #667eea;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 8px;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+
+  .alumni-btn:hover {
+    background: #f8f9fa;
+    color: #667eea;
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
+
+  .join-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    margin: 40px 0;
+    border: 1px solid #e2e8f0;
+  }
+
+  .join-btn {
+    background: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin: 0 8px;
+  }
+
+  .join-btn:hover {
+    background: #1d4ed8;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 768px) {
+    .faculty-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
 </style>
+
+<div class="alumni-banner">
+<h3>🌟 Meet Our Extended Family</h3>
+<p>15 current researchers to 50+ global alumni making impact worldwide</p>
+<a href="alumni.qmd" class="alumni-btn">👥 Meet Our 50+ Alumni</a>
+<a href="experiences.qmd" class="alumni-btn">📖 Read Their Stories</a>
+</div>
 
 ## Faculty
 
+<div class="faculty-section">
+<div class="faculty-image">
 <a href="https://nipunbatra.github.io">
-  <img src="https://nipunbatra.github.io/images/nipun.jpg" class="cropped-image" style="float: left; margin: 0 15px 0 0;" alt="Prof Nipun Batra">
+<img src="https://nipunbatra.github.io/images/nipun.jpg" class="cropped-image" alt="Prof Nipun Batra">
 </a>
-
-### Prof. Nipun Batra
+</div>
+<div class="faculty-content">
+<h3>Prof. Nipun Batra</h3>
+<div class="research-keywords">Machine Learning • Sensing Technologies • Computational Sustainability</div>
 <p>Nipun Batra is an Associate Professor of Computer Science at IIT Gandhinagar. He completed his postdoctoral research at the University of Virginia and earned his PhD from IIIT Delhi. His research group focuses on utilizing machine learning and sensing technologies to address computational sustainability challenges, particularly in smart buildings, air quality, and healthcare.</p>
-
-<br>
+</div>
+</div>
 
 ## PhD 
 
@@ -74,22 +180,22 @@ output:
 <a href="https://patel-zeel.github.io">
   <img src="https://patel-zeel.github.io/images/profile_crop.png" class="cropped-image"><br/>
 </a>
-<span>Zeel B Patel<br/>(Jan 2020 - present)</span>
+<span>Zeel B Patel<br/>(Jan 2020 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Gaussian Processes • Bayesian ML</em></span>
 
 <a href="https://rishabh-mondal.github.io">
   <img src="https://rishabh-mondal.github.io/ris.jpg" class="cropped-image"><br/>
 </a>
-<span>Rishabh Mondal<br/>(Jun 2023 - present)</span>
+<span>Rishabh Mondal<br/>(Jun 2023 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Computer Vision • Self-Supervised Learning</em></span>
 
 <a href="https://ayushshrivstava.github.io/">
   <img src="images/members/Ayush.jpg" class="cropped-image"><br/>
 </a>
-<span>Ayush Srivastava<br/>(Jul 2024 - present)</span>
+<span>Ayush Srivastava<br/>(Jul 2024 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Health Sensing • Respiratory Monitoring</em></span>
 
 <a href="">
   <img src="images/members/Ujjwal.jpg" class="cropped-image"><br/>
 </a>
-<span>Ujjwal K. Gupta<br/>(Jul 2024 - present)</span>
+<span>Ujjwal K. Gupta<br/>(Jul 2024 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Satellite Data • Machine Learning</em></span>
 
 :::
 
@@ -98,28 +204,28 @@ output:
 ::: {layout-ncol=4}
 
 <img src="images/members/Poornima.jpg" class="cropped-image"><br/>
-<span>Poornima Bhatia<br/>(Jul 2023 - present)</span>
+<span>Poornima Bhatia<br/>(Jul 2023 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Accessibility</em></span>
 
 <img src="images/members/Prince.jpg" class="cropped-image"><br/>
-<span>Prince Kumar<br/>(Jul 2023 - present)</span>
+<span>Prince Kumar<br/>(Jul 2023 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">LLMs • Air Quality</em></span>
 
 <img src="images/members/Shataxi.jpg" class="cropped-image"><br/>
-<span>Shataxi Dubey<br/>(Jul 2023 - present)</span>
+<span>Shataxi Dubey<br/>(Jul 2023 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">VLMs • Computer Vision</em></span>
 
 <img src="images/members/Abhay.jpg" class="cropped-image"><br/>
-<span>Abhay Pisharodi<br/>(Jul 2024 - present)</span>
+<span>Abhay Pisharodi<br/>(Jul 2024 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">LLMs • Reasoning • Air Quality</em></span>
 
 <img src="images/members/Abhyudaya.jpg" class="cropped-image"><br/>
-<span>Abhyudaya Nair<br/>(Jul 2024 - present)</span>
+<span>Abhyudaya Nair<br/>(Jul 2024 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Health Sensing • Respiratory Monitoring</em></span>
 
 <img src="images/members/Diya.png" class="cropped-image"><br/>
-<span>Diya Thakor<br/>(Jul 2024 - present)</span>
+<span>Diya Thakor<br/>(Jul 2024 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">LLMs • Air Quality</em></span>
 
 <img src="images/members/Vinayak.jpg" class="cropped-image"><br/>
-<span>Vinayak Rana<br/>(Jul 2024 - present)</span>
+<span>Vinayak Rana<br/>(Jul 2024 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Energy Systems • Smart Buildings</em></span>
 
 <img src="images/members/Suruchi.jpg" class="cropped-image"><br/>
-<span>Suruchi Hardaha<br/>(Jul 2024 - present)</span>
+<span>Suruchi Hardaha<br/>(Jul 2024 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Computer Vision • Self-Supervised Learning</em></span>
 
 :::
 
@@ -128,31 +234,14 @@ output:
 ::: {layout-ncol=4}
 
 <img src="images/members/Tanu.jpeg" class="cropped-image"><br/>
-<span>Tanu Tiwari<br/>(Oct 2024 - present)</span>
+<span>Tanu Tiwari<br/>(Oct 2024 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Machine Learning • Research Methods</em></span>
 
 <img src="images/members/Meenakshi.jpg" class="cropped-image"><br/>
-<span>Meenakshi Prakash<br/>(Jan 2025 - Present)</span>
+<span>Meenakshi Prakash<br/>(Jan 2025 - Present)<br/><em style="color: #667eea; font-size: 0.85rem;">Data Science • Computational Analysis</em></span>
 
 :::
 
-
-<!-- ## BTech
-
-::: {layout-ncol=4}
-
-<a href="https://vannshjani.github.io/Blogs/">
-  <img src="images/members/Vannsh.jpg" class="cropped-image"><br/>
-</a>
-<span>Vannsh Jani  <br/>(Aug 2023 - present)</span>
-
-
-<img src="images/members/Yash.jpg" class="cropped-image"><br/>
-<span>Yash Bachwana <br/>(May 2024 - Present)</span>
-
-::: -->
-
 ## Group Photos
-
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 <!-- Indicators -->
@@ -166,14 +255,13 @@ output:
    <li data-target="#myCarousel" data-slide-to="6"></li>
    <li data-target="#myCarousel" data-slide-to="7"></li>
    <li data-target="#myCarousel" data-slide-to="8"></li>
-
 </ol>
 
 <!-- Wrapper for slides -->
 <div class="carousel-inner">
 
 <div class="item active">
-<img src="images/memories/compass24.jpg" alt="Los Angeles">
+<img src="images/memories/compass24.jpg" alt="ACM Compass 2024">
 <div class="carousel-caption">
 <h3>Sustainability Lab at ACM Compass'24, IIIT Delhi</h3>
 <p>Jul 2024</p>
@@ -181,7 +269,7 @@ output:
 </div>
 
 <div class="item">
-<img src="images/memories/batch24.jpg" alt="Los Angeles">
+<img src="images/memories/batch24.jpg" alt="Batch 2024">
 <div class="carousel-caption">
 <h3>Lab dinner with Batch of 2024</h3>
 <p>May 2024</p>
@@ -223,7 +311,7 @@ output:
 <div class="item">
 <img src="images/memories/2023-group.jpg">
 <div class="carousel-caption">
-<h3>Batch of 2023 :Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam</h3>
+<h3>Batch of 2023: Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam</h3>
 <p>May 2023</p>
 </div>
 </div> 
@@ -245,4 +333,11 @@ output:
 <span class="glyphicon glyphicon-chevron-right"></span>
 <span class="sr-only">Next</span>
 </a>
+</div>
+
+<div class="join-section">
+<h3>🚀 Want to Join Our Team?</h3>
+<p>We're always looking for passionate researchers to join our mission of creating a sustainable future through AI and technology.</p>
+<a href="openings.qmd" class="join-btn">View Open Positions</a>
+<a href="lab_culture.qmd" class="join-btn" style="background: transparent; color: #2563eb; border: 2px solid #2563eb;">Learn About Our Culture</a>
 </div>
