@@ -112,7 +112,7 @@ toc: false
 <div class="project-card">
 <img src="papers/2020/VisXAI20_Active_Learning.png" alt="Active Learning Exposition" class="project-image">
 <div class="project-content">
-<h3>ActiveLearning</h3>
+<h3>Active Learning : A Visual Tour</h3>
 <p>An interactive visual guide that demystifies active learning strategies through intuitive animations and examples.</p>
 <div class="project-tags">
 <span class="tag">Exposition</span>
