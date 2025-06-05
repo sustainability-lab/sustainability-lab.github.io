@@ -20,7 +20,7 @@ toc: false
 <div class="featured-projects">
 
 <div class="project-card">
-<img src="images/mainpage/JoulesEye_1.png" alt="JoulesEye thermal imaging system showing energy expenditure monitoring during exercise" class="project-image">
+<img src="images/mainpage/JoulesEye_1.png" alt="JoulesEye Project" class="project-image">
 <div class="project-content">
 <h3>JoulesEye</h3>
 <p>Revolutionary energy expenditure estimation and respiration sensing from thermal imagery during exercise.</p>
@@ -29,12 +29,12 @@ toc: false
 <span class="tag">Thermal Imaging</span>
 <span class="tag">AI/ML</span>
 </div>
-<a href="papers/index.qmd" class="project-link">Learn More →</a>
+<a href="https://sustainability-lab.github.io/jouleseye/" class="project-link">Learn More →</a>
 </div>
 </div>
 
 <div class="project-card">
-<img src="images/mainpage/SpiroMask.png" alt="SpiroMask smart respiratory monitoring device integrated into face mask" class="project-image">
+<img src="images/mainpage/SpiroMask.png" alt="SpiroMask Project" class="project-image">
 <div class="project-content">
 <h3>SpiroMask</h3>
 <p>Smart respiratory monitoring system transforming regular face masks into health sensing devices.</p>
@@ -43,26 +43,12 @@ toc: false
 <span class="tag">IoT</span>
 <span class="tag">Respiratory Health</span>
 </div>
-<a href="papers/index.qmd" class="project-link">Learn More →</a>
+<a href="https://dl.acm.org/doi/fullHtml/10.1145/3570167" class="project-link">Learn More →</a>
 </div>
 </div>
 
 <div class="project-card">
-<img src="images/mainpage/space-to-policy.png" alt="Satellite imagery analysis workflow for environmental policy monitoring and compliance tracking" class="project-image">
-<div class="project-content">
-<h3>Space to Policy</h3>
-<p>Using satellite imagery and AI to monitor environmental compliance and inform policy decisions.</p>
-<div class="project-tags">
-<span class="tag">Satellite Data</span>
-<span class="tag">Policy</span>
-<span class="tag">Environmental</span>
-</div>
-<a href="papers/index.qmd" class="project-link">Learn More →</a>
-</div>
-</div>
-
-<div class="project-card">
-<img src="images/mainpage/ContRespiration.png" alt="Wearable respiratory monitoring system showing real-time breathing pattern detection" class="project-image">
+<img src="images/mainpage/ContRespiration.png" alt="Continuous Respiration Project" class="project-image">
 <div class="project-content">
 <h3>Continuous Respiration Detection</h3>
 <p>Advanced algorithms for real-time respiration rate monitoring during physical activity.</p>
@@ -71,17 +57,109 @@ toc: false
 <span class="tag">Signal Processing</span>
 <span class="tag">Health Tech</span>
 </div>
-<a href="papers/index.qmd" class="project-link">Learn More →</a>
+<a href="https://dl.acm.org/doi/fullHtml/10.1145/3544793.3560348" class="project-link">Learn More →</a>
+</div>
+</div>
+
+<div class="project-card">
+<img src="images/mainpage/space-to-policy.png" alt="Space to Policy Project" class="project-image">
+<div class="project-content">
+<h3>Space to Policy</h3>
+<p>Using satellite imagery and AI to monitor environmental compliance and inform policy decisions.</p>
+<div class="project-tags">
+<span class="tag">Satellite Data</span>
+<span class="tag">Policy</span>
+<span class="tag">Environmental</span>
+</div>
+<a href="https://sustainability-lab.github.io/brick-kilns/" class="project-link">Learn More →</a>
+</div>
+</div>
+
+<div class="project-card">
+<img src="papers/2024/VayuBuddy_diagram.png" alt="VayuBuddy Project" class="project-image">
+<div class="project-content">
+<h3>VayuBuddy</h3>
+<p>An LLM-powered chatbot system to reduce the barrier between the stakeholders and air quality sensor data</p>
+<div class="project-tags">
+<span class="tag">Air Quality Data</span>
+<span class="tag">Policy</span>
+<span class="tag">Environmental</span>
+</div>
+<a href="https://sustainability-lab.github.io/vayubuddy/" class="project-link">Learn More →</a>
+</div>
+</div>
+
+<div class="project-card">
+<img src="papers/2023/airdelhi.png" alt="VayuBuddy Project" class="project-image">
+<div class="project-content">
+<h3>AirDelhi</h3>
+<p>A fine-grained air quality dataset from mobile sensors on Delhi buses, enabling better pollution monitoring.</p>
+<div class="project-tags">
+<span class="tag">Air Quality Data</span>
+<span class="tag">Policy</span>
+<span class="tag">Environmental</span>
+</div>
+<a href="https://neurips.cc/virtual/2023/poster/73476" class="project-link">Learn More →</a>
 </div>
 </div>
 
 </div>
+
+## Featured Expositions
+
+<div class="featured-projects">
+
+<div class="project-card">
+<img src="papers/2020/VisXAI20_Active_Learning.png" alt="Active Learning Exposition" class="project-image">
+<div class="project-content">
+<h3>ActiveLearning</h3>
+<p>An interactive visual guide that demystifies active learning strategies through intuitive animations and examples.</p>
+<div class="project-tags">
+<span class="tag">Exposition</span>
+<span class="tag">Meta Learning</span>
+<span class="tag">Bayesian Methods</span>
+</div>
+<a href="https://patel-zeel.github.io/active-learning-visualization/" class="project-link">Learn More →</a>
+</div>
+</div>
+
+<div class="project-card">
+<img src="papers/2021/VisXAI21_HMM.png" alt="HMM Exposition" class="project-image">
+<div class="project-content">
+<h3>Exploring Hidden Markov Models</h3>
+<p>An interactive guide to understanding Hidden Markov Models (HMMs) through intuitive examples and visualizations.</p>
+<div class="project-tags">
+<span class="tag">Exposition</span>
+<span class="tag">Bayesian Methods</span>
+<span class="tag">Markov Chains</span>
+</div>
+<a href="https://nipunbatra.github.io/hmm/" class="project-link">Learn More →</a>
+</div>
+</div>
+
+<div class="project-card">
+<img src="papers/2020/Distil20_BayesOpt.png" alt="BayesOpt Exposition" class="project-image">
+<div class="project-content">
+<h3>Exploring Bayesian Optimization</h3>
+<p>An interactive and visual guide that breaks down Bayesian Optimization into intuitive concepts to illustrate its application.</p>
+<div class="project-tags">
+<span class="tag">Exposition</span>
+<span class="tag">Bayesian Methods</span>
+<span class="tag">Hyperparameter Tuning</span>
+</div>
+<a href="https://distill.pub/2020/bayesian-optimization/" class="project-link">Learn More →</a>
+</div>
+</div>
+
+</div>
+
 
 <div style="text-align: center; margin-top: 30px;">
 <a href="papers/index.qmd" class="project-link" style="font-size: 1.1rem;">View All Publications →</a>
 </div>
 
 ## Funding Partners
+
 
 <div class="compact-section">
 <img src="images/mainpage/Funding organisations.png" alt="Logos of funding organizations supporting Sustainability Lab research including government agencies and academic institutions" class="funding-image">
