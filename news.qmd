@@ -1,5 +1,5 @@
 ---
-title: ""
+title: News
 toc: false
 output:
   html_document:
@@ -78,120 +78,436 @@ body {
 
 ## 2025
 
-<div class="news-item highlight">
-<div class="news-date">April 2025</div>
+<div class="news-item">
+<div class="news-date">Jan 2025</div>
 <div class="news-content">
-<strong>Prof. Nipun Batra receives SIGEnergy Rising Star Award 2025</strong> for contributions to reproducible toolkits, scalable models, and uncertainty-aware approaches for practical energy disaggregation.
+Shrimay Shah and Dhruv Gupta won the Third Prize in the Undergraduate Research Showcase for their project titled "Brick Kilns Detection and Compliance Study, guided by Prof. Nipun Batra."
 </div>
 </div>
 
 <div class="news-item">
-<div class="news-date">Summer 2025</div>
+<div class="news-date">Jan 2025</div>
 <div class="news-content">
-<strong>ACM India Summer School 2025</strong> - Join our summer school program! <a href="events/acm-summer-2025/index.qmd">Learn more</a>
+Tanu and Meenakshi join Sustainability Lab as Junior Research Fellows. Welcome!
 </div>
 </div>
 
 <div class="news-item">
-<div class="news-date">January 2025</div>
+<div class="news-date">Jan 2025</div>
 <div class="news-content">
-<strong>Dr. Rishiraj Adhikary successfully defends his PhD thesis.</strong> Congratulations!
-</div>
-</div>
-
-<div class="news-item">
-<div class="news-date">January 2025</div>
-<div class="news-content">
-Shrimay Shah and Dhruv Gupta won Third Prize in Undergraduate Research Showcase for "Brick Kilns Detection and Compliance Study."
-</div>
-</div>
-
-<div class="news-item">
-<div class="news-date">January 2025</div>
-<div class="news-content">
-Tanu Tiwari and Meenakshi Prakash join as Junior Research Fellows. Welcome!
+Dr. Rishiraj Adhikary successfully defends his PhD thesis. Congratulations!
 </div>
 </div>
 
 ## 2024
 
 <div class="news-item">
-<div class="news-date">August 2024</div>
+<div class="news-date">Aug 2024</div>
 <div class="news-content">
-Devodita Chakravarty won Bhalodia-Khetan Summer Research Excellence Award (₹50,000) for satellite data preprocessing project.
+Devodita Chakravarty won the Bhalodia-Khetan Summer Research Excellence Award for the project titled 'ML for Sustainability: Satellite Data Preprocessing for Detecting Pollution Sources Using Computer Vision.' The award includes a cash prize of ₹50,000 and a Certificate of Excellence.
 </div>
 </div>
 
 <div class="news-item">
-<div class="news-date">July 2024</div>
+<div class="news-date">Jul 2024</div>
 <div class="news-content">
-Prof. Nipun Batra delivered <a href="https://www.youtube.com/watch?v=2kgnmqx-RwM" target="_blank">Doctoral Consortium keynote</a> at <a href="https://compass.acm.org" target="_blank">ACM Compass'24</a>.
+Prof. Nipun Batra delivered a talk on "Smart Health Sensing for Sustainable Future" at <a href="https://www.pdpu.ac.in" target="_blank">Pandit Deendayal Energy University</a>
 </div>
 </div>
 
 <div class="news-item">
-<div class="news-date">June 2024</div>
+<div class="news-date">Jul 2024</div>
 <div class="news-content">
-<strong>Zeel Patel wins Microsoft Research India PhD Award!</strong>
+Prof. Nipun Batra delivered the <a href="https://www.youtube.com/watch?v=2kgnmqx-RwM" target="_blank">Doctoral Consortium keynote talk</a> titled "Within and Beyond: Lessons in Computational Sustainability" at <a href="https://compass.acm.org" target="_blank">ACM Compass'24</a>
 </div>
 </div>
 
 <div class="news-item">
-<div class="news-date">June 2024</div>
+<div class="news-date">Jun 2024</div>
 <div class="news-content">
-Ayush Srivastava and Suraj Jaiswal successfully defend their Masters thesis.
+<strong>Zeel wins the prestigious Microsoft Research India PhD Award!</strong>
 </div>
 </div>
 
 <div class="news-item">
-<div class="news-date">April 2024</div>
+<div class="news-date">Jun 2024</div>
 <div class="news-content">
-Rishiraj Adhikary selected for <a href="https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html" target="_blank">Heidelberg Laureate Forum</a> (200 worldwide).
+Ayush and Suraj successfully defend their Masters thesis!
 </div>
 </div>
 
 <div class="news-item">
-<div class="news-date">January 2024</div>
+<div class="news-date">Apr 2024</div>
 <div class="news-content">
-"JoulesEye" paper accepted in <a href="https://dl.acm.org/toc/imwut/2023/7/4" target="_blank">IMWUT 2024</a>.
+Rishiraj was selected for the prestigious <a href="https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html" target="_blank">Heidelberg Laureate Forum</a>, becoming one of only 200 individuals worldwide to meet laureates from various fields, including Turing Award winners.
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Jan 2024</div>
+<div class="news-content">
+Our paper titled "JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising" got accepted in <a href="https://dl.acm.org/toc/imwut/2023/7/4" target="_blank">IMWUT 2024</a>
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Jan 2024</div>
+<div class="news-content">
+Shataxi, Prince and Poornima join Sustainability lab. Welcome!
 </div>
 </div>
 
 ## 2023
 
 <div class="news-item">
-<div class="news-date">November 2023</div>
+<div class="news-date">Dec 2023</div>
 <div class="news-content">
-Zeel Patel receives Prime Minister's Research Fellowship (PMRF).
+Poster titled "AirDelhi: Fine-Grained Spatio-Temporal Particulate Matter Dataset From Delhi For ML based Modeling" got accepted in <a href="https://neurips.cc/virtual/2023/poster/73476" target="_blank">NeurIPS 2023</a>
 </div>
 </div>
 
 <div class="news-item">
-<div class="news-date">September 2023</div>
+<div class="news-date">Oct 2023</div>
 <div class="news-content">
-Rishiraj's adaptive sensing paper accepted at ACM BuildSys 2023.
+Our workshop paper titled "Towards Scalable Identification of Brick Kilns from Satellite Imagery with Active Learning" got accepted in <a href="https://neurips.cc/virtual/2023/78770" target="_blank">NeurIPS 2023</a>
 </div>
 </div>
 
 <div class="news-item">
-<div class="news-date">July 2023</div>
+<div class="news-date">Sep 2023</div>
 <div class="news-content">
-Hosted Summer School on AI for Sustainability with 100+ participants.
-</div>
-</div>
-
-## Earlier Years
-
-<div class="news-item">
-<div class="news-date">2018</div>
-<div class="news-content">
-<strong>Sustainability Lab established</strong> with founding grant and initial research team.
+Our Paper titled "Fine-Grained Spatio-Temporal Particulate Matter Dataset From Delhi For ML based Modeling" got accepted in <a href="https://papers.nips.cc/paper_files/paper/2023/hash/ee799aff607fcf39c01df6391e96f92c-Abstract-Datasets_and_Benchmarks.html" target="_blank">NeurIPS 2023</a> Datasets and Benchmarks Track
 </div>
 </div>
 
 <div class="news-item">
-<div class="news-date">2016-2022</div>
+<div class="news-date">Sep 2023</div>
 <div class="news-content">
-Multiple research milestones: publications, government collaborations, international workshops, and establishment of key research directions in air quality and energy analytics.
+A visual explainable "Conformal Prediction: A Visual Introduction" got accepted at <a href="https://visxai.io/2023" target="_blank">VisXAI 23</a> workshop
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Jun 2023</div>
+<div class="news-content">
+Khush and Rishabh join Sustainability lab. Welcome!
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Jun 2023</div>
+<div class="news-content">
+Ankita successfully defends her Masters thesis!
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Jan 2023</div>
+<div class="news-content">
+Ayush and Suraj join Sustainability lab. Welcome!
+</div>
+</div>
+
+## 2022
+
+<div class="news-item">
+<div class="news-date">Nov 2022</div>
+<div class="news-content">
+Our paper "I do not know": Quantifying Uncertainty in Neural Network Based Approaches for Non-Intrusive Load Monitoring got accepted in <a href="https://dl.acm.org/doi/proceedings/10.1145/3563357" target="_blank">BuildSys 2022</a>
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Oct 2022</div>
+<div class="news-content">
+Our workshop paper "Uncertainty Disentanglement with Non-stationary Heteroscedastic Gaussian Processes for Active Learning" got accepted in <a href="https://gp-seminar-series.github.io/neurips-2022/" target="_blank">NeurIPS 2022</a>
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Oct 2022</div>
+<div class="news-content">
+Our workshop paper "Challenges in Gaussian Processes for Non Intrusive Load Monitoring" got accepted in <a href="https://gp-seminar-series.github.io/neurips-2022/" target="_blank">NeurIPS 2022</a>
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Oct 2022</div>
+<div class="news-content">
+Our paper "SpiroMask: Measuring Lung Function Using Consumer-Grade Masks" got accepted in <a href="https://dl.acm.org/toc/health/2023/4/1" target="_blank">ACM HEALTH</a>
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Sep 2022</div>
+<div class="news-content">
+Our poster "Towards Continuous Respiration Rate Detection While Walking" got accepted in <a href="https://dl.acm.org/doi/proceedings/10.1145/3544793" target="_blank">Ubicomp/ISWC (Adjunct) 2022</a>
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Aug 2022</div>
+<div class="news-content">
+Zeel Presented our AAAI22 work "Accurate and Scalable Non-Stationary GPs" at Air Sensors International Conference <a href="https://cstep.in/event-details.php?id=2042" target="_blank">(ASIC)</a>, Bangalore, India.
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">May 2022</div>
+<div class="news-content">
+Zeel got selected as a Google Summer of Code contributor at Tensorflow with <a href="https://www.cs.ubc.ca/~murphyk/" target="_blank">Dr. Kevin P. Murphy</a>
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Apr 2022</div>
+<div class="news-content">
+Our work "Samachar: Print News Media on Air Pollution in India" is accepted in <a href="https://dl.acm.org/doi/10.1145/3530190.3534812" target="_blank">ACM COMPASS 22</a>
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Jan 2022</div>
+<div class="news-content">
+Our paper "Vastr-GAN: Versatile Apparel Synthesised from Text using a Robust Generative Adversarial Network" got accepted in <a href="https://dblp.org/db/conf/comad/comad2022.html" target="_blank">CODS-COMAD 2022</a>
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Jan 2022</div>
+<div class="news-content">
+Ankita joins Sustainability lab. Welcome!
+</div>
+</div>
+
+## 2021
+
+<div class="news-item">
+<div class="news-date">Dec 2021</div>
+<div class="news-content">
+Our paper on "Accurate and Scalable Non-Stationary GPs" gets accepted to <a href="https://aaai-2022.virtualchair.net/poster_aisi11178" target="_blank">AAAI 2022</a>
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Nov 2021</div>
+<div class="news-content">
+Received a 5000 USD cloud credit grant from Google Research
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Nov 2021</div>
+<div class="news-content">
+Rishiraj on a roll, gets the prestigious USIEF <a href="https://www.usief.org.in/Fulbright-Nehru-Doctoral-Research-Fellowships.aspx" target="_blank">Fulbright-Nehru Doctoral Research Fellowship</a>!
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Oct 2021</div>
+<div class="news-content">
+Rishiraj wins the prestigious <a href="https://www.pmrf.in/" target="_blank">Prime Minister Research fellowship</a>!
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Sep 2021</div>
+<div class="news-content">
+Notes paper on adding neural network approaches to NILMTK-contrib accepted at <a href="https://dl.acm.org/doi/10.1145/3486611.3486652" target="_blank">BuildSys 2021</a>
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Sep 2021</div>
+<div class="news-content">
+Interactive Illustration on Exploring Hidden Markov Models accepted to <a href="https://visxai.io/2021.html" target="_blank">IEEE VisxAI 2021</a> workshop <a href="https://nipunbatra.github.io/hmm/" target="_blank">[Link to visualization]</a>
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Aug 2021</div>
+<div class="news-content">
+Teaching a course on Ubiquitous computing this semester <a href="https://www.craft.do/s/MAdQrLOO9ErCvc" target="_blank">[Link to Course]</a>
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">May 2021</div>
+<div class="news-content">
+Completed the ML course this semester with feedback 3.83/4 :)
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Feb 2021</div>
+<div class="news-content">
+Serving as the publication chair for <a href="https://cods-comad.in/" target="_blank">CODS-COMAD 2022</a>
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Jan 2021</div>
+<div class="news-content">
+Completed the Introduction to Programming course this semester with feedback 3.73/4 :)
+</div>
+</div>
+
+## 2020
+
+<div class="news-item">
+<div class="news-date">Dec 2020</div>
+<div class="news-content">
+Our paper on understanding air quality perceptions from social media accepted at ACM CSCW
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Nov 2020</div>
+<div class="news-content">
+Got a grant from CISCO on edge non-intrusive load monitoring
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Oct 2020</div>
+<div class="news-content">
+Interactive Illustration on Active Learning accepted to <a href="https://visxai.io/2020" target="_blank">IEEE VisxAI 2020</a> workshop<br><a href="https://patel-zeel.github.io/active-learning-visualization/" target="_blank">[Link to visualization]</a>
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Oct 2020</div>
+<div class="news-content">
+Got a grant from SERB on AI and sensor networks for air quality
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Sep 2020</div>
+<div class="news-content">
+Got a grant from Google on COVID and air quality linkages
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">May 2020</div>
+<div class="news-content">
+Our Distill article on Bayesian Optimization got accepted <a href="https://distill.pub/2020/bayesian-optimization/" target="_blank">[Link to visualization]</a>
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Feb 2020</div>
+<div class="news-content">
+Organised a faculty development program on data science and analytics under the aegis of TEQIP (Pic with the group)
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Feb 2020</div>
+<div class="news-content">
+CSE@IITGN organised ACM India annual event.<br>(Pic with Yann LeCun (Turing award), Shwetak Patel (ACM Compute Prize))
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Jan 2020</div>
+<div class="news-content">
+Members of our lab attended and presented four posters at CODS COMAD 2020
+</div>
+</div>
+
+## 2019
+
+<div class="news-item">
+<div class="news-date">Nov 2019</div>
+<div class="news-content">
+Spoke at INS Valsura on Machine Learning. Honoured to speak in front of officers from Indian Navy, Army and Air Force
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Nov 2019</div>
+<div class="news-content">
+Gave a talk about our energy dis-aggregation work at ACM BuildSys 2019 in NYC!
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Nov 2019</div>
+<div class="news-content">
+Gave a talk about our air quality work at Google, Bangalore
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Apr 2019</div>
+<div class="news-content">
+Giving a talk on Computational Sustainability at Nirma University.
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Mar 2019</div>
+<div class="news-content">
+Giving a talk on Computational Sustainability at ROCS 2019.
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Jan 2019</div>
+<div class="news-content">
+Paper accepted in WWW! Details soon on Publications page.
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Jan 2019</div>
+<div class="news-content">
+Teaching machine learning this semester. Class URL
+</div>
+</div>
+
+## 2018
+
+<div class="news-item">
+<div class="news-date">Nov 2018</div>
+<div class="news-content">
+Haroon presented our paper in BuildSys 18!
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Nov 2018</div>
+<div class="news-content">
+Awarded an Microsoft AI for Earth grant worth $15000 in Azure credits
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Aug 2018</div>
+<div class="news-content">
+Took a research methods for CS bootcamp at IITGN. Slides, Youtube
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Jul 2018</div>
+<div class="news-content">
+Received a Titan XP GPU from NVidia via their grant program. Thanks, NVidia!
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Jul 2018</div>
+<div class="news-content">
+Teaching operating systems in the current semester at IITGN
+</div>
+</div>
+
+<div class="news-item">
+<div class="news-date">Jul 2018</div>
+<div class="news-content">
+Joined CSE at IITGN as an Assistant Professor
 </div>
 </div>
