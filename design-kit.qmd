@@ -76,19 +76,28 @@
 
 ---
 
-##  Favicon
+##  Favicon - "SL" Logo
 
-**Download**:[logo_favicon.svg](sandbox:/images/favicon.svg)
+**Download**: [favicon-sl.svg](images/favicon-sl.svg)
+
+Bold, readable "SL" favicon with brand gradient - perfect visibility at all sizes.
 
 ```svg
-<svg viewBox="0 0 480 120" xmlns="http://www.w3.org/2000/svg">
-  <title>Sustainability Lab Logo - Favicon</title>
-  <line x1="110" y1="85" x2="110" y2="35" stroke="#444444" stroke-width="2" stroke-linecap="round"/>
-  <line x1="110" y1="85" x2="150" y2="85" stroke="#444444" stroke-width="2" stroke-linecap="round"/>
-  <path d="M 90.0 84.7 L 91.4 84.5 ... L 130.0 35.3"
-        fill="none"
-        stroke="#000000"
-        stroke-width="3.5"
-        stroke-linecap="round"/>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <title>Sustainability Lab - SL Favicon</title>
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="48" fill="url(#bgGradient)" stroke="#ffffff" stroke-width="4"/>
+  <text x="28" y="68" font-family="Roboto, system-ui, sans-serif" font-size="42" font-weight="700" fill="#ffffff" text-anchor="middle">S</text>
+  <text x="72" y="68" font-family="Roboto, system-ui, sans-serif" font-size="42" font-weight="700" fill="#ffffff" text-anchor="middle">L</text>
 </svg>
 ```
+
+### Multiple Sizes Available:
+- **Standard**: [favicon-sl.svg](images/favicon-sl.svg) (100x100)
+- **Small**: [favicon-16.svg](images/favicon-16.svg) (16x16) 
+- **Medium**: [favicon-32.svg](images/favicon-32.svg) (32x32)

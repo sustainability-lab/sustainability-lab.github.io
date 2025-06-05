@@ -490,9 +490,9 @@ We believe in the transformative potential of AI to monitor environmental change
 
 Our graduates have gone on to amazing opportunities:
 
-- **Industry:** Google DeepMind, Microsoft, Skan.ai, Oracle, Salesforce
-- **Academia:** PhD programs at UMass Amherst, Stony Brook; MS at CMU, NYU, UCSD, UIUC  
-- **Recognition:** Fulbright Fellows, Microsoft Research PhD Awards, PMRFs
+- **Industry:** Google DeepMind, Microsoft, Oracle, Salesforce, Skan.ai, CRED, Nykaa, Trading Technologies
+- **Academia:** PhD programs at UMass Amherst, IIT Gandhinagar, Stony Brook; MS at Carnegie Mellon University, UC San Diego, Texas A&M University, NYU Tandon, UC Irvine, Caltech, ETH Zurich
+- **Recognition:** Fulbright Fellows, Microsoft Research PhD Awards, PMRFs, Outstanding Research Gold Medals
 
 [👥 See Full Alumni List](alumni.qmd){.btn .btn-secondary} [📖 Read Their Stories](experiences.qmd){.btn .btn-secondary}
 

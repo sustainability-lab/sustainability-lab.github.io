@@ -171,19 +171,33 @@ body {
     margin-top: 4px;
 }
 
-.highlight-companies {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+/* Consistent styling for all organizations */
+.university {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding: 4px 8px;
+    padding: 3px 8px;
     border-radius: 4px;
     font-size: 0.85rem;
     font-weight: 500;
 }
 
-.company-google { background: #4285f4; }
-.company-microsoft { background: #00a1f1; }
-.company-cmu { background: #c41e3a; }
-.company-caltech { background: #ff6c0c; }
+.company {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.startup {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
 
 @media (max-width: 768px) {
     .hero-banner h1 {
@@ -252,15 +266,15 @@ body {
 <div class="alumni-list">
 <div class="alumni-item">
 <div class="alumni-name">Aditi Agarwal</div>
-<div class="alumni-details">Predoc at <span class="highlight-companies company-google">Google DeepMind</span></div>
+<div class="alumni-details">Predoc at <span class="company">Google DeepMind</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Progyan Das</div>
-<div class="alumni-details">Applied Scientist at <span class="highlight-companies company-microsoft">Microsoft</span></div>
+<div class="alumni-details">Applied Scientist at <span class="company">Microsoft</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Madhav Kanda</div>
-<div class="alumni-details">MS at University of Illinois Urbana-Champaign</div>
+<div class="alumni-details">MS at <span class="university">University of Illinois Urbana-Champaign</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Dhruv Patel</div>
@@ -272,19 +286,19 @@ body {
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Utkarsh Mittal</div>
-<div class="alumni-details">MS at NYU Tandon</div>
+<div class="alumni-details">MS at <span class="university">NYU Tandon</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Inderjeet Bhullar</div>
-<div class="alumni-details">Data Scientist at Skan.ai</div>
+<div class="alumni-details">Data Scientist at <span class="company">Skan.ai</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Kalash Kankariya</div>
-<div class="alumni-details">Data Scientist at Skan.ai</div>
+<div class="alumni-details">Data Scientist at <span class="company">Skan.ai</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Rahul Chembakasseril</div>
-<div class="alumni-details">Data Scientist at Skan.ai</div>
+<div class="alumni-details">Data Scientist at <span class="company">Skan.ai</span></div>
 </div>
 </div>
 
@@ -300,19 +314,19 @@ body {
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Eshan Gujarathi</div>
-<div class="alumni-details">Predoc at IIT Madras</div>
+<div class="alumni-details">Predoc at <span class="university">IIT Madras</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Hitarth Gandhi</div>
-<div class="alumni-details">MS at UC Irvine</div>
+<div class="alumni-details">MS at <span class="university">UC Irvine</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Gautam Vasistha</div>
-<div class="alumni-details">Data Scientist at Skan.AI</div>
+<div class="alumni-details">Data Scientist at <span class="company">Skan.AI</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Xhitij Choudhary</div>
-<div class="alumni-details">Data Scientist at Skan.AI</div>
+<div class="alumni-details">Data Scientist at <span class="company">Skan.AI</span></div>
 </div>
 </div>
 
@@ -320,11 +334,11 @@ body {
 <div class="alumni-list">
 <div class="alumni-item">
 <div class="alumni-name">Palak Purohit</div>
-<div class="alumni-details">MS at <span class="highlight-companies company-caltech">Caltech</span></div>
+<div class="alumni-details">MS at <span class="university">Caltech</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Hetvi Shastri</div>
-<div class="alumni-details">PhD at UMass Amherst</div>
+<div class="alumni-details">PhD at <span class="university">UMass Amherst</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Chris Francis</div>
@@ -348,19 +362,19 @@ body {
 <div class="alumni-list">
 <div class="alumni-item">
 <div class="alumni-name">Soham Pachpande</div>
-<div class="alumni-details">HSBC → MS at UCSD → SWE at Salesforce</div>
+<div class="alumni-details"><span class="company">HSBC</span> → MS at <span class="university">UCSD</span> → SWE at <span class="company">Salesforce</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Deepak Narayanan</div>
-<div class="alumni-details">Microsoft Research India → MS at ETH Zurich</div>
+<div class="alumni-details"><span class="company">Microsoft Research India</span> → MS at <span class="university">ETH Zurich</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Apoorv Agnihotri</div>
-<div class="alumni-details">Wadhwani AI → Data Scientist at Rephrase.ai</div>
+<div class="alumni-details"><span class="company">Wadhwani AI</span> → Data Scientist at <span class="startup">Rephrase.ai</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Kukunuri Rithwik</div>
-<div class="alumni-details">Jio → Data Scientist at Nykaa</div>
+<div class="alumni-details"><span class="company">Jio</span> → Data Scientist at <span class="company">Nykaa</span></div>
 </div>
 </div>
 </div>
@@ -371,23 +385,23 @@ body {
 <div class="alumni-list">
 <div class="alumni-item">
 <div class="alumni-name">Ayush Shrivastava (2024)</div>
-<div class="alumni-details">PhD at IIT Gandhinagar</div>
+<div class="alumni-details">PhD at <span class="university">IIT Gandhinagar</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Suraj Jaiswal (2024)</div>
-<div class="alumni-details">Research Scientist at Neuroreef Labs</div>
+<div class="alumni-details">Research Scientist at <span class="startup">Neuroreef Labs</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Ankita Jain (2023)</div>
-<div class="alumni-details">Software Engineer at Oracle</div>
+<div class="alumni-details">Software Engineer at <span class="company">Oracle</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Karan Kumar (2020)</div>
-<div class="alumni-details">Software Engineer at Trading Technologies</div>
+<div class="alumni-details">Software Engineer at <span class="company">Trading Technologies</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Souvik Roy (2020)</div>
-<div class="alumni-details">Data Analyst at eClerx</div>
+<div class="alumni-details">Data Analyst at <span class="company">eClerx</span></div>
 </div>
 </div>
 </div>
@@ -399,19 +413,19 @@ body {
 <div class="alumni-list">
 <div class="alumni-item">
 <div class="alumni-name">Prerna Khanna</div>
-<div class="alumni-details">PhD student at Stony Brook University</div>
+<div class="alumni-details">PhD student at <span class="university">Stony Brook University</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Tanmay Srivastava</div>
-<div class="alumni-details">PhD student at Stony Brook University</div>
+<div class="alumni-details">PhD student at <span class="university">Stony Brook University</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Kaushal Modi</div>
-<div class="alumni-details">Data Scientist at InfiBeam</div>
+<div class="alumni-details">Data Scientist at <span class="company">InfiBeam</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Rohit Patil</div>
-<div class="alumni-details">Software Engineer at Publicis Sapient</div>
+<div class="alumni-details">Software Engineer at <span class="company">Publicis Sapient</span></div>
 </div>
 </div>
 
@@ -419,7 +433,7 @@ body {
 <div class="alumni-list">
 <div class="alumni-item">
 <div class="alumni-name">Vibhuti Bansal (Summer 2022)</div>
-<div class="alumni-details">Software Engineer at CRED</div>
+<div class="alumni-details">Software Engineer at <span class="startup">CRED</span></div>
 </div>
 <div class="alumni-item">
 <div class="alumni-name">Devodita Chakravarty (Summer 2024)</div>

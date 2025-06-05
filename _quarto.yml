@@ -7,7 +7,7 @@ project:
 
 website:
   title: "Sustainability Lab"
-  favicon: /images/favicon.svg
+  favicon: /images/favicon-sl.svg
   navbar:
     title: False
     search: true

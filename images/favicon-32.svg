@@ -1,0 +1,12 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <title>SL Favicon 32x32</title>
+  <defs>
+    <linearGradient id="bg32" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="32" height="32" rx="6" fill="url(#bg32)"/>
+  <text x="8" y="24" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#ffffff">S</text>
+  <text x="20" y="24" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#ffffff">L</text>
+</svg>
