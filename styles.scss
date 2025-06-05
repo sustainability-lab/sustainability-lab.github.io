@@ -84,6 +84,15 @@ body {
     font-family: $font-family;
 }
 
+/* Sharp logo rendering for SVG */
+#theme-logo {
+    shape-rendering: geometricPrecision;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    max-width: 100%;
+    height: auto;
+}
+
 .paper {
     display: flex;
     margin-bottom: 5px;
