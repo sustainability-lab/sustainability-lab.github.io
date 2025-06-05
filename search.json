@@ -301,11 +301,11 @@
     "text": "Coloured Theme Logo\nDownload: logo_colored.svg\n&lt;svg viewBox=\"0 0 480 120\" xmlns=\"http://www.w3.org/2000/svg\"&gt;\n  &lt;title&gt;Sustainability Lab Logo - Modern Teal&lt;/title&gt;\n  &lt;line x1=\"110\" y1=\"85\" x2=\"110\" y2=\"35\" stroke=\"#5C9EAD\" stroke-width=\"2\" stroke-linecap=\"round\"/&gt;\n  &lt;line x1=\"110\" y1=\"85\" x2=\"150\" y2=\"85\" stroke=\"#5C9EAD\" stroke-width=\"2\" stroke-linecap=\"round\"/&gt;\n  &lt;path d=\"M 90.0 84.7 L 91.4 84.5 ... L 130.0 35.3\" \n        fill=\"none\" \n        stroke=\"#2F5F5F\" \n        stroke-width=\"3.5\" \n        stroke-linecap=\"round\"/&gt;\n  &lt;text x=\"165\" y=\"65\" font-family=\"system-ui, sans-serif\" font-size=\"32\" font-weight=\"400\" fill=\"#2F5F5F\" letter-spacing=\"0.5px\"&gt;\n    SUSTAINABILITY\n  &lt;/text&gt;\n  &lt;text x=\"165\" y=\"85\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"300\" fill=\"#4A7F7F\" letter-spacing=\"3px\"&gt;\n    LAB\n  &lt;/text&gt;\n&lt;/svg&gt;"
   },
   {
-    "objectID": "design-kit.html#favicon",
-    "href": "design-kit.html#favicon",
+    "objectID": "design-kit.html#favicon---sl-logo",
+    "href": "design-kit.html#favicon---sl-logo",
     "title": "Sustainability Lab",
-    "section": "Favicon",
-    "text": "Favicon\nDownload:logo_favicon.svg\n&lt;svg viewBox=\"0 0 480 120\" xmlns=\"http://www.w3.org/2000/svg\"&gt;\n  &lt;title&gt;Sustainability Lab Logo - Favicon&lt;/title&gt;\n  &lt;line x1=\"110\" y1=\"85\" x2=\"110\" y2=\"35\" stroke=\"#444444\" stroke-width=\"2\" stroke-linecap=\"round\"/&gt;\n  &lt;line x1=\"110\" y1=\"85\" x2=\"150\" y2=\"85\" stroke=\"#444444\" stroke-width=\"2\" stroke-linecap=\"round\"/&gt;\n  &lt;path d=\"M 90.0 84.7 L 91.4 84.5 ... L 130.0 35.3\"\n        fill=\"none\"\n        stroke=\"#000000\"\n        stroke-width=\"3.5\"\n        stroke-linecap=\"round\"/&gt;\n&lt;/svg&gt;"
+    "section": "Favicon - “SL” Logo",
+    "text": "Favicon - “SL” Logo\nDownload: favicon-sl.svg\nBold, readable “SL” favicon with brand gradient - perfect visibility at all sizes.\n&lt;svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"&gt;\n  &lt;title&gt;Sustainability Lab - SL Favicon&lt;/title&gt;\n  &lt;defs&gt;\n    &lt;linearGradient id=\"bgGradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\"&gt;\n      &lt;stop offset=\"0%\" style=\"stop-color:#667eea;stop-opacity:1\" /&gt;\n      &lt;stop offset=\"100%\" style=\"stop-color:#764ba2;stop-opacity:1\" /&gt;\n    &lt;/linearGradient&gt;\n  &lt;/defs&gt;\n  &lt;circle cx=\"50\" cy=\"50\" r=\"48\" fill=\"url(#bgGradient)\" stroke=\"#ffffff\" stroke-width=\"4\"/&gt;\n  &lt;text x=\"28\" y=\"68\" font-family=\"Roboto, system-ui, sans-serif\" font-size=\"42\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\"&gt;S&lt;/text&gt;\n  &lt;text x=\"72\" y=\"68\" font-family=\"Roboto, system-ui, sans-serif\" font-size=\"42\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\"&gt;L&lt;/text&gt;\n&lt;/svg&gt;\n\nMultiple Sizes Available:\n\nStandard: favicon-sl.svg (100x100)\nSmall: favicon-16.svg (16x16)\nMedium: favicon-32.svg (32x32)"
   },
   {
     "objectID": "events/acm-summer-2025/index.html",
@@ -494,7 +494,7 @@
     "href": "openings.html#what-our-alumni-say",
     "title": "\n🚀 Join Our Research Mission\n",
     "section": "What Our Alumni Say",
-    "text": "What Our Alumni Say\n\n\n\n“Working at Sustainability Lab gave me the foundation I needed for my role at Google DeepMind. The research experience and mentorship were invaluable.”\n\n\n— Aditi Agarwal, BTech 2024, now Predoc at Google DeepMind\n\n\n\n🎓 Alumni Success Stories\nOur graduates have gone on to amazing opportunities:\n\nIndustry: Google DeepMind, Microsoft, Skan.ai, Oracle, Salesforce\nAcademia: PhD programs at UMass Amherst, Stony Brook; MS at CMU, NYU, UCSD, UIUC\n\nRecognition: Fulbright Fellows, Microsoft Research PhD Awards, PMRFs\n\n👥 See Full Alumni List 📖 Read Their Stories"
+    "text": "What Our Alumni Say\n\n\n\n“Working at Sustainability Lab gave me the foundation I needed for my role at Google DeepMind. The research experience and mentorship were invaluable.”\n\n\n— Aditi Agarwal, BTech 2024, now Predoc at Google DeepMind\n\n\n\n🎓 Alumni Success Stories\nOur graduates have gone on to amazing opportunities:\n\nIndustry: Google DeepMind, Microsoft, Oracle, Salesforce, Skan.ai, CRED, Nykaa, Trading Technologies\nAcademia: PhD programs at UMass Amherst, IIT Gandhinagar, Stony Brook; MS at Carnegie Mellon University, UC San Diego, Texas A&M University, NYU Tandon, UC Irvine, Caltech, ETH Zurich\nRecognition: Fulbright Fellows, Microsoft Research PhD Awards, PMRFs, Outstanding Research Gold Medals\n\n👥 See Full Alumni List 📖 Read Their Stories"
   },
   {
     "objectID": "openings.html#ready-to-join",
