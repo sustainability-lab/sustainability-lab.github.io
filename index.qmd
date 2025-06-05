@@ -2,278 +2,6 @@
 toc: false
 ---
 
-<style>
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #fafbfc;
-    color: #2d3748;
-    line-height: 1.6;
-}
-
-.hero-section {
-    text-align: center;
-    padding: 60px 20px 40px;
-    margin-bottom: 40px;
-}
-
-.hero-section h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: 16px;
-    color: #667eea !important;
-    text-align: center !important;
-}
-
-.tagline {
-    font-size: 1.3rem;
-    color: #4a5568;
-    max-width: 700px;
-    margin: 0 auto 30px;
-    font-weight: 400;
-}
-
-.hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 30px;
-}
-
-.hero-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.hero-btn.primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-}
-
-.hero-btn.primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
-    text-decoration: none;
-    color: white;
-}
-
-.hero-btn.secondary {
-    border: 2px solid #667eea;
-    color: #667eea;
-    background: white;
-}
-
-.hero-btn.secondary:hover {
-    background: #667eea;
-    color: white;
-    text-decoration: none;
-}
-
-.featured-projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 24px;
-    margin: 40px 0;
-}
-
-.project-card {
-    border-radius: 12px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    border: 1px solid #e2e8f0;
-    background: white;
-}
-
-.project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-}
-
-.project-image {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    background: #f7fafc;
-}
-
-.project-content {
-    padding: 20px;
-}
-
-.project-card h3 {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #2d3748;
-}
-
-.project-card p {
-    color: #4a5568;
-    line-height: 1.5;
-    margin-bottom: 16px;
-    font-size: 0.95rem;
-}
-
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 16px;
-}
-
-.tag {
-    background: #eff6ff;
-    color: #1d4ed8;
-    padding: 3px 10px;
-    border-radius: 16px;
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-
-.project-link {
-    color: #667eea;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-.project-link:hover {
-    color: #4f46e5;
-    text-decoration: none;
-}
-
-.compact-section {
-    margin: 50px 0;
-    padding: 40px;
-    border-radius: 12px;
-    text-align: center;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    border: 1px solid #e2e8f0;
-}
-
-.compact-section h2 {
-    margin-bottom: 30px;
-    font-size: 2rem;
-    color: #2d3748;
-}
-
-.funding-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.join-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    text-align: center;
-    padding: 50px 30px;
-    border-radius: 12px;
-    margin: 50px 0;
-}
-
-.join-section h2 {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 16px;
-}
-
-.join-section p {
-    font-size: 1.1rem;
-    opacity: 0.9;
-    margin-bottom: 30px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.join-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-}
-
-.join-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.join-btn.primary {
-    background: white;
-    color: #667eea;
-}
-
-.join-btn.primary:hover {
-    background: #f8f9fa;
-    color: #667eea;
-    text-decoration: none;
-    transform: translateY(-2px);
-}
-
-.join-btn.secondary {
-    background: rgba(255,255,255,0.1);
-    color: white;
-    border: 1px solid rgba(255,255,255,0.3);
-}
-
-.join-btn.secondary:hover {
-    background: rgba(255,255,255,0.2);
-    color: white;
-    text-decoration: none;
-    transform: translateY(-2px);
-}
-
-.section-title {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 16px;
-    text-align: center;
-    color: #2d3748;
-}
-
-.section-subtitle {
-    color: #4a5568;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.1rem;
-}
-
-@media (max-width: 768px) {
-    .hero-section h1 {
-        font-size: 2.2rem;
-    }
-    
-    .tagline {
-        font-size: 1.1rem;
-    }
-    
-    .featured-projects {
-        grid-template-columns: 1fr;
-    }
-    
-    .hero-buttons,
-    .join-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .compact-section,
-    .join-section {
-        padding: 30px 20px;
-    }
-}
-</style>
-
 <div class="hero-section">
 <h1>Sustainability Lab</h1>
 <p class="tagline">Harnessing AI to create a sustainable future where technology serves both people and planet</p>
@@ -292,7 +20,7 @@ body {
 <div class="featured-projects">
 
 <div class="project-card">
-<img src="images/mainpage/JoulesEye_1.png" alt="JoulesEye Project" class="project-image">
+<img src="images/mainpage/JoulesEye_1.png" alt="JoulesEye thermal imaging system showing energy expenditure monitoring during exercise" class="project-image">
 <div class="project-content">
 <h3>JoulesEye</h3>
 <p>Revolutionary energy expenditure estimation and respiration sensing from thermal imagery during exercise.</p>
@@ -301,12 +29,12 @@ body {
 <span class="tag">Thermal Imaging</span>
 <span class="tag">AI/ML</span>
 </div>
-<a href="papers/jouleseye.qmd" class="project-link">Learn More →</a>
+<a href="papers/index.qmd" class="project-link">Learn More →</a>
 </div>
 </div>
 
 <div class="project-card">
-<img src="images/mainpage/SpiroMask.png" alt="SpiroMask Project" class="project-image">
+<img src="images/mainpage/SpiroMask.png" alt="SpiroMask smart respiratory monitoring device integrated into face mask" class="project-image">
 <div class="project-content">
 <h3>SpiroMask</h3>
 <p>Smart respiratory monitoring system transforming regular face masks into health sensing devices.</p>
@@ -315,12 +43,12 @@ body {
 <span class="tag">IoT</span>
 <span class="tag">Respiratory Health</span>
 </div>
-<a href="papers/spiromask.qmd" class="project-link">Learn More →</a>
+<a href="papers/index.qmd" class="project-link">Learn More →</a>
 </div>
 </div>
 
 <div class="project-card">
-<img src="images/mainpage/space-to-policy.png" alt="Space to Policy Project" class="project-image">
+<img src="images/mainpage/space-to-policy.png" alt="Satellite imagery analysis workflow for environmental policy monitoring and compliance tracking" class="project-image">
 <div class="project-content">
 <h3>Space to Policy</h3>
 <p>Using satellite imagery and AI to monitor environmental compliance and inform policy decisions.</p>
@@ -329,12 +57,12 @@ body {
 <span class="tag">Policy</span>
 <span class="tag">Environmental</span>
 </div>
-<a href="papers/space-to-policy.qmd" class="project-link">Learn More →</a>
+<a href="papers/index.qmd" class="project-link">Learn More →</a>
 </div>
 </div>
 
 <div class="project-card">
-<img src="images/mainpage/ContRespiration.png" alt="Continuous Respiration Project" class="project-image">
+<img src="images/mainpage/ContRespiration.png" alt="Wearable respiratory monitoring system showing real-time breathing pattern detection" class="project-image">
 <div class="project-content">
 <h3>Continuous Respiration Detection</h3>
 <p>Advanced algorithms for real-time respiration rate monitoring during physical activity.</p>
@@ -343,7 +71,7 @@ body {
 <span class="tag">Signal Processing</span>
 <span class="tag">Health Tech</span>
 </div>
-<a href="papers/continuous-respiration.qmd" class="project-link">Learn More →</a>
+<a href="papers/index.qmd" class="project-link">Learn More →</a>
 </div>
 </div>
 
@@ -356,7 +84,7 @@ body {
 ## Funding Partners
 
 <div class="compact-section">
-<img src="images/mainpage/Funding organisations.png" alt="Funding Organizations" class="funding-image">
+<img src="images/mainpage/Funding organisations.png" alt="Logos of funding organizations supporting Sustainability Lab research including government agencies and academic institutions" class="funding-image">
 </div>
 
 <div class="join-section">
@@ -370,6 +98,6 @@ body {
 </div>
 
 <div style="margin-top: 30px; font-size: 0.9rem; opacity: 0.8;">
-<p><strong>Ready to make an impact?</strong> 🌟</p>
+<p><strong>Ready to make an impact?</strong> ⭐</p>
 </div>
 </div>

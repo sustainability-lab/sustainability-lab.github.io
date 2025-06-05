@@ -1,153 +1,364 @@
 ---
-title: "Memories"
-author: ""
+title: "Lab Memories"
+toc: false
 filters:
    - lightbox
 lightbox: auto
 ---
-<style>
-   .large-caption-text{
-      font-size: large ;
-   }
-</style>
 
-<p>Click on any picture to activate the "lightbox" mode. Use the arrow keys to navigate.</p>
+<div class="memories-hero">
+<h1>📸 Our Journey Together</h1>
+<p>Celebrating milestones, achievements, and the incredible moments that define our lab culture. Click any photo to view in full screen with detailed captions.</p>
+</div>
 
-# 2025
+<div class="year-section">
+<h2 class="year-header">2025</h2>
 
-## May 2025
-![](images/memories/2025-Akshardham-all.jpg){group="my-gallery"
-description="[Akshardham visit and dinner]{.large-caption-text}"}
+<div class="month-section">
+<h3 class="month-header">May 2025</h3>
+<div class="photo-grid">
 
-[Akshardham visit and dinner]{.large-caption-text}
+<div class="photo-card">
+![Akshardham visit and dinner with the lab team](images/memories/2025-Akshardham-all.jpg){group="memories" 
+description="Akshardham visit and dinner - A beautiful day exploring Gandhinagar's architectural marvel followed by a wonderful team dinner celebrating our achievements and strengthening lab bonds."}
+<div class="photo-info">
+<div class="photo-title">Akshardham Visit & Team Dinner</div>
+<div class="photo-description">A memorable day exploring Gandhinagar's architectural marvel followed by team dinner</div>
+<div class="photo-date">May 2025</div>
+</div>
+</div>
 
-![](images/memories/2025-Akshardham-finalyear.jpg){group="my-gallery"
-description="[Graduating Batch]{.large-caption-text}"}
+<div class="photo-card">
+![Graduating batch celebration photo at Akshardham](images/memories/2025-Akshardham-finalyear.jpg){group="memories"
+description="Graduating Batch Celebration - Special celebration for our graduating students at Akshardham, Gandhinagar, marking the end of their incredible journey with the Sustainability Lab."}
+<div class="photo-info">
+<div class="photo-title">Graduating Batch Celebration</div>
+<div class="photo-description">Special celebration for our graduating students at Akshardham, Gandhinagar</div>
+<div class="photo-date">May 2025</div>
+</div>
+</div>
 
-[Graduating Batch]{.large-caption-text}
+</div>
+</div>
 
-## Jan 2025
-![](images/memories/Curiosity.jpg){group="my-gallery"
-description="[Sustainability lab at Curiosity Carnival'25 at IITGN.]{.large-caption-text}"}
+<div class="month-section">
+<h3 class="month-header">January 2025</h3>
+<div class="photo-grid">
 
-[Sustainability lab at Curiosity Carnival'25 at IITGN.]{.large-caption-text}
+<div class="photo-card">
+![Sustainability Lab team at Curiosity Carnival 2025 at IIT Gandhinagar](images/memories/Curiosity.jpg){group="memories"
+description="Curiosity Carnival'25 at IITGN - Sustainability Lab showcasing our research and innovations at the prestigious Curiosity Carnival at IIT Gandhinagar, engaging with students and researchers."}
+<div class="photo-info">
+<div class="photo-title">Curiosity Carnival'25 at IITGN</div>
+<div class="photo-description">Showcasing our research and innovations at IIT Gandhinagar</div>
+<div class="photo-date">January 2025</div>
+</div>
+</div>
 
-<!-- ## Jan 2025 -->
-![](images/memories/Dinner-Jan-2025.jpg){group="my-gallery"
-description="[Sustainability lab dinner after Dr. Rishiraj's successful Phd defence.]{.large-caption-text}"}
+<div class="photo-card">
+![Lab dinner celebrating Dr. Rishiraj's successful PhD defence](images/memories/Dinner-Jan-2025.jpg){group="memories"
+description="PhD Defence Celebration - Celebrating Dr. Rishiraj's successful PhD defence with a special lab dinner. A milestone achievement marking years of dedicated research in sustainability and AI."}
+<div class="photo-info">
+<div class="photo-title">PhD Defence Celebration</div>
+<div class="photo-description">Celebrating Dr. Rishiraj's successful PhD defence</div>
+<div class="photo-date">January 2025</div>
+</div>
+</div>
 
-[Sustainability lab dinner after Dr. Rishiraj's successful PhD defence.]{.large-caption-text}
+</div>
+</div>
+</div>
 
-# 2024
+<div class="year-section">
+<h2 class="year-header">2024</h2>
 
-## Dec 2024
-![](images/memories/2024-dec-alum-meet.jpg){group="my-gallery"
-description="[Alum Meetup Homecoming 2024]{.large-caption-text}"}
+<div class="month-section">
+<h3 class="month-header">December 2024</h3>
+<div class="photo-grid">
 
-[Alum Meetup Homecoming 2024]{.large-caption-text}
+<div class="photo-card">
+![Alumni homecoming meetup with former lab members](images/memories/2024-dec-alum-meet.jpg){group="memories"
+description="Alumni Homecoming 2024 - A heartwarming reunion with our alumni who have gone on to make significant impacts in industry and academia worldwide."}
+<div class="photo-info">
+<div class="photo-title">Alumni Homecoming 2024</div>
+<div class="photo-description">Heartwarming reunion with our global alumni network</div>
+<div class="photo-date">December 2024</div>
+</div>
+</div>
 
-## July 2024
-![](images/memories/compass24.jpg){group="my-gallery"
-description="[Sustainability lab at ACM Compass'24 at IIIT Delhi]{.large-caption-text}"}
+</div>
+</div>
 
-[Sustainability lab at ACM Compass'24 at IIIT Delhi]{.large-caption-text}
+<div class="month-section">
+<h3 class="month-header">July 2024</h3>
+<div class="photo-grid">
 
-## June 2024
-![](images/memories/AyushSurajDefence.png){group="my-gallery"
-description="[Ayush and Suraj succesfully defends their Masters Thesis]{.large-caption-text}"}
+<div class="photo-card">
+![Sustainability Lab team at ACM Compass 2024 conference](images/memories/compass24.jpg){group="memories"
+description="ACM Compass'24 at IIIT Delhi - Our team presenting research and networking at ACM Compass'24, showcasing our work in sustainable computing and AI for social good."}
+<div class="photo-info">
+<div class="photo-title">ACM Compass'24 Conference</div>
+<div class="photo-description">Presenting research at IIIT Delhi's premier computing conference</div>
+<div class="photo-date">July 2024</div>
+</div>
+</div>
 
-[Ayush and Suraj succesfully defends their Masters Thesis]{.large-caption-text}
+</div>
+</div>
 
-## May 2024
-![](images/memories/batch24.jpg){group="my-gallery"
-description="[Batch of 2024]{.large-caption-text}"}
+<div class="month-section">
+<h3 class="month-header">June 2024</h3>
+<div class="photo-grid">
 
-![](images/memories/summer24.jpg){group="my-gallery"
-description="[Lab dinner May 2024]{.large-caption-text}"}
+<div class="photo-card">
+![Ayush and Suraj successfully defending their Masters thesis](images/memories/AyushSurajDefence.png){group="memories"
+description="Masters Thesis Defence - Ayush and Suraj successfully defending their Masters thesis, completing their research journey in sustainable AI and environmental monitoring."}
+<div class="photo-info">
+<div class="photo-title">Masters Thesis Defence</div>
+<div class="photo-description">Ayush and Suraj successfully defending their Masters thesis</div>
+<div class="photo-date">June 2024</div>
+</div>
+</div>
 
-## Jan 2024
-![](images/memories/2024-alum-visit.jpg){group="my-gallery"
-description="[Jan 2024 Alums from 2022 batch Harsh, Hetvi and Palak visited us]{.large-caption-text}"}
+</div>
+</div>
 
-[Jan 2024 Alums from 2022 batch Harsh, Hetvi and Palak visited us.]{.large-caption-text}
+<div class="month-section">
+<h3 class="month-header">May 2024</h3>
+<div class="photo-grid">
 
-# 2023
+<div class="photo-card">
+![Graduation celebration with 2024 batch](images/memories/batch24.jpg){group="memories"
+description="Batch of 2024 Graduation - Celebrating the achievements of our 2024 graduating batch who have contributed significantly to our research in sustainable AI and environmental sensing."}
+<div class="photo-info">
+<div class="photo-title">Batch of 2024 Graduation</div>
+<div class="photo-description">Celebrating our graduating students' achievements</div>
+<div class="photo-date">May 2024</div>
+</div>
+</div>
 
-## Dec 2023
-![](images/memories/Mayank_visit.jpg){group="my-gallery"
-description="[15 Dec 2023 Prof Mayank Goel from CMU visited sustainability lab]{.large-caption-text}"}
+<div class="photo-card">
+![Lab dinner and celebration in May 2024](images/memories/summer24.jpg){group="memories"
+description="Lab Dinner May 2024 - A wonderful team dinner celebrating the successful completion of projects and welcoming new members to our growing research family."}
+<div class="photo-info">
+<div class="photo-title">Lab Dinner Celebration</div>
+<div class="photo-description">Team dinner celebrating project completions and new members</div>
+<div class="photo-date">May 2024</div>
+</div>
+</div>
 
-[15 Dec 2023 Prof Mayank Goel from CMU visited sustainability lab]{.large-caption-text}
+</div>
+</div>
 
-## Nov 2023
-![](images/memories/2023-Fall.jpg){group="my-gallery"
-description="[15 Nov 2023 Students working with us in the Fall 2023 semester.]{.large-caption-text}"}
+<div class="month-section">
+<h3 class="month-header">January 2024</h3>
+<div class="photo-grid">
 
-[15 Nov 2023 Students working with us in the Fall 2023 semester.]{.large-caption-text}
+<div class="photo-card">
+![Alumni visit from 2022 batch members Harsh, Hetvi and Palak](images/memories/2024-alum-visit.jpg){group="memories"
+description="Alumni Visit January 2024 - Former students Harsh, Hetvi and Palak from our 2022 batch visiting the lab, sharing their industry experiences and mentoring current students."}
+<div class="photo-info">
+<div class="photo-title">Alumni Visit</div>
+<div class="photo-description">Harsh, Hetvi and Palak from 2022 batch sharing industry experiences</div>
+<div class="photo-date">January 2024</div>
+</div>
+</div>
 
-## Oct 2023
-![](images/memories/rishiraj-award.jpeg){group="my-gallery"
-description="[Rishiraj was a finalist in the presitigous Gaetano Borriello Outstanding Student Award at ACM Ubicomp 2023]{.large-caption-text}"}
+</div>
+</div>
+</div>
 
-[Rishiraj was a finalist in the presitigous Gaetano Borriello Outstanding Student Award at ACM Ubicomp 2023]{.large-caption-text}
+<div class="year-section">
+<h2 class="year-header">2023</h2>
 
-## Sept 2023
-![](images/memories/2023-Sept-Young_Alumni.jpg){group="my-gallery"
-description="[15 Sept 2023 Received the Young Alumni Award from IIIT Delhi.]{.large-caption-text}"}
+<div class="month-section">
+<h3 class="month-header">December 2023</h3>
+<div class="photo-grid">
 
-[15 Sept 2023 Received the Young Alumni Award from IIIT Delhi.]{.large-caption-text}
+<div class="photo-card">
+![Prof Mayank Goel from CMU visiting Sustainability Lab](images/memories/Mayank_visit.jpg){group="memories"
+description="Distinguished Visitor from CMU - Prof Mayank Goel from Carnegie Mellon University visiting our lab, sharing insights on HCI and sustainable technology research."}
+<div class="photo-info">
+<div class="photo-title">CMU Professor Visit</div>
+<div class="photo-description">Prof Mayank Goel sharing insights on HCI and sustainable technology</div>
+<div class="photo-date">December 15, 2023</div>
+</div>
+</div>
 
-## July 2023
-![](images/memories/2023-July-all.jpg){group="my-gallery"
-description="[July 2023 at the 2023 batch convocation (and celebration of multiple awards!)]{.large-caption-text}"}
+</div>
+</div>
 
-[July 2023 at the 2023 batch convocation (and celebration of multiple awards!)]{.large-caption-text}
+<div class="month-section">
+<h3 class="month-header">November 2023</h3>
+<div class="photo-grid">
 
-![](images/memories/ankita-gm-2-3.png){group="my-gallery"
-description="[Ankita winning the Gold Medal for Outstanding Research]{.large-caption-text}"}
+<div class="photo-card">
+![Fall 2023 semester students group photo](images/memories/2023-Fall.jpg){group="memories"
+description="Fall 2023 Semester Team - Students working with us during the Fall 2023 semester, contributing to various sustainability and AI research projects."}
+<div class="photo-info">
+<div class="photo-title">Fall 2023 Semester Team</div>
+<div class="photo-description">Students contributing to sustainability and AI research projects</div>
+<div class="photo-date">November 15, 2023</div>
+</div>
+</div>
 
-[Ankita winning the Gold Medal for Outstanding Research]{.large-caption-text}
+</div>
+</div>
 
+<div class="month-section">
+<h3 class="month-header">October 2023</h3>
+<div class="photo-grid">
 
-## May 2023
-![](images/memories/2023-July.jpg){group="my-gallery"
-description="[May 2023 dinner]{.large-caption-text}"}
+<div class="photo-card">
+![Rishiraj receiving Gaetano Borriello Outstanding Student Award finalist recognition](images/memories/rishiraj-award.jpeg){group="memories"
+description="Prestigious Award Recognition - Rishiraj was selected as a finalist for the prestigious Gaetano Borriello Outstanding Student Award at ACM Ubicomp 2023, recognizing excellence in ubiquitous computing research."}
+<div class="photo-info">
+<div class="photo-title">Gaetano Borriello Award Finalist</div>
+<div class="photo-description">Rishiraj's recognition at ACM Ubicomp 2023 for outstanding research</div>
+<div class="photo-date">October 2023</div>
+</div>
+</div>
 
-[May 2023 dinner]{.large-caption-text}
+</div>
+</div>
 
-![](images/memories/2023-group.jpg){group="my-gallery"
-description="[Batch of 2023 :Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam]{.large-caption-text}"}
+<div class="month-section">
+<h3 class="month-header">September 2023</h3>
+<div class="photo-grid">
 
-[Batch of 2023: Saagar, Aadesh, Xhitij, Nipun, Zeel (not batch of 2023), Ankita, Eshan, Hitarth, Gautam]{.large-caption-text}
+<div class="photo-card">
+![Young Alumni Award ceremony at IIIT Delhi](images/memories/2023-Sept-Young_Alumni.jpg){group="memories"
+description="Young Alumni Award - Celebrating the Young Alumni Award received from IIIT Delhi, recognizing early career achievements and contributions to research and society."}
+<div class="photo-info">
+<div class="photo-title">Young Alumni Award</div>
+<div class="photo-description">Recognition from IIIT Delhi for early career achievements</div>
+<div class="photo-date">September 15, 2023</div>
+</div>
+</div>
 
-![](images/memories/2023-cake.jpg){group="my-gallery"
-description="[Cake by batch of 2023]{.large-caption-text}"}
+</div>
+</div>
 
-[Cake by batch of 2023]{.large-caption-text}
+<div class="month-section">
+<h3 class="month-header">July 2023</h3>
+<div class="photo-grid">
 
-# 2022
+<div class="photo-card">
+![2023 batch convocation celebration with awards](images/memories/2023-July-all.jpg){group="memories"
+description="Convocation & Awards Celebration - Celebrating the 2023 batch convocation along with multiple awards and recognitions received by our lab members for their outstanding research contributions."}
+<div class="photo-info">
+<div class="photo-title">Convocation & Awards Celebration</div>
+<div class="photo-description">2023 batch graduation with multiple awards and recognitions</div>
+<div class="photo-date">July 2023</div>
+</div>
+</div>
 
-## July 2022
+<div class="photo-card">
+![Ankita receiving Gold Medal for Outstanding Research](images/memories/ankita-gm-2-3.png){group="memories"
+description="Gold Medal for Outstanding Research - Ankita receiving the prestigious Gold Medal for Outstanding Research, recognizing her exceptional contributions to sustainability and AI research."}
+<div class="photo-info">
+<div class="photo-title">Gold Medal Achievement</div>
+<div class="photo-description">Ankita's Gold Medal for Outstanding Research contributions</div>
+<div class="photo-date">July 2023</div>
+</div>
+</div>
 
-![](images/memories/2022-group-subset.jpg){group="my-gallery"
-description="[With a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)]{.large-caption-text}"}
+</div>
+</div>
 
-[With a subset of the batch of 2022 (Harsh, Hetvi, Nipun, Dhruvi, Palak)]{.large-caption-text}
+<div class="month-section">
+<h3 class="month-header">May 2023</h3>
+<div class="photo-grid">
 
-# 2021
+<div class="photo-card">
+![May 2023 lab dinner celebration](images/memories/2023-July.jpg){group="memories"
+description="Lab Dinner May 2023 - A wonderful team dinner bringing together all lab members to celebrate research milestones and strengthen our collaborative bonds."}
+<div class="photo-info">
+<div class="photo-title">Lab Dinner Celebration</div>
+<div class="photo-description">Team dinner celebrating research milestones and collaboration</div>
+<div class="photo-date">May 2023</div>
+</div>
+</div>
 
-## Dec 2021
+<div class="photo-card">
+![Batch of 2023 group photo with all members](images/memories/2023-group.jpg){group="memories"
+description="Batch of 2023 Complete Team - The complete 2023 batch: Saagar, Aadesh, Xhitij, Nipun, Zeel, Ankita, Eshan, Hitarth, and Gautam, representing diverse expertise in sustainability and AI research."}
+<div class="photo-info">
+<div class="photo-title">Batch of 2023 Complete Team</div>
+<div class="photo-description">Saagar, Aadesh, Xhitij, Nipun, Zeel, Ankita, Eshan, Hitarth, Gautam</div>
+<div class="photo-date">May 2023</div>
+</div>
+</div>
 
-![](images/memories/2021-AAAI.jpg){group="my-gallery"
-description="[Celebrating AAAI paper acceptance]{.large-caption-text}"}
+<div class="photo-card">
+![Special celebration cake from batch of 2023](images/memories/2023-cake.jpg){group="memories"
+description="Celebration Cake - A special cake celebration organized by the batch of 2023 to mark their successful completion of research projects and thesis defenses."}
+<div class="photo-info">
+<div class="photo-title">Celebration Cake</div>
+<div class="photo-description">Special celebration organized by batch of 2023</div>
+<div class="photo-date">May 2023</div>
+</div>
+</div>
 
-[Celebrating AAAI paper acceptance]{.large-caption-text}
+</div>
+</div>
+</div>
 
+<div class="year-section">
+<h2 class="year-header">2022</h2>
 
-## Nov 2021
+<div class="month-section">
+<h3 class="month-header">July 2022</h3>
+<div class="photo-grid">
 
-![](images/memories/2021-Nov-Apoorv.jpg){group="my-gallery"
-description="[Apoorv's \"re\" visit to the campus (others in frame: Rishiraj and Zeel)]{.large-caption-text}"}
+<div class="photo-card">
+![Subset of 2022 batch alumni group photo](images/memories/2022-group-subset.jpg){group="memories"
+description="Batch of 2022 Alumni - A cherished photo with a subset of our 2022 batch alumni: Harsh, Hetvi, Nipun, Dhruvi, and Palak, who have gone on to make significant contributions in their respective fields."}
+<div class="photo-info">
+<div class="photo-title">Batch of 2022 Alumni</div>
+<div class="photo-description">Harsh, Hetvi, Nipun, Dhruvi, Palak - now making global impact</div>
+<div class="photo-date">July 2022</div>
+</div>
+</div>
 
-[Apoorv's "re" visit to the campus (others in frame: Rishiraj and Zeel)]{.large-caption-text}
+</div>
+</div>
+</div>
 
+<div class="year-section">
+<h2 class="year-header">2021</h2>
+
+<div class="month-section">
+<h3 class="month-header">December 2021</h3>
+<div class="photo-grid">
+
+<div class="photo-card">
+![Team celebrating AAAI paper acceptance](images/memories/2021-AAAI.jpg){group="memories"
+description="AAAI Paper Acceptance Celebration - Celebrating the acceptance of our research paper at AAAI, one of the premier conferences in artificial intelligence, marking a significant milestone for the lab."}
+<div class="photo-info">
+<div class="photo-title">AAAI Paper Acceptance</div>
+<div class="photo-description">Celebrating acceptance at premier AI conference</div>
+<div class="photo-date">December 2021</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="month-section">
+<h3 class="month-header">November 2021</h3>
+<div class="photo-grid">
+
+<div class="photo-card">
+![Apoorv's return visit to campus with Rishiraj and Zeel](images/memories/2021-Nov-Apoorv.jpg){group="memories"
+description="Alumni Return Visit - Apoorv's special return visit to campus, reuniting with current lab members Rishiraj and Zeel, sharing experiences and maintaining strong alumni connections."}
+<div class="photo-info">
+<div class="photo-title">Alumni Return Visit</div>
+<div class="photo-description">Apoorv's visit with Rishiraj and Zeel, maintaining strong alumni bonds</div>
+<div class="photo-date">November 2021</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
