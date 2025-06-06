@@ -490,6 +490,7 @@ We believe in the transformative potential of AI to monitor environmental change
 </div>
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeU2KoY-yAsFKCtlUZ8BH8gMEMwhV8z6L8WdaOtPB7TsJQrRg/viewform" target="_blank" class="btn btn-primary">Apply Now</a>
+<a href="https://drive.google.com/file/d/1itoBPzBfJKPClgnDRb3EmjvZwVaB9as_/view" target="_blank" class="btn btn-secondary">View Details</a>
 </div>
 
 ### 🔬 6-Month Internships
