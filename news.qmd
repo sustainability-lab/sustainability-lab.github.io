@@ -81,7 +81,14 @@ body {
 <div class="news-item highlight">
 <div class="news-date">Jan 2025</div>
 <div class="news-content">
-🏆 Shrimay Shah and Dhruv Gupta win Third Prize in Undergraduate Research Showcase for Brick Kilns Detection project! <a href="awards.qmd#awards-and-distinctions">View all awards →</a>
+🏆 <strong>Prof. Nipun Batra wins the SIGEnergy Rising Star Award 2025!</strong> <a href="awards.qmd#faculty-awards">View all faculty awards →</a>
+</div>
+</div>
+
+<div class="news-item highlight">
+<div class="news-date">Jan 2025</div>
+<div class="news-content">
+🏆 Shrimay Shah and Dhruv Gupta win Third Prize in Undergraduate Research Showcase for Brick Kilns Detection project! <a href="awards.qmd#student-awards--recognition">View all awards →</a>
 </div>
 </div>
 
