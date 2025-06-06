@@ -388,7 +388,7 @@ We believe in the transformative potential of AI to monitor environmental change
 </div>
 
 <div class="stat-item">
-<span class="stat-number">320GB</span>
+<span class="stat-number">424GB</span>
 <span class="stat-label">GPU Memory</span>
 </div>
 
@@ -432,7 +432,7 @@ We believe in the transformative potential of AI to monitor environmental change
 </div>
 
 <a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-primary">Contact Prof. Nipun Batra</a>
-<a href="https://nationalpostdocfellowship.serbonline.in/" target="_blank" class="btn btn-secondary">National Postdoc Fellowship</a>
+<a href="https://anrfonline.in/ANRF/npdf?HomePage=New" target="_blank" class="btn btn-secondary">National Postdoc Fellowship</a>
 </div>
 
 ### 🎓 PhD Positions
