@@ -78,10 +78,10 @@ body {
 
 ## 2025
 
-<div class="news-item">
+<div class="news-item highlight">
 <div class="news-date">Jan 2025</div>
 <div class="news-content">
-Shrimay Shah and Dhruv Gupta won the Third Prize in the Undergraduate Research Showcase for their project titled "Brick Kilns Detection and Compliance Study, guided by Prof. Nipun Batra."
+🏆 Shrimay Shah and Dhruv Gupta win Third Prize in Undergraduate Research Showcase for Brick Kilns Detection project! <a href="awards.qmd#awards-and-distinctions">View all awards →</a>
 </div>
 </div>
 
@@ -101,10 +101,10 @@ Dr. Rishiraj Adhikary successfully defends his PhD thesis. Congratulations!
 
 ## 2024
 
-<div class="news-item">
+<div class="news-item highlight">
 <div class="news-date">Aug 2024</div>
 <div class="news-content">
-Devodita Chakravarty won the Bhalodia-Khetan Summer Research Excellence Award for the project titled 'ML for Sustainability: Satellite Data Preprocessing for Detecting Pollution Sources Using Computer Vision.' The award includes a cash prize of ₹50,000 and a Certificate of Excellence.
+🏆 Devodita wins the Bhalodia-Khetan Summer Research Excellence Award for ML sustainability project! <a href="awards.qmd#awards-and-distinctions">View all awards →</a>
 </div>
 </div>
 
@@ -122,10 +122,10 @@ Prof. Nipun Batra delivered the <a href="https://www.youtube.com/watch?v=2kgnmqx
 </div>
 </div>
 
-<div class="news-item">
+<div class="news-item highlight">
 <div class="news-date">Jun 2024</div>
 <div class="news-content">
-<strong>Zeel wins the prestigious Microsoft Research India PhD Award!</strong>
+🏆 <strong>Zeel wins the prestigious Microsoft Research India PhD Award!</strong> <a href="awards.qmd#student-fellowships">View all lab awards →</a>
 </div>
 </div>
 
@@ -136,10 +136,10 @@ Ayush and Suraj successfully defend their Masters thesis!
 </div>
 </div>
 
-<div class="news-item">
+<div class="news-item highlight">
 <div class="news-date">Apr 2024</div>
 <div class="news-content">
-Rishiraj was selected for the prestigious <a href="https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html" target="_blank">Heidelberg Laureate Forum</a>, becoming one of only 200 individuals worldwide to meet laureates from various fields, including Turing Award winners.
+🌟 Rishiraj selected for the prestigious <a href="https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html" target="_blank">Heidelberg Laureate Forum</a>! <a href="awards.qmd#honorable-mentions">See all recognition →</a>
 </div>
 </div>
 
@@ -252,10 +252,10 @@ Zeel Presented our AAAI22 work "Accurate and Scalable Non-Stationary GPs" at Air
 </div>
 </div>
 
-<div class="news-item">
+<div class="news-item highlight">
 <div class="news-date">May 2022</div>
 <div class="news-content">
-Zeel got selected as a Google Summer of Code contributor at Tensorflow with <a href="https://www.cs.ubc.ca/~murphyk/" target="_blank">Dr. Kevin P. Murphy</a>
+🌟 Zeel selected as Google Summer of Code contributor at TensorFlow with <a href="https://www.cs.ubc.ca/~murphyk/" target="_blank">Dr. Kevin P. Murphy</a>! <a href="awards.qmd#honorable-mentions">See all recognition →</a>
 </div>
 </div>
 
@@ -296,17 +296,17 @@ Received a 5000 USD cloud credit grant from Google Research
 </div>
 </div>
 
-<div class="news-item">
+<div class="news-item highlight">
 <div class="news-date">Nov 2021</div>
 <div class="news-content">
-Rishiraj on a roll, gets the prestigious USIEF <a href="https://www.usief.org.in/Fulbright-Nehru-Doctoral-Research-Fellowships.aspx" target="_blank">Fulbright-Nehru Doctoral Research Fellowship</a>!
+🏆 Rishiraj wins the prestigious USIEF <a href="https://www.usief.org.in/Fulbright-Nehru-Doctoral-Research-Fellowships.aspx" target="_blank">Fulbright-Nehru Doctoral Research Fellowship</a>! <a href="awards.qmd#student-fellowships">View all fellowships →</a>
 </div>
 </div>
 
-<div class="news-item">
+<div class="news-item highlight">
 <div class="news-date">Oct 2021</div>
 <div class="news-content">
-Rishiraj wins the prestigious <a href="https://www.pmrf.in/" target="_blank">Prime Minister Research fellowship</a>!
+🏆 Rishiraj wins the prestigious <a href="https://www.pmrf.in/" target="_blank">Prime Minister Research Fellowship</a>! <a href="awards.qmd#student-fellowships">View all fellowships →</a>
 </div>
 </div>
 
