@@ -64,6 +64,8 @@ LaTeX users can use the following templates on [Overleaf](https://www.overleaf.c
 
 ## Technical Background
 
+**Machine Learning Fundamentals**: We strongly recommend new lab members study Prof. Nipun Batra's comprehensive [Machine Learning Course](https://nipunbatra.github.io/ml2024/). This course includes both lectures and recordings, covering essential ML concepts, practical implementation, and research methodologies that form the foundation for our lab's work.
+
 **Git and GitHub**: There are a ton of good resorces on Git and Github. I'm linking two such resources here:
 
 - [YouTube video by Kevin Stratvert](https://www.youtube.com/watch?v=tRZGeaHPoaw)
