@@ -476,6 +476,24 @@ body {
     margin: 20px 0;
 }
 
+.deadline-alert {
+    background: #fef2f2;
+    border: 2px solid #f87171;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 16px 0;
+    color: #dc2626;
+    font-weight: 600;
+    text-align: center;
+    animation: pulse-border 2s infinite;
+}
+
+@keyframes pulse-border {
+    0% { border-color: #f87171; }
+    50% { border-color: #dc2626; }
+    100% { border-color: #f87171; }
+}
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.2rem;
@@ -633,6 +651,9 @@ Pursue cutting-edge research in AI for sustainability using state-of-the-art tec
 <h3 class="anchored">
 🔬 Research Associate I Position
 </h3>
+<div class="deadline-alert">
+<p>⏰ <strong>APPLICATION DEADLINE:</strong> Check application form for current deadline</p>
+</div>
 <p>
 Join us as a Research Associate I in the <strong>Sustainability Lab</strong> and contribute to high-impact, interdisciplinary research using cutting-edge ML technologies for domain applications.
 </p>
@@ -645,6 +666,9 @@ Join us as a Research Associate I in the <strong>Sustainability Lab</strong> and
 <h3 class="anchored">
 🔬 Junior/Senior Research Fellow
 </h3>
+<div class="deadline-alert">
+<p>⏰ <strong>APPLICATION DEADLINE:</strong> Check application form for current deadline</p>
+</div>
 <p>
 Be a part of cutting-edge research as a Junior or Senior Research Fellow in the <strong>Sustainability Lab</strong>, working with modern ML technologies including LLMs, computer vision, and VLMs for sustainability applications.
 </p>
