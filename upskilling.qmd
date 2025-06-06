@@ -9,11 +9,13 @@ Paper writing is a key part of research. This page contains some tips and tricks
 
 **Paper structure and Abstract**: I gave a talk ([recording here](https://www.youtube.com/watch?v=LoCoplWgvp4), [slides here](https://github.com/nipunbatra/CS-Research-Methods-Bootcamp/blob/master/RM101.pdf)) on how to write a paper. I recommend watching it. Other materials from the talk are available [here](https://github.com/nipunbatra/CS-Research-Methods-Bootcamp).
 
-**LaTeXify figures**: We'd suggest using [this latexification tool](https://nipunbatra.github.io/lab/papers.html#latexify-figures) to make the `matplotlib` figures publication-ready. It helps in the following aspects:
+**LaTeXify figures**: We'd suggest using [this latexification tool](latexify-plots.qmd) to make the `matplotlib` figures publication-ready. It helps in the following aspects:
 
-1. It helps in setting the exact size of the figure relative to the column width or page width of the paper. After using this tool, manually setting the size within the `\begin{figure}` block is rarely needed.
-1. We can set the font size relative to the text font size in the paper to ensure fonts are not too small or too big.
-1. It converts the fonts into latex fonts so that the fonts in the figures do not look different from the main text font.
+1. **Consistent Typography**: Matches your paper's LaTeX font and styling
+2. **Proper Sizing**: Ensures figures fit perfectly in single or double-column layouts  
+3. **Clean Aesthetics**: Removes unnecessary chart junk and applies academic styling
+4. **High DPI Output**: Generates crisp, scalable figures for publications
+5. **LaTeX Math Rendering**: Properly renders mathematical expressions using LaTeX
 
 > Tip: You can find page width and column width with `\the\textwidth` and  `\the\columnwidth` commands, respectively.
 
