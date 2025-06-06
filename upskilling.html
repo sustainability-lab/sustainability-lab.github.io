@@ -257,11 +257,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="writing-papers">Writing Papers</h3>
 <p>Paper writing is a key part of research. This page contains some tips and tricks for writing papers. Paper writing is a skill that you will develop over time. But, it needs deliberate practice.</p>
 <p><strong>Paper structure and Abstract</strong>: I gave a talk (<a href="https://www.youtube.com/watch?v=LoCoplWgvp4">recording here</a>, <a href="https://github.com/nipunbatra/CS-Research-Methods-Bootcamp/blob/master/RM101.pdf">slides here</a>) on how to write a paper. I recommend watching it. Other materials from the talk are available <a href="https://github.com/nipunbatra/CS-Research-Methods-Bootcamp">here</a>.</p>
-<p><strong>LaTeXify figures</strong>: We’d suggest using <a href="https://nipunbatra.github.io/lab/papers.html#latexify-figures">this latexification tool</a> to make the <code>matplotlib</code> figures publication-ready. It helps in the following aspects:</p>
+<p><strong>LaTeXify figures</strong>: We’d suggest using <a href="./latexify-plots.html">this latexification tool</a> to make the <code>matplotlib</code> figures publication-ready. It helps in the following aspects:</p>
 <ol type="1">
-<li>It helps in setting the exact size of the figure relative to the column width or page width of the paper. After using this tool, manually setting the size within the <code>\begin{figure}</code> block is rarely needed.</li>
-<li>We can set the font size relative to the text font size in the paper to ensure fonts are not too small or too big.</li>
-<li>It converts the fonts into latex fonts so that the fonts in the figures do not look different from the main text font.</li>
+<li><strong>Consistent Typography</strong>: Matches your paper’s LaTeX font and styling</li>
+<li><strong>Proper Sizing</strong>: Ensures figures fit perfectly in single or double-column layouts<br>
+</li>
+<li><strong>Clean Aesthetics</strong>: Removes unnecessary chart junk and applies academic styling</li>
+<li><strong>High DPI Output</strong>: Generates crisp, scalable figures for publications</li>
+<li><strong>LaTeX Math Rendering</strong>: Properly renders mathematical expressions using LaTeX</li>
 </ol>
 <blockquote class="blockquote">
 <p>Tip: You can find page width and column width with <code>\the\textwidth</code> and <code>\the\columnwidth</code> commands, respectively.</p>
