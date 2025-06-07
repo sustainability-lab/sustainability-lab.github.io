@@ -52,7 +52,7 @@ website:
           - text: Events Home
             href: events/index.qmd
           - text: "ACM India Summer School 2025"
-            href: events/acm-summer-2025/index.qmd
+            href: https://sustainability-lab.github.io/acm-summer-2025/
             
   
 
