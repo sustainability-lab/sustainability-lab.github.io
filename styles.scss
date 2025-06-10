@@ -180,12 +180,13 @@ body {
     margin-bottom: 40px;
 }
 
-.hero-section h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: var(--spacing-medium);
-    color: var(--primary-color) !important;
+div.hero-section h1 {
+    font-size: 2.8rem !important;
+    font-weight: 700 !important;
+    margin-bottom: var(--spacing-medium) !important;
+    color: #667eea !important;
     text-align: center !important;
+    display: block !important;
 }
 
 .tagline {
@@ -467,6 +468,44 @@ body {
     text-align: center;
     margin-bottom: 30px;
     font-size: 1.1rem;
+}
+
+/* Mobile hamburger menu styles - fix center alignment */
+@media (max-width: 991.98px) {
+    .navbar-collapse .navbar-nav {
+        text-align: left !important;
+        align-items: flex-start !important;
+    }
+    
+    .navbar-collapse .navbar-nav .nav-item {
+        text-align: left !important;
+        width: 100% !important;
+    }
+    
+    .navbar-collapse .navbar-nav .nav-item .nav-link {
+        text-align: left !important;
+        padding-left: 1rem !important;
+        justify-content: flex-start !important;
+        display: flex !important;
+    }
+    
+    .navbar-collapse .dropdown-menu {
+        text-align: left !important;
+        position: static !important;
+        float: none !important;
+        width: auto !important;
+        margin-top: 0 !important;
+        background-color: transparent !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        padding-left: 2rem !important;
+    }
+    
+    .navbar-collapse .dropdown-menu .dropdown-item {
+        text-align: left !important;
+        padding-left: 0 !important;
+        color: inherit !important;
+    }
 }
 
 @media (max-width: 768px) {
