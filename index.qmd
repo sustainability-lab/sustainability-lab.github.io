@@ -165,6 +165,15 @@ toc: false
 <img src="images/mainpage/Funding organisations.png" alt="Logos of funding organizations supporting Sustainability Lab research including government agencies and academic institutions" class="funding-image">
 </div>
 
+## Connect
+
+<div style="text-align: center; margin: 20px 0; font-size: 1.1rem;">
+<a href="https://www.youtube.com/@SustainabilityLab-SL" target="_blank" class="project-link">Lab YouTube</a> | 
+<a href="https://www.youtube.com/@NipunBatra0" target="_blank" class="project-link">Teaching YouTube</a> | 
+<a href="https://x.com/nipun_batra" target="_blank" class="project-link">Twitter</a> | 
+<a href="https://www.linkedin.com/in/nipunbatra0/" target="_blank" class="project-link">LinkedIn</a>
+</div>
+
 <div class="join-section">
 <h2>🚀 Join Our Mission</h2>
 <p>Embark on a journey to drive innovation in sustainability through cutting-edge AI research.</p>
