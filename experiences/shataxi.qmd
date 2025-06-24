@@ -1,0 +1,32 @@
+---
+title: Building Brick by Brick My Foundation at Sustainability Lab
+author: "Shataxi Dubey"
+date: "2025-06-24"
+---
+
+# About Me
+Hi! I’m Shataxi Dubey.
+
+I had the privilege of working in the Sustainability Lab for one year and six months. Though it might seem like a short time, the experience was transformative. As someone who stepped into the lab with little knowledge of AI/ML, I was pushed beyond my limits in the best possible way. I realized that research is not just about writing papers or conducting experiments, it's about developing the ability to think deeply, critically, and from multiple perspectives, that only comes with consistent effort and exposure.
+
+# My views
+
+Working with Prof. Nipun Batra has left a lasting impression on me. I have never seen a professor so dedicated to his students. His discipline, punctuality, and openness were truly inspiring. Whether it was a technical doubt or guidance on a broader issue, all it took was a knock on his door to get a thoughtful response. His dedication to reviewing work, sometimes across multiple iterations and providing constructive feedback have deeply inspired me. I hope to internalize and embody these qualities myself.
+
+When I first spoke to Prof. Nipun before joining the lab, he asked about my proficiency in Numpy and Pandas. I admitted that although I had used them before, I was not quick at working on them. He shared that he still practices such skills regularly — two hours a week which speaks volumes about his commitment to continuous learning. Observing his perseverance and passion helped me understand why he is so well-regarded and deserving of every accolade. 
+
+![At IIIT Delhi, captured the moment with all lab members at Wall of Honour with Prof. Nipun's Photo on 6 July 2024 ](../images/experiences/shataxi-1.jpg)
+
+# My best decision
+Choosing IIT Gandhinagar was a good decision, but joining the Sustainability Lab was the best one. The learning environment is unparalleled, and I feel incredibly fortunate to have met and worked alongside amazing people. I am especially grateful to my seniors — Zeel, Rishiraj, Rishabh, and Ayush for their constant support. I also had the pleasure of working with passionate lab mates - Vannsh, Devansh, and Nupoor. A special thanks to my senior Suraj for introducing the lab to me that motivated me to join the lab.
+
+In this short span, I had the opportunity to contribute to an impactful project related to Brick Kilns. I am grateful to Prof. Nipun for trusting me with responsibilities that allowed me to grow. One of the highlights was having our poster accepted at ACM COMPASS 2024 at IIIT Delhi. Attending the conference gave me my first real taste of academic research culture: interacting with distinguished speakers, engaging in thought-provoking discussions, and experiencing the real-world impact of our work. The attention our work received from industry leaders and academicians made me realize that impactful research goes far beyond publications, it influences society.
+
+# Values learnt
+I can confidently say that the Sustainability Lab is unlike any other. It teaches you that good progress comes in many forms from making a good pull request, giving a compelling lightning talk, delivering a solid presentation, or simply growing through daily discussions. There is always a new opportunity to learn and shine.
+
+To be part of this lab, brilliance is not a prerequisite but a willingness to understand, implement, and persist certainly is. What I cherish most is that while most people measure success in terms of achievements, the Sustainability Lab values progress. More than failure and rejections, what matters the most is the growth that happens along the way. Because it is not overnight success that defines you, but the countless nights of efforts that lead to it.
+
+![My M.Tech Thesis defense on 2nd June 2025](../images/experiences/shataxi-2.jpg)
+
+I wish Prof. Nipun good health and continued success. I truly believe that every student fortunate enough to work with him will grow, be inspired, and find their path. The best gift we can offer in return is our sincere effort and dedication. I still have numerous things to write but I will pause myself here and let the new comers experience what I shared !!
