@@ -1,0 +1,30 @@
+---
+title: "My Experience at the Sustainability Lab"
+author: "Arun Reddy Anugu"
+date: "2025-06-23"
+---
+
+
+## The Beginnings
+
+I joined the Sustainability Lab in May 2023 as a part of SRIP (Summer Research Internship Program) at IIT Gandhinagar. I had taken a Machine Learning course taught by Prof. Nipun Batra the previous semester. The course further deepened my interest in the field. Prof. Nipun's unique style of teaching, which involves demonstrating ML model code in Jupyter notebooks, crystallized complex concepts. 
+
+## Research 
+
+The project I was involved in was about Implicit Neural Representation with Sine Activations (SIREN). I still remember the discussion and presentation sessions that Prof. Nipun organized for everyone involved in the lab, people sharing their ideas and opinions inspired me to progress in my project. Prof. Nipun and Zeel Patel patiently supported me throughout my project, especially when I could not make meaningful progress for quite some time, as happens in research. Zeel Bhaiya even spent a lot of his time explaining the implementation-level details of various papers to me.
+
+This was a period where I learned a lot of fundamental concepts related to neural networks. These basic concepts have always continued to help me. We had weekly meetings to share updates and discuss new methods and approaches to tackle problems. Continuous interaction helped me stay on track and focus on the issue. Prof. Nipun always emphasizes the importance of consistency. I, too, understood the importance of this after realizing any progress in research only comes after quite a few experiments and most of those experiments may not give you the desired result. You can make progress only if you are consistent with your approach.  
+The experience also sparked a long-term interest in sustainable technologies and responsible AI.
+
+Being part of a lab that pursued technical excellence and aligned research with real-world impact made me more mindful of the kind of work I want to do in the future. It instilled a belief that technology can solve pressing global challenges when thoughtfully applied. As researchers and engineers, we are responsible for building not just innovative systems but ethical and sustainable ones.
+
+## Mentorship and Support System
+
+At the Sustainability Lab, I found great research collaborators and a lot of mentorship and guidance throughout my time at IIT Gandhinagar. Seniors at the lab, Zeel, Ayush, Rishabh, Ankita, Suraj, and Ayush, have always patiently clarified my doubts and helped me progress in my work. These experiences taught me that research, like many aspects of life, thrives on collaboration. The lessons I learned in the lab extended far beyond academics, they touched all aspects of life. Professor Nipun emphasized the importance of consistency and perseverance in our work, values that have since become foundational to how I approach challenges both inside and outside the classroom. 
+
+Prof. Nipun also guided me during my MS applications. He offered valuable feedback on my Statement of Purpose, helped me navigate the university selection process and wrote recommendation letters. His support during this critical phase strengthened my applications and gave me the confidence to aim high and trust my abilities. All these efforts paid off when I got admitted to the CMU MSCV program.
+
+## Conclusion
+
+Looking back, my time at the Sustainability Lab was one of the most impactful phases of my academic journey. It was a space where I explored cutting-edge research and developed habits of discipline, collaboration, and resilience. The lab environment fostered a deep sense of curiosity and a willingness to embrace uncertainty, qualities that are indispensable in both research and life.  
+I'm deeply grateful to Prof. Nipun, Zeel bhaiya, and all the lab members who have contributed to my growth. The mentorship, support, and values I absorbed while at the lab continue to shape my thinking and aspirations as I advance in my career.
