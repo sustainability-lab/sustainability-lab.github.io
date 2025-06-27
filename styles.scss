@@ -831,4 +831,67 @@ div.hero-section h1 {
         font-size: 1.3rem;
     }
 }
+
+/* Funders Grid Styles */
+.funders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+    padding: 40px;
+    background: var(--bg-primary);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-light);
+    border: 1px solid var(--border-light);
+}
+
+.funder-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-medium);
+    transition: all var(--transition-smooth);
+    border: 1px solid var(--border-light);
+    min-height: 120px;
+}
+
+.funder-block:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+    border-color: var(--primary-color);
+    background: var(--bg-primary);
+}
+
+.funder-logo {
+    width: 180px;
+    height: 80px;
+    object-fit: contain;
+    object-position: center;
+    filter: grayscale(20%);
+    transition: all var(--transition-smooth);
+}
+
+.funder-block:hover .funder-logo {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .funders-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        padding: 30px 20px;
+    }
+    
+    .funder-block {
+        padding: 15px;
+        min-height: 100px;
+    }
+    
+    .funder-logo {
+        max-height: 60px;
+    }
+}
   
