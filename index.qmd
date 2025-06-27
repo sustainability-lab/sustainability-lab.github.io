@@ -160,9 +160,56 @@ toc: false
 
 ## Funding Partners
 
+<div class="funders-grid">
 
-<div class="compact-section">
-<img src="images/mainpage/Funding organisations.png" alt="Logos of funding organizations supporting Sustainability Lab research including government agencies and academic institutions" class="funding-image">
+::: {.funder-block}
+![Google](images/funders/google.png){.funder-logo}
+:::
+
+::: {.funder-block}
+![Cisco](images/funders/cisco.png){.funder-logo}
+:::
+
+::: {.funder-block}
+![NVIDIA](images/funders/nvidia.png){.funder-logo}
+:::
+
+::: {.funder-block}
+![Microsoft](images/funders/microsoft.png){.funder-logo}
+:::
+
+::: {.funder-block}
+![SERB](images/funders/serb.png){.funder-logo}
+:::
+
+::: {.funder-block}
+![MOES](images/funders/moes.jpeg){.funder-logo}
+:::
+
+::: {.funder-block}
+![DST](images/funders/dst.jpg){.funder-logo}
+:::
+
+::: {.funder-block}
+![STARS](images/funders/stars.png){.funder-logo}
+:::
+
+::: {.funder-block}
+![Government of Gujarat Science](images/funders/gujcost.png){.funder-logo}
+:::
+
+::: {.funder-block}
+![CoE in AI (MHRD)](images/funders/coe-ai-mhrd.svg){.funder-logo}
+:::
+
+::: {.funder-block}
+![Gujarat Forest Department](images/funders/gfd.jpeg){.funder-logo}
+:::
+
+::: {.funder-block}
+![Jio](images/funders/jio.png){.funder-logo}
+:::
+
 </div>
 
 ## Connect
