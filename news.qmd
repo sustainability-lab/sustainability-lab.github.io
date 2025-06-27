@@ -81,6 +81,20 @@ body {
 <div class="news-item highlight">
 <div class="news-date">Jan 2025</div>
 <div class="news-content">
+🏆 <strong>Prof. Nipun Batra receives Test of Time Award for NILMTK!</strong> Recognition for significant long-term impact on energy disaggregation research. <a href="awards.qmd">View all awards →</a>
+</div>
+</div>
+
+<div class="news-item highlight">
+<div class="news-date">Jan 2025</div>
+<div class="news-content">
+🏆 <strong>Dr. Rishiraj Adhikary (PhD Alumnus) receives Commendation for Outstanding Research (PhD)</strong> at IIT Gandhinagar Convocation 2025! <a href="awards.qmd">View all awards →</a>
+</div>
+</div>
+
+<div class="news-item highlight">
+<div class="news-date">Jan 2025</div>
+<div class="news-content">
 🏆 <strong>Prof. Nipun Batra wins the SIGEnergy Rising Star Award 2025!</strong> <a href="awards.qmd">View all awards →</a>
 </div>
 </div>
