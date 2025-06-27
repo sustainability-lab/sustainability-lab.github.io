@@ -894,4 +894,29 @@ div.hero-section h1 {
         max-height: 60px;
     }
 }
+
+/* Award Images Styles */
+.award-image {
+    max-width: 400px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow-light);
+    margin: 10px 0;
+    transition: all var(--transition-smooth);
+}
+
+.award-image:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-medium);
+}
+
+@media (max-width: 768px) {
+    .award-image {
+        max-width: 100%;
+        max-height: 250px;
+    }
+}
   
