@@ -3,34 +3,31 @@ title: "Awards & Recognition"
 toc: true
 ---
 
-## Faculty Awards
-
 ### 2025
-- **Test of Time Award for NILMTK** - Prof. Nipun Batra  
+- **Commendation for Outstanding Research (PhD)** - Dr. Rishiraj Adhikary (PhD Alumnus) *(June 2025)*  
+  *IIT Gandhinagar Convocation 2025*  
+  ![Rishiraj Award Ceremony 1](images/awards/rishiraj-1.jpeg){.award-image}
+  ![Rishiraj Award Ceremony 2](images/awards/rishiraj-2.jpg){.award-image}
+
+- **Test of Time Award for NILMTK** - Prof. Nipun Batra *(June 2025)*  
   *For significant long-term impact and contributions to the energy disaggregation research community*  
   ![Test of Time Award](images/awards/nipun-test-time.jpg){.award-image}
+  ![Test of Time Award Announcement](images/awards/screen-test-time.jpg){.award-image}
+  ![Test of Time Award Certificate](images/awards/nipun-certificate-test-time.jpg){.award-image}
 
-- **SIGEnergy Rising Star Award 2025** - Prof. Nipun Batra  
+- **SIGEnergy Rising Star Award 2025** - Prof. Nipun Batra *(June 2025)*  
   *Citation: "For contributions to reproducible toolkits, scalable models, and uncertainty-aware approaches for practical energy disaggregation."*  
   ![SIGEnergy Rising Star Award](images/awards/nipun-sigenergy.jpg){.award-image}
+  ![SIGEnergy Award Announcement](images/awards/screen-sigenergy.jpg){.award-image}
+  ![SIGEnergy Rising Star Certificate](images/awards/nipun-certificate-rising-star.jpg){.award-image}
 
-- **Excellence in Teaching Award** - Prof. Nipun Batra (January 2025)  
+- **Excellence in Teaching Award** - Prof. Nipun Batra *(January 2025)*  
   *Citation: "Based on his contributions and achievements in teaching, as evidenced by students' feedback on his teaching, including outstanding organization and conduct of courses as well as the adoption of active learning strategies."*
 
-### 2023
-- **Young Alumni Award** - Prof. Nipun Batra (November 2023)  
-  *From IIIT Delhi* [[Link](https://x.com/nipun_batra/status/1702672278436135241)]
-
-## Student Awards & Recognition
-
-### 2025
-- **Commendation for Outstanding Research (PhD)** - Dr. Rishiraj Adhikary (PhD Alumnus)  
-  *IIT Gandhinagar Convocation 2025*
-
-- **Third Prize in Simply Speaking 4.0 Competition** - Shataxi Dubey  
+- **Third Prize in Simply Speaking 4.0 Competition** - Shataxi Dubey *(January 2025)*  
   *Organized by Leadership Development Initiative, IITGN*
 
-- **Third Prize in Undergraduate Research Showcase** - Shrimay Shah and Dhruv Gupta  
+- **Third Prize in Undergraduate Research Showcase** - Shrimay Shah and Dhruv Gupta *(January 2025)*  
   *Project: "Brick Kilns Detection and Compliance Study" (guided by Prof. Nipun Batra)*
 
 ### 2024
@@ -39,6 +36,9 @@ toc: true
   *₹50,000 cash prize and Certificate of Excellence*
 
 ### 2023
+- **Young Alumni Award** - Prof. Nipun Batra (November 2023)  
+  *From IIIT Delhi* [[Link](https://x.com/nipun_batra/status/1702672278436135241)]
+
 - **UbiComp Gaetano Borriello Outstanding Student Award Finalist** - Rishiraj Adhikary  
   [[Details](https://ubicomp.org/sc/awards.html)]
 

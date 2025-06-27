@@ -897,15 +897,15 @@ div.hero-section h1 {
 
 /* Award Images Styles */
 .award-image {
-    max-width: 400px;
-    max-height: 300px;
-    width: auto;
-    height: auto;
-    object-fit: contain;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
     border-radius: var(--radius-medium);
     box-shadow: var(--shadow-light);
-    margin: 10px 0;
+    margin: 10px 8px 10px 0;
     transition: all var(--transition-smooth);
+    display: inline-block;
 }
 
 .award-image:hover {
@@ -915,8 +915,12 @@ div.hero-section h1 {
 
 @media (max-width: 768px) {
     .award-image {
-        max-width: 100%;
-        max-height: 250px;
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+        margin: 10px 0;
+        display: block;
     }
 }
   
