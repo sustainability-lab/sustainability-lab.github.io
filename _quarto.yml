@@ -54,6 +54,14 @@ website:
           - text: "ACM India Summer School 2025"
             href: https://sustainability-lab.github.io/acm-summer-2025/
             
+  page-footer:
+    background: light
+    left: "© 2025 Sustainability Lab, IIT Gandhinagar"
+    center: |
+      [Publications](papers/index.qmd) | 
+      [**Research Skills Bootcamp**](https://sustainability-lab.github.io/sustainability-research-bootcamp/) | 
+      [Contact](mailto:nipun.batra@iitgn.ac.in)
+    right: "Built with [Quarto](https://quarto.org/)"
   
 
 format:

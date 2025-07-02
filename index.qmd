@@ -227,6 +227,7 @@ toc: false
 
 <div class="join-buttons">
 <a href="openings.qmd" class="join-btn primary">View Positions</a>
+<a href="upskilling.qmd" class="join-btn secondary">Research Skills Bootcamp</a>
 <a href="lab_culture.qmd" class="join-btn secondary">Our Culture</a>
 <a href="members.qmd" class="join-btn secondary">Meet the Team</a>
 </div>

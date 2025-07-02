@@ -62,6 +62,26 @@ Please find the presentation files corresponding to the first poster
 LaTeX users can use the following templates on [Overleaf](https://www.overleaf.com/gallery/tagged/poster) to make their posters.
 
 
+## Bootcamps & Training Programs
+
+### CS Research Methods Bootcamp
+For new researchers looking for a comprehensive introduction to computer science research methodologies, we offer a structured 10-day bootcamp covering essential skills for conducting and communicating research.
+
+**What you'll learn:**
+- Research methodology fundamentals and best practices
+- How to conduct thorough literature reviews and surveys
+- Experimental design and evaluation techniques  
+- Academic writing skills and paper structure
+- Presentation techniques and poster creation
+- Research ethics, reproducibility, and open science practices
+- Technical skills: LaTeX, Git/GitHub, Python for research
+
+**Access the bootcamp:** [View all materials and resources](https://sustainability-lab.github.io/sustainability-research-bootcamp/)
+
+This bootcamp is particularly valuable for new PhD students, research interns, and anyone beginning their journey in computer science research. The materials are self-paced and include practical exercises, templates, and real-world examples.
+
+---
+
 ## Technical Background
 
 **Machine Learning Fundamentals**: We strongly recommend new lab members study Prof. Nipun Batra's comprehensive [Machine Learning Course](https://nipunbatra.github.io/ml2024/). This course includes both lectures and recordings, covering essential ML concepts, practical implementation, and research methodologies that form the foundation for our lab's work.

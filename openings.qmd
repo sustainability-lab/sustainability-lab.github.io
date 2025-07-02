@@ -411,6 +411,7 @@ We believe in the transformative potential of AI to monitor environmental change
 <a href="members.qmd">🔬 Current Team</a>
 <a href="awards.qmd">🏆 Awards & Recognition</a>
 <a href="lab_culture.qmd">🌱 Lab Culture</a>
+<a href="upskilling.qmd">🎯 Research Skills Bootcamp</a>
 </div>
 
 :::
@@ -544,7 +545,7 @@ We believe in the transformative potential of AI to monitor environmental change
 <strong>💡 Pro Tip:</strong> Browse our <a href="publications.qmd">publications</a> first to understand our work. Quality of engagement matters more than lengthy emails!
 </div>
 
-**🎯 New to research?** No problem! We welcome first-time researchers and provide mentorship to help you grow.
+**🎯 New to research?** No problem! We welcome first-time researchers and provide mentorship to help you grow. Check out our [CS Research Methods Bootcamp](https://sustainability-lab.github.io/sustainability-research-bootcamp/) for comprehensive training in research fundamentals.
 
 :::
 
