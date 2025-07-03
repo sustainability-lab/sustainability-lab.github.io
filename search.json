@@ -522,21 +522,21 @@
     "href": "papers/index.html",
     "title": "Publications",
     "section": "",
-    "text": "Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data\n\n\nZeel B Patel, Rishabh Mondal, Shataxi Dubey, Suraj Jaiswal, Sarath Guttikunda, Nipun Batra\n\n\nACM Journal on Computing and Sustainable Societies (JCSS) 2025\n\narXiv YouTube Google AQ Summit 2024 IITD Talk HuggingFace"
+    "text": "Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data\n\n\nZeel B Patel, Rishabh Mondal, Shataxi Dubey, Suraj Jaiswal, Sarath Guttikunda, Nipun Batra\n\n\nACM Journal on Computing and Sustainable Societies (JCSS) 2025\n\narXiv 📋 BibTeX YouTube Google AQ Summit 2024 IITD Talk HuggingFace\n\n@article{patel2025space, title={Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data}, author={Patel, Zeel B and Mondal, Rishabh and Dubey, Shataxi and Jaiswal, Suraj and Guttikunda, Sarath and Batra, Nipun}, journal={ACM Journal on Computing and Sustainable Societies (JCSS)}, year={2025} }"
   },
   {
     "objectID": "papers/index.html#section",
     "href": "papers/index.html#section",
     "title": "Publications",
     "section": "",
-    "text": "Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data\n\n\nZeel B Patel, Rishabh Mondal, Shataxi Dubey, Suraj Jaiswal, Sarath Guttikunda, Nipun Batra\n\n\nACM Journal on Computing and Sustainable Societies (JCSS) 2025\n\narXiv YouTube Google AQ Summit 2024 IITD Talk HuggingFace"
+    "text": "Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data\n\n\nZeel B Patel, Rishabh Mondal, Shataxi Dubey, Suraj Jaiswal, Sarath Guttikunda, Nipun Batra\n\n\nACM Journal on Computing and Sustainable Societies (JCSS) 2025\n\narXiv 📋 BibTeX YouTube Google AQ Summit 2024 IITD Talk HuggingFace\n\n@article{patel2025space, title={Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data}, author={Patel, Zeel B and Mondal, Rishabh and Dubey, Shataxi and Jaiswal, Suraj and Guttikunda, Sarath and Batra, Nipun}, journal={ACM Journal on Computing and Sustainable Societies (JCSS)}, year={2025} }"
   },
   {
     "objectID": "papers/index.html#section-1",
     "href": "papers/index.html#section-1",
     "title": "Publications",
     "section": "2024",
-    "text": "2024\n\n\n\n\nBenchmarking Active Learning for NILM\n\n\nDhruv Patel, Ankita Kumari Jain, Haikoo Khandor, Xhitij Choudhary, Nipun Batra\n\n\narXiv 2024\n\narXiv \n\n\n\n\n\n\nSpiroActive: Active Learning for Efficient Data Acquisition for Spirometry\n\n\nAnkita Kumari Jain, Nitish Sharma, Madhav Kanda, Nipun Batra\n\n\narXiv 2024\n\narXiv \n\n\n\n\n\n\nVayuBuddy: an LLM-Powered Chatbot to Democratize Air Quality Insights\n\n\nZeel B Patel, Yash Bachwana, Nitish Sharma, Sarath Guttikunda, Nipun Batra\n\n\narXiv 2024\n\narXiv Google AQ Summit 2024 HuggingFace News: Divya Bhaskar News: Indian Express News: Ahmedabad Mirror News: Chitralekha\n\n\n\n\n\n\nJoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising\n\n\nRishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel\n\n\nACM Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) 2024; and ACM Ubicomp 2024\n\nPDF Github Poster YouTube News coverage Medium Article CMU News Hackster"
+    "text": "2024\n\n\n\n\nBenchmarking Active Learning for NILM\n\n\nDhruv Patel, Ankita Kumari Jain, Haikoo Khandor, Xhitij Choudhary, Nipun Batra\n\n\narXiv 2024\n\narXiv \n\n\n\n\n\n\nSpiroActive: Active Learning for Efficient Data Acquisition for Spirometry\n\n\nAnkita Kumari Jain, Nitish Sharma, Madhav Kanda, Nipun Batra\n\n\narXiv 2024\n\narXiv \n\n\n\n\n\n\nVayuBuddy: an LLM-Powered Chatbot to Democratize Air Quality Insights\n\n\nZeel B Patel, Yash Bachwana, Nitish Sharma, Sarath Guttikunda, Nipun Batra\n\n\narXiv 2024\n\narXiv Google AQ Summit 2024 HuggingFace News: Divya Bhaskar News: Indian Express News: Ahmedabad Mirror News: Chitralekha\n\n\n\n\n\n\nJoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising\n\n\nRishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel\n\n\nACM Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) 2024; and ACM Ubicomp 2024\n\nPDF 📋 BibTeX Github Poster YouTube News coverage Medium Article CMU News Hackster\n\n@article{adhikary2024jouleseye, title={JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising}, author={Adhikary, Rishiraj and Sadeh, Maite and Batra, Nipun and Goel, Mayank}, journal={Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies}, volume={8}, number={2}, pages={1–32}, year={2024}, publisher={ACM} }"
   },
   {
     "objectID": "papers/index.html#section-2",
@@ -616,6 +616,62 @@
     "text": "2013 and before\n\n\n\n\nIt’s Different: Insights into home energy consumption in India\n\n\nNipun Batra, Manoj Gulati, Amarjeet Singh, Mani Srivastava\n\n\n5th ACM Workshop On Embedded Systems For Energy-Efficient Buildings (Buildsys 2013)\n\nPDF Github Dataset Slides (.pptx) Slides (.pdf)\n\n\n\n\n\n\n\n\n\nINDiC: Improved Non-Intrusive load monitoring using load Division and Calibration\n\n\nNipun Batra, Haimonti Dutta, Amarjeet Singh\n\n\nThe 12th International Conference on Machine Learning and Applications (ICMLA’13)\n\nPDF Slides (.pptx) Slides (.pdf)\n\n\n\n\n\n\n\n\n\nExperiences with Occupancy Based Building Management Systems\n\n\nNipun Batra, Pandarasamy Arjunan, Amarjeet Singh, Pushpendra Singh\n\n\n2013 IEEE Eighth International Conference on Intelligent Sensors, Sensor Networks and Information Processing (ISSNIP ’13)\n\nPDF\n\n\n\n\n\n\n\n\n\nSensorAct: A Privacy and Security Aware Federated Middleware for Building Management\n\n\nPandarasamy Arjunan, Nipun Batra, Haksoo Choi, Amarjeet Singh, Pushpendra Singh, Mani Srivastava\n\n\nBuildSys ’12: Proceedings of the Fourth ACM Workshop on Embedded Sensing Systems for Energy-Efficiency in Buildings\n\nPDF Github"
   },
   {
+    "objectID": "events/acm-summer-2025/speakers.html",
+    "href": "events/acm-summer-2025/speakers.html",
+    "title": "Speakers – ACM India Summer School 2025",
+    "section": "",
+    "text": "Overview Schedule Selected Participants Speakers\n\n\n🎤 ACM India Summer School 2025 – Speakers\n📍 IIT Gandhinagar | 📆 02–13 June 2025\n\n\nProf. Rajat Moona\nDirector, IIT Gandhinagar\nOpening the summer school with welcome remarks.\n\n\n\nProf. Anirban Dasgupta\nProfessor, IIT Gandhinagar\nCo-coordinator. Focuses on algorithmic foundations of ML, fairness, and networks.\n\n\n\nProf. Nipun Batra\nAssociate Professor, IIT Gandhinagar\nCo-coordinator. Works on AI for sustainability, air quality, and smart sensing.\n\n\n\nDr. Venkat Padmanabhan\nDeputy Managing Director, Microsoft Research India\nKeynote speaker. Leader in mobile systems and AI for societal impact.\n\n\n\nDr. Manish Gupta\nDirector, Google DeepMind India\nKeynote speaker. Focused on ML at scale and social impact applications.\n\n\n\nDr. Jigar Doshi\nTalks on AI for public health, agriculture, and climate sustainability.\n\n\n\nDr. Prasant Misra\nPrincipal Scientist, TCS Research\nExpert in mobile sensing and information processing at scale.\n\n\n\nDr. Shailesh Deshpande\nScientist, TCS Research\nRemote sensing expert; also conducting optimization labs.\n\n\n\nProf. Udit Bhatia\nAssistant Professor, IIT Gandhinagar\nExpert in physics-guided ML, floods, and networked infrastructure.\n\n\n\nProf. Shanmuganathan Raman\nProfessor, IIT Gandhinagar\nSpecializes in vision-based AI including pose estimation.\n\n\n\nProf. Krishna Prasad\nAssociate Professor, IIT Gandhinagar\nResearches Brain-Computer Interfaces and neuro-AI.\n\n\n\nProf. Manisha Padala\nAssistant Professor, IIT Gandhinagar\nWorks on fairness in federated learning and adversarial ML.\n\n\n\nDr. Vaibhav Rajan\nScientist, Google DeepMind\nTalks on ML for personalized cancer treatment and biomedical AI.\n\n\n\nProf. Sayan Ranu\nProfessor, IIT Delhi\nWorks on graph neural networks, GNN condensation, and pollution monitoring.\n\n\n\nDr. Mohit Jain\nResearcher, Microsoft Research India\nFocuses on HCI and AI applications in healthcare and inclusion.\n\n\n\nProf. Pallavi Bharadwaj\nAssistant Professor, IIT Gandhinagar\nWorks on sustainable mobility and electric vehicles.\n\n\n\nProf. Yogesh Kumar Meena\nAssistant Professor, IIT Gandhinagar\nSpecialist in accessibility technologies and inclusive design.\n\n\n\nProf. Vaibhav Tripathi\nAssistant Professor, IIT Gandhinagar\nExplores connectome-based predictive modeling and brain imaging.\n\n\n\nDr. Rishiraj Adhikary / Niladri\nJio Platforms\nTalk on AI-driven solutions (exact topic TBD).\n\n\n\nAlok Talekar\nResearcher, Google DeepMind India\nLectures and labs on advanced AI techniques (topics TBD).\n\n\n\nProf. Manish Jain\nProfessor, IIT Gandhinagar (CCL Lab)\nTeaches on meta-learning and “learning to learn.”\n\n\n\nProf. Tavpritesh Sethi\nAssociate Professor, IIIT Delhi\nCausal modeling and AI for health system preparedness.\n\n\n\nDr. Bimal\nISRO SAC\nTalk on satellite applications (topic TBD).\n\n(More speaker details will be added as confirmed.)"
+  },
+  {
+    "objectID": "events/acm-summer-2025/schedule.html",
+    "href": "events/acm-summer-2025/schedule.html",
+    "title": "Schedule – ACM India Summer School 2025",
+    "section": "",
+    "text": "Overview Schedule Selected Participants Speakers"
+  },
+  {
+    "objectID": "events/acm-summer-2025/schedule.html#iit-gandhinagar-0213-june-2025-download-schedule",
+    "href": "events/acm-summer-2025/schedule.html#iit-gandhinagar-0213-june-2025-download-schedule",
+    "title": "Schedule – ACM India Summer School 2025",
+    "section": "📍 IIT Gandhinagar | 📆 02–13 June 2025 | 📄 Download Schedule",
+    "text": "📍 IIT Gandhinagar | 📆 02–13 June 2025 | 📄 Download Schedule"
+  },
+  {
+    "objectID": "events/index.html",
+    "href": "events/index.html",
+    "title": "Events",
+    "section": "",
+    "text": "In this page, we include the events that we have organized or co-organized."
+  },
+  {
+    "objectID": "events/index.html#section",
+    "href": "events/index.html#section",
+    "title": "Events",
+    "section": "2025",
+    "text": "2025\nACM India Summer School on AI for Social Good Link: ACM India Summer School 2025"
+  },
+  {
+    "objectID": "events/index.html#section-1",
+    "href": "events/index.html#section-1",
+    "title": "Events",
+    "section": "2023",
+    "text": "2023\nMEDFUSE: Medicine, Engineering, and Data Fusion for Health"
+  },
+  {
+    "objectID": "values.html",
+    "href": "values.html",
+    "title": "Values",
+    "section": "",
+    "text": "Less but better: Publish one less paper, but make the ones you publish really strong. Show one less result in the meeting, but thoroughly analyse the ones you show."
+  },
+  {
+    "objectID": "writing-papers.html",
+    "href": "writing-papers.html",
+    "title": "Writing Papers",
+    "section": "",
+    "text": "Paper writing is a key part of research. This page contains some tips and tricks for writing papers. Paper writing is a skill that you will develop over time. But, it needs deliberate practice.\n\nPaper structure and Abstract\nI gave a talk (recording here, slides here) on how to write a paper. I recommend watching it. Other materials from the talk are available here.\n\n\nLaTeXify figures\nWe’d suggest using this latexification tool to make the matplotlib figures publication-ready. It helps in the following aspects:\n\nIt helps in setting the exact size of the figure relative to the column width or page width of the paper. After using this tool, manually setting the size within the \\begin{figure} block is rarely needed.\nWe can set the font size relative to the text font size in the paper to ensure fonts are not too small or too big.\nIt converts the fonts into latex fonts so that the fonts in the figures do not look different from the main text font.\n\n\nTip: You can find page width and column width with \\the\\textwidth and \\the\\columnwidth commands, respectively.\n\n\n\nSelf-contained figures and tables (and captions)\n\n\nTables\nWe follow this excellent small guide to making nice tables by Markus Püschel.\n\n\nComments in LaTeX\nWe typically create a macro corresponding to different author initials (I use \\nb for example) and then use that to create comments in the text. This is useful for commenting on the text, or for leaving notes to yourself. For example, I might write \\nb{I'm not sure about this sentence} and then I can search for all instances of \\nb to find all of my comments.\n\\newcommand{\\nb}[1]{{\\color{red}\\small \\iftoggle{hide}{}{\\textbf{Nipun's comment:} #1}}}\n\n\nActive v/s Passive Voice\n\n\nAmerican v/s British English\nThere are a few differences in spelling between American and British English. For example, the word “colour” in British English is spelled “color” in American English. The word “optimise” in British English is spelled “optimize” in American English. There are also some differences in grammar. I recommend picking one and sticking to it. Most of our previous papers have used British English (but often this depends on the set of co-authors).\n\n\nPaper timelines\n\n\nGrammarly and other AI tools\nI recommend students use Grammarly (or a similar) tool to check their writing once they have done a complete pass of editing. I do not recommend relying a lot on ChatGPT-like tools for writing papers as they can often lead to “correct” sounding but “incorrect” sentences."
+  },
+  {
     "objectID": "events/acm-summer-2025/selected.html",
     "href": "events/acm-summer-2025/selected.html",
     "title": "ACM India Summer School 2025: AI for Social Good",
@@ -665,60 +721,39 @@
     "text": "✉️ Contact\nFeel free to reach out:\n\nNipun Batra\n\nWe look forward to welcoming you to IIT Gandhinagar!"
   },
   {
-    "objectID": "writing-papers.html",
-    "href": "writing-papers.html",
-    "title": "Writing Papers",
+    "objectID": "papers/README_bibtex.html",
+    "href": "papers/README_bibtex.html",
+    "title": "BibTeX Management for Publications",
     "section": "",
-    "text": "Paper writing is a key part of research. This page contains some tips and tricks for writing papers. Paper writing is a skill that you will develop over time. But, it needs deliberate practice.\n\nPaper structure and Abstract\nI gave a talk (recording here, slides here) on how to write a paper. I recommend watching it. Other materials from the talk are available here.\n\n\nLaTeXify figures\nWe’d suggest using this latexification tool to make the matplotlib figures publication-ready. It helps in the following aspects:\n\nIt helps in setting the exact size of the figure relative to the column width or page width of the paper. After using this tool, manually setting the size within the \\begin{figure} block is rarely needed.\nWe can set the font size relative to the text font size in the paper to ensure fonts are not too small or too big.\nIt converts the fonts into latex fonts so that the fonts in the figures do not look different from the main text font.\n\n\nTip: You can find page width and column width with \\the\\textwidth and \\the\\columnwidth commands, respectively.\n\n\n\nSelf-contained figures and tables (and captions)\n\n\nTables\nWe follow this excellent small guide to making nice tables by Markus Püschel.\n\n\nComments in LaTeX\nWe typically create a macro corresponding to different author initials (I use \\nb for example) and then use that to create comments in the text. This is useful for commenting on the text, or for leaving notes to yourself. For example, I might write \\nb{I'm not sure about this sentence} and then I can search for all instances of \\nb to find all of my comments.\n\\newcommand{\\nb}[1]{{\\color{red}\\small \\iftoggle{hide}{}{\\textbf{Nipun's comment:} #1}}}\n\n\nActive v/s Passive Voice\n\n\nAmerican v/s British English\nThere are a few differences in spelling between American and British English. For example, the word “colour” in British English is spelled “color” in American English. The word “optimise” in British English is spelled “optimize” in American English. There are also some differences in grammar. I recommend picking one and sticking to it. Most of our previous papers have used British English (but often this depends on the set of co-authors).\n\n\nPaper timelines\n\n\nGrammarly and other AI tools\nI recommend students use Grammarly (or a similar) tool to check their writing once they have done a complete pass of editing. I do not recommend relying a lot on ChatGPT-like tools for writing papers as they can often lead to “correct” sounding but “incorrect” sentences."
+    "text": "This directory contains scripts and files for managing BibTeX references for all Sustainability Lab publications.\n\n\n\nbibtex/ - Directory containing individual .bib files for each publication\nbibtex/all_publications.bib - Comprehensive bibliography with all publications\naggregate_bibtex_simple.py - Script to automatically generate the comprehensive bibliography\n\n\n\n\n\n\ncd papers/\npython aggregate_bibtex_simple.py\nThis will: 1. Read all individual .bib files from the bibtex/ directory 2. Sort them by year (newest first) 3. Generate a new bibtex/all_publications.bib file with all publications\n\n\n\n\nCreate a new .bib file in the bibtex/ directory with the citation\nAdd the download link to index.qmd (see existing examples)\nRun the aggregation script to update the comprehensive bibliography\n\n\n\n\n\nIndividual .bib files: For specific publications\nComprehensive .bib file: All publications in one file (bibtex/all_publications.bib)\n\n\n\n\n\nYou can set up a git hook or CI/CD pipeline to automatically run the aggregation script when new .bib files are added:\n# Add to .git/hooks/pre-commit\n#!/bin/bash\ncd papers/\npython aggregate_bibtex_simple.py\ngit add bibtex/all_publications.bib\n\n\n\nIndividual .bib files should follow the pattern: {keyword}{year}.bib\nExamples: - space2policy2025.bib - jouleseye2024.bib - vartalaap2021.bib"
   },
   {
-    "objectID": "values.html",
-    "href": "values.html",
-    "title": "Values",
+    "objectID": "papers/README_bibtex.html#files",
+    "href": "papers/README_bibtex.html#files",
+    "title": "BibTeX Management for Publications",
     "section": "",
-    "text": "Less but better: Publish one less paper, but make the ones you publish really strong. Show one less result in the meeting, but thoroughly analyse the ones you show."
+    "text": "bibtex/ - Directory containing individual .bib files for each publication\nbibtex/all_publications.bib - Comprehensive bibliography with all publications\naggregate_bibtex_simple.py - Script to automatically generate the comprehensive bibliography"
   },
   {
-    "objectID": "events/index.html",
-    "href": "events/index.html",
-    "title": "Events",
+    "objectID": "papers/README_bibtex.html#usage",
+    "href": "papers/README_bibtex.html#usage",
+    "title": "BibTeX Management for Publications",
     "section": "",
-    "text": "In this page, we include the events that we have organized or co-organized."
+    "text": "cd papers/\npython aggregate_bibtex_simple.py\nThis will: 1. Read all individual .bib files from the bibtex/ directory 2. Sort them by year (newest first) 3. Generate a new bibtex/all_publications.bib file with all publications\n\n\n\n\nCreate a new .bib file in the bibtex/ directory with the citation\nAdd the download link to index.qmd (see existing examples)\nRun the aggregation script to update the comprehensive bibliography\n\n\n\n\n\nIndividual .bib files: For specific publications\nComprehensive .bib file: All publications in one file (bibtex/all_publications.bib)"
   },
   {
-    "objectID": "events/index.html#section",
-    "href": "events/index.html#section",
-    "title": "Events",
-    "section": "2025",
-    "text": "2025\nACM India Summer School on AI for Social Good Link: ACM India Summer School 2025"
-  },
-  {
-    "objectID": "events/index.html#section-1",
-    "href": "events/index.html#section-1",
-    "title": "Events",
-    "section": "2023",
-    "text": "2023\nMEDFUSE: Medicine, Engineering, and Data Fusion for Health"
-  },
-  {
-    "objectID": "events/acm-summer-2025/schedule.html",
-    "href": "events/acm-summer-2025/schedule.html",
-    "title": "Schedule – ACM India Summer School 2025",
+    "objectID": "papers/README_bibtex.html#automation",
+    "href": "papers/README_bibtex.html#automation",
+    "title": "BibTeX Management for Publications",
     "section": "",
-    "text": "Overview Schedule Selected Participants Speakers"
+    "text": "You can set up a git hook or CI/CD pipeline to automatically run the aggregation script when new .bib files are added:\n# Add to .git/hooks/pre-commit\n#!/bin/bash\ncd papers/\npython aggregate_bibtex_simple.py\ngit add bibtex/all_publications.bib"
   },
   {
-    "objectID": "events/acm-summer-2025/schedule.html#iit-gandhinagar-0213-june-2025-download-schedule",
-    "href": "events/acm-summer-2025/schedule.html#iit-gandhinagar-0213-june-2025-download-schedule",
-    "title": "Schedule – ACM India Summer School 2025",
-    "section": "📍 IIT Gandhinagar | 📆 02–13 June 2025 | 📄 Download Schedule",
-    "text": "📍 IIT Gandhinagar | 📆 02–13 June 2025 | 📄 Download Schedule"
-  },
-  {
-    "objectID": "events/acm-summer-2025/speakers.html",
-    "href": "events/acm-summer-2025/speakers.html",
-    "title": "Speakers – ACM India Summer School 2025",
+    "objectID": "papers/README_bibtex.html#file-naming-convention",
+    "href": "papers/README_bibtex.html#file-naming-convention",
+    "title": "BibTeX Management for Publications",
     "section": "",
-    "text": "Overview Schedule Selected Participants Speakers\n\n\n🎤 ACM India Summer School 2025 – Speakers\n📍 IIT Gandhinagar | 📆 02–13 June 2025\n\n\nProf. Rajat Moona\nDirector, IIT Gandhinagar\nOpening the summer school with welcome remarks.\n\n\n\nProf. Anirban Dasgupta\nProfessor, IIT Gandhinagar\nCo-coordinator. Focuses on algorithmic foundations of ML, fairness, and networks.\n\n\n\nProf. Nipun Batra\nAssociate Professor, IIT Gandhinagar\nCo-coordinator. Works on AI for sustainability, air quality, and smart sensing.\n\n\n\nDr. Venkat Padmanabhan\nDeputy Managing Director, Microsoft Research India\nKeynote speaker. Leader in mobile systems and AI for societal impact.\n\n\n\nDr. Manish Gupta\nDirector, Google DeepMind India\nKeynote speaker. Focused on ML at scale and social impact applications.\n\n\n\nDr. Jigar Doshi\nTalks on AI for public health, agriculture, and climate sustainability.\n\n\n\nDr. Prasant Misra\nPrincipal Scientist, TCS Research\nExpert in mobile sensing and information processing at scale.\n\n\n\nDr. Shailesh Deshpande\nScientist, TCS Research\nRemote sensing expert; also conducting optimization labs.\n\n\n\nProf. Udit Bhatia\nAssistant Professor, IIT Gandhinagar\nExpert in physics-guided ML, floods, and networked infrastructure.\n\n\n\nProf. Shanmuganathan Raman\nProfessor, IIT Gandhinagar\nSpecializes in vision-based AI including pose estimation.\n\n\n\nProf. Krishna Prasad\nAssociate Professor, IIT Gandhinagar\nResearches Brain-Computer Interfaces and neuro-AI.\n\n\n\nProf. Manisha Padala\nAssistant Professor, IIT Gandhinagar\nWorks on fairness in federated learning and adversarial ML.\n\n\n\nDr. Vaibhav Rajan\nScientist, Google DeepMind\nTalks on ML for personalized cancer treatment and biomedical AI.\n\n\n\nProf. Sayan Ranu\nProfessor, IIT Delhi\nWorks on graph neural networks, GNN condensation, and pollution monitoring.\n\n\n\nDr. Mohit Jain\nResearcher, Microsoft Research India\nFocuses on HCI and AI applications in healthcare and inclusion.\n\n\n\nProf. Pallavi Bharadwaj\nAssistant Professor, IIT Gandhinagar\nWorks on sustainable mobility and electric vehicles.\n\n\n\nProf. Yogesh Kumar Meena\nAssistant Professor, IIT Gandhinagar\nSpecialist in accessibility technologies and inclusive design.\n\n\n\nProf. Vaibhav Tripathi\nAssistant Professor, IIT Gandhinagar\nExplores connectome-based predictive modeling and brain imaging.\n\n\n\nDr. Rishiraj Adhikary / Niladri\nJio Platforms\nTalk on AI-driven solutions (exact topic TBD).\n\n\n\nAlok Talekar\nResearcher, Google DeepMind India\nLectures and labs on advanced AI techniques (topics TBD).\n\n\n\nProf. Manish Jain\nProfessor, IIT Gandhinagar (CCL Lab)\nTeaches on meta-learning and “learning to learn.”\n\n\n\nProf. Tavpritesh Sethi\nAssociate Professor, IIIT Delhi\nCausal modeling and AI for health system preparedness.\n\n\n\nDr. Bimal\nISRO SAC\nTalk on satellite applications (topic TBD).\n\n(More speaker details will be added as confirmed.)"
+    "text": "Individual .bib files should follow the pattern: {keyword}{year}.bib\nExamples: - space2policy2025.bib - jouleseye2024.bib - vartalaap2021.bib"
   },
   {
     "objectID": "alumni.html",

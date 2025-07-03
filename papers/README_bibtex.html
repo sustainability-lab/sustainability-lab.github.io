@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Alumni Experiences – Sustainability Lab</title>
+<title>readme_bibtex – Sustainability Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,29 +20,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href=".//images/favicon-sl.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c3c2c9e745155556954bc4da23476b10.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-57d8bd9923b190fd95890af9a3d89866.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="..//images/favicon-sl.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c3c2c9e745155556954bc4da23476b10.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-57d8bd9923b190fd95890af9a3d89866.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,65 +103,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -145,8 +120,8 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text"><img id="theme-logo" data-light-src="/images/logo_light.svg" data-dark-src="/images/logo_dark.svg" src="./images/logo_light.svg" style="height: 90px !important;"></span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text"><img id="theme-logo" data-light-src="/images/logo_light.svg" data-dark-src="/images/logo_dark.svg" src="../images/logo_light.svg" style="height: 90px !important;"></span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-people" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -154,29 +129,29 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-people">    
         <li>
-    <a class="dropdown-item" href="./members.html">
+    <a class="dropdown-item" href="../members.html">
  <span class="dropdown-text">Current Team</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./alumni.html">
+    <a class="dropdown-item" href="../alumni.html">
  <span class="dropdown-text">Alumni</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./experiences.html">
+    <a class="dropdown-item" href="../experiences.html">
  <span class="dropdown-text">Alumni Experiences</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./memories.html">
+    <a class="dropdown-item" href="../memories.html">
  <span class="dropdown-text">Memories</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./papers/index.html"> 
+    <a class="nav-link" href="../papers/index.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./openings.html"> 
+    <a class="nav-link" href="../openings.html"> 
 <span class="menu-text">Openings</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -185,33 +160,33 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-lab-handbook">    
         <li>
-    <a class="dropdown-item" href="./computational-resources.html">
+    <a class="dropdown-item" href="../computational-resources.html">
  <span class="dropdown-text">Computational Resources</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lab_culture.html">
+    <a class="dropdown-item" href="../lab_culture.html">
  <span class="dropdown-text">Lab Culture</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./upskilling.html">
+    <a class="dropdown-item" href="../upskilling.html">
  <span class="dropdown-text">Academic &amp; Research Skills</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./design-kit.html">
+    <a class="dropdown-item" href="../design-kit.html">
  <span class="dropdown-text">Design Kit</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./news.html"> 
+    <a class="nav-link" href="../news.html"> 
 <span class="menu-text">News</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./media.html"> 
+    <a class="nav-link" href="../media.html"> 
 <span class="menu-text">Media coverage</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./awards.html"> 
+    <a class="nav-link" href="../awards.html"> 
 <span class="menu-text">Awards</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -220,7 +195,7 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-events">    
         <li>
-    <a class="dropdown-item" href="./events/index.html">
+    <a class="dropdown-item" href="../events/index.html">
  <span class="dropdown-text">Events Home</span></a>
   </li>  
         <li>
@@ -240,254 +215,86 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#bibtex-management-for-publications" id="toc-bibtex-management-for-publications" class="nav-link active" data-scroll-target="#bibtex-management-for-publications">BibTeX Management for Publications</a>
+  <ul class="collapse">
+  <li><a href="#files" id="toc-files" class="nav-link" data-scroll-target="#files">Files</a></li>
+  <li><a href="#usage" id="toc-usage" class="nav-link" data-scroll-target="#usage">Usage</a>
+  <ul class="collapse">
+  <li><a href="#to-update-the-comprehensive-bibliography" id="toc-to-update-the-comprehensive-bibliography" class="nav-link" data-scroll-target="#to-update-the-comprehensive-bibliography">To update the comprehensive bibliography:</a></li>
+  <li><a href="#to-add-a-new-publication" id="toc-to-add-a-new-publication" class="nav-link" data-scroll-target="#to-add-a-new-publication">To add a new publication:</a></li>
+  <li><a href="#download-formats-available" id="toc-download-formats-available" class="nav-link" data-scroll-target="#download-formats-available">Download formats available:</a></li>
+  </ul></li>
+  <li><a href="#automation" id="toc-automation" class="nav-link" data-scroll-target="#automation">Automation</a></li>
+  <li><a href="#file-naming-convention" id="toc-file-naming-convention" class="nav-link" data-scroll-target="#file-naming-convention">File naming convention</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Alumni Experiences</h1>
-</div>
-
-
-
-<div class="quarto-title-meta column-page">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
+<section id="bibtex-management-for-publications" class="level1">
+<h1>BibTeX Management for Publications</h1>
+<p>This directory contains scripts and files for managing BibTeX references for all Sustainability Lab publications.</p>
+<section id="files" class="level2">
+<h2 class="anchored" data-anchor-id="files">Files</h2>
+<ul>
+<li><code>bibtex/</code> - Directory containing individual .bib files for each publication</li>
+<li><code>bibtex/all_publications.bib</code> - Comprehensive bibliography with all publications</li>
+<li><code>aggregate_bibtex_simple.py</code> - Script to automatically generate the comprehensive bibliography</li>
+</ul>
+</section>
+<section id="usage" class="level2">
+<h2 class="anchored" data-anchor-id="usage">Usage</h2>
+<section id="to-update-the-comprehensive-bibliography" class="level3">
+<h3 class="anchored" data-anchor-id="to-update-the-comprehensive-bibliography">To update the comprehensive bibliography:</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> papers/</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> aggregate_bibtex_simple.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will: 1. Read all individual .bib files from the <code>bibtex/</code> directory 2. Sort them by year (newest first) 3. Generate a new <code>bibtex/all_publications.bib</code> file with all publications</p>
+</section>
+<section id="to-add-a-new-publication" class="level3">
+<h3 class="anchored" data-anchor-id="to-add-a-new-publication">To add a new publication:</h3>
+<ol type="1">
+<li>Create a new <code>.bib</code> file in the <code>bibtex/</code> directory with the citation</li>
+<li>Add the download link to <code>index.qmd</code> (see existing examples)</li>
+<li>Run the aggregation script to update the comprehensive bibliography</li>
+</ol>
+</section>
+<section id="download-formats-available" class="level3">
+<h3 class="anchored" data-anchor-id="download-formats-available">Download formats available:</h3>
+<ul>
+<li><strong>Individual .bib files</strong>: For specific publications</li>
+<li><strong>Comprehensive .bib file</strong>: All publications in one file (<code>bibtex/all_publications.bib</code>)</li>
+</ul>
+</section>
+</section>
+<section id="automation" class="level2">
+<h2 class="anchored" data-anchor-id="automation">Automation</h2>
+<p>You can set up a git hook or CI/CD pipeline to automatically run the aggregation script when new .bib files are added:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Add to .git/hooks/pre-commit</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> papers/</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> aggregate_bibtex_simple.py</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add bibtex/all_publications.bib</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="file-naming-convention" class="level2">
+<h2 class="anchored" data-anchor-id="file-naming-convention">File naming convention</h2>
+<p>Individual .bib files should follow the pattern: <code>{keyword}{year}.bib</code></p>
+<p>Examples: - <code>space2policy2025.bib</code> - <code>jouleseye2024.bib</code> - <code>vartalaap2021.bib</code></p>
 
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-author" data-direction="asc">
-        Author
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
+</section>
+</section>
 
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1750723200000" data-listing-file-modified-sort="1751517641025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="664" data-listing-title-sort="Building Brick by Brick My Foundation at Sustainability Lab" data-listing-filename-sort="shataxi.qmd">
-<td>
-<span class="listing-date">Jun 24, 2025</span>
-</td>
-<td>
-<a href="./experiences/shataxi.html" class="title listing-title">Building Brick by Brick My Foundation at Sustainability Lab</a>
-</td>
-<td>
-<span class="listing-author">Shataxi Dubey</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-listing-date-sort="1750636800000" data-listing-file-modified-sort="1751517641025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="612" data-listing-title-sort="My Experience at the Sustainability Lab" data-listing-filename-sort="arun.qmd">
-<td>
-<span class="listing-date">Jun 23, 2025</span>
-</td>
-<td>
-<a href="./experiences/arun.html" class="title listing-title">My Experience at the Sustainability Lab</a>
-</td>
-<td>
-<span class="listing-author">Arun Reddy Anugu</span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-listing-date-sort="1740614400000" data-listing-file-modified-sort="1751517641025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="676" data-listing-title-sort="Sustainability Lab: The Taste of True Research" data-listing-filename-sort="devodita.qmd">
-<td>
-<span class="listing-date">Feb 27, 2025</span>
-</td>
-<td>
-<a href="./experiences/devodita.html" class="title listing-title">Sustainability Lab: The Taste of True Research</a>
-</td>
-<td>
-<span class="listing-author">Devodita Chakravarty</span>
-</td>
-
-</tr>
-
-<tr data-index="3" data-listing-date-sort="1721865600000" data-listing-file-modified-sort="1751517641025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="830" data-listing-title-sort="From Beginner to Data Scientist: My Journey at Sustainability Lab" data-listing-filename-sort="RYeeshu.qmd">
-<td>
-<span class="listing-date">Jul 25, 2024</span>
-</td>
-<td>
-<a href="./experiences/RYeeshu.html" class="title listing-title">From Beginner to Data Scientist: My Journey at Sustainability Lab</a>
-</td>
-<td>
-<span class="listing-author">Yeeshu R Dhurandhar</span>
-</td>
-
-</tr>
-
-<tr data-index="4" data-listing-date-sort="1716076800000" data-listing-file-modified-sort="1751517641025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1391" data-listing-title-sort="From Chemical Engineer to AI Researcher - My Pathway Through Sustainability Lab" data-listing-filename-sort="aditi.qmd">
-<td>
-<span class="listing-date">May 19, 2024</span>
-</td>
-<td>
-<a href="./experiences/aditi.html" class="title listing-title">From Chemical Engineer to AI Researcher - My Pathway Through Sustainability Lab</a>
-</td>
-<td>
-<span class="listing-author">Aditi Agarwal</span>
-</td>
-
-</tr>
-
-<tr data-index="5" data-listing-date-sort="1714953600000" data-listing-file-modified-sort="1751517641025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="785" data-listing-title-sort="Sustainability Lab - The Big Booster in my career" data-listing-filename-sort="karm.qmd">
-<td>
-<span class="listing-date">May 6, 2024</span>
-</td>
-<td>
-<a href="./experiences/karm.html" class="title listing-title">Sustainability Lab - The Big Booster in my career</a>
-</td>
-<td>
-<span class="listing-author">Karm Patel</span>
-</td>
-
-</tr>
-
-<tr data-index="6" data-listing-date-sort="1707955200000" data-listing-file-modified-sort="1751517641025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2223" data-listing-title-sort="Curiosity Opens New Doors" data-listing-filename-sort="aabhas.qmd">
-<td>
-<span class="listing-date">Feb 15, 2024</span>
-</td>
-<td>
-<a href="./experiences/aabhas.html" class="title listing-title">Curiosity Opens New Doors</a>
-</td>
-<td>
-<span class="listing-author">Aabhas Senapati</span>
-</td>
-
-</tr>
-
-<tr data-index="7" data-listing-date-sort="1707955200000" data-listing-file-modified-sort="1751517641025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="831" data-listing-title-sort="Sustainability Lab: An Unforgettable Journey" data-listing-filename-sort="ankita.qmd">
-<td>
-<span class="listing-date">Feb 15, 2024</span>
-</td>
-<td>
-<a href="./experiences/ankita.html" class="title listing-title">Sustainability Lab: An Unforgettable Journey</a>
-</td>
-<td>
-<span class="listing-author">Ankita Jain</span>
-</td>
-
-</tr>
-
-<tr data-index="8" data-listing-date-sort="1706227200000" data-listing-file-modified-sort="1751517641025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="981" data-listing-title-sort="The Growth Mindset: My Journey at the Sustainability Lab" data-listing-filename-sort="hetvi.qmd">
-<td>
-<span class="listing-date">Jan 26, 2024</span>
-</td>
-<td>
-<a href="./experiences/hetvi.html" class="title listing-title">The Growth Mindset: My Journey at the Sustainability Lab</a>
-</td>
-<td>
-<span class="listing-author">Hetvi Shastri</span>
-</td>
-
-</tr>
-
-<tr data-index="9" data-listing-date-sort="1705449600000" data-listing-file-modified-sort="1751517641025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1499" data-listing-title-sort="Detours can sometimes be the best part of the journey!" data-listing-filename-sort="aadesh.qmd">
-<td>
-<span class="listing-date">Jan 17, 2024</span>
-</td>
-<td>
-<a href="./experiences/aadesh.html" class="title listing-title">Detours can sometimes be the best part of the journey!</a>
-</td>
-<td>
-<span class="listing-author">Aadesh Desai</span>
-</td>
-
-</tr>
-
-<tr data-index="10" data-listing-date-sort="1702598400000" data-listing-file-modified-sort="1751517641025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="549" data-listing-title-sort="From Thesis to Life Lessons: My learning curve at Sustainability Lab" data-listing-filename-sort="souvik.qmd">
-<td>
-<span class="listing-date">Dec 15, 2023</span>
-</td>
-<td>
-<a href="./experiences/souvik.html" class="title listing-title">From Thesis to Life Lessons: My learning curve at Sustainability Lab</a>
-</td>
-<td>
-<span class="listing-author">Souvik Roy</span>
-</td>
-
-</tr>
-
-<tr data-index="11" data-listing-date-sort="1702252800000" data-listing-file-modified-sort="1751517641025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="873" data-listing-title-sort="Not just research, lifelong mentorship: My journey at Sustainability Lab" data-listing-filename-sort="rithwik.qmd">
-<td>
-<span class="listing-date">Dec 11, 2023</span>
-</td>
-<td>
-<a href="./experiences/rithwik.html" class="title listing-title">Not just research, lifelong mentorship: My journey at Sustainability Lab</a>
-</td>
-<td>
-<span class="listing-author">Kukunuri Rithwik</span>
-</td>
-
-</tr>
-
-<tr data-index="12" data-listing-date-sort="1701216000000" data-listing-file-modified-sort="1751517641025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="737" data-listing-title-sort="Sustainability Lab: A family atmosphere of learning and growth" data-listing-filename-sort="gautam.qmd">
-<td>
-<span class="listing-date">Nov 29, 2023</span>
-</td>
-<td>
-<a href="./experiences/gautam.html" class="title listing-title">Sustainability Lab: A family atmosphere of learning and growth</a>
-</td>
-<td>
-<span class="listing-author">Gautam Vashishtha</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -894,7 +701,7 @@ window.Quarto = {
 <p>© 2025 Sustainability Lab, IIT Gandhinagar</p>
 </div>   
     <div class="nav-footer-center">
-<p><a href="./papers/index.html">Publications</a> | <a href="https://sustainability-lab.github.io/sustainability-research-bootcamp/"><strong>Research Skills Bootcamp</strong></a> | <a href="mailto:nipun.batra@iitgn.ac.in">Contact</a></p>
+<p><a href="papers/index.qmd">Publications</a> | <a href="https://sustainability-lab.github.io/sustainability-research-bootcamp/"><strong>Research Skills Bootcamp</strong></a> | <a href="mailto:nipun.batra@iitgn.ac.in">Contact</a></p>
 </div>
     <div class="nav-footer-right">
 <p>Built with <a href="https://quarto.org/">Quarto</a></p>
