@@ -2,6 +2,16 @@
 title: Publications
 ---
 
+<div style="text-align: center; margin: 20px 0; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+  <p><strong>📚 Download All Publications Bibliography</strong></p>
+  <a href="bibtex/all_publications.bib" class="paper-button" download style="background-color: #6366f1; font-weight: bold;">
+    📋 Download Complete BibTeX File
+  </a>
+  <p style="margin-top: 10px; font-size: 0.9rem; color: #6b7280;">
+    Contains all 41 publications from the Sustainability Lab
+  </p>
+</div>
+
 
 <!-- 
 AYUSH SHRIVASTAVA (2024):
@@ -57,6 +67,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Dhruv Patel, Ankita Kumari Jain, Haikoo Khandor, Xhitij Choudhary, Nipun Batra</p>
 <p><i>arXiv 2024</i></p>
 <a href="https://arxiv.org/abs/2411.15805" class="paper-button">arXiv</a>
+<a href="bibtex/nilm_al2024.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
 <!-- <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/brick_kiln_interactive_visualize" class="paper-button">HuggingFace</a> -->
 </div>
 </div>
@@ -68,6 +79,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Ankita Kumari Jain, Nitish Sharma, Madhav Kanda, Nipun Batra</p>
 <p><i>arXiv 2024</i></p>
 <a href="https://arxiv.org/abs/2410.22950" class="paper-button">arXiv</a>
+<a href="bibtex/spiroactive2024.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
 <!-- <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/brick_kiln_interactive_visualize" class="paper-button">HuggingFace</a> -->
 </div>
 </div>
@@ -79,6 +91,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Zeel B Patel, Yash Bachwana, Nitish Sharma, Sarath Guttikunda, Nipun Batra</p>
 <p><i>arXiv 2024</i></p>
 <a href="https://arxiv.org/abs/2411.12760" class="paper-button">arXiv</a>
+<a href="bibtex/vayubuddy2024.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
 <a href="https://docs.google.com/presentation/d/1E3rXyLsp7dWBI4LSL7eOpKLXzjShEawxIUv8vTNVU0Y/edit?usp=sharing" class="paper-button">Google AQ Summit 2024</a>
 <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuBuddy" class="paper-button">HuggingFace</a>
 <a href="https://www.divyabhaskar.co.in/epaper/detail-page/ahmedabad-city-bhaskar/44/2024-12-17" class="paper-button">News: Divya Bhaskar</a>
@@ -128,6 +141,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Sachin Chauhan, Zeel B Patel, Sayan Ranu, Rijurekha Sen, and Nipun Batra.</p>
 <p><i>Datasets and Benchmarks Track, NeurIPS 2023, the Thirty-seventh Annual Conference on Neural Information Processing Systems</i></p>
 <a href="../papers/2023/airdelhi.pdf" class="paper-button">PDF</a>
+<a href="bibtex/airdelhi2023.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
 <a href="https://github.com/sachin-iitd/DelhiPMDatasetBenchmark" class="paper-button">Github</a>
 </div>
 </div>
@@ -141,6 +155,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Rishiraj Adhikary, Dhruvi Lodhavia, Chris Francis, Rohit Patil, Tanmay Srivastava, Prerna Khanna, Nipun Batra, Joseph Breda, Jacob Peplinski, Shwetak Patel</p>
 <p><i>ACM Transactions on Computing for Healthcare 2023</i></p>
 <a href="../papers/2023/spiromask.pdf" class="paper-button">PDF</a>
+<a href="bibtex/spiromask2023.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
 <a href="https://github.com/rishi-a/SpiroMask" class="paper-button">Github</a>
 <a href="../slides/2023/SpiroMask.pptx" class="paper-button">Slides (PDF)</a>
 <a href="https://www.ahmedabadmirror.com/iit-gn-researchers-devise-mask-to-measure-lung-health/81846808.html" class="paper-button">News coverage</a>

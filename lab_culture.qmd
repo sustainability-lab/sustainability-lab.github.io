@@ -21,6 +21,10 @@ I also typically want to help create a path for my students to achieve their goa
 
 **Culture of respect and collaboration**: I expect my students to be respectful to each other, and to other members of the community. I also expect my students to be collaborative. This means that they should be willing to help each other, and to help other members of the community.
 
+## Getting Started Resources
+
+**Research Skills Foundation**: New lab members should start with our [**Sustainability Research Bootcamp**](https://sustainability-lab.github.io/sustainability-research-bootcamp/) - a comprehensive 10-day program that covers essential research fundamentals. This self-paced resource helps you build strong foundations in literature review, experimental design, technical writing, and research methodology.
+
 ## Meetings
 
 **Whole Group Meetings**: We typically meet once a week for about 45-50 mins. We usually cover a variety of topics, including:

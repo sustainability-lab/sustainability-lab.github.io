@@ -1,346 +1,79 @@
 ---
-title: "LaTeX-Quality Matplotlib Figures"
+title: "LaTeXify: Publication-Ready Matplotlib Figures"
 toc: true
 ---
 
 ## Overview
 
-We recommend using this latexification tool to make matplotlib figures publication-ready. It helps in the following aspects:
+**LaTeXify** is a Python package developed by the Sustainability Lab that transforms default matplotlib plots into professional, publication-ready figures for LaTeX documents with minimal code changes.
 
-- **Consistent Typography**: Matches your paper's LaTeX font and styling
-- **Proper Sizing**: Ensures figures fit perfectly in single or double-column layouts
-- **Clean Aesthetics**: Removes unnecessary chart junk and applies academic styling
-- **High DPI Output**: Generates crisp, scalable figures for publications
-- **LaTeX Math Rendering**: Properly renders mathematical expressions using LaTeX
+## Key Features
 
-## Enhanced Latexify Tool
+- **Automatic Font Matching**: Seamlessly matches your LaTeX document's typography
+- **Precise Figure Sizing**: Perfect sizing for single and double column layouts
+- **LaTeX Math Rendering**: Flawless mathematical symbol and equation rendering
+- **Clean Aesthetics**: Removes visual clutter for academic publications
+- **Multi-Format Support**: Works with IEEE, ACM, Beamer, and other academic formats
+- **Easy Integration**: Minimal code changes to existing matplotlib scripts
 
-Here's our modern, enhanced version of the latexification tool:
+## Installation
 
-```python
-import matplotlib.pyplot as plt
-import matplotlib
-from math import sqrt
-import numpy as np
-
-# Color palette for publication-quality plots
-COLORS = {
-    'primary': '#2E86AB',
-    'secondary': '#A23B72', 
-    'accent': '#F18F01',
-    'success': '#C73E1D',
-    'neutral': '#6B7280',
-    'spine': '#9CA3AF'
-}
-
-def latexify(fig_width=None, fig_height=None, columns=1, font_size=10, 
-             use_tex=True, style='modern'):
-    """
-    Set up matplotlib's RC params for LaTeX plotting.
-    
-    Parameters
-    ----------
-    fig_width : float, optional, inches
-        Width of the figure. Defaults to optimal width for column layout.
-    fig_height : float, optional, inches  
-        Height of the figure. Defaults to golden ratio of width.
-    columns : {1, 2}
-        Number of columns in your document layout.
-    font_size : int, default 10
-        Base font size for the plot.
-    use_tex : bool, default True
-        Whether to use LaTeX for text rendering.
-    style : str, default 'modern'
-        Style preset: 'modern', 'classic', or 'minimal'.
-    
-    Returns
-    -------
-    tuple
-        (fig_width, fig_height) for use in plt.figure()
-    """
-    
-    assert columns in [1, 2], "Columns must be 1 or 2"
-    
-    # Set figure width based on common academic paper layouts
-    if fig_width is None:
-        fig_width = 3.5 if columns == 1 else 7.0  # IEEE single/double column
-    
-    if fig_height is None:
-        golden_ratio = (sqrt(5) - 1.0) / 2.0
-        fig_height = fig_width * golden_ratio
-    
-    # Ensure reasonable height limits
-    max_height = 8.0
-    if fig_height > max_height:
-        print(f"WARNING: fig_height {fig_height:.1f} too large, "
-              f"reducing to {max_height} inches.")
-        fig_height = max_height
-    
-    # LaTeX preamble for better math and symbol support
-    latex_preamble = [
-        r'\usepackage{amsmath}',
-        r'\usepackage{amssymb}', 
-        r'\usepackage{gensymb}',
-        r'\usepackage{siunitx}'
-    ]
-    
-    # Base configuration
-    params = {
-        'figure.figsize': [fig_width, fig_height],
-        'figure.dpi': 150,
-        'savefig.dpi': 300,
-        'font.size': font_size,
-        'axes.labelsize': font_size,
-        'axes.titlesize': font_size + 1,
-        'legend.fontsize': font_size - 1,
-        'xtick.labelsize': font_size - 1,
-        'ytick.labelsize': font_size - 1,
-        'axes.linewidth': 0.8,
-        'grid.linewidth': 0.5,
-        'lines.linewidth': 1.5,
-        'patch.linewidth': 0.5,
-        'xtick.major.width': 0.8,
-        'ytick.major.width': 0.8,
-        'xtick.minor.width': 0.4,
-        'ytick.minor.width': 0.4,
-    }
-    
-    # Style-specific configurations
-    if style == 'modern':
-        params.update({
-            'axes.spines.top': False,
-            'axes.spines.right': False,
-            'axes.spines.left': True,
-            'axes.spines.bottom': True,
-            'axes.edgecolor': COLORS['spine'],
-            'xtick.color': COLORS['spine'],
-            'ytick.color': COLORS['spine'],
-            'axes.labelcolor': 'black',
-            'grid.alpha': 0.3,
-        })
-    elif style == 'minimal':
-        params.update({
-            'axes.spines.top': False,
-            'axes.spines.right': False,
-            'axes.spines.left': False,
-            'axes.spines.bottom': False,
-            'xtick.bottom': True,
-            'ytick.left': True,
-            'grid.alpha': 0.2,
-        })
-    
-    # LaTeX configuration
-    if use_tex:
-        params.update({
-            'text.usetex': True,
-            'text.latex.preamble': latex_preamble,
-            'font.family': 'serif',
-            'mathtext.fontset': 'custom',
-        })
-    else:
-        params.update({
-            'font.family': 'DejaVu Serif',
-            'mathtext.fontset': 'dejavuserif',
-        })
-    
-    matplotlib.rcParams.update(params)
-    return fig_width, fig_height
-
-def format_axes(ax, grid=True, minor_ticks=True):
-    """
-    Apply consistent formatting to matplotlib axes.
-    
-    Parameters
-    ----------
-    ax : matplotlib.axes.Axes
-        The axes to format.
-    grid : bool, default True
-        Whether to show grid lines.
-    minor_ticks : bool, default True
-        Whether to show minor tick marks.
-    """
-    
-    # Remove top and right spines for cleaner look
-    ax.spines['top'].set_visible(False)
-    ax.spines['right'].set_visible(False)
-    
-    # Style remaining spines
-    for spine in ['left', 'bottom']:
-        ax.spines[spine].set_color(COLORS['spine'])
-        ax.spines[spine].set_linewidth(0.8)
-    
-    # Configure grid
-    if grid:
-        ax.grid(True, alpha=0.3, linewidth=0.5)
-        ax.set_axisbelow(True)
-    
-    # Add minor ticks for better precision
-    if minor_ticks:
-        ax.minorticks_on()
-        ax.tick_params(which='minor', alpha=0.5)
-    
-    # Improve tick formatting
-    ax.tick_params(colors=COLORS['spine'], which='both')
-
-def save_figure(filename, bbox_inches='tight', pad_inches=0.1, 
-                format='pdf', transparent=False):
-    """
-    Save figure with publication-quality settings.
-    
-    Parameters
-    ----------
-    filename : str
-        Output filename (without extension).
-    bbox_inches : str, default 'tight'
-        Bounding box setting for saving.
-    pad_inches : float, default 0.1
-        Padding around the figure.
-    format : str, default 'pdf'
-        Output format ('pdf', 'png', 'svg', 'eps').
-    transparent : bool, default False
-        Whether to save with transparent background.
-    """
-    
-    plt.savefig(f"{filename}.{format}", 
-                bbox_inches=bbox_inches,
-                pad_inches=pad_inches,
-                format=format,
-                transparent=transparent,
-                dpi=300 if format == 'png' else None)
-    print(f"Figure saved as {filename}.{format}")
-
-# Color palette for consistent plotting
-def get_color_palette(n_colors=5):
-    """Get a publication-quality color palette."""
-    base_colors = [COLORS['primary'], COLORS['secondary'], 
-                   COLORS['accent'], COLORS['success'], COLORS['neutral']]
-    return base_colors[:n_colors]
+```bash
+pip install git+https://github.com/sustainability-lab/latexify.git
 ```
 
-## Usage Examples
-
-### Basic Usage
+## Quick Start
 
 ```python
+import latexify
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Set up LaTeX formatting
-fig_width, fig_height = latexify(columns=1, font_size=10)
+# Configure for your document layout
+latexify.latexify(columns=1)  # or columns=2 for double-column
 
-# Create sample data
-x = np.linspace(0, 10, 100)
-y1 = np.sin(x)
-y2 = np.cos(x)
+# Create your plot as usual
+x = np.linspace(0, 2*np.pi, 100)
+plt.plot(x, np.sin(x), label=r'$\sin(x)$')
+plt.plot(x, np.cos(x), label=r'$\cos(x)$')
 
-# Create figure
-fig, ax = plt.subplots(figsize=(fig_width, fig_height))
-
-# Plot data with publication colors
-colors = get_color_palette(2)
-ax.plot(x, y1, color=colors[0], label=r'$\sin(x)$')
-ax.plot(x, y2, color=colors[1], label=r'$\cos(x)$', linestyle='--')
-
-# Format axes
-format_axes(ax)
-
-# Add labels with LaTeX math
-ax.set_xlabel(r'Time $t$ [\si{\second}]')
-ax.set_ylabel(r'Amplitude $A$ [\si{\volt}]')
-ax.set_title(r'Trigonometric Functions')
-ax.legend()
-
-# Save with high quality
-save_figure('trigonometric_functions', format='pdf')
-plt.show()
+# Apply LaTeXify formatting and save
+latexify.format_axes(plt.gca())
+latexify.save_fig('plot.pdf')
 ```
 
-### Advanced Example with Subplots
+## Benefits
 
-```python
-# Set up for double-column figure
-fig_width, fig_height = latexify(columns=2, font_size=9, style='modern')
+- **Instant Professional Look**: Transform basic plots into publication-quality figures
+- **No Manual Scaling**: Automatic figure sizing eliminates guesswork
+- **Consistent Styling**: Maintain uniform appearance across all your publications
+- **Time Saving**: Focus on your research, not plot formatting
 
-# Create data
-x = np.linspace(0, 4*np.pi, 200)
-frequencies = [1, 2, 3, 4]
-colors = get_color_palette(4)
+## Requirements
 
-# Create subplots
-fig, axes = plt.subplots(2, 2, figsize=(fig_width, fig_height))
-axes = axes.flatten()
+- matplotlib >= 3.0.0
+- numpy >= 1.15.0
+- LaTeX installation
 
-for i, freq in enumerate(frequencies):
-    y = np.sin(freq * x) * np.exp(-x/10)
-    
-    axes[i].plot(x, y, color=colors[i], linewidth=1.5)
-    axes[i].set_title(rf'$f = {freq}$ Hz')
-    axes[i].set_xlabel(r'Time $t$ [\si{\second}]')
-    axes[i].set_ylabel(r'$A(t)$')
-    
-    # Format each subplot
-    format_axes(axes[i], grid=True)
+## Repository & Documentation
 
-plt.tight_layout()
-save_figure('damped_oscillations', format='pdf')
-plt.show()
-```
+For complete documentation, examples, and source code:
 
-### Customizing for Different Journals
+**🔗 [GitHub Repository: sustainability-lab/latexify](https://github.com/sustainability-lab/latexify)**
 
-```python
-# IEEE style (single column)
-def ieee_style():
-    return latexify(fig_width=3.5, columns=1, font_size=8, style='modern')
+The repository includes:
+- Detailed installation instructions
+- Comprehensive usage examples
+- Advanced configuration options
+- Troubleshooting guide
+- Contributing guidelines
 
-# Nature style (double column)
-def nature_style():
-    return latexify(fig_width=7.0, columns=2, font_size=7, style='minimal')
+## Support
 
-# Custom style for presentations
-def presentation_style():
-    return latexify(fig_width=6.0, font_size=14, style='modern', use_tex=False)
-```
+- **Issues**: Report bugs or request features on [GitHub Issues](https://github.com/sustainability-lab/latexify/issues)
+- **License**: MIT License
+- **Maintainer**: Sustainability Lab, IIT Gandhinagar
 
-## Best Practices
+---
 
-1. **Call `latexify()` before creating figures**: This ensures all subsequent plots use the correct styling.
-
-2. **Use LaTeX math notation**: Write math expressions like `r'$\alpha + \beta^2$'` for proper rendering.
-
-3. **Consistent color scheme**: Use `get_color_palette()` for publication-quality colors.
-
-4. **Save in vector format**: Use PDF or SVG for scalable figures in publications.
-
-5. **Match journal requirements**: Check specific width and font size requirements for your target journal.
-
-6. **Test without LaTeX**: If you encounter LaTeX errors, set `use_tex=False` for faster iteration.
-
-## Troubleshooting
-
-### Common LaTeX Issues
-
-If you encounter LaTeX errors:
-
-```python
-# Quick fix: disable LaTeX temporarily
-latexify(use_tex=False)
-
-# Or install required LaTeX packages
-# On Ubuntu/Debian: sudo apt-get install texlive-latex-extra
-# On macOS: brew install --cask mactex
-```
-
-### Font Issues
-
-```python
-# List available fonts
-import matplotlib.font_manager as fm
-print([f.name for f in fm.fontManager.ttflist])
-
-# Use system fonts if LaTeX unavailable
-latexify(use_tex=False)
-plt.rcParams['font.family'] = 'Times New Roman'  # or other serif font
-```
-
-This tool ensures your figures meet the highest publication standards while maintaining consistency across your research output.
+*Developed by the [Sustainability Lab](/) at IIT Gandhinagar to help researchers create beautiful, publication-ready figures with minimal effort.*

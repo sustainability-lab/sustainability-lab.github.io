@@ -8,11 +8,11 @@ Paper writing is a key part of research. This page contains some tips and tricks
 I gave a talk ([recording here](https://www.youtube.com/watch?v=LoCoplWgvp4), [slides here](https://github.com/nipunbatra/CS-Research-Methods-Bootcamp/blob/master/RM101.pdf)) on how to write a paper. I recommend watching it. Other materials from the talk are available [here](https://github.com/nipunbatra/CS-Research-Methods-Bootcamp).
 
 #### LaTeXify figures
-We'd suggest using [this latexification tool](https://nipunbatra.github.io/lab/papers.html#latexify-figures) to make the `matplotlib` figures publication-ready. It helps in the following aspects:
+Use our [LaTeXify Python package](https://github.com/sustainability-lab/latexify) to transform matplotlib figures into publication-ready plots. See our [local guide](latexify-plots.qmd) for installation and examples. Key benefits:
 
-1. It helps in setting the exact size of the figure relative to the column width or page width of the paper. After using this tool, manually setting the size within the `\begin{figure}` block is rarely needed.
-1. We can set the font size relative to the text font size in the paper to ensure fonts are not too small or too big.
-1. It converts the fonts into latex fonts so that the fonts in the figures do not look different from the main text font.
+1. **Precise Figure Sizing**: Automatic sizing relative to column width or page width - manual sizing within `\begin{figure}` blocks is rarely needed
+2. **Font Size Control**: Sets font size relative to document text font size to ensure optimal readability
+3. **LaTeX Font Matching**: Converts fonts to LaTeX fonts so figures seamlessly match your document typography
 
 > Tip: You can find page width and column width with `\the\textwidth` and  `\the\columnwidth` commands, respectively.
 
