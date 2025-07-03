@@ -40,7 +40,8 @@ toc: true
   *From IIIT Delhi* [[Link](https://x.com/nipun_batra/status/1702672278436135241)]
 
 - **UbiComp Gaetano Borriello Outstanding Student Award Finalist** - Rishiraj Adhikary  
-  [[Details](https://ubicomp.org/sc/awards.html)]
+  [[Details](https://ubicomp.org/sc/awards.html)]  
+  ![Rishiraj receiving UbiComp certificate](images/awards/rishiraj-ubicomp.JPG){.award-image}
 
 - **Gold Medal for Outstanding Research** - Ankita Jain  
   *IITGN Convocation 2023* [[Link](https://iitgn.ac.in/convocation/archives/2023/)]
@@ -66,7 +67,8 @@ toc: true
 ### 2024
 - **Heidelberg Laureate Forum Selection** - Rishiraj Adhikary  
   *One of only 200 individuals worldwide selected to meet laureates from various fields, including Turing Award winners*  
-  [[Details](https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html)]
+  [[Details](https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html)]  
+  ![Rishiraj at HLF Poster Presentation](images/awards/rishiraj-hlf.jpg){.award-image}
 
 ### 2022
 - **Co-author in "Probabilistic Machine Learning: Advanced Topics"** - Zeel B Patel  
