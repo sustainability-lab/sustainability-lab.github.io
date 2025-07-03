@@ -2,15 +2,15 @@
 title: Publications
 ---
 
-<div style="text-align: center; margin: 20px 0; padding: 15px; background: #f8f9fa; border-radius: 8px;">
-  <p><strong>📚 Download All Publications Bibliography</strong></p>
-  <a href="bibtex/all_publications.bib" class="paper-button" download style="background-color: #6366f1; font-weight: bold;">
-    📋 Download Complete BibTeX File
-  </a>
-  <p style="margin-top: 10px; font-size: 0.9rem; color: #6b7280;">
-    Contains all 41 publications from the Sustainability Lab
-  </p>
-</div>
+## Download Publications in Multiple Formats
+
+- [BibTeX](bibtex/all_publications.bib) - Complete bibliography file
+- [Text](exports/all_publications.txt) - Plain text format  
+- [CSV](exports/all_publications.csv) - Spreadsheet format
+- [Markdown](exports/all_publications.md) - Documentation format
+- [Word](exports/all_publications.docx) - Word document format
+
+*All formats contain complete publication information and citations (41 publications)*
 
 
 <!-- 
@@ -36,11 +36,16 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2024/Brick_Kilns.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #e3f2fd; color: #1565c0; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Computer Vision</span>
+  <span class="tag" style="background: #e8f5e8; color: #2e7d32; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Sustainability</span>
+  <span class="tag" style="background: #fff3e0; color: #ef6c00; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Policy</span>
+</div>
 <p class="paper-title">Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data</p>
 <p>Zeel B Patel, Rishabh Mondal, Shataxi Dubey, Suraj Jaiswal, Sarath Guttikunda, Nipun Batra</p>
 <p><i>ACM Journal on Computing and Sustainable Societies (JCSS) 2025</i></p>
 <a href="https://arxiv.org/abs/2412.04065" class="paper-button">arXiv</a>
-<a href="bibtex/space2policy2025.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/space2policy2025.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://www.youtube.com/watch?v=BeQt_vrnsic" class="paper-button">YouTube</a>
 <a href="https://docs.google.com/presentation/d/19jIDm3kSZlOdnhgIIvWf8tZNjMx0dRcCmp0Z3nZVUEw/edit?usp=sharing" class="paper-button">Google AQ Summit 2024</a>
 <a href="https://docs.google.com/presentation/d/1PniVOoJEedGP-5N4hSqg21xjSv7v2uT4xSKNe1qB2vo/edit?usp=sharing" class="paper-button">IITD Talk</a>
@@ -63,11 +68,15 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2024/NILM_AL.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span>
+  <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span>
+</div>
 <p class="paper-title">Benchmarking Active Learning for NILM</p>
 <p>Dhruv Patel, Ankita Kumari Jain, Haikoo Khandor, Xhitij Choudhary, Nipun Batra</p>
 <p><i>arXiv 2024</i></p>
 <a href="https://arxiv.org/abs/2411.15805" class="paper-button">arXiv</a>
-<a href="bibtex/nilm_al2024.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/nilm_al2024.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <!-- <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/brick_kiln_interactive_visualize" class="paper-button">HuggingFace</a> -->
 </div>
 </div>
@@ -75,11 +84,15 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2024/SpiroActive.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #fce4ec; color: #c2185b; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Health</span>
+  <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span>
+</div>
 <p class="paper-title">SpiroActive: Active Learning for Efficient Data Acquisition for Spirometry</p>
 <p>Ankita Kumari Jain, Nitish Sharma, Madhav Kanda, Nipun Batra</p>
 <p><i>arXiv 2024</i></p>
 <a href="https://arxiv.org/abs/2410.22950" class="paper-button">arXiv</a>
-<a href="bibtex/spiroactive2024.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/spiroactive2024.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <!-- <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/brick_kiln_interactive_visualize" class="paper-button">HuggingFace</a> -->
 </div>
 </div>
@@ -87,11 +100,15 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2024/VayuBuddy_diagram.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f1f8e9; color: #558b2f; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span>
+  <span class="tag" style="background: #e8eaf6; color: #3f51b5; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NLP</span>
+</div>
 <p class="paper-title">VayuBuddy: an LLM-Powered Chatbot to Democratize Air Quality Insights</p>
 <p>Zeel B Patel, Yash Bachwana, Nitish Sharma, Sarath Guttikunda, Nipun Batra</p>
 <p><i>arXiv 2024</i></p>
 <a href="https://arxiv.org/abs/2411.12760" class="paper-button">arXiv</a>
-<a href="bibtex/vayubuddy2024.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/vayubuddy2024.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://docs.google.com/presentation/d/1E3rXyLsp7dWBI4LSL7eOpKLXzjShEawxIUv8vTNVU0Y/edit?usp=sharing" class="paper-button">Google AQ Summit 2024</a>
 <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuBuddy" class="paper-button">HuggingFace</a>
 <a href="https://www.divyabhaskar.co.in/epaper/detail-page/ahmedabad-city-bhaskar/44/2024-12-17" class="paper-button">News: Divya Bhaskar</a>
@@ -104,11 +121,15 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2024/jouleseye.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #fce4ec; color: #c2185b; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Health</span>
+  <span class="tag" style="background: #e3f2fd; color: #1565c0; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Computer Vision</span>
+</div>
 <p class="paper-title">JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising</p>
 <p>Rishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel</p>
 <p><i>ACM Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) 2024</i>; and <i>ACM Ubicomp 2024</i></p>
 <a href="../papers/2024/IMWUT_JoulesEye.pdf" class="paper-button">PDF</a>
-<a href="bibtex/jouleseye2024.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/jouleseye2024.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/rishi-a/JoulesEye-Release" class="paper-button">Github</a>
 <a href="../slides/2024/JoulesEye-ACM-PIC.pdf" class="paper-button">Poster</a>
 <a href="https://www.youtube.com/watch?v=5J9KqrDnj20" class="paper-button">YouTube</a>
@@ -137,11 +158,16 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2023/airdelhi.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f1f8e9; color: #558b2f; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span>
+  <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span>
+  <span class="tag" style="background: #fff8e1; color: #f57f17; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Dataset</span>
+</div>
 <p class="paper-title">AIRDELHI: Fine-Grained Spatio-Temporal Particulate Matter Dataset From Delhi For ML based Modeling</p>
 <p>Sachin Chauhan, Zeel B Patel, Sayan Ranu, Rijurekha Sen, and Nipun Batra.</p>
 <p><i>Datasets and Benchmarks Track, NeurIPS 2023, the Thirty-seventh Annual Conference on Neural Information Processing Systems</i></p>
 <a href="../papers/2023/airdelhi.pdf" class="paper-button">PDF</a>
-<a href="bibtex/airdelhi2023.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/airdelhi2023.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/sachin-iitd/DelhiPMDatasetBenchmark" class="paper-button">Github</a>
 </div>
 </div>
@@ -151,11 +177,15 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2023/spiromask-hero.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #fce4ec; color: #c2185b; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Health</span>
+  <span class="tag" style="background: #e0f2f1; color: #00695c; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">IoT</span>
+</div>
 <p class="paper-title">SpiroMask: measuring Lung function using consumer-grade masks</p>
 <p>Rishiraj Adhikary, Dhruvi Lodhavia, Chris Francis, Rohit Patil, Tanmay Srivastava, Prerna Khanna, Nipun Batra, Joseph Breda, Jacob Peplinski, Shwetak Patel</p>
 <p><i>ACM Transactions on Computing for Healthcare 2023</i></p>
 <a href="../papers/2023/spiromask.pdf" class="paper-button">PDF</a>
-<a href="bibtex/spiromask2023.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/spiromask2023.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/rishi-a/SpiroMask" class="paper-button">Github</a>
 <a href="../slides/2023/SpiroMask.pptx" class="paper-button">Slides (PDF)</a>
 <a href="https://www.ahmedabadmirror.com/iit-gn-researchers-devise-mask-to-measure-lung-health/81846808.html" class="paper-button">News coverage</a>
@@ -168,11 +198,15 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2022/I_Dont_Know.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span>
+  <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span>
+</div>
 <p class="paper-title">"I do not know": Quantifying Uncertainty in Neural Network Based Approaches for Non-Intrusive Load Monitoring</p>
 <p>Vibhuti Bansal, Rohit Khoiwal, Hetvi Shastri, Haikoo Khandor, Nipun Batra</p>
 <p><i>The 9th ACM International Conference on Systems for Energy-Efficient Built Environments (BuildSys 2022)</i></p>
 <a href="../papers/2022/buildsys22-nilm.pdf" class="paper-button">PDF</a>
-<a href="bibtex/uncertainty_nilm2022.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/uncertainty_nilm2022.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/VibhutiBansal-11/NILM_Uncertainty" class="paper-button">Github</a>
 <a href="https://www.youtube.com/watch?v=wt0zuNb-9mo" class="paper-button">Youtube</a>
 <a href="../slides/2021/batra-buildsys21-slides.pdf" class="paper-button">Slides (PDF)</a>
@@ -184,11 +218,15 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="../papers/2022/compass-india.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f1f8e9; color: #558b2f; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span>
+  <span class="tag" style="background: #e8eaf6; color: #3f51b5; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NLP</span>
+</div>
 <p class="paper-title">Samachar: Print News Media on Air Pollution in India</p>
 <p>Karm Patel, Rishiraj Adhikary, Zeel B Patel, Nipun Batra, Sarath Guttikunda</p>
 <p><i>ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (COMPASS) (COMPASS '22)</i></p>
 <a href="../papers/2022/compass22-samachaar.pdf" class="paper-button">PDF</a>
-<a href="bibtex/samachar2022.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/samachar2022.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/karm-patel/Samachar-News-media-on-air-pollution" class="paper-button">Github</a>
 <a href="../slides/2022/Samachar_Compass.pdf" class="paper-button">Slides (PDF)</a>
 <a href="../slides/2022/Samachar_Compass.pptx" class="paper-button">Slides (Pptx)</a>
@@ -200,11 +238,15 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2022/Scalable_GaussianProcesses.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f1f8e9; color: #558b2f; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span>
+  <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span>
+</div>
 <p class="paper-title">Accurate and Scalable Gaussian Processes for Fine-grained Air Quality Inference</p>
 <p>Zeel B Patel, Palak Purohit, Harsh Patel, Shivam Sahni, and Nipun Batra</p>
 <p><i>Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI-22)</i></p>
 <a href="../papers/2022/aaai_22_air.pdf" class="paper-button">PDF</a>
-<a href="bibtex/gaussian_processes2022.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/gaussian_processes2022.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/patel-zeel/AAAI22" class="paper-button">Github</a>
 <a href="../slides/2022/AAAI22_Poster.pdf" class="paper-button">Poster</a>
 <a href="https://www.youtube.com/watch?v=zAEOeIU0d78&t=6517s" class="paper-button">Youtube</a>
@@ -219,11 +261,15 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2022/Vastr-Gan.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #e8eaf6; color: #3f51b5; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NLP</span>
+  <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span>
+</div>
 <p class="paper-title">Vastr-GAN: Versatile Apparel Synthesised from Text using a Robust Generative Adversarial Network</p>
 <p>Shastri, Hetvi; Lodhavia, Dhruvi; Purohit, Palak; Kaoshik, Ronak; Batra, Nipun</p>
 <p><i>CODS-COMAD '22 : 5th Joint International Conference on Data Science & Management of Data (9th ACM IKDD CODS and 27th COMAD)</i></p>
 <a href="2022/CODS_COMAD_22_Vastr-Gan.pdf" class="paper-button">PDF</a>
-<a href="bibtex/vastr_gan2022.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/vastr_gan2022.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/Dhruvi-Lodhavia/Vastr-GAN/tree/main/FY-GAN" class="paper-button">Github</a>
 </div>
 </div> 
@@ -233,11 +279,15 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2021/ACM-CHI-21_Vartalaap.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f1f8e9; color: #558b2f; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span>
+  <span class="tag" style="background: #e8eaf6; color: #3f51b5; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NLP</span>
+</div>
 <p class="paper-title">Vartalaap: what drives #airquality discussions: politics, pollution or pseudo-science?</p>
 <p>Rishiraj Adhikary, Zeel B. Patel, Tanmay Srivastava, Nipun Batra, Mayank Singh, Udit Bhatia, and Sarath Guttikunda</p>
 <p><i>Proceedings of the ACM on Human-Computer Interaction 5, no. CSCW1 (2021)</i></p>
 <a href="2021/vartalaap.pdf" class="paper-button">PDF</a>
-<a href="bibtex/vartalaap2021.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/vartalaap2021.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/rishi-a/Vartalaap" class="paper-button">Github</a>
 <a href="../slides/2021/CSCW-Full-Presentation.pdf" class="paper-button">Slides (PDF)</a>
 <a href="../slides/2021/CSCW-Full-Presentation.pdf" class="paper-button">Slides (pptx)</a>
@@ -249,11 +299,15 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2021/buildsys21.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span>
+  <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span>
+</div>
 <p class="paper-title">Neural Network Approaches and Dataset Parser for NILM Toolkit</p>
 <p>Hetvi Shastri, Nipun Batra</p>
 <p><i>8th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (Buildsys)</i></p>
 <a href="../papers/2021/buildsys.pdf" class="paper-button">PDF</a>
-<a href="bibtex/nilmtk_buildsys2021.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/nilmtk_buildsys2021.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="../slides/2021/buildsys21-slides.pdf" class="paper-button">Slides (PDF)</a>
 <a href="https://www.youtube.com/watch?v=jHXBVaVFhl8&t=24835s" class="paper-button">YouTube</a>
 <a href="https://github.com/nilmtk/nilmtk-contrib" class="paper-button">Github</a>
@@ -270,7 +324,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Kukunuri Rithwik, Rishiraj Adhikary, Mahika Om Jaguste, Nipun Batra and Ashish Tendulkar</p>
 <p><i>4th Workshop on Visualization for AI Explainability (VISxAI’21)</i></p>
 <a href="https://nipunbatra.github.io/hmm/" class="paper-button">Article</a>
-<a href="bibtex/hmm_visxai2021.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/hmm_visxai2021.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 </div>
 </div>
 
@@ -283,7 +337,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Zeel B Patel, Nipun Batra</p>
 <p><i>3rd Workshop on Visualization for AI Explainability (VISxAI’20)</i></p>
 <a href="https://patel-zeel.github.io/active-learning-visualization/" class="paper-button">Article</a>
-<a href="bibtex/active_learning_visxai2020.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/active_learning_visxai2020.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 </div>
 </div>
 
@@ -292,11 +346,15 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2020/EDGE_NILM.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span>
+  <span class="tag" style="background: #e0f2f1; color: #00695c; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">IoT</span>
+</div>
 <p class="paper-title">EdgeNILM: towards NILM on edge devices</p>
 <p>Kukunuri, Rithwik, Anup Aglawe, Jainish Chauhan, Kratika Bhagtani, Rohan Patil, Sumit Walia, and Nipun Batra</p>
 <p><i>Proceedings of the 7th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation, pp. 90-99. 2020.</i></p>
 <a href="2020/edge_nilm.pdf" class="paper-button">PDF</a>
-<a href="bibtex/edgenilm2020.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/edgenilm2020.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/EdgeNILM/EdgeNILM" class="paper-button">Github</a>
 </div>
 </div>
@@ -307,11 +365,14 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2020/Distil20_BayesOpt.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span>
+</div>
 <p class="paper-title">Exploring Bayesian Optimization</p>
 <p>Apoorv Agnihotri, Nipun Batra </p>
 <p><i>Distill Journal 2020</i></p>
 <a href="https://distill.pub/2020/bayesian-optimization/" class="paper-button">Article</a>
-<a href="bibtex/bayesian_optimization_distill2020.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/bayesian_optimization_distill2020.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 </div>
 </div>
 
@@ -321,11 +382,15 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2020/COMAD20_PlantDoc.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #e3f2fd; color: #1565c0; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Computer Vision</span>
+  <span class="tag" style="background: #fff8e1; color: #f57f17; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Dataset</span>
+</div>
 <p class="paper-title">PlantDoc: A Dataset for Visual Plant Disease Detection.</p>
 <p>Davinder Singh, Naman Jain, Pranjali Jain, Pratik Kayal, Sudhakar Kumawat, Nipun Batra</p>
 <p><i>ACM India Joint International Conference on Data Science & Management of Data (CODS-COMAD 2020)</i></p>
 <a href="https://arxiv.org/pdf/1911.10317.pdf" class="paper-button">PDF</a>
-<a href="bibtex/plantdoc2020.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/plantdoc2020.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/pratikkayal/PlantDoc-Object-Detection-Dataset" class="paper-button">Dataset</a>
 <a href="https://github.com/pratikkayal/PlantDoc-Dataset" class="paper-button">Github</a>
 </div>
@@ -336,11 +401,15 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2019/CIKM19_ActiveCollabSensing.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span>
+  <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span>
+</div>
 <p class="paper-title">Active Collaborative Sensing for Energy Breakdown</p>
 <p>Yiling Jia, Nipun Batra, Hongning Wang, Kamin Whitehouse</p>
 <p><i>The 28th ACM International Conference on Information and Knowledge Management (CIKM'2019)</i></p>
 <a href="2019/batra_CIKM_19.pdf" class="paper-button">PDF</a>
-<a href="bibtex/active_collaborative_sensing2019.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/active_collaborative_sensing2019.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/yilingjia/ActSense" class="paper-button">Github</a>
 <a href="../slides/2019/ActiveSensing_CIKM2019.pdf" class="paper-button">Slides (PDF)</a>
 </div>
@@ -352,11 +421,14 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2019/Buildsys19_demo.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span>
+</div>
 <p class="paper-title">Demo Abstract: A demonstration of reproducible state-of-the-art energy disaggregation using NILMTK</p>
 <p>Nipun Batra, Rithwik Kukunuri, Ayush Pandey, Raktim Malakar, Rajat Kumar, Odysseas Krystalakos, Mingjun Zhong, Paulo Meira, Oliver Parson</p>
 <p><i>The 6th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys ’19)</i></p>
 <a href="2019/batra_buildsys19demo.pdf" class="paper-button">PDF</a>
-<a href="bibtex/nilmtk_demo2019.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/nilmtk_demo2019.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 </div>
 </div>
 
@@ -365,11 +437,14 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2019/Buildsys19_NILMTK.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span>
+</div>
 <p class="paper-title">Towards reproducible state-of-the-art energy disaggregation</p>
 <p>Nipun Batra, Rithwik Kukunuri, Ayush Pandey, Raktim Malakar, Rajat Kumar, Odysseas Krystalakos, Mingjun Zhong, Paulo Meira, Oliver Parson</p>
 <p><i>The 6th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys ’19)</i></p>
 <a href="2019/batra_buildsys_19.pdf" class="paper-button">PDF</a>
-<a href="bibtex/nilmtk_reproducible2019.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/nilmtk_reproducible2019.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/nilmtk/nilmtk-contrib" class="paper-button">Github</a>
 </div>
 </div>
@@ -381,11 +456,15 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2019/jia19_TreeCNN.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span>
+  <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span>
+</div>
 <p class="paper-title">A Tree-Structured Neural Network Model for Household Energy Breakdown</p>
 <p>Yiling Jia, Nipun Batra, Hongning Wang, Kamin Whitehouse </p>
 <p><i>Proceedings of the 2019 World Wide Web Conference (WWW ’19)</i></p>
 <a href="2019/jia_www19.pdf" class="paper-button">PDF</a>
-<a href="bibtex/tree_cnn2019.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/tree_cnn2019.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/yilingjia/TreeCNN-for-Energy-Breakdown" class="paper-button">Github</a>
 </div>
 </div>
@@ -395,11 +474,14 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2018/buildsys18_RIMOR.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span>
+</div>
 <p class="paper-title">Rimor: Towards Identifying Anomalous Appliances in Buildings</p>
 <p>Haroon Rashid, Nipun Batra, Pushpendra Singh</p>
 <p><i>Proceedings of the 5th Conference on Systems for Built Environments (Buildsys 18)</i></p>
 <a href="https://dl.acm.org/doi/10.1145/3276774.3276797" class="paper-button">PDF</a>
-<a href="bibtex/rimor2018.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/rimor2018.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/loneharoon/AnomAppliance" class="paper-button">Github</a>
 </div>
 </div>
@@ -411,11 +493,15 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2018/AAAI18_EnergyBreakdown.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span>
+  <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span>
+</div>
 <p class="paper-title">Transferring Decomposed Tensors for Scalable Energy Breakdown across Regions</p>
 <p>Nipun Batra, Yiling Jia, Hongning Wang, Kamin Whitehouse </p>
 <p><i>AAAI 2018, Thirty-Second AAAI Conference on Artificial Intelligence (AAAI-18)</i></p>
 <a href="2018/batra_aaai_2018.pdf" class="paper-button">PDF</a>
-<a href="bibtex/energy_breakdown_aaai2018.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/energy_breakdown_aaai2018.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/nipunbatra/transferable-energy-breakdown" class="paper-button">Github</a>
 </div>
 </div>
@@ -425,11 +511,14 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2017/Phd_Thesis.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span>
+</div>
 <p class="paper-title">Systems and Analytical Techniques Towards Practical Energy Breakdown for Homes</p>
 <p>Nipun Batra </p>
 <p><i>Ph.D. Thesis</i></p>
 <a href="2017/batra_thesis.pdf" class="paper-button">PDF</a>
-<a href="bibtex/phd_thesis2017.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/phd_thesis2017.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 </div>
 </div>
 
@@ -438,11 +527,15 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2017/AAAI17_MatrixFactor.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span>
+  <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span>
+</div>
 <p class="paper-title">Matrix Factorisation for Scalable Energy Breakdown</p>
 <p>Nipun Batra, Hongning Wang, Amarjeet Singh, Kamin Whitehouse</p>
 <p><i>AAAI 2017, Thirty-First AAAI Conference on Artificial Intelligence (AAAI-17)</i></p>
 <a href="2017/batra_aaai2017.pdf" class="paper-button">PDF</a>
-<a href="bibtex/matrix_factorization_aaai2017.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/matrix_factorization_aaai2017.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/nipunbatra/mf-energybreakdown" class="paper-button">Github</a>
 <a href="../slides/2017/aaai_poster_2017.pdf" class="paper-button">Poster</a>
 </div>
@@ -454,11 +547,14 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <div class="paper">
 <img src="2016/Gemello.png" class="paper-image">
 <div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span>
+</div>
 <p class="paper-title">Gemello: Creating a Detailed Energy Breakdown from just the Monthly Electricity Bill</p>
 <p>Nipun Batra, Amarjeet Singh, Kamin Whitehouse</p>
 <p><i>KDD 2016, 22nd ACM SIGKDD conference on knowledge discovery and data mining</i></p>
 <a href="https://dl.acm.org/doi/10.1145/2939672.2939735" class="paper-button">PDF</a>
-<a href="bibtex/gemello2016.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/gemello2016.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/nipunbatra/Gemello" class="paper-button">Github</a>
 <a href="https://www.youtube.com/watch?v=pzgqd9OhvDA" class="paper-button">Youtube</a>
 <a href="../slides/2017/kdd_poster_final.pdf" class="paper-button">Poster</a> 
@@ -474,6 +570,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Nipun Batra, Amarjeet Singh, Kamin Whitehouse</p>
 <p><i>3rd International Workshop on Non-Intrusive Load Monitoring</i></p>
 <a href="http://nilmworkshop.org/2016/proceedings/Paper_ID08.pdf" class="paper-button">PDF</a>
+<a href="bibtex/exploring_energy_disaggregation2016.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="http://nilmworkshop.org/2016/slides/NipunBatra1.pdf" class="paper-button">Slides</a>
 <a href="https://youtu.be/B8UueBmU3Cs" class="paper-button">Youtube</a>
 </div>
@@ -488,6 +585,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Nipun Batra, Amarjeet Singh, Kamin Whitehouse</p>
 <p><i>3rd International Workshop on Non-Intrusive Load Monitoring</i></p>
 <a href="http://nilmworkshop.org/2016/proceedings/Paper_ID07.pdf" class="paper-button">PDF</a>
+<a href="bibtex/creating_detailed_energy_breakdown2016.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="http://nilmworkshop.org/2016/slides/NipunBatra2.pdf" class="paper-button">Slides</a>
 <a href="https://www.youtube.com/watch?v=LUauYdlbH74" class="paper-button">Youtube</a>
 </div>
@@ -502,7 +600,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Nipun Batra, Amarjeet Singh, Kamin Whitehouse</p>
 <p><i>2nd ACM International Conference on Embedded Systems For Energy-Efficient Built Environments (Buildsys 2015)</i></p>
 <a href="2015/batra_buildsys_15.pdf" class="paper-button">PDF</a>
-<a href="bibtex/if_you_measure_it2015.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/if_you_measure_it2015.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/nipunbatra/nilm-actionable" class="paper-button">Github</a>
 <a href="../slides/2015/batra_buildsys_2015_slides final.key" class="paper-button">Slides (.key)</a>
 <a href="../slides/2015/batra_buildsys_2015_slides final.pdf" class="paper-button">Slides (.pdf)</a>
@@ -519,7 +617,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p><i>Doctoral Colloqium of the 13th ACM Conference on Embedded Networked Sensor Systems (SenSys 2015)</i></p>
 <p> **[Best presentation award]** </p>
 <a href="2015/batra_sensys_dc_15.pdf" class="paper-button">PDF</a>
-<a href="bibtex/nilm_sensys_dc2015.bib" class="paper-button bibtex-btn" download>📋 BibTeX</a>
+<a href="bibtex/nilm_sensys_dc2015.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="../slides/2015/sensys_dc_trimmed.key" class="paper-button">Slides (.key)</a>
 <a href="../slides/2015/sensys_dc_trimmed.pdf" class="paper-button">Slides (.pdf)</a>
 </div>
@@ -535,6 +633,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Oliver Parson, Grant Fisher, April Hersey, Nipun Batra, Jack Kelly, Amarjeet Singh, William Knottenbelt, Alex Rogers.</p>
 <p><i>1st International Symposium on Signal Processing Applications in Smart Buildings at 3rd IEEE Global Conference on Signal and Information Processing, Orlando, FL, USA, 14-16 December, 2015.</i></p>
 <a href="../papers/2015/globalsip_smart_buildings_15_camera_ready.pdf" class="paper-button">PDF</a>
+<a href="bibtex/dataport_nilmtk2015.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 </div>
 </div>
 
@@ -548,6 +647,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p><i>First ACM International Conference on Embedded Systems For Energy-Efficient Built Environments (Buildsys 2014)</i></p>
 <p>**[Best demo award]**</p>
 <a href="2014/batra_nilmtk_v2.pdf" class="paper-button">PDF</a>
+<a href="bibtex/nilmtk_v02_2014.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/nilmtk/nilmtk/blob/master/notebooks/BuildSys_2014_demo.ipynb" class="paper-button">Demo</a>
 <a href="../slides/2014/buildsys_2014_nilmtk_poster.pdf" class="paper-button">Poster</a>
 </div>
@@ -562,6 +662,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Nipun Batra, Manoj Gulati, Puneet Jain, Kamin Whitehouse, Amarjeet Singh</p>
 <p><i>First ACM International Conference on Embedded Systems For Energy-Efficient Built Environments (Buildsys 2014)</i></p>
 <a href="2014/batra_plc.pdf" class="paper-button">PDF</a>
+<a href="bibtex/bits_watts2014.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="../slides/2014/bits_watts_poster.pdf" class="paper-button">Poster</a>
 </div>
 </div>
@@ -575,6 +676,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Nipun Batra, Jack Kelly, Oliver Parson, Haimonti Dutta, William Knottenbelt, Alex Rogers, Amarjeet Singh, Mani Srivastava</p>
 <p><i>5th International Conference on Future Energy Systems (ACM e-Energy), Cambridge, UK. 2014</i></p>
 <a href="2014/batra_nilmtk.pdf" class="paper-button">PDF</a>
+<a href="bibtex/nilmtk_acm_energy2014.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/nilmtk/nilmtk" class="paper-button">Github</a>
 <a href="../slides/2014/nilmtk_presentation.pdf" class="paper-button">Slides (.pdf)</a>
 <a href="../slides/2014/nilmtk_presentation.pptx" class="paper-button">Slides (.pptx)</a>
@@ -590,6 +692,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Nipun Batra, Oliver Parson, Mario Berges, Amarjeet Singh, Alex Rogers</p>
 <p><i>Tech. report</i></p>
 <a href="https://arxiv.org/pdf/1408.6595.pdf" class="paper-button">PDF</a>
+<a href="bibtex/nilm_comparison2014.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://combed.github.io/" class="paper-button">COMBED Dataset</a>
 </div>
 </div>
@@ -603,6 +706,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Nipun Batra, Amarjeet Singh, Pushpendra Singh, Haimonti Dutta, Venkatesh Sarangan, Mani Srivastava</p>
 <p><i>PhD. qualifiers report, IIIT Delhi</i></p>
 <a href="http://arxiv.org/abs/1404.7227" class="paper-button">PDF</a>
+<a href="bibtex/data_driven_energy2014.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="../slides/2014/compre.pdf" class="paper-button">Slides (.pdf)</a>
 </div>
 </div>
@@ -616,6 +720,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Nipun Batra, Manoj Gulati, Amarjeet Singh, Mani Srivastava</p>
 <p><i>5th ACM Workshop On Embedded Systems For Energy-Efficient Buildings (Buildsys 2013)</i></p>
 <a href="../papers/2013/buildsys_2013.pdf" class="paper-button">PDF</a>
+<a href="bibtex/its_different2013.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/nipunbatra/Home_Deployment" class="paper-button">Github</a>
 <a href="http://iawe.github.io/" class="paper-button">Dataset</a>
 <a href="../slides/2013/buildsys_13_slides.pptx" class="paper-button">Slides (.pptx)</a>
@@ -632,6 +737,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Nipun Batra, Haimonti Dutta, Amarjeet Singh </p>
 <p><i>The 12th International Conference on Machine Learning and Applications (ICMLA'13)</i></p>
 <a href="2013/batra_indic_2013.pdf" class="paper-button">PDF</a>
+<a href="bibtex/indic2013.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="../slides/2013/icmla.pptx" class="paper-button">Slides (.pptx)</a>
 <a href="../slides/2013/icmla.pdf" class="paper-button">Slides (.pdf)</a>
 </div>
@@ -646,6 +752,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Nipun Batra, Pandarasamy Arjunan, Amarjeet Singh, Pushpendra Singh  </p>
 <p><i>2013 IEEE Eighth International Conference on Intelligent Sensors, Sensor Networks and Information Processing (ISSNIP '13)</i></p>
 <a href="2013/batra_issnip_2013.pdf" class="paper-button">PDF</a>
+<a href="bibtex/obms2013.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 </div>
 </div>
 
@@ -658,12 +765,49 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p>Pandarasamy Arjunan, Nipun Batra, Haksoo Choi, Amarjeet Singh, Pushpendra Singh, Mani Srivastava  </p>
 <p><i>BuildSys '12: Proceedings of the Fourth ACM Workshop on Embedded Sensing Systems for Energy-Efficiency in Buildings</i></p>
 <a href="https://dl.acm.org/doi/pdf/10.1145/2422531.2422547" class="paper-button">PDF</a>
+<a href="bibtex/sensoract2012.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/iiitd-ucla-pc3" class="paper-button">Github</a>
 </div>
 </div>
 
 <style>
-/* Minimal BibTeX functionality styling */
+/* Paper layout and image sizing */
+.paper {
+  display: flex !important;
+  gap: 20px !important;
+  margin: 20px 0 !important;
+  padding: 20px !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+}
+
+.paper-image {
+  width: 250px !important;
+  height: 180px !important;
+  object-fit: cover !important;
+  border-radius: 6px !important;
+  flex-shrink: 0 !important;
+}
+
+.paper-details {
+  flex: 1 !important;
+}
+
+/* Research area tags */
+.research-tags {
+  margin-bottom: 8px !important;
+}
+
+.tag {
+  display: inline-block !important;
+  padding: 2px 8px !important;
+  border-radius: 12px !important;
+  font-size: 0.75rem !important;
+  margin-right: 6px !important;
+  border: 1px solid rgba(0,0,0,0.1) !important;
+}
+
+/* BibTeX functionality styling */
 .bibtex-btn {
   background-color: #10b981 !important;
   font-size: 0.8rem !important;
@@ -701,9 +845,89 @@ STORED AS A TEMPLATE FOR FUTURE USE
     opacity: 1;
   }
 }
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .paper {
+    flex-direction: column !important;
+  }
+  
+  .paper-image {
+    width: 100% !important;
+    height: 150px !important;
+  }
+}
 </style>
 
 <script>
+// Search and filter functionality
+function initializeSearch() {
+  const searchInput = document.getElementById('publication-search');
+  const yearFilter = document.getElementById('year-filter');
+  const areaFilter = document.getElementById('area-filter');
+  const papers = document.querySelectorAll('.paper');
+  
+  function filterPapers() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const selectedYear = yearFilter.value;
+    const selectedArea = areaFilter.value;
+    
+    papers.forEach(paper => {
+      const title = paper.querySelector('.paper-title')?.textContent.toLowerCase() || '';
+      const authors = paper.querySelector('p:nth-of-type(2)')?.textContent.toLowerCase() || '';
+      const venue = paper.querySelector('p:nth-of-type(3)')?.textContent.toLowerCase() || '';
+      const tags = Array.from(paper.querySelectorAll('.tag')).map(tag => tag.textContent.toLowerCase()).join(' ');
+      
+      // Extract year from venue text
+      const yearMatch = venue.match(/\b(20\d{2})\b/);
+      const paperYear = yearMatch ? yearMatch[1] : '';
+      
+      // Search filter
+      const matchesSearch = searchTerm === '' || 
+        title.includes(searchTerm) || 
+        authors.includes(searchTerm) || 
+        venue.includes(searchTerm) ||
+        tags.includes(searchTerm);
+      
+      // Year filter
+      const matchesYear = selectedYear === '' || paperYear === selectedYear;
+      
+      // Area filter
+      const matchesArea = selectedArea === '' || tags.includes(selectedArea.toLowerCase());
+      
+      // Show/hide paper
+      if (matchesSearch && matchesYear && matchesArea) {
+        paper.style.display = 'flex';
+      } else {
+        paper.style.display = 'none';
+      }
+    });
+    
+    // Show/hide year headers
+    const yearHeaders = document.querySelectorAll('h2');
+    yearHeaders.forEach(header => {
+      const yearText = header.textContent.trim();
+      let hasVisiblePapers = false;
+      
+      let nextElement = header.nextElementSibling;
+      while (nextElement && nextElement.tagName !== 'H2') {
+        if (nextElement.classList.contains('paper') && nextElement.style.display !== 'none') {
+          hasVisiblePapers = true;
+          break;
+        }
+        nextElement = nextElement.nextElementSibling;
+      }
+      
+      header.style.display = hasVisiblePapers ? 'block' : 'none';
+    });
+  }
+  
+  // Add event listeners
+  searchInput.addEventListener('input', filterPapers);
+  yearFilter.addEventListener('change', filterPapers);
+  areaFilter.addEventListener('change', filterPapers);
+}
+
 // BibTeX copy functionality
 function copyBibTeX(bibId) {
   const bibElement = document.getElementById('bibtex-' + bibId);
@@ -751,7 +975,7 @@ function showCopyNotification() {
   // Create new notification
   const notification = document.createElement('div');
   notification.className = 'copy-notification';
-  notification.textContent = '📋 BibTeX copied to clipboard!';
+  notification.textContent = 'BibTeX copied to clipboard!';
   
   document.body.appendChild(notification);
   
@@ -763,8 +987,11 @@ function showCopyNotification() {
   }, 3000);
 }
 
-// Smooth scrolling for year navigation (future enhancement)
+// Initialize everything when page loads
 document.addEventListener('DOMContentLoaded', function() {
+  // Initialize search functionality
+  initializeSearch();
+  
   // Add publication statistics
   const papers = document.querySelectorAll('.paper');
   const years = [...new Set(Array.from(document.querySelectorAll('h2')).map(h => h.textContent.trim()).filter(y => /^\d{4}/.test(y)))];
