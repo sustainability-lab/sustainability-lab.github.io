@@ -247,11 +247,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="latexify-figures" class="level4">
 <h4 class="anchored" data-anchor-id="latexify-figures">LaTeXify figures</h4>
-<p>We’d suggest using <a href="https://nipunbatra.github.io/lab/papers.html#latexify-figures">this latexification tool</a> to make the <code>matplotlib</code> figures publication-ready. It helps in the following aspects:</p>
+<p>Use our <a href="https://github.com/sustainability-lab/latexify">LaTeXify Python package</a> to transform matplotlib figures into publication-ready plots. See our <a href="./latexify-plots.html">local guide</a> for installation and examples. Key benefits:</p>
 <ol type="1">
-<li>It helps in setting the exact size of the figure relative to the column width or page width of the paper. After using this tool, manually setting the size within the <code>\begin{figure}</code> block is rarely needed.</li>
-<li>We can set the font size relative to the text font size in the paper to ensure fonts are not too small or too big.</li>
-<li>It converts the fonts into latex fonts so that the fonts in the figures do not look different from the main text font.</li>
+<li><strong>Precise Figure Sizing</strong>: Automatic sizing relative to column width or page width - manual sizing within <code>\begin{figure}</code> blocks is rarely needed</li>
+<li><strong>Font Size Control</strong>: Sets font size relative to document text font size to ensure optimal readability</li>
+<li><strong>LaTeX Font Matching</strong>: Converts fonts to LaTeX fonts so figures seamlessly match your document typography</li>
 </ol>
 <blockquote class="blockquote">
 <p>Tip: You can find page width and column width with <code>\the\textwidth</code> and <code>\the\columnwidth</code> commands, respectively.</p>
