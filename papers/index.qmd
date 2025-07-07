@@ -780,7 +780,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 .paper-image {
   width: 250px !important;
   height: 180px !important;
-  object-fit: cover !important;
+  object-fit: contain !important;
   border-radius: 6px !important;
   flex-shrink: 0 !important;
 }

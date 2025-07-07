@@ -5,33 +5,8 @@
 
 **Download**: [SVG](images/logo_light.svg) | [PNG](images/logo_light.png) | [PDF](images/logo_light.pdf)
 
-::: {.panel-tabset}
-
-### Preview
-
-```svg
-<svg viewBox="0 0 480 120" xmlns="http://www.w3.org/2000/svg">
-  <title>Sustainability Lab Logo - Light Mode</title>
-  <line x1="110" y1="85" x2="110" y2="35" stroke="#444444" stroke-width="2" stroke-linecap="round"/>
-  <line x1="110" y1="85" x2="150" y2="85" stroke="#444444" stroke-width="2" stroke-linecap="round"/>
-  <path d="M 90.0 84.7 L 91.4 84.5 L 92.8 84.3 L 94.1 84.1 L 95.5 83.7 L 96.9 83.2 L 98.3 82.5 L 99.7 81.5 L 101.0 80.2 L 102.4 78.5 L 103.8 76.3 L 105.2 73.5 L 106.6 70.2 L 107.9 66.3 L 109.3 62.1 L 110.7 57.9 L 112.1 53.7 L 113.4 49.8 L 114.8 46.5 L 116.2 43.7 L 117.6 41.5 L 119.0 39.8 L 120.3 38.5 L 121.7 37.5 L 123.1 36.8 L 124.5 36.3 L 125.9 35.9 L 127.2 35.7 L 128.6 35.5 L 130.0 35.3"
-        fill="none"
-        stroke="#000000"
-        stroke-width="3.5"
-        stroke-linecap="round"/>
-  <text x="165" y="65" font-family="system-ui, sans-serif" font-size="32" font-weight="400" fill="#111111" letter-spacing="0.5px">
-    SUSTAINABILITY
-  </text>
-  <text x="165" y="85" font-family="system-ui, sans-serif" font-size="18" font-weight="300" fill="#555555" letter-spacing="3px">
-    LAB
-  </text>
-</svg>
-```
-
-### Show/Hide SVG Code
-
 <details>
-<summary>Click to view SVG code</summary>
+<summary>Show SVG code</summary>
 
 ```svg
 <svg viewBox="0 0 480 120" xmlns="http://www.w3.org/2000/svg">
@@ -53,8 +28,6 @@
 ```
 
 </details>
-
-:::
 
 ---
 
@@ -62,33 +35,8 @@
 
 **Download**: [SVG](images/logo_dark.svg) | [PNG](images/logo_dark.png) | [PDF](images/logo_dark.pdf)
 
-::: {.panel-tabset}
-
-### Preview
-
-```svg
-<svg viewBox="0 0 480 120" xmlns="http://www.w3.org/2000/svg">
-  <title>Sustainability Lab Logo - Dark Mode</title>
-  <line x1="110" y1="85" x2="110" y2="35" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round"/>
-  <line x1="110" y1="85" x2="150" y2="85" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round"/>
-  <path d="M 90.0 84.7 L 91.4 84.5 L 92.8 84.3 L 94.1 84.1 L 95.5 83.7 L 96.9 83.2 L 98.3 82.5 L 99.7 81.5 L 101.0 80.2 L 102.4 78.5 L 103.8 76.3 L 105.2 73.5 L 106.6 70.2 L 107.9 66.3 L 109.3 62.1 L 110.7 57.9 L 112.1 53.7 L 113.4 49.8 L 114.8 46.5 L 116.2 43.7 L 117.6 41.5 L 119.0 39.8 L 120.3 38.5 L 121.7 37.5 L 123.1 36.8 L 124.5 36.3 L 125.9 35.9 L 127.2 35.7 L 128.6 35.5 L 130.0 35.3"
-        fill="none"
-        stroke="#FFFFFF"
-        stroke-width="3.5"
-        stroke-linecap="round"/>
-  <text x="165" y="65" font-family="system-ui, sans-serif" font-size="32" font-weight="400" fill="#FFFFFF" letter-spacing="0.5px">
-    SUSTAINABILITY
-  </text>
-  <text x="165" y="85" font-family="system-ui, sans-serif" font-size="18" font-weight="300" fill="#AAAAAA" letter-spacing="3px">
-    LAB
-  </text>
-</svg>
-```
-
-### Show/Hide SVG Code
-
 <details>
-<summary>Click to view SVG code</summary>
+<summary>Show SVG code</summary>
 
 ```svg
 <svg viewBox="0 0 480 120" xmlns="http://www.w3.org/2000/svg">
@@ -110,8 +58,6 @@
 ```
 
 </details>
-
-:::
 
 ---
 
@@ -119,33 +65,8 @@
 
 **Download**: [SVG](images/logo_colored.svg) | [PNG](images/logo_colored.png) | [PDF](images/logo_colored.pdf)
 
-::: {.panel-tabset}
-
-### Preview
-
-```svg
-<svg viewBox="0 0 480 120" xmlns="http://www.w3.org/2000/svg">
-  <title>Sustainability Lab Logo - Modern Teal</title>
-  <line x1="110" y1="85" x2="110" y2="35" stroke="#5C9EAD" stroke-width="2" stroke-linecap="round"/>
-  <line x1="110" y1="85" x2="150" y2="85" stroke="#5C9EAD" stroke-width="2" stroke-linecap="round"/>
-  <path d="M 90.0 84.7 L 91.4 84.5 L 92.8 84.3 L 94.1 84.1 L 95.5 83.7 L 96.9 83.2 L 98.3 82.5 L 99.7 81.5 L 101.0 80.2 L 102.4 78.5 L 103.8 76.3 L 105.2 73.5 L 106.6 70.2 L 107.9 66.3 L 109.3 62.1 L 110.7 57.9 L 112.1 53.7 L 113.4 49.8 L 114.8 46.5 L 116.2 43.7 L 117.6 41.5 L 119.0 39.8 L 120.3 38.5 L 121.7 37.5 L 123.1 36.8 L 124.5 36.3 L 125.9 35.9 L 127.2 35.7 L 128.6 35.5 L 130.0 35.3" 
-        fill="none" 
-        stroke="#2F5F5F" 
-        stroke-width="3.5" 
-        stroke-linecap="round"/>
-  <text x="165" y="65" font-family="system-ui, sans-serif" font-size="32" font-weight="400" fill="#2F5F5F" letter-spacing="0.5px">
-    SUSTAINABILITY
-  </text>
-  <text x="165" y="85" font-family="system-ui, sans-serif" font-size="18" font-weight="300" fill="#4A7F7F" letter-spacing="3px">
-    LAB
-  </text>
-</svg>
-```
-
-### Show/Hide SVG Code
-
 <details>
-<summary>Click to view SVG code</summary>
+<summary>Show SVG code</summary>
 
 ```svg
 <svg viewBox="0 0 480 120" xmlns="http://www.w3.org/2000/svg">
@@ -167,8 +88,6 @@
 ```
 
 </details>
-
-:::
 
 ---
 
@@ -178,29 +97,8 @@
 
 Bold, readable "SL" favicon with brand gradient - perfect visibility at all sizes.
 
-::: {.panel-tabset}
-
-### Preview
-
-```svg
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <title>Sustainability Lab - SL Favicon</title>
-  <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <circle cx="50" cy="50" r="48" fill="url(#bgGradient)" stroke="#ffffff" stroke-width="4"/>
-  <text x="28" y="68" font-family="Roboto, system-ui, sans-serif" font-size="42" font-weight="700" fill="#ffffff" text-anchor="middle">S</text>
-  <text x="72" y="68" font-family="Roboto, system-ui, sans-serif" font-size="42" font-weight="700" fill="#ffffff" text-anchor="middle">L</text>
-</svg>
-```
-
-### Show/Hide SVG Code
-
 <details>
-<summary>Click to view SVG code</summary>
+<summary>Show SVG code</summary>
 
 ```svg
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -218,8 +116,6 @@ Bold, readable "SL" favicon with brand gradient - perfect visibility at all size
 ```
 
 </details>
-
-:::
 
 ### Multiple Sizes Available:
 - **Standard**: [favicon-sl.svg](images/favicon-sl.svg) (100x100)
@@ -232,7 +128,7 @@ Bold, readable "SL" favicon with brand gradient - perfect visibility at all size
 
 For lab presentations, slides, and other materials, check out our comprehensive template repository:
 
-**🎯 [Lab Presentation Templates](https://github.com/sustainability-lab/lab-templates)**
+**[Lab Presentation Templates](https://github.com/sustainability-lab/lab-templates)**
 
 This repository contains:
 

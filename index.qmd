@@ -48,16 +48,16 @@ toc: false
 </div>
 
 <div class="project-card">
-<img src="images/mainpage/ContRespiration.png" alt="Continuous Respiration Project" class="project-image">
+<img src="papers/2022/I_Dont_Know.png" alt="I Do Not Know Project" class="project-image">
 <div class="project-content">
-<h3>Continuous Respiration Detection</h3>
-<p>Advanced algorithms for real-time respiration rate monitoring during physical activity.</p>
+<h3>"I do not know"</h3>
+<p>Quantifying Uncertainty in Neural Network Based Approaches for Non-Intrusive Load Monitoring</p>
 <div class="project-tags">
-<span class="tag">Wearables</span>
-<span class="tag">Signal Processing</span>
-<span class="tag">Health Tech</span>
+<span class="tag">NILM</span>
+<span class="tag">Machine Learning</span>
+<span class="tag">Uncertainty</span>
 </div>
-<a href="https://dl.acm.org/doi/fullHtml/10.1145/3544793.3560348" class="project-link">Learn More →</a>
+<a href="https://github.com/VibhutiBansal-11/NILM_Uncertainty" class="project-link">Learn More →</a>
 </div>
 </div>
 
@@ -90,7 +90,50 @@ toc: false
 </div>
 
 <div class="project-card">
-<img src="papers/2023/airdelhi.png" alt="VayuBuddy Project" class="project-image">
+<img src="papers/2022/compass-india.png" alt="Samachar Project" class="project-image">
+<div class="project-content">
+<h3>Samachar</h3>
+<p>Print News Media on Air Pollution in India - analyzing how air quality is covered in Indian print media.</p>
+<div class="project-tags">
+<span class="tag">Air Quality</span>
+<span class="tag">NLP</span>
+<span class="tag">Policy</span>
+</div>
+<a href="https://github.com/karm-patel/Samachar-News-media-on-air-pollution" class="project-link">Learn More →</a>
+</div>
+</div>
+
+<div class="project-card">
+<img src="papers/2022/Scalable_GaussianProcesses.png" alt="Gaussian Processes Project" class="project-image">
+<div class="project-content">
+<h3>Accurate and Scalable Gaussian Processes</h3>
+<p>Machine learning approach for fine-grained air quality inference using Gaussian processes at scale.</p>
+<div class="project-tags">
+<span class="tag">Air Quality</span>
+<span class="tag">Machine Learning</span>
+<span class="tag">Gaussian Processes</span>
+</div>
+<a href="https://github.com/patel-zeel/AAAI22" class="project-link">Learn More →</a>
+</div>
+</div>
+
+
+<div class="project-card">
+<img src="papers/2014/ACM-energy14_NILMTK.png" alt="NILMTK Project" class="project-image">
+<div class="project-content">
+<h3>NILMTK</h3>
+<p>An Open Source Toolkit for Non-intrusive Load Monitoring - pioneering framework for energy disaggregation research.</p>
+<div class="project-tags">
+<span class="tag">NILM</span>
+<span class="tag">Toolkit</span>
+<span class="tag">Open Source</span>
+</div>
+<a href="https://github.com/nilmtk/nilmtk" class="project-link">Learn More →</a>
+</div>
+</div>
+
+<div class="project-card">
+<img src="papers/2023/airdelhi.png" alt="AirDelhi Project" class="project-image">
 <div class="project-content">
 <h3>AirDelhi</h3>
 <p>A fine-grained air quality dataset from mobile sensors on Delhi buses, enabling better pollution monitoring.</p>
@@ -222,7 +265,7 @@ toc: false
 </div>
 
 <div class="join-section">
-<h2>🚀 Join Our Mission</h2>
+<h2>Join Our Mission</h2>
 <p>Embark on a journey to drive innovation in sustainability through cutting-edge AI research.</p>
 
 <div class="join-buttons">
@@ -233,6 +276,6 @@ toc: false
 </div>
 
 <div style="margin-top: 30px; font-size: 0.9rem; opacity: 0.8;">
-<p><strong>Ready to make an impact?</strong> ⭐</p>
+<p><strong>Ready to make an impact?</strong></p>
 </div>
 </div>

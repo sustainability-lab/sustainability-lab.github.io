@@ -3,11 +3,11 @@ title: "Technical Background"
 ---
 
 ::: {.callout-tip}
-## 🎯 Start with Our Research Skills Bootcamp
+## Start with Our Research Skills Bootcamp
 
 **New to research?** Begin your journey with our comprehensive [**Sustainability Research Bootcamp**](https://sustainability-lab.github.io/sustainability-research-bootcamp/) - a structured 10-day program covering research fundamentals, from literature reviews to technical writing. Perfect preparation before diving into the technical skills below.
 
-[**🚀 Access the Bootcamp**](https://sustainability-lab.github.io/sustainability-research-bootcamp/){.btn .btn-primary}
+[**Access the Bootcamp**](https://sustainability-lab.github.io/sustainability-research-bootcamp/){.btn .btn-primary}
 :::
 
 ### Git and GitHub

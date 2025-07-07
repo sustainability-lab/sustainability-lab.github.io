@@ -316,7 +316,7 @@ div.hero-section h1 {
 .project-image {
     width: 100%;
     height: 180px;
-    object-fit: cover;
+    object-fit: contain;
     background: #f7fafc;
 }
 
