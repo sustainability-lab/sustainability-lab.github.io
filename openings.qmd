@@ -498,13 +498,19 @@ We believe in the transformative potential of AI to monitor environmental change
 
 <div class="position-card">
 <h3>🔬 6-Month Research Internships</h3>
+
+<div class="deadline-alert">
+⏰ <strong>APPLICATION DEADLINE:</strong> July 13, 2025
+</div>
+
 <p>Looking for a 6-month internship? Get in touch with the Principal Investigator (PI) directly to explore personalized opportunities in sustainability and AI research using cutting-edge ML technologies.</p>
 
 <div class="highlight-box">
 <strong>💡 Perfect for:</strong> Students wanting deep, sustained research experience with flexible timelines and personalized mentorship.
 </div>
 
-<a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-primary">Contact Prof. Nipun Batra</a>
+<a href="https://docs.google.com/document/d/1xrV1JSvUXzhSzQCGnkjJmhA5afYilaUknxklk6_EDqM/edit?tab=t.0" target="_blank" class="btn btn-primary">View Details & Apply</a>
+<a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-secondary">Contact Prof. Nipun Batra</a>
 <a href="computational-resources.qmd" class="btn btn-secondary">View Our Resources</a>
 </div>
 
