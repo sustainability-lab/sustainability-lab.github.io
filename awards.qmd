@@ -22,7 +22,9 @@ toc: true
   ![SIGEnergy Rising Star Certificate](images/awards/nipun-certificate-rising-star.jpg){.award-image}
 
 - **Excellence in Teaching Award** - Prof. Nipun Batra *(January 2025)*  
-  *Citation: "Based on his contributions and achievements in teaching, as evidenced by students' feedback on his teaching, including outstanding organization and conduct of courses as well as the adoption of active learning strategies."*
+  *Citation: "Based on his contributions and achievements in teaching, as evidenced by students' feedback on his teaching, including outstanding organization and conduct of courses as well as the adoption of active learning strategies."*  
+  ![Excellence in Teaching Award 1](images/awards/nipun-teaching24.jpeg){.award-image}
+  ![Excellence in Teaching Award 2](images/awards/nipun-teaching24-2.jpeg){.award-image}
 
 - **Third Prize in Simply Speaking 4.0 Competition** - Shataxi Dubey *(January 2025)*  
   *Organized by Leadership Development Initiative, IITGN*
@@ -33,11 +35,16 @@ toc: true
 ### 2024
 - **Bhalodia-Khetan Summer Research Excellence Award** - Devodita Chakravarty  
   *Project: "ML for Sustainability: Satellite Data Preprocessing for Detecting Pollution Sources Using Computer Vision"*  
-  *₹50,000 cash prize and Certificate of Excellence*
+  *₹50,000 cash prize and Certificate of Excellence*  
+  ![Devodita Award 1](images/awards/devodita-1.png){.award-image}
+  ![Devodita Award 2](images/awards/devodita-3.png){.award-image}
 
 ### 2023
 - **Young Alumni Award** - Prof. Nipun Batra (November 2023)  
-  *From IIIT Delhi* [[Link](https://x.com/nipun_batra/status/1702672278436135241)]
+  *From IIIT Delhi* [[Link](https://x.com/nipun_batra/status/1702672278436135241)]  
+  ![Young Alumni Award 1](images/awards/nipun-ya1.jpeg){.award-image}
+  ![Young Alumni Award 2](images/awards/nipun-ya2.jpeg){.award-image}
+  ![Young Alumni Award 3](images/awards/nipun-ya3.jpeg){.award-image}
 
 - **UbiComp Gaetano Borriello Outstanding Student Award Finalist** - Rishiraj Adhikary  
   [[Details](https://ubicomp.org/sc/awards.html)]  
