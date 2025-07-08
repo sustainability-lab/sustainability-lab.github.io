@@ -15,6 +15,63 @@ lightbox: auto
 <h2 class="year-header">2025</h2>
 
 <div class="month-section">
+<h3 class="month-header">June 2025</h3>
+<div class="photo-grid">
+
+<div class="photo-card">
+![2025 MTech graduation ceremony group photo](images/memories/2025-graduating-mtech-1.jpg){group="memories" 
+description="2025 MTech Graduation Ceremony - Celebrating the graduation of our MTech students in 2025, marking the completion of their research journey and the beginning of their professional careers."}
+<div class="photo-info">
+<div class="photo-title">2025 MTech Graduation Ceremony</div>
+<div class="photo-description">Celebrating the completion of our MTech students' research journey</div>
+<div class="photo-date">June 2025</div>
+</div>
+</div>
+
+<div class="photo-card">
+![2025 MTech graduation celebration with faculty](images/memories/2025-graduating-mtech-2.jpg){group="memories"
+description="2025 MTech Graduation with Faculty - A special moment with faculty members celebrating the achievements of our graduating MTech students who have contributed significantly to sustainability research."}
+<div class="photo-info">
+<div class="photo-title">2025 MTech Graduation with Faculty</div>
+<div class="photo-description">Special celebration with faculty members</div>
+<div class="photo-date">June 2025</div>
+</div>
+</div>
+
+<div class="photo-card">
+![2025 MTech graduation group celebration](images/memories/2025-graduating-mtech-3.jpg){group="memories"
+description="2025 MTech Graduation Group Celebration - The complete graduating MTech class of 2025 celebrating their achievements in a joyful group photo marking this significant milestone."}
+<div class="photo-info">
+<div class="photo-title">2025 MTech Graduation Group Celebration</div>
+<div class="photo-description">Complete graduating MTech class celebrating their achievements</div>
+<div class="photo-date">June 2025</div>
+</div>
+</div>
+
+<div class="photo-card">
+![ACM Summer School 2025 organizers](images/memories/2025-acm-summer-school-1.jpg){group="memories"
+description="ACM Summer School 2025 Organizers - The organizing team behind the successful ACM Summer School 2025, bringing together researchers and students from around the world for knowledge sharing and collaboration."}
+<div class="photo-info">
+<div class="photo-title">ACM Summer School 2025 Organizers</div>
+<div class="photo-description">The organizing team behind the successful summer school program</div>
+<div class="photo-date">June 2025</div>
+</div>
+</div>
+
+<div class="photo-card">
+![ACM Summer School 2025 participants and organizers](images/memories/2025-acm-summer-school-2.jpg){group="memories"
+description="ACM Summer School 2025 Complete Group - All participants and organizers of the ACM Summer School 2025, showcasing the diverse community of researchers and students who came together for this enriching academic experience."}
+<div class="photo-info">
+<div class="photo-title">ACM Summer School 2025 Complete Group</div>
+<div class="photo-description">All participants and organizers of the summer school program</div>
+<div class="photo-date">June 2025</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="month-section">
 <h3 class="month-header">May 2025</h3>
 <div class="photo-grid">
 

@@ -27,7 +27,8 @@ toc: true
   ![Excellence in Teaching Award 2](images/awards/nipun-teaching24-2.jpeg){.award-image}
 
 - **Third Prize in Simply Speaking 4.0 Competition** - Shataxi Dubey *(January 2025)*  
-  *Organized by Leadership Development Initiative, IITGN*
+  *Organized by Leadership Development Initiative, IITGN*  
+  ![Shataxi LDI Award](images/awards/shataxi-ldi.png){.award-image}
 
 - **Third Prize in Undergraduate Research Showcase** - Shrimay Shah and Dhruv Gupta *(January 2025)*  
   *Project: "Brick Kilns Detection and Compliance Study" (guided by Prof. Nipun Batra)*
