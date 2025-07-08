@@ -55,8 +55,7 @@ toc: true
   ![Ankita Gold Medal](images/awards/ankita-gm-2-3.png){.award-image}
 
 - **President's Gold Medal, MTech** - Ankita Jain  
-  *IITGN Convocation 2023* [[Link](https://iitgn.ac.in/convocation/archives/2023/)]  
-  ![Ankita President's Gold Medal](images/awards/ankita-gm-2-3.png){.award-image}
+  *IITGN Convocation 2023* [[Link](https://iitgn.ac.in/convocation/archives/2023/)]
 
 ## Student Fellowships
 
