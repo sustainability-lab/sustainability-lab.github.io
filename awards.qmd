@@ -51,10 +51,12 @@ toc: true
   ![Rishiraj receiving UbiComp certificate](images/awards/rishiraj-ubicomp.JPG){.award-image}
 
 - **Gold Medal for Outstanding Research** - Ankita Jain  
-  *IITGN Convocation 2023* [[Link](https://iitgn.ac.in/convocation/archives/2023/)]
+  *IITGN Convocation 2023* [[Link](https://iitgn.ac.in/convocation/archives/2023/)]  
+  ![Ankita Gold Medal](images/awards/ankita-gm-2-3.png){.award-image}
 
 - **President's Gold Medal, MTech** - Ankita Jain  
-  *IITGN Convocation 2023* [[Link](https://iitgn.ac.in/convocation/archives/2023/)]
+  *IITGN Convocation 2023* [[Link](https://iitgn.ac.in/convocation/archives/2023/)]  
+  ![Ankita President's Gold Medal](images/awards/ankita-gm-2-3.png){.award-image}
 
 ## Student Fellowships
 
