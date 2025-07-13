@@ -514,21 +514,50 @@ We believe in the transformative potential of AI to monitor environmental change
 <a href="computational-resources.qmd" class="btn btn-secondary">View Our Resources</a>
 </div>
 
-### 🔬 Summer Research Internships
+### Visiting Students Research Engagement Programme
 
 <div class="position-card">
-<h3>🔬 Summer Research Internship (SRIP 2026)</h3>
-<p>Join our Summer Internship Program and work on exciting projects using cutting-edge AI technologies in the following domains:</p>
+<h3>Visiting Students Research Engagement Programme (VSREP) - Semester I 2025-26</h3>
 
-- 🤖 **AI for Sustainability:** Environmental monitoring with computer vision, climate solutions using LLMs, brick kiln detection
-- 🧬 **AI/Sensing for Health:** Respiratory monitoring, SpiroMask, JoulesEye technologies with VLMs and ML
-- 📊 **Exposition and Visualization:** Data storytelling and interactive systems with modern AI tools
-
-<div class="highlight-box">
-<strong>🎯 SRIP 2026:</strong> Applications typically open in February for summer programs. Check the <a href="https://srip.iitgn.ac.in/registration/" target="_blank">IIT Gandhinagar SRIP Portal</a> for updates. Our project codes were <strong>IP0NB0000019</strong> and <strong>IP0NB0000020</strong> in SRIP 2025.
+<div class="deadline-alert">
+<strong>APPLICATION DEADLINE:</strong> July 18, 2025, 17:00 Hours IST
 </div>
 
-**💡 Perfect for:** Undergraduate and early graduate students seeking hands-on research experience in cutting-edge AI applications.
+<p>IIT Gandhinagar is pleased to announce the launch of the <strong>Visiting Students Research Engagement Programme</strong> for Semester I of Academic Year 2025-26. This initiative offers final year students from <strong>IITs, IISc, IISERs and NITs</strong> an opportunity to undertake a semester-long research internship at IIT Gandhinagar under the mentorship of our faculty.</p>
+
+<div class="highlight-box">
+<strong>Important Dates:</strong><br>
+• <strong>Application Open:</strong> July 11, 2025<br>
+• <strong>Application Deadline:</strong> July 18, 2025, 17:00 Hours IST<br>
+• <strong>Selected Candidates Announcement:</strong> July 25, 2025<br>
+• <strong>Programme Start:</strong> August 4, 2025<br>
+• <strong>Programme End:</strong> November 20, 2025
+</div>
+
+<div class="highlight-box">
+<strong>Perfect for:</strong> Final year students from premier institutes seeking intensive research experience in AI for sustainability with faculty mentorship and potential for high-impact publications.
+</div>
+
+<a href="https://tiny.cc/vsrep" target="_blank" class="btn btn-primary">Apply Now</a>
+<a href="https://iitgn.ac.in/admissions/visiting-students-research-engagement-programme" target="_blank" class="btn btn-secondary">View Details</a>
+<a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-secondary">Contact Prof. Nipun Batra</a>
+</div>
+
+### Summer Research Internships
+
+<div class="position-card">
+<h3>Summer Research Internship (SRIP 2026)</h3>
+<p>Join our Summer Internship Program and work on exciting projects using cutting-edge AI technologies in the following domains:</p>
+
+- **AI for Sustainability:** Environmental monitoring with computer vision, climate solutions using LLMs, brick kiln detection
+- **AI/Sensing for Health:** Respiratory monitoring, SpiroMask, JoulesEye technologies with VLMs and ML
+- **Exposition and Visualization:** Data storytelling and interactive systems with modern AI tools
+
+<div class="highlight-box">
+<strong>SRIP 2026:</strong> Applications typically open in February for summer programs. Check the <a href="https://srip.iitgn.ac.in/registration/" target="_blank">IIT Gandhinagar SRIP Portal</a> for updates. Our project codes were <strong>IP0NB0000019</strong> and <strong>IP0NB0000020</strong> in SRIP 2025.
+</div>
+
+**Perfect for:** Undergraduate and early graduate students seeking hands-on research experience in cutting-edge AI applications.
 </div>
 
 ## 📧 How to Apply
