@@ -36,9 +36,9 @@ toc: false
 <span>Zeel B Patel<br/>(Jan 2020 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Gaussian Processes • Bayesian ML</em></span>
 
 <a href="https://rishabh-mondal.github.io">
-  <img src="https://rishabh-mondal.github.io/ris.jpg" class="cropped-image"><br/>
+  <img src="https://rishabh-mondal.github.io/profile.jpeg" class="cropped-image"><br/>
 </a>
-<span>Rishabh Mondal<br/>(Jun 2023 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Computer Vision • Self-Supervised Learning</em></span>
+<span>Rishabh Mondal<br/>(Jun 2023 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Computer Vision • Earth Observations</em></span>
 
 <a href="https://ayushshrivstava.github.io/">
   <img src="images/members/Ayush.jpg" class="cropped-image"><br/>
