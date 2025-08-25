@@ -17,6 +17,19 @@ toc: false
 
 <p class="section-subtitle">Cutting-edge projects at the intersection of AI and sustainability</p>
 
+<!-- Quick filter tags -->
+<div class="home-tag-filters">
+<p style="margin-bottom: 8px; font-size: 0.9rem; color: #6b7280;">Explore by research area:</p>
+<div class="home-tags">
+<a href="projects.html?tag=air-quality" class="home-tag-link">Air Quality</a>
+<a href="projects.html?tag=health-sensing" class="home-tag-link">Health Sensing</a>
+<a href="projects.html?tag=nilm" class="home-tag-link">NILM</a>
+<a href="projects.html?tag=computer-vision" class="home-tag-link">Computer Vision</a>
+<a href="projects.html?tag=machine-learning" class="home-tag-link">Machine Learning</a>
+<a href="projects.html" class="home-tag-link all-projects">View All Projects →</a>
+</div>
+</div>
+
 <div class="featured-projects">
 
 <div class="project-card">
@@ -147,55 +160,6 @@ toc: false
 </div>
 
 </div>
-
-## Featured Expositions
-
-<div class="featured-projects">
-
-<div class="project-card">
-<img src="papers/2020/VisXAI20_Active_Learning.png" alt="Active Learning Exposition" class="project-image">
-<div class="project-content">
-<h3>Active Learning : A Visual Tour</h3>
-<p>An interactive visual guide that demystifies active learning strategies through intuitive animations and examples.</p>
-<div class="project-tags">
-<span class="tag">Exposition</span>
-<span class="tag">Meta Learning</span>
-<span class="tag">Bayesian Methods</span>
-</div>
-<a href="https://patel-zeel.github.io/active-learning-visualization/" class="project-link">Learn More →</a>
-</div>
-</div>
-
-<div class="project-card">
-<img src="papers/2021/VisXAI21_HMM.png" alt="HMM Exposition" class="project-image">
-<div class="project-content">
-<h3>Exploring Hidden Markov Models</h3>
-<p>An interactive guide to understanding Hidden Markov Models (HMMs) through intuitive examples and visualizations.</p>
-<div class="project-tags">
-<span class="tag">Exposition</span>
-<span class="tag">Bayesian Methods</span>
-<span class="tag">Markov Chains</span>
-</div>
-<a href="https://nipunbatra.github.io/hmm/" class="project-link">Learn More →</a>
-</div>
-</div>
-
-<div class="project-card">
-<img src="papers/2020/Distil20_BayesOpt.png" alt="BayesOpt Exposition" class="project-image">
-<div class="project-content">
-<h3>Exploring Bayesian Optimization</h3>
-<p>An interactive and visual guide that breaks down Bayesian Optimization into intuitive concepts to illustrate its application.</p>
-<div class="project-tags">
-<span class="tag">Exposition</span>
-<span class="tag">Bayesian Methods</span>
-<span class="tag">Hyperparameter Tuning</span>
-</div>
-<a href="https://distill.pub/2020/bayesian-optimization/" class="project-link">Learn More →</a>
-</div>
-</div>
-
-</div>
-
 
 <div style="text-align: center; margin-top: 30px;">
 <a href="papers/index.qmd" class="project-link" style="font-size: 1.1rem;">View All Publications →</a>

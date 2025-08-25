@@ -1,0 +1,90 @@
+# Centralized tag configuration for projects and publications
+# This file defines standardized tags, their colors, and descriptions
+
+research_areas:
+  air-quality:
+    name: "Air Quality"
+    color: "#f1f8e9"
+    text_color: "#558b2f"
+    description: "Research on air pollution monitoring, analysis, and policy implications"
+    
+  health-sensing:
+    name: "Health Sensing"
+    color: "#fce4ec"
+    text_color: "#c2185b"
+    description: "Healthcare monitoring and sensing technologies"
+    
+  nilm:
+    name: "NILM"
+    color: "#f3e5f5"
+    text_color: "#7b1fa2"
+    description: "Non-Intrusive Load Monitoring for energy disaggregation"
+    
+  computer-vision:
+    name: "Computer Vision"
+    color: "#e3f2fd"
+    text_color: "#1565c0"
+    description: "Computer vision and image processing applications"
+    
+  machine-learning:
+    name: "Machine Learning"
+    color: "#e1f5fe"
+    text_color: "#0277bd"
+    description: "Machine learning algorithms and applications"
+    
+  nlp:
+    name: "NLP"
+    color: "#e8eaf6"
+    text_color: "#3f51b5"
+    description: "Natural Language Processing and text analysis"
+    
+  policy:
+    name: "Policy"
+    color: "#fff3e0"
+    text_color: "#ef6c00"
+    description: "Policy analysis and compliance monitoring"
+    
+  sustainability:
+    name: "Sustainability"
+    color: "#e8f5e8"
+    text_color: "#2e7d32"
+    description: "Environmental sustainability and climate change"
+    
+  iot:
+    name: "IoT"
+    color: "#e0f2f1"
+    text_color: "#00695c"
+    description: "Internet of Things and sensor networks"
+    
+  dataset:
+    name: "Dataset"
+    color: "#fff8e1"
+    text_color: "#f57f17"
+    description: "Datasets and benchmarks for research"
+
+# Project types to distinguish between different kinds of work
+project_types:
+  research-project:
+    name: "Research Project"
+    icon: "🔬"
+    description: "Comprehensive research projects with dedicated websites"
+    
+  publication:
+    name: "Publication"
+    icon: "📄"
+    description: "Academic papers and publications"
+    
+  exposition:
+    name: "Exposition"
+    icon: "📚"
+    description: "Interactive educational content and visualizations"
+    
+  toolkit:
+    name: "Toolkit"
+    icon: "🛠️"
+    description: "Open-source tools and frameworks"
+    
+  dataset:
+    name: "Dataset"
+    icon: "📊"
+    description: "Research datasets and benchmarks"

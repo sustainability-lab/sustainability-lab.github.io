@@ -24,8 +24,16 @@ website:
             href: experiences.qmd
           - text: Memories
             href: memories.qmd
-      - href: papers/index.qmd
-        text: Publications
+      - text: Research
+        menu:
+          - text: All Projects & Research
+            href: projects.qmd
+          - text: Publications
+            href: papers/index.qmd
+          - text: Posters
+            href: posters.qmd
+          - text: Talks
+            href: talks.qmd
       - href: openings.qmd
         text: Openings
       # - href: lab-handbook.qmd

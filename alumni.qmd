@@ -259,6 +259,7 @@ body {
 </div>
 </div>
 
+
 <div class="section-card">
 <h2>🎓 Bachelor's Alumni</h2>
 
@@ -384,6 +385,18 @@ body {
 
 <div class="alumni-list">
 <div class="alumni-item">
+<div class="alumni-name">Poornima Bhatia (2025)</div>
+<div class="alumni-details">MTech Graduate • Accessibility Research</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">Prince Kumar (2025)</div>
+<div class="alumni-details">MTech Graduate • LLMs & Air Quality</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">Shataxi Dubey (2025)</div>
+<div class="alumni-details">MTech Graduate • Computer Vision & VLMs</div>
+</div>
+<div class="alumni-item">
 <div class="alumni-name">Ayush Shrivastava (2024)</div>
 <div class="alumni-details">PhD at <span class="university">IIT Gandhinagar</span></div>
 </div>
@@ -411,6 +424,14 @@ body {
 
 <h3>Research Assistants</h3>
 <div class="alumni-list">
+<div class="alumni-item">
+<div class="alumni-name">Tanu Tiwari (2025)</div>
+<div class="alumni-details">Research Fellow • Machine Learning & Research Methods</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">Meenakshi Prakash (2025)</div>
+<div class="alumni-details">Research Fellow • Data Science & Computational Analysis</div>
+</div>
 <div class="alumni-item">
 <div class="alumni-name">Prerna Khanna</div>
 <div class="alumni-details">PhD student at <span class="university">Stony Brook University</span></div>
