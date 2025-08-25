@@ -30,10 +30,6 @@ website:
             href: projects.qmd
           - text: Publications
             href: papers/index.qmd
-          - text: Posters
-            href: posters.qmd
-          - text: Talks
-            href: talks.qmd
       - href: openings.qmd
         text: Openings
       # - href: lab-handbook.qmd

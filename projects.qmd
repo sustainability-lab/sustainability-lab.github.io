@@ -63,7 +63,7 @@ toc: false
 <div class="projects-grid" id="projects-container">
 
 <!-- Research Project Websites -->
-<div class="project-card" data-tags="computer-vision sustainability policy" data-type="research-project" data-year="2025">
+<div class="project-card" data-tags="computer-vision sustainability policy air-quality" data-type="research-project" data-year="2025">
 <img src="images/mainpage/space-to-policy.png" alt="Space to Policy Project" class="project-image">
 <div class="project-content">
 <div class="project-type-badge">🔬 Research Project</div>
@@ -73,6 +73,7 @@ toc: false
 <span class="tag computer-vision">Computer Vision</span>
 <span class="tag sustainability">Sustainability</span>
 <span class="tag policy">Policy</span>
+<span class="tag air-quality">Air Quality</span>
 </div>
 <div class="project-links">
 <a href="https://sustainability-lab.github.io/brick-kilns/" class="project-link primary">Explore Project →</a>
