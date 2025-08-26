@@ -81,7 +81,7 @@ toc: false
 <img src="https://via.placeholder.com/200x200/f3f4f6/6b7280?text=KG" class="cropped-image"><br/>
 <span>Kirtan Gangani<br/>(Aug 2024 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Machine Learning • Data Analysis</em></span>
 
-<img src="https://via.placeholder.com/200x200/f3f4f6/6b7280?text=DL" class="cropped-image"><br/>
+<img src="images/members/deena.jpg" class="cropped-image"><br/>
 <span>Deena Lad<br/>(Aug 2025 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Environmnetal Modelling • Machine Learning</em></span>
 
 :::
