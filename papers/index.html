@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -33,14 +33,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="..//images/favicon-sl.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7530c408590d20eba92ebedbb433c75c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8f4e3aabaa80e3e650ae20f2c24f966b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-74c2b4bbe12bd43c470452db009b5527.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6c3e9e0cf825ee3e244e3dbfbfec5f73.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,6 +79,10 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+  </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -259,6 +264,27 @@ STORED AS A TEMPLATE FOR FUTURE USE
 </section>
 <section id="section" class="level2">
 <h2 class="anchored" data-anchor-id="section">2025</h2>
+<div class="paper">
+<img src="2025/sentinelkilndb.png" class="paper-image">
+<div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+<p><span class="tag" style="background: #e3f2fd; color: #a40a0aff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Computer Vision</span> <span class="tag" style="background: #e8f5e8; color: #2e7d32; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Sustainability</span> <span class="tag" style="background: #fff3e0; color: #0040efff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Earth Observation</span></p>
+</div>
+<p class="paper-title">
+SENTINELKILNDB: A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery
+</p>
+<p>
+Rishabh Mondal, Jeet Parab, Heer Kubadia, Shataxi Dubey, Shardul Junagade, Zeel B Patel, Nipun Batra
+</p>
+<p>
+<i>Datasets and Benchmarks Track, NeurIPS 2025, the Thirty-Ninth Annual Conference on Neural Information Processing Systems</i>
+</p>
+<p><a href="" class="paper-button">PDF</a> <a href="" class="paper-button">Dataset</a> <a href="https://sustainability-lab.github.io/sentinelkilndb/" class="paper-button">Project Page</a> <a href="bibtex/sentinelkilndb.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="" class="paper-button">YouTube</a> <!-- <a href="https://docs.google.com/presentation/d/19jIDm3kSZlOdnhgIIvWf8tZNjMx0dRcCmp0Z3nZVUEw/edit?usp=sharing" class="paper-button">Google AQ Summit 2024</a> --> <!-- <a href="https://docs.google.com/presentation/d/1PniVOoJEedGP-5N4hSqg21xjSv7v2uT4xSKNe1qB2vo/edit?usp=sharing" class="paper-button">IITD Talk</a> --> <a href="" class="paper-button">Github</a></p>
+<div id="bibtex-sentinelkilndb" class="bibtex-content" style="display: none;">
+<p><span class="citation" data-cites="article">@article</span>{mondal2025sentinelkilndb, title={SentinelKilnDB: A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery}, author={Mondal, Rishabh and Parab, Jeet and Kubadia, Heer and Dubey, Shataxi and Junagade, Shardul and Patel, Zeel B and Batra, Nipun}, journal={Advances in Neural Information Processing Systems}, year={2025} }</p>
+</div>
+</div>
+</div>
 <div class="paper">
 <img src="2024/Brick_Kilns.png" class="paper-image">
 <div class="paper-details">
@@ -1356,13 +1382,14 @@ document.addEventListener('DOMContentLoaded', function() {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

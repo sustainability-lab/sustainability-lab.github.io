@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7530c408590d20eba92ebedbb433c75c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-8f4e3aabaa80e3e650ae20f2c24f966b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-74c2b4bbe12bd43c470452db009b5527.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6c3e9e0cf825ee3e244e3dbfbfec5f73.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,7 +115,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -138,6 +139,10 @@ window.Quarto = {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+  </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -326,7 +331,7 @@ window.Quarto = {
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1750723200000" data-listing-file-modified-sort="1756187098999" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="664" data-listing-title-sort="Building Brick by Brick My Foundation at Sustainability Lab" data-listing-filename-sort="shataxi.qmd">
+<tr data-index="0" data-listing-date-sort="1750723200000" data-listing-file-modified-sort="1758351928402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="664" data-listing-title-sort="Building Brick by Brick My Foundation at Sustainability Lab" data-listing-filename-sort="shataxi.qmd">
 <td>
 <span class="listing-date">Jun 24, 2025</span>
 </td>
@@ -339,7 +344,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="1" data-listing-date-sort="1750636800000" data-listing-file-modified-sort="1756187098999" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="612" data-listing-title-sort="My Experience at the Sustainability Lab" data-listing-filename-sort="arun.qmd">
+<tr data-index="1" data-listing-date-sort="1750636800000" data-listing-file-modified-sort="1758351928402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="612" data-listing-title-sort="My Experience at the Sustainability Lab" data-listing-filename-sort="arun.qmd">
 <td>
 <span class="listing-date">Jun 23, 2025</span>
 </td>
@@ -352,7 +357,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="2" data-listing-date-sort="1740614400000" data-listing-file-modified-sort="1756187098999" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="676" data-listing-title-sort="Sustainability Lab: The Taste of True Research" data-listing-filename-sort="devodita.qmd">
+<tr data-index="2" data-listing-date-sort="1740614400000" data-listing-file-modified-sort="1758351928402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="676" data-listing-title-sort="Sustainability Lab: The Taste of True Research" data-listing-filename-sort="devodita.qmd">
 <td>
 <span class="listing-date">Feb 27, 2025</span>
 </td>
@@ -365,7 +370,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="3" data-listing-date-sort="1721865600000" data-listing-file-modified-sort="1756187098998" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="830" data-listing-title-sort="From Beginner to Data Scientist: My Journey at Sustainability Lab" data-listing-filename-sort="RYeeshu.qmd">
+<tr data-index="3" data-listing-date-sort="1721865600000" data-listing-file-modified-sort="1758351928402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="830" data-listing-title-sort="From Beginner to Data Scientist: My Journey at Sustainability Lab" data-listing-filename-sort="RYeeshu.qmd">
 <td>
 <span class="listing-date">Jul 25, 2024</span>
 </td>
@@ -378,7 +383,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="4" data-listing-date-sort="1716076800000" data-listing-file-modified-sort="1756187098999" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1391" data-listing-title-sort="From Chemical Engineer to AI Researcher - My Pathway Through Sustainability Lab" data-listing-filename-sort="aditi.qmd">
+<tr data-index="4" data-listing-date-sort="1716076800000" data-listing-file-modified-sort="1758351928402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1391" data-listing-title-sort="From Chemical Engineer to AI Researcher - My Pathway Through Sustainability Lab" data-listing-filename-sort="aditi.qmd">
 <td>
 <span class="listing-date">May 19, 2024</span>
 </td>
@@ -391,7 +396,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="5" data-listing-date-sort="1714953600000" data-listing-file-modified-sort="1756187098999" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="785" data-listing-title-sort="Sustainability Lab - The Big Booster in my career" data-listing-filename-sort="karm.qmd">
+<tr data-index="5" data-listing-date-sort="1714953600000" data-listing-file-modified-sort="1758351928402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="785" data-listing-title-sort="Sustainability Lab - The Big Booster in my career" data-listing-filename-sort="karm.qmd">
 <td>
 <span class="listing-date">May 6, 2024</span>
 </td>
@@ -404,20 +409,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="6" data-listing-date-sort="1707955200000" data-listing-file-modified-sort="1756187098999" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="831" data-listing-title-sort="Sustainability Lab: An Unforgettable Journey" data-listing-filename-sort="ankita.qmd">
-<td>
-<span class="listing-date">Feb 15, 2024</span>
-</td>
-<td>
-<a href="./experiences/ankita.html" class="title listing-title">Sustainability Lab: An Unforgettable Journey</a>
-</td>
-<td>
-<span class="listing-author">Ankita Jain</span>
-</td>
-
-</tr>
-
-<tr data-index="7" data-listing-date-sort="1707955200000" data-listing-file-modified-sort="1756187098998" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2223" data-listing-title-sort="Curiosity Opens New Doors" data-listing-filename-sort="aabhas.qmd">
+<tr data-index="6" data-listing-date-sort="1707955200000" data-listing-file-modified-sort="1758351928402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2223" data-listing-title-sort="Curiosity Opens New Doors" data-listing-filename-sort="aabhas.qmd">
 <td>
 <span class="listing-date">Feb 15, 2024</span>
 </td>
@@ -430,7 +422,20 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="8" data-listing-date-sort="1706227200000" data-listing-file-modified-sort="1756187098999" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="981" data-listing-title-sort="The Growth Mindset: My Journey at the Sustainability Lab" data-listing-filename-sort="hetvi.qmd">
+<tr data-index="7" data-listing-date-sort="1707955200000" data-listing-file-modified-sort="1758351928402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="831" data-listing-title-sort="Sustainability Lab: An Unforgettable Journey" data-listing-filename-sort="ankita.qmd">
+<td>
+<span class="listing-date">Feb 15, 2024</span>
+</td>
+<td>
+<a href="./experiences/ankita.html" class="title listing-title">Sustainability Lab: An Unforgettable Journey</a>
+</td>
+<td>
+<span class="listing-author">Ankita Jain</span>
+</td>
+
+</tr>
+
+<tr data-index="8" data-listing-date-sort="1706227200000" data-listing-file-modified-sort="1758351928402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="981" data-listing-title-sort="The Growth Mindset: My Journey at the Sustainability Lab" data-listing-filename-sort="hetvi.qmd">
 <td>
 <span class="listing-date">Jan 26, 2024</span>
 </td>
@@ -443,7 +448,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="9" data-listing-date-sort="1705449600000" data-listing-file-modified-sort="1756187098998" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1499" data-listing-title-sort="Detours can sometimes be the best part of the journey!" data-listing-filename-sort="aadesh.qmd">
+<tr data-index="9" data-listing-date-sort="1705449600000" data-listing-file-modified-sort="1758351928402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1499" data-listing-title-sort="Detours can sometimes be the best part of the journey!" data-listing-filename-sort="aadesh.qmd">
 <td>
 <span class="listing-date">Jan 17, 2024</span>
 </td>
@@ -456,7 +461,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="10" data-listing-date-sort="1702598400000" data-listing-file-modified-sort="1756187098999" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="549" data-listing-title-sort="From Thesis to Life Lessons: My learning curve at Sustainability Lab" data-listing-filename-sort="souvik.qmd">
+<tr data-index="10" data-listing-date-sort="1702598400000" data-listing-file-modified-sort="1758351928402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="549" data-listing-title-sort="From Thesis to Life Lessons: My learning curve at Sustainability Lab" data-listing-filename-sort="souvik.qmd">
 <td>
 <span class="listing-date">Dec 15, 2023</span>
 </td>
@@ -469,7 +474,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="11" data-listing-date-sort="1702252800000" data-listing-file-modified-sort="1756187098999" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="873" data-listing-title-sort="Not just research, lifelong mentorship: My journey at Sustainability Lab" data-listing-filename-sort="rithwik.qmd">
+<tr data-index="11" data-listing-date-sort="1702252800000" data-listing-file-modified-sort="1758351928402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="873" data-listing-title-sort="Not just research, lifelong mentorship: My journey at Sustainability Lab" data-listing-filename-sort="rithwik.qmd">
 <td>
 <span class="listing-date">Dec 11, 2023</span>
 </td>
@@ -482,7 +487,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="12" data-listing-date-sort="1701216000000" data-listing-file-modified-sort="1756187098999" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="737" data-listing-title-sort="Sustainability Lab: A family atmosphere of learning and growth" data-listing-filename-sort="gautam.qmd">
+<tr data-index="12" data-listing-date-sort="1701216000000" data-listing-file-modified-sort="1758351928402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="737" data-listing-title-sort="Sustainability Lab: A family atmosphere of learning and growth" data-listing-filename-sort="gautam.qmd">
 <td>
 <span class="listing-date">Nov 29, 2023</span>
 </td>
@@ -550,13 +555,14 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
