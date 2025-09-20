@@ -75,6 +75,21 @@ toc: false
 </div>
 
 <div class="project-card">
+<img src="images/mainpage/sentinelkilndb.png" alt="SentinelKilnDB Project" class="project-image">
+<div class="project-content">
+<h3>SentinelKilnDB</h3>
+<p>A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery.</p>
+<div class="project-tags">
+<span class="tag">Computer Vision</span>
+<span class="tag">Earth Observation</span>
+<!-- <span class="tag">Environmental</span> -->
+</div>
+<a href="https://sustainability-lab.github.io/sentinelkilndb/" class="project-link">Learn More →</a>
+</div>
+</div>
+
+
+<div class="project-card">
 <img src="images/mainpage/space-to-policy.png" alt="Space to Policy Project" class="project-image">
 <div class="project-content">
 <h3>Space to Policy</h3>
