@@ -1,8 +1,8 @@
 # Sustainability Lab Publications
 
 **IIT Gandhinagar**  
-*Generated: 2025-07-03 10:56:17*  
-*Total Publications: 41*
+*Generated: 2025-09-20 13:41:55*  
+*Total Publications: 44*
 
 ---
 
@@ -13,6 +13,21 @@
 **Authors:** Patel, Zeel B and Mondal, Rishabh and Dubey, Shataxi and Jaiswal, Suraj and Guttikunda, Sarath and Batra, Nipun  
 **Venue:** *ACM Journal on Computing and Sustainable Societies (JCSS)*  
 **URL:** [Link](https://arxiv.org/abs/2412.04065)  
+
+### SentinelKilnDB: A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery
+
+**Authors:** Mondal, Rishabh and Parab, Jeet and Kubadia, Heer and Dubey, Shataxi and Junagade, Shardul and Patel, Zeel B and Batra, Nipun  
+**Venue:** *Advances in Neural Information Processing Systems*  
+
+### Optimizing Pollutant Exposure, Energy Consumption, and Thermal Comfort in a House via Deep Reinforcement Learning Control
+
+**Authors:** Mishra, Nishchaya Kumar and Batra, Nipun and Patel, Sameer  
+**Venue:** *Journal of Building Engineering*  
+
+### Constraining the 3HDM parameter space using active learning
+
+**Authors:** Batra, Nipun and Coleppa, Baradhwaj and Khanna, Akshat and Rai, Santosh Kumar and Sarkar, Agnivo  
+**Venue:** *Physical Review D*  
 
 ## 2024
 
