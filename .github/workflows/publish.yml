@@ -26,9 +26,6 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Install Quarto Lightbox extension
-        run: quarto install extension quarto-ext/lightbox --no-prompt
-
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
