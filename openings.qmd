@@ -535,7 +535,7 @@ We believe in the transformative potential of AI to monitor environmental change
 <h3>🔬 Junior Research Fellow</h3>
 
 <div class="deadline-alert">
-⏰ <strong>APPLICATION DEADLINE:</strong> Check application form for current deadline
+⏰ <strong>APPLICATION DEADLINE:</strong> November 6, 2025
 </div>
 
 <p>Be a part of cutting-edge research as a Junior or Senior Research Fellow in the <strong>Sustainability Lab</strong>, working with modern ML technologies including LLMs, computer vision, and VLMs for sustainability applications.</p>
@@ -547,43 +547,6 @@ We believe in the transformative potential of AI to monitor environmental change
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoBkCG6AC-4pwtnkbpNKqIzAkOrupKs_UnGkk731ZfTYBBpQ/viewform" target="_blank" class="btn btn-primary">Apply Now</a>
 <a href="https://drive.google.com/file/d/1un2TvoFEXI5yyncy2PuJ0-OnDD4lrkPr/view" target="_blank" class="btn btn-secondary">View Details</a>
 </div>
-
-<details>
-<summary>📋 View Previous/Past Openings</summary>
-<div class="position-card">
-<h3>🔬 Research Associate I Position</h3>
-
-<div class="deadline-alert">
-⏰ <strong>APPLICATION DEADLINE:</strong> Check application form for current deadline
-</div>
-
-<p>Join us as a Research Associate I in the <strong>Sustainability Lab</strong> and contribute to high-impact, interdisciplinary research using cutting-edge ML technologies for domain applications.</p>
-
-<div class="highlight-box">
-<strong>💡 Perfect for:</strong> Recent graduates looking to gain research experience before pursuing higher studies or industry roles.
-</div>
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSdGfvKw3anCtGTqXy2Wa7Z1dX_AkOf_FqflFROZrtN-VKmWmg/viewform" target="_blank" class="btn btn-primary">Apply Now</a>
-<a href="https://drive.google.com/file/d/1y_-sJ2LeYvsZZZhJ9EU6NEZCUm8ylKnf/view?usp=sharing" target="_blank" class="btn btn-secondary">View Details</a>
-</div>
-
-<div class="position-card">
-<h3>🔬 Junior/Senior Research Fellow</h3>
-
-<div class="deadline-alert">
-⏰ <strong>APPLICATION DEADLINE:</strong> Check application form for current deadline
-</div>
-
-<p>Be a part of cutting-edge research as a Junior or Senior Research Fellow in the <strong>Sustainability Lab</strong>, working with modern ML technologies including LLMs, computer vision, and VLMs for sustainability applications.</p>
-
-<div class="highlight-box">
-<strong>💡 Perfect for:</strong> Researchers seeking to make significant contributions to AI for sustainability with potential for co-authorship on high-impact publications.
-</div>
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSeU2KoY-yAsFKCtlUZ8BH8gMEMwhV8z6L8WdaOtPB7TsJQrRg/viewform" target="_blank" class="btn btn-primary">Apply Now</a>
-<a href="https://drive.google.com/file/d/1itoBPzBfJKPClgnDRb3EmjvZwVaB9as_/view" target="_blank" class="btn btn-secondary">View Details</a>
-</div>
-</details>
 
 ### 🔬 6-Month Internships
 
@@ -768,5 +731,44 @@ Our lab culture emphasizes <strong>"less but better"</strong> - we focus on high
 *Join a lab where your research can change the world. Where every project matters. Where your growth is our priority.*
 
 **🌟 The future of sustainability starts with you. 🌟**
+
+:::
+
+---
+
+## Past Openings
+
+::: {.content-card}
+
+<details>
+<summary><strong>View Previous Research Positions</strong></summary>
+
+<div style="margin-top: 20px;">
+
+<div class="position-card">
+<h3>🔬 Research Associate I Position</h3>
+
+<p>Closed position: Research Associate I in the <strong>Sustainability Lab</strong> contributing to high-impact, interdisciplinary research using cutting-edge ML technologies for domain applications.</p>
+
+<p><strong>Target audience:</strong> Recent graduates looking to gain research experience before pursuing higher studies or industry roles.</p>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdGfvKw3anCtGTqXy2Wa7Z1dX_AkOf_FqflFROZrtN-VKmWmg/viewform" target="_blank" class="btn btn-secondary">View Application (Closed)</a>
+<a href="https://drive.google.com/file/d/1y_-sJ2LeYvsZZZhJ9EU6NEZCUm8ylKnf/view?usp=sharing" target="_blank" class="btn btn-secondary">View Details</a>
+</div>
+
+<div class="position-card">
+<h3>🔬 Junior/Senior Research Fellow</h3>
+
+<p>Closed position: Junior or Senior Research Fellow in the <strong>Sustainability Lab</strong>, working with modern ML technologies including LLMs, computer vision, and VLMs for sustainability applications.</p>
+
+<p><strong>Target audience:</strong> Researchers seeking to make significant contributions to AI for sustainability with potential for co-authorship on high-impact publications.</p>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeU2KoY-yAsFKCtlUZ8BH8gMEMwhV8z6L8WdaOtPB7TsJQrRg/viewform" target="_blank" class="btn btn-secondary">View Application (Closed)</a>
+<a href="https://drive.google.com/file/d/1itoBPzBfJKPClgnDRb3EmjvZwVaB9as_/view" target="_blank" class="btn btn-secondary">View Details</a>
+</div>
+
+</div>
+
+</details>
 
 :::

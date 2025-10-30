@@ -6,7 +6,7 @@ title: Publications
 
 **Download:** [BibTeX](bibtex/all_publications.bib) | [Text](exports/all_publications.txt) | [CSV](exports/all_publications.csv) | [Markdown](exports/all_publications.md) | [Word](exports/all_publications.docx)
 
-*All formats contain complete publication information and citations (41 publications)*
+*All formats contain complete publication information and citations (44 publications)*
 
 
 <!-- 
@@ -31,7 +31,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 
 
 <div class="paper">
-<img src="2025/bayubuddy.png" class="paper-image">
+<img src="2025/vayubuddy.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
   <span class="tag" style="background: #e3f2fd; color: #201f1fff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span>
