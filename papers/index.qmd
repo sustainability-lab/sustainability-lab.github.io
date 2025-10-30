@@ -6,8 +6,6 @@ title: Publications
 
 **Download:** [BibTeX](bibtex/all_publications.bib) | [Text](exports/all_publications.txt) | [CSV](exports/all_publications.csv) | [Markdown](exports/all_publications.md) | [Word](exports/all_publications.docx)
 
-*All formats contain complete publication information and citations (44 publications)*
-
 
 <!-- 
 AYUSH SHRIVASTAVA (2024):

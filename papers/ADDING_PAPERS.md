@@ -119,9 +119,8 @@ After you push, GitHub Actions automatically:
    - `exports/all_publications.csv`
    - `exports/all_publications.md`
    - `exports/all_publications.docx`
-4.  Counts total publications and updates the count in `index.qmd`
-5.  Commits these changes back to the repository
-6.  Triggers the website rebuild (via `publish.yml`)
+4.  Commits these changes back to the repository
+5.  Triggers the website rebuild (via `publish.yml`)
 
 **You don't need to run any scripts manually!**
 
@@ -194,20 +193,6 @@ python validate_bibtex.py bibtex/yourpaper2025.bib
 # Validate all .bib files
 cd papers
 python validate_bibtex.py bibtex/*.bib
-```
-
-## 📈 Publication Count
-
-The publication count in the download section is automatically updated by GitHub Actions. You'll see it change from:
-
-```
-All formats contain complete publication information and citations (41 publications)
-```
-
-to:
-
-```
-All formats contain complete publication information and citations (42 publications)
 ```
 
 ##  FAQ

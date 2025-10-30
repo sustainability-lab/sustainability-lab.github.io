@@ -30,8 +30,7 @@ The workflow is simple:
 When you push a new `.bib` file, the workflow:
 1. Aggregates all BibTeX files → `all_publications.bib`
 2. Generates export formats → `exports/*.{txt,csv,md,docx}`
-3. Updates publication count in `index.qmd`
-4. Commits and pushes changes back
+3. Commits and pushes changes back
 
 **You don't need to run scripts manually!**
 

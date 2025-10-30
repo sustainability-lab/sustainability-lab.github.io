@@ -38,21 +38,6 @@ jobs:
           cd papers
           python generate_exports.py
 
-      - name: Count publications
-        id: count
-        run: |
-          # Count individual .bib files (excluding all_publications.bib)
-          count=$(ls papers/bibtex/*.bib | grep -v all_publications.bib | wc -l | tr -d ' ')
-          echo "count=$count" >> $GITHUB_OUTPUT
-          echo "Found $count publications"
-
-      - name: Update publication count in index.qmd
-        run: |
-          count=${{ steps.count.outputs.count }}
-          # Update the download section with current count
-          sed -i.bak "s/All formats contain complete publication information and citations ([0-9]* publications)/All formats contain complete publication information and citations ($count publications)/" papers/index.qmd
-          rm -f papers/index.qmd.bak
-
       - name: Check for changes
         id: check_changes
         run: |
@@ -69,16 +54,15 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add papers/bibtex/all_publications.bib
           git add papers/exports/
-          git add papers/index.qmd
-          git commit -m "🤖 Auto-update publications: aggregated BibTeX, exports, and count (${{ steps.count.outputs.count }} publications)"
+          git commit -m "Auto-update publications: aggregated BibTeX and exports"
+          # Pull with rebase to avoid conflicts, then push
+          git pull --rebase origin main
           git push
 
       - name: Summary
         if: steps.check_changes.outputs.changed == 'true'
         run: |
-          echo "✅ Publications updated successfully!"
-          echo "📊 Total publications: ${{ steps.count.outputs.count }}"
-          echo "📝 Updated files:"
+          echo "Publications updated successfully!"
+          echo "Updated files:"
           echo "  - papers/bibtex/all_publications.bib"
           echo "  - papers/exports/*.{txt,csv,md,docx}"
-          echo "  - papers/index.qmd (publication count)"
