@@ -62,10 +62,12 @@ website:
     background: light
     left: "© 2025 Sustainability Lab, IIT Gandhinagar"
     center: |
-      [Publications](papers/index.qmd) | 
-      [**Research Skills Bootcamp**](https://sustainability-lab.github.io/sustainability-research-bootcamp/) | 
+      [Publications](papers/index.qmd) |
+      [**Research Skills Bootcamp**](https://sustainability-lab.github.io/sustainability-research-bootcamp/) |
       [Contact](mailto:nipun.batra@iitgn.ac.in)
-    right: "Built with [Quarto](https://quarto.org/)"
+    right: |
+      Built with [Quarto](https://quarto.org/) |
+      <span id="last-updated"></span>
   
 
 format:
@@ -81,11 +83,12 @@ format:
     mainfont: "Roboto"
     code-copy: true
     code-overflow: wrap
+    date-format: "MMMM D, YYYY"
 
 execute:
   freeze: auto
 
-include-after-body:  # JavaScript for switching logos on theme change
+include-after-body:  # JavaScript for switching logos on theme change and last updated
   text: |
     <script>
       function updateLogo() {
@@ -106,4 +109,14 @@ include-after-body:  # JavaScript for switching logos on theme change
 
       // Ensure correct logo on initial load
       document.addEventListener("DOMContentLoaded", updateLogo);
+
+      // Set last updated date
+      document.addEventListener("DOMContentLoaded", function() {
+        const lastUpdatedEl = document.getElementById("last-updated");
+        if (lastUpdatedEl) {
+          const now = new Date();
+          const options = { year: 'numeric', month: 'long', day: 'numeric' };
+          lastUpdatedEl.textContent = 'Last Updated: ' + now.toLocaleDateString('en-US', options);
+        }
+      });
     </script>
