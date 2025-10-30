@@ -216,6 +216,24 @@ body {
     text-decoration: none;
 }
 
+.testimonial-carousel {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.5em;
+  min-height: 120px;
+}
+
+.testimonial-carousel .testimonial {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.testimonial-carousel .testimonial.active {
+  display: block;
+  opacity: 1;
+}
+
 .testimonial {
     background: #f0fff4;
     border-left: 4px solid #10b981;
@@ -461,6 +479,25 @@ We believe in the transformative potential of AI to monitor environmental change
 ### 🔬 Research Associate & Research Fellow Positions
 
 <div class="position-card">
+<h3>🔬 Junior Research Fellow</h3>
+
+<div class="deadline-alert">
+⏰ <strong>APPLICATION DEADLINE:</strong> Check application form for current deadline
+</div>
+
+<p>Be a part of cutting-edge research as a Junior or Senior Research Fellow in the <strong>Sustainability Lab</strong>, working with modern ML technologies including LLMs, computer vision, and VLMs for sustainability applications.</p>
+
+<div class="highlight-box">
+<strong>💡 Perfect for:</strong> Researchers seeking to make significant contributions to AI for sustainability with potential for co-authorship on high-impact publications.
+</div>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfoBkCG6AC-4pwtnkbpNKqIzAkOrupKs_UnGkk731ZfTYBBpQ/viewform" target="_blank" class="btn btn-primary">Apply Now</a>
+<a href="https://drive.google.com/file/d/1un2TvoFEXI5yyncy2PuJ0-OnDD4lrkPr/view" target="_blank" class="btn btn-secondary">View Details</a>
+</div>
+
+<details>
+<summary><strong>Previous Openings</strong></summary>
+<div class="position-card">
 <h3>🔬 Research Associate I Position</h3>
 
 <div class="deadline-alert">
@@ -493,15 +530,12 @@ We believe in the transformative potential of AI to monitor environmental change
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeU2KoY-yAsFKCtlUZ8BH8gMEMwhV8z6L8WdaOtPB7TsJQrRg/viewform" target="_blank" class="btn btn-primary">Apply Now</a>
 <a href="https://drive.google.com/file/d/1itoBPzBfJKPClgnDRb3EmjvZwVaB9as_/view" target="_blank" class="btn btn-secondary">View Details</a>
 </div>
+</details>
 
 ### 🔬 6-Month Internships
 
 <div class="position-card">
 <h3>🔬 6-Month Research Internships</h3>
-
-<div class="deadline-alert">
-⏰ <strong>APPLICATION DEADLINE:</strong> July 13, 2025
-</div>
 
 <p>Looking for a 6-month internship? Get in touch with the Principal Investigator (PI) directly to explore personalized opportunities in sustainability and AI research using cutting-edge ML technologies.</p>
 
@@ -520,18 +554,18 @@ We believe in the transformative potential of AI to monitor environmental change
 <h3>Visiting Students Research Engagement Programme (VSREP) - Semester I 2025-26</h3>
 
 <div class="deadline-alert">
-<strong>APPLICATION DEADLINE:</strong> July 18, 2025, 17:00 Hours IST
+<strong>APPLICATION DEADLINE:</strong> November 10, 2025, 17:00 Hours IST
 </div>
 
 <p>IIT Gandhinagar is pleased to announce the launch of the <strong>Visiting Students Research Engagement Programme</strong> for Semester I of Academic Year 2025-26. This initiative offers final year students from <strong>IITs, IISc, IISERs and NITs</strong> an opportunity to undertake a semester-long research internship at IIT Gandhinagar under the mentorship of our faculty.</p>
 
 <div class="highlight-box">
 <strong>Important Dates:</strong><br>
-• <strong>Application Open:</strong> July 11, 2025<br>
-• <strong>Application Deadline:</strong> July 18, 2025, 17:00 Hours IST<br>
-• <strong>Selected Candidates Announcement:</strong> July 25, 2025<br>
-• <strong>Programme Start:</strong> August 4, 2025<br>
-• <strong>Programme End:</strong> November 20, 2025
+• <strong>Application Open:</strong> October 22, 2025<br>
+• <strong>Application Deadline:</strong> November 10, 2025, 17:00 Hours IST<br>
+• <strong>Selected Candidates Announcement:</strong> Will be published on the website<br>
+• <strong>Programme Start:</strong> January 02, 2026<br>
+• <strong>Programme End:</strong> April 30, 2026
 </div>
 
 <div class="highlight-box">
@@ -588,10 +622,73 @@ We believe in the transformative potential of AI to monitor environmental change
 
 ::: {.content-card}
 
-<div class="testimonial">
+<div class="testimonial-carousel">
+<div class="testimonial active">
 <p>"Working at Sustainability Lab gave me the foundation I needed for my role at Google DeepMind. The research experience and mentorship were invaluable."</p>
 <p class="author">— Aditi Agarwal, BTech 2024, now Predoc at Google DeepMind</p>
 </div>
+<div class="testimonial">
+<p>"From daunting first papers to award-winning research, the Sustainability Lab shaped not just my thesis but my confidence, curiosity, and career."</p>
+<p class="author">— Ankita Jain, M.Tech 2023, now MTS at Oracle Bangalore</p>
+</div>
+<div class="testimonial">
+<p>"From debugging Pyro to publishing at a NeurIPS workshop, Sustainability Lab gave me not just research skills but a lifelong mentor and a second family."</p>
+<p class="author">— Gautam Vashishtha, BTech 2023, now Data Scientist at Skan.ai</p>
+</div>
+<div class="testimonial">
+<p>"The Sustainability Lab and Prof. Batra’s mentorship transformed me from a beginner into a confident data scientist — shaping both my technical foundation and professional path."</p>
+<p class="author">— R. Yeeshu Dhurandhar, BTech 2024, now Data Scientist at Skan.ai</p>
+</div>
+<div class="testimonial">
+<p>"From learning ML fundamentals to publishing at BuildSys and landing my first data science role — the Sustainability Lab shaped not just my research, but my entire career."</p>
+<p class="author">— Kukunuri Rithwik, BTech 2020, now ML Scientist at Nykaa</p>
+</div>
+<div class="testimonial">
+<p>"Working with Sustainability Lab taught me discipline, purpose, and problem-solving — lessons that extend far beyond research and shape my professional life every day."</p>
+<p class="author">— Souvik Roy, MTech 2020, now Senior Consultant at eClerx</p>
+</div>
+<div class="testimonial">
+<p>"From my first paper to my Ph.D. at UMass Amherst, Sustainability Lab shaped not just my research skills but my entire mindset — from chasing tags to chasing growth."</p>
+<p class="author">— Hetvi Shastri, BTech 2022, now Ph.D. student at UMass Amherst</p>
+</div>
+<div class="testimonial">
+<p>"Sustainability Lab turned my setbacks into stepping stones — from missing a foreign internship to publishing at NeurIPS and pursuing my master’s at Carnegie Mellon."</p>
+<p class="author">— Aadesh Desai, BTech 2023, now MS student at Carnegie Mellon University</p>
+</div>
+<div class="testimonial">
+<p>"The Sustainability Lab shaped my journey from a curious learner to a resilient researcher — its mentorship and values continue to guide me at Carnegie Mellon University."</p>
+<p class="author">— Arun Reddy Anugu, BTech 2024, now MS in Computer Vision at CMU</p>
+</div>
+<div class="testimonial">
+<p>"Joining the Sustainability Lab was the best decision of my journey at IIT Gandhinagar — it taught me perseverance, purpose, and what real research truly means."</p>
+<p class="author">— Shataxi Dubey, M.Tech 2025</p>
+</div>
+<div class="testimonial">
+<p>"My internship at the Sustainability Lab turned research into a truly rewarding experience — blending collaboration, curiosity, and real-world impact."</p>
+<p class="author">— Devodita Chakravarty, Dual Degree, IIT Kharagpur, SRE Awardee 2024</p>
+</div>
+<div class="testimonial">
+<p>"From curiosity-driven tinkering to real research, the Sustainability Lab shaped my journey from a high-school innovator to a globally-minded researcher."</p>
+<p class="author">— Aabhas Senapati, Undergraduate, Harvey Mudd College</p>
+</div>
+<div class="testimonial">
+<p>"The Sustainability Lab wasn’t just my starting point in research — it was where curiosity turned into clarity, and confidence into a career."</p>
+<p class="author">— Karm Patel, M.Tech CSA, IISc Bangalore, GSoC Contributor 2022</p>
+</div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const testimonials = document.querySelectorAll(".testimonial-carousel .testimonial");
+    let index = 0;
+
+    setInterval(() => {
+      testimonials[index].classList.remove("active");
+      index = (index + 1) % testimonials.length;
+      testimonials[index].classList.add("active");
+    }, 5000);
+  });
+</script>
 
 ### 🎓 Alumni Success Stories
 

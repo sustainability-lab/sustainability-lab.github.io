@@ -80,10 +80,10 @@ toc: false
 <a href="">
   <img src="images/members/Kirtan.jpg" class="cropped-image"><br/>
 </a>
-<span>Kirtan Gangani<br/>(Aug 2024 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Smart Energy • Time-Series Analysis</em></span>
+<span>Kirtan Gangani<br/>(Aug 2025 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Smart Energy • Time-Series Analysis</em></span>
 
 <img src="images/members/deena.jpg" class="cropped-image"><br/>
-<span>Deena Lad<br/>(Sep 2024 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Environmental Modelling • Research Methods</em></span>
+<span>Deena Lad<br/>(Sep 2025 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Environmental Modelling • Research Methods</em></span>
 
 :::
 
