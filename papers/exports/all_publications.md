@@ -1,12 +1,17 @@
 # Sustainability Lab Publications
 
 **IIT Gandhinagar**  
-*Generated: 2025-10-30 06:38:24*  
-*Total Publications: 44*
+*Generated: 2025-10-30 06:48:42*  
+*Total Publications: 45*
 
 ---
 
 ## 2025
+
+### VayuBench and VayuChat: Executable Benchmarking and Deployment of LLMs for Multi-Dataset Air Quality Analytics
+
+**Authors:** Acharya, Vedant and Pisharodi, Abhay and Pasi, Ratnesh and Mondal, Rishabh and Batra, Nipun  
+**Venue:** *ACM IKDD CODS 2025 - 13th International Conference on Data Science*  
 
 ### Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data
 
