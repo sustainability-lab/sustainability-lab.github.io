@@ -250,7 +250,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#file-structure-overview" id="toc-file-structure-overview" class="nav-link" data-scroll-target="#file-structure-overview">File Structure Overview</a></li>
   <li><a href="#quick-checklist" id="toc-quick-checklist" class="nav-link" data-scroll-target="#quick-checklist">Quick Checklist</a></li>
   <li><a href="#manual-scripts-optional" id="toc-manual-scripts-optional" class="nav-link" data-scroll-target="#manual-scripts-optional">Manual Scripts (Optional)</a></li>
-  <li><a href="#publication-count" id="toc-publication-count" class="nav-link" data-scroll-target="#publication-count">📈 Publication Count</a></li>
   <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a>
   <ul class="collapse">
   <li><a href="#q-what-if-i-forget-to-add-the-paper-to-index.qmd" id="toc-q-what-if-i-forget-to-add-the-paper-to-index.qmd" class="nav-link" data-scroll-target="#q-what-if-i-forget-to-add-the-paper-to-index.qmd">Q: What if I forget to add the paper to index.qmd?</a></li>
@@ -353,7 +352,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>exports/all_publications.docx</code></li>
 </ul>
 <ol start="4" type="1">
-<li>Counts total publications and updates the count in <code>index.qmd</code></li>
 <li>Commits these changes back to the repository</li>
 <li>Triggers the website rebuild (via <code>publish.yml</code>)</li>
 </ol>
@@ -418,13 +416,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> papers</span>
 <span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> validate_bibtex.py bibtex/<span class="pp">*</span>.bib</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="publication-count" class="level2">
-<h2 class="anchored" data-anchor-id="publication-count">📈 Publication Count</h2>
-<p>The publication count in the download section is automatically updated by GitHub Actions. You’ll see it change from:</p>
-<pre><code>All formats contain complete publication information and citations (41 publications)</code></pre>
-<p>to:</p>
-<pre><code>All formats contain complete publication information and citations (42 publications)</code></pre>
-</section>
 <section id="faq" class="level2">
 <h2 class="anchored" data-anchor-id="faq">FAQ</h2>
 <section id="q-what-if-i-forget-to-add-the-paper-to-index.qmd" class="level3">
@@ -452,19 +443,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="example-adding-vayubuddy-paper">Example: Adding VayuBuddy Paper</h2>
 <p>Here’s a complete real example:</p>
 <p><strong>1. Create <code>papers/bibtex/vayubuddy2024.bib</code>:</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="va">@inproceedings</span>{<span class="ot">acharya2024vayubuddy</span>,</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span>={VayuBench and VayuChat: LLM-Powered Air Quality Chatbot for India},</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">author</span>={Acharya, Vedant and Pisharodi, Abhay and Mondal, Rishabh and Batra, Nipun},</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">booktitle</span>={ACM IKDD CODS 2025},</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span>={2025},</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">url</span>={https://arxiv.org/abs/2501.00000}</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="va">@inproceedings</span>{<span class="ot">acharya2024vayubuddy</span>,</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span>={VayuBench and VayuChat: LLM-Powered Air Quality Chatbot for India},</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">author</span>={Acharya, Vedant and Pisharodi, Abhay and Mondal, Rishabh and Batra, Nipun},</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">booktitle</span>={ACM IKDD CODS 2025},</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span>={2025},</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">url</span>={https://arxiv.org/abs/2501.00000}</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>2. Add to <code>papers/index.qmd</code> under “2025” section</strong></p>
 <p><strong>3. Add image:</strong> <code>papers/2025/vayubuddy.png</code></p>
 <p><strong>4. Push:</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add papers/bibtex/vayubuddy2024.bib papers/index.qmd papers/2025/vayubuddy.png</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add VayuBuddy paper (CODS 2025)"</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add papers/bibtex/vayubuddy2024.bib papers/index.qmd papers/2025/vayubuddy.png</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add VayuBuddy paper (CODS 2025)"</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>5. Wait 1-2 minutes</strong> - Done!</p>
 <hr>
 </section>
