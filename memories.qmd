@@ -1,8 +1,6 @@
 ---
 title: "Lab Memories"
 toc: false
-filters:
-   - lightbox
 lightbox: auto
 ---
 

@@ -559,7 +559,11 @@ We believe in the transformative potential of AI to monitor environmental change
 <strong>💡 Perfect for:</strong> Students wanting deep, sustained research experience with flexible timelines and personalized mentorship.
 </div>
 
-<a href="https://docs.google.com/document/d/1xrV1JSvUXzhSzQCGnkjJmhA5afYilaUknxklk6_EDqM/edit?tab=t.0" target="_blank" class="btn btn-primary">View Details & Apply</a>
+<div class="highlight-box">
+<strong>📋 Selection Process:</strong> Complete the selection task described in the application document. This helps us understand your interests and match you with appropriate research projects.
+</div>
+
+<a href="https://docs.google.com/document/d/1xrV1JSvUXzhSzQCGnkjJmhA5afYilaUknxklk6_EDqM/edit?tab=t.0" target="_blank" class="btn btn-primary">View Details & Selection Task</a>
 <a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-secondary">Contact Prof. Nipun Batra</a>
 <a href="computational-resources.qmd" class="btn btn-secondary">View Our Resources</a>
 </div>

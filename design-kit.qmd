@@ -1,7 +1,14 @@
 ---
-# title: "Design-Kit"
+title: "Design Kit & Resources"
 ---
-## Light Theme Logo
+
+This page provides brand assets, templates, and resources for lab members and collaborators.
+
+---
+
+## Brand Assets
+
+### Light Theme Logo
 
 **Download**: [SVG](images/logo_light.svg) | [PNG](images/logo_light.png) | [PDF](images/logo_light.pdf)
 
@@ -31,7 +38,7 @@
 
 ---
 
-##  Dark Theme Logo
+### Dark Theme Logo
 
 **Download**: [SVG](images/logo_dark.svg) | [PNG](images/logo_dark.png) | [PDF](images/logo_dark.pdf)
 
@@ -61,7 +68,7 @@
 
 ---
 
-##  Coloured Theme Logo
+### Coloured Theme Logo
 
 **Download**: [SVG](images/logo_colored.svg) | [PNG](images/logo_colored.png) | [PDF](images/logo_colored.pdf)
 
@@ -91,7 +98,7 @@
 
 ---
 
-##  Favicon - "SL" Logo
+### Favicon - "SL" Logo
 
 **Download**: [SVG](images/favicon-sl.svg) | [PNG](images/favicon-sl.png) | [PDF](images/favicon-sl.pdf)
 
