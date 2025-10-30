@@ -2,54 +2,86 @@
 
 This directory contains scripts and files for managing BibTeX references for all Sustainability Lab publications.
 
-## Files
+##  Quick Start: Adding a New Paper
 
-- `bibtex/` - Directory containing individual .bib files for each publication
-- `bibtex/all_publications.bib` - Comprehensive bibliography with all publications
-- `aggregate_bibtex_simple.py` - Script to automatically generate the comprehensive bibliography
+**See [ADDING_PAPERS.md](ADDING_PAPERS.md) for the complete step-by-step guide.**
 
-## Usage
+The workflow is simple:
+1. Add your `.bib` file to `bibtex/`
+2. Update `index.qmd` with the paper entry
+3. Push to GitHub
+4. **Everything else is automated!** 
 
-### To update the comprehensive bibliography:
+##  Files & Directories
+
+- `bibtex/` - Individual .bib files for each publication (44 papers)
+- `bibtex/all_publications.bib` - Aggregated bibliography (auto-generated)
+- `exports/` - Export formats: TXT, CSV, Markdown, DOCX (auto-generated)
+- `aggregate_bibtex_simple.py` - BibTeX aggregation script (auto-run)
+- `generate_exports.py` - Export format generator (auto-run)
+- `validate_bibtex.py` - Optional validation tool (manual)
+- `index.qmd` - Main publications page
+- `ADDING_PAPERS.md` - Complete guide for adding papers
+
+##  Automation
+
+**GitHub Actions handles everything automatically:**
+
+When you push a new `.bib` file, the workflow:
+1. Aggregates all BibTeX files → `all_publications.bib`
+2. Generates export formats → `exports/*.{txt,csv,md,docx}`
+3. Updates publication count in `index.qmd`
+4. Commits and pushes changes back
+
+**You don't need to run scripts manually!**
+
+See workflow: [`.github/workflows/update-publications.yml`](../.github/workflows/update-publications.yml)
+
+##  Optional: Manual Validation
+
+To check your BibTeX file before pushing:
 
 ```bash
 cd papers/
-python aggregate_bibtex_simple.py
+python validate_bibtex.py bibtex/yourpaper2025.bib
 ```
 
-This will:
-1. Read all individual .bib files from the `bibtex/` directory
-2. Sort them by year (newest first)
-3. Generate a new `bibtex/all_publications.bib` file with all publications
+##  Manual Scripts (Optional)
 
-### To add a new publication:
-
-1. Create a new `.bib` file in the `bibtex/` directory with the citation
-2. Add the download link to `index.qmd` (see existing examples)
-3. Run the aggregation script to update the comprehensive bibliography
-
-### Download formats available:
-
-- **Individual .bib files**: For specific publications
-- **Comprehensive .bib file**: All publications in one file (`bibtex/all_publications.bib`)
-
-## Automation
-
-You can set up a git hook or CI/CD pipeline to automatically run the aggregation script when new .bib files are added:
+If you want to test locally:
 
 ```bash
-# Add to .git/hooks/pre-commit
-#!/bin/bash
+# Aggregate BibTeX files
 cd papers/
 python aggregate_bibtex_simple.py
-git add bibtex/all_publications.bib
+
+# Generate export formats
+python generate_exports.py
+
+# Validate all .bib files
+python validate_bibtex.py bibtex/*.bib
 ```
 
-## File naming convention
+##  Download Formats Available
 
-Individual .bib files should follow the pattern: `{keyword}{year}.bib`
+- **Individual .bib files**: Each paper has its own file
+- **all_publications.bib**: All publications in one file
+- **all_publications.txt**: Plain text format
+- **all_publications.csv**: Spreadsheet format
+- **all_publications.md**: Markdown format
+- **all_publications.docx**: Word document
+
+##  File Naming Convention
+
+Individual .bib files follow: `{keyword}{year}.bib`
 
 Examples:
+- `vayubuddy2024.bib`
 - `space2policy2025.bib`
-- `jouleseye2024.bib` 
-- `vartalaap2021.bib`
+- `jouleseye2024.bib`
+
+##  Current Stats
+
+- **Total Publications**: 44 papers (auto-updated)
+- **Years Covered**: 2012-2025
+- **Export Formats**: 4 (TXT, CSV, Markdown, DOCX)

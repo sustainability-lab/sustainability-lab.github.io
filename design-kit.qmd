@@ -136,3 +136,32 @@ This repository contains:
 - Poster templates
 - Consistent branding guidelines
 - Pre-formatted layouts for conferences and talks
+
+---
+
+## Website Management
+
+### Adding Publications
+
+Complete documentation for adding new papers to the website is available in the papers directory:
+
+**Quick Reference:** [papers/README_bibtex.md](papers/README_bibtex.md)
+
+**Step-by-step Guide:** [papers/ADDING_PAPERS.md](papers/ADDING_PAPERS.md)
+
+**Workflow Diagram:** [papers/WORKFLOW_DIAGRAM.md](papers/WORKFLOW_DIAGRAM.md)
+
+#### Quick Summary
+
+Adding a publication is automated via GitHub Actions. You only need to:
+
+1. Create a `.bib` file in `papers/bibtex/yourpaper2025.bib`
+2. Add paper entry to `papers/index.qmd`
+3. Add paper image to `papers/2025/yourpaper.png`
+4. Push to GitHub
+
+Everything else (aggregation, exports, count updates) happens automatically.
+
+**Available Export Formats**: BibTeX, Plain Text, CSV, Markdown, Word Document
+
+**Validation Tool**: `python papers/validate_bibtex.py papers/bibtex/yourpaper.bib`
