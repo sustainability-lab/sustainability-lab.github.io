@@ -853,7 +853,7 @@ Interested in featuring our research? Contact us for interviews, demos, and excl
 <p><a href="./papers/index.html">Publications</a> | <a href="https://sustainability-lab.github.io/sustainability-research-bootcamp/"><strong>Research Skills Bootcamp</strong></a> | <a href="mailto:nipun.batra@iitgn.ac.in">Contact</a></p>
 </div>
     <div class="nav-footer-right">
-<p>Built with <a href="https://quarto.org/">Quarto</a></p>
+<p>Built with <a href="https://quarto.org/">Quarto</a> | <span id="last-updated"></span></p>
 </div>
   </div>
 </footer>
@@ -876,6 +876,16 @@ Interested in featuring our research? Contact us for interviews, demos, and excl
 
   // Ensure correct logo on initial load
   document.addEventListener("DOMContentLoaded", updateLogo);
+
+  // Set last updated date
+  document.addEventListener("DOMContentLoaded", function() {
+    const lastUpdatedEl = document.getElementById("last-updated");
+    if (lastUpdatedEl) {
+      const now = new Date();
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      lastUpdatedEl.textContent = 'Last Updated: ' + now.toLocaleDateString('en-US', options);
+    }
+  });
 </script>
 
 
