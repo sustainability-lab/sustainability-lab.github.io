@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>readme_bibtex – Sustainability Lab</title>
+<title>workflow_diagram – Sustainability Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -236,16 +236,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#bibtex-management-for-publications" id="toc-bibtex-management-for-publications" class="nav-link active" data-scroll-target="#bibtex-management-for-publications">BibTeX Management for Publications</a>
+  <li><a href="#publications-workflow---visual-guide" id="toc-publications-workflow---visual-guide" class="nav-link active" data-scroll-target="#publications-workflow---visual-guide">Publications Workflow - Visual Guide</a>
   <ul class="collapse">
-  <li><a href="#quick-start-adding-a-new-paper" id="toc-quick-start-adding-a-new-paper" class="nav-link" data-scroll-target="#quick-start-adding-a-new-paper">Quick Start: Adding a New Paper</a></li>
-  <li><a href="#files-directories" id="toc-files-directories" class="nav-link" data-scroll-target="#files-directories">Files &amp; Directories</a></li>
-  <li><a href="#automation" id="toc-automation" class="nav-link" data-scroll-target="#automation">Automation</a></li>
-  <li><a href="#optional-manual-validation" id="toc-optional-manual-validation" class="nav-link" data-scroll-target="#optional-manual-validation">Optional: Manual Validation</a></li>
-  <li><a href="#manual-scripts-optional" id="toc-manual-scripts-optional" class="nav-link" data-scroll-target="#manual-scripts-optional">Manual Scripts (Optional)</a></li>
-  <li><a href="#download-formats-available" id="toc-download-formats-available" class="nav-link" data-scroll-target="#download-formats-available">Download Formats Available</a></li>
-  <li><a href="#file-naming-convention" id="toc-file-naming-convention" class="nav-link" data-scroll-target="#file-naming-convention">File Naming Convention</a></li>
-  <li><a href="#current-stats" id="toc-current-stats" class="nav-link" data-scroll-target="#current-stats">Current Stats</a></li>
+  <li><a href="#one-simple-workflow-no-sync-issues" id="toc-one-simple-workflow-no-sync-issues" class="nav-link" data-scroll-target="#one-simple-workflow-no-sync-issues">** One Simple Workflow (No Sync Issues!)</a></li>
+  <li><a href="#what-you-do-vs-whats-automated" id="toc-what-you-do-vs-whats-automated" class="nav-link" data-scroll-target="#what-you-do-vs-whats-automated">What You Do vs What’s Automated</a>
+  <ul class="collapse">
+  <li><a href="#manual-steps-you" id="toc-manual-steps-you" class="nav-link" data-scroll-target="#manual-steps-you">Manual Steps (You)</a></li>
+  <li><a href="#automated-steps-github-actions" id="toc-automated-steps-github-actions" class="nav-link" data-scroll-target="#automated-steps-github-actions">Automated Steps (GitHub Actions)</a></li>
+  </ul></li>
+  <li><a href="#no-sync-issues" id="toc-no-sync-issues" class="nav-link" data-scroll-target="#no-sync-issues">No Sync Issues!</a>
+  <ul class="collapse">
+  <li><a href="#why-this-approach-eliminates-sync-problems" id="toc-why-this-approach-eliminates-sync-problems" class="nav-link" data-scroll-target="#why-this-approach-eliminates-sync-problems">Why this approach eliminates sync problems:</a></li>
+  <li><a href="#what-you-dont-need-to-do" id="toc-what-you-dont-need-to-do" class="nav-link" data-scroll-target="#what-you-dont-need-to-do">What you DON’T need to do:</a></li>
+  </ul></li>
+  <li><a href="#real-example-adding-vayubuddy-paper" id="toc-real-example-adding-vayubuddy-paper" class="nav-link" data-scroll-target="#real-example-adding-vayubuddy-paper">Real Example: Adding VayuBuddy Paper</a>
+  <ul class="collapse">
+  <li><a href="#step-1-local-work-8-minutes" id="toc-step-1-local-work-8-minutes" class="nav-link" data-scroll-target="#step-1-local-work-8-minutes">Step 1: Local Work (8 minutes)</a></li>
+  <li><a href="#step-2-github-actions-1-minute-automatic" id="toc-step-2-github-actions-1-minute-automatic" class="nav-link" data-scroll-target="#step-2-github-actions-1-minute-automatic">Step 2: GitHub Actions (1 minute, automatic)</a></li>
+  <li><a href="#step-3-result-live-on-website" id="toc-step-3-result-live-on-website" class="nav-link" data-scroll-target="#step-3-result-live-on-website">Step 3: Result (live on website!)</a></li>
+  </ul></li>
+  <li><a href="#optional-local-validation" id="toc-optional-local-validation" class="nav-link" data-scroll-target="#optional-local-validation">Optional: Local Validation</a></li>
+  <li><a href="#file-flow-diagram" id="toc-file-flow-diagram" class="nav-link" data-scroll-target="#file-flow-diagram">File Flow Diagram</a></li>
+  <li><a href="#workflow-states" id="toc-workflow-states" class="nav-link" data-scroll-target="#workflow-states">Workflow States</a></li>
+  <li><a href="#pro-tips" id="toc-pro-tips" class="nav-link" data-scroll-target="#pro-tips">Pro Tips</a></li>
+  <li><a href="#documentation-files" id="toc-documentation-files" class="nav-link" data-scroll-target="#documentation-files">Documentation Files</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -256,76 +270,299 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="bibtex-management-for-publications" class="level1">
-<h1>BibTeX Management for Publications</h1>
-<p>This directory contains scripts and files for managing BibTeX references for all Sustainability Lab publications.</p>
-<section id="quick-start-adding-a-new-paper" class="level2">
-<h2 class="anchored" data-anchor-id="quick-start-adding-a-new-paper">Quick Start: Adding a New Paper</h2>
-<p><strong>See <a href="../papers/ADDING_PAPERS.html">ADDING_PAPERS.md</a> for the complete step-by-step guide.</strong></p>
-<p>The workflow is simple: 1. Add your <code>.bib</code> file to <code>bibtex/</code> 2. Update <code>index.qmd</code> with the paper entry 3. Push to GitHub 4. <strong>Everything else is automated!</strong></p>
+<section id="publications-workflow---visual-guide" class="level1">
+<h1>Publications Workflow - Visual Guide</h1>
+<section id="one-simple-workflow-no-sync-issues" class="level2">
+<h2 class="anchored" data-anchor-id="one-simple-workflow-no-sync-issues">** One Simple Workflow (No Sync Issues!)</h2>
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+│                     YOU (Local Machine)                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                               │
+│  1. Create: papers/bibtex/newpaper2025.bib                   │
+│  2. Add image: papers/2025/newpaper.png                      │
+│  3. Update: papers/index.qmd                                 │
+│                                                               │
+│  4. git add + git commit + git push                          │
+│                                                               │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+                         │ push to GitHub
+                         ▼
+┌─────────────────────────────────────────────────────────────┐
+│                  GITHUB ACTIONS (Automated)                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                               │
+│   Detects new .bib file in papers/bibtex/                 │
+│   Runs: python aggregate_bibtex_simple.py                 │
+│      → Generates: all_publications.bib                       │
+│                                                               │
+│   Runs: python generate_exports.py                        │
+│      → Generates: exports/all_publications.txt               │
+│      → Generates: exports/all_publications.csv               │
+│      → Generates: exports/all_publications.md                │
+│      → Generates: exports/all_publications.docx              │
+│                                                               │
+│   Counts publications &amp; updates index.qmd                  │
+│      "(41 publications)" → "(42 publications)"               │
+│                                                               │
+│   Commits changes back to repo                             │
+│                                                               │
+│   Triggers publish.yml workflow                            │
+│      → Rebuilds website with Quarto                          │
+│      → Publishes to gh-pages                                 │
+│                                                               │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+                         │ website updated!
+                         ▼
+┌─────────────────────────────────────────────────────────────┐
+│                   WEBSITE (Live)                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                               │
+│   New paper appears on publications page                   │
+│   Download links include new paper                         │
+│   Publication count updated                                │
+│   All export formats contain new paper                     │
+│                                                               │
+└─────────────────────────────────────────────────────────────┘</code></pre>
 </section>
-<section id="files-directories" class="level2">
-<h2 class="anchored" data-anchor-id="files-directories">Files &amp; Directories</h2>
+<section id="what-you-do-vs-whats-automated" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-do-vs-whats-automated">What You Do vs What’s Automated</h2>
+<section id="manual-steps-you" class="level3">
+<h3 class="anchored" data-anchor-id="manual-steps-you">Manual Steps (You)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Action</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Create <code>.bib</code> file</td>
+<td>2 min</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Add paper to <code>index.qmd</code></td>
+<td>5 min</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Add paper image</td>
+<td>1 min</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Git push</td>
+<td>30 sec</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total time: ~8 minutes</strong></p>
+</section>
+<section id="automated-steps-github-actions" class="level3">
+<h3 class="anchored" data-anchor-id="automated-steps-github-actions">Automated Steps (GitHub Actions)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Action</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Aggregate BibTeX files</td>
+<td>5 sec</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Generate 4 export formats</td>
+<td>10 sec</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Update publication count</td>
+<td>2 sec</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Commit changes</td>
+<td>5 sec</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Rebuild website</td>
+<td>30 sec</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total time: ~1 minute (fully automated)</strong></p>
+</section>
+</section>
+<section id="no-sync-issues" class="level2">
+<h2 class="anchored" data-anchor-id="no-sync-issues">No Sync Issues!</h2>
+<section id="why-this-approach-eliminates-sync-problems" class="level3">
+<h3 class="anchored" data-anchor-id="why-this-approach-eliminates-sync-problems">Why this approach eliminates sync problems:</h3>
+<p><strong>Single source of truth</strong>: GitHub repository <strong>All automation server-side</strong>: No local/remote conflicts <strong>Idempotent</strong>: Running twice produces same result <strong>Pull before edit</strong>: Simple git workflow <strong>Atomic commits</strong>: All changes together</p>
+</section>
+<section id="what-you-dont-need-to-do" class="level3">
+<h3 class="anchored" data-anchor-id="what-you-dont-need-to-do">What you DON’T need to do:</h3>
+<p>Run Python scripts manually Commit generated files Remember to update exports Count publications manually Install pre-commit hooks Set up local automation</p>
+</section>
+</section>
+<section id="real-example-adding-vayubuddy-paper" class="level2">
+<h2 class="anchored" data-anchor-id="real-example-adding-vayubuddy-paper">Real Example: Adding VayuBuddy Paper</h2>
+<section id="step-1-local-work-8-minutes" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-local-work-8-minutes">Step 1: Local Work (8 minutes)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Create BibTeX file</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">'@inproceedings{acharya2024vayubuddy,</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="st">  title={VayuBench and VayuChat},</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="st">  author={Acharya, Vedant and others},</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="st">  booktitle={ACM IKDD CODS 2025},</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="st">  year={2025}</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="st">}'</span> <span class="op">&gt;</span> papers/bibtex/vayubuddy2024.bib</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Add image (already done)</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># papers/2025/vayubuddy.png</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Edit index.qmd</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># (Add paper entry manually)</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Commit and push</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add papers/bibtex/vayubuddy2024.bib <span class="dt">\</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>        papers/index.qmd <span class="dt">\</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>        papers/2025/vayubuddy.png</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add VayuBuddy paper (CODS 2025)"</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="step-2-github-actions-1-minute-automatic" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-github-actions-1-minute-automatic">Step 2: GitHub Actions (1 minute, automatic)</h3>
+<pre><code>✓ Workflow triggered
+✓ Python dependencies installed
+✓ aggregate_bibtex_simple.py executed
+✓ generate_exports.py executed
+✓ Publication count: 41 → 42
+✓ Changes committed
+✓ Website rebuild triggered
+✓ Site published to gh-pages</code></pre>
+</section>
+<section id="step-3-result-live-on-website" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-result-live-on-website">Step 3: Result (live on website!)</h3>
+<pre><code>✓ Paper appears on publications page
+✓ all_publications.bib includes VayuBuddy
+✓ all_publications.txt includes VayuBuddy
+✓ all_publications.csv includes VayuBuddy
+✓ all_publications.md includes VayuBuddy
+✓ all_publications.docx includes VayuBuddy
+✓ Download section shows "(42 publications)"</code></pre>
+</section>
+</section>
+<section id="optional-local-validation" class="level2">
+<h2 class="anchored" data-anchor-id="optional-local-validation">Optional: Local Validation</h2>
+<p>If you want to catch errors before pushing:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Validate your BibTeX file</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> papers/validate_bibtex.py papers/bibtex/vayubuddy2024.bib</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Output:</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">#  papers/bibtex/vayubuddy2024.bib: Valid</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="file-flow-diagram" class="level2">
+<h2 class="anchored" data-anchor-id="file-flow-diagram">File Flow Diagram</h2>
+<pre><code>Individual .bib files              Aggregated files (auto)
+────────────────────               ────────────────────────
+
+papers/bibtex/
+├── paper1.bib          ┐
+├── paper2.bib          │
+├── paper3.bib          ├──►  aggregate_bibtex_simple.py
+├── ...                 │          │
+└── paper44.bib         ┘          │
+                                   ▼
+                           all_publications.bib
+                                   │
+                                   ├──►  generate_exports.py
+                                   │          │
+                                   │          ▼
+                           exports/
+                           ├── all_publications.txt
+                           ├── all_publications.csv
+                           ├── all_publications.md
+                           └── all_publications.docx</code></pre>
+</section>
+<section id="workflow-states" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-states">Workflow States</h2>
+<pre><code>┌──────────────┐
+│   You Edit   │  (Working on local machine)
+└──────┬───────┘
+       │
+       │ git push
+       ▼
+┌──────────────┐
+│  Git Push    │  (Changes sent to GitHub)
+└──────┬───────┘
+       │
+       │ triggers
+       ▼
+┌──────────────┐
+│  GH Actions  │  (Automation running)
+│   Running    │
+└──────┬───────┘
+       │
+       │ completes
+       ▼
+┌──────────────┐
+│  Auto-commit │  (Bot commits generated files)
+└──────┬───────┘
+       │
+       │ triggers
+       ▼
+┌──────────────┐
+│   Publish    │  (Website rebuild)
+│   Workflow   │
+└──────┬───────┘
+       │
+       │ deploys
+       ▼
+┌──────────────┐
+│   Website    │  (Live with new paper!)
+│   Updated    │
+└──────────────┘</code></pre>
+</section>
+<section id="pro-tips" class="level2">
+<h2 class="anchored" data-anchor-id="pro-tips">Pro Tips</h2>
+<ol type="1">
+<li><p><strong>Always pull before editing</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Then make your changes</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p><strong>Check Actions tab</strong> to monitor progress</p>
 <ul>
-<li><code>bibtex/</code> - Individual .bib files for each publication (44 papers)</li>
-<li><code>bibtex/all_publications.bib</code> - Aggregated bibliography (auto-generated)</li>
-<li><code>exports/</code> - Export formats: TXT, CSV, Markdown, DOCX (auto-generated)</li>
-<li><code>aggregate_bibtex_simple.py</code> - BibTeX aggregation script (auto-run)</li>
-<li><code>generate_exports.py</code> - Export format generator (auto-run)</li>
-<li><code>validate_bibtex.py</code> - Optional validation tool (manual)</li>
-<li><code>index.qmd</code> - Main publications page</li>
-<li><code>ADDING_PAPERS.md</code> - Complete guide for adding papers</li>
-</ul>
-</section>
-<section id="automation" class="level2">
-<h2 class="anchored" data-anchor-id="automation">Automation</h2>
-<p><strong>GitHub Actions handles everything automatically:</strong></p>
-<p>When you push a new <code>.bib</code> file, the workflow: 1. Aggregates all BibTeX files → <code>all_publications.bib</code> 2. Generates export formats → <code>exports/*.{txt,csv,md,docx}</code> 3. Updates publication count in <code>index.qmd</code> 4. Commits and pushes changes back</p>
-<p><strong>You don’t need to run scripts manually!</strong></p>
-<p>See workflow: <a href="../.github/workflows/update-publications.yml"><code>.github/workflows/update-publications.yml</code></a></p>
-</section>
-<section id="optional-manual-validation" class="level2">
-<h2 class="anchored" data-anchor-id="optional-manual-validation">Optional: Manual Validation</h2>
-<p>To check your BibTeX file before pushing:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> papers/</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> validate_bibtex.py bibtex/yourpaper2025.bib</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="manual-scripts-optional" class="level2">
-<h2 class="anchored" data-anchor-id="manual-scripts-optional">Manual Scripts (Optional)</h2>
-<p>If you want to test locally:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Aggregate BibTeX files</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> papers/</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> aggregate_bibtex_simple.py</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate export formats</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> generate_exports.py</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Validate all .bib files</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> validate_bibtex.py bibtex/<span class="pp">*</span>.bib</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="download-formats-available" class="level2">
-<h2 class="anchored" data-anchor-id="download-formats-available">Download Formats Available</h2>
+<li>Go to: https://github.com/sustainability-lab/sustainability-lab.github.io/actions</li>
+<li>Look for “Update Publications” workflow</li>
+</ul></li>
+<li><p><strong>Validate locally first</strong> (optional but recommended)</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> papers/validate_bibtex.py papers/bibtex/yourpaper.bib</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p><strong>Add multiple papers at once</strong></p>
 <ul>
-<li><strong>Individual .bib files</strong>: Each paper has its own file</li>
-<li><strong>all_publications.bib</strong>: All publications in one file</li>
-<li><strong>all_publications.txt</strong>: Plain text format</li>
-<li><strong>all_publications.csv</strong>: Spreadsheet format</li>
-<li><strong>all_publications.md</strong>: Markdown format</li>
-<li><strong>all_publications.docx</strong>: Word document</li>
-</ul>
+<li>Create multiple <code>.bib</code> files</li>
+<li>Update <code>index.qmd</code> with all entries</li>
+<li>Push once → automation handles all</li>
+</ul></li>
+</ol>
 </section>
-<section id="file-naming-convention" class="level2">
-<h2 class="anchored" data-anchor-id="file-naming-convention">File Naming Convention</h2>
-<p>Individual .bib files follow: <code>{keyword}{year}.bib</code></p>
-<p>Examples: - <code>vayubuddy2024.bib</code> - <code>space2policy2025.bib</code> - <code>jouleseye2024.bib</code></p>
-</section>
-<section id="current-stats" class="level2">
-<h2 class="anchored" data-anchor-id="current-stats">Current Stats</h2>
+<section id="documentation-files" class="level2">
+<h2 class="anchored" data-anchor-id="documentation-files">Documentation Files</h2>
 <ul>
-<li><strong>Total Publications</strong>: 44 papers (auto-updated)</li>
-<li><strong>Years Covered</strong>: 2012-2025</li>
-<li><strong>Export Formats</strong>: 4 (TXT, CSV, Markdown, DOCX)</li>
+<li><strong><a href="../papers/ADDING_PAPERS.html">ADDING_PAPERS.md</a></strong>: Complete step-by-step guide</li>
+<li><strong><a href="../papers/README_bibtex.html">README_bibtex.md</a></strong>: Quick reference</li>
+<li><strong><a href="../papers/WORKFLOW_DIAGRAM.html">WORKFLOW_DIAGRAM.md</a></strong>: This file (visual guide)</li>
 </ul>
+<hr>
+<p><strong>Remember: The best workflow is the simplest one!</strong> **</p>
 
 
 </section>

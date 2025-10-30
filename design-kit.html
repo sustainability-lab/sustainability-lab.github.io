@@ -244,6 +244,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#multiple-sizes-available" id="toc-multiple-sizes-available" class="nav-link" data-scroll-target="#multiple-sizes-available">Multiple Sizes Available:</a></li>
   </ul></li>
   <li><a href="#presentation-templates" id="toc-presentation-templates" class="nav-link" data-scroll-target="#presentation-templates">Presentation Templates</a></li>
+  <li><a href="#website-management" id="toc-website-management" class="nav-link" data-scroll-target="#website-management">Website Management</a>
+  <ul class="collapse">
+  <li><a href="#adding-publications" id="toc-adding-publications" class="nav-link" data-scroll-target="#adding-publications">Adding Publications</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -373,8 +377,32 @@ Show SVG code
 <li>Consistent branding guidelines</li>
 <li>Pre-formatted layouts for conferences and talks</li>
 </ul>
+<hr>
+</section>
+<section id="website-management" class="level2">
+<h2 class="anchored" data-anchor-id="website-management">Website Management</h2>
+<section id="adding-publications" class="level3">
+<h3 class="anchored" data-anchor-id="adding-publications">Adding Publications</h3>
+<p>Complete documentation for adding new papers to the website is available in the papers directory:</p>
+<p><strong>Quick Reference:</strong> <a href="./papers/README_bibtex.html">papers/README_bibtex.md</a></p>
+<p><strong>Step-by-step Guide:</strong> <a href="./papers/ADDING_PAPERS.html">papers/ADDING_PAPERS.md</a></p>
+<p><strong>Workflow Diagram:</strong> <a href="./papers/WORKFLOW_DIAGRAM.html">papers/WORKFLOW_DIAGRAM.md</a></p>
+<section id="quick-summary" class="level4">
+<h4 class="anchored" data-anchor-id="quick-summary">Quick Summary</h4>
+<p>Adding a publication is automated via GitHub Actions. You only need to:</p>
+<ol type="1">
+<li>Create a <code>.bib</code> file in <code>papers/bibtex/yourpaper2025.bib</code></li>
+<li>Add paper entry to <code>papers/index.qmd</code></li>
+<li>Add paper image to <code>papers/2025/yourpaper.png</code></li>
+<li>Push to GitHub</li>
+</ol>
+<p>Everything else (aggregation, exports, count updates) happens automatically.</p>
+<p><strong>Available Export Formats</strong>: BibTeX, Plain Text, CSV, Markdown, Word Document</p>
+<p><strong>Validation Tool</strong>: <code>python papers/validate_bibtex.py papers/bibtex/yourpaper.bib</code></p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

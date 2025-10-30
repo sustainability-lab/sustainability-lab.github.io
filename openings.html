@@ -528,6 +528,59 @@ body {
     100% { border-color: #f87171; }
 }
 
+details {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px 0;
+}
+
+details summary {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #475569;
+    padding: 8px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary::before {
+    content: '▶';
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    color: #2563eb;
+    font-size: 0.9em;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+details summary:hover {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+details[open] summary {
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #cbd5e1;
+}
+
+details .position-card {
+    margin-top: 12px;
+}
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.2rem;
@@ -698,7 +751,7 @@ Be a part of cutting-edge research as a Junior or Senior Research Fellow in the 
 </div>
 <details>
 <summary>
-<strong>Previous Openings</strong>
+📋 View Previous/Past Openings
 </summary>
 <div class="position-card">
 <h3 class="anchored">
