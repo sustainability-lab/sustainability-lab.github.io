@@ -79,7 +79,7 @@ toc: false
 <span>Balbir Prasad<br/>(Jul 2025 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Physics Informed ML • AI weather forecasting</em></span>
 
 <img src="images/members/Hemani.jpg" class="cropped-image"><br/>
-<span>Hemani Tekwani<br/>(Jul 2025 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Problem solving • Machine Learning</em></span>
+<span>Hemani Tekwani<br/>(Jul 2025 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Computer Vision • GeoAI</em></span>
 
 <img src="images/members/Saaransh.jpg" class="cropped-image"><br/>
 <span>Saaransh Shandilya<br/>(Jul 2025 - present)<br/><em style="color: #667eea; font-size: 0.85rem;">Natural Language Processing • LLMs</em></span>
