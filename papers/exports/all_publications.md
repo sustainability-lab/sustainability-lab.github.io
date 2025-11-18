@@ -1,10 +1,19 @@
 # Sustainability Lab Publications
 
 **IIT Gandhinagar**  
-*Generated: 2025-11-04 08:29:33*  
-*Total Publications: 45*
+*Generated: 2025-11-18 11:26:46*  
+*Total Publications: 46*
 
 ---
+
+## 2026
+
+### Scalable Air-Quality Sensor Placement via Gradient-Based
+         Mutual Information Maximization
+
+**Authors:** Patel, Zeel B and Rana, Vinayak and Batra, Nipun  
+**Venue:** *Proceedings of the AAAI Conference on
+             Artificial Intelligence*  
 
 ## 2025
 
