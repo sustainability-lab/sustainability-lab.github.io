@@ -13,6 +13,11 @@
 **Authors:** Acharya, Vedant and Pisharodi, Abhay and Pasi, Ratnesh and Mondal, Rishabh and Batra, Nipun  
 **Venue:** *ACM IKDD CODS 2025 - 13th International Conference on Data Science*  
 
+### VayuBench and VayuChat: Executable Benchmarking and Deployment of LLMs for Multi-Dataset Air Quality Analytics
+
+**Authors:** Acharya, Vedant and Pisharodi, Abhay and Pasi, Ratnesh and Mondal, Rishabh and Batra, Nipun  
+**Venue:** *ACM IKDD CODS 2025 - 13th International Conference on Data Science*  
+
 ### Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data
 
 **Authors:** Patel, Zeel B and Mondal, Rishabh and Dubey, Shataxi and Jaiswal, Suraj and Guttikunda, Sarath and Batra, Nipun  

@@ -27,6 +27,38 @@ STORED AS A TEMPLATE FOR FUTURE USE
 
 ## 2025
 
+<div class="paper">
+<img src="2025/gdmi.jpg" class="paper-image">
+<div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #e3f2fd; color: #201f1fff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span>
+  <span class="tag" style="background: #e8f5e8; color: #167ad8ff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Large Language Models</span>
+  <span class="tag" style="background: #fff3e0; color: #101010ff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Active Learning</span>
+</div>
+<p class="paper-title">Scalable Air-Quality Sensor Placement via Gradient-Based Mutual Information Maximization</p>
+<p>Zeel B Patel, Vinayak Rana, Nipun Batra</p>
+<p><i>Association for the Advancement of Artificial Intelligence (AAAI) 2026</i></p>
+<a href="" class="paper-button">PDF</a>
+<!-- <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuChat" class="paper-button">Project Demo</a> -->
+<!-- <a href="https://sustainability-lab.github.io/sentinelkilndb/" class="paper-button">Project Page</a> -->
+<a href="bibtex/gdmi.bib" class="paper-button bibtex-btn" download>BibTeX</a>
+<!-- <a href="" class="paper-button">YouTube</a> -->
+<!-- <a href="https://docs.google.com/presentation/d/19jIDm3kSZlOdnhgIIvWf8tZNjMx0dRcCmp0Z3nZVUEw/edit?usp=sharing" class="paper-button">Google AQ Summit 2024</a> -->
+<!-- <a href="https://docs.google.com/presentation/d/1PniVOoJEedGP-5N4hSqg21xjSv7v2uT4xSKNe1qB2vo/edit?usp=sharing" class="paper-button">IITD Talk</a> -->
+<a href="https://github.com/sustainability-lab/gdmi-aqs" class="paper-button">Github</a>
+
+<div id="bibtex-sentinelkilndb" class="bibtex-content" style="display: none;">
+<!-- @article{mondal2025sentinelkilndb,
+  title={SentinelKilnDB: A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery},
+  author={Mondal, Rishabh and Parab, Jeet and Kubadia, Heer and Dubey, Shataxi and Junagade, Shardul and Patel, Zeel B and Batra, Nipun},
+  journal={Advances in Neural Information Processing Systems},
+  year={2025}
+} -->
+</div>
+</div>
+</div>
+
+
 
 <div class="paper">
 <img src="2025/vayubuddy.png" class="paper-image">
