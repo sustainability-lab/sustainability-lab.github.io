@@ -1,7 +1,7 @@
 # Sustainability Lab Publications
 
 **IIT Gandhinagar**  
-*Generated: 2025-11-18 11:26:46*  
+*Generated: 2025-11-18 12:48:06*  
 *Total Publications: 46*
 
 ---
