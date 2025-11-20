@@ -129,7 +129,7 @@ toc: false
 </div>
 
 <div class="news-item category-award" data-category="award">
-<span class="news-date">Jan</span>
+<span class="news-date">Jun</span>
 <span class="news-icon">🏆</span>
 <span class="news-content"><strong>Prof. Nipun Batra wins the SIGEnergy Rising Star Award 2025!</strong></span>
 </div>
