@@ -1,9 +1,6 @@
 ---
 title: News
 toc: false
-output:
-  html_document:
-    self_contained: false
 ---
 
 <style>
@@ -12,6 +9,47 @@ body {
     background-color: #fafbfc;
     color: #2d3748;
     line-height: 1.6;
+}
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 20px;
+    background: white;
+    color: #4a5568;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.filter-btn:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+.filter-btn.active {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: white;
+}
+
+.filter-btn .icon {
+    font-size: 1rem;
 }
 
 .year-section {
@@ -29,506 +67,1007 @@ body {
 
 .news-item {
     background: white;
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    padding: 16px;
+    padding: 16px 20px;
     margin-bottom: 12px;
     transition: all 0.2s ease;
     border-left: 4px solid #e2e8f0;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
 }
 
 .news-item:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-left-color: #2563eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+.news-icon {
+    font-size: 1.5rem;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #f7fafc;
+}
+
+.news-body {
+    flex: 1;
+}
+
+.news-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 6px;
 }
 
 .news-date {
     color: #667eea;
     font-weight: 600;
-    font-size: 0.9rem;
-    margin-bottom: 4px;
+    font-size: 0.85rem;
+}
+
+.news-category {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .news-content {
-    color: #4a5568;
+    color: #2d3748;
     font-size: 0.95rem;
 }
 
 .news-content a {
     color: #2563eb;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .news-content a:hover {
     text-decoration: underline;
 }
 
-.highlight {
-    border-left-color: #f59e0b;
-    background: #fffbeb;
+/* Category-specific styling */
+.category-award { border-left-color: #f59e0b; }
+.category-award .news-icon { background: #fffbeb; color: #f59e0b; }
+.category-award .news-category { background: #fef3c7; color: #92400e; }
+
+.category-paper { border-left-color: #10b981; }
+.category-paper .news-icon { background: #ecfdf5; color: #10b981; }
+.category-paper .news-category { background: #d1fae5; color: #065f46; }
+
+.category-joining { border-left-color: #3b82f6; }
+.category-joining .news-icon { background: #eff6ff; color: #3b82f6; }
+.category-joining .news-category { background: #dbeafe; color: #1e40af; }
+
+.category-talk { border-left-color: #8b5cf6; }
+.category-talk .news-icon { background: #f5f3ff; color: #8b5cf6; }
+.category-talk .news-category { background: #ede9fe; color: #5b21b6; }
+
+.category-media { border-left-color: #ec4899; }
+.category-media .news-icon { background: #fdf2f8; color: #ec4899; }
+.category-media .news-category { background: #fce7f3; color: #9d174d; }
+
+.category-thesis { border-left-color: #06b6d4; }
+.category-thesis .news-icon { background: #ecfeff; color: #06b6d4; }
+.category-thesis .news-category { background: #cffafe; color: #155e75; }
+
+.category-grant { border-left-color: #84cc16; }
+.category-grant .news-icon { background: #f7fee7; color: #84cc16; }
+.category-grant .news-category { background: #ecfccb; color: #3f6212; }
+
+.hidden {
+    display: none !important;
 }
 
 @media (max-width: 768px) {
     .news-item {
         padding: 12px;
-        margin-bottom: 8px;
+        gap: 12px;
+    }
+
+    .news-icon {
+        font-size: 1.2rem;
+        min-width: 32px;
+        height: 32px;
+    }
+
+    .filter-container {
+        padding: 12px;
+    }
+
+    .filter-btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
     }
 }
 </style>
 
-## 2025
+<div class="filter-container">
+<button class="filter-btn active" data-category="all">
+<span class="icon">📰</span> All News
+</button>
+<button class="filter-btn" data-category="award">
+<span class="icon">🏆</span> Awards
+</button>
+<button class="filter-btn" data-category="paper">
+<span class="icon">📄</span> Papers
+</button>
+<button class="filter-btn" data-category="joining">
+<span class="icon">👋</span> Joining
+</button>
+<button class="filter-btn" data-category="talk">
+<span class="icon">🎤</span> Talks
+</button>
+<button class="filter-btn" data-category="thesis">
+<span class="icon">🎓</span> Thesis
+</button>
+<button class="filter-btn" data-category="grant">
+<span class="icon">💰</span> Grants
+</button>
+</div>
 
-<div class="news-item highlight">
-<div class="news-date">Jan 2025</div>
+<div class="year-section">
+<h2 class="year-header">2025</h2>
+
+<div class="news-item category-award" data-category="award">
+<div class="news-icon">🏆</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jan 2025</span>
+<span class="news-category">Award</span>
+</div>
 <div class="news-content">
-🏆 <strong>Prof. Nipun Batra receives Test of Time Award for NILMTK!</strong> Recognition for significant long-term impact on energy disaggregation research. <a href="awards.qmd">View all awards →</a>
+<strong>Prof. Nipun Batra receives Test of Time Award for NILMTK!</strong> Recognition for significant long-term impact on energy disaggregation research. <a href="awards.qmd">View all awards →</a>
+</div>
 </div>
 </div>
 
-<div class="news-item highlight">
-<div class="news-date">Jan 2025</div>
+<div class="news-item category-award" data-category="award">
+<div class="news-icon">🏆</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jan 2025</span>
+<span class="news-category">Award</span>
+</div>
 <div class="news-content">
-🏆 <strong>Dr. Rishiraj Adhikary (PhD Alumnus) receives Commendation for Outstanding Research (PhD)</strong> at IIT Gandhinagar Convocation 2025! <a href="awards.qmd">View all awards →</a>
+<strong>Dr. Rishiraj Adhikary (PhD Alumnus) receives Commendation for Outstanding Research (PhD)</strong> at IIT Gandhinagar Convocation 2025! <a href="awards.qmd">View all awards →</a>
+</div>
 </div>
 </div>
 
-<div class="news-item highlight">
-<div class="news-date">Jan 2025</div>
+<div class="news-item category-award" data-category="award">
+<div class="news-icon">🏆</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jan 2025</span>
+<span class="news-category">Award</span>
+</div>
 <div class="news-content">
-🏆 <strong>Prof. Nipun Batra wins the SIGEnergy Rising Star Award 2025!</strong> <a href="awards.qmd">View all awards →</a>
+<strong>Prof. Nipun Batra wins the SIGEnergy Rising Star Award 2025!</strong> <a href="awards.qmd">View all awards →</a>
+</div>
 </div>
 </div>
 
-<div class="news-item highlight">
-<div class="news-date">Jan 2025</div>
+<div class="news-item category-award" data-category="award">
+<div class="news-icon">🏆</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jan 2025</span>
+<span class="news-category">Award</span>
+</div>
 <div class="news-content">
-🏆 Shrimay Shah and Dhruv Gupta win Third Prize in Undergraduate Research Showcase for Brick Kilns Detection project! <a href="awards.qmd">View all awards →</a>
+Shrimay Shah and Dhruv Gupta win Third Prize in Undergraduate Research Showcase for Brick Kilns Detection project! <a href="awards.qmd">View all awards →</a>
+</div>
 </div>
 </div>
 
-<div class="news-item">
-<div class="news-date">Jan 2025</div>
+<div class="news-item category-joining" data-category="joining">
+<div class="news-icon">👋</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jan 2025</span>
+<span class="news-category">Joining</span>
+</div>
 <div class="news-content">
 Tanu and Meenakshi join Sustainability Lab as Junior Research Fellows. Welcome!
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Jan 2025</div>
+<div class="news-item category-thesis" data-category="thesis">
+<div class="news-icon">🎓</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jan 2025</span>
+<span class="news-category">Thesis</span>
+</div>
 <div class="news-content">
 Dr. Rishiraj Adhikary successfully defends his PhD thesis. Congratulations!
 </div>
 </div>
+</div>
 
-## 2024
+</div>
 
-<div class="news-item highlight">
-<div class="news-date">Aug 2024</div>
+<div class="year-section">
+<h2 class="year-header">2024</h2>
+
+<div class="news-item category-award" data-category="award">
+<div class="news-icon">🏆</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Aug 2024</span>
+<span class="news-category">Award</span>
+</div>
 <div class="news-content">
-🏆 Devodita wins the Bhalodia-Khetan Summer Research Excellence Award for ML sustainability project! <a href="awards.qmd">View all awards →</a>
+Devodita wins the Bhalodia-Khetan Summer Research Excellence Award for ML sustainability project! <a href="awards.qmd">View all awards →</a>
+</div>
 </div>
 </div>
 
-<div class="news-item">
-<div class="news-date">Jul 2024</div>
+<div class="news-item category-talk" data-category="talk">
+<div class="news-icon">🎤</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jul 2024</span>
+<span class="news-category">Talk</span>
+</div>
 <div class="news-content">
 Prof. Nipun Batra delivered a talk on "Smart Health Sensing for Sustainable Future" at <a href="https://www.pdpu.ac.in" target="_blank">Pandit Deendayal Energy University</a>
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Jul 2024</div>
+<div class="news-item category-talk" data-category="talk">
+<div class="news-icon">🎤</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jul 2024</span>
+<span class="news-category">Talk</span>
+</div>
 <div class="news-content">
 Prof. Nipun Batra delivered the <a href="https://www.youtube.com/watch?v=2kgnmqx-RwM" target="_blank">Doctoral Consortium keynote talk</a> titled "Within and Beyond: Lessons in Computational Sustainability" at <a href="https://compass.acm.org" target="_blank">ACM Compass'24</a>
 </div>
 </div>
+</div>
 
-<div class="news-item highlight">
-<div class="news-date">Jun 2024</div>
+<div class="news-item category-award" data-category="award">
+<div class="news-icon">🏆</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jun 2024</span>
+<span class="news-category">Award</span>
+</div>
 <div class="news-content">
-🏆 <strong>Zeel wins the prestigious Microsoft Research India PhD Award!</strong> <a href="awards.qmd">View all awards →</a>
+<strong>Zeel wins the prestigious Microsoft Research India PhD Award!</strong> <a href="awards.qmd">View all awards →</a>
+</div>
 </div>
 </div>
 
-<div class="news-item">
-<div class="news-date">Jun 2024</div>
+<div class="news-item category-thesis" data-category="thesis">
+<div class="news-icon">🎓</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jun 2024</span>
+<span class="news-category">Thesis</span>
+</div>
 <div class="news-content">
 Ayush and Suraj successfully defend their Masters thesis!
 </div>
 </div>
+</div>
 
-<div class="news-item highlight">
-<div class="news-date">Apr 2024</div>
+<div class="news-item category-award" data-category="award">
+<div class="news-icon">🏆</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Apr 2024</span>
+<span class="news-category">Award</span>
+</div>
 <div class="news-content">
-🌟 Rishiraj selected for the prestigious <a href="https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html" target="_blank">Heidelberg Laureate Forum</a>! <a href="awards.qmd">View all awards →</a>
+Rishiraj selected for the prestigious <a href="https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html" target="_blank">Heidelberg Laureate Forum</a>! <a href="awards.qmd">View all awards →</a>
+</div>
 </div>
 </div>
 
-<div class="news-item">
-<div class="news-date">Jan 2024</div>
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jan 2024</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
 Our paper titled "JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising" got accepted in <a href="https://dl.acm.org/toc/imwut/2023/7/4" target="_blank">IMWUT 2024</a>
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Jan 2024</div>
+<div class="news-item category-joining" data-category="joining">
+<div class="news-icon">👋</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jan 2024</span>
+<span class="news-category">Joining</span>
+</div>
 <div class="news-content">
 Shataxi, Prince and Poornima join Sustainability lab. Welcome!
 </div>
 </div>
+</div>
 
-## 2023
+</div>
 
-<div class="news-item">
-<div class="news-date">Dec 2023</div>
+<div class="year-section">
+<h2 class="year-header">2023</h2>
+
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Dec 2023</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
 Poster titled "AirDelhi: Fine-Grained Spatio-Temporal Particulate Matter Dataset From Delhi For ML based Modeling" got accepted in <a href="https://neurips.cc/virtual/2023/poster/73476" target="_blank">NeurIPS 2023</a>
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Oct 2023</div>
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Oct 2023</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
 Our workshop paper titled "Towards Scalable Identification of Brick Kilns from Satellite Imagery with Active Learning" got accepted in <a href="https://neurips.cc/virtual/2023/78770" target="_blank">NeurIPS 2023</a>
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Sep 2023</div>
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Sep 2023</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
 Our Paper titled "Fine-Grained Spatio-Temporal Particulate Matter Dataset From Delhi For ML based Modeling" got accepted in <a href="https://papers.nips.cc/paper_files/paper/2023/hash/ee799aff607fcf39c01df6391e96f92c-Abstract-Datasets_and_Benchmarks.html" target="_blank">NeurIPS 2023</a> Datasets and Benchmarks Track
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Sep 2023</div>
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Sep 2023</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
 A visual explainable "Conformal Prediction: A Visual Introduction" got accepted at <a href="https://visxai.io/2023" target="_blank">VisXAI 23</a> workshop
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Jun 2023</div>
+<div class="news-item category-joining" data-category="joining">
+<div class="news-icon">👋</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jun 2023</span>
+<span class="news-category">Joining</span>
+</div>
 <div class="news-content">
 Khush and Rishabh join Sustainability lab. Welcome!
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Jun 2023</div>
+<div class="news-item category-thesis" data-category="thesis">
+<div class="news-icon">🎓</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jun 2023</span>
+<span class="news-category">Thesis</span>
+</div>
 <div class="news-content">
 Ankita successfully defends her Masters thesis!
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Jan 2023</div>
+<div class="news-item category-joining" data-category="joining">
+<div class="news-icon">👋</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jan 2023</span>
+<span class="news-category">Joining</span>
+</div>
 <div class="news-content">
 Ayush and Suraj join Sustainability lab. Welcome!
 </div>
 </div>
+</div>
 
-## 2022
+</div>
 
-<div class="news-item">
-<div class="news-date">Nov 2022</div>
+<div class="year-section">
+<h2 class="year-header">2022</h2>
+
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Nov 2022</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
 Our paper "I do not know": Quantifying Uncertainty in Neural Network Based Approaches for Non-Intrusive Load Monitoring got accepted in <a href="https://dl.acm.org/doi/proceedings/10.1145/3563357" target="_blank">BuildSys 2022</a>
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Oct 2022</div>
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Oct 2022</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
 Our workshop paper "Uncertainty Disentanglement with Non-stationary Heteroscedastic Gaussian Processes for Active Learning" got accepted in <a href="https://gp-seminar-series.github.io/neurips-2022/" target="_blank">NeurIPS 2022</a>
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Oct 2022</div>
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Oct 2022</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
 Our workshop paper "Challenges in Gaussian Processes for Non Intrusive Load Monitoring" got accepted in <a href="https://gp-seminar-series.github.io/neurips-2022/" target="_blank">NeurIPS 2022</a>
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Oct 2022</div>
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Oct 2022</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
 Our paper "SpiroMask: Measuring Lung Function Using Consumer-Grade Masks" got accepted in <a href="https://dl.acm.org/toc/health/2023/4/1" target="_blank">ACM HEALTH</a>
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Sep 2022</div>
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Sep 2022</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
 Our poster "Towards Continuous Respiration Rate Detection While Walking" got accepted in <a href="https://dl.acm.org/doi/proceedings/10.1145/3544793" target="_blank">Ubicomp/ISWC (Adjunct) 2022</a>
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Aug 2022</div>
+<div class="news-item category-talk" data-category="talk">
+<div class="news-icon">🎤</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Aug 2022</span>
+<span class="news-category">Talk</span>
+</div>
 <div class="news-content">
 Zeel Presented our AAAI22 work "Accurate and Scalable Non-Stationary GPs" at Air Sensors International Conference <a href="https://cstep.in/event-details.php?id=2042" target="_blank">(ASIC)</a>, Bangalore, India.
 </div>
 </div>
+</div>
 
-<div class="news-item highlight">
-<div class="news-date">May 2022</div>
+<div class="news-item category-award" data-category="award">
+<div class="news-icon">🏆</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">May 2022</span>
+<span class="news-category">Award</span>
+</div>
 <div class="news-content">
-🌟 Zeel selected as Google Summer of Code contributor at TensorFlow with <a href="https://www.cs.ubc.ca/~murphyk/" target="_blank">Dr. Kevin P. Murphy</a>! <a href="awards.qmd">View all awards →</a>
+Zeel selected as Google Summer of Code contributor at TensorFlow with <a href="https://www.cs.ubc.ca/~murphyk/" target="_blank">Dr. Kevin P. Murphy</a>! <a href="awards.qmd">View all awards →</a>
+</div>
 </div>
 </div>
 
-<div class="news-item">
-<div class="news-date">Apr 2022</div>
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Apr 2022</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
 Our work "Samachar: Print News Media on Air Pollution in India" is accepted in <a href="https://dl.acm.org/doi/10.1145/3530190.3534812" target="_blank">ACM COMPASS 22</a>
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Jan 2022</div>
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jan 2022</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
 Our paper "Vastr-GAN: Versatile Apparel Synthesised from Text using a Robust Generative Adversarial Network" got accepted in <a href="https://dblp.org/db/conf/comad/comad2022.html" target="_blank">CODS-COMAD 2022</a>
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Jan 2022</div>
+<div class="news-item category-joining" data-category="joining">
+<div class="news-icon">👋</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jan 2022</span>
+<span class="news-category">Joining</span>
+</div>
 <div class="news-content">
 Ankita joins Sustainability lab. Welcome!
 </div>
 </div>
+</div>
 
-## 2021
+</div>
 
-<div class="news-item">
-<div class="news-date">Dec 2021</div>
+<div class="year-section">
+<h2 class="year-header">2021</h2>
+
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Dec 2021</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
 Our paper on "Accurate and Scalable Non-Stationary GPs" gets accepted to <a href="https://aaai-2022.virtualchair.net/poster_aisi11178" target="_blank">AAAI 2022</a>
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Nov 2021</div>
+<div class="news-item category-grant" data-category="grant">
+<div class="news-icon">💰</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Nov 2021</span>
+<span class="news-category">Grant</span>
+</div>
 <div class="news-content">
 Received a 5000 USD cloud credit grant from Google Research
 </div>
 </div>
+</div>
 
-<div class="news-item highlight">
-<div class="news-date">Nov 2021</div>
+<div class="news-item category-award" data-category="award">
+<div class="news-icon">🏆</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Nov 2021</span>
+<span class="news-category">Award</span>
+</div>
 <div class="news-content">
-🏆 Rishiraj wins the prestigious USIEF <a href="https://www.usief.org.in/Fulbright-Nehru-Doctoral-Research-Fellowships.aspx" target="_blank">Fulbright-Nehru Doctoral Research Fellowship</a>! <a href="awards.qmd">View all awards →</a>
+<strong>Rishiraj wins the prestigious USIEF <a href="https://www.usief.org.in/Fulbright-Nehru-Doctoral-Research-Fellowships.aspx" target="_blank">Fulbright-Nehru Doctoral Research Fellowship</a>!</strong> <a href="awards.qmd">View all awards →</a>
+</div>
 </div>
 </div>
 
-<div class="news-item highlight">
-<div class="news-date">Oct 2021</div>
+<div class="news-item category-award" data-category="award">
+<div class="news-icon">🏆</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Oct 2021</span>
+<span class="news-category">Award</span>
+</div>
 <div class="news-content">
-🏆 Rishiraj wins the prestigious <a href="https://www.pmrf.in/" target="_blank">Prime Minister Research Fellowship</a>! <a href="awards.qmd">View all awards →</a>
+<strong>Rishiraj wins the prestigious <a href="https://www.pmrf.in/" target="_blank">Prime Minister Research Fellowship</a>!</strong> <a href="awards.qmd">View all awards →</a>
+</div>
 </div>
 </div>
 
-<div class="news-item">
-<div class="news-date">Sep 2021</div>
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Sep 2021</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
 Notes paper on adding neural network approaches to NILMTK-contrib accepted at <a href="https://dl.acm.org/doi/10.1145/3486611.3486652" target="_blank">BuildSys 2021</a>
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Sep 2021</div>
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Sep 2021</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
 Interactive Illustration on Exploring Hidden Markov Models accepted to <a href="https://visxai.io/2021.html" target="_blank">IEEE VisxAI 2021</a> workshop <a href="https://nipunbatra.github.io/hmm/" target="_blank">[Link to visualization]</a>
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Aug 2021</div>
+<div class="news-item category-talk" data-category="talk">
+<div class="news-icon">🎤</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Aug 2021</span>
+<span class="news-category">Talk</span>
+</div>
 <div class="news-content">
 Teaching a course on Ubiquitous computing this semester <a href="https://www.craft.do/s/MAdQrLOO9ErCvc" target="_blank">[Link to Course]</a>
 </div>
 </div>
-
-<div class="news-item">
-<div class="news-date">May 2021</div>
-<div class="news-content">
-Completed the ML course this semester with feedback 3.83/4 :)
-</div>
 </div>
 
-<div class="news-item">
-<div class="news-date">Feb 2021</div>
+<div class="news-item category-talk" data-category="talk">
+<div class="news-icon">🎤</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Feb 2021</span>
+<span class="news-category">Talk</span>
+</div>
 <div class="news-content">
 Serving as the publication chair for <a href="https://cods-comad.in/" target="_blank">CODS-COMAD 2022</a>
 </div>
 </div>
-
-<div class="news-item">
-<div class="news-date">Jan 2021</div>
-<div class="news-content">
-Completed the Introduction to Programming course this semester with feedback 3.73/4 :)
-</div>
 </div>
 
-## 2020
+</div>
 
-<div class="news-item">
-<div class="news-date">Dec 2020</div>
+<div class="year-section">
+<h2 class="year-header">2020</h2>
+
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Dec 2020</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
 Our paper on understanding air quality perceptions from social media accepted at ACM CSCW
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Nov 2020</div>
+<div class="news-item category-grant" data-category="grant">
+<div class="news-icon">💰</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Nov 2020</span>
+<span class="news-category">Grant</span>
+</div>
 <div class="news-content">
 Got a grant from CISCO on edge non-intrusive load monitoring
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Oct 2020</div>
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Oct 2020</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
-Interactive Illustration on Active Learning accepted to <a href="https://visxai.io/2020" target="_blank">IEEE VisxAI 2020</a> workshop<br><a href="https://patel-zeel.github.io/active-learning-visualization/" target="_blank">[Link to visualization]</a>
+Interactive Illustration on Active Learning accepted to <a href="https://visxai.io/2020" target="_blank">IEEE VisxAI 2020</a> workshop <a href="https://patel-zeel.github.io/active-learning-visualization/" target="_blank">[Link to visualization]</a>
+</div>
 </div>
 </div>
 
-<div class="news-item">
-<div class="news-date">Oct 2020</div>
+<div class="news-item category-grant" data-category="grant">
+<div class="news-icon">💰</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Oct 2020</span>
+<span class="news-category">Grant</span>
+</div>
 <div class="news-content">
 Got a grant from SERB on AI and sensor networks for air quality
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Sep 2020</div>
+<div class="news-item category-grant" data-category="grant">
+<div class="news-icon">💰</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Sep 2020</span>
+<span class="news-category">Grant</span>
+</div>
 <div class="news-content">
 Got a grant from Google on COVID and air quality linkages
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">May 2020</div>
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">May 2020</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
 Our Distill article on Bayesian Optimization got accepted <a href="https://distill.pub/2020/bayesian-optimization/" target="_blank">[Link to visualization]</a>
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Feb 2020</div>
+<div class="news-item category-talk" data-category="talk">
+<div class="news-icon">🎤</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Feb 2020</span>
+<span class="news-category">Talk</span>
+</div>
 <div class="news-content">
-Organised a faculty development program on data science and analytics under the aegis of TEQIP (Pic with the group)
+Organised a faculty development program on data science and analytics under the aegis of TEQIP
+</div>
 </div>
 </div>
 
-<div class="news-item">
-<div class="news-date">Feb 2020</div>
+<div class="news-item category-talk" data-category="talk">
+<div class="news-icon">🎤</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Feb 2020</span>
+<span class="news-category">Talk</span>
+</div>
 <div class="news-content">
-CSE@IITGN organised ACM India annual event.<br>(Pic with Yann LeCun (Turing award), Shwetak Patel (ACM Compute Prize))
+CSE@IITGN organised ACM India annual event with Yann LeCun (Turing award) and Shwetak Patel (ACM Compute Prize)
+</div>
 </div>
 </div>
 
-<div class="news-item">
-<div class="news-date">Jan 2020</div>
+<div class="news-item category-talk" data-category="talk">
+<div class="news-icon">🎤</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jan 2020</span>
+<span class="news-category">Talk</span>
+</div>
 <div class="news-content">
 Members of our lab attended and presented four posters at CODS COMAD 2020
 </div>
 </div>
+</div>
 
-## 2019
+</div>
 
-<div class="news-item">
-<div class="news-date">Nov 2019</div>
+<div class="year-section">
+<h2 class="year-header">2019</h2>
+
+<div class="news-item category-talk" data-category="talk">
+<div class="news-icon">🎤</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Nov 2019</span>
+<span class="news-category">Talk</span>
+</div>
 <div class="news-content">
 Spoke at INS Valsura on Machine Learning. Honoured to speak in front of officers from Indian Navy, Army and Air Force
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Nov 2019</div>
+<div class="news-item category-talk" data-category="talk">
+<div class="news-icon">🎤</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Nov 2019</span>
+<span class="news-category">Talk</span>
+</div>
 <div class="news-content">
 Gave a talk about our energy dis-aggregation work at ACM BuildSys 2019 in NYC!
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Nov 2019</div>
+<div class="news-item category-talk" data-category="talk">
+<div class="news-icon">🎤</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Nov 2019</span>
+<span class="news-category">Talk</span>
+</div>
 <div class="news-content">
 Gave a talk about our air quality work at Google, Bangalore
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Apr 2019</div>
+<div class="news-item category-talk" data-category="talk">
+<div class="news-icon">🎤</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Apr 2019</span>
+<span class="news-category">Talk</span>
+</div>
 <div class="news-content">
 Giving a talk on Computational Sustainability at Nirma University.
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Mar 2019</div>
+<div class="news-item category-talk" data-category="talk">
+<div class="news-icon">🎤</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Mar 2019</span>
+<span class="news-category">Talk</span>
+</div>
 <div class="news-content">
 Giving a talk on Computational Sustainability at ROCS 2019.
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Jan 2019</div>
+<div class="news-item category-paper" data-category="paper">
+<div class="news-icon">📄</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jan 2019</span>
+<span class="news-category">Paper</span>
+</div>
 <div class="news-content">
-Paper accepted in WWW! Details soon on Publications page.
+Paper accepted in WWW! Details on Publications page.
+</div>
 </div>
 </div>
 
-<div class="news-item">
-<div class="news-date">Jan 2019</div>
+<div class="news-item category-talk" data-category="talk">
+<div class="news-icon">🎤</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jan 2019</span>
+<span class="news-category">Talk</span>
+</div>
 <div class="news-content">
-Teaching machine learning this semester. Class URL
+Teaching machine learning this semester.
+</div>
 </div>
 </div>
 
-## 2018
+</div>
 
-<div class="news-item">
-<div class="news-date">Nov 2018</div>
+<div class="year-section">
+<h2 class="year-header">2018</h2>
+
+<div class="news-item category-talk" data-category="talk">
+<div class="news-icon">🎤</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Nov 2018</span>
+<span class="news-category">Talk</span>
+</div>
 <div class="news-content">
 Haroon presented our paper in BuildSys 18!
 </div>
 </div>
+</div>
 
-<div class="news-item">
-<div class="news-date">Nov 2018</div>
+<div class="news-item category-grant" data-category="grant">
+<div class="news-icon">💰</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Nov 2018</span>
+<span class="news-category">Grant</span>
+</div>
 <div class="news-content">
-Awarded an Microsoft AI for Earth grant worth $15000 in Azure credits
+Awarded a Microsoft AI for Earth grant worth $15000 in Azure credits
+</div>
 </div>
 </div>
 
-<div class="news-item">
-<div class="news-date">Aug 2018</div>
+<div class="news-item category-talk" data-category="talk">
+<div class="news-icon">🎤</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Aug 2018</span>
+<span class="news-category">Talk</span>
+</div>
 <div class="news-content">
-Took a research methods for CS bootcamp at IITGN. Slides, Youtube
+Took a research methods for CS bootcamp at IITGN
+</div>
 </div>
 </div>
 
-<div class="news-item">
-<div class="news-date">Jul 2018</div>
+<div class="news-item category-grant" data-category="grant">
+<div class="news-icon">💰</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jul 2018</span>
+<span class="news-category">Grant</span>
+</div>
 <div class="news-content">
 Received a Titan XP GPU from NVidia via their grant program. Thanks, NVidia!
 </div>
 </div>
-
-<div class="news-item">
-<div class="news-date">Jul 2018</div>
-<div class="news-content">
-Teaching operating systems in the current semester at IITGN
-</div>
 </div>
 
-<div class="news-item">
-<div class="news-date">Jul 2018</div>
+<div class="news-item category-joining" data-category="joining">
+<div class="news-icon">👋</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-date">Jul 2018</span>
+<span class="news-category">Joining</span>
+</div>
 <div class="news-content">
-Joined CSE at IITGN as an Assistant Professor
+<strong>Joined CSE at IITGN as an Assistant Professor</strong>
 </div>
 </div>
+</div>
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const newsItems = document.querySelectorAll('.news-item');
+    const yearSections = document.querySelectorAll('.year-section');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const category = this.dataset.category;
+
+            // Update active state
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+
+            // Filter items
+            newsItems.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            // Hide empty year sections
+            yearSections.forEach(section => {
+                const visibleItems = section.querySelectorAll('.news-item:not(.hidden)');
+                if (visibleItems.length === 0) {
+                    section.classList.add('hidden');
+                } else {
+                    section.classList.remove('hidden');
+                }
+            });
+        });
+    });
+});
+</script>
