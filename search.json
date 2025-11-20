@@ -1131,7 +1131,7 @@
     "href": "design-kit.html#website-management",
     "title": "Design Kit & Resources",
     "section": "Website Management",
-    "text": "Website Management\n\nAdding Publications\nSee papers/README.md for complete documentation on adding publications.\nQuick workflow: 1. Add .bib file to papers/bibtex/ 2. Add entry to papers/index.qmd 3. Add image to papers/YYYY/ 4. Push - exports auto-generate via GitHub Actions"
+    "text": "Website Management\n\nAdding Publications\nSee papers/README.md for complete documentation on adding publications.\nQuick workflow: 1. Add .bib file to papers/bibtex/ 2. Add entry to papers/index.qmd 3. Add image to papers/YYYY/ 4. Push - exports auto-generate via GitHub Actions\n\n\n\nImage Size Optimization\nLarge images slow down page loading. Run the audit script periodically:\n# Find images &gt; 500KB\npython scripts/audit_photo_sizes.py\n\n# Custom threshold (e.g., 200KB)\npython scripts/audit_photo_sizes.py --threshold 200\n\n# Optimize (compress + backup originals)\npython scripts/audit_photo_sizes.py --optimize\nGuidelines: - Photos: Keep under 500KB (compress JPEGs to 80-85% quality) - Paper thumbnails: ~250x180px, under 200KB - Member photos: ~400x400px, under 300KB - Originals backed up to backup_large_images/ (not committed)"
   },
   {
     "objectID": "awards.html",

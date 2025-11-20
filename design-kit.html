@@ -244,6 +244,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#website-management" id="toc-website-management" class="nav-link" data-scroll-target="#website-management">Website Management</a>
   <ul class="collapse">
   <li><a href="#adding-publications" id="toc-adding-publications" class="nav-link" data-scroll-target="#adding-publications">Adding Publications</a></li>
+  <li><a href="#image-size-optimization" id="toc-image-size-optimization" class="nav-link" data-scroll-target="#image-size-optimization">Image Size Optimization</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -403,6 +404,20 @@ Show SVG code
 <h3 class="anchored" data-anchor-id="adding-publications">Adding Publications</h3>
 <p>See <a href="papers/README.md">papers/README.md</a> for complete documentation on adding publications.</p>
 <p><strong>Quick workflow:</strong> 1. Add <code>.bib</code> file to <code>papers/bibtex/</code> 2. Add entry to <code>papers/index.qmd</code> 3. Add image to <code>papers/YYYY/</code> 4. Push - exports auto-generate via GitHub Actions</p>
+<hr>
+</section>
+<section id="image-size-optimization" class="level3">
+<h3 class="anchored" data-anchor-id="image-size-optimization">Image Size Optimization</h3>
+<p>Large images slow down page loading. Run the audit script periodically:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Find images &gt; 500KB</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/audit_photo_sizes.py</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Custom threshold (e.g., 200KB)</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/audit_photo_sizes.py <span class="at">--threshold</span> 200</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Optimize (compress + backup originals)</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/audit_photo_sizes.py <span class="at">--optimize</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Guidelines:</strong> - Photos: Keep under 500KB (compress JPEGs to 80-85% quality) - Paper thumbnails: ~250x180px, under 200KB - Member photos: ~400x400px, under 300KB - Originals backed up to <code>backup_large_images/</code> (not committed)</p>
 
 
 </section>
