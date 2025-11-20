@@ -157,3 +157,26 @@ See [papers/README.md](papers/README.md) for complete documentation on adding pu
 2. Add entry to `papers/index.qmd`
 3. Add image to `papers/YYYY/`
 4. Push - exports auto-generate via GitHub Actions
+
+---
+
+### Image Size Optimization
+
+Large images slow down page loading. Run the audit script periodically:
+
+```bash
+# Find images > 500KB
+python scripts/audit_photo_sizes.py
+
+# Custom threshold (e.g., 200KB)
+python scripts/audit_photo_sizes.py --threshold 200
+
+# Optimize (compress + backup originals)
+python scripts/audit_photo_sizes.py --optimize
+```
+
+**Guidelines:**
+- Photos: Keep under 500KB (compress JPEGs to 80-85% quality)
+- Paper thumbnails: ~250x180px, under 200KB
+- Member photos: ~400x400px, under 300KB
+- Originals backed up to `backup_large_images/` (not committed)
