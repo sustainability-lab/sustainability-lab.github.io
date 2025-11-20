@@ -1,174 +1,100 @@
 ---
 title: Media Coverage
 toc: false
-output:
-  html_document:
-    self_contained: false
 ---
 
 <style>
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #fafbfc;
-    color: #2d3748;
-    line-height: 1.6;
-}
-
 .media-item {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    padding: 24px;
-    margin-bottom: 30px;
-    border: 1px solid #e2e8f0;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-left: 3px solid #2563eb;
+    background: #f8fafc;
     display: flex;
-    gap: 24px;
+    gap: 12px;
     align-items: flex-start;
 }
 
+.media-item.highlight {
+    border-left-color: #f59e0b;
+    background: #fffbeb;
+}
+
 .media-image {
-    width: 280px;
-    height: 200px;
+    width: 180px;
+    height: 120px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 4px;
     flex-shrink: 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .media-content {
     flex: 1;
+    min-width: 0;
 }
 
-.media-content h3 {
+.media-item h3 {
     color: #2d3748;
-    font-size: 1.3rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    margin-bottom: 12px;
+    margin: 0 0 4px 0;
 }
 
-.media-content p {
+.media-item p {
     color: #4a5568;
-    margin-bottom: 16px;
-    line-height: 1.6;
+    margin: 0 0 6px 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
 }
 
 .media-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 12px;
+    gap: 4px;
 }
 
 .media-link {
-    background: #eff6ff;
-    color: #1d4ed8;
-    padding: 4px 10px;
-    border-radius: 16px;
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 2px 6px;
+    border-radius: 3px;
     text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 500;
-    transition: all 0.2s ease;
+    font-size: 0.75rem;
 }
 
 .media-link:hover {
-    background: #1d4ed8;
+    background: #3730a3;
     color: white;
     text-decoration: none;
 }
 
-.highlight-item {
-    border-left: 4px solid #f59e0b;
-    background: #fffbeb;
-}
-
-.stats-summary {
-    background: white;
-    padding: 24px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    margin-bottom: 30px;
+.contact-box {
     text-align: center;
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 20px;
+    padding: 12px;
+    background: #f0f9ff;
+    border-radius: 6px;
     margin-top: 16px;
 }
 
-.stat-item {
-    padding: 12px;
-    background: #f7fafc;
-    border-radius: 8px;
-}
-
-.stat-number {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #2563eb;
-    display: block;
-}
-
-.stat-label {
+.contact-box a {
+    background: #2563eb;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
     font-size: 0.85rem;
-    color: #4a5568;
 }
 
-@media (max-width: 768px) {
-    .media-item {
-        flex-direction: column;
-        padding: 20px;
-    }
-    
-    .media-image {
-        width: 100%;
-        height: 250px;
-    }
-    
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media (max-width: 600px) {
+    .media-item { flex-direction: column; }
+    .media-image { width: 100%; height: 120px; }
 }
 </style>
 
-<div class="stats-summary">
-<h3>🌟 Research Impact in Media</h3>
-<p>Our work reaches global audiences through prestigious publications and media outlets</p>
-<div class="stats-grid">
-<div class="stat-item">
-<span class="stat-number">25+</span>
-<span class="stat-label">Media Outlets</span>
-</div>
-<div class="stat-item">
-<span class="stat-number">8</span>
-<span class="stat-label">Major Projects</span>
-</div>
-<div class="stat-item">
-<span class="stat-number">Global</span>
-<span class="stat-label">Reach</span>
-</div>
-</div>
-</div>
-
-<div class="media-item highlight-item">
-<img src="images/media/aaai_media_coverage.jpg" alt="AAAI 2026 Coverage" class="media-image">
+<div class="media-item highlight">
+<img src="images/media/VayuBuddy_cover_padded.png" alt="VayuBuddy" class="media-image">
 <div class="media-content">
-<h3>Fast and Differentiable Sensor Placement</h3>
-<p>Our <a href="papers/2025/aaai_2026_air_active_gradient_camera_ready.pdf" target="_blank">AAAI 2026 paper</a> work on fast, differentiable sensor placement has gained wide attention for its ability to scale air-quality monitoring and support fairer, data-driven deployment across regions.</p>
-<div class="media-links">
-<a href="https://www.youtube.com/watch?v=QOeNE8YOTeU&t=405s" target="_blank" class="media-link">DD News</a>
-<a href="https://theliveahmedabad.com/2025/11/04/iit-gandhinagar-ai-pinpoints-optimal-locations-for-air-quality-sensors-orders-of-magnitude-faster/" target="_blank" class="media-link">The Live Ahmedabad</a>
-</div>
-</div>
-</div>
-
-
-<div class="media-item highlight-item">
-<img src="images/media/VayuBuddy_cover_padded.png" alt="VayuBuddy Coverage" class="media-image">
-<div class="media-content">
-<h3>VayuBuddy Project</h3>
-<p>Our <a href="https://arxiv.org/abs/2411.12760" target="_blank">VayuBuddy</a> project - an LLM-powered chatbot to democratize air quality insights - has received widespread media attention for its potential to empower communities with cleaner air information.</p>
+<h3>VayuBuddy - LLM-powered Air Quality Chatbot</h3>
+<p><a href="https://arxiv.org/abs/2411.12760" target="_blank">VayuBuddy</a> democratizes air quality insights for cleaner air.</p>
 <div class="media-links">
 <a href="https://epaper.indianexpress.com/3953344/Ahmedabad/December-17-2024#page/3/2" target="_blank" class="media-link">Indian Express</a>
 <a href="https://epaper.ahmedabadmirror.com/3953285/Ahmedabad-Mirror/Dec-17-2024#page/5/2" target="_blank" class="media-link">Ahmedabad Mirror</a>
@@ -178,11 +104,11 @@ body {
 </div>
 </div>
 
-<div class="media-item highlight-item">
-<img src="images/media/JoulesEye_Hackster.io.png" alt="JoulesEye Coverage" class="media-image">
+<div class="media-item highlight">
+<img src="images/media/JoulesEye_Hackster.io.png" alt="JoulesEye" class="media-image">
 <div class="media-content">
-<h3>JoulesEye Project</h3>
-<p>Our <a href="https://dl.acm.org/doi/abs/10.1145/3631422" target="_blank">JoulesEye</a> research, developed in collaboration with Prof. <a href="http://www.mayankgoel.com/" target="_blank">Mayank Goel</a> at CMU, garnered international attention for revolutionizing fitness tracking accuracy through thermal imaging.</p>
+<h3>JoulesEye - Thermal Imaging for Fitness</h3>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3631422" target="_blank">JoulesEye</a> revolutionizes fitness tracking (with <a href="http://www.mayankgoel.com/" target="_blank">Prof. Mayank Goel</a>, CMU).</p>
 <div class="media-links">
 <a href="https://www.hackster.io/news/your-wearable-is-lying-to-you-28f2e5f56338" target="_blank" class="media-link">Hackster.io</a>
 <a href="https://indianexpress.com/article/cities/ahmedabad/research-scholar-at-iitgn-develops-device-to-overcome-fitness-monitoring-limitations-9180741/" target="_blank" class="media-link">Indian Express</a>
@@ -197,16 +123,16 @@ body {
 <div class="media-item">
 <img src="images/media/GaetanoAward.png" alt="Gaetano Award" class="media-image">
 <div class="media-content">
-<h3>UbiComp Gaetano Borriello Outstanding Student Award</h3>
-<p>PhD student <a href="https://rishi-a.github.io" target="_blank">Rishiraj Adhikary</a> was a finalist for the prestigious <a href="https://ubicomp.org/sc/awards.html" target="_blank">UbiComp Gaetano Borriello Outstanding Student Award</a> 2023, recognizing outstanding research contributions in Ubiquitous and Pervasive Computing.</p>
+<h3>UbiComp Gaetano Borriello Award Finalist</h3>
+<p><a href="https://rishi-a.github.io" target="_blank">Rishiraj Adhikary</a> - finalist for <a href="https://ubicomp.org/sc/awards.html" target="_blank">Outstanding Student Award</a> 2023.</p>
 </div>
 </div>
 
 <div class="media-item">
 <img src="images/media/educationtimes-fulbright.png" alt="Fulbright Fellowship" class="media-image">
 <div class="media-content">
-<h3>Fulbright-Nehru Fellowship Achievement</h3>
-<p>PhD student <a href="https://rishi-a.github.io" target="_blank">Rishiraj Adhikary</a> won the prestigious Fulbright-Nehru fellowship for a 9-month research collaboration with Prof. <a href="http://www.mayankgoel.com/" target="_blank">Mayank Goel</a> at CMU.</p>
+<h3>Fulbright-Nehru Fellowship</h3>
+<p><a href="https://rishi-a.github.io" target="_blank">Rishiraj Adhikary</a> - 9-month research at CMU with <a href="http://www.mayankgoel.com/" target="_blank">Prof. Mayank Goel</a>.</p>
 <div class="media-links">
 <a href="https://www.educationtimes.com/article/scholarships/91766182/cross-domain-knowledge-helped-phd-student-get-fullbright-nehru-doctoral-research-fellowship" target="_blank" class="media-link">Education Times</a>
 <a href="https://indianexpress.com/article/cities/ahmedabad/iitgn-phd-scholar-bags-fulbright-nehru-fellowship-7928541/" target="_blank" class="media-link">Indian Express</a>
@@ -218,10 +144,10 @@ body {
 </div>
 
 <div class="media-item">
-<img src="images/media/spiromask-news-1.jpeg" alt="SpiroMask Coverage" class="media-image">
+<img src="images/media/spiromask-news-1.jpeg" alt="SpiroMask" class="media-image">
 <div class="media-content">
-<h3>SpiroMask Project</h3>
-<p>Our <a href="https://dl.acm.org/doi/10.1145/3570167" target="_blank">SpiroMask</a> research - a smart mask for lung health monitoring - received comprehensive coverage for its innovative approach to respiratory health assessment.</p>
+<h3>SpiroMask - Smart Mask for Lung Health</h3>
+<p><a href="https://dl.acm.org/doi/10.1145/3570167" target="_blank">SpiroMask</a> enables lung health monitoring using consumer-grade masks.</p>
 <div class="media-links">
 <a href="https://www.ahmedabadmirror.com/iit-gn-researchers-devise-mask-to-measure-lung-health/81846808.html" target="_blank" class="media-link">Ahmedabad Mirror</a>
 <a href="https://www.edgeimpulse.com/blog/just-take-a-deep-breath/" target="_blank" class="media-link">EdgeImpulse</a>
@@ -229,8 +155,7 @@ body {
 </div>
 </div>
 
-<div style="text-align: center; margin: 40px 0; padding: 24px; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-<h3 style="color: #2563eb; margin-bottom: 12px;">📰 Media Inquiries</h3>
-<p style="color: #4a5568; margin-bottom: 16px;">Interested in featuring our research? Contact us for interviews, demos, and exclusive insights.</p>
-<a href="mailto:nipun.batra@iitgn.ac.in" style="background: #2563eb; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600;">Contact for Media</a>
+<div class="contact-box">
+<p style="margin: 0 0 12px 0; color: #1e40af;">📰 Interested in featuring our research?</p>
+<a href="mailto:nipun.batra@iitgn.ac.in">Contact for Media</a>
 </div>
