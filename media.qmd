@@ -9,6 +9,9 @@ toc: false
     margin-bottom: 12px;
     border-left: 3px solid #2563eb;
     background: #f8fafc;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
 }
 
 .media-item.highlight {
@@ -16,33 +19,46 @@ toc: false
     background: #fffbeb;
 }
 
+.media-image {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.media-content {
+    flex: 1;
+    min-width: 0;
+}
+
 .media-item h3 {
     color: #2d3748;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    margin: 0 0 6px 0;
+    margin: 0 0 4px 0;
 }
 
 .media-item p {
     color: #4a5568;
-    margin: 0 0 8px 0;
-    font-size: 0.9rem;
-    line-height: 1.5;
+    margin: 0 0 6px 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
 }
 
 .media-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 4px;
 }
 
 .media-link {
     background: #e0e7ff;
     color: #3730a3;
-    padding: 2px 8px;
+    padding: 2px 6px;
     border-radius: 3px;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
 .media-link:hover {
@@ -53,25 +69,32 @@ toc: false
 
 .contact-box {
     text-align: center;
-    padding: 16px;
+    padding: 12px;
     background: #f0f9ff;
     border-radius: 6px;
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .contact-box a {
     background: #2563eb;
     color: white;
-    padding: 8px 16px;
+    padding: 6px 12px;
     border-radius: 4px;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+    .media-item { flex-direction: column; }
+    .media-image { width: 100%; height: 120px; }
 }
 </style>
 
 <div class="media-item highlight">
-<h3>🔥 VayuBuddy - LLM-powered Air Quality Chatbot</h3>
-<p><a href="https://arxiv.org/abs/2411.12760" target="_blank">VayuBuddy</a> democratizes air quality insights, empowering communities with cleaner air information.</p>
+<img src="images/media/VayuBuddy_cover_padded.png" alt="VayuBuddy" class="media-image">
+<div class="media-content">
+<h3>VayuBuddy - LLM-powered Air Quality Chatbot</h3>
+<p><a href="https://arxiv.org/abs/2411.12760" target="_blank">VayuBuddy</a> democratizes air quality insights for cleaner air.</p>
 <div class="media-links">
 <a href="https://epaper.indianexpress.com/3953344/Ahmedabad/December-17-2024#page/3/2" target="_blank" class="media-link">Indian Express</a>
 <a href="https://epaper.ahmedabadmirror.com/3953285/Ahmedabad-Mirror/Dec-17-2024#page/5/2" target="_blank" class="media-link">Ahmedabad Mirror</a>
@@ -79,10 +102,13 @@ toc: false
 <a href="https://www.divyabhaskar.co.in/epaper/detail-page/ahmedabad-city-bhaskar/44/2024-12-17" target="_blank" class="media-link">Divya Bhaskar</a>
 </div>
 </div>
+</div>
 
 <div class="media-item highlight">
-<h3>🔥 JoulesEye - Thermal Imaging for Fitness</h3>
-<p><a href="https://dl.acm.org/doi/abs/10.1145/3631422" target="_blank">JoulesEye</a> revolutionizes fitness tracking with thermal imaging (collaboration with <a href="http://www.mayankgoel.com/" target="_blank">Prof. Mayank Goel</a>, CMU).</p>
+<img src="images/media/JoulesEye_Hackster.io.png" alt="JoulesEye" class="media-image">
+<div class="media-content">
+<h3>JoulesEye - Thermal Imaging for Fitness</h3>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3631422" target="_blank">JoulesEye</a> revolutionizes fitness tracking (with <a href="http://www.mayankgoel.com/" target="_blank">Prof. Mayank Goel</a>, CMU).</p>
 <div class="media-links">
 <a href="https://www.hackster.io/news/your-wearable-is-lying-to-you-28f2e5f56338" target="_blank" class="media-link">Hackster.io</a>
 <a href="https://indianexpress.com/article/cities/ahmedabad/research-scholar-at-iitgn-develops-device-to-overcome-fitness-monitoring-limitations-9180741/" target="_blank" class="media-link">Indian Express</a>
@@ -92,15 +118,21 @@ toc: false
 <a href="https://www.eurekalert.org/news-releases/1040652" target="_blank" class="media-link">EurekaAlert</a>
 </div>
 </div>
-
-<div class="media-item">
-<h3>🏆 UbiComp Gaetano Borriello Award Finalist</h3>
-<p><a href="https://rishi-a.github.io" target="_blank">Rishiraj Adhikary</a> was a finalist for the <a href="https://ubicomp.org/sc/awards.html" target="_blank">Outstanding Student Award</a> 2023 in Ubiquitous Computing.</p>
 </div>
 
 <div class="media-item">
-<h3>🎓 Fulbright-Nehru Fellowship</h3>
-<p><a href="https://rishi-a.github.io" target="_blank">Rishiraj Adhikary</a> won the fellowship for 9-month research at CMU with <a href="http://www.mayankgoel.com/" target="_blank">Prof. Mayank Goel</a>.</p>
+<img src="images/media/GaetanoAward.png" alt="Gaetano Award" class="media-image">
+<div class="media-content">
+<h3>UbiComp Gaetano Borriello Award Finalist</h3>
+<p><a href="https://rishi-a.github.io" target="_blank">Rishiraj Adhikary</a> - finalist for <a href="https://ubicomp.org/sc/awards.html" target="_blank">Outstanding Student Award</a> 2023.</p>
+</div>
+</div>
+
+<div class="media-item">
+<img src="images/media/educationtimes-fulbright.png" alt="Fulbright Fellowship" class="media-image">
+<div class="media-content">
+<h3>Fulbright-Nehru Fellowship</h3>
+<p><a href="https://rishi-a.github.io" target="_blank">Rishiraj Adhikary</a> - 9-month research at CMU with <a href="http://www.mayankgoel.com/" target="_blank">Prof. Mayank Goel</a>.</p>
 <div class="media-links">
 <a href="https://www.educationtimes.com/article/scholarships/91766182/cross-domain-knowledge-helped-phd-student-get-fullbright-nehru-doctoral-research-fellowship" target="_blank" class="media-link">Education Times</a>
 <a href="https://indianexpress.com/article/cities/ahmedabad/iitgn-phd-scholar-bags-fulbright-nehru-fellowship-7928541/" target="_blank" class="media-link">Indian Express</a>
@@ -109,13 +141,17 @@ toc: false
 <a href="https://news.careers360.com/iit-gandhinagar-computer-science-engineering-phd-scholar-wins-fulbright-nehru-doctoral-research-fellowship-2022-23" target="_blank" class="media-link">Careers 360</a>
 </div>
 </div>
+</div>
 
 <div class="media-item">
-<h3>😷 SpiroMask - Smart Mask for Lung Health</h3>
+<img src="images/media/spiromask-news-1.jpeg" alt="SpiroMask" class="media-image">
+<div class="media-content">
+<h3>SpiroMask - Smart Mask for Lung Health</h3>
 <p><a href="https://dl.acm.org/doi/10.1145/3570167" target="_blank">SpiroMask</a> enables lung health monitoring using consumer-grade masks.</p>
 <div class="media-links">
 <a href="https://www.ahmedabadmirror.com/iit-gn-researchers-devise-mask-to-measure-lung-health/81846808.html" target="_blank" class="media-link">Ahmedabad Mirror</a>
 <a href="https://www.edgeimpulse.com/blog/just-take-a-deep-breath/" target="_blank" class="media-link">EdgeImpulse</a>
+</div>
 </div>
 </div>
 
