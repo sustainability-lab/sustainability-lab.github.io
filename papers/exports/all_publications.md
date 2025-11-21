@@ -1,8 +1,8 @@
 # Sustainability Lab Publications
 
 **IIT Gandhinagar**  
-*Generated: 2025-11-18 12:48:06*  
-*Total Publications: 46*
+*Generated: 2025-11-20 05:41:43*  
+*Total Publications: 47*
 
 ---
 
@@ -16,6 +16,11 @@
              Artificial Intelligence*  
 
 ## 2025
+
+### VayuChat: An LLM-Powered Conversational Interface for Air Quality Data Analytics
+
+**Authors:** Vedant Acharya and Abhay Pisharodi and Rishabh Mondal and Mohammad Rafiuddin and Nipun Batra  
+**URL:** [Link](https://arxiv.org/abs/2511.01046)  
 
 ### VayuBench and VayuChat: Executable Benchmarking and Deployment of LLMs for Multi-Dataset Air Quality Analytics
 
