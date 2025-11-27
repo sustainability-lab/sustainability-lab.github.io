@@ -1,19 +1,26 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
   <title>Sustainability Lab - SL Favicon</title>
-  <!-- Background circle with gradient -->
+
   <defs>
+    <!-- Subtle, professional gradient -->
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
     </linearGradient>
   </defs>
-  
-  <!-- Background -->
-  <circle cx="50" cy="50" r="48" fill="url(#bgGradient)" stroke="#ffffff" stroke-width="4"/>
-  
-  <!-- Letter S -->
-  <text x="28" y="68" font-family="Roboto, system-ui, sans-serif" font-size="42" font-weight="700" fill="#ffffff" text-anchor="middle">S</text>
-  
+
+  <!-- Background circle with refined dark gradient -->
+  <circle cx="50" cy="50" r="46" fill="url(#bgGradient)"/>
+
+  <!-- Subtle border -->
+  <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+
+  <!-- Letter S - clean, minimal -->
+  <text x="28" y="69" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="-1">S</text>
+
   <!-- Letter L -->
-  <text x="72" y="68" font-family="Roboto, system-ui, sans-serif" font-size="42" font-weight="700" fill="#ffffff" text-anchor="middle">L</text>
+  <text x="72" y="69" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="-1">L</text>
+
+  <!-- Subtle accent line at bottom -->
+  <line x1="20" y1="80" x2="80" y2="80" stroke="#d97706" stroke-width="2" opacity="0.6"/>
 </svg>
