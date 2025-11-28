@@ -498,7 +498,9 @@ div.hero-section h1 {
 
 .hero-btn {
     font-family: 'Outfit', sans-serif;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 14px 32px;
     border-radius: var(--radius-medium);
     text-decoration: none;
@@ -508,6 +510,8 @@ div.hero-section h1 {
     position: relative;
     overflow: hidden;
     letter-spacing: 0.01em;
+    min-height: 52px;
+    white-space: nowrap;
 }
 
 .hero-btn::before {

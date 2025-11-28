@@ -1,6 +1,7 @@
 ---
 toc: false
 ---
+<!-- Updated: 2025-11-28 - Terminal code blocks + Button height fix -->
 
 <div class="hero-section">
 <h1>Sustainability Lab</h1>
