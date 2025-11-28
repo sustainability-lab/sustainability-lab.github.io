@@ -209,25 +209,11 @@ code:not(pre code) {
 pre {
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
     border: none !important;
-    border-radius: 12px !important;
-    padding: 24px !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
     overflow-x: auto !important;
-    margin: 24px 0 !important;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3) !important;
-    position: relative !important;
-}
-
-/* Subtle top border accent */
-pre::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    height: 2px !important;
-    background: linear-gradient(90deg, #7dd3fc, #a5b4fc, #86efac) !important;
-    border-radius: 12px 12px 0 0 !important;
-    opacity: 0.5 !important;
+    margin: 20px 0 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
 }
 
 pre code {
