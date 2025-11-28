@@ -176,6 +176,7 @@ python scripts/audit_photo_sizes.py --optimize
 ```
 
 **Guidelines:**
+
 - Photos: Keep under 500KB (compress JPEGs to 80-85% quality)
 - Paper thumbnails: ~250x180px, under 200KB
 - Member photos: ~400x400px, under 300KB
