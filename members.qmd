@@ -5,10 +5,10 @@ toc: false
 
 
 <div class="alumni-banner">
-<h3>🌟 Meet Our Extended Family</h3>
+<h3>Meet Our Extended Family</h3>
 <p>15 current researchers to 50+ global alumni making impact worldwide</p>
-<a href="alumni.qmd" class="alumni-btn">👥 Meet Our 50+ Alumni</a>
-<a href="experiences.qmd" class="alumni-btn">📖 Read Their Stories</a>
+<a href="alumni.qmd" class="alumni-btn">Meet Our 50+ Alumni</a>
+<a href="experiences.qmd" class="alumni-btn">Read Their Stories</a>
 </div>
 
 ## Faculty
