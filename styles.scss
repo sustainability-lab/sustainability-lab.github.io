@@ -209,25 +209,47 @@ code:not(pre code) {
 pre {
     background: #2d3748 !important;
     border: none !important;
-    border-radius: 8px !important;
+    border-radius: 10px !important;
     padding: 0 !important;
     overflow: hidden !important;
     margin: 24px 0 !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4) !important;
     position: relative !important;
 }
 
-/* Window chrome - macOS style header */
+/* Window chrome - macOS style header with smooth circle dots */
 pre::before {
-    content: '' !important;
+    content: '● ● ●' !important;
     display: block !important;
-    height: 32px !important;
-    background: #1a202c !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+    height: 40px !important;
+    background: linear-gradient(180deg, #3d4756 0%, #2d3748 100%) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+    color: transparent !important;
+    font-size: 10px !important;
+    line-height: 40px !important;
+    padding-left: 14px !important;
+    letter-spacing: 4px !important;
+    background-clip: padding-box !important;
+}
+
+/* Individual colored dots using text */
+pre::before {
+    background: linear-gradient(180deg, #3d4756 0%, #2d3748 100%) !important;
     background-image:
-        radial-gradient(circle at 12px 16px, #ff5f56 6px, transparent 6px),
-        radial-gradient(circle at 32px 16px, #ffbd2e 6px, transparent 6px),
-        radial-gradient(circle at 52px 16px, #27c93f 6px, transparent 6px) !important;
+        linear-gradient(180deg, #3d4756 0%, #2d3748 100%),
+        radial-gradient(circle, #ed6a5e 45%, #ed6a5e 50%, transparent 50%),
+        radial-gradient(circle, #f4bf4f 45%, #f4bf4f 50%, transparent 50%),
+        radial-gradient(circle, #61c554 45%, #61c554 50%, transparent 50%) !important;
+    background-position:
+        0 0,
+        13px 50%,
+        33px 50%,
+        53px 50% !important;
+    background-size:
+        100% 100%,
+        12px 12px,
+        12px 12px,
+        12px 12px !important;
     background-repeat: no-repeat !important;
 }
 
