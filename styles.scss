@@ -207,13 +207,13 @@ code:not(pre code) {
 
 /* Code blocks (multi-line) */
 pre {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+    background: #1e293b !important;
     border: none !important;
-    border-radius: 8px !important;
+    border-radius: 6px !important;
     padding: 20px !important;
     overflow-x: auto !important;
     margin: 20px 0 !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: none !important;
 }
 
 pre code {
