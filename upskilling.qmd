@@ -17,7 +17,7 @@ Paper writing is a key part of research. This page contains some tips and tricks
 4. **Clean Aesthetics**: Removes visual clutter for academic publications
 5. **Easy Integration**: Minimal code changes to existing matplotlib scripts
 
-> Tip: You can find page width and column width with `\the\textwidth` and  `\the\columnwidth` commands, respectively.
+**Tip:** You can find page width and column width with `\the\textwidth` and  `\the\columnwidth` commands, respectively.
 
 **Self-contained figures and tables (and captions)**
 

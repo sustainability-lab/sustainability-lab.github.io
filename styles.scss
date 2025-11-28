@@ -5,14 +5,14 @@
 $font-family: "Crimson Pro", serif;
 $font-family-serif: "Crimson Pro", serif;
 
-/* CSS Custom Properties for theming - Tech Meets Terra */
+/* CSS Custom Properties for theming - Clean & Minimal */
 :root {
-  /* Primary palette - Earth meets Tech */
-  --primary-color: #d97706; /* Warm amber - sun/earth */
-  --secondary-color: #059669; /* Forest green - nature/sustainability */
-  --accent-color: #0ea5e9; /* Sky blue - innovation/tech */
-  --accent-warm: #f59e0b; /* Bright amber accent */
-  --accent-cool: #06b6d4; /* Cyan accent */
+  /* Primary palette - Clean, modern, professional */
+  --primary-color: #0ea5e9; /* Sky blue - clean and modern */
+  --secondary-color: #14b8a6; /* Teal - fresh and professional */
+  --accent-color: #8b5cf6; /* Purple - subtle accent */
+  --accent-warm: #06b6d4; /* Cyan accent */
+  --accent-cool: #0891b2; /* Darker cyan */
 
   /* Text colors */
   --text-primary: #1e293b;
@@ -32,10 +32,10 @@ $font-family-serif: "Crimson Pro", serif;
   --border-accent: #fbbf24;
 
   /* Shadows with depth */
-  --shadow-light: 0 2px 8px rgba(217, 119, 6, 0.08);
-  --shadow-medium: 0 4px 20px rgba(217, 119, 6, 0.12);
-  --shadow-heavy: 0 16px 40px rgba(217, 119, 6, 0.2);
-  --shadow-glow-warm: 0 0 30px rgba(245, 158, 11, 0.4);
+  --shadow-light: 0 2px 8px rgba(14, 165, 233, 0.08);
+  --shadow-medium: 0 4px 20px rgba(14, 165, 233, 0.12);
+  --shadow-heavy: 0 16px 40px rgba(14, 165, 233, 0.2);
+  --shadow-glow-warm: 0 0 30px rgba(6, 182, 212, 0.4);
   --shadow-glow-cool: 0 0 30px rgba(14, 165, 233, 0.4);
 
   /* Radius */
@@ -353,7 +353,7 @@ body {
     padding: 80px 20px 60px;
     margin-bottom: 60px;
     background: linear-gradient(to bottom,
-      rgba(217, 119, 6, 0.03) 0%,
+      rgba(14, 165, 233, 0.02) 0%,
       rgba(255, 255, 255, 0) 100%);
     border-radius: var(--radius-large);
     overflow: hidden;
@@ -564,20 +564,20 @@ div.hero-section h1 {
 
 .tag {
     font-family: 'Outfit', sans-serif;
-    background: rgba(217, 119, 6, 0.08);
+    background: rgba(14, 165, 233, 0.08);
     color: var(--primary-color);
     padding: 4px 12px;
     border-radius: 16px;
     font-size: 0.8rem;
     font-weight: 500;
-    border: 1px solid rgba(217, 119, 6, 0.15);
+    border: 1px solid rgba(14, 165, 233, 0.15);
     transition: all var(--transition-fast);
     letter-spacing: 0.01em;
     white-space: nowrap;
 }
 
 .tag:hover {
-    background: rgba(217, 119, 6, 0.12);
+    background: rgba(14, 165, 233, 0.12);
     border-color: var(--primary-color);
     transform: translateY(-1px);
 }
@@ -623,7 +623,7 @@ div.hero-section h1 {
 
 .join-section {
     background: linear-gradient(to bottom,
-      rgba(217, 119, 6, 0.03) 0%,
+      rgba(14, 165, 233, 0.02) 0%,
       rgba(255, 255, 255, 0) 100%);
     color: var(--text-primary);
     text-align: center;
@@ -931,7 +931,7 @@ div.hero-section h1 {
 
 .alumni-banner {
     background: linear-gradient(to bottom,
-      rgba(217, 119, 6, 0.05) 0%,
+      rgba(14, 165, 233, 0.04) 0%,
       rgba(255, 255, 255, 0) 100%);
     color: var(--text-primary);
     text-align: center;

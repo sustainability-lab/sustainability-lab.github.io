@@ -15,12 +15,15 @@ body {
 }
 
 .hero {
-    background: linear-gradient(135deg, #d97706 0%, #059669 100%);
-    color: white;
+    background: linear-gradient(to bottom,
+      rgba(14, 165, 233, 0.02) 0%,
+      rgba(255, 255, 255, 0) 100%);
+    color: #1e293b;
     text-align: center;
     padding: 50px 20px;
     border-radius: 16px;
     margin-bottom: 40px;
+    border: 1px solid #e2e8f0;
 }
 
 .hero h1 {
@@ -31,7 +34,7 @@ body {
 
 .hero .subtitle {
     font-size: 1.2rem;
-    opacity: 0.9;
+    color: #475569;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -46,7 +49,7 @@ body {
 }
 
 .content-card h2 {
-    color: #2563eb;
+    color: #0ea5e9;
     font-size: 1.8rem;
     margin-bottom: 20px;
     font-weight: 600;
@@ -76,9 +79,9 @@ body {
 }
 
 .benefit-item:hover {
-    border-color: #2563eb;
+    border-color: #0ea5e9;
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.12);
+    box-shadow: 0 4px 15px rgba(14, 165, 233, 0.12);
 }
 
 .benefit-icon {
@@ -112,13 +115,13 @@ body {
     background: #f7fafc;
     padding: 16px;
     border-radius: 8px;
-    border-left: 4px solid #2563eb;
+    border-left: 4px solid #0ea5e9;
 }
 
 .stat-number {
     font-size: 1.6rem;
     font-weight: 700;
-    color: #2563eb;
+    color: #0ea5e9;
     display: block;
 }
 
@@ -134,7 +137,7 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     padding: 24px;
     margin-bottom: 20px;
-    border-left: 4px solid #2563eb;
+    border-left: 4px solid #0ea5e9;
     transition: all 0.3s ease;
     border: 1px solid #e2e8f0;
 }
@@ -177,7 +180,7 @@ body {
 }
 
 .highlight-box strong {
-    color: #1d4ed8;
+    color: #0ea5e9;
 }
 
 .btn {
@@ -193,12 +196,12 @@ body {
 }
 
 .btn-primary {
-    background-color: #2563eb;
+    background-color: #0ea5e9;
     color: white;
 }
 
 .btn-primary:hover {
-    background-color: #1d4ed8;
+    background-color: #0891b2;
     transform: translateY(-1px);
     text-decoration: none;
     color: white;
@@ -206,12 +209,12 @@ body {
 
 .btn-secondary {
     background-color: transparent;
-    color: #2563eb;
-    border: 2px solid #2563eb;
+    color: #0ea5e9;
+    border: 2px solid #0ea5e9;
 }
 
 .btn-secondary:hover {
-    background-color: #2563eb;
+    background-color: #0ea5e9;
     color: white;
     text-decoration: none;
 }
@@ -274,7 +277,7 @@ body {
 
 .quick-links h4 {
     margin-bottom: 14px;
-    color: #1d4ed8;
+    color: #0ea5e9;
     font-size: 1rem;
 }
 
@@ -282,7 +285,7 @@ body {
     display: inline-block;
     margin-right: 14px;
     margin-bottom: 6px;
-    color: #2563eb;
+    color: #0ea5e9;
     font-weight: 500;
     text-decoration: none;
     font-size: 0.9rem;
@@ -359,7 +362,7 @@ details summary::before {
     display: inline-block;
     margin-right: 10px;
     transition: transform 0.3s ease;
-    color: #2563eb;
+    color: #0ea5e9;
     font-size: 0.9em;
 }
 

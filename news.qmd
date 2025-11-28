@@ -65,7 +65,7 @@ toc: false
 }
 
 .news-date {
-    color: #d97706;
+    color: #0ea5e9;
     font-weight: 600;
     font-size: 0.75rem;
     margin-right: 8px;
