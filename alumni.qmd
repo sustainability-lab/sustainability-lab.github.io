@@ -15,23 +15,25 @@ body {
 }
 
 .hero-banner {
-    background: linear-gradient(135deg, #334155 0%, #059669 100%);
-    color: white;
+    background: #fafafa;
+    color: #1e293b;
     text-align: center;
     padding: 40px 20px;
     border-radius: 16px;
     margin-bottom: 40px;
+    border: 1px solid #e2e8f0;
 }
 
 .hero-banner h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 12px;
+    color: #1e293b;
 }
 
 .hero-banner p {
     font-size: 1.1rem;
-    opacity: 0.9;
+    color: #475569;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -75,11 +77,11 @@ body {
 }
 
 .section-card h2 {
-    color: #2563eb;
+    color: #334155;
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 20px;
-    border-bottom: 3px solid #2563eb;
+    border-bottom: 3px solid #334155;
     padding-bottom: 8px;
 }
 
@@ -88,7 +90,7 @@ body {
     font-size: 1.4rem;
     font-weight: 600;
     margin: 25px 0 15px 0;
-    border-left: 4px solid #10b981;
+    border-left: 4px solid #334155;
     padding-left: 12px;
 }
 
@@ -157,7 +159,7 @@ body {
 
 .alumni-item:hover {
     border-left-color: #334155;
-    background: #eff6ff;
+    background: #f1f5f9;
     transform: translateX(4px);
 }
 
@@ -173,7 +175,7 @@ body {
 
 /* Consistent styling for all organizations */
 .university {
-    background: linear-gradient(135deg, #334155 0%, #059669 100%);
+    background: #334155;
     color: white;
     padding: 3px 8px;
     border-radius: 4px;
@@ -182,7 +184,7 @@ body {
 }
 
 .company {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: #475569;
     color: white;
     padding: 3px 8px;
     border-radius: 4px;
@@ -191,7 +193,7 @@ body {
 }
 
 .startup {
-    background: linear-gradient(135deg, #f59e0b 0%, #334155 100%);
+    background: #64748b;
     color: white;
     padding: 3px 8px;
     border-radius: 4px;
@@ -221,7 +223,7 @@ body {
 </style>
 
 <div class="hero-banner">
-<h1>🎓 Our Alumni Network</h1>
+<h1>Our Alumni Network</h1>
 <p>From IIT Gandhinagar to global impact - meet the changemakers who started their journey in our lab</p>
 </div>
 
@@ -245,7 +247,7 @@ body {
 </div>
 
 <div class="section-card">
-<h2>🎯 PhD Graduates</h2>
+<h2>PhD Graduates</h2>
 
 <div class="phd-card">
 <a href="https://rishi-a.github.io">
@@ -261,7 +263,7 @@ body {
 
 
 <div class="section-card">
-<h2>🎓 Bachelor's Alumni</h2>
+<h2>Bachelor's Alumni</h2>
 
 <h3>Class of 2024</h3>
 <div class="alumni-list">
@@ -381,7 +383,7 @@ body {
 </div>
 
 <div class="section-card">
-<h2>🎓 Master's Alumni</h2>
+<h2>Master's Alumni</h2>
 
 <div class="alumni-list">
 <div class="alumni-item">
@@ -420,7 +422,7 @@ body {
 </div>
 
 <div class="section-card">
-<h2>🔬 Research Associates & Interns</h2>
+<h2>Research Associates & Interns</h2>
 
 <h3>Research Assistants</h3>
 <div class="alumni-list">
@@ -479,9 +481,9 @@ body {
 </div>
 </div>
 
-<div style="text-align: center; margin: 40px 0; padding: 30px; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px;">
-<h3 style="color: #2563eb; margin-bottom: 16px;">🌟 Ready to Join This Amazing Network?</h3>
-<p style="color: #4a5568; margin-bottom: 20px;">Start your journey with us and become part of a community that's making global impact</p>
-<a href="openings.qmd" style="background: #2563eb; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-right: 10px;">View Open Positions</a>
-<a href="experiences.qmd" style="background: transparent; color: #2563eb; border: 2px solid #2563eb; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-weight: 600;">Read Alumni Stories</a>
+<div style="text-align: center; margin: 40px 0; padding: 30px; background: #fafafa; border-radius: 12px; border: 1px solid #e2e8f0;">
+<h3 style="color: #334155; margin-bottom: 16px;">Ready to Join This Amazing Network?</h3>
+<p style="color: #475569; margin-bottom: 20px;">Start your journey with us and become part of a community that's making global impact</p>
+<a href="openings.qmd" style="background: #334155; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-right: 10px;">View Open Positions</a>
+<a href="experiences.qmd" style="background: transparent; color: #334155; border: 2px solid #334155; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-weight: 600;">Read Alumni Stories</a>
 </div>
