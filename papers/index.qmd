@@ -42,8 +42,8 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <!-- <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuChat" class="paper-button">Project Demo</a> -->
 <a href="https://sustainability-lab.github.io/gdmi/" class="paper-button">Project Page</a>
 <a href="bibtex/gdmi.bib" class="paper-button bibtex-btn" download>BibTeX</a>
-<a href="https://www.youtube.com/watch?v=1E3f3kMZgfw" class="paper-button">YouTube(Hindi)</a>
-<a href="https://www.youtube.com/watch?v=r2KbcqY7Khw" class="paper-button">YouTube(English)</a>
+<a href="https://www.youtube.com/watch?v=1E3f3kMZgfw" class="paper-button">YouTube (Hindi)</a>
+<a href="https://www.youtube.com/watch?v=r2KbcqY7Khw" class="paper-button">YouTube (English)</a>
 
 <!-- <a href="https://docs.google.com/presentation/d/19jIDm3kSZlOdnhgIIvWf8tZNjMx0dRcCmp0Z3nZVUEw/edit?usp=sharing" class="paper-button">Google AQ Summit 2024</a> -->
 <!-- <a href="https://docs.google.com/presentation/d/1PniVOoJEedGP-5N4hSqg21xjSv7v2uT4xSKNe1qB2vo/edit?usp=sharing" class="paper-button">IITD Talk</a> -->

@@ -196,8 +196,14 @@ a {
 }
 
 kbd,
-.kbd {
-    background-color: #f6f5f5 !important;
+.kbd,
+code {
+    background-color: #f1f5f9 !important;
+    color: #334155 !important;
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+    font-size: 0.9em !important;
+    border: 1px solid #e2e8f0 !important;
 }
 
 // .navbar {

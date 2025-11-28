@@ -169,6 +169,6 @@ toc: false
 </div>
 
 <div class="contact-box">
-<p style="margin: 0 0 12px 0; color: #1e40af;">📰 Interested in featuring our research?</p>
+<p style="margin: 0 0 12px 0; color: #334155;"><strong>Interested in featuring our research?</strong></p>
 <a href="mailto:nipun.batra@iitgn.ac.in">Contact for Media</a>
 </div>
