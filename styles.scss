@@ -207,35 +207,52 @@ code:not(pre code) {
 
 /* Code blocks (multi-line) */
 pre {
-    background-color: #1e293b !important;
-    border: 1px solid #334155 !important;
-    border-radius: 8px !important;
-    padding: 20px !important;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 24px !important;
     overflow-x: auto !important;
-    margin: 20px 0 !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    margin: 24px 0 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2),
+                0 0 0 1px rgba(255, 255, 255, 0.05) !important;
+    position: relative !important;
+}
+
+/* Optional: Add subtle top border accent */
+pre::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 3px !important;
+    background: linear-gradient(90deg, #7dd3fc, #a5b4fc, #86efac) !important;
+    border-radius: 12px 12px 0 0 !important;
+    opacity: 0.6 !important;
 }
 
 pre code {
     background-color: transparent !important;
-    color: #e2e8f0 !important;
+    color: #f1f5f9 !important;
     padding: 0 !important;
     border: none !important;
     font-size: 0.92em !important;
-    line-height: 1.7 !important;
+    line-height: 1.8 !important;
     font-family: 'Monaco', 'Menlo', 'Consolas', 'Courier New', monospace !important;
     display: block !important;
     white-space: pre !important;
+    letter-spacing: 0.02em !important;
 }
 
-/* Syntax highlighting for code blocks */
+/* Syntax highlighting for code blocks - vibrant and clear */
 pre code .hljs-tag,
 pre code .hljs-name {
     color: #7dd3fc !important;
+    font-weight: 500 !important;
 }
 
 pre code .hljs-attr {
-    color: #a5b4fc !important;
+    color: #c4b5fd !important;
 }
 
 pre code .hljs-string {
@@ -249,6 +266,25 @@ pre code .hljs-comment {
 
 pre code .hljs-number {
     color: #fbbf24 !important;
+}
+
+/* Scrollbar styling for code blocks */
+pre::-webkit-scrollbar {
+    height: 8px !important;
+}
+
+pre::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 0 0 12px 12px !important;
+}
+
+pre::-webkit-scrollbar-thumb {
+    background: rgba(100, 116, 139, 0.5) !important;
+    border-radius: 4px !important;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+    background: rgba(100, 116, 139, 0.7) !important;
 }
 
 /* kbd elements */
