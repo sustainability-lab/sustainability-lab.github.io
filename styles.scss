@@ -207,22 +207,48 @@ code:not(pre code) {
 
 /* Code blocks (multi-line) */
 pre {
-    background-color: #f8fafc !important;
-    border: 1px solid #e2e8f0 !important;
+    background-color: #1e293b !important;
+    border: 1px solid #334155 !important;
     border-radius: 8px !important;
-    padding: 16px !important;
+    padding: 20px !important;
     overflow-x: auto !important;
-    margin: 16px 0 !important;
+    margin: 20px 0 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
 }
 
 pre code {
     background-color: transparent !important;
-    color: #334155 !important;
+    color: #e2e8f0 !important;
     padding: 0 !important;
     border: none !important;
-    font-size: 0.9em !important;
-    line-height: 1.6 !important;
-    font-family: 'Monaco', 'Menlo', 'Consolas', monospace !important;
+    font-size: 0.92em !important;
+    line-height: 1.7 !important;
+    font-family: 'Monaco', 'Menlo', 'Consolas', 'Courier New', monospace !important;
+    display: block !important;
+    white-space: pre !important;
+}
+
+/* Syntax highlighting for code blocks */
+pre code .hljs-tag,
+pre code .hljs-name {
+    color: #7dd3fc !important;
+}
+
+pre code .hljs-attr {
+    color: #a5b4fc !important;
+}
+
+pre code .hljs-string {
+    color: #86efac !important;
+}
+
+pre code .hljs-comment {
+    color: #64748b !important;
+    font-style: italic !important;
+}
+
+pre code .hljs-number {
+    color: #fbbf24 !important;
 }
 
 /* kbd elements */
