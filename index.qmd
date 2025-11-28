@@ -1,7 +1,7 @@
 ---
 toc: false
 ---
-<!-- Updated: 2025-11-28 - Terminal code blocks + Button height fix -->
+<!-- Updated: 2025-11-28 - Clean terminal window with smooth dots -->
 
 <div class="hero-section">
 <h1>Sustainability Lab</h1>

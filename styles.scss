@@ -209,48 +209,37 @@ code:not(pre code) {
 pre {
     background: #2d3748 !important;
     border: none !important;
-    border-radius: 10px !important;
+    border-radius: 12px !important;
     padding: 0 !important;
     overflow: hidden !important;
     margin: 24px 0 !important;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
     position: relative !important;
 }
 
-/* Window chrome - macOS style header with smooth circle dots */
+/* Window chrome - macOS style title bar */
 pre::before {
-    content: '● ● ●' !important;
+    content: '' !important;
     display: block !important;
-    height: 40px !important;
-    background: linear-gradient(180deg, #3d4756 0%, #2d3748 100%) !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
-    color: transparent !important;
-    font-size: 10px !important;
-    line-height: 40px !important;
-    padding-left: 14px !important;
-    letter-spacing: 4px !important;
-    background-clip: padding-box !important;
+    height: 36px !important;
+    background: #3a4452 !important;
+    border-radius: 12px 12px 0 0 !important;
+    position: relative !important;
 }
 
-/* Individual colored dots using text */
-pre::before {
-    background: linear-gradient(180deg, #3d4756 0%, #2d3748 100%) !important;
-    background-image:
-        linear-gradient(180deg, #3d4756 0%, #2d3748 100%),
-        radial-gradient(circle, #ed6a5e 45%, #ed6a5e 50%, transparent 50%),
-        radial-gradient(circle, #f4bf4f 45%, #f4bf4f 50%, transparent 50%),
-        radial-gradient(circle, #61c554 45%, #61c554 50%, transparent 50%) !important;
-    background-position:
-        0 0,
-        13px 50%,
-        33px 50%,
-        53px 50% !important;
-    background-size:
-        100% 100%,
-        12px 12px,
-        12px 12px,
-        12px 12px !important;
-    background-repeat: no-repeat !important;
+/* Colored dots - using box-shadow for smooth rendering */
+pre::after {
+    content: '' !important;
+    position: absolute !important;
+    top: 13px !important;
+    left: 12px !important;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    background: #ff5f56 !important;
+    box-shadow:
+        20px 0 0 #ffbd2e,
+        40px 0 0 #27c93f !important;
 }
 
 pre code {
