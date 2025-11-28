@@ -15,7 +15,7 @@ body {
 }
 
 .hero-banner {
-    background: linear-gradient(135deg, #0ea5e9 0%, #059669 100%);
+    background: linear-gradient(135deg, #334155 0%, #059669 100%);
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -55,7 +55,7 @@ body {
 .stat-number {
     font-size: 2rem;
     font-weight: 700;
-    color: #0ea5e9;
+    color: #334155;
     display: block;
 }
 
@@ -107,7 +107,7 @@ body {
 .phd-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-color: #0ea5e9;
+    border-color: #334155;
 }
 
 .cropped-image {
@@ -121,7 +121,7 @@ body {
 }
 
 .cropped-image:hover {
-    border-color: #0ea5e9;
+    border-color: #334155;
 }
 
 .phd-info {
@@ -136,7 +136,7 @@ body {
 }
 
 .phd-duration {
-    color: #0ea5e9;
+    color: #334155;
     font-weight: 500;
     font-size: 0.95rem;
     margin-bottom: 8px;
@@ -156,7 +156,7 @@ body {
 }
 
 .alumni-item:hover {
-    border-left-color: #0ea5e9;
+    border-left-color: #334155;
     background: #eff6ff;
     transform: translateX(4px);
 }
@@ -173,7 +173,7 @@ body {
 
 /* Consistent styling for all organizations */
 .university {
-    background: linear-gradient(135deg, #0ea5e9 0%, #059669 100%);
+    background: linear-gradient(135deg, #334155 0%, #059669 100%);
     color: white;
     padding: 3px 8px;
     border-radius: 4px;
@@ -191,7 +191,7 @@ body {
 }
 
 .startup {
-    background: linear-gradient(135deg, #f59e0b 0%, #0ea5e9 100%);
+    background: linear-gradient(135deg, #f59e0b 0%, #334155 100%);
     color: white;
     padding: 3px 8px;
     border-radius: 4px;

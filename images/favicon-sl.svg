@@ -22,5 +22,5 @@
   <text x="72" y="69" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="-1">L</text>
 
   <!-- Subtle accent line at bottom -->
-  <line x1="20" y1="80" x2="80" y2="80" stroke="#0ea5e9" stroke-width="2" opacity="0.6"/>
+  <line x1="20" y1="80" x2="80" y2="80" stroke="#64748b" stroke-width="2" opacity="0.5"/>
 </svg>

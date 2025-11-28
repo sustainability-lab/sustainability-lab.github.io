@@ -7,7 +7,7 @@ toc: false
 .media-item {
     padding: 12px;
     margin-bottom: 12px;
-    border-left: 3px solid #0ea5e9;
+    border-left: 3px solid #334155;
     background: #f8fafc;
     display: flex;
     gap: 12px;
@@ -15,7 +15,7 @@ toc: false
 }
 
 .media-item.highlight {
-    border-left-color: #14b8a6;
+    border-left-color: #475569;
     background: #f0fdfa;
 }
 
@@ -54,7 +54,7 @@ toc: false
 
 .media-link {
     background: rgba(14, 165, 233, 0.1);
-    color: #0ea5e9;
+    color: #334155;
     padding: 2px 6px;
     border-radius: 3px;
     text-decoration: none;
@@ -62,7 +62,7 @@ toc: false
 }
 
 .media-link:hover {
-    background: #0ea5e9;
+    background: #334155;
     color: white;
     text-decoration: none;
 }
@@ -76,7 +76,7 @@ toc: false
 }
 
 .contact-box a {
-    background: #0ea5e9;
+    background: #334155;
     color: white;
     padding: 6px 12px;
     border-radius: 4px;

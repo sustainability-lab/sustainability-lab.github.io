@@ -15,9 +15,7 @@ body {
 }
 
 .hero {
-    background: linear-gradient(to bottom,
-      rgba(14, 165, 233, 0.02) 0%,
-      rgba(255, 255, 255, 0) 100%);
+    background: #fafafa;
     color: #1e293b;
     text-align: center;
     padding: 50px 20px;
@@ -49,7 +47,7 @@ body {
 }
 
 .content-card h2 {
-    color: #0ea5e9;
+    color: #334155;
     font-size: 1.8rem;
     margin-bottom: 20px;
     font-weight: 600;
@@ -79,7 +77,7 @@ body {
 }
 
 .benefit-item:hover {
-    border-color: #0ea5e9;
+    border-color: #334155;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(14, 165, 233, 0.12);
 }
@@ -115,13 +113,13 @@ body {
     background: #f7fafc;
     padding: 16px;
     border-radius: 8px;
-    border-left: 4px solid #0ea5e9;
+    border-left: 4px solid #334155;
 }
 
 .stat-number {
     font-size: 1.6rem;
     font-weight: 700;
-    color: #0ea5e9;
+    color: #334155;
     display: block;
 }
 
@@ -137,7 +135,7 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     padding: 24px;
     margin-bottom: 20px;
-    border-left: 4px solid #0ea5e9;
+    border-left: 4px solid #334155;
     transition: all 0.3s ease;
     border: 1px solid #e2e8f0;
 }
@@ -180,7 +178,7 @@ body {
 }
 
 .highlight-box strong {
-    color: #0ea5e9;
+    color: #334155;
 }
 
 .btn {
@@ -196,12 +194,12 @@ body {
 }
 
 .btn-primary {
-    background-color: #0ea5e9;
+    background-color: #334155;
     color: white;
 }
 
 .btn-primary:hover {
-    background-color: #0891b2;
+    background-color: #1e293b;
     transform: translateY(-1px);
     text-decoration: none;
     color: white;
@@ -209,12 +207,12 @@ body {
 
 .btn-secondary {
     background-color: transparent;
-    color: #0ea5e9;
-    border: 2px solid #0ea5e9;
+    color: #334155;
+    border: 2px solid #334155;
 }
 
 .btn-secondary:hover {
-    background-color: #0ea5e9;
+    background-color: #334155;
     color: white;
     text-decoration: none;
 }
@@ -277,7 +275,7 @@ body {
 
 .quick-links h4 {
     margin-bottom: 14px;
-    color: #0ea5e9;
+    color: #334155;
     font-size: 1rem;
 }
 
@@ -285,7 +283,7 @@ body {
     display: inline-block;
     margin-right: 14px;
     margin-bottom: 6px;
-    color: #0ea5e9;
+    color: #334155;
     font-weight: 500;
     text-decoration: none;
     font-size: 0.9rem;
@@ -358,11 +356,11 @@ details summary::-webkit-details-marker {
 }
 
 details summary::before {
-    content: '▶';
+    content: '→';
     display: inline-block;
     margin-right: 10px;
     transition: transform 0.3s ease;
-    color: #0ea5e9;
+    color: #334155;
     font-size: 0.9em;
 }
 
@@ -410,7 +408,7 @@ details .position-card {
 </style>
 
 <div class="hero">
-<h1>🚀 Join Our Research Mission</h1>
+<h1>Join Our Research Mission</h1>
 <p class="subtitle">Shape the future of sustainability through cutting-edge AI research at IIT Gandhinagar</p>
 </div>
 
@@ -479,13 +477,13 @@ We believe in the transformative potential of AI to monitor environmental change
 </div>
 
 <div class="quick-links">
-<h4>📚 Learn More About Our Community</h4>
-<a href="alumni.qmd">👥 Meet Our Alumni</a>
-<a href="experiences.qmd">💬 Alumni Experiences</a>
-<a href="members.qmd">🔬 Current Team</a>
-<a href="awards.qmd">🏆 Awards & Recognition</a>
-<a href="lab_culture.qmd">🌱 Lab Culture</a>
-<a href="upskilling.qmd">🎯 Research Skills Bootcamp</a>
+<h4>Learn More About Our Community</h4>
+<a href="alumni.qmd">Meet Our Alumni</a>
+<a href="experiences.qmd">Alumni Experiences</a>
+<a href="members.qmd">Current Team</a>
+<a href="awards.qmd">Awards & Recognition</a>
+<a href="lab_culture.qmd">Lab Culture</a>
+<a href="upskilling.qmd">Research Skills Bootcamp</a>
 </div>
 
 :::
@@ -493,77 +491,77 @@ We believe in the transformative potential of AI to monitor environmental change
 ## Open Positions
 
 <div class="welcome-note">
-<strong>🌟 Don't see the perfect position?</strong> We welcome applications from passionate researchers at any time! Position listings may not reflect all current opportunities - exceptional candidates often create their own paths.
+<strong>Don't see the perfect position?</strong> We welcome applications from passionate researchers at any time! Position listings may not reflect all current opportunities - exceptional candidates often create their own paths.
 </div>
 
-### 🎓 Postdoctoral Positions
+### Postdoctoral Positions
 
 <div class="position-card">
-<h3>🔬 Postdoctoral Researcher</h3>
+<h3>Postdoctoral Researcher</h3>
 <p>Lead independent research in AI for sustainability using cutting-edge technologies including <strong>LLMs, VLMs, computer vision, and advanced ML</strong> for environmental and health applications.</p>
 
 <div class="highlight-box">
-<strong>💡 Fellowship Applications Required:</strong> We primarily consider postdoc candidates who are interested in applying for fellowships such as the National Postdoc Fellowship scheme or other competitive funding opportunities.
+<strong>Fellowship Applications Required:</strong> We primarily consider postdoc candidates who are interested in applying for fellowships such as the National Postdoc Fellowship scheme or other competitive funding opportunities.
 </div>
 
 <a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-primary">Contact Prof. Nipun Batra</a>
 <a href="https://anrfonline.in/ANRF/npdf?HomePage=New" target="_blank" class="btn btn-secondary">National Postdoc Fellowship</a>
 </div>
 
-### 🎓 PhD Positions
+### PhD Positions
 
 <div class="position-card">
-<h3>🔬 PhD in Computer Science & Engineering</h3>
+<h3>PhD in Computer Science & Engineering</h3>
 <p>Pursue cutting-edge research in AI for sustainability using state-of-the-art technologies including <strong>Large Language Models (LLMs), Vision-Language Models (VLMs), computer vision, and advanced ML techniques</strong> applied to real-world sustainability challenges.</p>
 
 <p><strong>Research Areas & Technologies:</strong></p>
 <ul>
-<li>🤖 <strong>AI for Environmental Monitoring:</strong> Computer vision for satellite imagery analysis, LLMs for climate policy analysis</li>
-<li>🏥 <strong>Health Sensing & Digital Health:</strong> VLMs for medical imaging, ML for respiratory monitoring</li>
-<li>⚡ <strong>Energy Analytics:</strong> Time-series forecasting, smart grid optimization with deep learning</li>
-<li>🌍 <strong>Machine Learning for Social Good:</strong> Multi-modal models for sustainability applications</li>
+<li><strong>AI for Environmental Monitoring:</strong> Computer vision for satellite imagery analysis, LLMs for climate policy analysis</li>
+<li><strong>Health Sensing & Digital Health:</strong> VLMs for medical imaging, ML for respiratory monitoring</li>
+<li><strong>Energy Analytics:</strong> Time-series forecasting, smart grid optimization with deep learning</li>
+<li><strong>Machine Learning for Social Good:</strong> Multi-modal models for sustainability applications</li>
 </ul>
 
 <div class="highlight-box">
-<strong>💡 Application Process:</strong> Write to Prof. Nipun Batra to discuss research fit. Applications to IIT Gandhinagar are accepted twice a year through the official portal.
+<strong>Application Process:</strong> Write to Prof. Nipun Batra to discuss research fit. Applications to IIT Gandhinagar are accepted twice a year through the official portal.
 </div>
 
 <a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-primary">Discuss Research Fit</a>
 <a href="https://www.iitgn.ac.in/academics/phd" target="_blank" class="btn btn-secondary">PhD Application Portal</a>
 </div>
 
-### 🔬 Research Associate & Research Fellow Positions
+### Research Associate & Research Fellow Positions
 
 <div class="position-card">
-<h3>🔬 Junior Research Fellow</h3>
+<h3>Junior Research Fellow</h3>
 
 <div class="deadline-alert">
-⏰ <strong>APPLICATION DEADLINE:</strong> November 6, 2025
+<strong>APPLICATION DEADLINE:</strong> November 6, 2025
 </div>
 
 <p>Be a part of cutting-edge research as a Junior or Senior Research Fellow in the <strong>Sustainability Lab</strong>, working with modern ML technologies including LLMs, computer vision, and VLMs for sustainability applications.</p>
 
 <div class="highlight-box">
-<strong>💡 Perfect for:</strong> Researchers seeking to make significant contributions to AI for sustainability with potential for co-authorship on high-impact publications.
+<strong>Perfect for:</strong> Researchers seeking to make significant contributions to AI for sustainability with potential for co-authorship on high-impact publications.
 </div>
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoBkCG6AC-4pwtnkbpNKqIzAkOrupKs_UnGkk731ZfTYBBpQ/viewform" target="_blank" class="btn btn-primary">Apply Now</a>
 <a href="https://drive.google.com/file/d/1un2TvoFEXI5yyncy2PuJ0-OnDD4lrkPr/view" target="_blank" class="btn btn-secondary">View Details</a>
 </div>
 
-### 🔬 6-Month Internships
+### 6-Month Internships
 
 <div class="position-card">
-<h3>🔬 6-Month Research Internships</h3>
+<h3>6-Month Research Internships</h3>
 
 <p>Looking for a 6-month internship? Get in touch with the Principal Investigator (PI) directly to explore personalized opportunities in sustainability and AI research using cutting-edge ML technologies.</p>
 
 <div class="highlight-box">
-<strong>💡 Perfect for:</strong> Students wanting deep, sustained research experience with flexible timelines and personalized mentorship.
+<strong>Perfect for:</strong> Students wanting deep, sustained research experience with flexible timelines and personalized mentorship.
 </div>
 
 <div class="highlight-box">
-<strong>📋 Selection Process:</strong> Complete the selection task described in the application document. This helps us understand your interests and match you with appropriate research projects.
+<strong>Selection Process:</strong> Complete the selection task described in the application document. This helps us understand your interests and match you with appropriate research projects.
 </div>
 
 <a href="https://docs.google.com/document/d/1xrV1JSvUXzhSzQCGnkjJmhA5afYilaUknxklk6_EDqM/edit?tab=t.0" target="_blank" class="btn btn-primary">View Details & Selection Task</a>
@@ -617,27 +615,27 @@ We believe in the transformative potential of AI to monitor environmental change
 **Perfect for:** Undergraduate and early graduate students seeking hands-on research experience in cutting-edge AI applications.
 </div>
 
-## 📧 How to Apply
+## How to Apply
 
 ::: {.content-card}
 
 ### When writing to us, please include:
 
-**📋 Essential Details:**
+**Essential Details:**
 • **Duration & Start Date:** How long can you commit and when can you start?
 • **CV/Resume:** Your most recent version
 • **Research Interests:** Which areas excite you most?
 
-**🔬 Show Your Interest:**
+**Show Your Interest:**
 • **Papers:** Mention 1-2 papers from our lab you've read and what interested you
 • **Motivation:** Why AI for sustainability? Why our lab specifically?
 • **Background:** Relevant coursework, projects, or experience
 
 <div class="highlight-box">
-<strong>💡 Pro Tip:</strong> Browse our <a href="publications.qmd">publications</a> first to understand our work. Quality of engagement matters more than lengthy emails!
+<strong>Pro Tip:</strong> Browse our <a href="publications.qmd">publications</a> first to understand our work. Quality of engagement matters more than lengthy emails!
 </div>
 
-**🎯 New to research?** No problem! We welcome first-time researchers and provide mentorship to help you grow. Check out our [CS Research Methods Bootcamp](https://sustainability-lab.github.io/sustainability-research-bootcamp/) for comprehensive training in research fundamentals.
+**New to research?** No problem! We welcome first-time researchers and provide mentorship to help you grow. Check out our [CS Research Methods Bootcamp](https://sustainability-lab.github.io/sustainability-research-bootcamp/) for comprehensive training in research fundamentals.
 
 :::
 
@@ -713,7 +711,7 @@ We believe in the transformative potential of AI to monitor environmental change
   });
 </script>
 
-### 🎓 Alumni Success Stories
+### Alumni Success Stories
 
 Our graduates have gone on to amazing opportunities:
 
@@ -721,7 +719,7 @@ Our graduates have gone on to amazing opportunities:
 - **Academia:** PhD programs at UMass Amherst, IIT Gandhinagar, Stony Brook; MS at Carnegie Mellon University, UC San Diego, Texas A&M University, NYU Tandon, UC Irvine, Caltech, ETH Zurich
 - **Recognition:** Fulbright Fellows, Microsoft Research PhD Awards, PMRFs, Outstanding Research Gold Medals
 
-[👥 See Full Alumni List](alumni.qmd){.btn .btn-secondary} [📖 Read Their Stories](experiences.qmd){.btn .btn-secondary}
+[See Full Alumni List](alumni.qmd){.btn .btn-secondary} [📖 Read Their Stories](experiences.qmd){.btn .btn-secondary}
 
 :::
 
@@ -737,7 +735,7 @@ Our lab culture emphasizes <strong>"less but better"</strong> - we focus on high
 
 *Join a lab where your research can change the world. Where every project matters. Where your growth is our priority.*
 
-**🌟 The future of sustainability starts with you. 🌟**
+**The future of sustainability starts with you. 🌟**
 
 :::
 
@@ -753,7 +751,7 @@ Our lab culture emphasizes <strong>"less but better"</strong> - we focus on high
 <div style="margin-top: 20px;">
 
 <div class="position-card">
-<h3>🔬 Research Associate I Position</h3>
+<h3>Research Associate I Position</h3>
 
 <p>Closed position: Research Associate I in the <strong>Sustainability Lab</strong> contributing to high-impact, interdisciplinary research using cutting-edge ML technologies for domain applications.</p>
 
@@ -764,7 +762,7 @@ Our lab culture emphasizes <strong>"less but better"</strong> - we focus on high
 </div>
 
 <div class="position-card">
-<h3>🔬 Junior/Senior Research Fellow</h3>
+<h3>Junior/Senior Research Fellow</h3>
 
 <p>Closed position: Junior or Senior Research Fellow in the <strong>Sustainability Lab</strong>, working with modern ML technologies including LLMs, computer vision, and VLMs for sustainability applications.</p>
 

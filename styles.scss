@@ -5,14 +5,14 @@
 $font-family: "Crimson Pro", serif;
 $font-family-serif: "Crimson Pro", serif;
 
-/* CSS Custom Properties for theming - Clean & Minimal */
+/* CSS Custom Properties for theming - Minimal Professional */
 :root {
-  /* Primary palette - Clean, modern, professional */
-  --primary-color: #0ea5e9; /* Sky blue - clean and modern */
-  --secondary-color: #14b8a6; /* Teal - fresh and professional */
-  --accent-color: #8b5cf6; /* Purple - subtle accent */
-  --accent-warm: #06b6d4; /* Cyan accent */
-  --accent-cool: #0891b2; /* Darker cyan */
+  /* Primary palette - Apple/Google inspired minimal design */
+  --primary-color: #334155; /* Slate gray - professional and timeless */
+  --secondary-color: #475569; /* Medium slate - subtle variation */
+  --accent-color: #64748b; /* Light slate - very subtle accent */
+  --accent-warm: #0f172a; /* Almost black - for emphasis */
+  --accent-cool: #1e293b; /* Dark slate */
 
   /* Text colors */
   --text-primary: #1e293b;
@@ -31,12 +31,12 @@ $font-family-serif: "Crimson Pro", serif;
   --border-medium: #cbd5e0;
   --border-accent: #fbbf24;
 
-  /* Shadows with depth */
-  --shadow-light: 0 2px 8px rgba(14, 165, 233, 0.08);
-  --shadow-medium: 0 4px 20px rgba(14, 165, 233, 0.12);
-  --shadow-heavy: 0 16px 40px rgba(14, 165, 233, 0.2);
-  --shadow-glow-warm: 0 0 30px rgba(6, 182, 212, 0.4);
-  --shadow-glow-cool: 0 0 30px rgba(14, 165, 233, 0.4);
+  /* Shadows with depth - minimal, professional */
+  --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-heavy: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-glow-warm: 0 0 30px rgba(0, 0, 0, 0.1);
+  --shadow-glow-cool: 0 0 30px rgba(0, 0, 0, 0.08);
 
   /* Radius */
   --radius-small: 6px;
@@ -352,12 +352,11 @@ body {
     text-align: center;
     padding: 80px 20px 60px;
     margin-bottom: 60px;
-    background: linear-gradient(to bottom,
-      rgba(14, 165, 233, 0.02) 0%,
-      rgba(255, 255, 255, 0) 100%);
+    background: #fafafa;
     border-radius: var(--radius-large);
     overflow: hidden;
     animation: fadeIn 0.8s var(--transition-smooth);
+    border: 1px solid var(--border-light);
 }
 
 div.hero-section h1 {
@@ -564,21 +563,22 @@ div.hero-section h1 {
 
 .tag {
     font-family: 'Outfit', sans-serif;
-    background: rgba(14, 165, 233, 0.08);
-    color: var(--primary-color);
+    background: #f1f5f9;
+    color: var(--text-secondary);
     padding: 4px 12px;
     border-radius: 16px;
     font-size: 0.8rem;
     font-weight: 500;
-    border: 1px solid rgba(14, 165, 233, 0.15);
+    border: 1px solid #e2e8f0;
     transition: all var(--transition-fast);
     letter-spacing: 0.01em;
     white-space: nowrap;
 }
 
 .tag:hover {
-    background: rgba(14, 165, 233, 0.12);
+    background: #e2e8f0;
     border-color: var(--primary-color);
+    color: var(--text-primary);
     transform: translateY(-1px);
 }
 
@@ -622,14 +622,13 @@ div.hero-section h1 {
 }
 
 .join-section {
-    background: linear-gradient(to bottom,
-      rgba(14, 165, 233, 0.02) 0%,
-      rgba(255, 255, 255, 0) 100%);
+    background: #fafafa;
     color: var(--text-primary);
     text-align: center;
     padding: 50px 40px;
     border-radius: var(--radius-large);
     margin: 60px 0;
+    border: 1px solid var(--border-light);
 }
 
 .join-section h2 {
@@ -930,9 +929,7 @@ div.hero-section h1 {
 }
 
 .alumni-banner {
-    background: linear-gradient(to bottom,
-      rgba(14, 165, 233, 0.04) 0%,
-      rgba(255, 255, 255, 0) 100%);
+    background: #fafafa;
     color: var(--text-primary);
     text-align: center;
     padding: 40px 30px;
