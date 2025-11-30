@@ -74,21 +74,21 @@ description="ACM Summer School 2025 Complete Group - All participants and organi
 <div class="photo-grid">
 
 <div class="photo-card">
-![Akshardham visit and dinner with the lab team](images/memories/2025-Akshardham-all.jpg){group="memories" 
-description="Akshardham visit and dinner - A beautiful day exploring Gandhinagar's architectural marvel followed by a wonderful team dinner celebrating our achievements and strengthening lab bonds."}
+![Team dinner with the lab](images/memories/2025-Akshardham-all.jpg){group="memories"
+description="Team dinner - A wonderful evening celebrating our achievements and strengthening lab bonds."}
 <div class="photo-info">
-<div class="photo-title">Akshardham Visit & Team Dinner</div>
-<div class="photo-description">A memorable day exploring Gandhinagar's architectural marvel followed by team dinner</div>
+<div class="photo-title">Team Dinner</div>
+<div class="photo-description">A memorable evening celebrating together</div>
 <div class="photo-date">May 2025</div>
 </div>
 </div>
 
 <div class="photo-card">
-![Graduating batch celebration photo at Akshardham](images/memories/2025-Akshardham-finalyear.jpg){group="memories"
-description="Graduating Batch Celebration - Special celebration for our graduating students at Akshardham, Gandhinagar, marking the end of their incredible journey with the Sustainability Lab."}
+![Graduating batch celebration photo](images/memories/2025-Akshardham-finalyear.jpg){group="memories"
+description="Graduating Batch Celebration - Special celebration for our graduating students, marking the end of their incredible journey with the Sustainability Lab."}
 <div class="photo-info">
 <div class="photo-title">Graduating Batch Celebration</div>
-<div class="photo-description">Special celebration for our graduating students at Akshardham, Gandhinagar</div>
+<div class="photo-description">Special celebration for our graduating students</div>
 <div class="photo-date">May 2025</div>
 </div>
 </div>
