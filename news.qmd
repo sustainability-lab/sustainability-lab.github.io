@@ -134,40 +134,52 @@ toc: false
 <span class="news-content">Paper accepted at NeurIPS 2025</span>
 </div>
 
-<div class="news-item category-award" data-category="award">
-<span class="news-date">Jun</span>
-<span class="news-icon">🏆</span>
-<span class="news-content">Prof. Nipun Batra receives Test of Time Award for NILMTK! Recognition for significant long-term impact on energy disaggregation research.</span>
+<div class="news-item category-joining" data-category="joining">
+<span class="news-date">Aug</span>
+<span class="news-icon">👋</span>
+<span class="news-content">Kirtan Gangani and Deena Lad join Sustainability Lab as Research Assistants. Welcome!</span>
 </div>
 
 <div class="news-item category-award" data-category="award">
 <span class="news-date">Jun</span>
 <span class="news-icon">🏆</span>
-<span class="news-content">Dr. Rishiraj Adhikary receives Commendation for Outstanding Research (PhD) at IIT Gandhinagar Convocation 2025!</span>
+<span class="news-content">Prof. Nipun Batra receives <a href="awards.qmd#2025" target="_blank">Test of Time Award for NILMTK</a>! Recognition for significant long-term impact on energy disaggregation research.</span>
 </div>
 
 <div class="news-item category-award" data-category="award">
 <span class="news-date">Jun</span>
 <span class="news-icon">🏆</span>
-<span class="news-content">Prof. Nipun Batra wins the SIGEnergy Rising Star Award 2025!</span>
+<span class="news-content">Dr. Rishiraj Adhikary receives <a href="awards.qmd#2025" target="_blank">Commendation for Outstanding Research (PhD)</a> at IIT Gandhinagar Convocation 2025!</span>
+</div>
+
+<div class="news-item category-award" data-category="award">
+<span class="news-date">Jun</span>
+<span class="news-icon">🏆</span>
+<span class="news-content">Prof. Nipun Batra wins the <a href="awards.qmd#2025" target="_blank">SIGEnergy Rising Star Award 2025</a>!</span>
+</div>
+
+<div class="news-item category-talk" data-category="talk">
+<span class="news-date">Jun</span>
+<span class="news-icon">🎤</span>
+<span class="news-content">Organizing <a href="https://sustainability-lab.github.io/acm-summer-2025/" target="_blank">ACM India Summer School 2025</a> on AI for Social Good at IIT Gandhinagar (June 2-13, 2025)</span>
 </div>
 
 <div class="news-item category-award" data-category="award">
 <span class="news-date">Jan</span>
 <span class="news-icon">🏆</span>
-<span class="news-content">Prof. Nipun Batra receives Excellence in Teaching Award based on outstanding teaching contributions and active learning strategies!</span>
+<span class="news-content">Prof. Nipun Batra receives <a href="awards.qmd#2025" target="_blank">Excellence in Teaching Award</a> based on outstanding teaching contributions and active learning strategies!</span>
 </div>
 
 <div class="news-item category-award" data-category="award">
 <span class="news-date">Jan</span>
 <span class="news-icon">🏆</span>
-<span class="news-content">Shataxi Dubey wins Third Prize in Simply Speaking 4.0 Competition organized by Leadership Development Initiative, IITGN!</span>
+<span class="news-content">Shataxi Dubey wins <a href="awards.qmd#2025" target="_blank">Third Prize in Simply Speaking 4.0 Competition</a> organized by Leadership Development Initiative, IITGN!</span>
 </div>
 
 <div class="news-item category-award" data-category="award">
 <span class="news-date">Jan</span>
 <span class="news-icon">🏆</span>
-<span class="news-content">Shrimay Shah and Dhruv Gupta win Third Prize in Undergraduate Research Showcase for Brick Kilns Detection project!</span>
+<span class="news-content">Shrimay Shah and Dhruv Gupta win <a href="awards.qmd#2025" target="_blank">Third Prize in Undergraduate Research Showcase</a> for Brick Kilns Detection project!</span>
 </div>
 
 <div class="news-item category-joining" data-category="joining">
