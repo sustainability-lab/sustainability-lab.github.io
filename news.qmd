@@ -91,6 +91,7 @@ toc: false
 /* Category colors */
 .category-award { border-left-color: #f59e0b; }
 .category-paper { border-left-color: #10b981; }
+.category-event { border-left-color: #ef4444; }
 .category-joining { border-left-color: #3b82f6; }
 .category-talk { border-left-color: #8b5cf6; }
 .category-media { border-left-color: #ec4899; }
@@ -106,6 +107,7 @@ toc: false
 <button class="filter-btn active" data-category="all">All</button>
 <button class="filter-btn" data-category="award">🏆 Awards</button>
 <button class="filter-btn" data-category="paper">📄 Papers</button>
+<button class="filter-btn" data-category="event">🎉 Events</button>
 <button class="filter-btn" data-category="joining">👋 Joining</button>
 <button class="filter-btn" data-category="talk">🎤 Talks</button>
 <button class="filter-btn" data-category="thesis">🎓 Thesis</button>
@@ -158,9 +160,9 @@ toc: false
 <span class="news-content">Prof. Nipun Batra wins the <a href="awards.qmd#2025" target="_blank">SIGEnergy Rising Star Award 2025</a>!</span>
 </div>
 
-<div class="news-item category-talk" data-category="talk">
+<div class="news-item category-event" data-category="event">
 <span class="news-date">Jun</span>
-<span class="news-icon">🎤</span>
+<span class="news-icon">🎉</span>
 <span class="news-content">Organizing <a href="https://sustainability-lab.github.io/acm-summer-2025/" target="_blank">ACM India Summer School 2025</a> on AI for Social Good at IIT Gandhinagar (June 2-13, 2025)</span>
 </div>
 
