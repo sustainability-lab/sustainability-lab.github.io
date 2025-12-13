@@ -61,6 +61,26 @@ STORED AS A TEMPLATE FOR FUTURE USE
 </div>
 
 
+<div class="paper">
+<img src="2025/Vayuchat2025.png" class="paper-image">
+<div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #e3f2fd; color: #201f1fff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span>
+  <span class="tag" style="background: #e8f5e8; color: #167ad8ff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Large Language Models</span>
+  <span class="tag" style="background: #fff3e0; color: #101010ff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Code Generation</span>
+</div>
+<p class="paper-title">VayuChat: An LLM-Powered Conversational Interface for Air Quality Data Analytics</p>
+<p>Vedant Acharya, Abhay Pisharodi, Rishabh Mondal, Mohammad Rafiuddin, Nipun Batra</p>
+<p><i>ACM IKDD CODS 2025 - 13th International Conference on Data Science (Demo Track)</i></p>
+<a href="2025\CODS_VayuChat_Demo.pdf" class="paper-button">PDF</a>
+<a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuChat" class="paper-button">Project Demo</a>
+<a href="" class="paper-button">Project Page</a>
+<a href="bibtex/vayuchat2025.bib" class="paper-button bibtex-btn" download>BibTeX</a>
+<a href="" class="paper-button">YouTube</a>
+<a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuChat/tree/main" class="paper-button">Github</a>
+</div>
+</div>
+
 
 <div class="paper">
 <img src="2025/vayubuddy.png" class="paper-image">
@@ -73,7 +93,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p class="paper-title">VayuBench and VayuChat: Executable Benchmarking and Deployment of LLMs for Multi-Dataset Air Quality Analytics</p>
 <p>Vedant Acharya, Abhay Pisharodi, Ratnesh Pasi, Rishabh Mondal, Nipun Batra</p>
 <p><i>ACM IKDD CODS 2025 - 13th International Conference on Data Science</i></p>
-<a href="" class="paper-button">PDF</a>
+<a href="2025\CODS_ADS_Track_2025_VayuChat_Bench.pdf" class="paper-button">PDF</a>
 <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuChat" class="paper-button">Project Demo</a>
 <a href="https://sustainability-lab.github.io/sentinelkilndb/" class="paper-button">Project Page</a>
 <a href="bibtex/vayubench2025.bib" class="paper-button bibtex-btn" download>BibTeX</a>
