@@ -92,7 +92,7 @@ toc: false
 
 ::: {layout-ncol=4}
 <a href="">
-  <img src="images/members/Kirtan.jpg" class="cropped-image"><br/>
+  <img src="images/members/Kirtan.png" class="cropped-image"><br/>
 </a>
 <span>Kirtan Gangani<br/>(Aug 2025 - present)<br/><em style="color: #334155; font-size: 0.85rem;">Smart Energy • Time-Series Analysis</em></span>
 
