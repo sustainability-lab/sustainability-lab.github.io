@@ -1,8 +1,8 @@
 # Sustainability Lab Publications
 
 **IIT Gandhinagar**  
-*Generated: 2026-01-03 08:45:01*  
-*Total Publications: 49*
+*Generated: 2026-01-03 08:55:25*  
+*Total Publications: 50*
 
 ---
 
@@ -95,6 +95,13 @@
 **Authors:** Adhikary, Rishiraj and Lodhavia, Dhruvi and Francis, Chris and Patil, Rohit and Srivastava, Tanmay and Khanna, Prerna and Batra, Nipun and Breda, Joseph and Peplinski, Jacob and Patel, Shwetak  
 **Venue:** *ACM Transactions on Computing for Healthcare*  
 **DOI:** [10.1145/3570167](https://doi.org/10.1145/3570167)  
+
+### Deep Gaussian Processes for Air Quality Inference
+
+**Authors:** Desai, Aadesh and Gujarathi, Eshan and Parikh, Saagar and Yadav, Sachin and Patel, Zeel and Batra, Nipun  
+**Venue:** *Proceedings of the 6th Joint International Conference on Data Science \& Management of Data (10th ACM IKDD CODS and 28th COMAD)*  
+**DOI:** [10.1145/3570991.3571004](https://doi.org/10.1145/3570991.3571004)  
+**URL:** [Link](https://doi.org/10.1145/3570991.3571004)  
 
 ### AIRDELHI: Fine-Grained Spatio-Temporal Particulate Matter Dataset From Delhi For ML based Modeling
 
