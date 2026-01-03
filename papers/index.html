@@ -240,7 +240,15 @@ ul.task-list li input[type="checkbox"] {
 <section id="download-publications-in-multiple-formats" class="level2">
 <h2 class="anchored" data-anchor-id="download-publications-in-multiple-formats">Download Publications in Multiple Formats</h2>
 <p><strong>Download:</strong> <a href="bibtex/all_publications.bib">BibTeX</a> | <a href="exports/all_publications.txt">Text</a> | <a href="exports/all_publications.csv">CSV</a> | <a href="../papers/exports/all_publications.html">Markdown</a> | <a href="exports/all_publications.docx">Word</a></p>
-<!-- 
+<div class="filter-container" style="margin: 20px 0; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+<div style="margin-bottom: 10px; font-weight: 500; color: #374151;">
+Filter by Type:
+</div>
+<div class="filter-buttons" style="display: flex; flex-wrap: wrap; gap: 8px;">
+<p><button class="filter-btn active" data-filter="all" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: #3b82f6; color: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">All</button> <button class="filter-btn" data-filter="paper" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Papers</button> <button class="filter-btn" data-filter="demo" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Demos</button> <button class="filter-btn" data-filter="preprint" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Preprints</button> <button class="filter-btn" data-filter="thesis" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Thesis</button> <button class="filter-btn" data-filter="interactive" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Interactive Articles</button></p>
+</div>
+</div>
+<!--
 AYUSH SHRIVASTAVA (2024):
 STORED AS A TEMPLATE FOR FUTURE USE
 
@@ -260,7 +268,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 </section>
 <section id="section" class="level2">
 <h2 class="anchored" data-anchor-id="section">2026</h2>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2026/gdmi.jpg" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -281,7 +289,7 @@ Zeel B Patel, Vinayak Rana, Nipun Batra
 </section>
 <section id="section-1" class="level2">
 <h2 class="anchored" data-anchor-id="section-1">2025</h2>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2025/vayubuddy.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -299,7 +307,7 @@ Vedant Acharya, Abhay Pisharodi, Ratnesh Pasi, Rishabh Mondal, Nipun Batra
 <p><a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuChat" class="paper-button">Project Demo</a> <a href="bibtex/vayubench2025.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/sustainability-lab/VayuBench" class="paper-button">Github</a></p>
 </div>
 </div>
-<div class="paper">
+<div class="paper" data-type="demo">
 <img src="2025/vayuchat_demo.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -317,7 +325,7 @@ Vedant Acharya, Abhay Pisharodi, Rishabh Mondal, Nipun Batra
 <p><a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuChat" class="paper-button">Live Demo</a> <a href="https://www.youtube.com/watch?v=d6rklL05cs4" class="paper-button">YouTube</a> <a href="bibtex/vayuchat_demo2025.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
 </div>
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2025/sentinelkilndb.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -338,7 +346,7 @@ Rishabh Mondal, Jeet Parab, Heer Kubadia, Shataxi Dubey, Shardul Junagade, Zeel 
 </div>
 </div>
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2024/Brick_Kilns.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -351,15 +359,15 @@ Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitori
 Zeel B Patel, Rishabh Mondal, Shataxi Dubey, Suraj Jaiswal, Sarath Guttikunda, Nipun Batra
 </p>
 <p>
-<i>ACM Journal on Computing and Sustainable Societies (JCSS) 2025</i>
+<i>ACM Journal on Computing and Sustainable Societies (JCSS), Volume 3, Issue 3, 2025</i>
 </p>
-<p><a href="https://arxiv.org/abs/2412.04065" class="paper-button">arXiv</a> <a href="bibtex/space2policy2025.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://www.youtube.com/watch?v=BeQt_vrnsic" class="paper-button">YouTube</a> <a href="https://docs.google.com/presentation/d/19jIDm3kSZlOdnhgIIvWf8tZNjMx0dRcCmp0Z3nZVUEw/edit?usp=sharing" class="paper-button">Google AQ Summit 2024</a> <a href="https://docs.google.com/presentation/d/1PniVOoJEedGP-5N4hSqg21xjSv7v2uT4xSKNe1qB2vo/edit?usp=sharing" class="paper-button">IITD Talk</a> <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/brick_kiln_interactive_visualize" class="paper-button">HuggingFace</a></p>
+<p><a href="https://doi.org/10.1145/3736649" class="paper-button">PDF</a> <a href="bibtex/space2policy2025.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://www.youtube.com/watch?v=BeQt_vrnsic" class="paper-button">YouTube</a> <a href="https://docs.google.com/presentation/d/19jIDm3kSZlOdnhgIIvWf8tZNjMx0dRcCmp0Z3nZVUEw/edit?usp=sharing" class="paper-button">Google AQ Summit 2024</a> <a href="https://docs.google.com/presentation/d/1PniVOoJEedGP-5N4hSqg21xjSv7v2uT4xSKNe1qB2vo/edit?usp=sharing" class="paper-button">IITD Talk</a> <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/brick_kiln_interactive_visualize" class="paper-button">HuggingFace</a></p>
 <div id="bibtex-space2policy2025" class="bibtex-content" style="display: none;">
 <p><span class="citation" data-cites="article">@article</span>{patel2025space, title={Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data}, author={Patel, Zeel B and Mondal, Rishabh and Dubey, Shataxi and Jaiswal, Suraj and Guttikunda, Sarath and Batra, Nipun}, journal={ACM Journal on Computing and Sustainable Societies (JCSS)}, year={2025} }</p>
 </div>
 </div>
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2025/conformal_nilm.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -377,7 +385,7 @@ Haikoo Khandor, R Yeeshu Dhurandhar, Dhairya Shah, Nipun Batra
 <p><a href="https://doi.org/10.1145/3748334" class="paper-button">PDF</a> <a href="bibtex/conformal_nilm2025.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
 </div>
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2025/3hdm_parameter.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -395,7 +403,7 @@ Nipun Batra, Baradhwaj Coleppa, Akshat Khanna, Santosh Kumar Rai, Agnivo Sarkar
 <p><a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.112.015011" class="paper-button">PDF</a> <a href="bibtex/3hdm_parameter.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
 </div>
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2025/pollutant_exposure.jpg" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -416,7 +424,7 @@ Nishchaya Kumar Mishra, Nipun Batra, Sameer Patel
 </section>
 <section id="section-2" class="level2">
 <h2 class="anchored" data-anchor-id="section-2">2024</h2>
-<div class="paper">
+<div class="paper" data-type="preprint">
 <img src="2024/NILM_AL.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -434,7 +442,7 @@ Dhruv Patel, Ankita Kumari Jain, Haikoo Khandor, Xhitij Choudhary, Nipun Batra
 <p><a href="https://arxiv.org/abs/2411.15805" class="paper-button">arXiv</a> <a href="bibtex/nilm_al2024.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <!-- <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/brick_kiln_interactive_visualize" class="paper-button">HuggingFace</a> --></p>
 </div>
 </div>
-<div class="paper">
+<div class="paper" data-type="preprint">
 <img src="2024/SpiroActive.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -452,7 +460,7 @@ Ankita Kumari Jain, Nitish Sharma, Madhav Kanda, Nipun Batra
 <p><a href="https://arxiv.org/abs/2410.22950" class="paper-button">arXiv</a> <a href="bibtex/spiroactive2024.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <!-- <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/brick_kiln_interactive_visualize" class="paper-button">HuggingFace</a> --></p>
 </div>
 </div>
-<div class="paper">
+<div class="paper" data-type="preprint">
 <img src="2024/VayuBuddy_diagram.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -470,7 +478,7 @@ Zeel B Patel, Yash Bachwana, Nitish Sharma, Sarath Guttikunda, Nipun Batra
 <p><a href="https://arxiv.org/abs/2411.12760" class="paper-button">arXiv</a> <a href="bibtex/vayubuddy2024.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://docs.google.com/presentation/d/1E3rXyLsp7dWBI4LSL7eOpKLXzjShEawxIUv8vTNVU0Y/edit?usp=sharing" class="paper-button">Google AQ Summit 2024</a> <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuBuddy" class="paper-button">HuggingFace</a> <a href="https://www.divyabhaskar.co.in/epaper/detail-page/ahmedabad-city-bhaskar/44/2024-12-17" class="paper-button">News: Divya Bhaskar</a> <a href="https://epaper.indianexpress.com/3953344/Ahmedabad/December-17-2024#page/3/2" class="paper-button">News: Indian Express</a> <a href="https://epaper.ahmedabadmirror.com/3953285/Ahmedabad-Mirror/Dec-17-2024#page/5/2" class="paper-button">News: Ahmedabad Mirror</a> <a href="https://chitralekha.com/news/vayubuddy-empowering-communities-to-breathe-cleaner-air/" class="paper-button">News: Chitralekha</a></p>
 </div>
 </div>
-<div class="paper">
+<div class="paper" data-type="preprint">
 <img src="2022/Scalable_GaussianProcesses.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -488,7 +496,7 @@ Sai Krishna Dammalapati, Sarath Guttikunda, Nipun Batra, Zeel B Patel
 <p><a href="https://ssrn.com/abstract=4956327" class="paper-button">SSRN</a> <a href="bibtex/small_monitoring_networks2024.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
 </div>
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2024/jouleseye.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -512,7 +520,7 @@ Rishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel
 </section>
 <section id="section-3" class="level2">
 <h2 class="anchored" data-anchor-id="section-3">2023</h2>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2023/airdelhi.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -533,7 +541,7 @@ Sachin Chauhan, Zeel B Patel, Sayan Ranu, Rijurekha Sen, and Nipun Batra.
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2023/spiromask-hero.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -554,7 +562,7 @@ Rishiraj Adhikary, Dhruvi Lodhavia, Chris Francis, Rohit Patil, Tanmay Srivastav
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2023/deepgp_cods.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -575,7 +583,7 @@ Aadesh Desai, Eshan Gujarathi, Saagar Parikh, Sachin Yadav, Zeel B Patel, Nipun 
 </section>
 <section id="section-4" class="level2">
 <h2 class="anchored" data-anchor-id="section-4">2022</h2>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2022/I_Dont_Know.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -596,7 +604,7 @@ Vibhuti Bansal, Rohit Khoiwal, Hetvi Shastri, Haikoo Khandor, Nipun Batra
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="../papers/2022/compass-india.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -617,7 +625,7 @@ Karm Patel, Rishiraj Adhikary, Zeel B Patel, Nipun Batra, Sarath Guttikunda
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2022/Scalable_GaussianProcesses.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -638,7 +646,7 @@ Zeel B Patel, Palak Purohit, Harsh Patel, Shivam Sahni, and Nipun Batra
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2022/Vastr-Gan.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -659,7 +667,7 @@ Shastri, Hetvi; Lodhavia, Dhruvi; Purohit, Palak; Kaoshik, Ronak; Batra, Nipun
 </section>
 <section id="section-5" class="level2">
 <h2 class="anchored" data-anchor-id="section-5">2021</h2>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2021/ACM-CHI-21_Vartalaap.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -680,7 +688,7 @@ Rishiraj Adhikary, Zeel B. Patel, Tanmay Srivastava, Nipun Batra, Mayank Singh, 
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2021/buildsys21.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -701,7 +709,7 @@ Hetvi Shastri, Nipun Batra
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="interactive">
 <img src="2021/VisXAI21_HMM.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">
@@ -719,7 +727,7 @@ Kukunuri Rithwik, Rishiraj Adhikary, Mahika Om Jaguste, Nipun Batra and Ashish T
 </section>
 <section id="section-6" class="level2">
 <h2 class="anchored" data-anchor-id="section-6">2020</h2>
-<div class="paper">
+<div class="paper" data-type="interactive">
 <img src="2020/VisXAI20_Active_Learning.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">
@@ -737,7 +745,7 @@ Zeel B Patel, Nipun Batra
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2020/EDGE_NILM.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -758,7 +766,7 @@ Kukunuri, Rithwik, Anup Aglawe, Jainish Chauhan, Kratika Bhagtani, Rohan Patil, 
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="interactive">
 <img src="2020/Distil20_BayesOpt.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -779,7 +787,7 @@ Apoorv Agnihotri, Nipun Batra
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2020/COMAD20_PlantDoc.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -800,7 +808,7 @@ Davinder Singh, Naman Jain, Pranjali Jain, Pratik Kayal, Sudhakar Kumawat, Nipun
 </section>
 <section id="section-7" class="level2">
 <h2 class="anchored" data-anchor-id="section-7">2019</h2>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2019/CIKM19_ActiveCollabSensing.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -821,7 +829,7 @@ Yiling Jia, Nipun Batra, Hongning Wang, Kamin Whitehouse
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="demo">
 <img src="2019/Buildsys19_demo.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -842,7 +850,7 @@ Nipun Batra, Rithwik Kukunuri, Ayush Pandey, Raktim Malakar, Rajat Kumar, Odysse
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2019/Buildsys19_NILMTK.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -863,7 +871,7 @@ Nipun Batra, Rithwik Kukunuri, Ayush Pandey, Raktim Malakar, Rajat Kumar, Odysse
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2019/jia19_TreeCNN.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -884,7 +892,7 @@ Yiling Jia, Nipun Batra, Hongning Wang, Kamin Whitehouse
 </section>
 <section id="section-8" class="level2">
 <h2 class="anchored" data-anchor-id="section-8">2018</h2>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2018/buildsys18_RIMOR.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -905,7 +913,7 @@ Haroon Rashid, Nipun Batra, Pushpendra Singh
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2018/AAAI18_EnergyBreakdown.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -926,7 +934,7 @@ Nipun Batra, Yiling Jia, Hongning Wang, Kamin Whitehouse
 </section>
 <section id="section-9" class="level2">
 <h2 class="anchored" data-anchor-id="section-9">2017</h2>
-<div class="paper">
+<div class="paper" data-type="thesis">
 <img src="2017/Phd_Thesis.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -947,7 +955,7 @@ Nipun Batra
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2017/AAAI17_MatrixFactor.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -968,7 +976,7 @@ Nipun Batra, Hongning Wang, Amarjeet Singh, Kamin Whitehouse
 </section>
 <section id="section-10" class="level2">
 <h2 class="anchored" data-anchor-id="section-10">2016</h2>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2016/Gemello.png" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">
@@ -989,7 +997,7 @@ Nipun Batra, Amarjeet Singh, Kamin Whitehouse
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2016/IWNILM16_ExploringEnergyDisaggregation.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">
@@ -1007,7 +1015,7 @@ Nipun Batra, Amarjeet Singh, Kamin Whitehouse
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2016/IWNILM16_CreatingDetailedEnergyBreakdown.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">
@@ -1025,7 +1033,7 @@ Nipun Batra, Amarjeet Singh, Kamin Whitehouse
 </section>
 <section id="section-11" class="level2">
 <h2 class="anchored" data-anchor-id="section-11">2015</h2>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2015/buildsys15.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">
@@ -1043,7 +1051,7 @@ Nipun Batra, Amarjeet Singh, Kamin Whitehouse
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2015/sensys15.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">
@@ -1064,7 +1072,7 @@ Nipun Batra
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2015/NILMTK_Dataport.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">
@@ -1082,7 +1090,7 @@ Oliver Parson, Grant Fisher, April Hersey, Nipun Batra, Jack Kelly, Amarjeet Sin
 </section>
 <section id="section-12" class="level2">
 <h2 class="anchored" data-anchor-id="section-12">2014</h2>
-<div class="paper">
+<div class="paper" data-type="demo">
 <img src="2014/buildsys14_NILMTKv2.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">
@@ -1103,7 +1111,7 @@ Jack Kelly, Nipun Batra, Oliver Parson, Haimonti Dutta, William Knottenbelt, Ale
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2014/buildsys14_BitsWatts.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">
@@ -1121,7 +1129,7 @@ Nipun Batra, Manoj Gulati, Puneet Jain, Kamin Whitehouse, Amarjeet Singh
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2014/ACM-energy14_NILMTK.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">
@@ -1139,7 +1147,7 @@ Nipun Batra, Jack Kelly, Oliver Parson, Haimonti Dutta, William Knottenbelt, Ale
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="preprint">
 <img src="2014/TechReport_NILM.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">
@@ -1157,7 +1165,7 @@ Nipun Batra, Oliver Parson, Mario Berges, Amarjeet Singh, Alex Rogers
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="thesis">
 <img src="2014/Phd_Qual14.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">
@@ -1175,7 +1183,7 @@ Nipun Batra, Amarjeet Singh, Pushpendra Singh, Haimonti Dutta, Venkatesh Saranga
 </section>
 <section id="and-before" class="level2">
 <h2 class="anchored" data-anchor-id="and-before">2013 and before</h2>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2013/builsys13_ItsDifferent.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">
@@ -1193,7 +1201,7 @@ Nipun Batra, Manoj Gulati, Amarjeet Singh, Mani Srivastava
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2013/ICMLA13_INDIC.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">
@@ -1211,7 +1219,7 @@ Nipun Batra, Haimonti Dutta, Amarjeet Singh
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2013/ISSNIP13_OBMS.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">
@@ -1229,7 +1237,7 @@ Nipun Batra, Pandarasamy Arjunan, Amarjeet Singh, Pushpendra Singh
 <div class="separator">
 
 </div>
-<div class="paper">
+<div class="paper" data-type="paper">
 <img src="2012/buildsys12_SensorAct.png" class="paper-image">
 <div class="paper-details">
 <p class="paper-title">
@@ -1333,6 +1341,79 @@ Pandarasamy Arjunan, Nipun Batra, Haksoo Choi, Amarjeet Singh, Pushpendra Singh,
 }
 </style>
 <script>
+// Type filter functionality
+function initializeTypeFilter() {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const papers = document.querySelectorAll('.paper');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Update active button
+      filterButtons.forEach(btn => {
+        btn.classList.remove('active');
+        btn.style.background = 'white';
+        btn.style.color = '#374151';
+      });
+      this.classList.add('active');
+      this.style.background = '#3b82f6';
+      this.style.color = 'white';
+
+      const filterType = this.getAttribute('data-filter');
+
+      // Filter papers
+      papers.forEach(paper => {
+        const paperType = paper.getAttribute('data-type');
+
+        if (filterType === 'all' || paperType === filterType) {
+          paper.style.display = 'flex';
+        } else {
+          paper.style.display = 'none';
+        }
+      });
+
+      // Update year section visibility
+      updateYearVisibility();
+
+      // Update separator visibility
+      updateSeparatorVisibility();
+    });
+  });
+}
+
+function updateYearVisibility() {
+  const yearHeaders = document.querySelectorAll('h2');
+  yearHeaders.forEach(header => {
+    // Skip the "Download" header
+    if (header.textContent.includes('Download')) return;
+
+    let hasVisiblePapers = false;
+    let nextElement = header.nextElementSibling;
+
+    while (nextElement && nextElement.tagName !== 'H2') {
+      if (nextElement.classList && nextElement.classList.contains('paper') && nextElement.style.display !== 'none') {
+        hasVisiblePapers = true;
+        break;
+      }
+      nextElement = nextElement.nextElementSibling;
+    }
+
+    header.style.display = hasVisiblePapers ? 'block' : 'none';
+  });
+}
+
+function updateSeparatorVisibility() {
+  const separators = document.querySelectorAll('.separator');
+  separators.forEach(separator => {
+    const prevPaper = separator.previousElementSibling;
+    const nextPaper = separator.nextElementSibling;
+
+    const prevVisible = prevPaper && prevPaper.classList && prevPaper.classList.contains('paper') && prevPaper.style.display !== 'none';
+    const nextVisible = nextPaper && nextPaper.classList && nextPaper.classList.contains('paper') && nextPaper.style.display !== 'none';
+
+    separator.style.display = (prevVisible && nextVisible) ? 'block' : 'none';
+  });
+}
+
 // Search and filter functionality
 function initializeSearch() {
   const searchInput = document.getElementById('publication-search');
@@ -1462,13 +1543,16 @@ function showCopyNotification() {
 
 // Initialize everything when page loads
 document.addEventListener('DOMContentLoaded', function() {
+  // Initialize type filter functionality
+  initializeTypeFilter();
+
   // Initialize search functionality
   initializeSearch();
-  
+
   // Add publication statistics
   const papers = document.querySelectorAll('.paper');
   const years = [...new Set(Array.from(document.querySelectorAll('h2')).map(h => h.textContent.trim()).filter(y => /^\d{4}/.test(y)))];
-  
+
   console.log(`Publications loaded: ${papers.length} papers across ${years.length} years`);
 });
 </script>
