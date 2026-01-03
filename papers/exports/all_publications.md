@@ -1,7 +1,7 @@
 # Sustainability Lab Publications
 
 **IIT Gandhinagar**  
-*Generated: 2026-01-03 14:28:58*  
+*Generated: 2026-01-03 14:38:10*  
 *Total Publications: 50*
 
 ---
@@ -30,8 +30,9 @@
 ### Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data
 
 **Authors:** Patel, Zeel B and Mondal, Rishabh and Dubey, Shataxi and Jaiswal, Suraj and Guttikunda, Sarath and Batra, Nipun  
-**Venue:** *ACM Journal on Computing and Sustainable Societies (JCSS)*  
-**URL:** [Link](https://arxiv.org/abs/2412.04065)  
+**Venue:** *ACM J. Comput. Sustain. Soc.*  
+**DOI:** [10.1145/3736649](https://doi.org/10.1145/3736649)  
+**URL:** [Link](https://doi.org/10.1145/3736649)  
 
 ### SentinelKilnDB: A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery
 
