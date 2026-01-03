@@ -212,41 +212,15 @@ pre {
     background: #1e1e1e !important;
     border: none !important;
     border-radius: 8px !important;
-    padding: 0 !important;
+    padding: 20px !important;
     overflow: hidden !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25) !important;
-    position: relative !important;
-}
-
-/* Window chrome - macOS style title bar */
-pre::before {
-    content: '' !important;
-    display: block !important;
-    height: 36px !important;
-    background: #323233 !important;
-    border-radius: 8px 8px 0 0 !important;
-    position: relative !important;
-}
-
-/* Colored dots - using box-shadow for smooth rendering */
-pre::after {
-    content: '' !important;
-    position: absolute !important;
-    top: 13px !important;
-    left: 12px !important;
-    width: 12px !important;
-    height: 12px !important;
-    border-radius: 50% !important;
-    background: #ff5f56 !important;
-    box-shadow:
-        20px 0 0 #ffbd2e,
-        40px 0 0 #27c93f !important;
 }
 
 pre code {
     background-color: transparent !important;
     color: #d4d4d4 !important;
-    padding: 20px !important;
+    padding: 0 !important;
     border: none !important;
     font-size: 0.78em !important;
     line-height: 1.5 !important;
