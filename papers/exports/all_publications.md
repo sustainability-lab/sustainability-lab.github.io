@@ -1,8 +1,8 @@
 # Sustainability Lab Publications
 
 **IIT Gandhinagar**  
-*Generated: 2025-11-18 12:48:06*  
-*Total Publications: 46*
+*Generated: 2026-01-03 08:45:01*  
+*Total Publications: 49*
 
 ---
 
@@ -16,6 +16,11 @@
              Artificial Intelligence*  
 
 ## 2025
+
+### VayuChat: An LLM-Powered Conversational Interface for Air Quality Data Analytics
+
+**Authors:** Acharya, Vedant and Pisharodi, Abhay and Mondal, Rishabh and Batra, Nipun  
+**Venue:** *Proceedings of the 13th ACM International Conference on Data Science (CODS 2025)*  
 
 ### VayuBench and VayuChat: Executable Benchmarking and Deployment of LLMs for Multi-Dataset Air Quality Analytics
 
@@ -37,6 +42,13 @@
 
 **Authors:** Mishra, Nishchaya Kumar and Batra, Nipun and Patel, Sameer  
 **Venue:** *Journal of Building Engineering*  
+
+### Distribution-Free Uncertainty Quantification and Calibration for Energy Disaggregation
+
+**Authors:** Khandor, Haikoo and Dhurandhar, R Yeeshu and Shah, Dhairya and Batra, Nipun  
+**Venue:** *ACM Journal on Computing and Sustainable Societies*  
+**DOI:** [10.1145/3748334](https://doi.org/10.1145/3748334)  
+**URL:** [Link](https://doi.org/10.1145/3748334)  
 
 ### Constraining the 3HDM parameter space using active learning
 
@@ -60,7 +72,15 @@
 
 **Authors:** Adhikary, Rishiraj and Sadeh, Maite and Batra, Nipun and Goel, Mayank  
 **Venue:** *Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies*  
-**DOI:** [10.1145/3654888](https://doi.org/10.1145/3654888)  
+**DOI:** [10.1145/3631422](https://doi.org/10.1145/3631422)  
+**URL:** [Link](https://doi.org/10.1145/3631422)  
+
+### Data from small monitoring networks is unreliable: Case of Indian cities
+
+**Authors:** Dammalapati, Sai Krishna and Guttikunda, Sarath and Batra, Nipun and Patel, Zeel  
+**Venue:** *SIM-air Working Paper Series \#48-2024*  
+**DOI:** [10.2139/ssrn.4956327](https://doi.org/10.2139/ssrn.4956327)  
+**URL:** [Link](https://ssrn.com/abstract=4956327)  
 
 ### Benchmarking Active Learning for NILM
 
