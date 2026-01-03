@@ -1414,13 +1414,19 @@ function updateSeparatorVisibility() {
   });
 }
 
-// Search and filter functionality
+// Search and filter functionality (optional - only runs if search elements exist)
 function initializeSearch() {
   const searchInput = document.getElementById('publication-search');
   const yearFilter = document.getElementById('year-filter');
   const areaFilter = document.getElementById('area-filter');
+
+  // Skip if search elements don't exist
+  if (!searchInput || !yearFilter || !areaFilter) {
+    return;
+  }
+
   const papers = document.querySelectorAll('.paper');
-  
+
   function filterPapers() {
     const searchTerm = searchInput.value.toLowerCase();
     const selectedYear = yearFilter.value;
