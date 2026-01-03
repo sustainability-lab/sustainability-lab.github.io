@@ -345,6 +345,23 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
+<div class="separator"></div>
+
+<div class="paper">
+<img src="2023/deepgp_cods.png" class="paper-image">
+<div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f1f8e9; color: #558b2f; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span>
+  <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span>
+</div>
+<p class="paper-title">Deep Gaussian Processes for Air Quality Inference</p>
+<p>Aadesh Desai, Eshan Gujarathi, Saagar Parikh, Sachin Yadav, Zeel B Patel, Nipun Batra</p>
+<p><i>ACM IKDD CODS-COMAD 2023 - 6th Joint International Conference on Data Science & Management of Data</i></p>
+<a href="https://doi.org/10.1145/3570991.3571004" class="paper-button">PDF</a>
+<a href="bibtex/deepgp_cods2023.bib" class="paper-button bibtex-btn" download>BibTeX</a>
+</div>
+</div>
+
 ## 2022
 
 <div class="paper">
