@@ -6,17 +6,19 @@ title: Publications
 
 **Download:** [BibTeX](bibtex/all_publications.bib) | [Text](exports/all_publications.txt) | [CSV](exports/all_publications.csv) | [Markdown](exports/all_publications.md) | [Word](exports/all_publications.docx)
 
+```{=html}
 <div class="filter-container" style="margin: 20px 0; padding: 15px; background: #f8f9fa; border-radius: 8px;">
 <div style="margin-bottom: 10px; font-weight: 500; color: #374151;">Filter by Type:</div>
 <div class="filter-buttons" style="display: flex; flex-wrap: wrap; gap: 8px;">
-  <button class="filter-btn active" data-filter="all" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: #3b82f6; color: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">All</button>
-  <button class="filter-btn" data-filter="paper" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Papers</button>
-  <button class="filter-btn" data-filter="demo" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Demos</button>
-  <button class="filter-btn" data-filter="preprint" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Preprints</button>
-  <button class="filter-btn" data-filter="thesis" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Thesis</button>
-  <button class="filter-btn" data-filter="interactive" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Interactive Articles</button>
+<button class="filter-btn active" data-filter="all" onclick="filterByType('all')" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: #3b82f6; color: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">All</button>
+<button class="filter-btn" data-filter="paper" onclick="filterByType('paper')" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Papers</button>
+<button class="filter-btn" data-filter="demo" onclick="filterByType('demo')" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Demos</button>
+<button class="filter-btn" data-filter="preprint" onclick="filterByType('preprint')" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Preprints</button>
+<button class="filter-btn" data-filter="thesis" onclick="filterByType('thesis')" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Thesis</button>
+<button class="filter-btn" data-filter="interactive" onclick="filterByType('interactive')" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Interactive Articles</button>
 </div>
 </div>
+```
 
 <!--
 AYUSH SHRIVASTAVA (2024):
@@ -1040,43 +1042,42 @@ Asia Using Satellite Imagery</p>
 </style>
 
 <script>
-// Type filter functionality
-function initializeTypeFilter() {
+// Direct filter function called by onclick
+function filterByType(filterType) {
+  // Update active button styling
   const filterButtons = document.querySelectorAll('.filter-btn');
-  const papers = document.querySelectorAll('.paper');
-
-  filterButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      // Update active button
-      filterButtons.forEach(btn => {
-        btn.classList.remove('active');
-        btn.style.background = 'white';
-        btn.style.color = '#374151';
-      });
-      this.classList.add('active');
-      this.style.background = '#3b82f6';
-      this.style.color = 'white';
-
-      const filterType = this.getAttribute('data-filter');
-
-      // Filter papers
-      papers.forEach(paper => {
-        const paperType = paper.getAttribute('data-type');
-
-        if (filterType === 'all' || paperType === filterType) {
-          paper.style.display = 'flex';
-        } else {
-          paper.style.display = 'none';
-        }
-      });
-
-      // Update year section visibility
-      updateYearVisibility();
-
-      // Update separator visibility
-      updateSeparatorVisibility();
-    });
+  filterButtons.forEach(btn => {
+    btn.classList.remove('active');
+    btn.style.background = 'white';
+    btn.style.color = '#374151';
+    if (btn.getAttribute('data-filter') === filterType) {
+      btn.classList.add('active');
+      btn.style.background = '#3b82f6';
+      btn.style.color = 'white';
+    }
   });
+
+  // Filter papers
+  const papers = document.querySelectorAll('.paper');
+  papers.forEach(paper => {
+    const paperType = paper.getAttribute('data-type');
+    if (filterType === 'all' || paperType === filterType) {
+      paper.style.display = 'flex';
+    } else {
+      paper.style.display = 'none';
+    }
+  });
+
+  // Update year section visibility
+  updateYearVisibility();
+
+  // Update separator visibility
+  updateSeparatorVisibility();
+}
+
+// Legacy function for backwards compatibility
+function initializeTypeFilter() {
+  // Filtering is now handled by onclick handlers
 }
 
 function updateYearVisibility() {
