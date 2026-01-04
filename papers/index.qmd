@@ -1068,6 +1068,15 @@ function filterByType(type) {
     }
   });
 
+  // Update separator visibility - only show between two visible papers
+  document.querySelectorAll('.separator').forEach(function(sep) {
+    var prev = sep.previousElementSibling;
+    var next = sep.nextElementSibling;
+    var prevVisible = prev && prev.classList.contains('paper') && prev.style.display !== 'none';
+    var nextVisible = next && next.classList.contains('paper') && next.style.display !== 'none';
+    sep.style.display = (prevVisible && nextVisible) ? '' : 'none';
+  });
+
   // Update year headers
   document.querySelectorAll('h2').forEach(function(header) {
     if (header.textContent.indexOf('Download') !== -1) return;
