@@ -1359,13 +1359,13 @@ function filterByType(type) {
     }
   });
 
-  // Filter papers
+  // Filter papers - use setProperty to override !important in CSS
   document.querySelectorAll('.paper[data-type]').forEach(function(paper) {
     var paperType = paper.getAttribute('data-type');
     if (type === 'all' || paperType === type) {
-      paper.style.display = 'flex';
+      paper.style.setProperty('display', 'flex', 'important');
     } else {
-      paper.style.display = 'none';
+      paper.style.setProperty('display', 'none', 'important');
     }
   });
 
