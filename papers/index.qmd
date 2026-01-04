@@ -337,7 +337,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2023/spiromask-hero.png" class="paper-image">
@@ -358,7 +357,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2023/deepgp_cods.png" class="paper-image">
@@ -395,7 +393,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="../papers/2022/compass-india.png" class="paper-image">
@@ -415,7 +412,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2022/Scalable_GaussianProcesses.png" class="paper-image">
@@ -438,7 +434,6 @@ Asia Using Satellite Imagery</p>
 </div>
 
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2022/Vastr-Gan.png" class="paper-image">
@@ -476,7 +471,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2021/buildsys21.png" class="paper-image">
@@ -497,7 +491,6 @@ Asia Using Satellite Imagery</p>
 </div>
 
 
-<div class="separator"></div>
 
 <div class="paper" data-type="interactive">
 <img src="2021/VisXAI21_HMM.png" class="paper-image">
@@ -523,7 +516,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2020/EDGE_NILM.png" class="paper-image">
@@ -542,7 +534,6 @@ Asia Using Satellite Imagery</p>
 </div>
 
 
-<div class="separator"></div>
 
 <div class="paper" data-type="interactive">
 <img src="2020/Distil20_BayesOpt.png" class="paper-image">
@@ -559,7 +550,6 @@ Asia Using Satellite Imagery</p>
 </div>
 
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2020/COMAD20_PlantDoc.png" class="paper-image">
@@ -598,7 +588,6 @@ Asia Using Satellite Imagery</p>
 </div>
 
 
-<div class="separator"></div>
 
 <div class="paper" data-type="demo">
 <img src="2019/Buildsys19_demo.png" class="paper-image">
@@ -614,7 +603,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2019/Buildsys19_NILMTK.png" class="paper-image">
@@ -632,7 +620,6 @@ Asia Using Satellite Imagery</p>
 </div>
 
 
-<div class="separator"></div>
 
 
 <div class="paper" data-type="paper">
@@ -669,7 +656,6 @@ Asia Using Satellite Imagery</p>
 </div>
 
 
-<div class="separator"></div>
 
 
 <div class="paper" data-type="paper">
@@ -704,7 +690,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2017/AAAI17_MatrixFactor.png" class="paper-image">
@@ -743,7 +728,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2016/IWNILM16_ExploringEnergyDisaggregation.png" class="paper-image">
@@ -758,7 +742,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2016/IWNILM16_CreatingDetailedEnergyBreakdown.png" class="paper-image">
@@ -789,7 +772,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2015/sensys15.png" class="paper-image">
@@ -806,7 +788,6 @@ Asia Using Satellite Imagery</p>
 </div>
 
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2015/NILMTK_Dataport.png" class="paper-image">
@@ -835,7 +816,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2014/buildsys14_BitsWatts.png" class="paper-image">
@@ -849,7 +829,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2014/ACM-energy14_NILMTK.png" class="paper-image">
@@ -865,7 +844,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="preprint">
 <img src="2014/TechReport_NILM.png" class="paper-image">
@@ -879,7 +857,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="thesis">
 <img src="2014/Phd_Qual14.png" class="paper-image">
@@ -910,7 +887,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2013/ICMLA13_INDIC.png" class="paper-image">
@@ -925,7 +901,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2013/ISSNIP13_OBMS.png" class="paper-image">
@@ -938,7 +913,6 @@ Asia Using Satellite Imagery</p>
 </div>
 </div>
 
-<div class="separator"></div>
 
 <div class="paper" data-type="paper">
 <img src="2012/buildsys12_SensorAct.png" class="paper-image">
@@ -1028,12 +1002,28 @@ Asia Using Satellite Imagery</p>
   }
 }
 
+/* Filtering - CSS handles visibility */
+.paper.hidden {
+  display: none !important;
+}
+
+.year-section.hidden {
+  display: none !important;
+}
+
+/* CSS-only separators between visible papers */
+.paper:not(.hidden) + .paper:not(.hidden) {
+  border-top: 1px solid #e5e7eb !important;
+  padding-top: 20px !important;
+  margin-top: 20px !important;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .paper {
     flex-direction: column !important;
   }
-  
+
   .paper-image {
     width: 100% !important;
     height: 150px !important;
@@ -1043,47 +1033,28 @@ Asia Using Satellite Imagery</p>
 
 ```{=html}
 <script>
-// Filter function - called by onclick
 function filterByType(type) {
-  console.log('Filtering by:', type);
-
-  // Update buttons
+  // Update button styles
   document.querySelectorAll('.filter-btn').forEach(function(btn) {
-    if (btn.getAttribute('data-filter') === type) {
-      btn.style.background = '#3b82f6';
-      btn.style.color = 'white';
-    } else {
-      btn.style.background = 'white';
-      btn.style.color = '#374151';
-    }
+    var isActive = btn.getAttribute('data-filter') === type;
+    btn.classList.toggle('active', isActive);
+    btn.style.background = isActive ? '#3b82f6' : 'white';
+    btn.style.color = isActive ? 'white' : '#374151';
   });
 
-  // Filter papers - use setProperty to override !important in CSS
+  // Toggle hidden class on papers - CSS handles separators automatically
   document.querySelectorAll('.paper[data-type]').forEach(function(paper) {
-    var paperType = paper.getAttribute('data-type');
-    if (type === 'all' || paperType === type) {
-      paper.style.setProperty('display', 'flex', 'important');
-    } else {
-      paper.style.setProperty('display', 'none', 'important');
-    }
+    var match = type === 'all' || paper.getAttribute('data-type') === type;
+    paper.classList.toggle('hidden', !match);
   });
 
-  // Update separator visibility - only show between two visible papers
-  document.querySelectorAll('.separator').forEach(function(sep) {
-    var prev = sep.previousElementSibling;
-    var next = sep.nextElementSibling;
-    var prevVisible = prev && prev.classList.contains('paper') && prev.style.display !== 'none';
-    var nextVisible = next && next.classList.contains('paper') && next.style.display !== 'none';
-    sep.style.display = (prevVisible && nextVisible) ? '' : 'none';
-  });
-
-  // Update year headers
+  // Update year headers visibility
   document.querySelectorAll('h2').forEach(function(header) {
     if (header.textContent.indexOf('Download') !== -1) return;
     var next = header.nextElementSibling;
     var hasVisible = false;
     while (next && next.tagName !== 'H2') {
-      if (next.classList && next.classList.contains('paper') && next.style.display !== 'none') {
+      if (next.classList && next.classList.contains('paper') && !next.classList.contains('hidden')) {
         hasVisible = true;
         break;
       }
