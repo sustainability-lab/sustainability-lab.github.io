@@ -1041,224 +1041,47 @@ Asia Using Satellite Imagery</p>
 }
 </style>
 
+```{=html}
 <script>
-// Direct filter function called by onclick
-function filterByType(filterType) {
-  // Update active button styling
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  filterButtons.forEach(btn => {
-    btn.classList.remove('active');
-    btn.style.background = 'white';
-    btn.style.color = '#374151';
-    if (btn.getAttribute('data-filter') === filterType) {
-      btn.classList.add('active');
+// Filter function - called by onclick
+function filterByType(type) {
+  console.log('Filtering by:', type);
+
+  // Update buttons
+  document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    if (btn.getAttribute('data-filter') === type) {
       btn.style.background = '#3b82f6';
       btn.style.color = 'white';
+    } else {
+      btn.style.background = 'white';
+      btn.style.color = '#374151';
     }
   });
 
   // Filter papers
-  const papers = document.querySelectorAll('.paper');
-  papers.forEach(paper => {
-    const paperType = paper.getAttribute('data-type');
-    if (filterType === 'all' || paperType === filterType) {
+  document.querySelectorAll('.paper[data-type]').forEach(function(paper) {
+    var paperType = paper.getAttribute('data-type');
+    if (type === 'all' || paperType === type) {
       paper.style.display = 'flex';
     } else {
       paper.style.display = 'none';
     }
   });
 
-  // Update year section visibility
-  updateYearVisibility();
-
-  // Update separator visibility
-  updateSeparatorVisibility();
-}
-
-// Legacy function for backwards compatibility
-function initializeTypeFilter() {
-  // Filtering is now handled by onclick handlers
-}
-
-function updateYearVisibility() {
-  const yearHeaders = document.querySelectorAll('h2');
-  yearHeaders.forEach(header => {
-    // Skip the "Download" header
-    if (header.textContent.includes('Download')) return;
-
-    let hasVisiblePapers = false;
-    let nextElement = header.nextElementSibling;
-
-    while (nextElement && nextElement.tagName !== 'H2') {
-      if (nextElement.classList && nextElement.classList.contains('paper') && nextElement.style.display !== 'none') {
-        hasVisiblePapers = true;
+  // Update year headers
+  document.querySelectorAll('h2').forEach(function(header) {
+    if (header.textContent.indexOf('Download') !== -1) return;
+    var next = header.nextElementSibling;
+    var hasVisible = false;
+    while (next && next.tagName !== 'H2') {
+      if (next.classList && next.classList.contains('paper') && next.style.display !== 'none') {
+        hasVisible = true;
         break;
       }
-      nextElement = nextElement.nextElementSibling;
+      next = next.nextElementSibling;
     }
-
-    header.style.display = hasVisiblePapers ? 'block' : 'none';
+    header.style.display = hasVisible ? '' : 'none';
   });
 }
-
-function updateSeparatorVisibility() {
-  const separators = document.querySelectorAll('.separator');
-  separators.forEach(separator => {
-    const prevPaper = separator.previousElementSibling;
-    const nextPaper = separator.nextElementSibling;
-
-    const prevVisible = prevPaper && prevPaper.classList && prevPaper.classList.contains('paper') && prevPaper.style.display !== 'none';
-    const nextVisible = nextPaper && nextPaper.classList && nextPaper.classList.contains('paper') && nextPaper.style.display !== 'none';
-
-    separator.style.display = (prevVisible && nextVisible) ? 'block' : 'none';
-  });
-}
-
-// Search and filter functionality (optional - only runs if search elements exist)
-function initializeSearch() {
-  const searchInput = document.getElementById('publication-search');
-  const yearFilter = document.getElementById('year-filter');
-  const areaFilter = document.getElementById('area-filter');
-
-  // Skip if search elements don't exist
-  if (!searchInput || !yearFilter || !areaFilter) {
-    return;
-  }
-
-  const papers = document.querySelectorAll('.paper');
-
-  function filterPapers() {
-    const searchTerm = searchInput.value.toLowerCase();
-    const selectedYear = yearFilter.value;
-    const selectedArea = areaFilter.value;
-    
-    papers.forEach(paper => {
-      const title = paper.querySelector('.paper-title')?.textContent.toLowerCase() || '';
-      const authors = paper.querySelector('p:nth-of-type(2)')?.textContent.toLowerCase() || '';
-      const venue = paper.querySelector('p:nth-of-type(3)')?.textContent.toLowerCase() || '';
-      const tags = Array.from(paper.querySelectorAll('.tag')).map(tag => tag.textContent.toLowerCase()).join(' ');
-      
-      // Extract year from venue text
-      const yearMatch = venue.match(/\b(20\d{2})\b/);
-      const paperYear = yearMatch ? yearMatch[1] : '';
-      
-      // Search filter
-      const matchesSearch = searchTerm === '' || 
-        title.includes(searchTerm) || 
-        authors.includes(searchTerm) || 
-        venue.includes(searchTerm) ||
-        tags.includes(searchTerm);
-      
-      // Year filter
-      const matchesYear = selectedYear === '' || paperYear === selectedYear;
-      
-      // Area filter
-      const matchesArea = selectedArea === '' || tags.includes(selectedArea.toLowerCase());
-      
-      // Show/hide paper
-      if (matchesSearch && matchesYear && matchesArea) {
-        paper.style.display = 'flex';
-      } else {
-        paper.style.display = 'none';
-      }
-    });
-    
-    // Show/hide year headers
-    const yearHeaders = document.querySelectorAll('h2');
-    yearHeaders.forEach(header => {
-      const yearText = header.textContent.trim();
-      let hasVisiblePapers = false;
-      
-      let nextElement = header.nextElementSibling;
-      while (nextElement && nextElement.tagName !== 'H2') {
-        if (nextElement.classList.contains('paper') && nextElement.style.display !== 'none') {
-          hasVisiblePapers = true;
-          break;
-        }
-        nextElement = nextElement.nextElementSibling;
-      }
-      
-      header.style.display = hasVisiblePapers ? 'block' : 'none';
-    });
-  }
-  
-  // Add event listeners
-  searchInput.addEventListener('input', filterPapers);
-  yearFilter.addEventListener('change', filterPapers);
-  areaFilter.addEventListener('change', filterPapers);
-}
-
-// BibTeX copy functionality
-function copyBibTeX(bibId) {
-  const bibElement = document.getElementById('bibtex-' + bibId);
-  const bibText = bibElement.textContent.trim();
-  
-  // Copy to clipboard
-  navigator.clipboard.writeText(bibText).then(function() {
-    showCopyNotification();
-  }).catch(function(err) {
-    // Fallback for older browsers
-    fallbackCopyTextToClipboard(bibText);
-  });
-}
-
-function fallbackCopyTextToClipboard(text) {
-  const textArea = document.createElement("textarea");
-  textArea.value = text;
-  
-  // Avoid scrolling to bottom
-  textArea.style.top = "0";
-  textArea.style.left = "0";
-  textArea.style.position = "fixed";
-  
-  document.body.appendChild(textArea);
-  textArea.focus();
-  textArea.select();
-  
-  try {
-    document.execCommand('copy');
-    showCopyNotification();
-  } catch (err) {
-    console.error('Fallback: Oops, unable to copy', err);
-  }
-  
-  document.body.removeChild(textArea);
-}
-
-function showCopyNotification() {
-  // Remove existing notification if any
-  const existing = document.querySelector('.copy-notification');
-  if (existing) {
-    existing.remove();
-  }
-  
-  // Create new notification
-  const notification = document.createElement('div');
-  notification.className = 'copy-notification';
-  notification.textContent = 'BibTeX copied to clipboard!';
-  
-  document.body.appendChild(notification);
-  
-  // Remove after 3 seconds
-  setTimeout(() => {
-    if (notification.parentNode) {
-      notification.remove();
-    }
-  }, 3000);
-}
-
-// Initialize everything when page loads
-document.addEventListener('DOMContentLoaded', function() {
-  // Initialize type filter functionality
-  initializeTypeFilter();
-
-  // Initialize search functionality
-  initializeSearch();
-
-  // Add publication statistics
-  const papers = document.querySelectorAll('.paper');
-  const years = [...new Set(Array.from(document.querySelectorAll('h2')).map(h => h.textContent.trim()).filter(y => /^\d{4}/.test(y)))];
-
-  console.log(`Publications loaded: ${papers.length} papers across ${years.length} years`);
-});
 </script>
+```
