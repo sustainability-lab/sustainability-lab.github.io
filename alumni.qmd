@@ -241,13 +241,24 @@ body {
 <span class="stat-label">Leading Companies</span>
 </div>
 <div class="stat-card">
-<span class="stat-number">6+</span>
+<span class="stat-number">8+</span>
 <span class="stat-label">Years Impact</span>
 </div>
 </div>
 
 <div class="section-card">
 <h2>PhD Graduates</h2>
+
+<div class="phd-card">
+<a href="https://patel-zeel.github.io">
+<img src="https://patel-zeel.github.io/images/profile_crop.png" class="cropped-image" alt="Dr. Zeel B Patel">
+</a>
+<div class="phd-info">
+<div class="phd-name">Dr. Zeel B Patel</div>
+<div class="phd-duration">January 2020 - February 2026</div>
+<div style="color: #4a5568;">Our second PhD graduate! Specialized in Gaussian Processes and Bayesian Machine Learning. Winner of Microsoft Research India PhD Award. Currently Postdoc at <span class="company">Microsoft Research India</span>.</div>
+</div>
+</div>
 
 <div class="phd-card">
 <a href="https://rishi-a.github.io">

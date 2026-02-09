@@ -6,7 +6,7 @@ toc: false
 
 <div class="alumni-banner">
 <h3>Meet Our Extended Family</h3>
-<p>15 current researchers to 50+ global alumni making impact worldwide</p>
+<p>14 current researchers to 50+ global alumni making impact worldwide</p>
 <a href="alumni.qmd" class="alumni-btn">Meet Our 50+ Alumni</a>
 <a href="experiences.qmd" class="alumni-btn">Read Their Stories</a>
 </div>
@@ -29,11 +29,6 @@ toc: false
 ## PhD 
 
 ::: {layout-ncol=4}
-
-<a href="https://patel-zeel.github.io">
-  <img src="https://patel-zeel.github.io/images/profile_crop.png" class="cropped-image"><br/>
-</a>
-<span>Zeel B Patel<br/>(Jan 2020 - present)<br/><em style="color: #334155; font-size: 0.85rem;">Gaussian Processes • Bayesian ML</em></span>
 
 <a href="https://rishabh-mondal.github.io">
   <img src="https://rishabh-mondal.github.io/profile.jpeg" class="cropped-image"><br/>

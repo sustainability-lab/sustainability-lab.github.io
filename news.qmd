@@ -115,8 +115,33 @@ toc: false
 </div>
 
 <div class="year-section">
+<h2 class="year-header">2026</h2>
+<div class="news-list">
+
+<div class="news-item category-thesis" data-category="thesis">
+<span class="news-date">Feb</span>
+<span class="news-icon">🎓</span>
+<span class="news-content">Dr. Zeel B Patel successfully defends his PhD thesis. Second PhD graduate from the lab. Congratulations!</span>
+</div>
+
+<div class="news-item category-award" data-category="award">
+<span class="news-date">Jan</span>
+<span class="news-icon">🏆</span>
+<span class="news-content">Balbir Prasad, Saaransh Shandilya and Parv Thecker awarded IndiaAI MTech Fellowships!</span>
+</div>
+
+</div>
+</div>
+
+<div class="year-section">
 <h2 class="year-header">2025</h2>
 <div class="news-list">
+
+<div class="news-item category-grant" data-category="grant">
+<span class="news-date">Dec</span>
+<span class="news-icon">💰</span>
+<span class="news-content">Received ANRF ARG (Anusandhan National Research Foundation - Accelerate Research Grant)!</span>
+</div>
 
 <div class="news-item category-paper" data-category="paper">
 <span class="news-date">Nov</span>

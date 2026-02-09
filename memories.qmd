@@ -10,6 +10,47 @@ lightbox: auto
 </div>
 
 <div class="year-section">
+<h2 class="year-header">2026</h2>
+
+<div class="month-section">
+<h3 class="month-header">February 2026</h3>
+<div class="photo-grid">
+
+<div class="photo-card">
+![Dr. Zeel B Patel with his PhD committee](images/memories/2026-zeel-phd-committee.jpeg){group="memories"
+description="Dr. Zeel B Patel's PhD Defence - Zeel with his PhD committee after successfully defending his thesis on 4th February 2026. Second PhD graduate from the Sustainability Lab!"}
+<div class="photo-info">
+<div class="photo-title">Zeel's PhD Defence - With Committee</div>
+<div class="photo-description">Dr. Zeel B Patel with his PhD committee after a successful defence</div>
+<div class="photo-date">February 2026</div>
+</div>
+</div>
+
+<div class="photo-card">
+![Current PhD students celebrating with Dr. Zeel](images/memories/2026-zeel-phd-students.jpeg){group="memories"
+description="PhD Defence Celebration - Current PhD students celebrating Dr. Zeel B Patel's successful thesis defence, marking a proud moment for the Sustainability Lab."}
+<div class="photo-info">
+<div class="photo-title">Zeel's PhD Defence - With PhD Students</div>
+<div class="photo-description">Current PhD students celebrating with Dr. Zeel</div>
+<div class="photo-date">February 2026</div>
+</div>
+</div>
+
+<div class="photo-card">
+![JRFs, MTech and PhD students at Zeel's defence celebration](images/memories/2026-zeel-phd-jrfs-mtech.jpeg){group="memories"
+description="PhD Defence Celebration - JRFs, MTech and PhD students together celebrating Dr. Zeel B Patel's successful thesis defence."}
+<div class="photo-info">
+<div class="photo-title">Zeel's PhD Defence - Lab Celebration</div>
+<div class="photo-description">JRFs, MTech and PhD students at the celebration</div>
+<div class="photo-date">February 2026</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="year-section">
 <h2 class="year-header">2025</h2>
 
 <div class="month-section">
