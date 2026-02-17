@@ -94,6 +94,8 @@ toc: false
 <img src="images/members/deena.jpg" class="cropped-image"><br/>
 <span>Deena Lad<br/>(Sep 2025 - present)<br/><em style="color: #334155; font-size: 0.85rem;">Environmental Modelling • Research Methods</em></span>
 
+<img src="images/members/Vaibhavi.jpg" class="cropped-image"><br/>
+<span>Vaibhavi Tiwari<br/>(Feb 2026 - present)<br/><em style="color: #334155; font-size: 0.85rem;">AI • Machine Learning</em></span>
 :::
 
 <div class="compact-section">
