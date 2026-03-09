@@ -1,7 +1,11 @@
 ---
 toc: false
+description: "Sustainability Lab at IIT Gandhinagar — AI-driven research for a sustainable future. Led by Prof. Nipun Batra. PhD positions available in AI for sustainability, health sensing, energy analytics, and environmental monitoring."
 ---
-<!-- Updated: 2025-11-28 - Clean terminal window with smooth dots -->
+
+<div class="phd-recruitment-banner">
+<strong>PhD Positions Available:</strong> We are actively looking for strong PhD students to work on AI for sustainability. <a href="openings.qmd">Learn more and apply</a>
+</div>
 
 <div class="hero-section">
 <h1>Sustainability Lab</h1>

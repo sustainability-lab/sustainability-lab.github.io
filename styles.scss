@@ -352,6 +352,27 @@ body {
     }
   }
 
+/* PhD Recruitment Banner */
+.phd-recruitment-banner {
+  background: var(--ink);
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-bottom: 24px;
+
+  a {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: underline;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
 /* Homepage styles - Clean Hero */
 .hero-section {
     position: relative;

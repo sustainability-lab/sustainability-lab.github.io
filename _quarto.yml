@@ -60,7 +60,7 @@ website:
             
   page-footer:
     background: light
-    left: "© 2025 Sustainability Lab, IIT Gandhinagar"
+    left: "© 2026 Sustainability Lab, IIT Gandhinagar"
     center: |
       [Publications](papers/index.qmd) |
       [**Research Skills Bootcamp**](https://sustainability-lab.github.io/sustainability-research-bootcamp/) |
