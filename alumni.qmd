@@ -267,9 +267,18 @@ body {
 <div class="phd-info">
 <div class="phd-name">Dr. Rishiraj Adhikary</div>
 <div class="phd-duration">July 2019 - January 2025</div>
-<div style="color: #4a5568;">Our first PhD graduate! Specialized in health sensing and respiratory monitoring technologies. Winner of multiple prestigious awards including Fulbright-Nehru Fellowship.</div>
+<div style="color: #4a5568;">Our first PhD graduate! Specialized in health sensing and respiratory monitoring technologies. Winner of multiple prestigious awards including Fulbright-Nehru Fellowship. Now Postdoctoral Researcher at <span class="university">University of Cambridge</span> with Prof. Cecilia Mascolo.</div>
 </div>
 </div>
+
+<div class="phd-card">
+<div class="phd-info">
+<div class="phd-name">Dr. Zeel B Patel</div>
+<div class="phd-duration">PhD Graduate</div>
+<div style="color: #4a5568;">Now Postdoc at <span class="company">Microsoft Research India</span>.</div>
+</div>
+</div>
+
 </div>
 
 
