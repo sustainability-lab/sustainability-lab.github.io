@@ -70,26 +70,26 @@ html {
 /* Global heading styles */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    letter-spacing: -0.01em;
+    font-weight: 500;
+    letter-spacing: -0.02em;
     color: var(--ink);
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: clamp(2.2rem, 4vw, 2.8rem);
+    font-weight: 500;
 }
 
 h2 {
     font-size: 1.8rem;
-    font-weight: 600;
-    margin-top: 2rem;
+    font-weight: 500;
+    margin-top: 2.5rem;
     margin-bottom: 1rem;
 }
 
 h3 {
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* Paragraphs and general text */
@@ -387,7 +387,7 @@ body {
 div.hero-section h1 {
     font-family: 'Playfair Display', serif !important;
     font-size: 3rem !important;
-    font-weight: 700 !important;
+    font-weight: 500 !important;
     margin-bottom: 24px !important;
     color: var(--ink) !important;
     text-align: center !important;
