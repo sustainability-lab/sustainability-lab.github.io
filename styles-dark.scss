@@ -1,286 +1,77 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap';
+
+$font-family: "Roboto", sans-serif;
+$font-family-serif: "Roboto", sans-serif;
+
+$primary: #2c2c2c;
+
 /*-- scss:rules --*/
 
-/* Apple-inspired Dark Mode */
-
-/* Override for dark mode */
-.quarto-dark {
-  /* Apple Dark Palette */
-  --apple-blue: #2997ff;
-  --apple-blue-hover: #40a0ff;
-  --apple-gray-light: #1d1d1f;
-  --apple-gray-text: #f5f5f7;
-  --apple-gray-secondary: #86868b;
-  --apple-border: rgba(255, 255, 255, 0.1);
-  --apple-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --apple-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
-  --apple-shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+body {
+    background-color: #121212 !important; /* Set dark background */
+    color: #e0e0e0 !important; /* Light text color */
 }
 
-/* Body background */
-body.quarto-dark,
-body.quarto-dark > .navbar {
-  background: #000000;
+p, span, li, h1, h2, h3, h4, h5, h6 {
+    color: #e0e0e0 !important; /* Ensure all text is readable */
 }
 
-/* Navigation in dark mode */
-.quarto-dark .navbar {
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  border-bottom: 1px solid var(--apple-border);
+kbd, .kbd {
+    background-color: #222222 !important;
 }
 
-/* Links in dark mode */
-.quarto-dark a {
-  color: var(--apple-blue);
+.navbar {
+    font-family: $font-family;  /* Ensure consistency */
+    font-size: large;
+    background-color: #2c2c2c !important; /* Ensure navbar matches dark mode */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    height: auto; /* Adjust height dynamically */
+    padding: 0; /* Remove padding if necessary */
+}
 
-  &:hover {
-    color: var(--apple-blue-hover);
+.navbar .navbar-nav {
+    display: flex;
+    align-items: center; /* Ensure nav items are centered vertically */
+    height: 100%; /* Full height of the navbar */
+}
+
+.cropped-image {
+    border-color: #e0e0e0; /* Adjust border color for better visibility */
+}
+
+.dropdown-menu {
+    background-color: #222 !important;
+    border: none !important;
+}
+
+.dropdown-item {
+    color: #e0e0e0 !important; /* Set text color */
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #444 !important; /* Darker background on hover */
+    color: #ffffff !important; /* Ensure text remains visible */
+}
+
+.event-navigation {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+    a {
+      color: #ccc;
+      border: 1px solid transparent;
+
+      &:hover {
+        background-color: #2c2c2c;
+        color: #fff;
+        border: 1px solid #444;
+      }
+
+      &.active {
+        background-color: #0d6efd;
+        color: white;
+        border: 1px solid #0a58ca;
+      }
+    }
   }
-}
-
-/* Headings in dark mode */
-.quarto-dark h1,
-.quarto-dark h2,
-.quarto-dark h3,
-.quarto-dark h4,
-.quarto-dark h5,
-.quarto-dark h6 {
-  color: var(--apple-gray-text);
-}
-
-/* Paragraphs in dark mode */
-.quarto-dark p {
-  color: var(--apple-gray-secondary);
-}
-
-/* Hero section in dark mode */
-.quarto-dark .hero-section {
-  background: linear-gradient(180deg, #1d1d1f 0%, #000000 100%);
-}
-
-.quarto-dark .hero-section h1,
-.quarto-dark .hero-section .tagline {
-  color: var(--apple-gray-text);
-}
-
-/* Cards in dark mode */
-.quarto-dark .project-card,
-.quarto-dark .paper,
-.quarto-dark .faculty-section,
-.quarto-dark .photo-card,
-.quarto-dark .funder-block {
-  background: #1d1d1f;
-  border-color: var(--apple-border);
-}
-
-/* Tag filters in dark mode */
-.quarto-dark .home-tag-filters,
-.quarto-dark .join-section,
-.quarto-dark .event-navigation,
-.quarto-dark .alumni-banner,
-.quarto-dark .members-join-section {
-  background: #1d1d1f;
-  border-color: var(--apple-border);
-}
-
-/* Tag pills in dark mode */
-.quarto-dark .home-tag-link,
-.quarto-dark .tag {
-  background: #2d2d2f;
-  color: var(--apple-gray-text);
-  border-color: var(--apple-border);
-
-  &:hover {
-    background: var(--apple-blue);
-    color: white;
-    border-color: var(--apple-blue);
-  }
-}
-
-.quarto-dark .home-tag-link.all-projects {
-  background: var(--apple-gray-text);
-  color: #000000;
-  border-color: var(--apple-gray-text);
-
-  &:hover {
-    background: var(--apple-blue);
-    color: white;
-    border-color: var(--apple-blue);
-  }
-}
-
-/* Secondary buttons in dark mode */
-.quarto-dark .hero-btn.secondary,
-.quarto-dark .join-btn.secondary {
-  background: transparent;
-  color: var(--apple-blue);
-  border: 1px solid var(--apple-border);
-
-  &:hover {
-    background: rgba(41, 151, 255, 0.1);
-    border-color: var(--apple-blue);
-  }
-}
-
-/* Funders logos in dark mode */
-.quarto-dark .funder-logo {
-  filter: grayscale(100%) brightness(200%);
-  opacity: 0.5;
-}
-
-.quarto-dark .funder-block:hover .funder-logo {
-  filter: grayscale(0%) brightness(150%);
-  opacity: 1;
-}
-
-/* Code blocks in dark mode */
-.quarto-dark pre {
-  background: #2d2d2f !important;
-  border-color: var(--apple-border) !important;
-}
-
-/* Inline code in dark mode */
-.quarto-dark code:not(pre code) {
-  background: #2d2d2f;
-  color: var(--apple-gray-text);
-}
-
-/* Memories hero in dark mode */
-.quarto-dark .memories-hero {
-  background: linear-gradient(180deg, #1d1d1f 0%, #000000 100%);
-}
-
-/* Year header in dark mode */
-.quarto-dark .year-header {
-  color: var(--apple-gray-text);
-}
-
-/* Month header in dark mode */
-.quarto-dark .month-header {
-  border-left-color: var(--apple-blue);
-}
-
-/* Paper button in dark mode */
-.quarto-dark .paper-button {
-  background: var(--apple-blue);
-
-  &:hover {
-    background: var(--apple-blue-hover);
-  }
-}
-
-/* Navbar links in dark mode */
-.quarto-dark .navbar .nav-link,
-.quarto-dark .navbar-brand {
-  color: var(--apple-gray-text);
-
-  &:hover {
-    color: var(--apple-blue);
-  }
-}
-
-/* Dropdown menu in dark mode */
-.quarto-dark .dropdown-menu {
-  background: #1d1d1f;
-  border-color: var(--apple-border);
-}
-
-.quarto-dark .dropdown-item {
-  color: var(--apple-gray-text);
-
-  &:hover {
-    background: #2d2d2f;
-    color: var(--apple-blue);
-  }
-}
-
-/* TOC in dark mode */
-.quarto-dark .toc-title {
-  color: var(--apple-gray-text);
-}
-
-.quarto-dark .toc-item a {
-  color: var(--apple-gray-secondary);
-
-  &:hover {
-    color: var(--apple-blue);
-  }
-}
-
-/* Form elements in dark mode */
-.quarto-dark input,
-.quarto-dark select,
-.quarto-dark textarea {
-  background: #2d2d2f;
-  border-color: var(--apple-border);
-  color: var(--apple-gray-text);
-
-  &:focus {
-    border-color: var(--apple-blue);
-    box-shadow: 0 0 0 3px rgba(41, 151, 255, 0.2);
-  }
-}
-
-/* Table in dark mode */
-.quarto-dark table {
-  color: var(--apple-gray-text);
-}
-
-.quarto-dark th {
-  background: #1d1d1f;
-  border-color: var(--apple-border);
-}
-
-.quarto-dark td {
-  border-color: var(--apple-border);
-}
-
-.quarto-dark tr:hover td {
-  background: #2d2d2f;
-}
-
-/* Blockquote in dark mode */
-.quarto-dark blockquote {
-  border-left-color: var(--apple-blue);
-  color: var(--apple-gray-secondary);
-}
-
-/* HR in dark mode */
-.quarto-dark hr {
-  border-color: var(--apple-border);
-}
-
-/* Scrollbar in dark mode */
-.quarto-dark::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-.quarto-dark::-webkit-scrollbar-track {
-  background: #1d1d1f;
-}
-
-.quarto-dark::-webkit-scrollbar-thumb {
-  background: #424245;
-  border-radius: 4px;
-}
-
-.quarto-dark::-webkit-scrollbar-thumb:hover {
-  background: #4a4a4d;
-}
-
-/* Images with light backgrounds - add dark mode handling */
-.quarto-dark .project-image {
-  background: #1d1d1f;
-}
-
-/* Award images in dark mode */
-.quarto-dark .award-image {
-  background: #1d1d1f;
-}
-
-/* Member images in dark mode */
-.quarto-dark .cropped-image {
-  border-color: var(--apple-border);
-}

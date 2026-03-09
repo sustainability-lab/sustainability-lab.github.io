@@ -1,62 +1,10 @@
 ---
 title: ""
 toc: false
-description: "Open positions at the Sustainability Lab, IIT Gandhinagar. PhD, postdoc, project associate, and research internship opportunities in AI for sustainability, health sensing, and environmental monitoring."
 output:
   html_document:
     self_contained: false
 ---
-
-<script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "JobPosting",
-    "title": "Project Associate - I (Computer Science and Engineering)",
-    "description": "Project Associate - I position at Sustainability Lab, IIT Gandhinagar, working on AI for sustainability under Prof. Nipun Batra.",
-    "datePosted": "2026-03-08",
-    "validThrough": "2026-03-21",
-    "employmentType": "FULL_TIME",
-    "hiringOrganization": {
-      "@type": "EducationalOrganization",
-      "name": "Sustainability Lab, IIT Gandhinagar",
-      "sameAs": "https://sustainability-lab.github.io"
-    },
-    "jobLocation": {
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Gandhinagar",
-        "addressRegion": "Gujarat",
-        "addressCountry": "IN"
-      }
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "JobPosting",
-    "title": "Project Associate - I (Computer Science and Engineering)",
-    "description": "Project Associate - I position at Sustainability Lab, IIT Gandhinagar, working on AI for sustainability under Prof. Nipun Batra.",
-    "datePosted": "2026-03-08",
-    "validThrough": "2026-03-21",
-    "employmentType": "FULL_TIME",
-    "hiringOrganization": {
-      "@type": "EducationalOrganization",
-      "name": "Sustainability Lab, IIT Gandhinagar",
-      "sameAs": "https://sustainability-lab.github.io"
-    },
-    "jobLocation": {
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Gandhinagar",
-        "addressRegion": "Gujarat",
-        "addressCountry": "IN"
-      }
-    }
-  }
-]
-</script>
 
 <style>
 body {
@@ -546,36 +494,6 @@ We believe in the transformative potential of AI to monitor environmental change
 <strong>Don't see the perfect position?</strong> We welcome applications from passionate researchers at any time! Position listings may not reflect all current opportunities - exceptional candidates often create their own paths.
 </div>
 
-### PhD Positions
-
-<div class="deadline-alert" style="background: #f0fdf4; border-color: #22c55e; color: #15803d;">
-<strong>We are always looking for strong PhD students!</strong> If you are passionate about AI for sustainability, we encourage you to reach out.
-</div>
-
-<div class="position-card">
-<h3>PhD in Computer Science & Engineering</h3>
-<p>Pursue cutting-edge research in AI for sustainability using state-of-the-art technologies including <strong>Large Language Models (LLMs), Vision-Language Models (VLMs), computer vision, and advanced ML techniques</strong> applied to real-world sustainability challenges.</p>
-
-<p><strong>Research Areas & Technologies:</strong></p>
-<ul>
-<li><strong>AI for Environmental Monitoring:</strong> Computer vision for satellite imagery analysis, LLMs for climate policy analysis</li>
-<li><strong>Health Sensing & Digital Health:</strong> VLMs for medical imaging, ML for respiratory monitoring</li>
-<li><strong>Energy Analytics:</strong> Time-series forecasting, smart grid optimization with deep learning</li>
-<li><strong>Machine Learning for Social Good:</strong> Multi-modal models for sustainability applications</li>
-</ul>
-
-<div class="highlight-box">
-<strong>PhD Alumni:</strong> Dr. Rishiraj Adhikary — Postdoctoral Researcher at the <strong>University of Cambridge</strong> with Prof. Cecilia Mascolo. Dr. Zeel B Patel — Postdoc at <strong>Microsoft Research India</strong>.
-</div>
-
-<div class="highlight-box">
-Interested candidates can write to Prof. Nipun Batra and apply through the official IIT Gandhinagar PhD admissions portal.
-</div>
-
-<a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-primary">Write to Prof. Nipun Batra</a>
-<a href="https://www.iitgn.ac.in/academics/phd" target="_blank" class="btn btn-secondary">PhD Application Portal</a>
-</div>
-
 ### Postdoctoral Positions
 
 <div class="position-card">
@@ -590,32 +508,45 @@ Interested candidates can write to Prof. Nipun Batra and apply through the offic
 <a href="https://anrfonline.in/ANRF/npdf?HomePage=New" target="_blank" class="btn btn-secondary">National Postdoc Fellowship</a>
 </div>
 
-### Project Associate & Research Fellow Positions
+### PhD Positions
 
 <div class="position-card">
-<h3>Project Associate - I (Position 1)</h3>
+<h3>PhD in Computer Science & Engineering</h3>
+<p>Pursue cutting-edge research in AI for sustainability using state-of-the-art technologies including <strong>Large Language Models (LLMs), Vision-Language Models (VLMs), computer vision, and advanced ML techniques</strong> applied to real-world sustainability challenges.</p>
 
-<div class="deadline-alert">
-<strong>APPLICATION DEADLINE:</strong> March 21, 2026
+<p><strong>Research Areas & Technologies:</strong></p>
+<ul>
+<li><strong>AI for Environmental Monitoring:</strong> Computer vision for satellite imagery analysis, LLMs for climate policy analysis</li>
+<li><strong>Health Sensing & Digital Health:</strong> VLMs for medical imaging, ML for respiratory monitoring</li>
+<li><strong>Energy Analytics:</strong> Time-series forecasting, smart grid optimization with deep learning</li>
+<li><strong>Machine Learning for Social Good:</strong> Multi-modal models for sustainability applications</li>
+</ul>
+
+<div class="highlight-box">
+<strong>Application Process:</strong> Write to Prof. Nipun Batra to discuss research fit. Applications to IIT Gandhinagar are accepted twice a year through the official portal.
 </div>
 
-<p>Project Associate - I position in the <strong>Sustainability Lab</strong>, Department of Computer Science and Engineering, IIT Gandhinagar under Prof. Nipun Batra.</p>
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSdYH9w6czxrXxKcgEBDoB9-tPLZf4yg-VlDw6UXkgpPPwFL-w/viewform" target="_blank" class="btn btn-primary">Apply Now</a>
-<a href="https://drive.google.com/file/d/1jT3S3Q1jY8Ky3cV_b3kWFATJvyQEnwlE/view?usp=drive_link" target="_blank" class="btn btn-secondary">View Details</a>
+<a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-primary">Discuss Research Fit</a>
+<a href="https://www.iitgn.ac.in/academics/phd" target="_blank" class="btn btn-secondary">PhD Application Portal</a>
 </div>
+
+### Research Associate & Research Fellow Positions
 
 <div class="position-card">
-<h3>Project Associate - I (Position 2)</h3>
+<h3>Junior Research Fellow</h3>
 
 <div class="deadline-alert">
-<strong>APPLICATION DEADLINE:</strong> March 21, 2026
+<strong>APPLICATION DEADLINE:</strong> November 6, 2025
 </div>
 
-<p>Project Associate - I position in the <strong>Sustainability Lab</strong>, Department of Computer Science and Engineering, IIT Gandhinagar under Prof. Nipun Batra.</p>
+<p>Be a part of cutting-edge research as a Junior or Senior Research Fellow in the <strong>Sustainability Lab</strong>, working with modern ML technologies including LLMs, computer vision, and VLMs for sustainability applications.</p>
 
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSf0ndJJXpjdMItiRLk-sqJvmVuXRQvJX1oC3nkalnn7cW7H6Q/viewform" target="_blank" class="btn btn-primary">Apply Now</a>
-<a href="https://drive.google.com/file/d/1EcXWX-sQj1TmToIieQ0Qkd90P7JMn5J9/view?usp=drive_link" target="_blank" class="btn btn-secondary">View Details</a>
+<div class="highlight-box">
+<strong>Perfect for:</strong> Researchers seeking to make significant contributions to AI for sustainability with potential for co-authorship on high-impact publications.
+</div>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfoBkCG6AC-4pwtnkbpNKqIzAkOrupKs_UnGkk731ZfTYBBpQ/viewform" target="_blank" class="btn btn-primary">Apply Now</a>
+<a href="https://drive.google.com/file/d/1un2TvoFEXI5yyncy2PuJ0-OnDD4lrkPr/view" target="_blank" class="btn btn-secondary">View Details</a>
 </div>
 
 ### 6-Month Internships
@@ -636,6 +567,35 @@ Interested candidates can write to Prof. Nipun Batra and apply through the offic
 <a href="https://docs.google.com/document/d/1xrV1JSvUXzhSzQCGnkjJmhA5afYilaUknxklk6_EDqM/edit?tab=t.0" target="_blank" class="btn btn-primary">View Details & Selection Task</a>
 <a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-secondary">Contact Prof. Nipun Batra</a>
 <a href="computational-resources.qmd" class="btn btn-secondary">View Our Resources</a>
+</div>
+
+### Visiting Students Research Engagement Programme
+
+<div class="position-card">
+<h3>Visiting Students Research Engagement Programme (VSREP) - Semester I 2025-26</h3>
+
+<div class="deadline-alert">
+<strong>APPLICATION DEADLINE:</strong> November 10, 2025, 17:00 Hours IST
+</div>
+
+<p>IIT Gandhinagar is pleased to announce the launch of the <strong>Visiting Students Research Engagement Programme</strong> for Semester I of Academic Year 2025-26. This initiative offers final year students from <strong>IITs, IISc, IISERs and NITs</strong> an opportunity to undertake a semester-long research internship at IIT Gandhinagar under the mentorship of our faculty.</p>
+
+<div class="highlight-box">
+<strong>Important Dates:</strong><br>
+• <strong>Application Open:</strong> October 22, 2025<br>
+• <strong>Application Deadline:</strong> November 10, 2025, 17:00 Hours IST<br>
+• <strong>Selected Candidates Announcement:</strong> Will be published on the website<br>
+• <strong>Programme Start:</strong> January 02, 2026<br>
+• <strong>Programme End:</strong> April 30, 2026
+</div>
+
+<div class="highlight-box">
+<strong>Perfect for:</strong> Final year students from premier institutes seeking intensive research experience in AI for sustainability with faculty mentorship and potential for high-impact publications.
+</div>
+
+<a href="https://tiny.cc/vsrep" target="_blank" class="btn btn-primary">Apply Now</a>
+<a href="https://iitgn.ac.in/admissions/visiting-students-research-engagement-programme" target="_blank" class="btn btn-secondary">View Details</a>
+<a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-secondary">Contact Prof. Nipun Batra</a>
 </div>
 
 ### Summer Research Internships
@@ -672,7 +632,7 @@ Interested candidates can write to Prof. Nipun Batra and apply through the offic
 • **Background:** Relevant coursework, projects, or experience
 
 <div class="highlight-box">
-<strong>Pro Tip:</strong> Browse our <a href="papers/index.qmd">publications</a> first to understand our work. Quality of engagement matters more than lengthy emails!
+<strong>Pro Tip:</strong> Browse our <a href="publications.qmd">publications</a> first to understand our work. Quality of engagement matters more than lengthy emails!
 </div>
 
 **New to research?** No problem! We welcome first-time researchers and provide mentorship to help you grow. Check out our [CS Research Methods Bootcamp](https://sustainability-lab.github.io/sustainability-research-bootcamp/) for comprehensive training in research fundamentals.
@@ -789,27 +749,6 @@ Our lab culture emphasizes <strong>"less but better"</strong> - we focus on high
 <summary><strong>View Previous Research Positions</strong></summary>
 
 <div style="margin-top: 20px;">
-
-<div class="position-card">
-<h3>VSREP - Semester I 2025-26</h3>
-
-<p>Closed position: Visiting Students Research Engagement Programme for final year students from <strong>IITs, IISc, IISERs and NITs</strong> — semester-long research internship at IIT Gandhinagar.</p>
-
-<p><strong>Programme period:</strong> January 02, 2026 - April 30, 2026</p>
-
-<a href="https://iitgn.ac.in/admissions/visiting-students-research-engagement-programme" target="_blank" class="btn btn-secondary">View Details</a>
-</div>
-
-<div class="position-card">
-<h3>Junior Research Fellow</h3>
-
-<p>Closed position: Junior or Senior Research Fellow in the <strong>Sustainability Lab</strong>, working with modern ML technologies including LLMs, computer vision, and VLMs for sustainability applications.</p>
-
-<p><strong>Target audience:</strong> Researchers seeking to make significant contributions to AI for sustainability with potential for co-authorship on high-impact publications.</p>
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfoBkCG6AC-4pwtnkbpNKqIzAkOrupKs_UnGkk731ZfTYBBpQ/viewform" target="_blank" class="btn btn-secondary">View Application (Closed)</a>
-<a href="https://drive.google.com/file/d/1un2TvoFEXI5yyncy2PuJ0-OnDD4lrkPr/view" target="_blank" class="btn btn-secondary">View Details</a>
-</div>
 
 <div class="position-card">
 <h3>Research Associate I Position</h3>

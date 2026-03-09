@@ -1,57 +1,54 @@
 ---
 toc: false
-description: "Sustainability Lab at IIT Gandhinagar — AI-driven research for a sustainable future. Led by Prof. Nipun Batra. PhD positions available in AI for sustainability, health sensing, energy analytics, and environmental monitoring."
 ---
-
-<div class="phd-recruitment-banner">
-<strong>PhD Positions Available:</strong> We are actively looking for strong PhD students to work on AI for sustainability. <a href="openings.qmd">Learn more and apply</a>
-</div>
+<!-- Updated: 2025-11-28 - Clean terminal window with smooth dots -->
 
 <div class="hero-section">
 <h1>Sustainability Lab</h1>
-<p class="tagline">AI-driven research for a sustainable future</p>
+<p class="tagline">Harnessing AI to create a sustainable future where technology serves both people and planet</p>
 
 <div class="hero-buttons">
-<a href="openings.qmd" class="hero-btn primary">Join Us</a>
-<a href="papers/index.qmd" class="hero-btn secondary">Our Research</a>
+<a href="openings.qmd" class="hero-btn primary">Join Our Mission</a>
+<a href="papers/index.qmd" class="hero-btn secondary">View Research</a>
 <a href="flyer.pdf" class="hero-btn secondary" target="_blank">Lab Flyer</a>
 </div>
 </div>
 
-## Research
+## Featured Research
 
-<p class="section-subtitle">Projects at the intersection of AI and sustainability</p>
+<p class="section-subtitle">Cutting-edge projects at the intersection of AI and sustainability</p>
 
+<!-- Quick filter tags -->
 <div class="home-tag-filters">
-<p style="margin-bottom: 12px; font-size: 14px; color: var(--apple-gray-secondary);">Explore by area:</p>
+<p style="margin-bottom: 8px; font-size: 0.9rem; color: #6b7280;">Explore by research area:</p>
 <div class="home-tags">
 <a href="projects.html?tag=air-quality" class="home-tag-link">Air Quality</a>
 <a href="projects.html?tag=health-sensing" class="home-tag-link">Health Sensing</a>
 <a href="projects.html?tag=nilm" class="home-tag-link">NILM</a>
 <a href="projects.html?tag=computer-vision" class="home-tag-link">Computer Vision</a>
 <a href="projects.html?tag=machine-learning" class="home-tag-link">Machine Learning</a>
-<a href="projects.html" class="home-tag-link all-projects">All Projects</a>
+<a href="projects.html" class="home-tag-link all-projects">View All Projects →</a>
 </div>
 </div>
 
 <div class="featured-projects">
 
 <div class="project-card">
-<img src="images/mainpage/JoulesEye_1.png" alt="JoulesEye" class="project-image">
+<img src="images/mainpage/JoulesEye_1.png" alt="JoulesEye Project" class="project-image">
 <div class="project-content">
 <h3>JoulesEye</h3>
-<p>Energy expenditure estimation and respiration sensing from thermal imagery during exercise.</p>
+<p>Revolutionary energy expenditure estimation and respiration sensing from thermal imagery during exercise.</p>
 <div class="project-tags">
 <span class="tag">Health Sensing</span>
 <span class="tag">Thermal Imaging</span>
 <span class="tag">AI/ML</span>
 </div>
-<a href="https://sustainability-lab.github.io/jouleseye/" class="project-link">Learn more</a>
+<a href="https://sustainability-lab.github.io/jouleseye/" class="project-link">Learn More →</a>
 </div>
 </div>
 
 <div class="project-card">
-<img src="images/mainpage/SpiroMask.png" alt="SpiroMask" class="project-image">
+<img src="images/mainpage/SpiroMask.png" alt="SpiroMask Project" class="project-image">
 <div class="project-content">
 <h3>SpiroMask</h3>
 <p>Smart respiratory monitoring system transforming regular face masks into health sensing devices.</p>
@@ -60,12 +57,12 @@ description: "Sustainability Lab at IIT Gandhinagar — AI-driven research for a
 <span class="tag">IoT</span>
 <span class="tag">Respiratory Health</span>
 </div>
-<a href="https://dl.acm.org/doi/fullHtml/10.1145/3570167" class="project-link">Learn more</a>
+<a href="https://dl.acm.org/doi/fullHtml/10.1145/3570167" class="project-link">Learn More →</a>
 </div>
 </div>
 
 <div class="project-card">
-<img src="papers/2022/I_Dont_Know.png" alt="I Do Not Know" class="project-image">
+<img src="papers/2022/I_Dont_Know.png" alt="I Do Not Know Project" class="project-image">
 <div class="project-content">
 <h3>"I do not know"</h3>
 <p>Quantifying Uncertainty in Neural Network Based Approaches for Non-Intrusive Load Monitoring</p>
@@ -74,25 +71,27 @@ description: "Sustainability Lab at IIT Gandhinagar — AI-driven research for a
 <span class="tag">Machine Learning</span>
 <span class="tag">Uncertainty</span>
 </div>
-<a href="https://github.com/VibhutiBansal-11/NILM_Uncertainty" class="project-link">Learn more</a>
+<a href="https://github.com/VibhutiBansal-11/NILM_Uncertainty" class="project-link">Learn More →</a>
 </div>
 </div>
 
 <div class="project-card">
-<img src="images/mainpage/sentinelkilndb.png" alt="SentinelKilnDB" class="project-image">
+<img src="images/mainpage/sentinelkilndb.png" alt="SentinelKilnDB Project" class="project-image">
 <div class="project-content">
 <h3>SentinelKilnDB</h3>
 <p>A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery.</p>
 <div class="project-tags">
 <span class="tag">Computer Vision</span>
 <span class="tag">Earth Observation</span>
+<!-- <span class="tag">Environmental</span> -->
 </div>
-<a href="https://sustainability-lab.github.io/sentinelkilndb/" class="project-link">Learn more</a>
+<a href="https://sustainability-lab.github.io/sentinelkilndb/" class="project-link">Learn More →</a>
 </div>
 </div>
 
+
 <div class="project-card">
-<img src="images/mainpage/space-to-policy.png" alt="Space to Policy" class="project-image">
+<img src="images/mainpage/space-to-policy.png" alt="Space to Policy Project" class="project-image">
 <div class="project-content">
 <h3>Space to Policy</h3>
 <p>Using satellite imagery and AI to monitor environmental compliance and inform policy decisions.</p>
@@ -101,68 +100,69 @@ description: "Sustainability Lab at IIT Gandhinagar — AI-driven research for a
 <span class="tag">Policy</span>
 <span class="tag">Environmental</span>
 </div>
-<a href="https://sustainability-lab.github.io/brick-kilns/" class="project-link">Learn more</a>
+<a href="https://sustainability-lab.github.io/brick-kilns/" class="project-link">Learn More →</a>
 </div>
 </div>
 
 <div class="project-card">
-<img src="papers/2024/VayuBuddy_diagram.png" alt="VayuBuddy" class="project-image">
+<img src="papers/2024/VayuBuddy_diagram.png" alt="VayuBuddy Project" class="project-image">
 <div class="project-content">
 <h3>VayuBuddy</h3>
-<p>An LLM-powered chatbot system to reduce the barrier between stakeholders and air quality sensor data</p>
+<p>An LLM-powered chatbot system to reduce the barrier between the stakeholders and air quality sensor data</p>
 <div class="project-tags">
 <span class="tag">Air Quality Data</span>
 <span class="tag">Policy</span>
 <span class="tag">Environmental</span>
 </div>
-<a href="https://sustainability-lab.github.io/vayubuddy/" class="project-link">Learn more</a>
+<a href="https://sustainability-lab.github.io/vayubuddy/" class="project-link">Learn More →</a>
 </div>
 </div>
 
 <div class="project-card">
-<img src="papers/2022/compass-india.png" alt="Samachar" class="project-image">
+<img src="papers/2022/compass-india.png" alt="Samachar Project" class="project-image">
 <div class="project-content">
 <h3>Samachar</h3>
-<p>Print News Media on Air Pollution in India — analyzing how air quality is covered in Indian print media.</p>
+<p>Print News Media on Air Pollution in India - analyzing how air quality is covered in Indian print media.</p>
 <div class="project-tags">
 <span class="tag">Air Quality</span>
 <span class="tag">NLP</span>
 <span class="tag">Policy</span>
 </div>
-<a href="https://github.com/karm-patel/Samachar-News-media-on-air-pollution" class="project-link">Learn more</a>
+<a href="https://github.com/karm-patel/Samachar-News-media-on-air-pollution" class="project-link">Learn More →</a>
 </div>
 </div>
 
 <div class="project-card">
-<img src="papers/2022/Scalable_GaussianProcesses.png" alt="Gaussian Processes" class="project-image">
+<img src="papers/2022/Scalable_GaussianProcesses.png" alt="Gaussian Processes Project" class="project-image">
 <div class="project-content">
-<h3>Scalable Gaussian Processes</h3>
+<h3>Accurate and Scalable Gaussian Processes</h3>
 <p>Machine learning approach for fine-grained air quality inference using Gaussian processes at scale.</p>
 <div class="project-tags">
 <span class="tag">Air Quality</span>
 <span class="tag">Machine Learning</span>
 <span class="tag">Gaussian Processes</span>
 </div>
-<a href="https://github.com/patel-zeel/AAAI22" class="project-link">Learn more</a>
+<a href="https://github.com/patel-zeel/AAAI22" class="project-link">Learn More →</a>
 </div>
 </div>
 
+
 <div class="project-card">
-<img src="papers/2014/ACM-energy14_NILMTK.png" alt="NILMTK" class="project-image">
+<img src="papers/2014/ACM-energy14_NILMTK.png" alt="NILMTK Project" class="project-image">
 <div class="project-content">
 <h3>NILMTK</h3>
-<p>An Open Source Toolkit for Non-intrusive Load Monitoring — pioneering framework for energy disaggregation research.</p>
+<p>An Open Source Toolkit for Non-intrusive Load Monitoring - pioneering framework for energy disaggregation research.</p>
 <div class="project-tags">
 <span class="tag">NILM</span>
 <span class="tag">Toolkit</span>
 <span class="tag">Open Source</span>
 </div>
-<a href="https://github.com/nilmtk/nilmtk" class="project-link">Learn more</a>
+<a href="https://github.com/nilmtk/nilmtk" class="project-link">Learn More →</a>
 </div>
 </div>
 
 <div class="project-card">
-<img src="papers/2023/airdelhi.png" alt="AirDelhi" class="project-image">
+<img src="papers/2023/airdelhi.png" alt="AirDelhi Project" class="project-image">
 <div class="project-content">
 <h3>AirDelhi</h3>
 <p>A fine-grained air quality dataset from mobile sensors on Delhi buses, enabling better pollution monitoring.</p>
@@ -171,17 +171,17 @@ description: "Sustainability Lab at IIT Gandhinagar — AI-driven research for a
 <span class="tag">Policy</span>
 <span class="tag">Environmental</span>
 </div>
-<a href="https://neurips.cc/virtual/2023/poster/73476" class="project-link">Learn more</a>
+<a href="https://neurips.cc/virtual/2023/poster/73476" class="project-link">Learn More →</a>
 </div>
 </div>
 
 </div>
 
-<div style="text-align: center; margin-top: 48px;">
-<a href="papers/index.qmd" class="hero-btn secondary">View All Publications</a>
+<div style="text-align: center; margin-top: 30px;">
+<a href="papers/index.qmd" class="project-link" style="font-size: 1.1rem;">View All Publications →</a>
 </div>
 
-## Funding
+## Funding Partners
 
 <div class="funders-grid">
 
@@ -237,21 +237,25 @@ description: "Sustainability Lab at IIT Gandhinagar — AI-driven research for a
 
 ## Connect
 
-<div style="text-align: center; margin: 32px 0; font-size: 17px; color: var(--apple-gray-secondary);">
-<a href="https://www.youtube.com/@SustainabilityLab-SL" target="_blank" class="hero-btn secondary">Lab YouTube</a>
-<a href="https://www.youtube.com/@NipunBatra0" target="_blank" class="hero-btn secondary">Teaching YouTube</a>
-<a href="https://x.com/nipun_batra" target="_blank" class="hero-btn secondary">Twitter</a>
-<a href="https://www.linkedin.com/in/nipunbatra0/" target="_blank" class="hero-btn secondary">LinkedIn</a>
+<div style="text-align: center; margin: 20px 0; font-size: 1.1rem;">
+<a href="https://www.youtube.com/@SustainabilityLab-SL" target="_blank" class="project-link">Lab YouTube</a> | 
+<a href="https://www.youtube.com/@NipunBatra0" target="_blank" class="project-link">Teaching YouTube</a> | 
+<a href="https://x.com/nipun_batra" target="_blank" class="project-link">Twitter</a> | 
+<a href="https://www.linkedin.com/in/nipunbatra0/" target="_blank" class="project-link">LinkedIn</a>
 </div>
 
 <div class="join-section">
-<h2>Join the Lab</h2>
-<p>We're looking for passionate researchers to drive innovation in sustainability through cutting-edge AI research.</p>
+<h2>Join Our Mission</h2>
+<p>Embark on a journey to drive innovation in sustainability through cutting-edge AI research.</p>
 
 <div class="join-buttons">
-<a href="openings.qmd" class="join-btn primary">View Openings</a>
+<a href="openings.qmd" class="join-btn primary">View Positions</a>
 <a href="upskilling.qmd" class="join-btn secondary">Research Skills Bootcamp</a>
 <a href="lab_culture.qmd" class="join-btn secondary">Our Culture</a>
 <a href="members.qmd" class="join-btn secondary">Meet the Team</a>
+</div>
+
+<div style="margin-top: 30px; font-size: 0.9rem; opacity: 0.8;">
+<p><strong>Ready to make an impact?</strong></p>
 </div>
 </div>

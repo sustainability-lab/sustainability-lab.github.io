@@ -32,8 +32,11 @@ website:
             href: papers/index.qmd
       - href: openings.qmd
         text: Openings
-      - text: Lab Handbook
+      # - href: lab-handbook.qmd
+      - text: Lab Handbook  
         menu:
+          # - text: Lab Handbook
+          #   href: lab-handbook.qmd
           - text: Computational Resources
             href: computational-resources.qmd
           - text: Lab Culture
@@ -57,10 +60,13 @@ website:
             
   page-footer:
     background: light
-    left: "© 2026 Sustainability Lab, IIT Gandhinagar"
+    left: "© 2025 Sustainability Lab, IIT Gandhinagar"
     center: |
-      [Publications](papers/index.qmd) · [**Research Skills Bootcamp**](https://sustainability-lab.github.io/sustainability-research-bootcamp/) · [Contact](mailto:nipun.batra@iitgn.ac.in)
+      [Publications](papers/index.qmd) |
+      [**Research Skills Bootcamp**](https://sustainability-lab.github.io/sustainability-research-bootcamp/) |
+      [Contact](mailto:nipun.batra@iitgn.ac.in)
     right: |
+      Built with [Quarto](https://quarto.org/) |
       <span id="last-updated"></span>
   
 
