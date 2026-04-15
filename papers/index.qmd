@@ -73,6 +73,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p class="paper-title">VayuBench and VayuChat: Executable Benchmarking and Deployment of LLMs for Multi-Dataset Air Quality Analytics</p>
 <p>Vedant Acharya, Abhay Pisharodi, Ratnesh Pasi, Rishabh Mondal, Nipun Batra</p>
 <p><i>ACM IKDD CODS 2025 - 13th International Conference on Data Science (ADS Track)</i></p>
+<a href="2025/vayubench_cods2025.pdf" class="paper-button">PDF</a>
 <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuChat" class="paper-button">Project Demo</a>
 <a href="bibtex/vayubench2025.bib" class="paper-button bibtex-btn" download>BibTeX</a>
 <a href="https://github.com/sustainability-lab/VayuBench" class="paper-button">Github</a>
@@ -90,6 +91,7 @@ STORED AS A TEMPLATE FOR FUTURE USE
 <p class="paper-title">VayuChat: An LLM-Powered Conversational Interface for Air Quality Data Analytics</p>
 <p>Vedant Acharya, Abhay Pisharodi, Rishabh Mondal, Nipun Batra</p>
 <p><i>ACM IKDD CODS 2025 - 13th International Conference on Data Science (Demo)</i></p>
+<a href="2025/vayuchat_demo_cods2025.pdf" class="paper-button">PDF</a>
 <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuChat" class="paper-button">Live Demo</a>
 <a href="https://www.youtube.com/watch?v=d6rklL05cs4" class="paper-button">YouTube</a>
 <a href="bibtex/vayuchat_demo2025.bib" class="paper-button bibtex-btn" download>BibTeX</a>
