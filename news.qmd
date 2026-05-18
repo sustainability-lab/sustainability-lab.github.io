@@ -118,6 +118,18 @@ toc: false
 <h2 class="year-header">2026</h2>
 <div class="news-list">
 
+<div class="news-item category-paper" data-category="paper">
+<span class="news-date">May</span>
+<span class="news-icon">📄</span>
+<span class="news-content"><b>ThermEval</b> accepted at <a href="papers/index.qmd#2026">KDD 2026</a>! Benchmarking vision-language models on thermal imagery with Ayush Shrivastava, Kirtan Gangani, Laksh Jain, and Mayank Goel (CMU).</span>
+</div>
+
+<div class="news-item category-paper" data-category="paper">
+<span class="news-date">May</span>
+<span class="news-icon">📄</span>
+<span class="news-content"><b>NILMBench2026</b> accepted at <a href="papers/index.qmd#2026">BuildSys 2026</a>! A reproducible benchmark for energy disaggregation, led entirely by 2nd-year undergraduates Aayush Kuloor, Anurag Singh, and Harsh Dhru.</span>
+</div>
+
 <div class="news-item category-thesis" data-category="thesis">
 <span class="news-date">Feb</span>
 <span class="news-icon">🎓</span>

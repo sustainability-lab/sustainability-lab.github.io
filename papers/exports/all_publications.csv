@@ -1,7 +1,14 @@
 Title,Authors,Year,Venue,Type,DOI,URL,Pages,Volume,Number
+"ThermEval: A Structured Benchmark for Evaluation of
+         Vision-Language Models on Thermal Imagery","Shrivastava, Ayush and Gangani, Kirtan and Jain, Laksh and
+          Goel, Mayank and Batra, Nipun",2026,"Proceedings of the 32nd ACM SIGKDD Conference on
+             Knowledge Discovery and Data Mining (KDD '26)",inproceedings,,,,,
 "Scalable Air-Quality Sensor Placement via Gradient-Based
          Mutual Information Maximization","Patel, Zeel B and Rana, Vinayak and Batra, Nipun",2026,"Proceedings of the AAAI Conference on
              Artificial Intelligence",inproceedings,,,,,
+NILMBench2026: A Benchmark for Energy Disaggregation,"Kuloor, Aayush and Singh, Anurag and Dhru, Harsh and Batra, Nipun",2026,"Proceedings of the 13th ACM International Conference on
+             Systems for Energy-Efficient Buildings, Cities, and
+             Transportation (BuildSys '26)",inproceedings,10.1145/3744256.3812587,,,,
 VayuChat: An LLM-Powered Conversational Interface for Air Quality Data Analytics,"Acharya, Vedant and Pisharodi, Abhay and Mondal, Rishabh and Batra, Nipun",2025,Proceedings of the 13th ACM International Conference on Data Science (CODS 2025),inproceedings,,,,,
 VayuBench and VayuChat: Executable Benchmarking and Deployment of LLMs for Multi-Dataset Air Quality Analytics,"Acharya, Vedant and Pisharodi, Abhay and Pasi, Ratnesh and Mondal, Rishabh and Batra, Nipun",2025,ACM IKDD CODS 2025 - 13th International Conference on Data Science,inproceedings,,,,,
 Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data,"Patel, Zeel B and Mondal, Rishabh and Dubey, Shataxi and Jaiswal, Suraj and Guttikunda, Sarath and Batra, Nipun",2025,ACM J. Comput. Sustain. Soc.,article,10.1145/3736649,https://doi.org/10.1145/3736649,,3,3

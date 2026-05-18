@@ -41,6 +41,39 @@ STORED AS A TEMPLATE FOR FUTURE USE
 ## 2026
 
 <div class="paper" data-type="paper">
+<img src="2026/thermeval.png" class="paper-image">
+<div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #fce4ec; color: #ad1457; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Vision-Language Models</span>
+  <span class="tag" style="background: #e8f5e8; color: #2e7d32; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Thermal Imaging</span>
+  <span class="tag" style="background: #fff3e0; color: #ef6c00; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Benchmark</span>
+</div>
+<p class="paper-title">ThermEval: A Structured Benchmark for Evaluation of Vision-Language Models on Thermal Imagery</p>
+<p>Ayush Shrivastava*, Kirtan Gangani*, Laksh Jain*, Mayank Goel, Nipun Batra</p>
+<p><i>KDD 2026, The 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining</i></p>
+<a href="https://arxiv.org/abs/2602.14989" class="paper-button">arXiv</a>
+<a href="https://sustainability-lab.github.io/thermeval/" class="paper-button">Project Page</a>
+<a href="bibtex/thermeval2026.bib" class="paper-button bibtex-btn" download>BibTeX</a>
+</div>
+</div>
+
+<div class="paper" data-type="paper">
+<img src="2026/nilmbench2026.png" class="paper-image">
+<div class="paper-details">
+<div class="research-tags" style="margin-bottom: 8px;">
+  <span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span>
+  <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Benchmark</span>
+  <span class="tag" style="background: #fff3e0; color: #ef6c00; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Energy Disaggregation</span>
+</div>
+<p class="paper-title">NILMBench2026: A Benchmark for Energy Disaggregation</p>
+<p>Aayush Kuloor*, Anurag Singh*, Harsh Dhru*, Nipun Batra</p>
+<p><i>BuildSys 2026, The 13th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation</i></p>
+<a href="2026/nilmbench2026_buildsys.pdf" class="paper-button">PDF</a>
+<a href="bibtex/nilmbench2026.bib" class="paper-button bibtex-btn" download>BibTeX</a>
+</div>
+</div>
+
+<div class="paper" data-type="paper">
 <img src="2026/gdmi.jpg" class="paper-image">
 <div class="paper-details">
 <div class="research-tags" style="margin-bottom: 8px;">

@@ -1,12 +1,20 @@
 # Sustainability Lab Publications
 
 **IIT Gandhinagar**  
-*Generated: 2026-01-03 14:38:10*  
-*Total Publications: 50*
+*Generated: 2026-05-18 09:22:17*  
+*Total Publications: 52*
 
 ---
 
 ## 2026
+
+### ThermEval: A Structured Benchmark for Evaluation of
+         Vision-Language Models on Thermal Imagery
+
+**Authors:** Shrivastava, Ayush and Gangani, Kirtan and Jain, Laksh and
+          Goel, Mayank and Batra, Nipun  
+**Venue:** *Proceedings of the 32nd ACM SIGKDD Conference on
+             Knowledge Discovery and Data Mining (KDD '26)*  
 
 ### Scalable Air-Quality Sensor Placement via Gradient-Based
          Mutual Information Maximization
@@ -14,6 +22,14 @@
 **Authors:** Patel, Zeel B and Rana, Vinayak and Batra, Nipun  
 **Venue:** *Proceedings of the AAAI Conference on
              Artificial Intelligence*  
+
+### NILMBench2026: A Benchmark for Energy Disaggregation
+
+**Authors:** Kuloor, Aayush and Singh, Anurag and Dhru, Harsh and Batra, Nipun  
+**Venue:** *Proceedings of the 13th ACM International Conference on
+             Systems for Energy-Efficient Buildings, Cities, and
+             Transportation (BuildSys '26)*  
+**DOI:** [10.1145/3744256.3812587](https://doi.org/10.1145/3744256.3812587)  
 
 ## 2025
 
