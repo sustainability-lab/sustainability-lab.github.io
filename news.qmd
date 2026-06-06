@@ -118,6 +118,12 @@ toc: false
 <h2 class="year-header">2026</h2>
 <div class="news-list">
 
+<div class="news-item category-award" data-category="award">
+<span class="news-date">May</span>
+<span class="news-icon">🏆</span>
+<span class="news-content"><b>NILMBench2026</b> nominated for the <b>Best Paper Award</b> at <a href="papers/index.qmd#2026">BuildSys 2026</a>!</span>
+</div>
+
 <div class="news-item category-paper" data-category="paper">
 <span class="news-date">May</span>
 <span class="news-icon">📄</span>
