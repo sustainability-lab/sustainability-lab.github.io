@@ -414,6 +414,173 @@ details .position-card {
 <p class="subtitle">Shape the future of sustainability through cutting-edge AI research at IIT Gandhinagar</p>
 </div>
 
+
+```{=html}
+<style>
+.roles-board { max-width: 1000px; margin: 8px auto 46px; }
+.roles-intro { text-align: center; margin-bottom: 22px; }
+.roles-intro h2 { font-family: 'Playfair Display', serif; color: var(--ink); font-size: 2rem; margin: 0 0 6px; border: none; padding: 0; }
+.roles-intro p { color: var(--muted); font-size: 1rem; margin: 0; }
+.roles-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.role-card { display: flex; flex-direction: column; background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: var(--radius-medium); padding: 20px 18px; box-shadow: var(--shadow-sm); text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+.role-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); text-decoration: none; }
+.role-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.role-icon { font-size: 1.9rem; line-height: 1; }
+.role-status { font-size: .66rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 3px 9px; border-radius: var(--radius-pill); background: #f0fdf4; color: #15803d; white-space: nowrap; }
+.role-status.warm { background: #fdecea; color: var(--accent); }
+.role-status.neutral { background: #f1f5f9; color: #5a6070; }
+.role-card h3 { color: var(--ink); font-size: 1.3rem; margin: 0 0 7px; font-family: 'Playfair Display', serif; }
+.role-card p { color: var(--muted); font-size: .86rem; line-height: 1.45; margin: 0 0 16px; flex: 1; }
+.role-cta { color: var(--accent); font-weight: 600; font-size: .88rem; }
+@media (max-width: 820px) { .roles-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 470px) { .roles-grid { grid-template-columns: 1fr; } }
+</style>
+
+<div class="roles-board">
+<div class="roles-intro">
+<h2>Open Roles &mdash; at a Glance</h2>
+<p>Four ways to join the lab. Pick a card to jump straight to details and how to apply.</p>
+</div>
+<div class="roles-grid">
+<a class="role-card" href="#phd">
+<div class="role-top"><span class="role-icon">🎓</span><span class="role-status">Always open</span></div>
+<h3>PhD</h3>
+<p>Fully funded, 4&ndash;5 years, for strong students in AI/ML/CS. Publish at top venues; alumni now at Cambridge &amp; Microsoft Research.</p>
+<span class="role-cta">How to apply &rarr;</span>
+</a>
+<a class="role-card" href="#postdoc">
+<div class="role-top"><span class="role-icon">🔬</span><span class="role-status neutral">Fellowship</span></div>
+<h3>Postdoc</h3>
+<p>Lead your own research. For PhD holders applying to fellowships such as the National Postdoc Fellowship.</p>
+<span class="role-cta">How to apply &rarr;</span>
+</a>
+<a class="role-card" href="#internship">
+<div class="role-top"><span class="role-icon">💡</span><span class="role-status warm">By task</span></div>
+<h3>6-Month Internship</h3>
+<p>Deep, sustained research with hands-on mentorship. Complete a short selection task to apply.</p>
+<span class="role-cta">How to apply &rarr;</span>
+</a>
+<a class="role-card" href="#summer">
+<div class="role-top"><span class="role-icon">☀️</span><span class="role-status neutral">Opens Feb</span></div>
+<h3>Summer (SRIP)</h3>
+<p>For undergrads and early-grads wanting a first research experience. Apply via the IITGN SRIP portal.</p>
+<span class="role-cta">How to apply &rarr;</span>
+</a>
+</div>
+</div>
+```
+
+## Open Positions
+
+<div class="welcome-note">
+<strong>Don't see the perfect position?</strong> We welcome applications from passionate researchers at any time! Position listings may not reflect all current opportunities - exceptional candidates often create their own paths.
+</div>
+
+### PhD Positions {#phd}
+
+<div class="deadline-alert" style="background: #f0fdf4; border-color: #22c55e; color: #15803d; animation: none;">
+<strong>We are always looking for strong PhD students!</strong> If you are passionate about AI for sustainability, we encourage you to reach out.
+</div>
+
+<div class="position-card">
+<h3>PhD in Computer Science & Engineering</h3>
+<p>Pursue cutting-edge research in AI for sustainability using state-of-the-art technologies including <strong>Large Language Models (LLMs), Vision-Language Models (VLMs), computer vision, and advanced ML techniques</strong> applied to real-world sustainability challenges.</p>
+
+<p><strong>Research Areas & Technologies:</strong></p>
+<ul>
+<li><strong>AI for Environmental Monitoring:</strong> Computer vision for satellite imagery analysis, LLMs for climate policy analysis</li>
+<li><strong>Health Sensing & Digital Health:</strong> VLMs for medical imaging, ML for respiratory monitoring</li>
+<li><strong>Energy Analytics:</strong> Time-series forecasting, smart grid optimization with deep learning</li>
+<li><strong>Machine Learning for Social Good:</strong> Multi-modal models for sustainability applications</li>
+</ul>
+
+<div class="highlight-box">
+<strong>PhD Alumni:</strong> Dr. Rishiraj Adhikary — Postdoctoral Researcher at the <strong>University of Cambridge</strong> with Prof. Cecilia Mascolo. Dr. Zeel B Patel — Postdoc at <strong>Microsoft Research India</strong>.
+</div>
+
+<div class="highlight-box">
+Interested candidates can write to Prof. Nipun Batra and apply through the official IIT Gandhinagar PhD admissions portal.
+</div>
+
+<a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-primary">Write to Prof. Nipun Batra</a>
+<a href="https://www.iitgn.ac.in/academics/phd" target="_blank" class="btn btn-secondary">PhD Application Portal</a>
+</div>
+
+### Postdoctoral Positions {#postdoc}
+
+<div class="position-card">
+<h3>Postdoctoral Researcher</h3>
+<p>Lead independent research in AI for sustainability using cutting-edge technologies including <strong>LLMs, VLMs, computer vision, and advanced ML</strong> for environmental and health applications.</p>
+
+<div class="highlight-box">
+<strong>Fellowship Applications Required:</strong> We primarily consider postdoc candidates who are interested in applying for fellowships such as the National Postdoc Fellowship scheme or other competitive funding opportunities.
+</div>
+
+<a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-primary">Contact Prof. Nipun Batra</a>
+<a href="https://anrfonline.in/ANRF/npdf?HomePage=New" target="_blank" class="btn btn-secondary">National Postdoc Fellowship</a>
+</div>
+
+### 6-Month Internships {#internship}
+
+<div class="position-card">
+<h3>6-Month Research Internships</h3>
+
+<p>Looking for a 6-month internship? Get in touch with the Principal Investigator (PI) directly to explore personalized opportunities in sustainability and AI research using cutting-edge ML technologies.</p>
+
+<div class="highlight-box">
+<strong>Perfect for:</strong> Students wanting deep, sustained research experience with flexible timelines and personalized mentorship.
+</div>
+
+<div class="highlight-box">
+<strong>Selection Process:</strong> Complete the selection task described in the application document. This helps us understand your interests and match you with appropriate research projects.
+</div>
+
+<a href="https://docs.google.com/document/d/1xrV1JSvUXzhSzQCGnkjJmhA5afYilaUknxklk6_EDqM/edit?tab=t.0" target="_blank" class="btn btn-primary">View Details & Selection Task</a>
+<a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-secondary">Contact Prof. Nipun Batra</a>
+<a href="computational-resources.qmd" class="btn btn-secondary">View Our Resources</a>
+</div>
+
+### Summer Research Internships {#summer}
+
+<div class="position-card">
+<h3>Summer Research Internship (SRIP 2026)</h3>
+<p>Join our Summer Internship Program and work on exciting projects using cutting-edge AI technologies in the following domains:</p>
+
+- **AI for Sustainability:** Environmental monitoring with computer vision, climate solutions using LLMs, brick kiln detection
+- **AI/Sensing for Health:** Respiratory monitoring, SpiroMask, JoulesEye technologies with VLMs and ML
+- **Exposition and Visualization:** Data storytelling and interactive systems with modern AI tools
+
+<div class="highlight-box">
+<strong>SRIP 2026:</strong> Applications typically open in February for summer programs. Check the <a href="https://srip.iitgn.ac.in/registration/" target="_blank">IIT Gandhinagar SRIP Portal</a> for updates. Our project codes were <strong>IP0NB0000019</strong> and <strong>IP0NB0000020</strong> in SRIP 2025.
+</div>
+
+**Perfect for:** Undergraduate and early graduate students seeking hands-on research experience in cutting-edge AI applications.
+</div>
+
+## How to Apply
+
+::: {.content-card}
+
+### When writing to us, please include:
+
+**Essential Details:**
+• **Duration & Start Date:** How long can you commit and when can you start?
+• **CV/Resume:** Your most recent version
+• **Research Interests:** Which areas excite you most?
+
+**Show Your Interest:**
+• **Papers:** Mention 1-2 papers from our lab you've read and what interested you
+• **Motivation:** Why AI for sustainability? Why our lab specifically?
+• **Background:** Relevant coursework, projects, or experience
+
+<div class="highlight-box">
+<strong>Pro Tip:</strong> Browse our <a href="papers/index.qmd">publications</a> first to understand our work. Quality of engagement matters more than lengthy emails!
+</div>
+
+**New to research?** No problem! We welcome first-time researchers and provide mentorship to help you grow. Check out our [CS Research Methods Bootcamp](https://sustainability-lab.github.io/sustainability-research-bootcamp/) for comprehensive training in research fundamentals.
+
+:::
+
 ## Our Vision
 
 ::: {.content-card}
@@ -487,117 +654,6 @@ We believe in the transformative potential of AI to monitor environmental change
 <a href="lab_culture.qmd">Lab Culture</a>
 <a href="upskilling.qmd">Research Skills Bootcamp</a>
 </div>
-
-:::
-
-## Open Positions
-
-<div class="welcome-note">
-<strong>Don't see the perfect position?</strong> We welcome applications from passionate researchers at any time! Position listings may not reflect all current opportunities - exceptional candidates often create their own paths.
-</div>
-
-### PhD Positions
-
-<div class="deadline-alert" style="background: #f0fdf4; border-color: #22c55e; color: #15803d;">
-<strong>We are always looking for strong PhD students!</strong> If you are passionate about AI for sustainability, we encourage you to reach out.
-</div>
-
-<div class="position-card">
-<h3>PhD in Computer Science & Engineering</h3>
-<p>Pursue cutting-edge research in AI for sustainability using state-of-the-art technologies including <strong>Large Language Models (LLMs), Vision-Language Models (VLMs), computer vision, and advanced ML techniques</strong> applied to real-world sustainability challenges.</p>
-
-<p><strong>Research Areas & Technologies:</strong></p>
-<ul>
-<li><strong>AI for Environmental Monitoring:</strong> Computer vision for satellite imagery analysis, LLMs for climate policy analysis</li>
-<li><strong>Health Sensing & Digital Health:</strong> VLMs for medical imaging, ML for respiratory monitoring</li>
-<li><strong>Energy Analytics:</strong> Time-series forecasting, smart grid optimization with deep learning</li>
-<li><strong>Machine Learning for Social Good:</strong> Multi-modal models for sustainability applications</li>
-</ul>
-
-<div class="highlight-box">
-<strong>PhD Alumni:</strong> Dr. Rishiraj Adhikary — Postdoctoral Researcher at the <strong>University of Cambridge</strong> with Prof. Cecilia Mascolo. Dr. Zeel B Patel — Postdoc at <strong>Microsoft Research India</strong>.
-</div>
-
-<div class="highlight-box">
-Interested candidates can write to Prof. Nipun Batra and apply through the official IIT Gandhinagar PhD admissions portal.
-</div>
-
-<a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-primary">Write to Prof. Nipun Batra</a>
-<a href="https://www.iitgn.ac.in/academics/phd" target="_blank" class="btn btn-secondary">PhD Application Portal</a>
-</div>
-
-### Postdoctoral Positions
-
-<div class="position-card">
-<h3>Postdoctoral Researcher</h3>
-<p>Lead independent research in AI for sustainability using cutting-edge technologies including <strong>LLMs, VLMs, computer vision, and advanced ML</strong> for environmental and health applications.</p>
-
-<div class="highlight-box">
-<strong>Fellowship Applications Required:</strong> We primarily consider postdoc candidates who are interested in applying for fellowships such as the National Postdoc Fellowship scheme or other competitive funding opportunities.
-</div>
-
-<a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-primary">Contact Prof. Nipun Batra</a>
-<a href="https://anrfonline.in/ANRF/npdf?HomePage=New" target="_blank" class="btn btn-secondary">National Postdoc Fellowship</a>
-</div>
-
-### 6-Month Internships
-
-<div class="position-card">
-<h3>6-Month Research Internships</h3>
-
-<p>Looking for a 6-month internship? Get in touch with the Principal Investigator (PI) directly to explore personalized opportunities in sustainability and AI research using cutting-edge ML technologies.</p>
-
-<div class="highlight-box">
-<strong>Perfect for:</strong> Students wanting deep, sustained research experience with flexible timelines and personalized mentorship.
-</div>
-
-<div class="highlight-box">
-<strong>Selection Process:</strong> Complete the selection task described in the application document. This helps us understand your interests and match you with appropriate research projects.
-</div>
-
-<a href="https://docs.google.com/document/d/1xrV1JSvUXzhSzQCGnkjJmhA5afYilaUknxklk6_EDqM/edit?tab=t.0" target="_blank" class="btn btn-primary">View Details & Selection Task</a>
-<a href="mailto:nipun.batra@iitgn.ac.in" class="btn btn-secondary">Contact Prof. Nipun Batra</a>
-<a href="computational-resources.qmd" class="btn btn-secondary">View Our Resources</a>
-</div>
-
-### Summer Research Internships
-
-<div class="position-card">
-<h3>Summer Research Internship (SRIP 2026)</h3>
-<p>Join our Summer Internship Program and work on exciting projects using cutting-edge AI technologies in the following domains:</p>
-
-- **AI for Sustainability:** Environmental monitoring with computer vision, climate solutions using LLMs, brick kiln detection
-- **AI/Sensing for Health:** Respiratory monitoring, SpiroMask, JoulesEye technologies with VLMs and ML
-- **Exposition and Visualization:** Data storytelling and interactive systems with modern AI tools
-
-<div class="highlight-box">
-<strong>SRIP 2026:</strong> Applications typically open in February for summer programs. Check the <a href="https://srip.iitgn.ac.in/registration/" target="_blank">IIT Gandhinagar SRIP Portal</a> for updates. Our project codes were <strong>IP0NB0000019</strong> and <strong>IP0NB0000020</strong> in SRIP 2025.
-</div>
-
-**Perfect for:** Undergraduate and early graduate students seeking hands-on research experience in cutting-edge AI applications.
-</div>
-
-## How to Apply
-
-::: {.content-card}
-
-### When writing to us, please include:
-
-**Essential Details:**
-• **Duration & Start Date:** How long can you commit and when can you start?
-• **CV/Resume:** Your most recent version
-• **Research Interests:** Which areas excite you most?
-
-**Show Your Interest:**
-• **Papers:** Mention 1-2 papers from our lab you've read and what interested you
-• **Motivation:** Why AI for sustainability? Why our lab specifically?
-• **Background:** Relevant coursework, projects, or experience
-
-<div class="highlight-box">
-<strong>Pro Tip:</strong> Browse our <a href="papers/index.qmd">publications</a> first to understand our work. Quality of engagement matters more than lengthy emails!
-</div>
-
-**New to research?** No problem! We welcome first-time researchers and provide mentorship to help you grow. Check out our [CS Research Methods Bootcamp](https://sustainability-lab.github.io/sustainability-research-bootcamp/) for comprehensive training in research fundamentals.
 
 :::
 
