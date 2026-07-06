@@ -1,5 +1,6 @@
 ---
 title: "Alumni Experiences"
+description: "First-person experiences from Sustainability Lab students and alumni at IIT Gandhinagar — research journeys, mentorship, and where they are now."
 listing:
   contents: experiences
   type: table

@@ -4,7 +4,7 @@ author: "Aadesh Desai"
 date: "2024-1-17"
 ---
 
-![](../images/experiences/aadesh.jpeg)
+![Aadesh Desai at Udaan 2023 farewell party, IIT Gandhinagar](../images/experiences/aadesh.jpeg){loading="lazy"}
 Udaan 2023, IIT Gandhinagar (Farewell Party)
 
 ## About me

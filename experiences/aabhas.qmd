@@ -4,12 +4,12 @@ author: "Aabhas Senapati"
 date: "2024-2-15"
 ---
 
-![](../images/experiences/aabhas-1.jpg)
+![Aabhas Senapati](../images/experiences/aabhas-1.jpg){loading="lazy"}
 
 ## About me
 I am [Aabhas](https://aabhass.in/) Senapati, currently a 1st-year undergraduate student at Harvey Mudd College, Claremont, California. I did my schooling in Ahmedabad, post which I took a gap year before coming to college. It was in around grade 8 that I embarked on a journey of exploration into different domains from electronics and entrepreneurship to ecosystems. This path has led me through some of the best experiences and learning in my life, and my time working with Professor Nipun Batra and Ph.D. Rishiraj Adhikary has been one of the most memorable and pivotal parts of my journey till now.
 
-![](../images/experiences/aabhas-2.jpg)
+![Aabhas Senapati working at the Sustainability Lab, IIT Gandhinagar](../images/experiences/aabhas-2.jpg){loading="lazy"}
 
 ## Curiosity opens new doors
 This story starts back in 2019, when I was a grade 10 student at Zydus School for Excellence, Ahmedabad. It had been a couple of years since I had been self-exploring electronics and IoT-related projects and participating in online forums like Element 14 community and making various projects. One of my projects was [ThingFinder](https://to.aabhass.in/thingfinder), which I got incubated at GUSEC as a student-startup, without even fully understanding what a startup meant. This was probably one of the pivotal points, as it opened a plethora of opportunities in front of me, being part of the startup network in Gujarat, not just limited to grants and startup network, but also support from facilities like Nasscom at IIT Gandhinagar.
@@ -23,7 +23,7 @@ As I worked on this Project, my only expected outcome was experience, but to my 
 
 This was my first experience working with the Sustainability Lab and Prof. Batra. After this, I also represented the project at the IRIS National Fair, but more or less this was like a good addition to my resume. Yet my desire to work at IIT in a proper research setting still remained unfulfilled.
 
-![](../images/experiences/aabhas-3.jpg)
+![Aabhas Senapati at IIT Gandhinagar](../images/experiences/aabhas-3.jpg){loading="lazy"}
 
 ## Silver Lining in the Pandemic, and some Rejections
 While the pandemic didn’t just end in 2020, and as we all went through it and got in the new normal of the pandemic, it was not all bad, it also opened a door to a range of new possibilities, especially through online and international communities. Involving in these, I was motivated to pursue my extracurriculars more actively, and led me to apply to colleges in US. Prof. Batra actively supported me with the process and Letters of Recommendation, yet I met with rejections from all colleges I applied to. While this felt like a setback initially, it was an excuse to pursue my long-desired gap year. And this is where my journey circles back to Sustainability Lab, as I reached out to Prof. Batra if I could work with him, in my gap year once I finish my board exams.
@@ -33,12 +33,12 @@ This is after three years of first time interacting with Prof. Batra, as my frie
 
 While this might sound very simple, unlike my expectation of the academic environment to be a monotonous one, it was much more spontaneous and fun especially because of such supportive around like Prof. Batra and PhD. Rishiraj, who always kept the environment an engaging one beyond just the work. I was not supervised on a daily basis if I came at a set time or not, what time did I leave, but rather was given a sense of autonomy where someday I could take a day off, and someday I would work all night. I never felt as if I was burnt out, and always was checked in by both of them if I was enjoying what I was doing, if I was eating food properly or not and so on. Spending 5 weeks, everyone around campus became like a family, not just at Sustainability Lab, but even the housekeeping staff, or people from other labs at IITGn. These memories and friendships are which I continue to cherish till day.
 
-![](../images/experiences/aabhas-4.jpg)
+![Aabhas Senapati during his internship at the Sustainability Lab](../images/experiences/aabhas-4.jpg){loading="lazy"}
 
 ## And Journey goes on
 While as my time of 5 weeks ended at Sustainability Lab, ended and I went on to embark to Cape Town for [RISE](https://risefortheworld.org/) summit, but my time with Sustainability Lab at IIT Gandhinagar has stayed like a connection forever. As I applied to colleges again in my Gap year, Prof. Batra assisted me with his full support, and owing to his support I made it into Harvey Mudd College, in Claremont, California. Before leaving to US, I went back to meet my friends and also Prof. Batra, and he also gifted me a book (Make Your Bed) with a personalized and touching message. But as I am now in College, the experiences I had back then, still continue to drive me and help in my journey here.
 
-![](../images/experiences/aabhas-5.jpg)
+![Aabhas Senapati at IIT Gandhinagar](../images/experiences/aabhas-5.jpg){loading="lazy"}
 
 ## A deep dive into the projects:
 
@@ -48,9 +48,9 @@ CO2 Monitor and SpiroMask: This Project was an extension of the Project Naqaabm 
 
 ```{=html}
 <div style="display: flex; justify-content: space-between;">
-  <img src="../images/experiences/aabhas-6.jpg" style="width: 33%;">
-  <img src="../images/experiences/aabhas-7.jpg" style="width: 33%;">
-  <img src="../images/experiences/aabhas-8.jpg" style="width: 33%;">
+  <img src="../images/experiences/aabhas-6.jpg" alt="Photo from Aabhas Senapati's Naqaab and SpiroMask projects" loading="lazy" style="width: 33%;">
+  <img src="../images/experiences/aabhas-7.jpg" alt="Photo from Aabhas Senapati's Naqaab and SpiroMask projects" loading="lazy" style="width: 33%;">
+  <img src="../images/experiences/aabhas-8.jpg" alt="Photo from Aabhas Senapati's Naqaab and SpiroMask projects" loading="lazy" style="width: 33%;">
 </div>
 ```
 

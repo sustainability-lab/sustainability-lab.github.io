@@ -10,7 +10,7 @@ I am Souvik Roy, an alumnus of IIT Gandhinagar, where I completed my MTech in Co
 
 I had the privilege to work with Prof. Nipun as one of his first M.Tech students. This post narrates my enriching experience under his mentorship.
 
-![](../images/experiences/souvik-1.jpg)
+![Souvik Roy back at IIT Gandhinagar for a late convocation in December 2022](../images/experiences/souvik-1.jpg){loading="lazy"}
 Picture 1: (Dec 2022) returned to college for a late convocation.
 
 
@@ -22,24 +22,24 @@ The M.Tech program consisted of 50% coursework and 50% research. My work with Pr
 
 I measured PM2.5 exposure among construction workers and calibrated five sensors to plot and analyse the data.
 
-![](../images/experiences/souvik-2.jpg)
+![Souvik Roy calibrating Atmos air quality sensors at his workspace](../images/experiences/souvik-2.jpg){loading="lazy"}
 Picture 2: (Feb 2019) calibrating Atmos air quality sensors at my workspace
 
 ### Developing a Live Air quality dashboard (May 2019 - Jul 2019)
 
 I deployed 5 air quality sensors across the campus and created a live dashboard using JavaScript, Python (Flask), and Leaflet.js. This project was crucial in identifying high pollution activities and their timings.
 
-![](../images/experiences/souvik-3.jpg)
+![Installing an air quality sensor at IIT Gandhinagar](../images/experiences/souvik-3.jpg){loading="lazy"}
 
 Picture 3: (May 2019) Installing an air quality sensor at IIT Gn
 
-![](../images/experiences/souvik-4.jpg)
+![Live air quality measurements across five locations on the IIT Gandhinagar campus](../images/experiences/souvik-4.jpg){loading="lazy"}
 
 Picture 4: (Jun 2019) Live air quality measurements across 5 locations on campus
 
 I got introduced to interdisciplinary research - the goal was to calculate the exposure of PM2.5 in our college bus route. I worked in Tinkerer’s lab with a mechanical engineer to design a 3D printed mount using MDF, which was mounted in the moving bus:
 
-![](../images/experiences/souvik-5.jpg)
+![A 3D-printed sensor mount installed in a campus bus to measure PM2.5 exposure](../images/experiences/souvik-5.jpg){loading="lazy"}
 
 • Estimating ground air quality using satellite data (Aug 2019 - Dec 2019)
 
@@ -47,7 +47,7 @@ Air quality sensors were expensive and provided less spatial coverage, we used s
 
 Prof. Nipun encouraged me to write a short 1-page paper and submit it to CoDS-COMAD. I got my first short paper published \[[link](https://dl.acm.org/doi/10.1145/3371158.3371216)] at ISB Hyderabad in January 2020. Fun fact: the presentation coincided with my birthday :)
 
-![](../images/experiences/souvik-6.jpg)
+![Souvik Roy presenting at the CoDS-COMAD conference at ISB Hyderabad](../images/experiences/souvik-6.jpg){loading="lazy"}
 
 Picture 5: (Jan 2020) Presenting at CoDS-COMAD conference in ISB Hyderabad
 
@@ -72,6 +72,6 @@ During my last semester in college, there was an abrupt change in our work due t
 
 Prof. Nipun didn’t hand me solutions that cultivated a mindset of problem solving. This mindset helped me deal with different situations in my professional life too. I’d be forever grateful that I could have him as my thesis supervisor in college, and a lifelong mentor in life.
 
-![](../images/experiences/souvik-7.jpg)
+![View from the workspace terrace overlooking the Sabarmati river at IIT Gandhinagar](../images/experiences/souvik-7.jpg){loading="lazy"}
 
 Picture 6: A view from the terrace of my workspace, overlooking the Sabarmati river, was a constant reminder of how beautiful the campus is, and how privileged I was to be working there.

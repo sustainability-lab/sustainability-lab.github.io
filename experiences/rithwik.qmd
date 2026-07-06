@@ -9,7 +9,7 @@ I am Kukunuri Rithwik. I passed out from IIT Gandhinagar with a BTech in Compute
 
 During the start of my fifth semester Computer Science, I began a journey to explore machine learning. The interest sparked in me during the preceding summer, where I had the opportunity to explore ML.
 
-![Receiving my degree from Director, IITGn](../images/experiences/rithwik.jpeg)
+![Receiving my degree from Director, IITGn](../images/experiences/rithwik.jpeg){loading="lazy"}
 
 ## Embarking on the ML Odyssey
 

@@ -15,7 +15,7 @@ Working with Prof. Nipun Batra has left a lasting impression on me. I have never
 
 When I first spoke to Prof. Nipun before joining the lab, he asked about my proficiency in Numpy and Pandas. I admitted that although I had used them before, I was not quick at working on them. He shared that he still practices such skills regularly — two hours a week which speaks volumes about his commitment to continuous learning. Observing his perseverance and passion helped me understand why he is so well-regarded and deserving of every accolade. 
 
-![At IIIT Delhi, captured the moment with all lab members at Wall of Honour with Prof. Nipun's Photo on 6 July 2024 ](../images/experiences/shataxi-1.jpg)
+![At IIIT Delhi, captured the moment with all lab members at Wall of Honour with Prof. Nipun's Photo on 6 July 2024 ](../images/experiences/shataxi-1.jpg){loading="lazy"}
 
 # My best decision
 Choosing IIT Gandhinagar was a good decision, but joining the Sustainability Lab was the best one. The learning environment is unparalleled, and I feel incredibly fortunate to have met and worked alongside amazing people. I am especially grateful to my seniors — Zeel, Rishiraj, Rishabh, and Ayush for their constant support. I also had the pleasure of working with passionate lab mates - Vannsh, Devansh, and Nupoor. A special thanks to my senior Suraj for introducing the lab to me that motivated me to join the lab.
@@ -27,6 +27,6 @@ I can confidently say that the Sustainability Lab is unlike any other. It teache
 
 To be part of this lab, brilliance is not a prerequisite but a willingness to understand, implement, and persist certainly is. What I cherish most is that while most people measure success in terms of achievements, the Sustainability Lab values progress. More than failure and rejections, what matters the most is the growth that happens along the way. Because it is not overnight success that defines you, but the countless nights of efforts that lead to it.
 
-![My M.Tech Thesis defense on 2nd June 2025](../images/experiences/shataxi-2.jpg)
+![My M.Tech Thesis defense on 2nd June 2025](../images/experiences/shataxi-2.jpg){loading="lazy"}
 
 I wish Prof. Nipun good health and continued success. I truly believe that every student fortunate enough to work with him will grow, be inspired, and find their path. The best gift we can offer in return is our sincere effort and dedication. I still have numerous things to write but I will pause myself here and let the new comers experience what I shared !!

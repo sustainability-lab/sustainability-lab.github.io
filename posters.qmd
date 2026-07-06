@@ -8,9 +8,9 @@ One common mistake people make while making posters is to try to cram in too muc
 
 Please see below for two posters that we have made in the past.
 
-![Example research poster (AAAI 2017)](images/sample/sample-poster-1.jpg)
+![Example research poster (AAAI 2017)](images/sample/sample-poster-1.jpg){loading="lazy"}
 
-![Example research poster (second)](images/sample/sample-poster-2.jpg)
+![Example research poster (second)](images/sample/sample-poster-2.jpg){loading="lazy"}
 
 Please find the presentation files corresponding to the first poster
 1. [Apple Keynote](https://github.com/nipunbatra/nipunbatra.github.io/blob/main/slides/2017/aaai_poster.key)

@@ -6,7 +6,7 @@ date: "2024-1-26"
 
 I am Hetvi Shastri. I graduated from IIT Gandhinagar with a BTech in Electrical Engineering and a minor in Computer Science in 2022. I am pursuing a Ph.D. in Computer Science at the University of Massachusetts, Amherst, advised by Prof. Prashant Shenoy.
 
-![](../images/experiences/hetvi.jpg)
+![Hetvi Shastri visiting the Sustainability Lab in January 2024 with Palak and Harsh](../images/experiences/hetvi.jpg){loading="lazy"}
 
 Visited lab in Jan 2024 with Palak and Harsh
 

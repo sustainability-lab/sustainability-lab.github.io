@@ -1,5 +1,6 @@
 ---
 title: Lab Members
+description: "Members of the Sustainability Lab, IIT Gandhinagar — PhD students, MTech researchers, and research fellows working on AI for sustainability under Prof. Nipun Batra."
 toc: false
 ---
 
@@ -31,17 +32,17 @@ toc: false
 ::: {layout-ncol=4}
 
 <a href="https://rishabh-mondal.github.io">
-  <img loading="lazy" src="https://rishabh-mondal.github.io/profile.jpeg" class="cropped-image"><br/>
+  <img loading="lazy" src="https://rishabh-mondal.github.io/profile.jpeg" class="cropped-image" alt="Photo of Rishabh Mondal"><br/>
 </a>
 <span>Rishabh Mondal<br/>(Jun 2023 - present)<br/><em style="color: #334155; font-size: 0.85rem;">Computer Vision • Earth Observations</em></span>
 
 <a href="https://ayushshrivstava.github.io/">
-  <img loading="lazy" src="images/members/Ayush.jpg" class="cropped-image"><br/>
+  <img loading="lazy" src="images/members/Ayush.jpg" class="cropped-image" alt="Photo of Ayush Shrivastava"><br/>
 </a>
 <span>Ayush Shrivastava<br/>(Jul 2024 - present)<br/><em style="color: #334155; font-size: 0.85rem;">Health Sensing • Respiratory Monitoring</em></span>
 
 <a href="">
-  <img loading="lazy" src="images/members/Ujjwal.jpg" class="cropped-image"><br/>
+  <img loading="lazy" src="images/members/Ujjwal.jpg" class="cropped-image" alt="Photo of Ujjwal K. Gupta"><br/>
 </a>
 <span>Ujjwal K. Gupta<br/>(Jul 2024 - present)<br/><em style="color: #334155; font-size: 0.85rem;">Satellite Data • Machine Learning</em></span>
 
@@ -52,34 +53,34 @@ toc: false
 ::: {layout-ncol=4}
 
 
-<img loading="lazy" src="images/members/Abhay.jpg" class="cropped-image"><br/>
+<img loading="lazy" src="images/members/Abhay.jpg" class="cropped-image" alt="Photo of Abhay Pisharodi"><br/>
 <span>Abhay Pisharodi<br/>(Jul 2024 - present)<br/><em style="color: #334155; font-size: 0.85rem;">LLMs • Reasoning • Air Quality</em></span>
 
-<img loading="lazy" src="images/members/Abhyudaya.jpg" class="cropped-image"><br/>
+<img loading="lazy" src="images/members/Abhyudaya.jpg" class="cropped-image" alt="Photo of Abhyudaya Nair"><br/>
 <span>Abhyudaya Nair<br/>(Jul 2024 - present)<br/><em style="color: #334155; font-size: 0.85rem;">Health Sensing • Respiratory Monitoring</em></span>
 
-<img loading="lazy" src="images/members/Diya.png" class="cropped-image"><br/>
+<img loading="lazy" src="images/members/Diya.png" class="cropped-image" alt="Photo of Diya Thakor"><br/>
 <span>Diya Thakor<br/>(Jul 2024 - present)<br/><em style="color: #334155; font-size: 0.85rem;">LLMs • Air Quality</em></span>
 
-<img loading="lazy" src="images/members/Vinayak.jpg" class="cropped-image"><br/>
+<img loading="lazy" src="images/members/Vinayak.jpg" class="cropped-image" alt="Photo of Vinayak Rana"><br/>
 <span>Vinayak Rana<br/>(Jul 2024 - present)<br/><em style="color: #334155; font-size: 0.85rem;">Air Quality • Active Learning</em></span>
 
-<img loading="lazy" src="images/members/Suruchi.jpg" class="cropped-image"><br/>
+<img loading="lazy" src="images/members/Suruchi.jpg" class="cropped-image" alt="Photo of Suruchi Hardaha"><br/>
 <span>Suruchi Hardaha<br/>(Jul 2024 - present)<br/><em style="color: #334155; font-size: 0.85rem;">Computer Vision • Self-Supervised Learning</em></span>
 
-<img loading="lazy" src="images/members/Parv.jpg" class="cropped-image"><br/>
+<img loading="lazy" src="images/members/Parv.jpg" class="cropped-image" alt="Photo of Parv Thecker"><br/>
 <span>Parv Thecker<br/>(Jul 2025 - present)<br/><em style="color: #334155; font-size: 0.85rem;">Healthcare • IoT • Computer Vision</em></span>
 
-<img loading="lazy" src="images/members/Balbir.jpg" class="cropped-image"><br/>
+<img loading="lazy" src="images/members/Balbir.jpg" class="cropped-image" alt="Photo of Balbir Prasad"><br/>
 <span>Balbir Prasad<br/>(Jul 2025 - present)<br/><em style="color: #334155; font-size: 0.85rem;">Physics Informed ML • AI weather forecasting</em></span>
 
-<img loading="lazy" src="images/members/Hemani.jpg" class="cropped-image"><br/>
+<img loading="lazy" src="images/members/Hemani.jpg" class="cropped-image" alt="Photo of Hemani Tekwani"><br/>
 <span>Hemani Tekwani<br/>(Jul 2025 - present)<br/><em style="color: #334155; font-size: 0.85rem;">Computer Vision • GeoAI</em></span>
 
-<img loading="lazy" src="images/members/Saaransh.jpg" class="cropped-image"><br/>
+<img loading="lazy" src="images/members/Saaransh.jpg" class="cropped-image" alt="Photo of Saaransh Shandilya"><br/>
 <span>Saaransh Shandilya<br/>(Jul 2025 - present)<br/><em style="color: #334155; font-size: 0.85rem;">Natural Language Processing • LLMs</em></span>
 
-<img loading="lazy" src="images/members/Zayed.jpg" class="cropped-image"><br/>
+<img loading="lazy" src="images/members/Zayed.jpg" class="cropped-image" alt="Photo of Zayed Mudassir"><br/>
 <span>Zayed Mudassir<br/>(Jul 2025 - present)<br/><em style="color: #334155; font-size: 0.85rem;">VLM • Computer Vision</em></span>
 :::
 
@@ -87,14 +88,14 @@ toc: false
 
 ::: {layout-ncol=4}
 <a href="">
-  <img loading="lazy" src="images/members/Kirtan.jpg" class="cropped-image"><br/>
+  <img loading="lazy" src="images/members/Kirtan.jpg" class="cropped-image" alt="Photo of Kirtan Gangani"><br/>
 </a>
 <span>Kirtan Gangani<br/>(Aug 2025 - present)<br/><em style="color: #334155; font-size: 0.85rem;">Smart Energy • Time-Series Analysis</em></span>
 
-<img loading="lazy" src="images/members/deena.jpg" class="cropped-image"><br/>
+<img loading="lazy" src="images/members/deena.jpg" class="cropped-image" alt="Photo of Deena Lad"><br/>
 <span>Deena Lad<br/>(Sep 2025 - present)<br/><em style="color: #334155; font-size: 0.85rem;">Environmental Modelling • Research Methods</em></span>
 
-<img loading="lazy" src="images/members/Vaibhavi.jpg" class="cropped-image"><br/>
+<img loading="lazy" src="images/members/Vaibhavi.jpg" class="cropped-image" alt="Photo of Vaibhavi Tiwari"><br/>
 <span>Vaibhavi Tiwari<br/>(Feb 2026 - present)<br/><em style="color: #334155; font-size: 0.85rem;">AI • Machine Learning</em></span>
 :::
 

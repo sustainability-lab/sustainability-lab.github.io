@@ -1,5 +1,6 @@
 ---
 title: "Awards & Recognition"
+description: "Awards and recognition earned by the Sustainability Lab, IIT Gandhinagar — including the ACM eEnergy Test-of-Time Award, ACM SIGEnergy Rising Star, and the ACM BuildSys 2026 Best Paper Runner-Up."
 toc: true
 ---
 

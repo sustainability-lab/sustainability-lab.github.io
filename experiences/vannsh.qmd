@@ -24,7 +24,7 @@ After the visualizations project, I stepped into actual computer vision research
 
 Our efforts eventually led to a research poster being accepted at ACM COMPASS 2024, which we traveled to present in-person in Delhi.
 
-![Sustainability Lab team at ACM COMPASS 2024](../images/experiences/vannsh-1.jpg)
+![Sustainability Lab team at ACM COMPASS 2024](../images/experiences/vannsh-1.jpg){loading="lazy"}
 
 # Overcoming the Initial Intimidation
 

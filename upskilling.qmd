@@ -44,12 +44,12 @@ Please see below for two posters that we have made in the past.
 
 #### Sample Poster 1
 <!-- ![](images/sample/sample-poster-1.jpg) -->
-<img src="images/sample/sample-poster-1.jpg" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
+<img src="images/sample/sample-poster-1.jpg" loading="lazy" alt="Example research poster illustrating good poster design" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
 
 
 #### Sample Poster 2
 <!-- ![](images/sample/sample-poster-2.jpg) -->
-<img src="images/sample/sample-poster-2.jpg" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
+<img src="images/sample/sample-poster-2.jpg" loading="lazy" alt="Second example research poster illustrating good poster design" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
 
 Please find the presentation files corresponding to the first poster
 1. [Apple Keynote](https://github.com/nipunbatra/nipunbatra.github.io/blob/main/slides/2017/aaai_poster.key)

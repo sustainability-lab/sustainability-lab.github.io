@@ -7,7 +7,14 @@ project:
 
 website:
   title: "Sustainability Lab"
+  site-url: https://sustainability-lab.github.io
+  description: "AI-driven research for a sustainable future at IIT Gandhinagar, led by Prof. Nipun Batra. PhD, postdoc, and internship openings in AI for sustainability, health sensing, energy analytics, and environmental monitoring."
   favicon: /images/favicon-sl.svg
+  image: /images/logo.png
+  open-graph: true
+  twitter-card:
+    creator: "@nipun_batra"
+    card-style: summary_large_image
   navbar:
     title: False
     search: true

@@ -1,5 +1,6 @@
 ---
 title: "Events"
+description: "Events organized or co-organized by the Sustainability Lab, IIT Gandhinagar — including the ACM India Summer School on AI for Social Good and MEDFUSE."
 ---
 
 In this page, we include the events that we have organized or co-organized.
@@ -7,10 +8,10 @@ In this page, we include the events that we have organized or co-organized.
 ## 2025
 ACM India Summer School on AI for Social Good
 Link: [ACM India Summer School 2025](https://sustainability-lab.github.io/acm-summer-2025/)
-![](../images/events/acm-summer-2025.png)
+![ACM India Summer School 2025 on AI for Social Good — event poster](../images/events/acm-summer-2025.png){loading="lazy"}
 
 ## 2023
 
 MEDFUSE: Medicine, Engineering, and Data Fusion for Health
 
-![](../images/events/MEDFUSE_NEW.png)
+![MEDFUSE: Medicine, Engineering, and Data Fusion for Health — event poster](../images/events/MEDFUSE_NEW.png){loading="lazy"}

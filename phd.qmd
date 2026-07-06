@@ -1,5 +1,6 @@
 ---
 title: ""
+pagetitle: "PhD Positions in AI for Sustainability | Sustainability Lab"
 toc: false
 description: "PhD positions in AI for sustainability at IIT Gandhinagar. Research areas: environmental monitoring, health sensing, energy analytics, computer vision, LLMs. Advisor: Prof. Nipun Batra."
 ---

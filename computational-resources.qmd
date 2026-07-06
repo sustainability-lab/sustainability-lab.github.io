@@ -150,7 +150,7 @@ Our workstations are named after Indian scientists: **Aryabhata** (आर्य�
 
 Measured with our open [gpu-benchmark-suite](https://github.com/nipunbatra/gpu-benchmark-suite) — the same Docker-based workloads on every machine, grouped into **raw compute**, **training**, **inference**, and **data-loading** so the numbers are directly comparable.
 
-<img src="images/benchmarks.svg" width=100%>
+<img src="images/benchmarks.svg" width=100% loading="lazy" alt="Benchmark comparison of the lab's GPU compute resources">
 
 <table>
   <tr><th>Benchmark</th><th>Ramanujan</th><th>Bhaskar</th><th>Sustain</th><th>Aryabhata</th><th>Vikram</th></tr>

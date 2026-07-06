@@ -1,5 +1,6 @@
 ---
 title: ""
+pagetitle: "Openings — PhD, Postdoc & Internships | Sustainability Lab"
 toc: false
 description: "Open positions at the Sustainability Lab, IIT Gandhinagar. PhD, postdoc, project associate, and research internship opportunities in AI for sustainability, health sensing, and environmental monitoring."
 output:
