@@ -295,20 +295,61 @@ Harnessing AI to create a sustainable future where technology serves both people
 </div>
 
 </div>
+<style>
+.pillars { max-width: 1000px; margin: 8px auto 56px; }
+.pillars-head { text-align: center; margin-bottom: 26px; }
+.pillars-head h2 { font-family: 'Playfair Display', serif; color: var(--ink); font-size: 2rem; margin: 0 0 6px; }
+.pillars-head p { color: var(--muted); margin: 0; font-size: 1rem; }
+.pillars-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.pillar { display: flex; flex-direction: column; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-medium); padding: 22px 20px; box-shadow: var(--shadow-sm); text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+.pillar:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); text-decoration: none; }
+.pillar-icon { font-size: 2.1rem; line-height: 1; margin-bottom: 12px; }
+.pillar h3 { color: var(--ink); font-size: 1.15rem; margin: 0 0 8px; font-family: 'Playfair Display', serif; }
+.pillar p { color: var(--muted); font-size: .85rem; line-height: 1.45; margin: 0 0 14px; flex: 1; }
+.pillar .pillar-cta { color: var(--accent); font-weight: 600; font-size: .84rem; }
+.pillars-all { text-align: center; margin-top: 20px; }
+.pillars-all a { color: var(--accent); font-weight: 600; font-size: .95rem; text-decoration: none; }
+@media (max-width: 820px) { .pillars-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 470px) { .pillars-grid { grid-template-columns: 1fr; } }
+</style>
+<div class="pillars">
+<div class="pillars-head">
+<h2 class="anchored">What We Work On</h2>
+<p>Four research areas where we build AI for real-world sustainability.</p>
+</div>
+<div class="pillars-grid">
+<a class="pillar" href="projects.html?tag=air-quality">
+<span class="pillar-icon">🌫️</span>
+<h3 class="anchored">Air Quality</h3>
+<p>Low-cost sensing, satellite AI, and forecasting for cleaner air across cities.</p>
+<span class="pillar-cta">Explore projects →</span>
+</a>
+<a class="pillar" href="projects.html?tag=health-sensing">
+<span class="pillar-icon">🫁</span>
+<h3 class="anchored">Health Sensing</h3>
+<p>Wearables and thermal imaging for respiratory and metabolic health.</p>
+<span class="pillar-cta">Explore projects →</span>
+</a>
+<a class="pillar" href="projects.html?tag=nilm">
+<span class="pillar-icon">⚡</span>
+<h3 class="anchored">Energy &amp; NILM</h3>
+<p>Energy disaggregation and smart-grid ML — knowing what draws power, and when.</p>
+<span class="pillar-cta">Explore projects →</span>
+</a>
+<a class="pillar" href="projects.html?tag=computer-vision">
+<span class="pillar-icon">🛰️</span>
+<h3 class="anchored">Earth Observation</h3>
+<p>Detecting brick kilns and mapping land use from satellite imagery.</p>
+<span class="pillar-cta">Explore projects →</span>
+</a>
+</div>
+<div class="pillars-all"><a href="projects.html">Browse all projects →</a></div>
+</div>
 <section id="featured-research" class="level2">
 <h2 class="anchored" data-anchor-id="featured-research">Featured Research</h2>
 <p class="section-subtitle">
 Cutting-edge projects at the intersection of AI and sustainability
 </p>
-<!-- Quick filter tags -->
-<div class="home-tag-filters">
-<p style="margin-bottom: 8px; font-size: 0.9rem; color: #6b7280;">
-Explore by research area:
-</p>
-<div class="home-tags">
-<p><a href="projects.html?tag=air-quality" class="home-tag-link">Air Quality</a> <a href="projects.html?tag=health-sensing" class="home-tag-link">Health Sensing</a> <a href="projects.html?tag=nilm" class="home-tag-link">NILM</a> <a href="projects.html?tag=computer-vision" class="home-tag-link">Computer Vision</a> <a href="projects.html?tag=machine-learning" class="home-tag-link">Machine Learning</a> <a href="projects.html" class="home-tag-link all-projects">View All Projects →</a></p>
-</div>
-</div>
 <div class="featured-projects">
 <div class="project-card">
 <img src="images/mainpage/JoulesEye_1.png" alt="JoulesEye Project" class="project-image">
