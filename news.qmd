@@ -119,9 +119,9 @@ toc: false
 <div class="news-list">
 
 <div class="news-item category-award" data-category="award">
-<span class="news-date">May</span>
+<span class="news-date">Jun</span>
 <span class="news-icon">🏆</span>
-<span class="news-content"><b>NILMBench2026</b> nominated for the <b>Best Paper Award</b> at <a href="papers/index.qmd#2026">BuildSys 2026</a>!</span>
+<span class="news-content"><b>NILMBench2026</b> wins the <b>Best Paper Award — Runner-Up</b> at <a href="awards.qmd#2026">BuildSys 2026</a> (ACM Sustainability Week, Banff, Canada)! Led by 2nd-year undergraduates Aayush Kuloor, Anurag Singh, and Harsh Dhru.</span>
 </div>
 
 <div class="news-item category-paper" data-category="paper">

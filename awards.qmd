@@ -3,6 +3,12 @@ title: "Awards & Recognition"
 toc: true
 ---
 
+### 2026
+- **ACM BuildSys 2026 Best Paper Award — Runner-Up** - Aayush Kuloor, Anurag Singh, Harsh Dhru & Prof. Nipun Batra *(June 2026)*  
+  *For "NILMBench2026: A Benchmark for Energy Disaggregation" at the 13th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (ACM BuildSys 2026), ACM Sustainability Week, Banff, Canada. The work was led entirely by second-year undergraduates.* [[Paper](papers/index.qmd#2026)]  
+  ![BuildSys 2026 Best Paper Runner-Up ceremony](images/awards/nilmbench-buildsys2026-runnerup.jpg){.award-image}
+  ![ACM BuildSys 2026 Best Paper Awards announcement](images/awards/nilmbench-buildsys2026-announcement.png){.award-image}
+
 ### 2025
 - **Commendation for Outstanding Research (PhD)** - Dr. Rishiraj Adhikary (PhD Alumnus) *(June 2025)*  
   *IIT Gandhinagar Convocation 2025*  
