@@ -73,6 +73,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<meta property="og:title" content="Lab Resources – Sustainability Lab">
+<meta property="og:description" content="AI-driven research for a sustainable future at IIT Gandhinagar, led by Prof.&nbsp;Nipun Batra. PhD, postdoc, and internship openings in AI for sustainability, health sensing, energy analytics, and environmental monitoring.">
+<meta property="og:image" content="https://sustainability-lab.github.io/images/benchmarks.svg">
+<meta property="og:site_name" content="Sustainability Lab">
+<meta property="og:image:alt" content="Benchmark comparison of the lab's GPU compute resources">
+<meta name="twitter:title" content="Lab Resources – Sustainability Lab">
+<meta name="twitter:description" content="AI-driven research for a sustainable future at IIT Gandhinagar, led by Prof.&nbsp;Nipun Batra. PhD, postdoc, and internship openings in AI for sustainability, health sensing, energy analytics, and environmental monitoring.">
+<meta name="twitter:image" content="https://sustainability-lab.github.io/images/benchmarks.svg">
+<meta name="twitter:creator" content="@nipun_batra">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:alt" content="Benchmark comparison of the lab's GPU compute resources">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -467,7 +478,7 @@ Total VRAM
 <section id="relative-performance" class="level3">
 <h3 class="anchored" data-anchor-id="relative-performance">Relative Performance</h3>
 <p>Measured with our open <a href="https://github.com/nipunbatra/gpu-benchmark-suite">gpu-benchmark-suite</a> — the same Docker-based workloads on every machine, grouped into <strong>raw compute</strong>, <strong>training</strong>, <strong>inference</strong>, and <strong>data-loading</strong> so the numbers are directly comparable.</p>
-<p><img src="images/benchmarks.svg" width="100%"></p>
+<p><img src="images/benchmarks.svg" width="100%" loading="lazy" alt="Benchmark comparison of the lab's GPU compute resources"></p>
 <table>
 <tbody><tr>
 <th>
@@ -724,7 +735,7 @@ Data loading (img/s)
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/sustainability-lab\.github\.io\/");
+        var filterRegex = new RegExp("https:\/\/sustainability-lab\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
