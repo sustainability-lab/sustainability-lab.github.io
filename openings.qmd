@@ -10,20 +10,20 @@ output:
 
 <style>
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     background-color: #fafbfc;
-    color: #2d3748;
+    color: #1a1a2e;
     line-height: 1.6;
 }
 
 .hero {
     background: #fafafa;
-    color: #1e293b;
+    color: #1a1a2e;
     text-align: center;
     padding: 50px 20px;
     border-radius: 16px;
     margin-bottom: 40px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #e5e7eb;
 }
 
 .hero h1 {
@@ -34,7 +34,7 @@ body {
 
 .hero .subtitle {
     font-size: 1.2rem;
-    color: #475569;
+    color: #5a6070;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -45,11 +45,11 @@ body {
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     margin-bottom: 30px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #e5e7eb;
 }
 
 .content-card h2 {
-    color: #334155;
+    color: #c44536;
     font-size: 1.8rem;
     margin-bottom: 20px;
     font-weight: 600;
@@ -58,7 +58,7 @@ body {
 .content-card p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #4a5568;
+    color: #5a6070;
     margin-bottom: 16px;
 }
 
@@ -72,14 +72,14 @@ body {
 .benefit-item {
     text-align: center;
     padding: 20px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #e5e7eb;
     border-radius: 8px;
     transition: all 0.3s ease;
     background: white;
 }
 
 .benefit-item:hover {
-    border-color: #334155;
+    border-color: #c44536;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(14, 165, 233, 0.12);
 }
@@ -93,12 +93,12 @@ body {
 .benefit-item h4 {
     font-size: 1rem;
     font-weight: 600;
-    color: #2d3748;
+    color: #1a1a2e;
     margin-bottom: 8px;
 }
 
 .benefit-item p {
-    color: #718096;
+    color: #5a6070;
     font-size: 0.9rem;
     margin-bottom: 0;
 }
@@ -115,19 +115,19 @@ body {
     background: #f7fafc;
     padding: 16px;
     border-radius: 8px;
-    border-left: 4px solid #334155;
+    border-left: 4px solid #c44536;
 }
 
 .stat-number {
     font-size: 1.6rem;
     font-weight: 700;
-    color: #334155;
+    color: #c44536;
     display: block;
 }
 
 .stat-label {
     font-size: 0.85rem;
-    color: #718096;
+    color: #5a6070;
     font-weight: 500;
 }
 
@@ -137,9 +137,9 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     padding: 24px;
     margin-bottom: 20px;
-    border-left: 4px solid #334155;
+    border-left: 4px solid #c44536;
     transition: all 0.3s ease;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #e5e7eb;
 }
 
 .position-card:hover {
@@ -149,13 +149,13 @@ body {
 
 .position-card h3 {
     font-size: 1.3rem;
-    color: #2d3748;
+    color: #1a1a2e;
     margin-bottom: 12px;
     font-weight: 600;
 }
 
 .position-card p {
-    color: #4a5568;
+    color: #5a6070;
     margin-bottom: 12px;
     line-height: 1.5;
 }
@@ -166,21 +166,21 @@ body {
 }
 
 .position-card li {
-    color: #4a5568;
+    color: #5a6070;
     margin-bottom: 6px;
     line-height: 1.4;
 }
 
 .highlight-box {
-    background: #eff6ff;
-    border: 1px solid #bfdbfe;
+    background: #f8f9fa;
+    border: 1px solid #e5e7eb;
     border-radius: 8px;
     padding: 14px;
     margin: 14px 0;
 }
 
 .highlight-box strong {
-    color: #334155;
+    color: #c44536;
 }
 
 .btn {
@@ -196,12 +196,12 @@ body {
 }
 
 .btn-primary {
-    background-color: #334155;
+    background-color: #c44536;
     color: white;
 }
 
 .btn-primary:hover {
-    background-color: #1e293b;
+    background-color: #a63c30;
     transform: translateY(-1px);
     text-decoration: none;
     color: white;
@@ -209,12 +209,12 @@ body {
 
 .btn-secondary {
     background-color: transparent;
-    color: #334155;
-    border: 2px solid #334155;
+    color: #c44536;
+    border: 2px solid #c44536;
 }
 
 .btn-secondary:hover {
-    background-color: #334155;
+    background-color: #c44536;
     color: white;
     text-decoration: none;
 }
@@ -247,13 +247,13 @@ body {
 
 .testimonial p {
     font-style: italic;
-    color: #374151;
+    color: #5a6070;
     margin-bottom: 8px;
 }
 
 .testimonial .author {
     font-weight: 600;
-    color: #1f2937;
+    color: #1a1a2e;
 }
 
 .culture-highlight {
@@ -268,16 +268,16 @@ body {
 }
 
 .quick-links {
-    background: #eff6ff;
+    background: #f8f9fa;
     padding: 20px;
     border-radius: 8px;
     margin: 25px 0;
-    border: 1px solid #bfdbfe;
+    border: 1px solid #e5e7eb;
 }
 
 .quick-links h4 {
     margin-bottom: 14px;
-    color: #334155;
+    color: #c44536;
     font-size: 1rem;
 }
 
@@ -285,7 +285,7 @@ body {
     display: inline-block;
     margin-right: 14px;
     margin-bottom: 6px;
-    color: #334155;
+    color: #c44536;
     font-weight: 500;
     text-decoration: none;
     font-size: 0.9rem;
@@ -297,7 +297,7 @@ body {
 
 .section-title {
     font-size: 2rem;
-    color: #2d3748;
+    color: #1a1a2e;
     margin-bottom: 25px;
     font-weight: 600;
 }
@@ -344,7 +344,7 @@ details summary {
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #475569;
+    color: #5a6070;
     padding: 8px;
     border-radius: 6px;
     transition: all 0.3s ease;
@@ -362,7 +362,7 @@ details summary::before {
     display: inline-block;
     margin-right: 10px;
     transition: transform 0.3s ease;
-    color: #334155;
+    color: #c44536;
     font-size: 0.9em;
 }
 
@@ -371,8 +371,8 @@ details[open] summary::before {
 }
 
 details summary:hover {
-    background: #e2e8f0;
-    color: #1e293b;
+    background: #e5e7eb;
+    color: #1a1a2e;
 }
 
 details[open] summary {
