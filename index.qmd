@@ -18,6 +18,71 @@ description: "Sustainability Lab at IIT Gandhinagar — AI-driven research for a
 </div>
 </div>
 
+<style>
+.proof-band { max-width: 1000px; margin: -8px auto 54px; padding: 0 8px; }
+.proof-awards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 26px; }
+.proof-award { display: flex; align-items: center; gap: 12px; background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: var(--radius-medium); padding: 15px 18px; box-shadow: var(--shadow-sm); text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+.proof-award:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); text-decoration: none; }
+.proof-award .pa-icon { font-size: 1.7rem; line-height: 1; flex-shrink: 0; }
+.proof-award .pa-text { display: flex; flex-direction: column; }
+.proof-award strong { color: var(--ink); font-size: .95rem; line-height: 1.2; }
+.proof-award small { color: var(--muted); font-size: .8rem; margin-top: 3px; }
+.proof-venues { text-align: center; margin-bottom: 26px; }
+.proof-label { display: block; text-transform: uppercase; letter-spacing: .14em; font-size: .72rem; color: var(--muted); margin-bottom: 10px; }
+.proof-venues .pv { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 600; color: var(--ink); }
+.proof-venues .pv + .pv::before { content: '·'; color: var(--accent); margin: 0 12px; font-family: 'Work Sans', sans-serif; }
+.proof-foot { display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 22px; }
+.proof-pi { display: flex; align-items: center; gap: 13px; }
+.proof-pi img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent); }
+.proof-pi .pa-text strong { color: var(--ink); font-size: .92rem; }
+.proof-pi .pa-text small { color: var(--muted); font-size: .8rem; margin-top: 2px; }
+.proof-alumni { text-align: center; max-width: 470px; }
+.proof-alumni .proof-label { color: var(--accent); font-weight: 600; margin-bottom: 5px; }
+.proof-alumni-list a { color: var(--muted); font-size: .85rem; line-height: 1.5; text-decoration: none; }
+.proof-alumni-list a:hover { color: var(--accent); }
+@media (max-width: 700px) {
+  .proof-awards { grid-template-columns: 1fr; }
+  .proof-venues .pv { font-size: 1.05rem; }
+  .proof-venues .pv + .pv::before { margin: 0 7px; }
+  .proof-foot { gap: 20px; }
+}
+</style>
+
+<div class="proof-band">
+
+<div class="proof-awards">
+<a class="proof-award" href="awards.qmd">
+<span class="pa-icon">🏆</span>
+<span class="pa-text"><strong>ACM eEnergy Test-of-Time Award</strong><small>2025 · for NILMTK</small></span>
+</a>
+<a class="proof-award" href="awards.qmd">
+<span class="pa-icon">🌟</span>
+<span class="pa-text"><strong>ACM SIGEnergy Rising Star</strong><small>2025</small></span>
+</a>
+<a class="proof-award" href="awards.qmd">
+<span class="pa-icon">🥈</span>
+<span class="pa-text"><strong>BuildSys 2026 Best Paper</strong><small>Runner-Up · NILMBench</small></span>
+</a>
+</div>
+
+<div class="proof-venues">
+<span class="proof-label">Our research appears at</span>
+<span class="pv">NeurIPS</span><span class="pv">KDD</span><span class="pv">AAAI</span><span class="pv">IMWUT</span><span class="pv">BuildSys</span><span class="pv">UbiComp</span>
+</div>
+
+<div class="proof-foot">
+<div class="proof-pi">
+<img src="https://nipunbatra.github.io/images/nipun.jpg" alt="Prof. Nipun Batra" loading="lazy">
+<span class="pa-text"><strong>Led by Prof. Nipun Batra</strong><small>Associate Professor, Computer Science, IIT Gandhinagar</small></span>
+</div>
+<div class="proof-alumni">
+<span class="proof-label">Our alumni are at</span>
+<div class="proof-alumni-list"><a href="alumni.qmd">Cambridge · Microsoft Research · Google DeepMind · CMU · Oracle · Nykaa</a></div>
+</div>
+</div>
+
+</div>
+
 ## Featured Research
 
 <p class="section-subtitle">Cutting-edge projects at the intersection of AI and sustainability</p>
