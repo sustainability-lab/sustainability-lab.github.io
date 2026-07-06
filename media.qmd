@@ -92,7 +92,7 @@ toc: false
 </style>
 
 <div class="media-item highlight-item">
-<img src="images/media/aaai_media_coverage.jpg" alt="AAAI 2026 Coverage" class="media-image">
+<img loading="lazy" src="images/media/aaai_media_coverage.jpg" alt="AAAI 2026 Coverage" class="media-image">
 <div class="media-content">
 <h3>Fast and Differentiable Sensor Placement</h3>
 <p>Our <a href="papers/2025/aaai_2026_air_active_gradient_camera_ready.pdf" target="_blank">AAAI 2026 paper</a> work on fast, differentiable sensor placement has gained wide attention for its ability to scale air-quality monitoring and support fairer, data-driven deployment across regions.</p>
@@ -104,7 +104,7 @@ toc: false
 </div>
 
 <div class="media-item highlight">
-<img src="images/media/VayuBuddy_cover_padded.png" alt="VayuBuddy" class="media-image">
+<img loading="lazy" src="images/media/VayuBuddy_cover_padded.png" alt="VayuBuddy" class="media-image">
 <div class="media-content">
 <h3>VayuBuddy - LLM-powered Air Quality Chatbot</h3>
 <p><a href="https://arxiv.org/abs/2411.12760" target="_blank">VayuBuddy</a> democratizes air quality insights for cleaner air.</p>
@@ -118,7 +118,7 @@ toc: false
 </div>
 
 <div class="media-item highlight">
-<img src="images/media/JoulesEye_Hackster.io.png" alt="JoulesEye" class="media-image">
+<img loading="lazy" src="images/media/JoulesEye_Hackster.io.png" alt="JoulesEye" class="media-image">
 <div class="media-content">
 <h3>JoulesEye - Thermal Imaging for Fitness</h3>
 <p><a href="https://dl.acm.org/doi/abs/10.1145/3631422" target="_blank">JoulesEye</a> revolutionizes fitness tracking (with <a href="http://www.mayankgoel.com/" target="_blank">Prof. Mayank Goel</a>, CMU).</p>
@@ -134,7 +134,7 @@ toc: false
 </div>
 
 <div class="media-item">
-<img src="images/media/GaetanoAward.png" alt="Gaetano Award" class="media-image">
+<img loading="lazy" src="images/media/GaetanoAward.png" alt="Gaetano Award" class="media-image">
 <div class="media-content">
 <h3>UbiComp Gaetano Borriello Award Finalist</h3>
 <p><a href="https://rishi-a.github.io" target="_blank">Rishiraj Adhikary</a> - finalist for <a href="https://ubicomp.org/sc/awards.html" target="_blank">Outstanding Student Award</a> 2023.</p>
@@ -142,7 +142,7 @@ toc: false
 </div>
 
 <div class="media-item">
-<img src="images/media/educationtimes-fulbright.png" alt="Fulbright Fellowship" class="media-image">
+<img loading="lazy" src="images/media/educationtimes-fulbright.png" alt="Fulbright Fellowship" class="media-image">
 <div class="media-content">
 <h3>Fulbright-Nehru Fellowship</h3>
 <p><a href="https://rishi-a.github.io" target="_blank">Rishiraj Adhikary</a> - 9-month research at CMU with <a href="http://www.mayankgoel.com/" target="_blank">Prof. Mayank Goel</a>.</p>
@@ -157,7 +157,7 @@ toc: false
 </div>
 
 <div class="media-item">
-<img src="images/media/spiromask-news-1.jpeg" alt="SpiroMask" class="media-image">
+<img loading="lazy" src="images/media/spiromask-news-1.jpeg" alt="SpiroMask" class="media-image">
 <div class="media-content">
 <h3>SpiroMask - Smart Mask for Lung Health</h3>
 <p><a href="https://dl.acm.org/doi/10.1145/3570167" target="_blank">SpiroMask</a> enables lung health monitoring using consumer-grade masks.</p>

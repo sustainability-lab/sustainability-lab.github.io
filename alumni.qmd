@@ -251,7 +251,7 @@ body {
 
 <div class="phd-card">
 <a href="https://patel-zeel.github.io">
-<img src="https://patel-zeel.github.io/images/profile_crop.png" class="cropped-image" alt="Dr. Zeel B Patel">
+<img loading="lazy" src="https://patel-zeel.github.io/images/profile_crop.png" class="cropped-image" alt="Dr. Zeel B Patel">
 </a>
 <div class="phd-info">
 <div class="phd-name">Dr. Zeel B Patel</div>
@@ -262,7 +262,7 @@ body {
 
 <div class="phd-card">
 <a href="https://rishi-a.github.io">
-<img src="https://rishi-a.github.io/images/RISHIRAJ.jpg" class="cropped-image" alt="Dr. Rishiraj Adhikary">
+<img loading="lazy" src="https://rishi-a.github.io/images/RISHIRAJ.jpg" class="cropped-image" alt="Dr. Rishiraj Adhikary">
 </a>
 <div class="phd-info">
 <div class="phd-name">Dr. Rishiraj Adhikary</div>

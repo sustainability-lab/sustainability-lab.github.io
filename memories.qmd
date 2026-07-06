@@ -17,7 +17,7 @@ lightbox: auto
 <div class="photo-grid">
 
 <div class="photo-card">
-![Dr. Zeel B Patel with his PhD committee](images/memories/2026-zeel-phd-committee.jpeg){group="memories"
+![Dr. Zeel B Patel with his PhD committee](images/memories/2026-zeel-phd-committee.jpeg){group="memories" loading="lazy"
 description="Dr. Zeel B Patel's PhD Defence - Zeel with his PhD committee after successfully defending his thesis on 4th February 2026. Second PhD graduate from the Sustainability Lab!"}
 <div class="photo-info">
 <div class="photo-title">Zeel's PhD Defence - With Committee</div>
@@ -27,7 +27,7 @@ description="Dr. Zeel B Patel's PhD Defence - Zeel with his PhD committee after 
 </div>
 
 <div class="photo-card">
-![Current PhD students celebrating with Dr. Zeel](images/memories/2026-zeel-phd-students.jpeg){group="memories"
+![Current PhD students celebrating with Dr. Zeel](images/memories/2026-zeel-phd-students.jpeg){group="memories" loading="lazy"
 description="PhD Defence Celebration - Current PhD students celebrating Dr. Zeel B Patel's successful thesis defence, marking a proud moment for the Sustainability Lab."}
 <div class="photo-info">
 <div class="photo-title">Zeel's PhD Defence - With PhD Students</div>
@@ -37,7 +37,7 @@ description="PhD Defence Celebration - Current PhD students celebrating Dr. Zeel
 </div>
 
 <div class="photo-card">
-![JRFs, MTech and PhD students at Zeel's defence celebration](images/memories/2026-zeel-phd-jrfs-mtech.jpeg){group="memories"
+![JRFs, MTech and PhD students at Zeel's defence celebration](images/memories/2026-zeel-phd-jrfs-mtech.jpeg){group="memories" loading="lazy"
 description="PhD Defence Celebration - JRFs, MTech and PhD students together celebrating Dr. Zeel B Patel's successful thesis defence."}
 <div class="photo-info">
 <div class="photo-title">Zeel's PhD Defence - Lab Celebration</div>
@@ -58,7 +58,7 @@ description="PhD Defence Celebration - JRFs, MTech and PhD students together cel
 <div class="photo-grid">
 
 <div class="photo-card">
-![2025 MTech graduation ceremony group photo](images/memories/2025-graduating-mtech-1.jpg){group="memories" 
+![2025 MTech graduation ceremony group photo](images/memories/2025-graduating-mtech-1.jpg){group="memories" loading="lazy" 
 description="2025 MTech Graduation Ceremony - Celebrating the graduation of our MTech students in 2025, marking the completion of their research journey and the beginning of their professional careers."}
 <div class="photo-info">
 <div class="photo-title">2025 MTech Graduation Ceremony</div>
@@ -68,7 +68,7 @@ description="2025 MTech Graduation Ceremony - Celebrating the graduation of our 
 </div>
 
 <div class="photo-card">
-![2025 MTech graduation celebration with faculty](images/memories/2025-graduating-mtech-2.jpg){group="memories"
+![2025 MTech graduation celebration with faculty](images/memories/2025-graduating-mtech-2.jpg){group="memories" loading="lazy"
 description="2025 MTech Graduation with Faculty - A special moment with faculty members celebrating the achievements of our graduating MTech students who have contributed significantly to sustainability research."}
 <div class="photo-info">
 <div class="photo-title">2025 MTech Graduation with Faculty</div>
@@ -78,7 +78,7 @@ description="2025 MTech Graduation with Faculty - A special moment with faculty 
 </div>
 
 <div class="photo-card">
-![2025 MTech graduation group celebration](images/memories/2025-graduating-mtech-3.jpg){group="memories"
+![2025 MTech graduation group celebration](images/memories/2025-graduating-mtech-3.jpg){group="memories" loading="lazy"
 description="2025 MTech Graduation Group Celebration - The complete graduating MTech class of 2025 celebrating their achievements in a joyful group photo marking this significant milestone."}
 <div class="photo-info">
 <div class="photo-title">2025 MTech Graduation Group Celebration</div>
@@ -88,7 +88,7 @@ description="2025 MTech Graduation Group Celebration - The complete graduating M
 </div>
 
 <div class="photo-card">
-![ACM Summer School 2025 organizers](images/memories/2025-acm-summer-school-1.jpg){group="memories"
+![ACM Summer School 2025 organizers](images/memories/2025-acm-summer-school-1.jpg){group="memories" loading="lazy"
 description="ACM Summer School 2025 Organizers - The organizing team behind the successful ACM Summer School 2025, bringing together researchers and students from around the world for knowledge sharing and collaboration."}
 <div class="photo-info">
 <div class="photo-title">ACM Summer School 2025 Organizers</div>
@@ -98,7 +98,7 @@ description="ACM Summer School 2025 Organizers - The organizing team behind the 
 </div>
 
 <div class="photo-card">
-![ACM Summer School 2025 participants and organizers](images/memories/2025-acm-summer-school-2.jpg){group="memories"
+![ACM Summer School 2025 participants and organizers](images/memories/2025-acm-summer-school-2.jpg){group="memories" loading="lazy"
 description="ACM Summer School 2025 Complete Group - All participants and organizers of the ACM Summer School 2025, showcasing the diverse community of researchers and students who came together for this enriching academic experience."}
 <div class="photo-info">
 <div class="photo-title">ACM Summer School 2025 Complete Group</div>
@@ -115,7 +115,7 @@ description="ACM Summer School 2025 Complete Group - All participants and organi
 <div class="photo-grid">
 
 <div class="photo-card">
-![Team dinner with the lab](images/memories/2025-Akshardham-all.jpg){group="memories"
+![Team dinner with the lab](images/memories/2025-Akshardham-all.jpg){group="memories" loading="lazy"
 description="Team dinner - A wonderful evening celebrating our achievements and strengthening lab bonds."}
 <div class="photo-info">
 <div class="photo-title">Team Dinner</div>
@@ -125,7 +125,7 @@ description="Team dinner - A wonderful evening celebrating our achievements and 
 </div>
 
 <div class="photo-card">
-![Graduating batch celebration photo](images/memories/2025-Akshardham-finalyear.jpg){group="memories"
+![Graduating batch celebration photo](images/memories/2025-Akshardham-finalyear.jpg){group="memories" loading="lazy"
 description="Graduating Batch Celebration - Special celebration for our graduating students, marking the end of their incredible journey with the Sustainability Lab."}
 <div class="photo-info">
 <div class="photo-title">Graduating Batch Celebration</div>
@@ -142,7 +142,7 @@ description="Graduating Batch Celebration - Special celebration for our graduati
 <div class="photo-grid">
 
 <div class="photo-card">
-![Sustainability Lab team at Curiosity Carnival 2025 at IIT Gandhinagar](images/memories/Curiosity.jpg){group="memories"
+![Sustainability Lab team at Curiosity Carnival 2025 at IIT Gandhinagar](images/memories/Curiosity.jpg){group="memories" loading="lazy"
 description="Curiosity Carnival'25 at IITGN - Sustainability Lab showcasing our research and innovations at the prestigious Curiosity Carnival at IIT Gandhinagar, engaging with students and researchers."}
 <div class="photo-info">
 <div class="photo-title">Curiosity Carnival'25 at IITGN</div>
@@ -152,7 +152,7 @@ description="Curiosity Carnival'25 at IITGN - Sustainability Lab showcasing our 
 </div>
 
 <div class="photo-card">
-![Lab dinner celebrating Dr. Rishiraj's successful PhD defence](images/memories/Dinner-Jan-2025.jpg){group="memories"
+![Lab dinner celebrating Dr. Rishiraj's successful PhD defence](images/memories/Dinner-Jan-2025.jpg){group="memories" loading="lazy"
 description="PhD Defence Celebration - Celebrating Dr. Rishiraj's successful PhD defence with a special lab dinner. A milestone achievement marking years of dedicated research in sustainability and AI."}
 <div class="photo-info">
 <div class="photo-title">PhD Defence Celebration</div>
@@ -173,7 +173,7 @@ description="PhD Defence Celebration - Celebrating Dr. Rishiraj's successful PhD
 <div class="photo-grid">
 
 <div class="photo-card">
-![Alumni homecoming meetup with former lab members](images/memories/2024-dec-alum-meet.jpg){group="memories"
+![Alumni homecoming meetup with former lab members](images/memories/2024-dec-alum-meet.jpg){group="memories" loading="lazy"
 description="Alumni Homecoming 2024 - A heartwarming reunion with our alumni who have gone on to make significant impacts in industry and academia worldwide."}
 <div class="photo-info">
 <div class="photo-title">Alumni Homecoming 2024</div>
@@ -190,7 +190,7 @@ description="Alumni Homecoming 2024 - A heartwarming reunion with our alumni who
 <div class="photo-grid">
 
 <div class="photo-card">
-![Sustainability Lab team at ACM Compass 2024 conference](images/memories/compass24.jpg){group="memories"
+![Sustainability Lab team at ACM Compass 2024 conference](images/memories/compass24.jpg){group="memories" loading="lazy"
 description="ACM Compass'24 at IIIT Delhi - Our team presenting research and networking at ACM Compass'24, showcasing our work in sustainable computing and AI for social good."}
 <div class="photo-info">
 <div class="photo-title">ACM Compass'24 Conference</div>
@@ -207,7 +207,7 @@ description="ACM Compass'24 at IIIT Delhi - Our team presenting research and net
 <div class="photo-grid">
 
 <div class="photo-card">
-![Ayush and Suraj successfully defending their Masters thesis](images/memories/AyushSurajDefence.png){group="memories"
+![Ayush and Suraj successfully defending their Masters thesis](images/memories/AyushSurajDefence.png){group="memories" loading="lazy"
 description="Masters Thesis Defence - Ayush and Suraj successfully defending their Masters thesis, completing their research journey in sustainable AI and environmental monitoring."}
 <div class="photo-info">
 <div class="photo-title">Masters Thesis Defence</div>
@@ -224,7 +224,7 @@ description="Masters Thesis Defence - Ayush and Suraj successfully defending the
 <div class="photo-grid">
 
 <div class="photo-card">
-![Graduation celebration with 2024 batch](images/memories/batch24.jpg){group="memories"
+![Graduation celebration with 2024 batch](images/memories/batch24.jpg){group="memories" loading="lazy"
 description="Batch of 2024 Graduation - Celebrating the achievements of our 2024 graduating batch who have contributed significantly to our research in sustainable AI and environmental sensing."}
 <div class="photo-info">
 <div class="photo-title">Batch of 2024 Graduation</div>
@@ -234,7 +234,7 @@ description="Batch of 2024 Graduation - Celebrating the achievements of our 2024
 </div>
 
 <div class="photo-card">
-![Lab dinner and celebration in May 2024](images/memories/summer24.jpg){group="memories"
+![Lab dinner and celebration in May 2024](images/memories/summer24.jpg){group="memories" loading="lazy"
 description="Lab Dinner May 2024 - A wonderful team dinner celebrating the successful completion of projects and welcoming new members to our growing research family."}
 <div class="photo-info">
 <div class="photo-title">Lab Dinner Celebration</div>
@@ -251,7 +251,7 @@ description="Lab Dinner May 2024 - A wonderful team dinner celebrating the succe
 <div class="photo-grid">
 
 <div class="photo-card">
-![Alumni visit from 2022 batch members Harsh, Hetvi and Palak](images/memories/2024-alum-visit.jpg){group="memories"
+![Alumni visit from 2022 batch members Harsh, Hetvi and Palak](images/memories/2024-alum-visit.jpg){group="memories" loading="lazy"
 description="Alumni Visit January 2024 - Former students Harsh, Hetvi and Palak from our 2022 batch visiting the lab, sharing their industry experiences and mentoring current students."}
 <div class="photo-info">
 <div class="photo-title">Alumni Visit</div>
@@ -272,7 +272,7 @@ description="Alumni Visit January 2024 - Former students Harsh, Hetvi and Palak 
 <div class="photo-grid">
 
 <div class="photo-card">
-![Prof Mayank Goel from CMU visiting Sustainability Lab](images/memories/Mayank_visit.jpg){group="memories"
+![Prof Mayank Goel from CMU visiting Sustainability Lab](images/memories/Mayank_visit.jpg){group="memories" loading="lazy"
 description="Distinguished Visitor from CMU - Prof Mayank Goel from Carnegie Mellon University visiting our lab, sharing insights on HCI and sustainable technology research."}
 <div class="photo-info">
 <div class="photo-title">CMU Professor Visit</div>
@@ -289,7 +289,7 @@ description="Distinguished Visitor from CMU - Prof Mayank Goel from Carnegie Mel
 <div class="photo-grid">
 
 <div class="photo-card">
-![Fall 2023 semester students group photo](images/memories/2023-Fall.jpg){group="memories"
+![Fall 2023 semester students group photo](images/memories/2023-Fall.jpg){group="memories" loading="lazy"
 description="Fall 2023 Semester Team - Students working with us during the Fall 2023 semester, contributing to various sustainability and AI research projects."}
 <div class="photo-info">
 <div class="photo-title">Fall 2023 Semester Team</div>
@@ -306,7 +306,7 @@ description="Fall 2023 Semester Team - Students working with us during the Fall 
 <div class="photo-grid">
 
 <div class="photo-card">
-![Rishiraj receiving Gaetano Borriello Outstanding Student Award finalist recognition](images/memories/rishiraj-award.jpeg){group="memories"
+![Rishiraj receiving Gaetano Borriello Outstanding Student Award finalist recognition](images/memories/rishiraj-award.jpeg){group="memories" loading="lazy"
 description="Prestigious Award Recognition - Rishiraj was selected as a finalist for the prestigious Gaetano Borriello Outstanding Student Award at ACM Ubicomp 2023, recognizing excellence in ubiquitous computing research."}
 <div class="photo-info">
 <div class="photo-title">Gaetano Borriello Award Finalist</div>
@@ -323,7 +323,7 @@ description="Prestigious Award Recognition - Rishiraj was selected as a finalist
 <div class="photo-grid">
 
 <div class="photo-card">
-![Young Alumni Award ceremony at IIIT Delhi](images/memories/2023-Sept-Young_Alumni.jpg){group="memories"
+![Young Alumni Award ceremony at IIIT Delhi](images/memories/2023-Sept-Young_Alumni.jpg){group="memories" loading="lazy"
 description="Young Alumni Award - Celebrating the Young Alumni Award received from IIIT Delhi, recognizing early career achievements and contributions to research and society."}
 <div class="photo-info">
 <div class="photo-title">Young Alumni Award</div>
@@ -340,7 +340,7 @@ description="Young Alumni Award - Celebrating the Young Alumni Award received fr
 <div class="photo-grid">
 
 <div class="photo-card">
-![2023 batch convocation celebration with awards](images/memories/2023-July-all.jpg){group="memories"
+![2023 batch convocation celebration with awards](images/memories/2023-July-all.jpg){group="memories" loading="lazy"
 description="Convocation & Awards Celebration - Celebrating the 2023 batch convocation along with multiple awards and recognitions received by our lab members for their outstanding research contributions."}
 <div class="photo-info">
 <div class="photo-title">Convocation & Awards Celebration</div>
@@ -350,7 +350,7 @@ description="Convocation & Awards Celebration - Celebrating the 2023 batch convo
 </div>
 
 <div class="photo-card">
-![Ankita receiving Gold Medal for Outstanding Research](images/memories/ankita-gm-2-3.png){group="memories"
+![Ankita receiving Gold Medal for Outstanding Research](images/memories/ankita-gm-2-3.png){group="memories" loading="lazy"
 description="Gold Medal for Outstanding Research - Ankita receiving the prestigious Gold Medal for Outstanding Research, recognizing her exceptional contributions to sustainability and AI research."}
 <div class="photo-info">
 <div class="photo-title">Gold Medal Achievement</div>
@@ -367,7 +367,7 @@ description="Gold Medal for Outstanding Research - Ankita receiving the prestigi
 <div class="photo-grid">
 
 <div class="photo-card">
-![May 2023 lab dinner celebration](images/memories/2023-July.jpg){group="memories"
+![May 2023 lab dinner celebration](images/memories/2023-July.jpg){group="memories" loading="lazy"
 description="Lab Dinner May 2023 - A wonderful team dinner bringing together all lab members to celebrate research milestones and strengthen our collaborative bonds."}
 <div class="photo-info">
 <div class="photo-title">Lab Dinner Celebration</div>
@@ -377,7 +377,7 @@ description="Lab Dinner May 2023 - A wonderful team dinner bringing together all
 </div>
 
 <div class="photo-card">
-![Batch of 2023 group photo with all members](images/memories/2023-group.jpg){group="memories"
+![Batch of 2023 group photo with all members](images/memories/2023-group.jpg){group="memories" loading="lazy"
 description="Batch of 2023 Complete Team - The complete 2023 batch: Saagar, Aadesh, Xhitij, Nipun, Zeel, Ankita, Eshan, Hitarth, and Gautam, representing diverse expertise in sustainability and AI research."}
 <div class="photo-info">
 <div class="photo-title">Batch of 2023 Complete Team</div>
@@ -387,7 +387,7 @@ description="Batch of 2023 Complete Team - The complete 2023 batch: Saagar, Aade
 </div>
 
 <div class="photo-card">
-![Special celebration cake from batch of 2023](images/memories/2023-cake.jpg){group="memories"
+![Special celebration cake from batch of 2023](images/memories/2023-cake.jpg){group="memories" loading="lazy"
 description="Celebration Cake - A special cake celebration organized by the batch of 2023 to mark their successful completion of research projects and thesis defenses."}
 <div class="photo-info">
 <div class="photo-title">Celebration Cake</div>
@@ -408,7 +408,7 @@ description="Celebration Cake - A special cake celebration organized by the batc
 <div class="photo-grid">
 
 <div class="photo-card">
-![Subset of 2022 batch alumni group photo](images/memories/2022-group-subset.jpg){group="memories"
+![Subset of 2022 batch alumni group photo](images/memories/2022-group-subset.jpg){group="memories" loading="lazy"
 description="Batch of 2022 Alumni - A cherished photo with a subset of our 2022 batch alumni: Harsh, Hetvi, Nipun, Dhruvi, and Palak, who have gone on to make significant contributions in their respective fields."}
 <div class="photo-info">
 <div class="photo-title">Batch of 2022 Alumni</div>
@@ -429,7 +429,7 @@ description="Batch of 2022 Alumni - A cherished photo with a subset of our 2022 
 <div class="photo-grid">
 
 <div class="photo-card">
-![Team celebrating AAAI paper acceptance](images/memories/2021-AAAI.jpg){group="memories"
+![Team celebrating AAAI paper acceptance](images/memories/2021-AAAI.jpg){group="memories" loading="lazy"
 description="AAAI Paper Acceptance Celebration - Celebrating the acceptance of our research paper at AAAI, one of the premier conferences in artificial intelligence, marking a significant milestone for the lab."}
 <div class="photo-info">
 <div class="photo-title">AAAI Paper Acceptance</div>
@@ -446,7 +446,7 @@ description="AAAI Paper Acceptance Celebration - Celebrating the acceptance of o
 <div class="photo-grid">
 
 <div class="photo-card">
-![Apoorv's return visit to campus with Rishiraj and Zeel](images/memories/2021-Nov-Apoorv.jpg){group="memories"
+![Apoorv's return visit to campus with Rishiraj and Zeel](images/memories/2021-Nov-Apoorv.jpg){group="memories" loading="lazy"
 description="Alumni Return Visit - Apoorv's special return visit to campus, reuniting with current lab members Rishiraj and Zeel, sharing experiences and maintaining strong alumni connections."}
 <div class="photo-info">
 <div class="photo-title">Alumni Return Visit</div>

@@ -6,35 +6,35 @@ toc: true
 ### 2026
 - **ACM BuildSys 2026 Best Paper Award — Runner-Up** - Aayush Kuloor, Anurag Singh, Harsh Dhru & Prof. Nipun Batra *(June 2026)*  
   *For "NILMBench2026: A Benchmark for Energy Disaggregation" at the 13th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (ACM BuildSys 2026), ACM Sustainability Week, Banff, Canada. The work was led entirely by second-year undergraduates.* [[Paper](papers/index.qmd#2026)]  
-  ![BuildSys 2026 Best Paper Runner-Up ceremony](images/awards/nilmbench-buildsys2026-runnerup.jpg){.award-image}
-  ![ACM BuildSys 2026 Best Paper Awards announcement](images/awards/nilmbench-buildsys2026-announcement.png){.award-image}
+  ![BuildSys 2026 Best Paper Runner-Up ceremony](images/awards/nilmbench-buildsys2026-runnerup.jpg){.award-image loading="lazy"}
+  ![ACM BuildSys 2026 Best Paper Awards announcement](images/awards/nilmbench-buildsys2026-announcement.png){.award-image loading="lazy"}
 
 ### 2025
 - **Commendation for Outstanding Research (PhD)** - Dr. Rishiraj Adhikary (PhD Alumnus) *(June 2025)*  
   *IIT Gandhinagar Convocation 2025*  
-  ![Rishiraj Award Ceremony 1](images/awards/rishiraj-1.jpeg){.award-image}
-  ![Rishiraj Award Ceremony 2](images/awards/rishiraj-2.jpg){.award-image}
+  ![Rishiraj Award Ceremony 1](images/awards/rishiraj-1.jpeg){.award-image loading="lazy"}
+  ![Rishiraj Award Ceremony 2](images/awards/rishiraj-2.jpg){.award-image loading="lazy"}
 
 - **Test of Time Award for NILMTK** - Prof. Nipun Batra *(June 2025)*  
   *For significant long-term impact and contributions to the energy disaggregation research community*  
-  ![Test of Time Award](images/awards/nipun-test-time.jpg){.award-image}
-  ![Test of Time Award Announcement](images/awards/screen-test-time.jpg){.award-image}
-  ![Test of Time Award Certificate](images/awards/nipun-certificate-test-time.jpg){.award-image}
+  ![Test of Time Award](images/awards/nipun-test-time.jpg){.award-image loading="lazy"}
+  ![Test of Time Award Announcement](images/awards/screen-test-time.jpg){.award-image loading="lazy"}
+  ![Test of Time Award Certificate](images/awards/nipun-certificate-test-time.jpg){.award-image loading="lazy"}
 
 - **SIGEnergy Rising Star Award 2025** - Prof. Nipun Batra *(June 2025)*  
   *Citation: "For contributions to reproducible toolkits, scalable models, and uncertainty-aware approaches for practical energy disaggregation."*  
-  ![SIGEnergy Rising Star Award](images/awards/nipun-sigenergy.jpg){.award-image}
-  ![SIGEnergy Award Announcement](images/awards/screen-sigenergy.jpg){.award-image}
-  ![SIGEnergy Rising Star Certificate](images/awards/nipun-certificate-rising-star.jpg){.award-image}
+  ![SIGEnergy Rising Star Award](images/awards/nipun-sigenergy.jpg){.award-image loading="lazy"}
+  ![SIGEnergy Award Announcement](images/awards/screen-sigenergy.jpg){.award-image loading="lazy"}
+  ![SIGEnergy Rising Star Certificate](images/awards/nipun-certificate-rising-star.jpg){.award-image loading="lazy"}
 
 - **Excellence in Teaching Award** - Prof. Nipun Batra *(January 2025)*  
   *Citation: "Based on his contributions and achievements in teaching, as evidenced by students' feedback on his teaching, including outstanding organization and conduct of courses as well as the adoption of active learning strategies."*  
-  ![Excellence in Teaching Award 1](images/awards/nipun-teaching24.jpeg){.award-image}
-  ![Excellence in Teaching Award 2](images/awards/nipun-teaching24-2.jpeg){.award-image}
+  ![Excellence in Teaching Award 1](images/awards/nipun-teaching24.jpeg){.award-image loading="lazy"}
+  ![Excellence in Teaching Award 2](images/awards/nipun-teaching24-2.jpeg){.award-image loading="lazy"}
 
 - **Third Prize in Simply Speaking 4.0 Competition** - Shataxi Dubey *(January 2025)*  
   *Organized by Leadership Development Initiative, IITGN*  
-  ![Shataxi LDI Award](images/awards/shataxi-ldi.png){.award-image}
+  ![Shataxi LDI Award](images/awards/shataxi-ldi.png){.award-image loading="lazy"}
 
 - **Third Prize in Undergraduate Research Showcase** - Shrimay Shah and Dhruv Gupta *(January 2025)*  
   *Project: "Brick Kilns Detection and Compliance Study" (guided by Prof. Nipun Batra)*
@@ -43,23 +43,23 @@ toc: true
 - **Bhalodia-Khetan Summer Research Excellence Award** - Devodita Chakravarty  
   *Project: "ML for Sustainability: Satellite Data Preprocessing for Detecting Pollution Sources Using Computer Vision"*  
   *₹50,000 cash prize and Certificate of Excellence*  
-  ![Devodita Award 1](images/awards/devodita-1.png){.award-image}
-  ![Devodita Award 2](images/awards/devodita-3.png){.award-image}
+  ![Devodita Award 1](images/awards/devodita-1.png){.award-image loading="lazy"}
+  ![Devodita Award 2](images/awards/devodita-3.png){.award-image loading="lazy"}
 
 ### 2023
 - **Young Alumni Award** - Prof. Nipun Batra (November 2023)  
   *From IIIT Delhi* [[Link](https://x.com/nipun_batra/status/1702672278436135241)]  
-  ![Young Alumni Award 1](images/awards/nipun-ya1.jpeg){.award-image}
-  ![Young Alumni Award 2](images/awards/nipun-ya2.jpeg){.award-image}
-  ![Young Alumni Award 3](images/awards/nipun-ya3.jpeg){.award-image}
+  ![Young Alumni Award 1](images/awards/nipun-ya1.jpeg){.award-image loading="lazy"}
+  ![Young Alumni Award 2](images/awards/nipun-ya2.jpeg){.award-image loading="lazy"}
+  ![Young Alumni Award 3](images/awards/nipun-ya3.jpeg){.award-image loading="lazy"}
 
 - **UbiComp Gaetano Borriello Outstanding Student Award Finalist** - Rishiraj Adhikary  
   [[Details](https://ubicomp.org/sc/awards.html)]  
-  ![Rishiraj receiving UbiComp certificate](images/awards/rishiraj-ubicomp.JPG){.award-image}
+  ![Rishiraj receiving UbiComp certificate](images/awards/rishiraj-ubicomp.JPG){.award-image loading="lazy"}
 
 - **Gold Medal for Outstanding Research** - Ankita Jain  
   *IITGN Convocation 2023* [[Link](https://iitgn.ac.in/convocation/archives/2023/)]  
-  ![Ankita Gold Medal](images/awards/ankita-gm-2-3.png){.award-image}
+  ![Ankita Gold Medal](images/awards/ankita-gm-2-3.png){.award-image loading="lazy"}
 
 - **President's Gold Medal, MTech** - Ankita Jain  
   *IITGN Convocation 2023* [[Link](https://iitgn.ac.in/convocation/archives/2023/)]
@@ -83,7 +83,7 @@ toc: true
 - **Heidelberg Laureate Forum Selection** - Rishiraj Adhikary  
   *One of only 200 individuals worldwide selected to meet laureates from various fields, including Turing Award winners*  
   [[Details](https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html)]  
-  ![Rishiraj at HLF Poster Presentation](images/awards/rishiraj-hlf.jpg){.award-image}
+  ![Rishiraj at HLF Poster Presentation](images/awards/rishiraj-hlf.jpg){.award-image loading="lazy"}
 
 ### 2022
 - **Co-author in "Probabilistic Machine Learning: Advanced Topics"** - Zeel B Patel  

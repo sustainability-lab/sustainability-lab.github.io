@@ -64,7 +64,7 @@ toc: false
 
 <!-- Research Project Websites -->
 <div class="project-card" data-tags="computer-vision sustainability policy air-quality" data-type="research-project" data-year="2025">
-<img src="images/mainpage/space-to-policy.png" alt="Space to Policy Project" class="project-image">
+<img loading="lazy" src="images/mainpage/space-to-policy.png" alt="Space to Policy Project" class="project-image">
 <div class="project-content">
 <div class="project-type-badge">🔬 Research Project</div>
 <h3>Space to Policy: Brick Kiln Monitoring</h3>
@@ -83,7 +83,7 @@ toc: false
 </div>
 
 <div class="project-card" data-tags="health-sensing computer-vision" data-type="research-project" data-year="2024">
-<img src="images/mainpage/JoulesEye_1.png" alt="JoulesEye Project" class="project-image">
+<img loading="lazy" src="images/mainpage/JoulesEye_1.png" alt="JoulesEye Project" class="project-image">
 <div class="project-content">
 <div class="project-type-badge">🔬 Research Project</div>
 <h3>JoulesEye</h3>
@@ -100,7 +100,7 @@ toc: false
 </div>
 
 <div class="project-card" data-tags="air-quality nlp policy" data-type="research-project" data-year="2024">
-<img src="papers/2024/VayuBuddy_diagram.png" alt="VayuBuddy Project" class="project-image">
+<img loading="lazy" src="papers/2024/VayuBuddy_diagram.png" alt="VayuBuddy Project" class="project-image">
 <div class="project-content">
 <div class="project-type-badge">🔬 Research Project</div>
 <h3>VayuBuddy</h3>
@@ -118,7 +118,7 @@ toc: false
 </div>
 
 <div class="project-card" data-tags="health-sensing iot" data-type="research-project" data-year="2023">
-<img src="images/mainpage/SpiroMask.png" alt="SpiroMask Project" class="project-image">
+<img loading="lazy" src="images/mainpage/SpiroMask.png" alt="SpiroMask Project" class="project-image">
 <div class="project-content">
 <div class="project-type-badge">🔬 Research Project</div>
 <h3>SpiroMask</h3>
@@ -136,7 +136,7 @@ toc: false
 
 <!-- Key Toolkits -->
 <div class="project-card" data-tags="nilm machine-learning" data-type="toolkit" data-year="2014">
-<img src="papers/2014/ACM-energy14_NILMTK.png" alt="NILMTK Project" class="project-image">
+<img loading="lazy" src="papers/2014/ACM-energy14_NILMTK.png" alt="NILMTK Project" class="project-image">
 <div class="project-content">
 <div class="project-type-badge">🛠️ Toolkit</div>
 <h3>NILMTK</h3>
@@ -154,7 +154,7 @@ toc: false
 
 <!-- Key Datasets -->
 <div class="project-card" data-tags="air-quality dataset machine-learning" data-type="dataset" data-year="2023">
-<img src="papers/2023/airdelhi.png" alt="AirDelhi Dataset" class="project-image">
+<img loading="lazy" src="papers/2023/airdelhi.png" alt="AirDelhi Dataset" class="project-image">
 <div class="project-content">
 <div class="project-type-badge">📊 Dataset</div>
 <h3>AirDelhi</h3>
@@ -173,7 +173,7 @@ toc: false
 
 <!-- Key Expositions -->
 <div class="project-card" data-tags="machine-learning" data-type="exposition" data-year="2020">
-<img src="papers/2020/VisXAI20_Active_Learning.png" alt="Active Learning Exposition" class="project-image">
+<img loading="lazy" src="papers/2020/VisXAI20_Active_Learning.png" alt="Active Learning Exposition" class="project-image">
 <div class="project-content">
 <div class="project-type-badge">📚 Exposition</div>
 <h3>Active Learning: A Visual Tour</h3>
@@ -188,7 +188,7 @@ toc: false
 </div>
 
 <div class="project-card" data-tags="machine-learning" data-type="exposition" data-year="2020">
-<img src="papers/2020/Distil20_BayesOpt.png" alt="BayesOpt Exposition" class="project-image">
+<img loading="lazy" src="papers/2020/Distil20_BayesOpt.png" alt="BayesOpt Exposition" class="project-image">
 <div class="project-content">
 <div class="project-type-badge">📚 Exposition</div>
 <h3>Exploring Bayesian Optimization</h3>
@@ -204,7 +204,7 @@ toc: false
 
 <!-- Selected Publications -->
 <div class="project-card" data-tags="air-quality machine-learning" data-type="publication" data-year="2022">
-<img src="papers/2022/Scalable_GaussianProcesses.png" alt="Gaussian Processes Paper" class="project-image">
+<img loading="lazy" src="papers/2022/Scalable_GaussianProcesses.png" alt="Gaussian Processes Paper" class="project-image">
 <div class="project-content">
 <div class="project-type-badge">📄 Publication</div>
 <h3>Accurate and Scalable Gaussian Processes</h3>
@@ -221,7 +221,7 @@ toc: false
 </div>
 
 <div class="project-card" data-tags="air-quality nlp policy" data-type="publication" data-year="2022">
-<img src="papers/2022/compass-india.png" alt="Samachar Paper" class="project-image">
+<img loading="lazy" src="papers/2022/compass-india.png" alt="Samachar Paper" class="project-image">
 <div class="project-content">
 <div class="project-type-badge">📄 Publication</div>
 <h3>Samachar: Print News Media on Air Pollution</h3>
@@ -239,7 +239,7 @@ toc: false
 </div>
 
 <div class="project-card" data-tags="nilm machine-learning" data-type="publication" data-year="2022">
-<img src="papers/2022/I_Dont_Know.png" alt="NILM Uncertainty Paper" class="project-image">
+<img loading="lazy" src="papers/2022/I_Dont_Know.png" alt="NILM Uncertainty Paper" class="project-image">
 <div class="project-content">
 <div class="project-type-badge">📄 Publication</div>
 <h3>"I do not know": Quantifying Uncertainty in NILM</h3>
