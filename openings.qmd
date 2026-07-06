@@ -7,42 +7,6 @@ output:
     self_contained: false
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "JobPosting",
-  "title": "Project Associate-I — Brick Kiln Detection from Satellite Imagery",
-  "description": "ANRF-funded Project Associate-I position at Sustainability Lab, IIT Gandhinagar, building scalable AI and computer-vision models to detect brick kilns from Sentinel-2 satellite imagery for environmental compliance, under Prof. Nipun Batra.",
-  "datePosted": "2026-05-25",
-  "validThrough": "2026-06-22",
-  "employmentType": "FULL_TIME",
-  "hiringOrganization": {
-    "@type": "EducationalOrganization",
-    "name": "Sustainability Lab, IIT Gandhinagar",
-    "sameAs": "https://sustainability-lab.github.io"
-  },
-  "jobLocation": {
-    "@type": "Place",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Gandhinagar",
-      "addressRegion": "Gujarat",
-      "addressCountry": "IN"
-    }
-  },
-  "baseSalary": {
-    "@type": "MonetaryAmount",
-    "currency": "INR",
-    "value": {
-      "@type": "QuantitativeValue",
-      "minValue": 36000,
-      "maxValue": 44400,
-      "unitText": "MONTH"
-    }
-  }
-}
-</script>
-
 <style>
 body {
     font-family: 'Inter', sans-serif;
@@ -575,33 +539,6 @@ Interested candidates can write to Prof. Nipun Batra and apply through the offic
 <a href="https://anrfonline.in/ANRF/npdf?HomePage=New" target="_blank" class="btn btn-secondary">National Postdoc Fellowship</a>
 </div>
 
-### Project Associate & Research Fellow Positions
-
-<div class="position-card">
-<h3>Project Associate-I — Brick Kiln Detection from Satellite Imagery</h3>
-
-<div class="deadline-alert">
-<strong>APPLICATION DEADLINE (Extended):</strong> June 22, 2026
-</div>
-
-<p>Join the <strong>Sustainability Lab</strong> on an <strong>ANRF-funded Advanced Research Grant</strong> building scalable AI for environmental compliance. As a Project Associate-I, you will design and deploy machine-learning and deep-learning models that detect brick kilns and classify their technology (FCBK vs. Zigzag) from freely available <strong>Sentinel-2 satellite imagery</strong>, and turn those detections into compliance signals for policymakers. Brick kilns contribute 8–14% of PM2.5 emissions in the Indo-Gangetic Plain.</p>
-
-<p><strong>What you'll work on:</strong></p>
-<ul>
-<li>Scalable object detection & classification on Sentinel-2 imagery with CNN and transformer architectures (ResNet, EfficientNet, ViT, Swin)</li>
-<li>Geography-aware self-supervised / weakly-supervised pretraining on large satellite archives (SatMAE, GASSL, RemoteCLIP / GeoChat-style VLMs)</li>
-<li>Building a public benchmark dataset and an interactive LeafletJS dashboard for researchers and policymakers</li>
-<li>Open-source tooling and publishing at top ML / remote-sensing venues (NeurIPS, ICML, CVPR, IGARSS, RSE, ISPRS)</li>
-</ul>
-
-<div class="highlight-box">
-<strong>Details:</strong> Project Associate-I · 12-month appointment · ₹44,400/month (GATE/NET qualified) or ₹36,000/month (non-GATE/NET), including HRA. Open to four-year bachelor's or master's degrees in science, engineering, technology, or related fields — <strong>GATE/NET not mandatory</strong>. Comfort with Python and core ML/DL libraries (PyTorch, scikit-learn) preferred; object detection, segmentation, or remote-sensing experience is a plus.
-</div>
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSc-iW-oJf9d4Gu2z2FiXGf9bgdH9gNt7dQD_RFgmklNfB99TQ/viewform" target="_blank" class="btn btn-primary">Apply Now</a>
-<a href="https://drive.google.com/file/d/1N0ohyR5b1LJSGQM5W73bes_dEudrc74q/view" target="_blank" class="btn btn-secondary">View Details</a>
-</div>
-
 ### 6-Month Internships
 
 <div class="position-card">
@@ -773,6 +710,16 @@ Our lab culture emphasizes <strong>"less but better"</strong> - we focus on high
 <summary><strong>View Previous Research Positions</strong></summary>
 
 <div style="margin-top: 20px;">
+
+<div class="position-card">
+<h3>Project Associate-I — Brick Kiln Detection from Satellite Imagery</h3>
+
+<div class="deadline-alert">
+<strong>APPLICATION DEADLINE:</strong> June 22, 2026 (Closed)
+</div>
+
+<p>Closed position: ANRF-funded Project Associate-I in the <strong>Sustainability Lab</strong>, IIT Gandhinagar — building scalable AI and computer-vision models to detect brick kilns from Sentinel-2 satellite imagery for environmental compliance, under Prof. Nipun Batra.</p>
+</div>
 
 <div class="position-card">
 <h3>Project Associate - I (Position 1)</h3>

@@ -6,7 +6,7 @@ toc: false
 
 <div class="alumni-banner">
 <h3>Meet Our Extended Family</h3>
-<p>14 current researchers to 50+ global alumni making impact worldwide</p>
+<p>16 current researchers to 50+ global alumni making impact worldwide</p>
 <a href="alumni.qmd" class="alumni-btn">Meet Our 50+ Alumni</a>
 <a href="experiences.qmd" class="alumni-btn">Read Their Stories</a>
 </div>
@@ -38,7 +38,7 @@ toc: false
 <a href="https://ayushshrivstava.github.io/">
   <img loading="lazy" src="images/members/Ayush.jpg" class="cropped-image"><br/>
 </a>
-<span>Ayush Srivastava<br/>(Jul 2024 - present)<br/><em style="color: #334155; font-size: 0.85rem;">Health Sensing • Respiratory Monitoring</em></span>
+<span>Ayush Shrivastava<br/>(Jul 2024 - present)<br/><em style="color: #334155; font-size: 0.85rem;">Health Sensing • Respiratory Monitoring</em></span>
 
 <a href="">
   <img loading="lazy" src="images/members/Ujjwal.jpg" class="cropped-image"><br/>

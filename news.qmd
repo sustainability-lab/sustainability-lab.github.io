@@ -164,7 +164,7 @@ toc: false
 <div class="news-item category-paper" data-category="paper">
 <span class="news-date">Nov</span>
 <span class="news-icon">📄</span>
-<span class="news-content">Paper accepted at AAAI 2025</span>
+<span class="news-content">Paper accepted at AAAI 2026</span>
 </div>
 
 <div class="news-item category-paper" data-category="paper">
@@ -389,7 +389,7 @@ toc: false
 <div class="news-item category-talk" data-category="talk">
 <span class="news-date">Aug</span>
 <span class="news-icon">🎤</span>
-<span class="news-content">Zeel presented "Accurate and Scalable Non-Stationary GPs" at <a href="https://cstep.in/event-details.php?id=2042" target="_blank">ASIC</a>, Bangalore</span>
+<span class="news-content">Zeel presented "Accurate and Scalable Non-Stationary GPs" at <a href="https://cstep.in/" target="_blank">ASIC</a>, Bangalore</span>
 </div>
 
 <div class="news-item category-award" data-category="award">
@@ -438,7 +438,7 @@ toc: false
 <div class="news-item category-award" data-category="award">
 <span class="news-date">Nov</span>
 <span class="news-icon">🏆</span>
-<span class="news-content">Rishiraj wins <a href="https://www.usief.org.in/Fulbright-Nehru-Doctoral-Research-Fellowships.aspx" target="_blank">Fulbright-Nehru Doctoral Research Fellowship</a>!</span>
+<span class="news-content">Rishiraj wins <a href="https://www.usief.org.in/" target="_blank">Fulbright-Nehru Doctoral Research Fellowship</a>!</span>
 </div>
 
 <div class="news-item category-award" data-category="award">

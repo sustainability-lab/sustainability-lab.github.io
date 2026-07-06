@@ -847,7 +847,7 @@ Asia Using Satellite Imagery</p>
 <p>**[Best demo award]**</p>
 <a href="2014/batra_nilmtk_v2.pdf" class="paper-button">PDF</a>
 <a href="bibtex/nilmtk_v02_2014.bib" class="paper-button bibtex-btn" download>BibTeX</a>
-<a href="https://github.com/nilmtk/nilmtk/blob/master/notebooks/BuildSys_2014_demo.ipynb" class="paper-button">Demo</a>
+<a href="https://github.com/nilmtk/nilmtk" class="paper-button">Demo</a>
 <a href="../slides/2014/buildsys_2014_nilmtk_poster.pdf" class="paper-button">Poster</a>
 </div>
 </div>
