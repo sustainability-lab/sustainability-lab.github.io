@@ -300,6 +300,7 @@ body {
 <div class="phd-name">Dr. Rishiraj Adhikary</div>
 <div class="phd-duration">July 2019 - January 2025</div>
 <div style="color: #5a6070;">Our first PhD graduate! Specialized in health sensing and respiratory monitoring technologies. Winner of multiple prestigious awards including Fulbright-Nehru Fellowship. Now Postdoctoral Researcher at <span class="university">University of Cambridge</span> with Prof. Cecilia Mascolo.</div>
+<div style="margin-top: 8px;"><a href="experiences/rishiraj.qmd" style="color: var(--accent); font-weight: 600; font-size: 0.9rem; text-decoration: none;">Read Rishiraj's story: Shillong to Cambridge &rarr;</a></div>
 </div>
 </div>
 </div>
