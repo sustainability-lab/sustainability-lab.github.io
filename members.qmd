@@ -1,6 +1,6 @@
 ---
 title: Lab Members
-description: "Members of the Sustainability Lab, IIT Gandhinagar — PhD students, MTech researchers, and research fellows working on AI for sustainability under Prof. Nipun Batra."
+description-meta: "Members of the Sustainability Lab, IIT Gandhinagar — PhD students, MTech researchers, and research fellows working on AI for sustainability under Prof. Nipun Batra."
 toc: false
 ---
 

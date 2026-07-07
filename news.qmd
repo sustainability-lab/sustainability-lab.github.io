@@ -1,6 +1,6 @@
 ---
 title: News
-description: "Latest news from the Sustainability Lab, IIT Gandhinagar — publications, awards, and milestones in AI for sustainability."
+description-meta: "Latest news from the Sustainability Lab, IIT Gandhinagar — publications, awards, and milestones in AI for sustainability."
 toc: false
 ---
 

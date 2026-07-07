@@ -1,0 +1,132 @@
+---
+title: "Lab Handbook"
+toc: false
+description-meta: "The Sustainability Lab handbook — onboarding, how we work, and resources for members and prospective students at IIT Gandhinagar."
+---
+
+<p class="lab-handbook-intro">Everything you need to know about how the lab works — from what we expect of each other, to how we run meetings and write papers, to the compute and design resources you can use. New members start here; prospective students get a feel for life in the lab.</p>
+
+<style>
+.lab-handbook-intro {
+    font-size: 1.1rem;
+    color: #475569;
+    max-width: 760px;
+    margin: 0 0 28px 0;
+    line-height: 1.6;
+}
+.handbook-section-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 34px 0 14px 0;
+}
+.handbook-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
+.handbook-card {
+    display: block;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: inherit;
+    background: white;
+    transition: all 0.2s ease;
+}
+.handbook-card:hover {
+    border-color: #c44536;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+}
+.handbook-card h3 {
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0 0 6px 0;
+}
+.handbook-card p {
+    font-size: 0.92rem;
+    color: #64748b;
+    margin: 0;
+    line-height: 1.5;
+}
+.handbook-card .arrow { color: #c44536; font-weight: 600; }
+</style>
+
+<div class="handbook-section-title">Joining &amp; Onboarding</div>
+<div class="handbook-grid">
+
+<a class="handbook-card" href="expectations.qmd">
+<h3>Expectations</h3>
+<p>What we expect from lab members — and what you can expect from us.</p>
+</a>
+
+<a class="handbook-card" href="lab_culture.qmd">
+<h3>Lab Culture</h3>
+<p>Our values, norms, and how we collaborate day to day.</p>
+</a>
+
+<a class="handbook-card" href="technical-background.qmd">
+<h3>Technical Background</h3>
+<p>Prerequisites and the Research Skills Bootcamp to get up to speed.</p>
+</a>
+
+<a class="handbook-card" href="upskilling.qmd">
+<h3>Academic &amp; Research Skills</h3>
+<p>Communicating research, tooling, and skills to level up.</p>
+</a>
+
+</div>
+
+<div class="handbook-section-title">How We Work</div>
+<div class="handbook-grid">
+
+<a class="handbook-card" href="meetings.qmd">
+<h3>Meetings</h3>
+<p>Group, project, and individual meeting rhythms — and how to run them.</p>
+</a>
+
+<a class="handbook-card" href="reading.qmd">
+<h3>Reading Group</h3>
+<p>Papers we read and discuss together.</p>
+</a>
+
+<a class="handbook-card" href="writing-papers.qmd">
+<h3>Writing Papers</h3>
+<p>Structure, tips, and tools for writing strong papers.</p>
+</a>
+
+<a class="handbook-card" href="posters.qmd">
+<h3>Posters</h3>
+<p>Making effective research posters, with sample templates.</p>
+</a>
+
+<a class="handbook-card" href="latexify-plots.qmd">
+<h3>LaTeXify Plots</h3>
+<p>Turn matplotlib figures into publication-ready plots.</p>
+</a>
+
+</div>
+
+<div class="handbook-section-title">Resources &amp; Tools</div>
+<div class="handbook-grid">
+
+<a class="handbook-card" href="computational-resources.qmd">
+<h3>Lab Resources</h3>
+<p>GPUs, servers, and the computational infrastructure available to the lab.</p>
+</a>
+
+<a class="handbook-card" href="server.qmd">
+<h3>Server Policy</h3>
+<p>How to get access, etiquette, and fair usage of lab servers.</p>
+</a>
+
+<a class="handbook-card" href="design-kit.qmd">
+<h3>Design Kit</h3>
+<p>Logos, brand assets, and templates for talks and posters.</p>
+</a>
+
+</div>

@@ -1,5 +1,6 @@
 ---
-title: "Lab Memories"
+title: ""
+pagetitle: "Lab Memories | Sustainability Lab"
 toc: false
 lightbox: auto
 ---

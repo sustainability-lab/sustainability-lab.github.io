@@ -1,6 +1,7 @@
 ---
-title: Alumni
-description: "Alumni of the Sustainability Lab, IIT Gandhinagar — PhD, Master's and undergraduate researchers now at Cambridge, Microsoft Research, Google DeepMind, CMU, and leading companies worldwide."
+title: ""
+pagetitle: "Alumni | Sustainability Lab"
+description-meta: "Alumni of the Sustainability Lab, IIT Gandhinagar — PhD, Master's and undergraduate researchers now at Cambridge, Microsoft Research, Google DeepMind, CMU, and leading companies worldwide."
 toc: false
 output:
   html_document:

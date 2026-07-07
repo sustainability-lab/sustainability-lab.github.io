@@ -1,6 +1,6 @@
 ---
 title: Publications
-description: "Publications from the Sustainability Lab, IIT Gandhinagar — peer-reviewed research on AI for sustainability, energy disaggregation (NILM), air quality, health sensing, and Earth observation at venues including NeurIPS, KDD, AAAI, IMWUT, and BuildSys."
+description-meta: "Publications from the Sustainability Lab, IIT Gandhinagar — peer-reviewed research on AI for sustainability, energy disaggregation (NILM), air quality, health sensing, and Earth observation at venues including NeurIPS, KDD, AAAI, IMWUT, and BuildSys."
 ---
 
 ## Download Publications in Multiple Formats

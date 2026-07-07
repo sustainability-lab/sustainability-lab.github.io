@@ -1,6 +1,6 @@
 ---
 title: Media Coverage
-description: "Press and media coverage of Sustainability Lab research at IIT Gandhinagar — AI for air quality, energy, and health sensing."
+description-meta: "Press and media coverage of Sustainability Lab research at IIT Gandhinagar — AI for air quality, energy, and health sensing."
 toc: false
 ---
 
