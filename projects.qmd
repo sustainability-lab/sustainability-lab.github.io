@@ -7,7 +7,7 @@ toc: false
 
 <div class="projects-header">
 <h1>Projects & Research</h1>
-<p class="section-subtitle">Explore our work by research area, project type, or search for specific topics</p>
+<p class="section-subtitle">Explore our flagship projects, datasets, and toolkits below — or see our <a href="papers/index.html" style="color: var(--accent); font-weight: 600;">full list of publications</a>.</p>
 </div>
 
 <!-- Search and Filter Controls -->
@@ -63,6 +63,58 @@ toc: false
 
 <!-- Projects Grid -->
 <div class="projects-grid" id="projects-container">
+
+<!-- Recent flagship work -->
+<div class="project-card" data-tags="nilm machine-learning sustainability" data-type="publication" data-year="2026">
+<img loading="lazy" src="papers/2026/nilmbench2026.png" alt="NILMBench2026: A Benchmark for Energy Disaggregation" class="project-image">
+<div class="project-content">
+<div class="project-type-badge">📄 Publication</div>
+<h3>NILMBench2026: A Benchmark for Energy Disaggregation</h3>
+<p>A reproducible benchmark for energy disaggregation (NILM). 🏆 Best Paper Award Runner-Up at ACM BuildSys 2026 — led entirely by second-year undergraduates.</p>
+<div class="project-tags">
+<span class="tag nilm">NILM</span>
+<span class="tag machine-learning">Machine Learning</span>
+</div>
+<div class="project-links">
+<a href="papers/2026/nilmbench2026_buildsys.pdf" class="project-link primary">Paper →</a>
+<a href="papers/index.html" class="project-link secondary">Publications</a>
+</div>
+</div>
+</div>
+
+<div class="project-card" data-tags="health-sensing computer-vision machine-learning" data-type="publication" data-year="2026">
+<img loading="lazy" src="papers/2026/thermeval.png" alt="ThermEval: Benchmarking Vision-Language Models on Thermal Imagery" class="project-image">
+<div class="project-content">
+<div class="project-type-badge">📄 Publication</div>
+<h3>ThermEval: Benchmarking VLMs on Thermal Imagery</h3>
+<p>A structured benchmark for evaluating vision-language models (VLMs) on thermal imagery. Accepted at KDD 2026.</p>
+<div class="project-tags">
+<span class="tag health-sensing">Health Sensing</span>
+<span class="tag computer-vision">Computer Vision</span>
+</div>
+<div class="project-links">
+<a href="https://sustainability-lab.github.io/thermeval/" class="project-link primary">Project Page →</a>
+<a href="papers/index.html" class="project-link secondary">Publications</a>
+</div>
+</div>
+</div>
+
+<div class="project-card" data-tags="computer-vision sustainability policy" data-type="dataset" data-year="2025">
+<img loading="lazy" src="papers/2025/sentinelkilndb.png" alt="SentinelKilnDB: Brick Kiln Detection Dataset" class="project-image">
+<div class="project-content">
+<div class="project-type-badge">📊 Dataset</div>
+<h3>SentinelKilnDB: Brick Kiln Detection Dataset</h3>
+<p>A large-scale dataset and benchmark for oriented brick-kiln detection across South Asia from satellite imagery. NeurIPS 2025 Datasets &amp; Benchmarks Track.</p>
+<div class="project-tags">
+<span class="tag computer-vision">Computer Vision</span>
+<span class="tag sustainability">Sustainability</span>
+</div>
+<div class="project-links">
+<a href="https://sustainability-lab.github.io/sentinelkilndb/" class="project-link primary">Project Page →</a>
+<a href="https://www.kaggle.com/datasets/rishabhsnip/sentinelkiln-dataset" class="project-link secondary">Dataset</a>
+</div>
+</div>
+</div>
 
 <!-- Research Project Websites -->
 <div class="project-card" data-tags="computer-vision sustainability policy air-quality" data-type="research-project" data-year="2025">
