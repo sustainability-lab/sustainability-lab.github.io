@@ -4,6 +4,7 @@ project:
   resources:
     - images/**  # Ensures all images are copied
     - events/acm-summer-2025/
+    - nilmbench/
 
 website:
   title: "Sustainability Lab"
