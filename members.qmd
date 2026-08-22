@@ -88,15 +88,14 @@ toc: false
 
 ::: {layout-ncol=4}
 <a href="">
-  <img loading="lazy" src="images/members/Kirtan.jpg" class="cropped-image" alt="Photo of Kirtan Gangani"><br/>
-</a>
-<span>Kirtan Gangani<br/>(Aug 2025 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Smart Energy • Time-Series Analysis</em></span>
+  <img loading="lazy" src="images/members/Avantika_Agarwal.jpeg" class="cropped-image" alt="Photo of Avantika Agarwal"><br/>
+<span>Avantika Agarwal<br/>(2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Machine Learning • Deep Learning • NLP • Computer Vision • Sustainability & Climate Tech • AI for Social Impact</em></span>
 
-<img loading="lazy" src="images/members/deena.jpg" class="cropped-image" alt="Photo of Deena Lad"><br/>
-<span>Deena Lad<br/>(Sep 2025 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Environmental Modelling • Research Methods</em></span>
+<img loading="lazy" src="images/members/Thejas_TG.jpeg" class="cropped-image" alt="Photo of Thejas T G"><br/>
+<span>Thejas T G<br/>(Jun 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Computer Vision • Earth Observations</em></span>
 
-<img loading="lazy" src="images/members/Vaibhavi.jpg" class="cropped-image" alt="Photo of Vaibhavi Tiwari"><br/>
-<span>Vaibhavi Tiwari<br/>(Feb 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">AI • Machine Learning</em></span>
+<img loading="lazy" src="images/members/Vivek_Kumar.jpeg" class="cropped-image" alt="Photo of Vivek Kumar"><br/>
+<span>Vivek Kumar<br/>(Jul 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">AI & Optimization • Applied Machine Learning • Quantitative Research</em></span>
 :::
 
 <div class="compact-section">
