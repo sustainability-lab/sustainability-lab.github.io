@@ -435,6 +435,26 @@ body {
 
 <div class="alumni-list">
 <div class="alumni-item">
+<div class="alumni-name">Abhay Pisharodi (2026)</div>
+<div class="alumni-details">Associate AI Engineer at <span class="company">Sahana System Ltd.</span></div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">Abhyudaya Nair (2026)</div>
+<div class="alumni-details">Samsung R&D Intern</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">Diya Thakor (2026)</div>
+<div class="alumni-details">Samsung R&D Intern</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">Vinayak Rana (2026)</div>
+<div class="alumni-details">Samsung R&D Engineer</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">Suruchi Hardaha (2026)</div>
+<div class="alumni-details">SW Engineer at <span class="company">Qualcomm</span></div>
+</div>
+<div class="alumni-item">
 <div class="alumni-name">Poornima Bhatia (2025)</div>
 <div class="alumni-details">MTech Graduate • Accessibility Research</div>
 </div>
