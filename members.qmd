@@ -57,21 +57,6 @@ toc: false
 ::: {layout-ncol=4}
 
 
-<img loading="lazy" src="images/members/Abhay.jpg" class="cropped-image" alt="Photo of Abhay Pisharodi"><br/>
-<span>Abhay Pisharodi<br/>(Jul 2024 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">LLMs • Reasoning • Air Quality</em></span>
-
-<img loading="lazy" src="images/members/Abhyudaya.jpg" class="cropped-image" alt="Photo of Abhyudaya Nair"><br/>
-<span>Abhyudaya Nair<br/>(Jul 2024 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Health Sensing • Respiratory Monitoring</em></span>
-
-<img loading="lazy" src="images/members/Diya.png" class="cropped-image" alt="Photo of Diya Thakor"><br/>
-<span>Diya Thakor<br/>(Jul 2024 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">LLMs • Air Quality</em></span>
-
-<img loading="lazy" src="images/members/Vinayak.jpg" class="cropped-image" alt="Photo of Vinayak Rana"><br/>
-<span>Vinayak Rana<br/>(Jul 2024 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Air Quality • Active Learning</em></span>
-
-<img loading="lazy" src="images/members/Suruchi.jpg" class="cropped-image" alt="Photo of Suruchi Hardaha"><br/>
-<span>Suruchi Hardaha<br/>(Jul 2024 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Computer Vision • Self-Supervised Learning</em></span>
-
 <img loading="lazy" src="images/members/Parv.jpg" class="cropped-image" alt="Photo of Parv Thecker"><br/>
 <span>Parv Thecker<br/>(Jul 2025 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Healthcare • IoT • Computer Vision</em></span>
 
@@ -86,6 +71,21 @@ toc: false
 
 <img loading="lazy" src="images/members/Zayed.jpg" class="cropped-image" alt="Photo of Zayed Mudassir"><br/>
 <span>Zayed Mudassir<br/>(Jul 2025 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">VLM • Computer Vision</em></span>
+
+<img loading="lazy" src="images/members/Sanjana.jpg" class="cropped-image" alt="Photo of Sanjana Mehta"><br/>
+<span>Sanjana Mehta<br/>(August 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Healthcare • Computer Vision • LLM • Federated Learning</em></span>
+
+<img loading="lazy" src="images/members/Jheel.jpg" class="cropped-image" alt="Photo of Jheel Jhala"><br/>
+<span>Jheel Jhala<br/>(August 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Machine Learning • Computer Vision • Sensing</em></span>
+
+<img loading="lazy" src="images/members/Ojas.jpg" class="cropped-image" alt="Photo of Ojas Gupta"><br/>
+<span>Ojas Gupta<br/>(August 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Optimization of DL Algorithms • MLMS • QML</em></span>
+
+<img loading="lazy" src="images/members/Tashif.jpg" class="cropped-image" alt="Photo of Syed Mohd Tashif"><br/>
+<span>Syed Mohd Tashif<br/>(August 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Explainable AI • LLMs • VLMs</em></span>
+
+<img loading="lazy" src="images/members/Anant.jpg" class="cropped-image" alt="Photo of Anant Khandelwal"><br/>
+<span>Anant Khandelwal<br/>(August 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Generative AI AI • LLMs • AI Development</em></span>
 :::
 
 ## Research Fellows
