@@ -79,13 +79,13 @@ toc: false
 <span>Jheel Jhala<br/>(August 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Machine Learning • Computer Vision • Sensing</em></span>
 
 <img loading="lazy" src="images/members/Ojas.jpg" class="cropped-image" alt="Photo of Ojas Gupta"><br/>
-<span>Ojas Gupta<br/>(August 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Optimization of DL Algorithms • MLMS • QML</em></span>
+<span>Ojas Gupta<br/>(August 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Optimization of DL Algorithms • MLMs • QML</em></span>
 
 <img loading="lazy" src="images/members/Tashif.jpg" class="cropped-image" alt="Photo of Syed Mohd Tashif"><br/>
 <span>Syed Mohd Tashif<br/>(August 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Explainable AI • LLMs • VLMs</em></span>
 
 <img loading="lazy" src="images/members/Anant.jpg" class="cropped-image" alt="Photo of Anant Khandelwal"><br/>
-<span>Anant Khandelwal<br/>(August 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Generative AI AI • LLMs • AI Development</em></span>
+<span>Anant Khandelwal<br/>(August 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Generative AI • LLMs • AI Development</em></span>
 :::
 
 ## Research Fellows
