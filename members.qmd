@@ -46,6 +46,10 @@ toc: false
 </a>
 <span>Ujjwal K. Gupta<br/>(Jul 2024 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Satellite Data • Machine Learning</em></span>
 
+<img loading="lazy" src="images/members/Durgesh_Mishra.jpeg" class="cropped-image" alt="Photo of Durgesh Mishra"><br/>
+</a>
+<span>Durgesh Mishra<br/>(Aug 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Machine Learning • Computer Vision • AI for Science</em></span>
+
 :::
 
 ## MTech
