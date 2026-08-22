@@ -87,7 +87,7 @@ toc: false
 ## Research Fellows
 
 ::: {layout-ncol=4}
-<a href="">
+
   <img loading="lazy" src="images/members/Avantika_Agarwal.jpeg" class="cropped-image" alt="Photo of Avantika Agarwal"><br/>
 <span>Avantika Agarwal<br/>(2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Machine Learning • Deep Learning • NLP • Computer Vision • Sustainability & Climate Tech • AI for Social Impact</em></span>
 
