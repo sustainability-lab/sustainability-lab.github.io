@@ -46,6 +46,10 @@ toc: false
 </a>
 <span>Ujjwal K. Gupta<br/>(Jul 2024 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Satellite Data • Machine Learning</em></span>
 
+<img loading="lazy" src="images/members/Durgesh_Mishra.jpeg" class="cropped-image" alt="Photo of Durgesh Mishra"><br/>
+</a>
+<span>Durgesh Mishra<br/>(Aug 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Machine Learning • Computer Vision • AI for Science</em></span>
+
 :::
 
 ## MTech
@@ -75,28 +79,27 @@ toc: false
 <span>Jheel Jhala<br/>(August 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Machine Learning • Computer Vision • Sensing</em></span>
 
 <img loading="lazy" src="images/members/Ojas.jpg" class="cropped-image" alt="Photo of Ojas Gupta"><br/>
-<span>Ojas Gupta<br/>(August 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Optimization of DL Algorithms • MLMS • QML</em></span>
+<span>Ojas Gupta<br/>(August 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Optimization of DL Algorithms • MLMs • QML</em></span>
 
 <img loading="lazy" src="images/members/Tashif.jpg" class="cropped-image" alt="Photo of Syed Mohd Tashif"><br/>
 <span>Syed Mohd Tashif<br/>(August 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Explainable AI • LLMs • VLMs</em></span>
 
 <img loading="lazy" src="images/members/Anant.jpg" class="cropped-image" alt="Photo of Anant Khandelwal"><br/>
-<span>Anant Khandelwal<br/>(August 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Generative AI AI • LLMs • AI Development</em></span>
+<span>Anant Khandelwal<br/>(August 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Generative AI • LLMs • AI Development</em></span>
 :::
 
 ## Research Fellows
 
 ::: {layout-ncol=4}
-<a href="">
-  <img loading="lazy" src="images/members/Kirtan.jpg" class="cropped-image" alt="Photo of Kirtan Gangani"><br/>
-</a>
-<span>Kirtan Gangani<br/>(Aug 2025 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Smart Energy • Time-Series Analysis</em></span>
 
-<img loading="lazy" src="images/members/deena.jpg" class="cropped-image" alt="Photo of Deena Lad"><br/>
-<span>Deena Lad<br/>(Sep 2025 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Environmental Modelling • Research Methods</em></span>
+  <img loading="lazy" src="images/members/Avantika_Agarwal.jpeg" class="cropped-image" alt="Photo of Avantika Agarwal"><br/>
+<span>Avantika Agarwal<br/>(2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Machine Learning • Deep Learning • NLP • Computer Vision • Sustainability & Climate Tech • AI for Social Impact</em></span>
 
-<img loading="lazy" src="images/members/Vaibhavi.jpg" class="cropped-image" alt="Photo of Vaibhavi Tiwari"><br/>
-<span>Vaibhavi Tiwari<br/>(Feb 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">AI • Machine Learning</em></span>
+<img loading="lazy" src="images/members/Thejas_TG.jpeg" class="cropped-image" alt="Photo of Thejas T G"><br/>
+<span>Thejas T G<br/>(Jun 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Computer Vision • Earth Observations</em></span>
+
+<img loading="lazy" src="images/members/Vivek_Kumar.jpeg" class="cropped-image" alt="Photo of Vivek Kumar"><br/>
+<span>Vivek Kumar<br/>(Jul 2026 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">AI & Optimization • Applied Machine Learning • Quantitative Research</em></span>
 :::
 
 <div class="compact-section">

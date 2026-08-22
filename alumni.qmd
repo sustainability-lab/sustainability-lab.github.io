@@ -493,6 +493,18 @@ body {
 <h2>Research Associates & Interns</h2>
 
 <h3>Research Assistants</h3>
+<div class="alumni-item">
+<div class="alumni-name">Kirtan Gangani</div>
+<div class="alumni-details">Research Fellow</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">Deena Lad</div>
+<div class="alumni-details">PhD student at IIT Bombay</div>
+</div>
+<div class="alumni-item">
+<div class="alumni-name">Vaibhavi Tiwari</div>
+<div class="alumni-details">Research Fellow</div>
+</div>
 <div class="alumni-list">
 <div class="alumni-item">
 <div class="alumni-name">Tanu Tiwari (2025)</div>
