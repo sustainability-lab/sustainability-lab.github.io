@@ -1,15 +1,10 @@
 ---
-
 title: "Learning to Start from the Basics: My Journey at Sustainability Lab"
 author: "Aadya Arora"
 date: "2024-07-25"
 ---
 
-# Learning to Start from the Basics: My Journey at Sustainability Lab
-
-I am Aadya Arora. I am currently a PhD student at The Johns Hopkins University. Working at the Sustainability Lab in my third year taught me one of the most important things I have learnt about research: start from the basics.
-
-## Starting from the Basics
+### Starting from the Basics
 
 Before joining the lab, I had already worked on a couple of projects in different research labs, so initially my approach was to directly think about how I could improve something. I started with the idea of improving the interpretability of Vision Language Models (VLMs) on thermal imagery.
 
@@ -19,7 +14,7 @@ This analysis gave us some really interesting insights and eventually led me to 
 
 Today, most things are built on top of increasingly complex architectures, and it is very easy to jump directly to a complicated solution. But sometimes, going back to the basics and asking “why?” can lead to much better ideas.
 
-## The Importance of Being Punctual
+### The Importance of Being Punctual
 
 I also learnt how important it is to be punctual with a project. Research moves very fast today, and it is important to keep making progress and finish things on time. There is always a chance that someone else might independently think of a similar idea.
 
@@ -27,7 +22,7 @@ When I first joined the lab, I used to sulk at the idea of having weekly meeting
 
 When there is a big gap between deadlines, we tend to forget what we did, what we tried, and even what we were thinking at that point. Weekly meetings helped keep the flow of the project and made sure we always had something to work towards.
 
-## The Importance of Documentation
+### The Importance of Documentation
 
 One thing I have tried to carry forward from the lab is the way Nipun sir organised everything.
 
@@ -35,7 +30,7 @@ Every part of the project was well documented, whether it was an experiment, a S
 
 Having everything documented also makes it much easier to go back and understand why certain decisions were made.
 
-## Lessons for Research
+### Lessons for Research
 
 Overall, the Sustainability Lab changed the way I approach research.
 
