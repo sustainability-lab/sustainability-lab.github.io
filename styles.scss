@@ -1065,6 +1065,26 @@ div.hero-section h1 {
     display: block;
 }
 
+/* Single-photo memories work better as complete, centered feature frames. */
+.photo-grid.photo-grid-feature {
+    grid-template-columns: minmax(0, 560px);
+    justify-content: center;
+}
+
+.photo-grid.photo-grid-feature .photo-card {
+    height: auto;
+}
+
+.photo-grid.photo-grid-feature .photo-card img {
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+.photo-grid.photo-grid-feature.photo-grid-portrait {
+    grid-template-columns: minmax(0, 380px);
+}
+
 .photo-info {
     padding: 16px;
     flex: 1;
@@ -1202,4 +1222,3 @@ div.hero-section h1 {
         display: block;
     }
 }
-  

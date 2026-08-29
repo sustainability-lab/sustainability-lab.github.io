@@ -171,7 +171,7 @@ description="PhD Defence Celebration - Celebrating Dr. Rishiraj's successful PhD
 
 <div class="month-section">
 <h3 class="month-header">December 2024</h3>
-<div class="photo-grid">
+<div class="photo-grid photo-grid-feature">
 
 <div class="photo-card">
 ![Alumni homecoming meetup with former lab members](images/memories/2024-dec-alum-meet.jpg){group="memories" loading="lazy"
@@ -188,7 +188,7 @@ description="Alumni Homecoming 2024 - A heartwarming reunion with our alumni who
 
 <div class="month-section">
 <h3 class="month-header">July 2024</h3>
-<div class="photo-grid">
+<div class="photo-grid photo-grid-feature">
 
 <div class="photo-card">
 ![Sustainability Lab team at ACM Compass 2024 conference](images/memories/compass24.jpg){group="memories" loading="lazy"
@@ -406,7 +406,7 @@ description="Celebration Cake - A special cake celebration organized by the batc
 
 <div class="month-section">
 <h3 class="month-header">July 2022</h3>
-<div class="photo-grid">
+<div class="photo-grid photo-grid-feature">
 
 <div class="photo-card">
 ![Subset of 2022 batch alumni group photo](images/memories/2022-group-subset.jpg){group="memories" loading="lazy"
@@ -427,7 +427,7 @@ description="Batch of 2022 Alumni - A cherished photo with a subset of our 2022 
 
 <div class="month-section">
 <h3 class="month-header">December 2021</h3>
-<div class="photo-grid">
+<div class="photo-grid photo-grid-feature">
 
 <div class="photo-card">
 ![Team celebrating AAAI paper acceptance](images/memories/2021-AAAI.jpg){group="memories" loading="lazy"
@@ -444,7 +444,7 @@ description="AAAI Paper Acceptance Celebration - Celebrating the acceptance of o
 
 <div class="month-section">
 <h3 class="month-header">November 2021</h3>
-<div class="photo-grid">
+<div class="photo-grid photo-grid-feature photo-grid-portrait">
 
 <div class="photo-card">
 ![Apoorv's return visit to campus with Rishiraj and Zeel](images/memories/2021-Nov-Apoorv.jpg){group="memories" loading="lazy"
