@@ -1,0 +1,44 @@
+---
+
+title: "Learning to Start from the Basics: My Journey at Sustainability Lab"
+author: "Aadya Arora"
+date: "2024-07-25"
+---
+
+# Learning to Start from the Basics: My Journey at Sustainability Lab
+
+I am Aadya Arora. I am currently a PhD student at The Johns Hopkins University. Working at the Sustainability Lab in my third year taught me one of the most important things I have learnt about research: start from the basics.
+
+## Starting from the Basics
+
+Before joining the lab, I had already worked on a couple of projects in different research labs, so initially my approach was to directly think about how I could improve something. I started with the idea of improving the interpretability of Vision Language Models (VLMs) on thermal imagery.
+
+But Nipun sir pushed me to first understand what was actually happening. Instead of immediately thinking about a solution, we started by analysing where the VLM was looking in the thermal image when given a particular query.
+
+This analysis gave us some really interesting insights and eventually led me to think of a solution that was quite different from what I had initially imagined. This made me realise how important it is to understand a problem properly before trying to solve it.
+
+Today, most things are built on top of increasingly complex architectures, and it is very easy to jump directly to a complicated solution. But sometimes, going back to the basics and asking “why?” can lead to much better ideas.
+
+## The Importance of Being Punctual
+
+I also learnt how important it is to be punctual with a project. Research moves very fast today, and it is important to keep making progress and finish things on time. There is always a chance that someone else might independently think of a similar idea.
+
+When I first joined the lab, I used to sulk at the idea of having weekly meetings. But I slowly realised how important they are in keeping the project moving.
+
+When there is a big gap between deadlines, we tend to forget what we did, what we tried, and even what we were thinking at that point. Weekly meetings helped keep the flow of the project and made sure we always had something to work towards.
+
+## The Importance of Documentation
+
+One thing I have tried to carry forward from the lab is the way Nipun sir organised everything.
+
+Every part of the project was well documented, whether it was an experiment, a Streamlit demo, a result, or a presentation. These things can feel small while you are working on the project, but they help a lot later when you are writing a paper or preparing the final presentation.
+
+Having everything documented also makes it much easier to go back and understand why certain decisions were made.
+
+## Lessons for Research
+
+Overall, the Sustainability Lab changed the way I approach research.
+
+I learnt that research is not always about immediately finding a solution. It is about taking a step back, understanding the problem, asking why, and then figuring out what actually needs to be done.
+
+And along with the research itself, being consistent, punctual and organised can make a huge difference to the entire process.
