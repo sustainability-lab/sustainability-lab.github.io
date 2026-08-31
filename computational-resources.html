@@ -216,6 +216,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#computational-resources" id="toc-computational-resources" class="nav-link active" data-scroll-target="#computational-resources">Computational Resources</a>
   <ul class="collapse">
   <li><a href="#servers" id="toc-servers" class="nav-link" data-scroll-target="#servers">Servers</a></li>
+  <li><a href="#compact-ai-system" id="toc-compact-ai-system" class="nav-link" data-scroll-target="#compact-ai-system">Compact AI System</a></li>
   <li><a href="#workstations" id="toc-workstations" class="nav-link" data-scroll-target="#workstations">Workstations</a></li>
   <li><a href="#relative-performance" id="toc-relative-performance" class="nav-link" data-scroll-target="#relative-performance">Relative Performance</a></li>
   </ul></li>
@@ -395,6 +396,94 @@ Total VRAM
 | GPU | NVIDIA RTX A4000 (16Gb) |
 | Number of GPUs | 2     | -->
 </section>
+<section id="compact-ai-system" class="level3">
+<h3 class="anchored" data-anchor-id="compact-ai-system">Compact AI System</h3>
+<p>Our NVIDIA DGX Spark is named <strong>Mani</strong> (मणि), after <a href="https://public.wmo.int/media/news/celebrating-pioneer-indian-meteorologist-anna-mani">Anna Mani</a>, the pioneering Indian physicist and meteorologist whose work on solar-radiation and wind-energy measurement closely reflects the lab’s sustainability focus. The DGX Spark is a compact Arm64 AI system-on-chip rather than a conventional x86 server or discrete-GPU workstation, so we list it separately.</p>
+<p>Watch the four-minute India Science profile, <a href="https://www.youtube.com/watch?v=YkCtkZ4QwWo"><em>Anna Mani: The Pioneer Indian Meteorologist</em></a>.</p>
+<table style="width:75%;">
+<tbody><tr>
+<th style="width:25%;">
+</th>
+<th style="width:50%;">
+Mani
+</th>
+</tr>
+<tr>
+<td>
+System
+</td>
+<td>
+NVIDIA DGX Spark
+</td>
+</tr>
+<tr>
+<td>
+Processor
+</td>
+<td>
+NVIDIA GB10 Grace Blackwell Superchip
+</td>
+</tr>
+<tr>
+<td>
+CPU
+</td>
+<td>
+20-core Arm (10 x Cortex-X925 + 10 x Cortex-A725)
+</td>
+</tr>
+<tr>
+<td>
+GPU
+</td>
+<td>
+Integrated NVIDIA Blackwell GPU (6,144 CUDA cores)
+</td>
+</tr>
+<tr>
+<td>
+Unified memory
+</td>
+<td>
+128 GB LPDDR5x shared coherently by CPU and GPU
+</td>
+</tr>
+<tr>
+<td>
+Memory bandwidth
+</td>
+<td>
+273 GB/s
+</td>
+</tr>
+<tr>
+<td>
+Storage
+</td>
+<td>
+4 TB NVMe M.2
+</td>
+</tr>
+<tr>
+<td>
+AI tensor performance
+</td>
+<td>
+Up to 1 PFLOP at FP4 with sparsity (theoretical peak)
+</td>
+</tr>
+<tr>
+<td>
+Power
+</td>
+<td>
+140 W GB10 TDP; 240 W power supply
+</td>
+</tr>
+</tbody></table>
+<p><strong>Memory and performance note.</strong> Mani’s 128 GB is coherent unified system memory shared by the CPU, integrated GPU, operating system, and applications; it is <strong>not 128 GB of dedicated VRAM</strong>. This gives a single GPU workload more addressable memory than any one GPU currently listed, which is especially useful for fitting large AI models, but less than 128 GB is available in practice. Ramanujan also retains more aggregate dedicated GPU memory (320 GB across four A100s). Memory capacity is not a speed rating: Mani’s integrated GPU, 273 GB/s LPDDR5x bandwidth, Arm64 software requirements, and compact power envelope make it materially different from the discrete x86/GPU systems. Hardware figures follow <a href="https://docs.nvidia.com/dgx/dgx-spark/hardware.html">NVIDIA’s DGX Spark specifications</a>.</p>
+<p><br></p>
+</section>
 <section id="workstations" class="level3">
 <h3 class="anchored" data-anchor-id="workstations">Workstations</h3>
 <p>Our workstations are named after Indian scientists: <strong>Aryabhata</strong> (आर्यभट), well-known for the concept of zero (शून्य) and the place value system, and <strong>Vikram</strong>.</p>
@@ -480,9 +569,12 @@ Total VRAM
 </section>
 <section id="relative-performance" class="level3">
 <h3 class="anchored" data-anchor-id="relative-performance">Relative Performance</h3>
-<p>Measured with our open <a href="https://github.com/nipunbatra/gpu-benchmark-suite">gpu-benchmark-suite</a> — the same Docker-based workloads on every machine, grouped into <strong>raw compute</strong>, <strong>training</strong>, <strong>inference</strong>, and <strong>data-loading</strong> so the numbers are directly comparable.</p>
-<p><img src="images/benchmarks.svg" width="100%" loading="lazy" alt="Benchmark comparison of the lab's GPU compute resources"></p>
-<table>
+<p>Measured with our open <a href="https://github.com/nipunbatra/gpu-benchmark-suite">gpu-benchmark-suite</a> using the same workload definitions on every machine, grouped into <strong>raw compute</strong>, <strong>training</strong>, <strong>inference</strong>, and <strong>data-loading</strong>. Mani’s results were measured on 31 August 2026 with the current GB10-compatible Arm64 stack (NVIDIA PyTorch 25.11 and CUDA 13.0); the earlier machines used NVIDIA PyTorch 24.03 and CUDA 12.4. Its results are therefore a useful workload-level comparison, but not a strict common-software-stack comparison. These workloads fit within 12 GB, so they measure speed rather than Mani’s distinctive ability to fit much larger models in its 128 GB unified-memory pool.</p>
+<div style="overflow-x:auto;">
+<p><img src="images/benchmarks.svg" style="width:100%; min-width:720px;" loading="lazy" alt="Benchmark comparison of the lab's GPU compute resources"></p>
+</div>
+<div style="overflow-x:auto;">
+<table style="min-width:850px;">
 <tbody><tr>
 <th>
 Benchmark
@@ -501,6 +593,9 @@ Aryabhata
 </th>
 <th>
 Vikram
+</th>
+<th>
+Mani
 </th>
 </tr>
 <tr>
@@ -522,6 +617,9 @@ TITAN Xp
 <td>
 RTX A2000
 </td>
+<td>
+GB10 (integrated Blackwell)
+</td>
 </tr>
 <tr>
 <td>
@@ -541,6 +639,9 @@ Raw compute (TFLOPS, fp16)
 </td>
 <td>
 26.4
+</td>
+<td>
+96.2
 </td>
 </tr>
 <tr>
@@ -562,6 +663,9 @@ Training — ResNet50 (img/s)
 <td>
 304.5
 </td>
+<td>
+345.0
+</td>
 </tr>
 <tr>
 <td>
@@ -581,6 +685,9 @@ Inference — ResNet50 (img/s)
 </td>
 <td>
 522.7
+</td>
+<td>
+614.1
 </td>
 </tr>
 <tr>
@@ -602,6 +709,9 @@ Inference — detection (FPS)
 <td>
 19.0
 </td>
+<td>
+19.3
+</td>
 </tr>
 <tr>
 <td>
@@ -622,6 +732,9 @@ Inference — LLM gen (tok/s)
 <td>
 71.7
 </td>
+<td>
+25.5
+</td>
 </tr>
 <tr>
 <td>
@@ -637,14 +750,18 @@ Data loading (img/s)
 957.6
 </td>
 <td>
-<b>4805.0</b>
+4805.0
 </td>
 <td>
 4413.1
 </td>
+<td>
+<b>5297.3</b>
+</td>
 </tr>
 </tbody></table>
-<p>Raw compute (TFLOPS) and training throughput track the GPUs’ real power most reliably — the A100 leads everywhere it matters. Small-batch inference (LLM tokens/sec, detection FPS) is latency-bound, so it can look flat on large GPUs and varies with concurrent load. Numbers are point-in-time, single-GPU measurements; the TITAN Xp’s LLM generation is omitted as its older (Pascal) architecture is impractically slow at FP16 generation.</p>
+</div>
+<p>Raw compute (TFLOPS) and training throughput track the GPUs’ real power most reliably — the A100 leads the GPU workloads overall, while Mani places second in measured FP16 matrix throughput. Small-batch inference (LLM tokens/sec, detection FPS) is latency-bound, so it can look flat on large GPUs and varies with concurrent load. Data loading primarily reflects the CPU, NVMe storage, and software pipeline rather than GPU performance. Numbers are point-in-time, single-GPU measurements; the TITAN Xp’s LLM generation is omitted as its older (Pascal) architecture is impractically slow at FP16 generation.</p>
 </section>
 </section>
 <section id="server-policy" class="level2">
