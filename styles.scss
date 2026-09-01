@@ -1222,3 +1222,76 @@ div.hero-section h1 {
         display: block;
     }
 }
+
+/* Interactive benchmark chart */
+.benchmark-chart {
+    margin: 1.4rem 0 1.6rem;
+}
+
+.benchmark-chart-scroll,
+.benchmark-table-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-color: rgba(90, 96, 112, 0.45) transparent;
+}
+
+.benchmark-chart-scroll {
+    padding-bottom: 0.35rem;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: var(--paper);
+}
+
+.benchmark-chart-object {
+    display: block;
+    width: 100%;
+    min-width: 720px;
+    height: auto;
+    aspect-ratio: 960 / 1350;
+    border: 0;
+}
+
+.benchmark-chart figcaption {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.55rem 1.25rem;
+    margin-top: 0.7rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.benchmark-chart figcaption > span:first-child {
+    max-width: 68ch;
+}
+
+.benchmark-chart-links {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.45rem 1rem;
+    white-space: nowrap;
+}
+
+.benchmark-chart-links a {
+    font-weight: 600;
+    text-underline-offset: 0.18em;
+}
+
+@media (max-width: 768px) {
+    .benchmark-chart-object {
+        min-width: 720px;
+    }
+
+    .benchmark-chart figcaption {
+        display: block;
+    }
+
+    .benchmark-chart-links {
+        display: flex;
+        margin-top: 0.45rem;
+        white-space: normal;
+    }
+}

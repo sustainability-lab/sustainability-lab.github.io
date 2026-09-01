@@ -204,12 +204,25 @@ Our workstations are named after Indian scientists: **Aryabhata** (आर्य�
 
 Measured with our open [gpu-benchmark-suite](https://github.com/nipunbatra/gpu-benchmark-suite) using the same workload definitions on every machine, grouped into **raw compute**, **training**, **inference**, and **data-loading**. Mani's results were measured on 31 August 2026 with the current GB10-compatible Arm64 stack (NVIDIA PyTorch 25.11 and CUDA 13.0); the earlier machines used NVIDIA PyTorch 24.03 and CUDA 12.4. Its results are therefore a useful workload-level comparison, but not a strict common-software-stack comparison. These workloads fit within 12 GB, so they measure speed rather than Mani's distinctive ability to fit much larger models in its 128 GB unified-memory pool.
 
-<div style="overflow-x:auto;">
-<img src="images/benchmarks.svg" style="width:100%; min-width:720px;" loading="lazy" alt="Benchmark comparison of the lab's GPU compute resources">
+```{=html}
+<figure class="benchmark-chart">
+<div class="benchmark-chart-scroll" role="region" aria-label="Interactive GPU benchmark chart; scroll horizontally on small screens" tabindex="0">
+<object class="benchmark-chart-object" data="/images/benchmarks.svg" type="image/svg+xml" role="document" title="Interactive comparison of Sustainability Lab GPU benchmarks" aria-describedby="benchmark-chart-caption" width="960" height="1350">
+<a href="/images/benchmarks.svg">
+<img src="/images/benchmarks.svg" width="960" height="1350" alt="Six benchmark metrics across Ramanujan, Bhaskar, Sustain, Aryabhata, Vikram, and Mani">
+</a>
+</object>
 </div>
+<figcaption id="benchmark-chart-caption">
+<span>Hover, focus, or tap a row for its machine, GPU, value, and rank. Select a machine above the bars to keep all six of its results highlighted.</span>
+<span class="benchmark-chart-links"><a href="/images/benchmarks.svg" target="_blank" rel="noopener">Open full-size interactive chart</a><a href="#benchmark-results-table">View the data table</a></span>
+</figcaption>
+</figure>
+```
 
-<div style="overflow-x:auto;">
-<table style="min-width:850px;">
+<div class="benchmark-table-scroll" role="region" aria-label="GPU benchmark results table; scroll horizontally on small screens" tabindex="0">
+<table id="benchmark-results-table" style="min-width:850px;">
+  <caption class="visually-hidden">Measured benchmark results for the Sustainability Lab's six GPU systems</caption>
   <tr><th>Benchmark</th><th>Ramanujan</th><th>Bhaskar</th><th>Sustain</th><th>Aryabhata</th><th>Vikram</th><th>Mani</th></tr>
   <tr><td>GPU</td><td>A100-SXM4-80GB</td><td>RTX A5000</td><td>RTX A4000</td><td>TITAN Xp</td><td>RTX A2000</td><td>GB10 (integrated Blackwell)</td></tr>
   <tr><td>Raw compute (TFLOPS, fp16)</td><td><b>269.7</b></td><td>89.2</td><td>61.3</td><td>8.7</td><td>26.4</td><td>96.2</td></tr>
