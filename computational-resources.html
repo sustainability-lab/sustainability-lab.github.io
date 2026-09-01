@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-eaeb381c6b7494c50009502241a4985c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-bf52384487d727b57227c3c2d42d948e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-81d852ee8a459f77a1d4fce404664283.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,13 +80,13 @@ ul.task-list li input[type="checkbox"] {
 <meta property="og:description" content="AI-driven research for a sustainable future at IIT Gandhinagar, led by Prof.&nbsp;Nipun Batra. PhD, postdoc, and internship openings in AI for sustainability, health sensing, energy analytics, and environmental monitoring.">
 <meta property="og:image" content="https://sustainability-lab.github.io/images/benchmarks.svg">
 <meta property="og:site_name" content="Sustainability Lab">
-<meta property="og:image:alt" content="Benchmark comparison of the lab's GPU compute resources">
+<meta property="og:image:alt" content="Six benchmark metrics across Ramanujan, Bhaskar, Sustain, Aryabhata, Vikram, and Mani">
 <meta name="twitter:title" content="Lab Resources – Sustainability Lab">
 <meta name="twitter:description" content="AI-driven research for a sustainable future at IIT Gandhinagar, led by Prof.&nbsp;Nipun Batra. PhD, postdoc, and internship openings in AI for sustainability, health sensing, energy analytics, and environmental monitoring.">
 <meta name="twitter:image" content="https://sustainability-lab.github.io/images/benchmarks.svg">
 <meta name="twitter:creator" content="@nipun_batra">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image:alt" content="Benchmark comparison of the lab's GPU compute resources">
+<meta name="twitter:image:alt" content="Six benchmark metrics across Ramanujan, Bhaskar, Sustain, Aryabhata, Vikram, and Mani">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -570,11 +570,24 @@ Total VRAM
 <section id="relative-performance" class="level3">
 <h3 class="anchored" data-anchor-id="relative-performance">Relative Performance</h3>
 <p>Measured with our open <a href="https://github.com/nipunbatra/gpu-benchmark-suite">gpu-benchmark-suite</a> using the same workload definitions on every machine, grouped into <strong>raw compute</strong>, <strong>training</strong>, <strong>inference</strong>, and <strong>data-loading</strong>. Mani’s results were measured on 31 August 2026 with the current GB10-compatible Arm64 stack (NVIDIA PyTorch 25.11 and CUDA 13.0); the earlier machines used NVIDIA PyTorch 24.03 and CUDA 12.4. Its results are therefore a useful workload-level comparison, but not a strict common-software-stack comparison. These workloads fit within 12 GB, so they measure speed rather than Mani’s distinctive ability to fit much larger models in its 128 GB unified-memory pool.</p>
-<div style="overflow-x:auto;">
-<p><img src="images/benchmarks.svg" style="width:100%; min-width:720px;" loading="lazy" alt="Benchmark comparison of the lab's GPU compute resources"></p>
+<figure class="benchmark-chart figure">
+<div class="benchmark-chart-scroll" role="region" aria-label="Interactive GPU benchmark chart; scroll horizontally on small screens" tabindex="0">
+<object class="benchmark-chart-object" data="/images/benchmarks.svg" type="image/svg+xml" role="document" title="Interactive comparison of Sustainability Lab GPU benchmarks" aria-describedby="benchmark-chart-caption" width="960" height="1350">
+<a href="./images/benchmarks.svg">
+<img src="./images/benchmarks.svg" width="960" height="1350" alt="Six benchmark metrics across Ramanujan, Bhaskar, Sustain, Aryabhata, Vikram, and Mani" class="figure-img">
+</a>
+</object>
 </div>
-<div style="overflow-x:auto;">
-<table style="min-width:850px;">
+<figcaption id="benchmark-chart-caption">
+<span>Hover, focus, or tap a row for its machine, GPU, value, and rank. Select a machine above the bars to keep all six of its results highlighted.</span>
+<span class="benchmark-chart-links"><a href="./images/benchmarks.svg" target="_blank" rel="noopener">Open full-size interactive chart</a><a href="#benchmark-results-table">View the data table</a></span>
+</figcaption>
+</figure>
+<div class="benchmark-table-scroll" role="region" aria-label="GPU benchmark results table; scroll horizontally on small screens" tabindex="0">
+<table id="benchmark-results-table" style="min-width:850px;">
+<caption class="visually-hidden">
+Measured benchmark results for the Sustainability Lab’s six GPU systems
+</caption>
 <tbody><tr>
 <th>
 Benchmark
