@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Souvik Roy">
-<meta name="dcterms.date" content="2023-12-15">
+<meta name="description" content="A feature-informed self-supervised learning approach for time series, accepted for a Short Presentation at IEEE DSAA 2026.">
 
-<title>From Thesis to Life Lessons: My learning curve at Sustainability Lab – Sustainability Lab</title>
+<title>Efficient Time Series SSL via Signal Descriptors – Sustainability Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -31,24 +30,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="..//images/favicon-sl.svg" rel="icon" type="image/svg+xml">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-eaeb381c6b7494c50009502241a4985c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f1d32d5390065e8a1d369ae0db672c27.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//images/favicon-sl.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-eaeb381c6b7494c50009502241a4985c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f1d32d5390065e8a1d369ae0db672c27.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,20 +77,18 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="From Thesis to Life Lessons: My learning curve at Sustainability Lab – Sustainability Lab">
-<meta property="og:description" content="AI-driven research for a sustainable future at IIT Gandhinagar, led by Prof.&nbsp;Nipun Batra. PhD, postdoc, and internship openings in AI for sustainability, health sensing, energy analytics, and environmental monitoring.">
-<meta property="og:image" content="https://sustainability-lab.github.io/images/experiences/souvik-1.jpg">
+<meta property="og:title" content="Efficient Time Series SSL via Signal Descriptors – Sustainability Lab">
+<meta property="og:description" content="A feature-informed self-supervised learning approach for time series, accepted for a Short Presentation at IEEE DSAA 2026.">
+<meta property="og:image" content="https://sustainability-lab.github.io/papers/2026/signal-descriptors-method.svg">
 <meta property="og:site_name" content="Sustainability Lab">
-<meta property="og:image:alt" content="Souvik Roy back at IIT Gandhinagar for a late convocation in December 2022">
-<meta name="twitter:title" content="From Thesis to Life Lessons: My learning curve at Sustainability Lab – Sustainability Lab">
-<meta name="twitter:description" content="AI-driven research for a sustainable future at IIT Gandhinagar, led by Prof.&nbsp;Nipun Batra. PhD, postdoc, and internship openings in AI for sustainability, health sensing, energy analytics, and environmental monitoring.">
-<meta name="twitter:image" content="https://sustainability-lab.github.io/images/experiences/souvik-1.jpg">
+<meta name="twitter:title" content="Efficient Time Series SSL via Signal Descriptors – Sustainability Lab">
+<meta name="twitter:description" content="A feature-informed self-supervised learning approach for time series, accepted for a Short Presentation at IEEE DSAA 2026.">
+<meta name="twitter:image" content="https://sustainability-lab.github.io/papers/2026/signal-descriptors-method.svg">
 <meta name="twitter:creator" content="@nipun_batra">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image:alt" content="Souvik Roy back at IIT Gandhinagar for a late convocation in December 2022">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -104,8 +101,8 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text"><img id="theme-logo" data-light-src="/images/logo_light.svg" data-dark-src="/images/logo_dark.svg" src="../images/logo_light.svg" style="height: 90px !important;"></span></a>
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text"><img id="theme-logo" data-light-src="/images/logo_light.svg" data-dark-src="/images/logo_dark.svg" src="../../images/logo_light.svg" style="height: 90px !important;"></span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-people" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -113,19 +110,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-people">    
         <li>
-    <a class="dropdown-item" href="../members.html">
+    <a class="dropdown-item" href="../../members.html">
  <span class="dropdown-text">Current Team</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../alumni.html">
+    <a class="dropdown-item" href="../../alumni.html">
  <span class="dropdown-text">Alumni</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../experiences.html">
+    <a class="dropdown-item" href="../../experiences.html">
  <span class="dropdown-text">Alumni Experiences</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../memories.html">
+    <a class="dropdown-item" href="../../memories.html">
  <span class="dropdown-text">Memories</span></a>
   </li>  
     </ul>
@@ -136,17 +133,17 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
         <li>
-    <a class="dropdown-item" href="../projects.html">
+    <a class="dropdown-item" href="../../projects.html">
  <span class="dropdown-text">All Projects &amp; Research</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../papers/index.html">
+    <a class="dropdown-item" href="../../papers/index.html">
  <span class="dropdown-text">Publications</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../openings.html"> 
+    <a class="nav-link" href="../../openings.html"> 
 <span class="menu-text">Openings</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -155,33 +152,33 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-lab-handbook">    
         <li>
-    <a class="dropdown-item" href="../computational-resources.html">
+    <a class="dropdown-item" href="../../computational-resources.html">
  <span class="dropdown-text">Computational Resources</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../lab_culture.html">
+    <a class="dropdown-item" href="../../lab_culture.html">
  <span class="dropdown-text">Lab Culture</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../upskilling.html">
+    <a class="dropdown-item" href="../../upskilling.html">
  <span class="dropdown-text">Academic &amp; Research Skills</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../design-kit.html">
+    <a class="dropdown-item" href="../../design-kit.html">
  <span class="dropdown-text">Design Kit</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../news.html"> 
+    <a class="nav-link" href="../../news.html"> 
 <span class="menu-text">News</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../media.html"> 
+    <a class="nav-link" href="../../media.html"> 
 <span class="menu-text">Media coverage</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../awards.html"> 
+    <a class="nav-link" href="../../awards.html"> 
 <span class="menu-text">Awards</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -190,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-events">    
         <li>
-    <a class="dropdown-item" href="../events/index.html">
+    <a class="dropdown-item" href="../../events/index.html">
  <span class="dropdown-text">Events Home</span></a>
   </li>  
         <li>
@@ -207,46 +204,29 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me">About me</a></li>
-  <li><a href="#research-endeavours-and-milestones" id="toc-research-endeavours-and-milestones" class="nav-link" data-scroll-target="#research-endeavours-and-milestones">Research Endeavours and Milestones</a></li>
-  <li><a href="#developing-a-live-air-quality-dashboard-may-2019---jul-2019" id="toc-developing-a-live-air-quality-dashboard-may-2019---jul-2019" class="nav-link" data-scroll-target="#developing-a-live-air-quality-dashboard-may-2019---jul-2019">Developing a Live Air quality dashboard (May 2019 - Jul 2019)</a></li>
-  <li><a href="#beyond-research" id="toc-beyond-research" class="nav-link" data-scroll-target="#beyond-research">Beyond Research</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">From Thesis to Life Lessons: My learning curve at Sustainability Lab</h1>
+<h1 class="title">Efficient Time Series SSL via Signal Descriptors</h1>
+<p class="subtitle lead">Let the signal provide the learning target</p>
+</div>
+
+<div>
+  <div class="description">
+    A feature-informed self-supervised learning approach for time series, accepted for a Short Presentation at IEEE DSAA 2026.
+  </div>
 </div>
 
 
+<div class="quarto-title-meta">
 
-<div class="quarto-title-meta column-page-left">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Souvik Roy </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">December 15, 2023</p>
-    </div>
-  </div>
   
     
   </div>
@@ -256,74 +236,71 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="about-me" class="level3">
-<h3 class="anchored" data-anchor-id="about-me">About me</h3>
-<p>I am Souvik Roy, an alumnus of IIT Gandhinagar, where I completed my MTech in Computer Science and Engineering in 2020. Currently, I am a Senior Consultant at eClerx, where I specialise in Data Analytics and Engineering for a global investment bank.</p>
-<p>I had the privilege to work with Prof.&nbsp;Nipun as one of his first M.Tech students. This post narrates my enriching experience under his mentorship.</p>
-<p><img src="../images/experiences/souvik-1.jpg" class="img-fluid" loading="lazy" alt="Souvik Roy back at IIT Gandhinagar for a late convocation in December 2022"> Picture 1: (Dec 2022) returned to college for a late convocation.</p>
+<p><strong>IEEE DSAA 2026 · Short Presentation</strong><br>
+Parv Thacker*, Ayush Shrivastava*, Nipun Batra<br>
+*Equal contribution.</p>
+<p><a href="signal-descriptors-dsaa2026.pdf" class="btn btn-primary">Read the paper</a> <a href="https://github.com/parvthacker/SSL-for-Time-Series" class="btn btn-outline-primary">Code</a> <a href="../bibtex/signal-descriptors2026.bib" class="btn btn-outline-primary">BibTeX</a></p>
+<section id="the-problem-and-the-idea" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-and-the-idea">The problem and the idea</h2>
+<p>Unlabelled sensor signals already contain structure: their distribution, their variation over time and their frequency content. This work uses statistical, temporal and spectral descriptors as targets for self-supervised pretraining.</p>
+<p>A feature extractor computes descriptors from each signal window. An encoder and a prediction head learn to predict these descriptors directly from the raw signal. The resulting representation can then be used for downstream tasks. This pretraining objective does not require signal augmentations or contrastive pairs.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="signal-descriptors-method.svg" class="img-fluid figure-img"></p>
+<figcaption>Conceptual method diagram: the raw signal supplies descriptor targets and inputs for an encoder trained to predict them. This is an illustration, not experimental data.</figcaption>
+</figure>
+</div>
 </section>
-<section id="research-endeavours-and-milestones" class="level3">
-<h3 class="anchored" data-anchor-id="research-endeavours-and-milestones">Research Endeavours and Milestones</h3>
-<p>The M.Tech program consisted of 50% coursework and 50% research. My work with Prof.&nbsp;Nipun started in January 2019, broadly focusing on air quality estimation.</p>
-<p>• Experimention with portable air quality sensors (Jan 2019 - Apr 2019)</p>
-<p>I measured PM2.5 exposure among construction workers and calibrated five sensors to plot and analyse the data.</p>
-<p><img src="../images/experiences/souvik-2.jpg" class="img-fluid" loading="lazy" alt="Souvik Roy calibrating Atmos air quality sensors at his workspace"> Picture 2: (Feb 2019) calibrating Atmos air quality sensors at my workspace</p>
+<section id="what-was-evaluated" class="level2">
+<h2 class="anchored" data-anchor-id="what-was-evaluated">What was evaluated</h2>
+<p>The final manuscript describes <strong>1,440 experimental configurations</strong> across two wearable sensing benchmarks, four backbones, two label fractions (5% and 100%), and frozen and unfrozen fine-tuning settings.</p>
+<ul>
+<li><strong>HHAR:</strong> activity recognition from inertial sensor data.</li>
+<li><strong>PPG-Dalia:</strong> heart-rate estimation from wearable signals.</li>
+</ul>
+<p>Methods are compared using aggregate ranks over configurations. Feature-based supervision is among the strongest approaches on these tasks at lower estimated training compute, measured using network passes. This is not a measurement of total deployment latency or energy use.</p>
+<style>
+.research-figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.research-figure { min-width: 0; }
+.research-figure img { width: 100%; height: auto; }
+@media (max-width: 767px) { .research-figures { grid-template-columns: 1fr; } }
+</style>
 </section>
-<section id="developing-a-live-air-quality-dashboard-may-2019---jul-2019" class="level3">
-<h3 class="anchored" data-anchor-id="developing-a-live-air-quality-dashboard-may-2019---jul-2019">Developing a Live Air quality dashboard (May 2019 - Jul 2019)</h3>
-<p>I deployed 5 air quality sensors across the campus and created a live dashboard using JavaScript, Python (Flask), and Leaflet.js. This project was crucial in identifying high pollution activities and their timings.</p>
+<section id="performance-and-training-compute" class="level2">
+<h2 class="anchored" data-anchor-id="performance-and-training-compute">Performance and training compute</h2>
+<p>The two panels below are reproduced from Figure 2 of the camera-ready paper. Lower-left positions are preferable: better average rank with less estimated training compute. TSFEL labels denote the descriptor-based methods.</p>
+<div class="research-figures">
+<div class="research-figure">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/experiences/souvik-3.jpg" class="img-fluid figure-img" loading="lazy"></p>
-<figcaption>Installing an air quality sensor at IIT Gandhinagar</figcaption>
+<p><img src="signal-descriptors-ppg-compute.png" class="img-fluid figure-img"></p>
+<figcaption>Heart-rate estimation on PPG-Dalia: descriptor methods occupy the low-compute region, with TSFEL90 obtaining the best average rank shown.</figcaption>
 </figure>
 </div>
-<p>Picture 3: (May 2019) Installing an air quality sensor at IIT Gn</p>
+</div>
+<div class="research-figure">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/experiences/souvik-4.jpg" class="img-fluid figure-img" loading="lazy"></p>
-<figcaption>Live air quality measurements across five locations on the IIT Gandhinagar campus</figcaption>
+<p><img src="signal-descriptors-hhar-compute.png" class="img-fluid figure-img"></p>
+<figcaption>Activity recognition on HHAR: TSFEL90 obtains a similar average rank to Barlow at lower estimated compute.</figcaption>
 </figure>
 </div>
-<p>Picture 4: (Jun 2019) Live air quality measurements across 5 locations on campus</p>
-<p>I got introduced to interdisciplinary research - the goal was to calculate the exposure of PM2.5 in our college bus route. I worked in Tinkerer’s lab with a mechanical engineer to design a 3D printed mount using MDF, which was mounted in the moving bus:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/experiences/souvik-5.jpg" class="img-fluid figure-img" loading="lazy"></p>
-<figcaption>A 3D-printed sensor mount installed in a campus bus to measure PM2.5 exposure</figcaption>
-</figure>
 </div>
-<p>• Estimating ground air quality using satellite data (Aug 2019 - Dec 2019)</p>
-<p>Air quality sensors were expensive and provided less spatial coverage, we used satellite-derived aerosol optical depth (AOD) and meteorological fields to estimate surface-level PM2.5 using a regression model.</p>
-<p>Prof.&nbsp;Nipun encouraged me to write a short 1-page paper and submit it to CoDS-COMAD. I got my first short paper published [<a href="https://dl.acm.org/doi/10.1145/3371158.3371216">link</a>] at ISB Hyderabad in January 2020. Fun fact: the presentation coincided with my birthday :)</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/experiences/souvik-6.jpg" class="img-fluid figure-img" loading="lazy"></p>
-<figcaption>Souvik Roy presenting at the CoDS-COMAD conference at ISB Hyderabad</figcaption>
-</figure>
 </div>
-<p>Picture 5: (Jan 2020) Presenting at CoDS-COMAD conference in ISB Hyderabad</p>
-<p>• Data Curation and Machine Learning (Jan 2020 - Jul 2020)</p>
-<p>Gathered PM, AOD, and meteorological data for India through various sources and collated them in time and space. Used Ridge regression, random forest, time-series cross-validation for our analysis like seasonal variation in pollution. This study helped us in identifying the challenges for data curation and collocation for India.</p>
-<p>If you are interested in learning more about the research, here are some links - [<a href="https://www.youtube.com/watch?v=--ie07f5-pY&amp;t=5s">video</a>][<a href="https://drive.google.com/file/d/1kXRM66EP4COZb-rC6T8GDHfu72yXWrVv/view">slides</a>][<a href="https://drive.google.com/file/d/1jLkWEOUEHYb5sWJZqGQeTJleyl-xGw5e/view">pdf</a>]</p>
 </section>
-<section id="beyond-research" class="level3">
-<h3 class="anchored" data-anchor-id="beyond-research">Beyond Research</h3>
-<p>The learnings from Prof.&nbsp;Nipun that still resonate with me:</p>
-<ol type="1">
-<li><p>Discipline &gt; motivation</p></li>
-<li><p>Prioritise your health</p></li>
-<li><p>Valuing the impact of work over accolades and recognition</p></li>
-</ol>
-<p>During my last semester in college, there was an abrupt change in our work due to lockdown and COVID. Prof.&nbsp;Nipun was supportive and understanding, guided me with my thesis and empathised during hard situations at home.</p>
-<p>Prof.&nbsp;Nipun didn’t hand me solutions that cultivated a mindset of problem solving. This mindset helped me deal with different situations in my professional life too. I’d be forever grateful that I could have him as my thesis supervisor in college, and a lifelong mentor in life.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/experiences/souvik-7.jpg" class="img-fluid figure-img" loading="lazy"></p>
-<figcaption>View from the workspace terrace overlooking the Sabarmati river at IIT Gandhinagar</figcaption>
-</figure>
-</div>
-<p>Picture 6: A view from the terrace of my workspace, overlooking the Sabarmati river, was a constant reminder of how beautiful the campus is, and how privileged I was to be working there.</p>
+<section id="build-on-it" class="level2">
+<h2 class="anchored" data-anchor-id="build-on-it">Build on it</h2>
+<p>The practical takeaway for wearable-sensing researchers is a simple pretraining baseline that is worth testing when labels and compute are limited. The open code supports reproducing and extending the comparison.</p>
+<blockquote class="blockquote">
+<p>“an effective yet underexplored source of self-supervision”</p>
+<p>— Paper abstract, describing time-series descriptors</p>
+</blockquote>
+</section>
+<section id="scope" class="level2">
+<h2 class="anchored" data-anchor-id="scope">Scope</h2>
+<p>The evaluation covers two wearable datasets and short fixed-length windows. Descriptor choice remains an inductive bias. The results do not establish universal superiority across time-series tasks or show that every learned representation is interpretable.</p>
+<p>An earlier version, “Feature-Informed Self-Supervised Learning for Time Series Understanding,” was presented at the MiLeTS workshop at KDD 2026.</p>
+<p><a href="../../papers/index.html">All lab publications</a></p>
 
 
 </section>
@@ -736,7 +713,7 @@ ul.task-list li input[type="checkbox"] {
 <p>© 2026 Sustainability Lab, IIT Gandhinagar</p>
 </div>   
     <div class="nav-footer-center">
-<p><a href="../papers/index.html">Publications</a> | <a href="https://sustainability-lab.github.io/sustainability-research-bootcamp/"><strong>Research Skills Bootcamp</strong></a> | <a href="mailto:nipun.batra@iitgn.ac.in">Contact</a></p>
+<p><a href="../../papers/index.html">Publications</a> | <a href="https://sustainability-lab.github.io/sustainability-research-bootcamp/"><strong>Research Skills Bootcamp</strong></a> | <a href="mailto:nipun.batra@iitgn.ac.in">Contact</a></p>
 </div>
     <div class="nav-footer-right">
 <p>Built with <a href="https://quarto.org/">Quarto</a> | <span id="last-updated"></span></p>
