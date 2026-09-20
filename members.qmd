@@ -57,8 +57,8 @@ toc: false
 ::: {layout-ncol=4}
 
 
-<img loading="lazy" src="images/members/Parv.jpg" class="cropped-image" alt="Photo of Parv Thecker"><br/>
-<span>Parv Thecker<br/>(Jul 2025 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Healthcare • IoT • Computer Vision</em></span>
+<img loading="lazy" src="images/members/Parv.jpg" class="cropped-image" alt="Photo of Parv Thacker"><br/>
+<span>Parv Thacker<br/>(Jul 2025 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Healthcare • IoT • Computer Vision</em></span>
 
 <img loading="lazy" src="images/members/Balbir.jpg" class="cropped-image" alt="Photo of Balbir Prasad"><br/>
 <span>Balbir Prasad<br/>(Jul 2025 - present)<br/><em style="color: #5a6070; font-size: 0.85rem;">Physics Informed ML • AI weather forecasting</em></span>

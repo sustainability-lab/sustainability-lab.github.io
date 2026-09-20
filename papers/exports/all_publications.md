@@ -1,8 +1,8 @@
 # Sustainability Lab Publications
 
 **IIT Gandhinagar**  
-*Generated: 2026-05-18 09:22:17*  
-*Total Publications: 52*
+*Generated: 2026-09-20 18:03:43*  
+*Total Publications: 54*
 
 ---
 
@@ -30,6 +30,18 @@
              Systems for Energy-Efficient Buildings, Cities, and
              Transportation (BuildSys '26)*  
 **DOI:** [10.1145/3744256.3812587](https://doi.org/10.1145/3744256.3812587)  
+
+### FlowSat: Flow-Matching Diffusion Transformers with Metadata Conditioning for Satellite Image Generation
+
+**Authors:** Parihar, Digvijay Singh and Mondal, Rishabh and Batra, Nipun  
+**Venue:** *British Machine Vision Conference (BMVC)*  
+**URL:** [Link](https://sustainability-lab.github.io/papers/2026/flowsat.html)  
+
+### Efficient Time Series SSL via Signal Descriptors
+
+**Authors:** Thacker, Parv and Shrivastava, Ayush and Batra, Nipun  
+**Venue:** *IEEE International Conference on Data Science and Advanced Analytics (DSAA)*  
+**URL:** [Link](https://sustainability-lab.github.io/papers/2026/signal-descriptors.html)  
 
 ## 2025
 

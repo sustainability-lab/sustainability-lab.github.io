@@ -119,6 +119,12 @@ toc: false
 <h2 class="year-header">2026</h2>
 <div class="news-list">
 
+<div class="news-item category-paper" data-category="paper">
+<span class="news-date">Sep</span>
+<span class="news-content">Two research announcements: <a href="papers/2026/flowsat.qmd"><b>FlowSat</b></a> accepted at <b>BMVC 2026</b>, and <a href="papers/2026/signal-descriptors.qmd"><b>Efficient Time Series SSL via Signal Descriptors</b></a> accepted for a <b>Short Presentation at IEEE DSAA 2026</b>. Paper PDFs, research summaries and code links are now available.</span>
+</div>
+
+
 <div class="news-item category-award" data-category="award">
 <span class="news-date">Jun</span>
 <span class="news-icon">🏆</span>

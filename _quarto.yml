@@ -69,7 +69,7 @@ website:
     background: light
     left: "© 2026 Sustainability Lab, IIT Gandhinagar"
     center: |
-      [Publications](papers/index.qmd) |
+      [Publications](/papers/index.qmd) |
       [**Research Skills Bootcamp**](https://sustainability-lab.github.io/sustainability-research-bootcamp/) |
       [Contact](mailto:nipun.batra@iitgn.ac.in)
     right: |
