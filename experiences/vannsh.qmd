@@ -2,6 +2,7 @@
 title: "From Visualizations to Real-World Impact: My Journey at the Sustainability Lab"
 author: "Vannsh Jani"
 date: "2026-06-09"
+image: "../images/experiences/vannsh-1.jpg"
 ---
 
 # About Me

@@ -9,6 +9,11 @@ listing:
     template: _templates/news-latest.ejs
     sort: false
     max-items: 5
+  - id: selected-work
+    contents: data/publications.yml
+    template: _templates/pubs-selected.ejs
+    include: {selected: true}
+    sort: false
 ---
 
 ::: {.frame .page-main}
@@ -20,9 +25,14 @@ listing:
       <h1>AI for a Sustainable Future</h1>
       <p class="sub">Sustainability Lab · IIT Gandhinagar</p>
       <p>We build AI that serves both people and the planet — from air quality and health sensing to energy and Earth observation.</p>
-      <p>The lab is led by <a href="https://nipunbatra.github.io">Nipun Batra</a> and has 17 researchers today. Our 50+ alumni have gone on to Cambridge, Microsoft Research, Google DeepMind, CMU and industry.</p>
+      <p>The lab is led by <a href="https://nipunbatra.github.io">Nipun Batra</a>. Our alumni have gone on to Cambridge, Microsoft Research, Google DeepMind, CMU and industry.</p>
       <p class="awards-line">Recent recognition: <b>Best Paper Runner-Up at BuildSys 2026</b>, the <b>ACM e-Energy Test-of-Time Award 2025</b> for NILMTK, and the <b>ACM SIGEnergy Rising Star 2025</b>. Work published at NeurIPS, KDD, AAAI, IMWUT, BuildSys and UbiComp.</p>
       <a class="recruit" href="join.html">Now recruiting PhD students &amp; interns</a>
+      <div class="btns">
+        <a class="btn btn-primary" href="join.html">Join the lab</a>
+        <a class="btn btn-outline-primary" href="flyer.pdf">Lab flyer (PDF)</a>
+        <a class="btn btn-outline-primary" href="papers/index.html">Publications</a>
+      </div>
     </div>
     <figure>
       <img class="photo" style="aspect-ratio:4/3" src="images/memories/2025-Akshardham-all.jpg" alt="The Sustainability Lab, 2025">
@@ -30,6 +40,10 @@ listing:
     </figure>
   </div>
 </section>
+```
+
+```{=html}
+
 
 <section>
   <div class="vrule">
@@ -39,28 +53,64 @@ listing:
       <a class="trow" href="research.html#health"><img src="images/illustrations/health.webp" alt=""><span><b>Health Sensing</b><span>Cameras and wearables for breathing and metabolism.</span></span></a>
       <a class="trow" href="research.html#energy"><img src="images/illustrations/energy.webp" alt=""><span><b>Energy</b><span>What uses power, and when, from a single meter.</span></span></a>
       <a class="trow" href="research.html#earth"><img src="images/illustrations/earth.webp" alt=""><span><b>Earth Observation</b><span>Finding brick kilns and mapping land from space.</span></span></a>
-      <p class="small" style="margin-top:10px"><a href="papers/index.html">Publications</a> &nbsp;·&nbsp; <a href="research.html">All projects</a></p>
+      <p class="small" style="margin-top:10px"><a href="research.html">All research</a> &nbsp;·&nbsp; <a href="research.html#tools">Datasets &amp; tools</a></p>
     </div>
     <div>
       <h2>Join &amp; learn</h2>
       <a class="trow" href="join.html#phd"><img src="images/illustrations/students.webp" alt=""><span><b>PhD &amp; postdoc</b><span>How admissions work, and where alumni went.</span></span></a>
       <a class="trow" href="join.html#internships"><img src="images/illustrations/explore.webp" alt=""><span><b>Internships</b><span>Summer (SRIP) and 6-month research internships.</span></span></a>
       <a class="trow" href="handbook/index.html"><img src="images/illustrations/tablet.webp" alt=""><span><b>Lab handbook</b><span>Week-one checklist, servers, writing and culture.</span></span></a>
-      <a class="trow" href="people.html"><img src="images/illustrations/talk.webp" alt=""><span><b>People</b><span>The team, alumni and their stories.</span></span></a>
+      <a class="trow" href="experiences.html"><img src="images/illustrations/talk.webp" alt=""><span><b>Student stories</b><span>Alumni on how they started and where they went.</span></span></a>
       <p class="small" style="margin-top:10px"><a href="join.html">Open positions</a> &nbsp;·&nbsp; <a href="https://sustainability-lab.github.io/sustainability-research-bootcamp/">Research Skills Bootcamp</a></p>
     </div>
   </div>
 </section>
 
 <section>
-  <h2>Latest</h2>
+  <div class="head-row"><h2>Selected work</h2><a class="arrow small" href="papers/index.html">All publications</a></div>
+```
+
+::: {#selected-work}
+:::
+
+```{=html}
+</section>
+
+```
+
+::: {.news-flyer}
+::: {.news-col}
+```{=html}
+<div class="head-row"><h2>Latest</h2><a class="arrow small" href="news.html">All news</a></div>
 ```
 
 ::: {#news-latest}
 :::
+:::
 
 ```{=html}
-  <p style="margin-top:12px"><a class="arrow" href="news.html">All news</a></p>
+<div class="flyer-col">
+  <a class="flyer-card" href="flyer.pdf">
+    <img src="images/illustrations/research-atlas.webp" alt="">
+    <b>Lab flyer</b>
+    <span>Our research, people and openings on two pages. PDF.</span>
+  </a>
+  <div class="side-links">
+    <a href="awards.html">Awards &amp; recognition</a>
+    <a href="media.html">Media coverage</a>
+    <a href="memories.html">Photos</a>
+    <a href="events/index.html">Events</a>
+  </div>
+</div>
+```
+:::
+
+```{=html}
+<section class="funders-row">
+  <div class="kicker">Supported by</div>
+  <div class="logos">
+    <img src="images/funders/google.png" alt="Google"><img src="images/funders/cisco.png" alt="Cisco"><img src="images/funders/nvidia.png" alt="NVIDIA"><img src="images/funders/microsoft.png" alt="Microsoft"><img src="images/funders/serb.png" alt="SERB / ANRF"><img src="images/funders/moes.jpeg" alt="Ministry of Earth Sciences"><img src="images/funders/dst.jpg" alt="DST"><img src="images/funders/stars.png" alt="STARS"><img src="images/funders/gujcost.png" alt="GUJCOST"><img src="images/funders/coe-ai-mhrd.svg" alt="CoE in AI (MHRD)"><img src="images/funders/gfd.jpeg" alt="Gujarat Forest Department"><img src="images/funders/jio.png" alt="Jio">
+  </div>
 </section>
 ```
 

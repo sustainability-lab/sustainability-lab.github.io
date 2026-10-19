@@ -1,0 +1,10 @@
+<div class="media-list">
+<% for (const m of items) { %>
+<div class="media-row">
+<% if (m.image) { %><img src="<%= m.image %>" alt="<%= m.title %>" loading="lazy"><% } else { %><div></div><% } %>
+<div><h3><%= m.title %></h3>
+<p class="muted"><%= String(m.text).replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&amp;/g,'&') %></p>
+<% if (m.links) { %><p class="small press"><% for (const l of m.links) { %><a href="<%= l.url %>"><%= l.label %></a><% } %></p><% } %></div>
+</div>
+<% } %>
+</div>

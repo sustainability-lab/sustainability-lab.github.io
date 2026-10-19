@@ -2,6 +2,7 @@
 title: Building Brick by Brick My Foundation at Sustainability Lab
 author: "Shataxi Dubey"
 date: "2025-06-24"
+image: "../images/experiences/shataxi-1.jpg"
 ---
 
 # About Me

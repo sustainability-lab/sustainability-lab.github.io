@@ -1,8 +1,29 @@
 ---
-title: "Alumni Experiences"
+title: ""
+pagetitle: "Stories · Sustainability Lab"
 description-meta: "First-person experiences from Sustainability Lab students and alumni at IIT Gandhinagar — research journeys, mentorship, and where they are now."
+page-layout: custom
 listing:
-  contents: experiences
-  type: table
-  sort: "date desc"
+  - id: story-list
+    contents: experiences
+    template: _templates/stories.ejs
+    sort: "date desc"
 ---
+
+::: {.frame .page-main}
+
+```{=html}
+<section>
+  <h1 class="page">In their words</h1>
+  <p class="lede" style="margin-top:12px">Students and alumni write about their time in the lab: how they started, what they learned and where they went next.</p>
+  <p class="small muted">Graduating? Add your story as <code>experiences/&lt;firstname&gt;.qmd</code> (copy an existing one).</p>
+```
+
+::: {#story-list}
+:::
+
+```{=html}
+</section>
+```
+
+:::

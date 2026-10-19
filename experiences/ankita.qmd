@@ -2,6 +2,7 @@
 title: "Sustainability Lab: An Unforgettable Journey"
 author: "Ankita Jain"
 date: "2024-2-15"
+image: "../images/awards/ankita-gm-2-3.png"
 ---
 
 ## About Me

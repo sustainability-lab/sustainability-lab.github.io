@@ -2,6 +2,7 @@
 title: "From Thesis to Life Lessons: My learning curve at Sustainability Lab"
 author: "Souvik Roy"
 date: "2023-12-15"
+image: "../images/experiences/souvik-1.jpg"
 ---
 
 ### About me

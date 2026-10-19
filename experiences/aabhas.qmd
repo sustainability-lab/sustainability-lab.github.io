@@ -2,6 +2,7 @@
 title: "Curiosity Opens New Doors"
 author: "Aabhas Senapati"
 date: "2024-2-15"
+image: "../images/experiences/aabhas-1.jpg"
 ---
 
 ![Aabhas Senapati](../images/experiences/aabhas-1.jpg){loading="lazy"}

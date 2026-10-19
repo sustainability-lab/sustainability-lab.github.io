@@ -1,0 +1,4 @@
+<% let year = null; let open = false; %>
+<% for (const p of items) { if (p.year !== year) { if (open) { %></div><% } year = p.year; open = true; %><div class="year" id="y<%= year %>"><%= year %></div><div class="photo-wall"><% } %>
+<figure><a href="<%= p.src %>" class="lightbox" data-gallery="photos" data-glightbox="title: <%= String(p.title).replace(/;/g,',') %>; description: <%= String(p.description || p.caption || '').replace(/;/g,',') %>"><img src="<%= p.src %>" alt="<%= p.title %>" loading="lazy"></a><figcaption><b><%= p.title %></b><span><%= p.when %></span></figcaption></figure>
+<% } if (open) { %></div><% } %>

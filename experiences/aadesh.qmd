@@ -2,6 +2,7 @@
 title: "Detours can sometimes be the best part of the journey!"
 author: "Aadesh Desai"
 date: "2024-1-17"
+image: "../images/experiences/aadesh.jpeg"
 ---
 
 ![Aadesh Desai at Udaan 2023 farewell party, IIT Gandhinagar](../images/experiences/aadesh.jpeg){loading="lazy"}

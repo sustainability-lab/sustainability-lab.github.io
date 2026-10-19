@@ -2,6 +2,7 @@
 title: "Shillong to Cambridge via Sustainability Lab"
 author: "Rishiraj Adhikary"
 date: "2026-06-15"
+image: "../images/experiences/rishiraj-3.jpg"
 ---
 
 ### About me

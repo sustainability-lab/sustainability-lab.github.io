@@ -1,0 +1,6 @@
+<div class="stories">
+<% const FB = ["students","talk","explore","tablet","workflow"]; let k = 0; %>
+<% for (const s of items) { %>
+<div class="story"><a href="<%= s.path %>"><% if (s.image) { %><img src="<%= s.image %>" alt="" loading="lazy"><% } else { %><img src="/images/illustrations/<%= FB[(k++) % FB.length] %>.webp" alt="" loading="lazy" class="fallback"><% } %><b><%= s.title %></b><span class="by"><%= Array.isArray(s.author) ? s.author.join(', ') : (s.author || '') %><% if (s.date) { %> · <%= s.date %><% } %></span></a></div>
+<% } %>
+</div>

@@ -1,175 +1,38 @@
 ---
-title: Media Coverage
+title: ""
+pagetitle: "Media Coverage · Sustainability Lab"
 description-meta: "Press and media coverage of Sustainability Lab research at IIT Gandhinagar — AI for air quality, energy, and health sensing."
-toc: false
+page-layout: custom
+listing:
+  - id: media-list
+    contents: data/media.yml
+    template: _templates/media.ejs
+    sort: false
 ---
 
-<style>
-.media-item {
-    padding: 12px;
-    margin-bottom: 12px;
-    border-left: 3px solid #c44536;
-    background: #f8fafc;
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-}
+::: {.frame .page-main}
 
-.media-item.highlight {
-    border-left-color: #c44536;
-    background: #fafafa;
-}
+```{=html}
+<section>
+  <h1 class="page">Media coverage</h1>
+  <p class="lede" style="margin-top:12px">Our research in the press. For media enquiries, write to <a href="mailto:nipun.batra@iitgn.ac.in">nipun.batra@iitgn.ac.in</a>.</p>
+</section>
+<section>
+```
 
-.media-image {
-    width: 180px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 4px;
-    flex-shrink: 0;
-}
+::: {#media-list}
+:::
 
-.media-content {
-    flex: 1;
-    min-width: 0;
-}
+```{=html}
+</section>
+<section>
+  <h2>Talks</h2>
+  <div class="grid g2">
+    <a class="card-link" href="https://www.youtube.com/watch?v=-pyj8cTdUK4"><img class="photo" style="aspect-ratio:16/9" src="https://nipunbatra.github.io/images/tedx-conversation.jpg" alt="" loading="lazy"><b>TEDxConversations, IIT Gandhinagar · Season 2</b></a>
+    <a class="card-link" href="https://youtu.be/_pCP6ZvH1VM"><img class="photo" style="aspect-ratio:16/9" src="https://nipunbatra.github.io/images/iiitd-podcast.jpg" alt="" loading="lazy"><b>IIIT-Delhi AlumX Ep. 05 — from IIIT-Delhi to AI &amp; sustainability</b></a>
+  </div>
+  <p style="margin-top:14px"><a class="arrow" href="https://www.youtube.com/@SustainabilityLab-SL">Lab YouTube channel</a></p>
+</section>
+```
 
-.media-item h3 {
-    color: #1a1a2e;
-    font-size: 0.95rem;
-    font-weight: 600;
-    margin: 0 0 4px 0;
-}
-
-.media-item p {
-    color: #5a6070;
-    margin: 0 0 6px 0;
-    font-size: 0.85rem;
-    line-height: 1.4;
-}
-
-.media-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-}
-
-.media-link {
-    background: #f1f5f9;
-    color: #c44536;
-    padding: 2px 6px;
-    border-radius: 3px;
-    text-decoration: none;
-    font-size: 0.75rem;
-}
-
-.media-link:hover {
-    background: #c44536;
-    color: white;
-    text-decoration: none;
-}
-
-.contact-box {
-    text-align: center;
-    padding: 12px;
-    background: #fafafa;
-    border-radius: 6px;
-    margin-top: 16px;
-    border: 1px solid #e2e8f0;
-}
-
-.contact-box a {
-    background: #c44536;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 0.85rem;
-}
-
-@media (max-width: 600px) {
-    .media-item { flex-direction: column; }
-    .media-image { width: 100%; height: 120px; }
-}
-</style>
-
-<div class="media-item highlight">
-<img loading="lazy" src="images/media/aaai_media_coverage.jpg" alt="AAAI 2026 Coverage" class="media-image">
-<div class="media-content">
-<h3>Fast and Differentiable Sensor Placement</h3>
-<p>Our <a href="papers/2026/aaai_2026_air_active_gradient_camera_ready.pdf" target="_blank">AAAI 2026 paper</a> work on fast, differentiable sensor placement has gained wide attention for its ability to scale air-quality monitoring and support fairer, data-driven deployment across regions.</p>
-<div class="media-links">
-<a href="https://www.youtube.com/watch?v=QOeNE8YOTeU&t=405s" target="_blank" class="media-link">DD News</a>
-<a href="https://theliveahmedabad.com/2025/11/04/iit-gandhinagar-ai-pinpoints-optimal-locations-for-air-quality-sensors-orders-of-magnitude-faster/" target="_blank" class="media-link">The Live Ahmedabad</a>
-</div>
-</div>
-</div>
-
-<div class="media-item highlight">
-<img loading="lazy" src="images/media/VayuBuddy_cover_padded.png" alt="VayuBuddy" class="media-image">
-<div class="media-content">
-<h3>VayuBuddy - LLM-powered Air Quality Chatbot</h3>
-<p><a href="https://arxiv.org/abs/2411.12760" target="_blank">VayuBuddy</a> democratizes air quality insights for cleaner air.</p>
-<div class="media-links">
-<a href="https://epaper.indianexpress.com/3953344/Ahmedabad/December-17-2024#page/3/2" target="_blank" class="media-link">Indian Express</a>
-<a href="https://epaper.ahmedabadmirror.com/3953285/Ahmedabad-Mirror/Dec-17-2024#page/5/2" target="_blank" class="media-link">Ahmedabad Mirror</a>
-<a href="https://chitralekha.com/news/vayubuddy-empowering-communities-to-breathe-cleaner-air/" target="_blank" class="media-link">Chitralekha</a>
-<a href="https://www.divyabhaskar.co.in/epaper/detail-page/ahmedabad-city-bhaskar/44/2024-12-17" target="_blank" class="media-link">Divya Bhaskar</a>
-</div>
-</div>
-</div>
-
-<div class="media-item highlight">
-<img loading="lazy" src="images/media/JoulesEye_Hackster.io.png" alt="JoulesEye" class="media-image">
-<div class="media-content">
-<h3>JoulesEye - Thermal Imaging for Fitness</h3>
-<p><a href="https://dl.acm.org/doi/abs/10.1145/3631422" target="_blank">JoulesEye</a> revolutionizes fitness tracking (with <a href="http://www.mayankgoel.com/" target="_blank">Prof. Mayank Goel</a>, CMU).</p>
-<div class="media-links">
-<a href="https://www.hackster.io/news/your-wearable-is-lying-to-you-28f2e5f56338" target="_blank" class="media-link">Hackster.io</a>
-<a href="https://indianexpress.com/article/cities/ahmedabad/research-scholar-at-iitgn-develops-device-to-overcome-fitness-monitoring-limitations-9180741/" target="_blank" class="media-link">Indian Express</a>
-<a href="https://www.cs.cmu.edu/news/2024/jouleseye" target="_blank" class="media-link">CMU News</a>
-<a href="https://www.zmescience.com/science/news-science/smartwatch-thermal-camera-calories/" target="_blank" class="media-link">ZME Science</a>
-<a href="https://techxplore.com/news/2024-04-thermal-camera-calorie.html" target="_blank" class="media-link">TechXplore</a>
-<a href="https://www.eurekalert.org/news-releases/1040652" target="_blank" class="media-link">EurekaAlert</a>
-</div>
-</div>
-</div>
-
-<div class="media-item">
-<img loading="lazy" src="images/media/GaetanoAward.png" alt="Gaetano Award" class="media-image">
-<div class="media-content">
-<h3>UbiComp Gaetano Borriello Award Finalist</h3>
-<p><a href="https://rishi-a.github.io" target="_blank">Rishiraj Adhikary</a> - finalist for <a href="https://ubicomp.org/sc/awards.html" target="_blank">Outstanding Student Award</a> 2023.</p>
-</div>
-</div>
-
-<div class="media-item">
-<img loading="lazy" src="images/media/educationtimes-fulbright.png" alt="Fulbright Fellowship" class="media-image">
-<div class="media-content">
-<h3>Fulbright-Nehru Fellowship</h3>
-<p><a href="https://rishi-a.github.io" target="_blank">Rishiraj Adhikary</a> - 9-month research at CMU with <a href="http://www.mayankgoel.com/" target="_blank">Prof. Mayank Goel</a>.</p>
-<div class="media-links">
-<a href="https://www.educationtimes.com/article/scholarships/91766182/cross-domain-knowledge-helped-phd-student-get-fullbright-nehru-doctoral-research-fellowship" target="_blank" class="media-link">Education Times</a>
-<a href="https://indianexpress.com/article/cities/ahmedabad/iitgn-phd-scholar-bags-fulbright-nehru-fellowship-7928541/" target="_blank" class="media-link">Indian Express</a>
-<a href="https://ahmedabadmirror.com/iitgns-phd-scholar-awarded-fellowship/81833150.html" target="_blank" class="media-link">Ahmedabad Mirror</a>
-<a href="https://indiaeducationdiary.in/iit-gandhinagar-phd-scholar-bags-the-prestigious-fulbright-nehru-doctoral-research-fellowship-2022-23/" target="_blank" class="media-link">India Education Diary</a>
-<a href="https://news.careers360.com/iit-gandhinagar-computer-science-engineering-phd-scholar-wins-fulbright-nehru-doctoral-research-fellowship-2022-23" target="_blank" class="media-link">Careers 360</a>
-</div>
-</div>
-</div>
-
-<div class="media-item">
-<img loading="lazy" src="images/media/spiromask-news-1.jpeg" alt="SpiroMask" class="media-image">
-<div class="media-content">
-<h3>SpiroMask - Smart Mask for Lung Health</h3>
-<p><a href="https://dl.acm.org/doi/10.1145/3570167" target="_blank">SpiroMask</a> enables lung health monitoring using consumer-grade masks.</p>
-<div class="media-links">
-<a href="https://www.ahmedabadmirror.com/iit-gn-researchers-devise-mask-to-measure-lung-health/81846808.html" target="_blank" class="media-link">Ahmedabad Mirror</a>
-<a href="https://www.edgeimpulse.com/blog/just-take-a-deep-breath/" target="_blank" class="media-link">EdgeImpulse</a>
-</div>
-</div>
-</div>
-
-<div class="contact-box">
-<p style="margin: 0 0 12px 0; color: #c44536;"><strong>Interested in featuring our research?</strong></p>
-<a href="mailto:nipun.batra@iitgn.ac.in">Contact for Media</a>
-</div>
+:::

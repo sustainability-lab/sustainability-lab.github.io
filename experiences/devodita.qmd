@@ -2,6 +2,7 @@
 title: "Sustainability Lab: The Taste of True Research"
 author: "Devodita Chakravarty"
 date: "2025-2-27"
+image: "../images/experiences/devodita-1.png"
 ---
 
 ## About Me

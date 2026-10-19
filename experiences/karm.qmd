@@ -3,6 +3,7 @@
 title: Sustainability Lab - The Big Booster in my career 
 author: "Karm Patel"
 date: "2024-05-06"
+image: "../images/experiences/karm-2.jpeg"
 ---
 
 ## About me
