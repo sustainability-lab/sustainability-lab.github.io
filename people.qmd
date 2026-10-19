@@ -50,6 +50,12 @@ listing:
 <section>
   <h1 class="page">People</h1>
   <p class="lede" style="margin-top:12px">17 researchers today, 50+ alumni in academia and industry, and two PhD graduates.</p>
+  <div class="ptiles">
+    <a href="#phd"><img src="images/memories/2025-Akshardham-all.jpg" alt="" loading="lazy"><b>The team</b><span>PhD, MTech and research fellows</span></a>
+    <a href="#alumni-list"><img src="images/memories/2024-dec-alum-meet.jpg" alt="" loading="lazy"><b>Alumni</b><span>Where 50+ alumni are now</span></a>
+    <a href="experiences.html"><img src="images/experiences/rishiraj-3.jpg" alt="" loading="lazy"><b>Stories</b><span>Alumni in their own words</span></a>
+    <a href="memories.html"><img src="images/memories/2026-zeel-phd-students.jpeg" alt="" loading="lazy"><b>Photos</b><span>Defences, dinners, visits</span></a>
+  </div>
   <div class="jump"><a href="#phd">PhD</a><a href="#mtech">MTech</a><a href="#fellows">Research fellows</a><a href="#graduates">PhD graduates</a><a href="#alumni-list">Alumni</a><a href="#stories">Stories</a><a href="#photos">Photos</a></div>
   <div class="pi-row">
     <img class="photo" style="aspect-ratio:1" src="https://nipunbatra.github.io/images/nipun.jpg" alt="Nipun Batra">

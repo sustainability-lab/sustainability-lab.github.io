@@ -272,3 +272,15 @@ body.quarto-dark .funders-row .logos { background: #f0efe8; padding: 14px 16px; 
 .life-sub { font-size: 17px; margin: 30px 0 0 !important; }
 .life .stories { margin-top: 14px; }
 @media (max-width: 760px) { .life-photos { grid-template-columns: 1fr 1fr; grid-template-rows: 220px 140px 140px; } .life-photos figure:first-child { grid-column: span 2; grid-row: span 1; } }
+
+/* ---------- people: entry tiles ---------- */
+.ptiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin: 26px 0 6px; }
+.ptiles a { position: relative; display: block; color: var(--ink); }
+.ptiles img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; transition: transform .4s ease; }
+.ptiles a:hover { text-decoration: none; }
+.ptiles a:hover img { transform: scale(1.02); }
+.ptiles b { display: block; font-family: var(--heading); font-size: 21px; letter-spacing: -.03em; margin-top: 10px; }
+.ptiles a:hover b { color: var(--accent); }
+.ptiles b::after { content: " →"; color: var(--accent); }
+.ptiles span { display: block; font-size: 14px; color: var(--muted); }
+@media (max-width: 760px) { .ptiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
