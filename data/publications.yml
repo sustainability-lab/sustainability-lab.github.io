@@ -55,7 +55,7 @@
   type: paper
   themes:
   - health
-  figure: /papers/2026/thermeval.png
+  figure: /papers/2026/thermeval-portraits.webp
   links:
   - label: arXiv
     url: https://arxiv.org/abs/2602.14989
@@ -73,7 +73,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2026/nilmbench2026.png
+  figure: /papers/2026/nilmbench2026-fig1.png
   award: Best Paper Runner-Up
   summary: 🏆 Best Paper Award — Runner-Up
   links:
@@ -147,7 +147,7 @@
   type: paper
   themes:
   - earth
-  figure: /papers/2025/sentinelkilndb.png
+  figure: /papers/2025/sentinelkilndb-fcbk.png
   links:
   - label: PDF
     url: https://openreview.net/pdf?id=efGzsxVSEC
@@ -826,7 +826,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2014/ACM-energy14_NILMTK.png
+  figure: /papers/2014/nilmtk-pipeline.png
   award: Test-of-Time Award 2025
   links:
   - label: PDF
