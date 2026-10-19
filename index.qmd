@@ -1,369 +1,67 @@
 ---
-toc: false
-description: "Sustainability Lab at IIT Gandhinagar — AI-driven research for a sustainable future. Led by Prof. Nipun Batra. PhD positions available in AI for sustainability, health sensing, energy analytics, and environmental monitoring."
+title: ""
+pagetitle: "Sustainability Lab · IIT Gandhinagar"
+description-meta: "Sustainability Lab at IIT Gandhinagar — AI for a sustainable future, led by Prof. Nipun Batra. Research in air quality, health sensing, energy and Earth observation. Recruiting PhD students and interns."
+page-layout: custom
+listing:
+  - id: news-latest
+    contents: data/news.yml
+    template: _templates/news-latest.ejs
+    sort: false
+    max-items: 5
 ---
 
-<div class="hero-section">
-<p style="margin-bottom: 16px;"><a href="openings.qmd" style="display:inline-block; background: rgba(196,69,54,0.10); color: var(--accent); font-weight: 600; font-size: 0.9rem; padding: 6px 16px; border-radius: 999px; text-decoration: none;">🎓 Now recruiting PhD students &amp; interns →</a></p>
-<h1>AI for a Sustainable Future</h1>
-<p class="tagline">We build AI that serves both people and the planet — from air quality and health sensing to energy and Earth observation.</p>
-
-<div class="hero-buttons">
-<a href="openings.qmd" class="hero-btn primary">Join the Lab</a>
-<a href="papers/index.qmd" class="hero-btn secondary">View Research</a>
-<a href="flyer.pdf" class="hero-btn secondary" target="_blank">Lab Flyer</a>
-</div>
-</div>
+::: {.frame .page-main}
 
 ```{=html}
-<style>
-.proof-band { max-width: 1000px; margin: -8px auto 54px; padding: 0 8px; }
-.proof-awards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 26px; }
-.proof-award { display: flex; align-items: center; gap: 12px; background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: var(--radius-medium); padding: 15px 18px; box-shadow: var(--shadow-sm); text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
-.proof-award:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); text-decoration: none; }
-.proof-award .pa-icon { font-size: 1.7rem; line-height: 1; flex-shrink: 0; }
-.pa-text { display: flex; flex-direction: column; }
-.proof-award strong { color: var(--ink); font-size: .95rem; line-height: 1.2; }
-.proof-award small { color: var(--muted); font-size: .8rem; margin-top: 3px; }
-.proof-venues { text-align: center; margin-bottom: 26px; }
-.proof-label { display: block; text-transform: uppercase; letter-spacing: .14em; font-size: .72rem; color: var(--muted); margin-bottom: 10px; }
-.proof-venues .pv { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 600; color: var(--ink); }
-.proof-venues .pv + .pv::before { content: '·'; color: var(--accent); margin: 0 12px; font-family: 'Work Sans', sans-serif; }
-.proof-foot { display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 22px; }
-.proof-pi { display: flex; align-items: center; gap: 13px; }
-.proof-pi img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent); }
-.proof-pi .pa-text strong { color: var(--ink); font-size: .92rem; }
-.proof-pi .pa-text small { color: var(--muted); font-size: .8rem; margin-top: 2px; }
-.proof-alumni { text-align: center; max-width: 470px; }
-.proof-alumni .proof-label { color: var(--accent); font-weight: 600; margin-bottom: 5px; }
-.proof-alumni-list a { color: var(--muted); font-size: .85rem; line-height: 1.5; text-decoration: none; }
-.proof-alumni-list a:hover { color: var(--accent); }
-@media (max-width: 700px) {
-  .proof-awards { grid-template-columns: 1fr; }
-  .proof-venues .pv { font-size: 1.05rem; }
-  .proof-venues .pv + .pv::before { margin: 0 7px; }
-  .proof-foot { gap: 20px; }
-}
-</style>
+<section>
+  <div class="hero">
+    <div class="intro">
+      <h1>AI for a Sustainable Future</h1>
+      <p class="sub">Sustainability Lab · IIT Gandhinagar</p>
+      <p>We build AI that serves both people and the planet — from air quality and health sensing to energy and Earth observation.</p>
+      <p>The lab is led by <a href="https://nipunbatra.github.io">Nipun Batra</a> and has 17 researchers today. Our 50+ alumni have gone on to Cambridge, Microsoft Research, Google DeepMind, CMU and industry.</p>
+      <p class="awards-line">Recent recognition: <b>Best Paper Runner-Up at BuildSys 2026</b>, the <b>ACM e-Energy Test-of-Time Award 2025</b> for NILMTK, and the <b>ACM SIGEnergy Rising Star 2025</b>. Work published at NeurIPS, KDD, AAAI, IMWUT, BuildSys and UbiComp.</p>
+      <a class="recruit" href="join.html">Now recruiting PhD students &amp; interns</a>
+    </div>
+    <figure>
+      <img class="photo" style="aspect-ratio:4/3" src="images/memories/2025-Akshardham-all.jpg" alt="The Sustainability Lab, 2025">
+      <figcaption>The lab, 2025 · <a href="people.html">meet everyone</a></figcaption>
+    </figure>
+  </div>
+</section>
 
-<div class="proof-band">
+<section>
+  <div class="vrule">
+    <div>
+      <h2>Research</h2>
+      <a class="trow" href="research.html#air"><img src="images/illustrations/air.webp" alt=""><span><b>Clean Air</b><span>Sensors, models and LLM tools for cleaner cities.</span></span></a>
+      <a class="trow" href="research.html#health"><img src="images/illustrations/health.webp" alt=""><span><b>Health Sensing</b><span>Cameras and wearables for breathing and metabolism.</span></span></a>
+      <a class="trow" href="research.html#energy"><img src="images/illustrations/energy.webp" alt=""><span><b>Energy</b><span>What uses power, and when, from a single meter.</span></span></a>
+      <a class="trow" href="research.html#earth"><img src="images/illustrations/earth.webp" alt=""><span><b>Earth Observation</b><span>Finding brick kilns and mapping land from space.</span></span></a>
+      <p class="small" style="margin-top:10px"><a href="papers/index.html">Publications</a> &nbsp;·&nbsp; <a href="research.html">All projects</a></p>
+    </div>
+    <div>
+      <h2>Join &amp; learn</h2>
+      <a class="trow" href="join.html#phd"><img src="images/illustrations/students.webp" alt=""><span><b>PhD &amp; postdoc</b><span>How admissions work, and where alumni went.</span></span></a>
+      <a class="trow" href="join.html#internships"><img src="images/illustrations/explore.webp" alt=""><span><b>Internships</b><span>Summer (SRIP) and 6-month research internships.</span></span></a>
+      <a class="trow" href="handbook/index.html"><img src="images/illustrations/tablet.webp" alt=""><span><b>Lab handbook</b><span>Week-one checklist, servers, writing and culture.</span></span></a>
+      <a class="trow" href="people.html"><img src="images/illustrations/talk.webp" alt=""><span><b>People</b><span>The team, alumni and their stories.</span></span></a>
+      <p class="small" style="margin-top:10px"><a href="join.html">Open positions</a> &nbsp;·&nbsp; <a href="https://sustainability-lab.github.io/sustainability-research-bootcamp/">Research Skills Bootcamp</a></p>
+    </div>
+  </div>
+</section>
 
-<div class="proof-awards">
-<a class="proof-award" href="awards.qmd">
-<span class="pa-icon">🏆</span>
-<span class="pa-text"><strong>ACM eEnergy Test-of-Time Award</strong><small>2025 · for NILMTK</small></span>
-</a>
-<a class="proof-award" href="awards.qmd">
-<span class="pa-icon">🌟</span>
-<span class="pa-text"><strong>ACM SIGEnergy Rising Star</strong><small>2025</small></span>
-</a>
-<a class="proof-award" href="awards.qmd">
-<span class="pa-icon">🥈</span>
-<span class="pa-text"><strong>BuildSys 2026 Best Paper</strong><small>Runner-Up · NILMBench</small></span>
-</a>
-</div>
-
-<div class="proof-venues">
-<span class="proof-label">Our research appears at</span>
-<span class="pv">NeurIPS</span><span class="pv">KDD</span><span class="pv">AAAI</span><span class="pv">IMWUT</span><span class="pv">BuildSys</span><span class="pv">UbiComp</span>
-</div>
-
-<div class="proof-foot">
-<div class="proof-pi">
-<img src="https://nipunbatra.github.io/images/nipun.jpg" alt="Prof. Nipun Batra" loading="lazy">
-<span class="pa-text"><strong>Led by Prof. Nipun Batra</strong><small>Associate Professor, Computer Science, IIT Gandhinagar</small></span>
-</div>
-<div class="proof-alumni">
-<span class="proof-label">Our alumni are at</span>
-<div class="proof-alumni-list"><a href="alumni.qmd">Cambridge · Microsoft Research · Google DeepMind · CMU · Oracle · Nykaa</a></div>
-</div>
-</div>
-
-</div>
+<section>
+  <h2>Latest</h2>
 ```
+
+::: {#news-latest}
+:::
 
 ```{=html}
-<style>
-.pillars { max-width: 1000px; margin: 8px auto 56px; }
-.pillars-head { text-align: center; margin-bottom: 26px; }
-.pillars-head h2 { font-family: 'Playfair Display', serif; color: var(--ink); font-size: 2rem; margin: 0 0 6px; }
-.pillars-head p { color: var(--muted); margin: 0; font-size: 1rem; }
-.pillars-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-.pillar { display: flex; flex-direction: column; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-medium); padding: 22px 20px; box-shadow: var(--shadow-sm); text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
-.pillar:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); text-decoration: none; }
-.pillar-icon { font-size: 2.1rem; line-height: 1; margin-bottom: 12px; }
-.pillar h3 { color: var(--ink); font-size: 1.15rem; margin: 0 0 8px; font-family: 'Playfair Display', serif; }
-.pillar p { color: var(--muted); font-size: .85rem; line-height: 1.45; margin: 0 0 14px; flex: 1; }
-.pillar .pillar-cta { color: var(--accent); font-weight: 600; font-size: .84rem; }
-.pillars-all { text-align: center; margin-top: 20px; }
-.pillars-all a { color: var(--accent); font-weight: 600; font-size: .95rem; text-decoration: none; }
-@media (max-width: 820px) { .pillars-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 470px) { .pillars-grid { grid-template-columns: 1fr; } }
-</style>
-<div class="pillars">
-<div class="pillars-head">
-<h2>What We Work On</h2>
-<p>Four research areas where we build AI for real-world sustainability.</p>
-</div>
-<div class="pillars-grid">
-<a class="pillar" href="projects.html?tag=air-quality">
-<span class="pillar-icon">🌫️</span>
-<h3>Air Quality</h3>
-<p>Low-cost sensing, satellite AI, and forecasting for cleaner air across cities.</p>
-<span class="pillar-cta">Explore projects &rarr;</span>
-</a>
-<a class="pillar" href="projects.html?tag=health-sensing">
-<span class="pillar-icon">🫁</span>
-<h3>Health Sensing</h3>
-<p>Wearables and thermal imaging for respiratory and metabolic health.</p>
-<span class="pillar-cta">Explore projects &rarr;</span>
-</a>
-<a class="pillar" href="projects.html?tag=nilm">
-<span class="pillar-icon">⚡</span>
-<h3>Energy &amp; NILM</h3>
-<p>Energy disaggregation and smart-grid ML — knowing what draws power, and when.</p>
-<span class="pillar-cta">Explore projects &rarr;</span>
-</a>
-<a class="pillar" href="projects.html?tag=computer-vision">
-<span class="pillar-icon">🛰️</span>
-<h3>Earth Observation</h3>
-<p>Detecting brick kilns and mapping land use from satellite imagery.</p>
-<span class="pillar-cta">Explore projects &rarr;</span>
-</a>
-</div>
-<div class="pillars-all"><a href="projects.html">Browse all projects &rarr;</a></div>
-</div>
+  <p style="margin-top:12px"><a class="arrow" href="news.html">All news</a></p>
+</section>
 ```
 
-## Featured Research
-
-<p class="section-subtitle">Cutting-edge projects at the intersection of AI and sustainability</p>
-
-<div class="featured-projects">
-
-<div class="project-card">
-<img src="images/mainpage/JoulesEye_1.png" alt="JoulesEye Project" class="project-image">
-<div class="project-content">
-<h3>JoulesEye</h3>
-<p>Revolutionary energy expenditure estimation and respiration sensing from thermal imagery during exercise.</p>
-<div class="project-tags">
-<span class="tag">Health Sensing</span>
-<span class="tag">Thermal Imaging</span>
-<span class="tag">AI/ML</span>
-</div>
-<a href="https://sustainability-lab.github.io/jouleseye/" class="project-link">Learn More →</a>
-</div>
-</div>
-
-<div class="project-card">
-<img src="images/mainpage/SpiroMask.png" alt="SpiroMask Project" class="project-image">
-<div class="project-content">
-<h3>SpiroMask</h3>
-<p>Smart respiratory monitoring system transforming regular face masks into health sensing devices.</p>
-<div class="project-tags">
-<span class="tag">Healthcare</span>
-<span class="tag">IoT</span>
-<span class="tag">Respiratory Health</span>
-</div>
-<a href="https://dl.acm.org/doi/fullHtml/10.1145/3570167" class="project-link">Learn More →</a>
-</div>
-</div>
-
-<div class="project-card">
-<img src="papers/2022/I_Dont_Know.png" alt="I Do Not Know Project" class="project-image">
-<div class="project-content">
-<h3>"I do not know"</h3>
-<p>Quantifying Uncertainty in Neural Network Based Approaches for Non-Intrusive Load Monitoring</p>
-<div class="project-tags">
-<span class="tag">NILM</span>
-<span class="tag">Machine Learning</span>
-<span class="tag">Uncertainty</span>
-</div>
-<a href="https://github.com/VibhutiBansal-11/NILM_Uncertainty" class="project-link">Learn More →</a>
-</div>
-</div>
-
-<div class="project-card">
-<img src="images/mainpage/sentinelkilndb.png" alt="SentinelKilnDB Project" class="project-image">
-<div class="project-content">
-<h3>SentinelKilnDB</h3>
-<p>A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery.</p>
-<div class="project-tags">
-<span class="tag">Computer Vision</span>
-<span class="tag">Earth Observation</span>
-<!-- <span class="tag">Environmental</span> -->
-</div>
-<a href="https://sustainability-lab.github.io/sentinelkilndb/" class="project-link">Learn More →</a>
-</div>
-</div>
-
-
-<div class="project-card">
-<img src="images/mainpage/space-to-policy.png" alt="Space to Policy Project" class="project-image">
-<div class="project-content">
-<h3>Space to Policy</h3>
-<p>Using satellite imagery and AI to monitor environmental compliance and inform policy decisions.</p>
-<div class="project-tags">
-<span class="tag">Satellite Data</span>
-<span class="tag">Policy</span>
-<span class="tag">Environmental</span>
-</div>
-<a href="https://sustainability-lab.github.io/brick-kilns/" class="project-link">Learn More →</a>
-</div>
-</div>
-
-<div class="project-card">
-<img src="papers/2024/VayuBuddy_diagram.png" alt="VayuBuddy Project" class="project-image">
-<div class="project-content">
-<h3>VayuBuddy</h3>
-<p>An LLM-powered chatbot system to reduce the barrier between the stakeholders and air quality sensor data</p>
-<div class="project-tags">
-<span class="tag">Air Quality Data</span>
-<span class="tag">Policy</span>
-<span class="tag">Environmental</span>
-</div>
-<a href="https://sustainability-lab.github.io/vayubuddy/" class="project-link">Learn More →</a>
-</div>
-</div>
-
-<div class="project-card">
-<img src="papers/2022/compass-india.png" alt="Samachar Project" class="project-image">
-<div class="project-content">
-<h3>Samachar</h3>
-<p>Print News Media on Air Pollution in India - analyzing how air quality is covered in Indian print media.</p>
-<div class="project-tags">
-<span class="tag">Air Quality</span>
-<span class="tag">NLP</span>
-<span class="tag">Policy</span>
-</div>
-<a href="https://github.com/karm-patel/Samachar-News-media-on-air-pollution" class="project-link">Learn More →</a>
-</div>
-</div>
-
-<div class="project-card">
-<img src="papers/2022/Scalable_GaussianProcesses.png" alt="Gaussian Processes Project" class="project-image">
-<div class="project-content">
-<h3>Accurate and Scalable Gaussian Processes</h3>
-<p>Machine learning approach for fine-grained air quality inference using Gaussian processes at scale.</p>
-<div class="project-tags">
-<span class="tag">Air Quality</span>
-<span class="tag">Machine Learning</span>
-<span class="tag">Gaussian Processes</span>
-</div>
-<a href="https://github.com/patel-zeel/AAAI22" class="project-link">Learn More →</a>
-</div>
-</div>
-
-
-<div class="project-card">
-<img src="papers/2014/ACM-energy14_NILMTK.png" alt="NILMTK Project" class="project-image">
-<div class="project-content">
-<h3>NILMTK</h3>
-<p>An Open Source Toolkit for Non-intrusive Load Monitoring - pioneering framework for energy disaggregation research.</p>
-<div class="project-tags">
-<span class="tag">NILM</span>
-<span class="tag">Toolkit</span>
-<span class="tag">Open Source</span>
-</div>
-<a href="https://github.com/nilmtk/nilmtk" class="project-link">Learn More →</a>
-</div>
-</div>
-
-<div class="project-card">
-<img src="papers/2023/airdelhi.png" alt="AirDelhi Project" class="project-image">
-<div class="project-content">
-<h3>AirDelhi</h3>
-<p>A fine-grained air quality dataset from mobile sensors on Delhi buses, enabling better pollution monitoring.</p>
-<div class="project-tags">
-<span class="tag">Air Quality Data</span>
-<span class="tag">Policy</span>
-<span class="tag">Environmental</span>
-</div>
-<a href="https://neurips.cc/virtual/2023/poster/73476" class="project-link">Learn More →</a>
-</div>
-</div>
-
-</div>
-
-<div style="text-align: center; margin-top: 30px;">
-<a href="papers/index.qmd" class="project-link" style="font-size: 1.1rem;">View All Publications →</a>
-</div>
-
-## Funding Partners
-
-<div class="funders-grid">
-
-::: {.funder-block}
-![Google](images/funders/google.png){.funder-logo}
 :::
-
-::: {.funder-block}
-![Cisco](images/funders/cisco.png){.funder-logo}
-:::
-
-::: {.funder-block}
-![NVIDIA](images/funders/nvidia.png){.funder-logo}
-:::
-
-::: {.funder-block}
-![Microsoft](images/funders/microsoft.png){.funder-logo}
-:::
-
-::: {.funder-block}
-![SERB](images/funders/serb.png){.funder-logo}
-:::
-
-::: {.funder-block}
-![MOES](images/funders/moes.jpeg){.funder-logo}
-:::
-
-::: {.funder-block}
-![DST](images/funders/dst.jpg){.funder-logo}
-:::
-
-::: {.funder-block}
-![STARS](images/funders/stars.png){.funder-logo}
-:::
-
-::: {.funder-block}
-![Government of Gujarat Science](images/funders/gujcost.png){.funder-logo}
-:::
-
-::: {.funder-block}
-![CoE in AI (MHRD)](images/funders/coe-ai-mhrd.svg){.funder-logo}
-:::
-
-::: {.funder-block}
-![Gujarat Forest Department](images/funders/gfd.jpeg){.funder-logo}
-:::
-
-::: {.funder-block}
-![Jio](images/funders/jio.png){.funder-logo}
-:::
-
-</div>
-
-## Connect
-
-<div style="text-align: center; margin: 20px 0; font-size: 1.1rem;">
-<a href="https://www.youtube.com/@SustainabilityLab-SL" target="_blank" class="project-link">Lab YouTube</a> | 
-<a href="https://www.youtube.com/@NipunBatra0" target="_blank" class="project-link">Teaching YouTube</a> | 
-<a href="https://x.com/nipun_batra" target="_blank" class="project-link">Twitter</a> | 
-<a href="https://www.linkedin.com/in/nipunbatra0/" target="_blank" class="project-link">LinkedIn</a>
-</div>
-
-<div class="join-section">
-<h2>Join Our Mission</h2>
-<p>Embark on a journey to drive innovation in sustainability through cutting-edge AI research.</p>
-
-<div class="join-buttons">
-<a href="openings.qmd" class="join-btn primary">View Positions</a>
-<a href="upskilling.qmd" class="join-btn secondary">Research Skills Bootcamp</a>
-<a href="lab_culture.qmd" class="join-btn secondary">Our Culture</a>
-<a href="members.qmd" class="join-btn secondary">Meet the Team</a>
-</div>
-
-<div style="margin-top: 30px; font-size: 0.9rem; opacity: 0.8;">
-<p><strong>Ready to make an impact?</strong></p>
-</div>
-</div>

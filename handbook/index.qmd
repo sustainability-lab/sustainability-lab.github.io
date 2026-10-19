@@ -1,0 +1,64 @@
+---
+title: ""
+pagetitle: "Lab Handbook · Sustainability Lab"
+description-meta: "The Sustainability Lab handbook — onboarding, how we work, and resources for members and prospective students at IIT Gandhinagar."
+page-layout: custom
+toc: false
+aliases:
+  - ../lab-handbook.html
+---
+
+::: {.frame .page-main}
+
+```{=html}
+<section>
+  <div class="grid g2" style="align-items:center;gap:44px">
+    <div>
+      <h1 class="page">Lab handbook</h1>
+      <p class="lede" style="margin-top:12px">How we work, and what you need on day one. Written for members; useful for anyone curious about life in the lab.</p>
+    </div>
+    <img class="ill" src="../images/illustrations/tablet.webp" alt="">
+  </div>
+</section>
+
+<section class="grid g2" style="gap:48px">
+  <div>
+    <div class="kicker">New here? Week one</div>
+    <ol class="checklist">
+      <li><span>Read <a href="expectations.html">Expectations</a> and <a href="culture.html">Lab culture</a></span></li>
+      <li><span>Request server access — see the <a href="server-policy.html">server policy</a></span></li>
+      <li><span>Add yourself to <code>data/members.yml</code> with a photo in <code>images/members/</code></span></li>
+      <li><span>Start the <a href="https://sustainability-lab.github.io/sustainability-research-bootcamp/">Research Skills Bootcamp</a></span></li>
+      <li><span>Join the group meeting and the <a href="reading.html">reading group</a></span></li>
+    </ol>
+  </div>
+  <div>
+    <div class="kicker">Compute</div>
+    <div class="list-row"><span class="d">Servers</span><span>GPU servers, DGX Spark and workstations — <a href="compute.html">specs &amp; benchmarks</a></span></div>
+    <div class="list-row"><span class="d">Access</span><span><a href="server-policy.html">Server policy</a> · fair use</span></div>
+    <div class="list-row"><span class="d">Brand</span><span><a href="design-kit.html">Design kit</a> · logos, slide &amp; poster templates</span></div>
+  </div>
+</section>
+
+<section class="grid g3">
+  <div class="col"><h3>Joining</h3><ul>
+    <li><a href="expectations.html">Expectations</a></li>
+    <li><a href="culture.html">Lab culture</a></li>
+    <li><a href="values.html">Values</a></li>
+    <li><a href="technical-background.html">Technical background</a></li>
+    <li><a href="recommendation-letters.html">Recommendation letters</a></li></ul></div>
+  <div class="col"><h3>How we work</h3><ul>
+    <li><a href="meetings.html">Meetings</a></li>
+    <li><a href="reading.html">Reading group</a></li>
+    <li><a href="writing-papers.html">Writing papers</a></li>
+    <li><a href="posters.html">Posters</a></li>
+    <li><a href="research-skills.html">Academic &amp; research skills</a></li></ul></div>
+  <div class="col"><h3>Tools</h3><ul>
+    <li><a href="compute.html">Computational resources</a></li>
+    <li><a href="server-policy.html">Server policy</a></li>
+    <li><a href="latexify-plots.html">LaTeXify plots</a></li>
+    <li><a href="design-kit.html">Design kit</a></li></ul></div>
+</section>
+```
+
+:::

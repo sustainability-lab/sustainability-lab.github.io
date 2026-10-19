@@ -1,39 +1,47 @@
 # Sustainability Lab Website
 
-The official website for the Sustainability Lab, showcasing our research at the intersection of AI and sustainability. Built with [Quarto](https://quarto.org) and hosted on GitHub Pages.
+Source for <https://sustainability-lab.github.io>, the website of the Sustainability Lab at IIT Gandhinagar (Prof. Nipun Batra). Built with [Quarto](https://quarto.org); light and dark mode are built in.
 
-## About the Lab
+## Common tasks
 
-We harness AI to create a sustainable future where technology serves both people and planet. Our research spans:
+| I want to… | Edit |
+|---|---|
+| Add myself as a new member | `data/members.yml` + a square photo in `images/members/` |
+| Move someone to alumni | remove from `data/members.yml`, add to `data/alumni.yml` |
+| Add a news item | top of `data/news.yml` |
+| Add a paper | top of `data/publications.yml` + figure/PDF in `papers/<year>/` + `.bib` in `papers/bibtex/` (see `papers/README.md`) |
+| Add a student story | new file in `experiences/<firstname>.qmd` (copy an existing one) |
+| Add lab photos | `memories.qmd` + images in `images/memories/` |
+| Update openings | `join.qmd` |
+| Update handbook pages | `handbook/*.qmd` |
 
-- **Health Sensing**: Revolutionary thermal imaging for energy expenditure and respiration monitoring
-- **Environmental Monitoring**: Satellite imagery analysis for policy and compliance
-- **Smart Healthcare**: IoT-enabled respiratory health systems
-- **Sustainable Computing**: Energy-efficient AI algorithms and systems
+Each data file has a comment at the top listing its fields.
 
-## Website Features
+## Layout
 
-- Responsive design optimized for all devices
-- Featured research projects with interactive cards
-- Team member profiles and alumni experiences
-- Event management system (ACM Summer School 2025)
-- Comprehensive publication database
-- Lab culture and handbook resources
+```
+index.qmd  research.qmd  people.qmd  join.qmd  news.qmd   main pages
+papers/            publications page, PDFs and figures by year, BibTeX
+handbook/          lab handbook (onboarding, culture, writing, compute, ...)
+data/              members, alumni, news, publications, quotes (YAML)
+_templates/        how the YAML is turned into HTML (EJS listing templates)
+theme/             light.scss / dark.scss (colour tokens), site.scss, legacy.scss
+images/            brand/, illustrations/, members/, memories/, awards/, media/, funders/
+experiences/       alumni stories     events/   ACM Summer School 2025 site
+slides/            talk and poster PDFs (Keynote/PowerPoint sources are in the
+                   "slide-sources" GitHub release)
+```
 
-## Development
+Pages that were renamed keep their old URLs through `aliases:` redirects (e.g. `openings.html` → `join.html`, `members.html` → `people.html`).
 
-This website is built with Quarto and automatically deployed via GitHub Actions. The source files are in Quarto markdown (.qmd) format.
+## Preview and deploy
 
-### Local Development
+```bash
+quarto preview
+```
 
-1. Install [Quarto](https://quarto.org/docs/get-started/)
-2. Clone this repository
-3. Run `quarto preview` to start the development server
-4. Edit `.qmd` files to update content
-5. Styles are managed in `styles.scss`
+Pushing to `main` runs `.github/workflows/publish.yml`, which renders the site and publishes it to the `gh-pages` branch. `docs/` is a local build folder and is not committed.
 
-### Deployment
+## Design
 
-The website automatically builds and deploys to GitHub Pages when changes are pushed to the main branch.
-
-
+Matches [nipunbatra.github.io](https://nipunbatra.github.io): DM Sans body, Arial headings, warm red accent (`#b52d24` light, `#f1a399` dark), flat rules, no shadows. Colours live only in `theme/light.scss` and `theme/dark.scss`.

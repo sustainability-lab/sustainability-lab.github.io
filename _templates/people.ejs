@@ -1,0 +1,10 @@
+<div class="people">
+<% for (const p of items) { %>
+<div class="person" <%= metadataAttrs(p) %>>
+<% if (p.url) { %><a href="<%= p.url %>"><% } %>
+<img src="<%= p.photo %>" alt="<%= p.name %>" loading="lazy">
+<b><%= p.name %></b><% if (p.url) { %></a><% } %>
+<span><%= p.area %><% if (p.since) { %> · since <%= p.since %><% } %></span>
+</div>
+<% } %>
+</div>

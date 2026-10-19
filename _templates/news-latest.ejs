@@ -1,0 +1,14 @@
+<%
+const MON = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const LABEL = {paper:'Paper', award:'Award', grant:'Grant', people:'People', talk:'Talk', event:'Event', media:'Media', other:'News'};
+const full = false;
+const unesc = s => String(s).replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&amp;/g,"&");
+let year = null;
+%>
+<div class="newsfeed">
+<% for (const n of items) {
+  const w = String(n.when); const y = w.slice(0,4); const m = w.length > 4 ? MON[parseInt(w.slice(5,7))] : '';
+  if (full && y !== year) { year = y; %><div class="year" data-year="<%= y %>"><%= y %></div><% } %>
+<div class="list-row" data-type="<%= n.type %>"><span class="d"><%= full ? (m || '—') : (m ? m + ' ' + y : y) %></span><span><span class="label"><%= LABEL[n.type] || n.type %></span><%= unesc(n.text) %><% if (full && n.image) { %><img class="thumb" src="<%= n.image %>" alt="" loading="lazy"><% } %></span></div>
+<% } %>
+</div>

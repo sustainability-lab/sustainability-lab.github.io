@@ -1,0 +1,11 @@
+<div class="grid g2">
+<% for (const a of items) { %>
+<div style="display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:start">
+<img class="photo" style="aspect-ratio:1" src="<%= a.photo %>" alt="<%= a.name %>" loading="lazy">
+<div><h3><% if (a.url) { %><a href="<%= a.url %>"><%= a.name %></a><% } else { %><%= a.name %><% } %></h3>
+<p class="muted small" style="margin:4px 0 4px"><%= a.now %></p>
+<p class="small" style="margin:0"><%= a.years %><% if (a.note) { %> · <%= a.note %><% } %></p>
+<% if (a.story) { %><a class="arrow small" href="<%= a.story %>">Read the story</a><% } %></div>
+</div>
+<% } %>
+</div>

@@ -1,0 +1,7 @@
+<div class="chips" id="alumchips"><button class="chip on" data-g="all">All <%= items.length %></button><button class="chip" data-g="PhD">PhD</button><button class="chip" data-g="MTech">MTech</button><button class="chip" data-g="BTech">BTech</button><button class="chip" data-g="RA & interns">RA &amp; interns</button></div>
+<div class="table-wrap"><table id="alumtable">
+<thead><tr><th>Name</th><th>Here</th><th>Year</th><th>Now</th></tr></thead><tbody>
+<% for (const a of items) { %>
+<tr data-g="<%= a.group %>"><td><% if (a.url) { %><a href="<%= a.url %>"><%= a.name %></a><% } else { %><%= a.name %><% } %><% if (a.story) { %> · <a href="<%= a.story %>">story</a><% } %></td><td><%= a.role || a.group %></td><td><%= a.year || '' %></td><td><%= a.now || '' %><% if (a.note) { %><br><span class="muted small"><%= a.note %></span><% } %></td></tr>
+<% } %>
+</tbody></table></div>

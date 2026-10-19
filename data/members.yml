@@ -1,0 +1,90 @@
+# Current lab members. New member? Add an entry and put your photo in images/members/.
+#   role: PhD | MTech | Research fellow | BTech | Intern
+#   area: 2-3 short topics separated by " · "   since: year you joined   url: optional personal page
+- name: Rishabh Mondal
+  role: PhD
+  area: Computer Vision · Earth Observations
+  since: 2023
+  photo: https://rishabh-mondal.github.io/profile.jpeg
+  url: https://rishabh-mondal.github.io
+- name: Ayush Shrivastava
+  role: PhD
+  area: Health Sensing · Respiratory Monitoring
+  since: 2024
+  photo: /images/members/Ayush.jpg
+  url: https://ayushshrivstava.github.io/
+- name: Ujjwal K. Gupta
+  role: PhD
+  area: Satellite Data · Machine Learning
+  since: 2024
+  photo: /images/members/Ujjwal.jpg
+- name: Durgesh Mishra
+  role: PhD
+  area: Machine Learning · Computer Vision · AI for Science
+  since: 2026
+  photo: /images/members/Durgesh_Mishra.jpeg
+- name: Parv Thacker
+  role: MTech
+  area: Healthcare · IoT · Computer Vision
+  since: 2025
+  photo: /images/members/Parv.jpg
+- name: Balbir Prasad
+  role: MTech
+  area: Physics Informed ML · AI weather forecasting
+  since: 2025
+  photo: /images/members/Balbir.jpg
+- name: Hemani Tekwani
+  role: MTech
+  area: Computer Vision · GeoAI
+  since: 2025
+  photo: /images/members/Hemani.jpg
+- name: Saaransh Shandilya
+  role: MTech
+  area: Natural Language Processing · LLMs
+  since: 2025
+  photo: /images/members/Saaransh.jpg
+- name: Zayed Mudassir
+  role: MTech
+  area: VLM · Computer Vision
+  since: 2025
+  photo: /images/members/Zayed.jpg
+- name: Sanjana Mehta
+  role: MTech
+  area: Healthcare · Computer Vision · LLM · Federated Learning
+  since: 2026
+  photo: /images/members/Sanjana.jpg
+- name: Jheel Jhala
+  role: MTech
+  area: Machine Learning · Computer Vision · Sensing
+  since: 2026
+  photo: /images/members/Jheel.jpg
+- name: Ojas Gupta
+  role: MTech
+  area: Optimization of DL Algorithms · MLMs · QML
+  since: 2026
+  photo: /images/members/Ojas.jpg
+- name: Syed Mohd Tashif
+  role: MTech
+  area: Explainable AI · LLMs · VLMs
+  since: 2026
+  photo: /images/members/Tashif.jpg
+- name: Anant Khandelwal
+  role: MTech
+  area: Generative AI · LLMs · AI Development
+  since: 2026
+  photo: /images/members/Anant.jpg
+- name: Avantika Agarwal
+  role: Research fellow
+  area: Machine Learning · Deep Learning · NLP · Computer Vision · Sustainability & Climate Tech · AI for Social Impact
+  since: 2026
+  photo: /images/members/Avantika_Agarwal.jpeg
+- name: Thejas T G
+  role: Research fellow
+  area: Computer Vision · Earth Observations
+  since: 2026
+  photo: /images/members/Thejas_TG.jpeg
+- name: Vivek Kumar
+  role: Research fellow
+  area: AI & Optimization · Applied Machine Learning · Quantitative Research
+  since: 2026
+  photo: /images/members/Vivek_Kumar.jpeg

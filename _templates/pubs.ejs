@@ -1,0 +1,12 @@
+<% let year = null; %>
+<div id="publist">
+<% for (const p of items) { if (p.year !== year) { year = p.year; %><div class="year" id="<%= year %>" data-year="<%= year %>"><%= year <= 2013 ? year : year %></div><% } %>
+<div class="pub" data-t="<%= (p.themes || []).join(" ") %> <%= p.type %>">
+<% if (p.figure) { %><img class="fig" src="<%= p.figure %>" alt="" loading="lazy"><% } else { %><div class="fig none"></div><% } %>
+<div><div class="t"><%= String(p.title).replace(/\*/g,"&#42;") %><% if (p.award) { %><span class="badge"><%= p.award %></span><% } %></div>
+<div class="a"><%= String(p.authors).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/\*/g,'&#42;').replace('Nipun Batra','<span class="me">Nipun Batra</span>') %></div>
+<div class="v"><%= String(p.venue).replace(/\*/g,"&#42;") %></div>
+<div class="l"><% for (const l of (p.links || [])) { %><a href="<%= l.url %>"><%= l.label %></a><% } %></div></div>
+</div>
+<% } %>
+</div>

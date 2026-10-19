@@ -1,0 +1,253 @@
+# Lab alumni. Add yourself when you leave: name, group (PhD | MTech | BTech | RA & interns), year, now.
+# Optional: role, photo (URL or /images/...), url, years.
+- name: Dr. Zeel B Patel
+  group: PhD
+  year: 2026
+  now: Postdoc at Microsoft Research India
+  years: January 2020 - February 2026
+  photo: https://patel-zeel.github.io/images/profile_crop.png
+  url: https://patel-zeel.github.io
+  note: Microsoft Research India PhD Award
+- name: Dr. Rishiraj Adhikary
+  group: PhD
+  year: 2025
+  now: Postdoc at University of Cambridge (with Prof. Cecilia Mascolo)
+  years: July 2019 - January 2025
+  photo: https://rishi-a.github.io/images/RISHIRAJ.jpg
+  url: https://rishi-a.github.io
+  note: First PhD graduate · Fulbright-Nehru Fellow
+  story: /experiences/rishiraj.html
+- name: Aditi Agarwal
+  group: BTech
+  year: 2024
+  now: Predoc at Google DeepMind
+  story: /experiences/aditi.html
+- name: Arun Reddy Anugu
+  group: BTech
+  year: 2024
+  now: MS in Computer Vision (MSCV) at Carnegie Mellon University
+  story: /experiences/arun.html
+- name: Progyan Das
+  group: BTech
+  year: 2024
+  now: Applied Scientist at Microsoft
+- name: Madhav Kanda
+  group: BTech
+  year: 2024
+  now: MS at University of Illinois Urbana-Champaign
+- name: Dhruv Patel
+  group: BTech
+  year: 2024
+  now: MS at Texas A&M University
+- name: Haikoo Khandor
+  group: BTech
+  year: 2024
+  now: MS at Texas A&M University
+- name: Utkarsh Mittal
+  group: BTech
+  year: 2024
+  now: MS at NYU Tandon
+- name: Inderjeet Bhullar
+  group: BTech
+  year: 2024
+  now: Data Scientist at Skan.ai
+- name: Kalash Kankariya
+  group: BTech
+  year: 2024
+  now: Data Scientist at Skan.ai
+- name: Rahul Chembakasseril
+  group: BTech
+  year: 2024
+  now: Data Scientist at Skan.ai
+- name: Aadesh Desai
+  group: BTech
+  year: 2023
+  now: MS at Carnegie Mellon University
+  story: /experiences/aadesh.html
+- name: Saagar Parikh
+  group: BTech
+  year: 2023
+  now: MS at Carnegie Mellon University
+- name: Eshan Gujarathi
+  group: BTech
+  year: 2023
+  now: Predoc at IIT Madras
+- name: Hitarth Gandhi
+  group: BTech
+  year: 2023
+  now: MS at UC Irvine
+- name: Gautam Vashishtha
+  group: BTech
+  year: 2023
+  now: Data Scientist at Skan.AI
+  story: /experiences/gautam.html
+- name: Xhitij Choudhary
+  group: BTech
+  year: 2023
+  now: Data Scientist at Skan.AI
+- name: Palak Purohit
+  group: BTech
+  year: 2022
+  now: MS at Caltech
+- name: Hetvi Shastri
+  group: BTech
+  year: 2022
+  now: PhD at UMass Amherst
+  story: /experiences/hetvi.html
+- name: Chris Francis
+  group: BTech
+  year: 2022
+  now: MS at UC San Diego
+- name: Dhruvi Lodhavia
+  group: BTech
+  year: 2022
+  now: MS at UC San Diego
+- name: Harsh Patel
+  group: BTech
+  year: 2022
+  now: MS at UC San Diego
+- name: Shivam Sahni
+  group: BTech
+  year: 2022
+  now: MS at UC San Diego
+- name: Soham Pachpande
+  group: BTech
+  year: 2020
+  now: HSBC → MS at UCSD → SWE at Salesforce
+- name: Deepak Narayanan
+  group: BTech
+  year: 2020
+  now: Microsoft Research India → MS at ETH Zurich
+- name: Apoorv Agnihotri
+  group: BTech
+  year: 2020
+  now: Wadhwani AI → Data Scientist at Rephrase.ai
+- name: Kukunuri Rithwik
+  group: BTech
+  year: 2020
+  now: Jio → ML Scientist at Nykaa
+  story: /experiences/rithwik.html
+- name: Abhay Pisharodi
+  group: MTech
+  year: 2026
+  now: Associate AI Engineer at Sahana System Ltd.
+- name: Abhyudaya Nair
+  group: MTech
+  year: 2026
+  now: Samsung R&D Intern
+- name: Diya Thakor
+  group: MTech
+  year: 2026
+  now: Samsung R&D Intern
+- name: Vinayak Rana
+  group: MTech
+  year: 2026
+  now: Samsung R&D Engineer
+- name: Suruchi Hardaha
+  group: MTech
+  year: 2026
+  now: SW Engineer at Qualcomm
+- name: Poornima Bhatia
+  group: MTech
+  year: 2025
+  now: MTech Graduate • Accessibility Research
+- name: Prince Kumar
+  group: MTech
+  year: 2025
+  now: MTech Graduate • LLMs & Air Quality
+- name: Shataxi Dubey
+  group: MTech
+  year: 2025
+  now: MTech Graduate • Computer Vision & VLMs
+  story: /experiences/shataxi.html
+- name: Ayush Shrivastava
+  group: MTech
+  year: 2024
+  now: PhD at IIT Gandhinagar
+- name: Suraj Jaiswal
+  group: MTech
+  year: 2024
+  now: Research Scientist at Neuroreef Labs
+- name: Ankita Jain
+  group: MTech
+  year: 2023
+  now: Member of Technical Staff at Oracle
+  story: /experiences/ankita.html
+- name: Karan Kumar
+  group: MTech
+  year: 2020
+  now: Software Engineer at Trading Technologies
+- name: Souvik Roy
+  group: MTech
+  year: 2020
+  now: Senior Consultant at eClerx
+  story: /experiences/souvik.html
+- name: Kirtan Gangani
+  group: RA & interns
+  role: Research assistant
+  now: Research Fellow
+- name: Deena Lad
+  group: RA & interns
+  role: Research assistant
+  now: PhD student at IIT Bombay
+- name: Vaibhavi Tiwari
+  group: RA & interns
+  role: Research assistant
+  now: Research Fellow
+- name: Tanu Tiwari
+  group: RA & interns
+  role: Research assistant
+  year: 2025
+  now: Research Fellow • Machine Learning & Research Methods
+- name: Meenakshi Prakash
+  group: RA & interns
+  role: Research assistant
+  year: 2025
+  now: Research Fellow • Data Science & Computational Analysis
+- name: Prerna Khanna
+  group: RA & interns
+  role: Research assistant
+  now: PhD student at Stony Brook University
+- name: Tanmay Srivastava
+  group: RA & interns
+  role: Research assistant
+  now: PhD student at Stony Brook University
+- name: Kaushal Modi
+  group: RA & interns
+  role: Research assistant
+  now: Data Scientist at InfiBeam
+- name: Rohit Patil
+  group: RA & interns
+  role: Research assistant
+  now: Software Engineer at Publicis Sapient
+- name: Vibhuti Bansal
+  group: RA & interns
+  role: Visiting intern
+  year: 2022
+  now: Software Engineer at CRED
+- name: Devodita Chakravarty
+  group: RA & interns
+  role: Visiting intern
+  year: 2024
+  now: Winner of Bhalodia-Khetan Excellence Award
+  story: /experiences/devodita.html
+- name: Ami Ashish Buch
+  group: RA & interns
+  role: Visiting intern
+  year: 2024
+  now: Research Intern
+- name: Sajay Raj
+  group: RA & interns
+  role: Visiting intern
+  year: 2024
+  now: Research Intern
+- name: Muhammad Zaid Hassan
+  group: RA & interns
+  role: Visiting intern
+  year: 2024
+  now: Research Intern
+- name: Omisha Guha
+  group: RA & interns
+  role: Visiting intern
+  year: 2024
+  now: Research Intern

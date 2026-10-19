@@ -1,0 +1,234 @@
+# Lab news, newest first. One entry per item:
+#   when: YYYY-MM   type: paper | award | grant | people | talk | event | media | talk | other
+#   text: one sentence (HTML links allowed)   image: optional, e.g. /images/awards/x.jpg
+- when: 2026-09
+  type: paper
+  text: 'Two research announcements: <a href="/papers/2026/flowsat.html"><b>FlowSat</b></a> accepted at <b>BMVC 2026</b>, and <a href="/papers/2026/signal-descriptors.html"><b>Efficient Time Series SSL via Signal Descriptors</b></a> accepted for a <b>Short Presentation at IEEE DSAA 2026</b>. Paper PDFs, research summaries and code links are now available.'
+- when: 2026-06
+  type: paper
+  text: 'Paper accepted (oral) at the MILETS Workshop @ ACM KDD 2026: Feature-Informed Self-Supervised Learning for Time Series Understanding!'
+- when: 2026-06
+  type: award
+  text: <b>NILMBench2026</b> wins the <b>Best Paper Award — Runner-Up</b> at <a href="/awards.html#2026">BuildSys 2026</a> (ACM Sustainability Week, Banff, Canada)! Led by 2nd-year undergraduates Aayush Kuloor, Anurag Singh, and Harsh Dhru.
+- when: 2026-05
+  type: paper
+  text: <b>ThermEval</b> accepted at <a href="/papers/index.html#2026">KDD 2026</a>! Benchmarking vision-language models on thermal imagery with Ayush Shrivastava, Kirtan Gangani, Laksh Jain, and Mayank Goel (CMU).
+- when: 2026-05
+  type: paper
+  text: <b>NILMBench2026</b> accepted at <a href="/papers/index.html#2026">BuildSys 2026</a>! A reproducible benchmark for energy disaggregation, led entirely by 2nd-year undergraduates Aayush Kuloor, Anurag Singh, and Harsh Dhru.
+- when: 2026-02
+  type: people
+  text: Dr. Zeel B Patel successfully defends his PhD thesis. Second PhD graduate from the lab. Congratulations!
+- when: 2026-01
+  type: award
+  text: Balbir Prasad, Saaransh Shandilya and Parv Thacker awarded IndiaAI MTech Fellowships!
+- when: 2025-12
+  type: grant
+  text: Received ANRF ARG (Anusandhan National Research Foundation - Accelerate Research Grant)!
+- when: 2025-11
+  type: award
+  text: Filed Indian patent application for ApneaEye — non-contact screening and classification of sleep apnea (App. No. 202521107821)!
+- when: 2025-11
+  type: paper
+  text: Paper accepted at AAAI 2026
+- when: 2025-10
+  type: paper
+  text: Paper accepted at CODS-COMAD 2025
+- when: 2025-09
+  type: paper
+  text: Paper accepted at NeurIPS 2025
+- when: 2025-08
+  type: people
+  text: Kirtan Gangani and Deena Lad join Sustainability Lab as Research Assistants. Welcome!
+- when: 2025-06
+  type: award
+  text: Prof. Nipun Batra receives <a href="/awards.html#2025" target="_blank">Test of Time Award for NILMTK</a>! Recognition for significant long-term impact on energy disaggregation research.
+- when: 2025-06
+  type: award
+  text: Dr. Rishiraj Adhikary receives <a href="/awards.html#2025" target="_blank">Commendation for Outstanding Research (PhD)</a> at IIT Gandhinagar Convocation 2025!
+- when: 2025-06
+  type: award
+  text: Prof. Nipun Batra wins the <a href="/awards.html#2025" target="_blank">SIGEnergy Rising Star Award 2025</a>!
+- when: 2025-06
+  type: event
+  text: Organizing <a href="https://sustainability-lab.github.io/acm-summer-2025/" target="_blank">ACM India Summer School 2025</a> on AI for Social Good at IIT Gandhinagar (June 2-13, 2025)
+- when: 2025-01
+  type: award
+  text: Prof. Nipun Batra receives <a href="/awards.html#2025" target="_blank">Excellence in Teaching Award</a> based on outstanding teaching contributions and active learning strategies!
+- when: 2025-01
+  type: award
+  text: Shataxi Dubey wins <a href="/awards.html#2025" target="_blank">Third Prize in Simply Speaking 4.0 Competition</a> organized by Leadership Development Initiative, IITGN!
+- when: 2025-01
+  type: award
+  text: Shrimay Shah and Dhruv Gupta win <a href="/awards.html#2025" target="_blank">Third Prize in Undergraduate Research Showcase</a> for Brick Kilns Detection project!
+- when: 2025-01
+  type: people
+  text: Tanu and Meenakshi join Sustainability Lab as Junior Research Fellows. Welcome!
+- when: 2025-01
+  type: people
+  text: Dr. Rishiraj Adhikary successfully defends his PhD thesis. Congratulations!
+- when: 2024-11
+  type: award
+  text: Prof. Nipun Batra promoted to Associate Professor at IIT Gandhinagar!
+- when: 2024-08
+  type: award
+  text: Devodita wins the Bhalodia-Khetan Summer Research Excellence Award for ML sustainability project!
+- when: 2024-07
+  type: talk
+  text: Talk on "Smart Health Sensing for Sustainable Future" at <a href="https://www.pdpu.ac.in" target="_blank">PDEU</a>
+- when: 2024-07
+  type: talk
+  text: '<a href="https://www.youtube.com/watch?v=2kgnmqx-RwM" target="_blank">Doctoral Consortium keynote</a> "Within and Beyond: Lessons in Computational Sustainability" at <a href="https://compass.acm.org" target="_blank">ACM Compass''24</a>'
+- when: 2024-06
+  type: award
+  text: Zeel wins the prestigious Microsoft Research India PhD Award!
+- when: 2024-06
+  type: people
+  text: Ayush and Suraj successfully defend their Masters thesis!
+- when: 2024-04
+  type: award
+  text: Rishiraj selected for the prestigious <a href="https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html" target="_blank">Heidelberg Laureate Forum</a>!
+- when: 2024-01
+  type: paper
+  text: '"JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery" accepted at <a href="https://dl.acm.org/toc/imwut/2023/7/4" target="_blank">IMWUT 2024</a>'
+- when: 2024-01
+  type: people
+  text: Shataxi, Prince and Poornima join the lab. Welcome!
+- when: 2023-12
+  type: paper
+  text: '"AirDelhi: Fine-Grained Spatio-Temporal PM Dataset" poster at <a href="https://neurips.cc/virtual/2023/poster/73476" target="_blank">NeurIPS 2023</a>'
+- when: 2023-10
+  type: paper
+  text: '"Scalable Identification of Brick Kilns with Active Learning" at <a href="https://neurips.cc/virtual/2023/78770" target="_blank">NeurIPS 2023</a> workshop'
+- when: 2023-09
+  type: paper
+  text: '"Fine-Grained Spatio-Temporal PM Dataset From Delhi" at <a href="https://papers.nips.cc/paper_files/paper/2023/hash/ee799aff607fcf39c01df6391e96f92c-Abstract-Datasets_and_Benchmarks.html" target="_blank">NeurIPS 2023</a> Datasets Track'
+- when: 2023-09
+  type: paper
+  text: '"Conformal Prediction: A Visual Introduction" at <a href="https://visxai.io/2023" target="_blank">VisXAI 23</a>'
+- when: 2023-06
+  type: people
+  text: Khush and Rishabh join the lab. Welcome!
+- when: 2023-06
+  type: people
+  text: Ankita successfully defends her Masters thesis!
+- when: 2023-01
+  type: people
+  text: Ayush and Suraj join the lab. Welcome!
+- when: 2022-11
+  type: paper
+  text: '"I do not know": Quantifying Uncertainty in NN for NILM at <a href="https://dl.acm.org/doi/proceedings/10.1145/3563357" target="_blank">BuildSys 2022</a>'
+- when: 2022-10
+  type: paper
+  text: '"Uncertainty Disentanglement with Non-stationary Heteroscedastic GPs" at <a href="https://gp-seminar-series.github.io/neurips-2022/" target="_blank">NeurIPS 2022</a>'
+- when: 2022-10
+  type: paper
+  text: '"Challenges in Gaussian Processes for NILM" at <a href="https://gp-seminar-series.github.io/neurips-2022/" target="_blank">NeurIPS 2022</a>'
+- when: 2022-10
+  type: paper
+  text: '"SpiroMask: Measuring Lung Function Using Consumer-Grade Masks" at <a href="https://dl.acm.org/toc/health/2023/4/1" target="_blank">ACM HEALTH</a>'
+- when: 2022-09
+  type: paper
+  text: '"Continuous Respiration Rate Detection While Walking" at <a href="https://dl.acm.org/doi/proceedings/10.1145/3544793" target="_blank">UbiComp 2022</a>'
+- when: 2022-08
+  type: talk
+  text: Zeel presented "Accurate and Scalable Non-Stationary GPs" at <a href="https://cstep.in/" target="_blank">ASIC</a>, Bangalore
+- when: 2022-05
+  type: award
+  text: Zeel selected as Google Summer of Code contributor at TensorFlow with <a href="https://www.cs.ubc.ca/~murphyk/" target="_blank">Dr. Kevin P. Murphy</a>!
+- when: 2022-04
+  type: paper
+  text: '"Samachar: Print News Media on Air Pollution in India" at <a href="https://dl.acm.org/doi/10.1145/3530190.3534812" target="_blank">ACM COMPASS 22</a>'
+- when: 2022-01
+  type: paper
+  text: '"Vastr-GAN: Versatile Apparel Synthesised from Text" at <a href="https://dblp.org/db/conf/comad/comad2022.html" target="_blank">CODS-COMAD 2022</a>'
+- when: 2022-01
+  type: people
+  text: Ankita joins the lab. Welcome!
+- when: 2021-12
+  type: paper
+  text: '"Accurate and Scalable Non-Stationary GPs" at <a href="https://aaai-2022.virtualchair.net/poster_aisi11178" target="_blank">AAAI 2022</a>'
+- when: 2021-11
+  type: grant
+  text: Received $5000 cloud credit grant from Google Research
+- when: 2021-11
+  type: award
+  text: Rishiraj wins <a href="https://www.usief.org.in/" target="_blank">Fulbright-Nehru Doctoral Research Fellowship</a>!
+- when: 2021-10
+  type: award
+  text: Rishiraj wins <a href="https://www.pmrf.in/" target="_blank">Prime Minister Research Fellowship</a>!
+- when: 2021-09
+  type: paper
+  text: Neural network approaches to NILMTK-contrib at <a href="https://dl.acm.org/doi/10.1145/3486611.3486652" target="_blank">BuildSys 2021</a>
+- when: 2021-09
+  type: paper
+  text: <a href="https://nipunbatra.github.io/hmm/" target="_blank">Exploring Hidden Markov Models</a> at <a href="https://visxai.io/2021.html" target="_blank">IEEE VisxAI 2021</a>
+- when: 2021-08
+  type: talk
+  text: Teaching <a href="https://www.craft.do/s/MAdQrLOO9ErCvc" target="_blank">Ubiquitous Computing</a> course
+- when: 2021-02
+  type: talk
+  text: Publication chair for <a href="https://cods-comad.in/" target="_blank">CODS-COMAD 2022</a>
+- when: 2020-12
+  type: paper
+  text: Air quality perceptions from social media accepted at ACM CSCW
+- when: 2020-11
+  type: grant
+  text: CISCO grant on edge non-intrusive load monitoring
+- when: 2020-10
+  type: paper
+  text: <a href="https://patel-zeel.github.io/active-learning-visualization/" target="_blank">Active Learning visualization</a> at <a href="https://visxai.io/2020" target="_blank">IEEE VisxAI 2020</a>
+- when: 2020-10
+  type: grant
+  text: SERB grant on AI and sensor networks for air quality
+- when: 2020-09
+  type: grant
+  text: Google grant on COVID and air quality linkages
+- when: 2020-05
+  type: paper
+  text: <a href="https://distill.pub/2020/bayesian-optimization/" target="_blank">Bayesian Optimization</a> article published on Distill
+- when: 2020-02
+  type: talk
+  text: Faculty development program on data science (TEQIP)
+- when: 2020-02
+  type: talk
+  text: ACM India event with Yann LeCun and Shwetak Patel
+- when: 2020-01
+  type: talk
+  text: Four posters presented at CODS COMAD 2020
+- when: 2019-11
+  type: talk
+  text: ML talk at INS Valsura for Indian Navy, Army and Air Force officers
+- when: 2019-11
+  type: talk
+  text: Energy disaggregation talk at ACM BuildSys 2019, NYC
+- when: 2019-11
+  type: talk
+  text: Air quality talk at Google, Bangalore
+- when: 2019-04
+  type: talk
+  text: Computational Sustainability talk at Nirma University
+- when: 2019-03
+  type: talk
+  text: Computational Sustainability talk at ROCS 2019
+- when: 2019-01
+  type: paper
+  text: Paper accepted at WWW
+- when: 2019-01
+  type: talk
+  text: Teaching Machine Learning course
+- when: 2018-11
+  type: talk
+  text: Haroon presented paper at BuildSys 18
+- when: 2018-11
+  type: grant
+  text: Microsoft AI for Earth grant ($15000 Azure credits)
+- when: 2018-08
+  type: talk
+  text: Research methods for CS bootcamp at IITGN
+- when: 2018-07
+  type: grant
+  text: Titan XP GPU grant from NVidia
+- when: 2018-07
+  type: people
+  text: Joined CSE at IITGN as Assistant Professor

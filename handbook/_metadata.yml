@@ -1,0 +1,4 @@
+# Handbook pages are prose: narrower column with a table of contents.
+page-layout: article
+toc: true
+toc-title: "On this page"

@@ -1,0 +1,5 @@
+<div class="sel">
+<% for (const p of items) { %>
+<a href="<%= (p.links && p.links.length) ? p.links[0].url : '#' %>"><img src="<%= p.figure %>" alt="" loading="lazy"><b><%= p.short || p.title %></b><span><%= p.venue_short || p.venue %><% if (p.award) { %> · <%= p.award %><% } %></span></a>
+<% } %>
+</div>

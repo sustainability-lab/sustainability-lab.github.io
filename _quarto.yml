@@ -2,8 +2,9 @@ project:
   type: website
   output-dir: docs
   resources:
-    - images/**  # Ensures all images are copied
+    - images/**
     - events/acm-summer-2025/
+    - flyer.pdf
 
 website:
   title: "Sustainability Lab"
@@ -16,114 +17,53 @@ website:
     creator: "@nipun_batra"
     card-style: summary_large_image
   navbar:
-    title: False
+    title: false
+    logo: /images/brand/logo-light.svg
+    logo-alt: "Sustainability Lab"
     search: true
-    left:
-      - text: "<img id='theme-logo' data-light-src='/images/logo_light.svg' data-dark-src='/images/logo_dark.svg' src='/images/logo_light.svg' style='height: 90px !important;'>"
-        href: index.qmd  
-      - text: People
-        menu:
-          - text: Current Team
-            href: members.qmd
-          - text: Alumni
-            href: alumni.qmd
-          - text: Alumni Experiences
-            href: experiences.qmd
-          - text: Memories
-            href: memories.qmd
+    right:
       - text: Research
-        menu:
-          - text: All Projects & Research
-            href: projects.qmd
-          - text: Publications
-            href: papers/index.qmd
-      - href: openings.qmd
-        text: Openings
-      # - href: lab-handbook.qmd
-      - text: Lab Handbook  
-        menu:
-          # - text: Lab Handbook
-          #   href: lab-handbook.qmd
-          - text: Computational Resources
-            href: computational-resources.qmd
-          - text: Lab Culture
-            href: lab_culture.qmd
-          - text : Academic & Research Skills
-            href: upskilling.qmd
-          - text: Design Kit
-            href: design-kit.qmd
-      - href: news.qmd
-        text: News
-      - href: media.qmd
-        text: Media coverage
-      - href: awards.qmd
-        text: Awards
-      - text: Events
-        menu:
-          - text: Events Home
-            href: events/index.qmd
-          - text: "ACM India Summer School 2025"
-            href: https://sustainability-lab.github.io/acm-summer-2025/
-            
+        href: research.qmd
+      - text: Publications
+        href: papers/index.qmd
+      - text: People
+        href: people.qmd
+      - text: Join
+        href: join.qmd
+      - text: Handbook
+        href: handbook/index.qmd
+      - text: News
+        href: news.qmd
   page-footer:
-    background: light
-    left: "© 2026 Sustainability Lab, IIT Gandhinagar"
+    left: |
+      © 2026 Sustainability Lab, IIT Gandhinagar<br>
+      [nipun.batra@iitgn.ac.in](mailto:nipun.batra@iitgn.ac.in) · [Lab flyer](/flyer.pdf)
     center: |
-      [Publications](/papers/index.qmd) |
-      [**Research Skills Bootcamp**](https://sustainability-lab.github.io/sustainability-research-bootcamp/) |
-      [Contact](mailto:nipun.batra@iitgn.ac.in)
+      [Lab YouTube](https://www.youtube.com/@SustainabilityLab-SL) ·
+      [Teaching YouTube](https://www.youtube.com/@NipunBatra0) ·
+      [X](https://x.com/nipun_batra) ·
+      [LinkedIn](https://www.linkedin.com/in/nipunbatra0/) ·
+      [GitHub](https://github.com/sustainability-lab)
     right: |
-      Built with [Quarto](https://quarto.org/) |
-      <span id="last-updated"></span>
-  
+      Supported by Google, Cisco, NVIDIA, Microsoft, SERB/ANRF, MoES, DST, STARS, GUJCOST, CoE in AI (MHRD), Gujarat Forest Dept. and Jio
 
 format:
   html:
-    page-layout: full
-    toc: true
-    grid:
-      margin-width: 14%
     theme:
-      light: [litera, styles.scss]
-      # dark: [darkly, styles-dark.scss]
-    highlight-style: a11y-dark
-    mainfont: "Work Sans"
+      light: [default, theme/light.scss, theme/legacy.scss, theme/site.scss]
+      dark: [default, theme/dark.scss, theme/legacy.scss, theme/site.scss]
+    toc: false
+    page-layout: full
+    highlight-style: a11y
     code-copy: true
     code-overflow: wrap
     date-format: "MMMM D, YYYY"
+    include-in-header:
+      text: |
+        <script>
+        // First visit: follow the OS light/dark setting. The navbar toggle overrides it.
+        try { if (!localStorage.getItem("quarto-color-scheme") && window.matchMedia("(prefers-color-scheme: dark)").matches) localStorage.setItem("quarto-color-scheme", "alternate"); } catch (e) {}
+        </script>
 
 execute:
   freeze: auto
-
-include-after-body:  # JavaScript for switching logos on theme change and last updated
-  text: |
-    <script>
-      function updateLogo() {
-        const logo = document.getElementById("theme-logo");
-        if (!logo) return;
-
-        const isDarkMode = document.body.classList.contains("quarto-dark");
-        const newSrc = isDarkMode ? logo.dataset.darkSrc : logo.dataset.lightSrc;
-
-        if (logo.src !== newSrc) {
-          logo.src = newSrc;
-        }
-      }
-
-      // Detect theme change
-      const observer = new MutationObserver(updateLogo);
-      observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
-
-      // Ensure correct logo on initial load
-      document.addEventListener("DOMContentLoaded", updateLogo);
-
-      // Set last updated date
-      document.addEventListener("DOMContentLoaded", function() {
-        const lastUpdatedEl = document.getElementById("last-updated");
-        if (lastUpdatedEl) {
-          const now = new Date();
-          const options = { year: 'numeric', month: 'long', day: 'numeric' };
-          lastUpdatedEl.textContent = 'Last Updated: ' + now.toLocaleDateString('en-US', options);
-        }
-      });
-    </script>

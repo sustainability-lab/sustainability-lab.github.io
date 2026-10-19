@@ -1,0 +1,86 @@
+---
+title: ""
+pagetitle: "Join · PhD, Postdoc & Internships · Sustainability Lab"
+description-meta: "Open positions at the Sustainability Lab, IIT Gandhinagar: PhD, postdoc, 6-month and summer research internships in AI for sustainability, health sensing and environmental monitoring."
+page-layout: custom
+aliases:
+  - openings.html
+  - phd.html
+listing:
+  - id: join-quotes
+    contents: data/quotes.yml
+    template: _templates/quotes.ejs
+    sort: false
+    max-items: 3
+---
+
+::: {.frame .page-main}
+
+```{=html}
+<section>
+  <div class="grid g2" style="align-items:center;gap:44px">
+    <div>
+      <h1 class="page">Join the lab</h1>
+      <p class="lede" style="margin-top:12px">We welcome PhD students, postdocs and interns interested in AI for sustainability. Find the row that fits you.</p>
+      <p class="muted small">Listings may not reflect every opportunity — you are welcome to write to us at any time.</p>
+    </div>
+    <img class="ill" src="images/illustrations/students.webp" alt="">
+  </div>
+  <div class="table-wrap" style="margin-top:26px"><table>
+    <thead><tr><th>Role</th><th>For</th><th>When</th><th>How to apply</th></tr></thead>
+    <tbody>
+    <tr id="phd"><td><b>PhD</b></td><td>Students interested in AI for sustainability: LLMs, VLMs, computer vision and ML for real-world problems</td><td><span class="status open">● Open</span> each admission cycle</td><td>Apply through the <a href="https://www.iitgn.ac.in/academics/phd">IIT Gandhinagar PhD portal</a>; you can also <a href="mailto:nipun.batra@iitgn.ac.in">write to Prof. Batra</a></td></tr>
+    <tr id="postdoc"><td><b>Postdoc</b></td><td>Candidates interested in applying for a fellowship</td><td><span class="status open">● Open</span> rolling</td><td>Fellowships such as the <a href="https://anrfonline.in/ANRF/npdf?HomePage=New">National Postdoctoral Fellowship</a>; <a href="mailto:nipun.batra@iitgn.ac.in">contact Prof. Batra</a></td></tr>
+    <tr id="internships"><td><b>6-month internship</b></td><td>Students wanting deep, sustained research experience</td><td><span class="status open">● Open</span> rolling</td><td>Complete the <a href="https://docs.google.com/document/d/1xrV1JSvUXzhSzQCGnkjJmhA5afYilaUknxklk6_EDqM/edit?tab=t.0">selection task</a></td></tr>
+    <tr id="summer"><td><b>Summer internship</b></td><td>Undergraduate and early graduate students</td><td><span class="status soon">○ Usually opens in February</span></td><td>Through <a href="https://srip.iitgn.ac.in/registration/">IIT Gandhinagar SRIP</a> (2025 project codes: IP0NB0000019, IP0NB0000020)</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="grid g3">
+  <div><h2>What you'll work on</h2><p class="muted">Computer vision on satellite imagery and LLMs for environmental policy; VLMs and sensing for respiratory health; time-series models for energy; multimodal models for social good.</p><a class="arrow" href="research.html">Current research</a></div>
+  <div><h2>How you'll learn</h2><p class="muted">New to research? That's fine. New members start with the Research Skills Bootcamp, then weekly group meetings, a reading group and shared GPU servers.</p><a class="arrow" href="https://sustainability-lab.github.io/sustainability-research-bootcamp/">Research Skills Bootcamp</a></div>
+  <div><h2>Where you'll go</h2><p class="muted">Alumni are at Cambridge, Microsoft Research, Google DeepMind, CMU, UIUC, Oracle and Nykaa, and in PhD programmes worldwide.</p><a class="arrow" href="people.html#alumni-list">Alumni</a></div>
+</section>
+
+<section>
+  <h2>When writing to us, please include</h2>
+  <div class="grid g2" style="gap:0 40px">
+    <div class="list-row"><span class="d">Dates</span><span>How long you can commit, and when you can start</span></div>
+    <div class="list-row"><span class="d">CV</span><span>Your most recent version</span></div>
+    <div class="list-row"><span class="d">Interests</span><span>Which of our research areas excite you most</span></div>
+    <div class="list-row"><span class="d">Papers</span><span>One or two papers from the lab you have read, and what interested you</span></div>
+    <div class="list-row"><span class="d">Motivation</span><span>Why AI for sustainability, and why this lab</span></div>
+    <div class="list-row"><span class="d">Background</span><span>Relevant coursework, projects or experience</span></div>
+  </div>
+  <p class="muted small" style="margin-top:14px">Browse our <a href="papers/index.html">publications</a> first. Quality of engagement matters more than a long email.</p>
+</section>
+
+<section>
+  <h2>In their words</h2>
+```
+
+::: {#join-quotes}
+:::
+
+```{=html}
+  <p style="margin-top:14px"><a class="arrow" href="people.html#stories">More from alumni</a></p>
+</section>
+
+<section>
+  <details>
+    <summary>Past openings</summary>
+    <div style="margin-top:10px">
+<div class="list-row"><span class="d">2026</span><span><b>Project Associate-I — Brick Kiln Detection from Satellite Imagery</b> · closed June 22, 2026</span></div>
+<div class="list-row"><span class="d">2026</span><span><b>Project Associate - I (Position 1)</b> · closed March 21, 2026<br><a href="https://docs.google.com/forms/d/e/1FAIpQLSdYH9w6czxrXxKcgEBDoB9-tPLZf4yg-VlDw6UXkgpPPwFL-w/viewform">Application</a> · <a href="https://drive.google.com/file/d/1jT3S3Q1jY8Ky3cV_b3kWFATJvyQEnwlE/view?usp=drive_link">Details</a></span></div>
+<div class="list-row"><span class="d">2026</span><span><b>Project Associate - I (Position 2)</b> · closed March 21, 2026<br><a href="https://docs.google.com/forms/d/e/1FAIpQLSf0ndJJXpjdMItiRLk-sqJvmVuXRQvJX1oC3nkalnn7cW7H6Q/viewform">Application</a> · <a href="https://drive.google.com/file/d/1EcXWX-sQj1TmToIieQ0Qkd90P7JMn5J9/view?usp=drive_link">Details</a></span></div>
+<div class="list-row"><span class="d">2026</span><span><b>VSREP - Semester I 2025-26</b> · January 02, 2026 - April 30, 2026<br><a href="https://iitgn.ac.in/admissions/visiting-students-research-engagement-programme">Details</a></span></div>
+<div class="list-row"><span class="d">—</span><span><b>Junior Research Fellow</b><br><a href="https://docs.google.com/forms/d/e/1FAIpQLSfoBkCG6AC-4pwtnkbpNKqIzAkOrupKs_UnGkk731ZfTYBBpQ/viewform">Application</a> · <a href="https://drive.google.com/file/d/1un2TvoFEXI5yyncy2PuJ0-OnDD4lrkPr/view">Details</a></span></div>
+<div class="list-row"><span class="d">—</span><span><b>Research Associate I Position</b><br><a href="https://docs.google.com/forms/d/e/1FAIpQLSdGfvKw3anCtGTqXy2Wa7Z1dX_AkOf_FqflFROZrtN-VKmWmg/viewform">Application</a> · <a href="https://drive.google.com/file/d/1y_-sJ2LeYvsZZZhJ9EU6NEZCUm8ylKnf/view?usp=sharing">Details</a></span></div>
+<div class="list-row"><span class="d">—</span><span><b>Junior/Senior Research Fellow</b><br><a href="https://docs.google.com/forms/d/e/1FAIpQLSeU2KoY-yAsFKCtlUZ8BH8gMEMwhV8z6L8WdaOtPB7TsJQrRg/viewform">Application</a> · <a href="https://drive.google.com/file/d/1itoBPzBfJKPClgnDRb3EmjvZwVaB9as_/view">Details</a></span></div>
+    </div>
+  </details>
+</section>
+```
+
+:::
