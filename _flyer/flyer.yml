@@ -1,0 +1,197 @@
+# Lab flyer — curation only.
+#
+# Facts live in the site's data files and are pulled in automatically:
+#   data/publications.yml  → project venue, year, figure, award badge; the "selected papers" list
+#   data/alumni.yml        → PhD graduates and alumni counts
+# This file only says WHAT to show. Build with:  make -C _flyer   (see _flyer/README.md)
+
+updated: October 2026
+design: swiss          # which look `--publish` uses: swiss, or any file name in variants/
+url: sustainability-lab.github.io
+join_url: https://sustainability-lab.github.io/openings.html
+email: nipun.batra@iitgn.ac.in
+
+headline: AI and sensing for a *sustainable* future.   # *word* = highlighted
+lede: >-
+  We build sensors, datasets, benchmarks and machine-learning models for clean air,
+  Earth observation, health and energy — and release them openly.
+
+# Core methods strip under the headline: name + a few of our projects that use it (≤ 70 characters, two short lines).
+methods:
+  - { name: Vision-language models, examples: "ThermEval · thermal-image reasoning" }
+  - { name: LLMs and agents, examples: "VayuBench · VayuChat · VayuBuddy" }
+  - { name: Computer vision, examples: "SentinelKilnDB · Space to Policy · PlantDoc" }
+  - { name: Generative models, examples: "FlowSat · diffusion and flow matching" }
+  - { name: Gaussian processes, examples: "Scalable GPs · Deep GPs · sensor placement" }
+  - { name: Active learning, examples: "Sensor placement · NILM · SpiroActive" }
+  - { name: Self-supervised learning, examples: "Signal descriptors for time series" }
+  - { name: Sensing systems, examples: "Thermal, acoustic and edge sensing · JoulesEye · SpiroMask · ApneaEye" }
+
+# Research themes, in page order. Each project is either
+#   paper: <text that appears in exactly one publication title>   (venue/year/figure/award come from data)
+# or a fully manual entry (name + venue + image) for work without a paper yet.
+# Optional on any project: name (short title), image (override figure), venue (override label), badge.
+# blurb is required — one line, at most 95 characters.
+themes:
+  - key: air
+    name: Clean Air
+    blurb: Most Indian cities have few air monitors. We build low-cost sensing, models that fill the gaps, and study how the public talks about air.
+    projects:
+      - paper: "Scalable Air-Quality Sensor Placement"
+        name: Sensor placement
+        blurb: Gradient-based mutual information picks where to put the next monitor, at continental scale.
+      - paper: "Vartalaap"
+        blurb: "What drives India's air-quality talk on Twitter: politics, pollution or pseudo-science?"
+      - paper: "AIRDELHI"
+        name: AirDelhi
+        blurb: A fine-grained mobile PM2.5 dataset from sensors mounted on Delhi's public buses.
+      - paper: "Accurate and Scalable Gaussian Processes"
+        name: Scalable GP inference
+        blurb: Gaussian processes that estimate air quality between monitors, accurately and at scale.
+
+  - key: earth
+    name: Earth Observation
+    blurb: Polluters such as brick kilns are spread over areas too large to survey. We find them from space and link them to policy.
+    projects:
+      - paper: "SENTINELKILNDB"
+        name: SentinelKilnDB
+        blurb: A hand-validated benchmark for oriented brick-kiln detection across South Asia.
+      - paper: "Space to Policy"
+        image: /images/mainpage/space-to-policy.png
+        blurb: Satellite kiln detections checked automatically against siting regulations.
+      - paper: "FlowSat"
+        blurb: Diffusion transformers generate realistic satellite images from acquisition metadata.
+      - paper: "PlantDoc"
+        blurb: An open dataset for detecting crop disease from photos taken in the field.
+
+  - key: health
+    name: Health Sensing
+    blurb: Measuring lung function or calories burned usually needs a clinic. We turn cameras, masks and wearables into instruments.
+    projects:
+      - paper: "ThermEval"
+        blurb: A 7-task benchmark showing where vision-language models fail on thermal imagery.
+      - paper: "JoulesEye"
+        image: /images/mainpage/JoulesEye_1.png
+        blurb: A thermal camera estimates energy expenditure and breathing during exercise.
+      - paper: "SpiroMask"
+        blurb: An N95 mask with a microphone measures lung function without a spirometer.
+      - name: ApneaEye
+        venue: Patent filed 2025
+        image: assets/apneaeye.png
+        blurb: Contact-free thermal-camera screening for sleep apnea and breathing disorders.
+
+  - key: energy
+    name: Energy
+    blurb: An electricity bill says how much a home used, not what used it. Since 2014 we have built the tools the field uses to answer that.
+    projects:
+      - paper: "NILMBench2026"
+        blurb: A reproducible benchmark of 16 disaggregation models; led by second-year undergraduates.
+      - paper: "NILMTK: An Open Source Toolkit"
+        name: NILMTK
+        blurb: The open-source toolkit that made energy-disaggregation research reproducible.
+      - paper: "Transferring Decomposed Tensors"
+        name: Cross-region transfer
+        blurb: Learns energy breakdown in one city and transfers it to regions with little data.
+      - paper: "Gemello"
+        blurb: A detailed appliance breakdown from nothing more than a monthly electricity bill.
+
+# Short venue labels, matched in order against the publication's venue string.
+venue_aliases:
+  - [BMVC, BMVC]
+  - [DSAA, DSAA]
+  - [BuildSys, BuildSys]
+  - [Systems for Energy-Efficient, BuildSys]
+  - [CSCW, CSCW]
+  - [CIKM, CIKM]
+  - [World Wide Web, WWW]
+  - [AAAI, AAAI]
+  - [NeurIPS, NeurIPS]
+  - [CODS, CODS]
+  - [KDD, KDD]          # after CODS: "IKDD CODS" contains KDD
+  - [Computing and Sustainable Societies, ACM JCSS]
+  - ["Interactive, Mobile, Wearable", IMWUT]
+  - [Transactions on Computing for Healthcare, ACM TCH]
+  - [COMPASS, COMPASS]
+  - [e-Energy, e-Energy]
+  - [Future Energy Systems, e-Energy]
+  - [Physical Review, Phys. Rev. D]
+  - [Building Engineering, J. Build. Eng.]
+  - [arXiv, arXiv]
+
+# Page 2 list: strong-venue papers NOT already featured on page 1.
+# Picked in the order of `venues` (first = strongest), then shown newest first.
+selected_papers:
+  title: Selected papers
+  count: 8
+  venues: [NeurIPS, KDD, AAAI, WWW, CIKM, CSCW, IMWUT, BMVC, Phys. Rev. D, e-Energy, BuildSys]
+  skip: [Workshop, Demo Abstract, Thesis]   # matched against title and venue
+
+alumni_counts: [PhD, MTech]   # which alumni groups get a number on page 2
+
+compute:
+  note: Shared GPU servers on campus, available to every lab member.
+  gpus:
+    - { count: 4, model: A100, memory: 80 GB }
+    - { count: 2, model: RTX A5000, memory: 24 GB }
+    - { count: 2, model: RTX A4000, memory: 16 GB }
+  ram: 960 GB
+  cores: 112
+
+pi:
+  name: Prof. Nipun Batra
+  title: Associate Professor, Computer Science & Engineering, IIT Gandhinagar
+  photo: assets/nipun-batra.jpg
+  bio: >-
+    Nipun completed his PhD at IIIT Delhi and postdoctoral research at the University of Virginia.
+    The lab works where machine learning meets sensing for computational sustainability —
+    with an emphasis on open, reproducible work that gets deployed.
+
+# year, title, who/what. Keep each line short; most recent first.
+recognition:
+  lab:
+    - [2026, Best Paper Runner-Up, "NILMBench2026 · ACM BuildSys"]
+    - [2025, Test of Time Award, "NILMTK · ACM e-Energy"]
+    - [2025, ACM SIGEnergy Rising Star, Nipun Batra]
+    - [2025, Excellence in Teaching Award, Nipun Batra · IIT Gandhinagar]
+    - [2023, Young Alumni Award, Nipun Batra · IIIT Delhi]
+    - [2015, Best Graduate Presentation, Nipun Batra · ACM SenSys]
+  students:
+    - [2026, Three IndiaAI MTech Fellowships, "Balbir Prasad, Saaransh Shandilya, Parv Thacker"]
+    - [2025, Outstanding Research Commendation, Rishiraj Adhikary · IITGN Convocation]
+    - [2024, Microsoft Research India PhD Award, Zeel B Patel · one of ten in India]
+    - [2024, Heidelberg Laureate Forum, Rishiraj Adhikary · one of 200 worldwide]
+    - [2023, Gold Medal for Outstanding Research, Ankita Jain · MTech]
+    - [2022, Fulbright-Nehru Doctoral Fellowship, Rishiraj Adhikary]
+
+alumni_logos:
+  - assets/logos/alumni-google-deepmind.png
+  - assets/logos/alumni-microsoft-research.png
+  - assets/logos/alumni-carnegie-mellon.png
+  - assets/logos/alumni-caltech.png
+  - assets/logos/alumni-uc-san-diego.png
+  - assets/logos/alumni-uiuc.png
+  - assets/logos/alumni-umass-amherst.png
+  - assets/logos/alumni-oracle.png
+
+funder_logos:
+  - /images/funders/google.png
+  - /images/funders/microsoft.png
+  - /images/funders/nvidia.png
+  - /images/funders/cisco.png
+  - /images/funders/jio.png
+  - /images/funders/serb.png
+  - /images/funders/dst.jpg
+  - /images/funders/moes.jpeg
+  - /images/funders/stars.png
+  - /images/funders/gujcost.png
+  - /images/funders/coe-ai-mhrd.svg
+
+press:
+  - { image: assets/press/ahmedabad-mirror-vayubuddy.jpg, caption: "VayuBuddy · Ahmedabad Mirror" }
+  - { image: assets/press/ahmedabad-mirror-spiromask.jpg, caption: "SpiroMask · Ahmedabad Mirror" }
+  - { image: assets/press/indian-express-fitness.jpg, caption: "JoulesEye · The Indian Express" }
+
+join:
+  title: Join us.
+  roles: [PhD, Postdoc, Research associate, Internship]
+  text: We look for people who like building things that work outside the lab. No prior sustainability background needed.

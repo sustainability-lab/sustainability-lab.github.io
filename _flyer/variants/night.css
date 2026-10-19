@@ -1,0 +1,42 @@
+/* Night — dark version for screens, lobby displays and slides. Figures sit on white cards so
+   paper plots stay readable. Not meant for office printers (heavy ink). */
+:root {
+  --paper: #111311; --ink: #f3f2ec; --muted: #9a9e95; --accent: #ff5b4f;
+  --rule: #2e322d; --soft: #f5f4ee;
+}
+.logo-light { display: none; }
+.logo-dark { display: block; }
+.page::before { height: 2mm; }
+.mast { border-bottom-color: #f3f2ec; }
+.seal { border-radius: 50%; }
+
+.hero h1 { font-size: 56pt; }
+.hero h1 em { color: var(--accent); }
+.lede { color: #d4d6cf; }
+
+.theme:first-child { border-top-color: var(--ink); }
+.theme-head h2 { font-size: 19pt; }
+.fig { background: var(--soft); }
+.tile p { color: #cfd1ca; }
+
+.compute { background: #1d201c; border-top: 1px solid var(--rule); }
+.compute h2 { color: var(--ink); }
+.compute-stats div { border-left-color: #3a3e38; }
+
+.pi-photo { filter: grayscale(1) contrast(1.1) brightness(.95); }
+.block { border-top-color: var(--ink); }
+.rows li, .paper-list li { border-color: var(--rule) !important; }
+.logos { background: var(--soft); padding: 2.5mm 3mm; }
+.clips img { border-color: var(--rule); filter: grayscale(1) contrast(1.1) brightness(.92); }
+
+.join { background: var(--accent); }
+.join p { color: #fff1ef; }
+.qrs figure { color: #111311; }
+
+/* fit to A3 */
+.compute { color: var(--ink); }
+.hero h1 { font-size: 50pt; }
+.logos { padding: 2mm 3mm; margin-top: 1.5mm; }
+.logos img { height: 8mm; }
+.clips img { height: 24mm; }
+.block { padding: 3mm 0 3.5mm; }

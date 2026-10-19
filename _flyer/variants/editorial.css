@@ -1,0 +1,82 @@
+/* Editorial — a research-magazine look: cream paper, serif display type, centred nameplate,
+   double rules, oxblood accent. Restyles the Swiss base in ../flyer.css. */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=block');
+
+:root {
+  --paper: #f6f0e4; --ink: #1f1c17; --muted: #6d665a; --accent: #9a2a1d;
+  --rule: #d6cbb6; --soft: #ece4d4;
+  --heading: "Fraunces", Georgia, serif; --serif: "Source Serif 4", Georgia, serif;
+}
+h1, h2, h3 { font-weight: 600; letter-spacing: -.01em !important; }
+.page::before { display: none; }
+.kicker { font-family: var(--body); letter-spacing: .2em; }
+
+/* centred nameplate with a double rule */
+.mast { grid-template-columns: 1fr auto 1fr; padding: 8mm 0 4mm; border-bottom: 3pt double var(--ink); }
+.mast .logo { grid-column: 2; grid-row: 1; height: 14mm; }
+.mast-mid { grid-column: 1; grid-row: 1; border: 0; padding: 0; font-family: var(--heading); font-style: italic;
+  font-weight: 400; text-transform: none; font-size: 13pt; letter-spacing: 0; color: var(--accent); }
+.mast-r { grid-column: 3; justify-content: flex-end; }
+
+.hero { grid-template-columns: 1fr; text-align: center; justify-items: center; padding: 8mm 0 6mm; gap: 6mm; }
+.hero h1 { font-size: 52pt; font-weight: 400; line-height: 1.02; max-width: 19ch; margin: 3mm auto 4mm; }
+.hero h1 em { font-style: italic; }
+.lede { font-family: var(--serif); font-style: italic; font-size: 13pt; margin: 0 auto; color: #3a362f; }
+
+/* themes: heading row above a 4-up row of figures */
+.theme { grid-template-columns: 1fr; gap: 2.5mm; padding: 3mm 0 3mm; }
+.theme:first-child { border-top: 0; }
+.theme-head { display: grid; grid-template-columns: 12mm auto 1fr; gap: 4mm; align-items: baseline; }
+.theme-head .num { font-family: var(--heading); font-style: italic; font-weight: 400; font-size: 20pt; line-height: 1; }
+.theme-head h2 { font-size: 17pt; margin: 0; white-space: nowrap; }
+.theme-head p { font-family: var(--serif); font-style: italic; font-size: 9pt; max-height: calc(2 * 1.38em); }
+.fig { aspect-ratio: 2 / 1; background: #fffdf8; border: 1px solid var(--rule); }
+.venue { font-family: var(--serif); font-style: italic; text-transform: none; letter-spacing: 0; font-size: 8.5pt; font-weight: 400; margin-top: 1.5mm; }
+.badge { font-family: var(--body); }
+.tile h3 { font-size: 11.5pt; }
+.tile p { font-family: var(--serif); font-size: 8.8pt; }
+
+.compute { background: none; color: var(--ink); margin: 3mm 0 0; padding: 4mm 0; border-top: 3pt double var(--ink);
+  border-bottom: 1px solid var(--ink); }
+.compute .kicker, .compute-stats dd { color: var(--muted); }
+.compute h2 { color: var(--ink); font-style: italic; font-weight: 400; }
+.compute p { color: var(--muted); font-family: var(--serif); font-style: italic; }
+.compute-stats div { border-left-color: var(--rule); }
+.compute-stats dt { font-weight: 400; color: var(--ink); }
+.compute-stats div:nth-child(-n+3) dt { color: var(--accent); }
+
+/* page 2 */
+.pi-photo { filter: grayscale(1) sepia(.25) contrast(1.05); border: 1px solid var(--rule); padding: 1.5mm; background: #fffdf8; }
+.pi-name { font-weight: 400; font-size: 36pt; }
+.pi-title { font-family: var(--serif); font-style: italic; font-weight: 400; }
+.pi-bio { font-family: var(--serif); }
+.block { border-top: 3pt double var(--ink); }
+.sec { font-weight: 400; font-size: 17pt; }
+.sec span { font-style: italic; font-family: var(--heading); font-size: 13pt; }
+.rows li, .paper-list li, .grads li { font-family: var(--serif); }
+.rows .yr { font-family: var(--heading); font-weight: 400; font-style: italic; }
+.pv { font-family: var(--body); }
+.mini-stats dt { font-weight: 400; }
+.mini-stats dd { font-family: var(--serif); font-style: italic; font-size: 8.5pt; }
+.clips img { filter: grayscale(1) sepia(.3) contrast(1.05); }
+.clips figcaption { font-family: var(--serif); font-style: italic; }
+
+.join { background: var(--ink); color: var(--paper); }
+.join h2 { color: var(--paper); font-weight: 400; font-style: italic; font-size: 42pt; }
+.roles span { border-color: rgba(246,240,228,.5); font-weight: 500; }
+.join p { color: #d8d0c0; font-family: var(--serif); font-style: italic; }
+.foot { font-family: var(--serif); font-style: italic; font-size: 8pt; }
+
+/* fit to A3 */
+.hero { padding: 5mm 0 5mm; gap: 4mm; }
+.hero h1 { font-size: 44pt; max-width: 24ch; margin: 2mm auto 3mm; }
+.lede { max-width: 78ch; font-size: 12pt; border: 0; padding: 0; }
+.hero-r { text-align: center; }
+.theme { padding: 2.2mm 0; gap: 2mm; }
+.fig { aspect-ratio: 5 / 2; }
+.compute { padding: 3mm 0; row-gap: 2.5mm; }
+.pi-bio { max-width: 86ch; font-size: 11pt; }
+.clips img { height: 24mm; }
+.block { padding: 3mm 0 3.5mm; }
+.hero h1 { text-wrap: balance; }
+.hero h1 { font-size: 40pt; max-width: none; white-space: nowrap; }

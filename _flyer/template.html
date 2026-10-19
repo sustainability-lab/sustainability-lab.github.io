@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sustainability Lab — flyer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=block" rel="stylesheet">
+<link rel="stylesheet" href="{{ css }}">
+{% if variant_css %}<link rel="stylesheet" href="{{ variant_css }}">{% endif %}
+</head>
+<body class="v-{{ variant }}">
+
+{% macro masthead(label, n) -%}
+<header class="mast">
+  <img class="logo logo-light" src="{{ logo }}" alt="Sustainability Lab">
+  <img class="logo logo-dark" src="{{ logo_dark }}" alt="Sustainability Lab">
+  <div class="mast-mid">{{ label }}</div>
+  <div class="mast-r">
+    <div><b>IIT Gandhinagar</b><br>{{ url }}</div>
+    <img class="seal" src="{{ seal }}" alt="IIT Gandhinagar">
+  </div>
+</header>
+{%- endmacro %}
+
+{% macro foot(n, label) -%}
+<footer class="foot">
+  <span><b>{{ "%02d"|format(n) }}</b> / 02 · {{ label }}</span>
+  <span>{{ url }} · {{ email }}</span>
+  <span>Updated {{ updated }}</span>
+</footer>
+{%- endmacro %}
+
+<!-- ======================= PAGE 1: RESEARCH ======================= -->
+<section class="page">
+  {{ masthead("Research", 1) }}
+
+  <div class="hero">
+    <div>
+      <div class="kicker">Sustainability Lab · Prof. Nipun Batra · IIT Gandhinagar</div>
+      <h1>{{ headline_html|safe }}</h1>
+    </div>
+    <div class="hero-r">
+      <p class="lede">{{ lede }}</p>
+      <ul class="hero-themes">{% for t in themes %}<li data-theme="{{ t.key }}"><span>{{ t.num }}</span>{{ t.name }}</li>{% endfor %}</ul>
+    </div>
+  </div>
+
+  <section class="methods">
+    <div class="kicker">Core methods</div>
+    <ul>{% for m in methods %}<li><b>{{ m.name }}</b><span data-fit="method">{{ m.examples }}</span></li>{% endfor %}</ul>
+  </section>
+
+  <div class="themes">
+    {% for t in themes %}
+    <section class="theme" data-theme="{{ t.key }}">
+      <div class="theme-head">
+        <div class="num">{{ t.num }}</div>
+        <h2>{{ t.name }}</h2>
+        <p data-fit="theme blurb">{{ t.blurb }}</p>
+      </div>
+      <div class="tiles">
+        {% for p in t.tiles %}
+        <article class="tile">
+          <div class="fig"><img src="{{ p.img }}" alt="">{% if p.badge %}<span class="badge">{{ p.badge }}</span>{% endif %}</div>
+          <div class="venue">{{ p.venue }}</div>
+          <h3>{{ p.name }}</h3>
+          <p data-fit="tile blurb">{{ p.blurb }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+    {% endfor %}
+  </div>
+
+  <section class="compute">
+    <div class="compute-l">
+      <div class="kicker">Infrastructure</div>
+      <h2>Compute for every student.</h2>
+      <p>{{ compute.note }}</p>
+    </div>
+    <dl class="compute-stats">
+      {% for value, label in compute.stats %}<div><dt>{{ value }}</dt><dd>{{ label }}</dd></div>{% endfor %}
+    </dl>
+  </section>
+
+  {{ foot(1, "Research") }}
+</section>
+
+<!-- ======================= PAGE 2: PEOPLE & IMPACT ======================= -->
+<section class="page">
+  {{ masthead("People & impact", 2) }}
+
+  <section class="pi">
+    <img class="pi-photo" src="{{ pi.photo }}" alt="{{ pi.name }}">
+    <div>
+      <div class="kicker">Principal investigator</div>
+      <h1 class="pi-name">{{ pi.name }}</h1>
+      <div class="pi-title">{{ pi.title }}</div>
+      <p class="pi-bio" data-fit="bio">{{ pi.bio }}</p>
+    </div>
+  </section>
+
+  <section class="block recog">
+    <h2 class="sec"><span>01</span>Recognition</h2>
+    <div class="cols2">
+      {% for side, label in [("lab", "Lab & PI"), ("students", "Students")] %}
+      <div>
+        <div class="kicker">{{ label }}</div>
+        <ul class="rows">
+          {% for year, title, detail in recognition[side] %}
+          <li><span class="yr">{{ year }}</span><span><b>{{ title }}</b><br><i>{{ detail }}</i></span></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="block papers">
+    <h2 class="sec"><span>02</span>{{ selected_papers.title }}</h2>
+    <ol class="paper-list">
+      {% for p in selected %}
+      <li><span class="pv">{{ p.venue }} {{ p.year }}</span><span class="pt" data-fit="paper title">{{ p.title }}{% if p.award %} <em>· {{ p.award }}</em>{% endif %}</span></li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="block people">
+    <div>
+      <h2 class="sec"><span>03</span>Alumni</h2>
+      <dl class="mini-stats">
+        {% for n, g in alumni_groups %}<div><dt>{{ n }}</dt><dd>{{ g }}</dd></div>{% endfor %}
+      </dl>
+      <ul class="grads">
+        {% for a in phd_grads %}<li><b>{{ a.name }}</b> — PhD {{ a.year }}<br><i>{{ a.now }}</i></li>{% endfor %}
+      </ul>
+    </div>
+    <div>
+      <div class="kicker">Alumni went on to</div>
+      <div class="logos">{% for l in alumni_logos %}<img src="{{ l }}" alt="">{% endfor %}</div>
+      <div class="kicker" style="margin-top:5mm">Supported by</div>
+      <div class="logos funders">{% for l in funder_logos %}<img src="{{ l }}" alt="">{% endfor %}</div>
+    </div>
+  </section>
+
+  <section class="block press">
+    <h2 class="sec"><span>04</span>In the press</h2>
+    <div class="clips">
+      {% for p in press %}<figure><img src="{{ p.image }}" alt=""><figcaption>{{ p.caption }}</figcaption></figure>{% endfor %}
+    </div>
+  </section>
+
+  <section class="join">
+    <div class="join-l">
+      <h2>{{ join.title }}</h2>
+      <div class="roles">{% for r in join.roles %}<span>{{ r }}</span>{% endfor %}</div>
+      <p>{{ join.text }}</p>
+    </div>
+    <div class="qrs">
+      <figure>{{ qr_join|safe }}<figcaption>Openings</figcaption></figure>
+      <figure>{{ qr_site|safe }}<figcaption>Lab website</figcaption></figure>
+    </div>
+  </section>
+
+  {{ foot(2, "People & impact") }}
+</section>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* Mono — a technical data sheet: engineering-paper dot grid, heavy black rules, boxed cells,
+   monospaced labels and numbers, a single signal-red accent. */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@600;700&display=block');
+
+:root {
+  --paper: #ffffff; --ink: #0d0d0d; --muted: #555; --accent: #e5341d; --rule: #0d0d0d; --soft: #f3f3f1;
+  --body: "IBM Plex Sans", Arial, sans-serif; --heading: "IBM Plex Sans Condensed", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+.page { background: radial-gradient(circle, #d6d6d2 .28mm, transparent .3mm) 0 0 / 5mm 5mm, var(--paper); }
+.page::before { display: none; }
+h1, h2, h3 { text-transform: uppercase; letter-spacing: -.01em !important; }
+.kicker, .venue, .pv, .foot, .compute-stats dd, .mini-stats dd, .mast-r, .clips figcaption, .qrs figcaption {
+  font-family: var(--mono); }
+.kicker { letter-spacing: .04em; }
+.kicker::before { content: "// "; color: var(--accent); }
+
+.mast { border-bottom: 2.5pt solid var(--ink); padding-top: 8mm; }
+.mast-mid { font-family: var(--mono); font-weight: 500; border-left: 1.5pt solid var(--ink); }
+.mast-mid::before { content: "["; } .mast-mid::after { content: "]"; }
+.mast-r b { font-family: var(--heading); text-transform: uppercase; }
+
+.hero { padding: 7mm 0 6mm; }
+.hero h1 { font-size: 50pt; line-height: .95; max-width: 15ch; }
+.hero h1 em { color: var(--ink); background: var(--accent); color: #fff; padding: 0 1.5mm; }
+.lede { font-size: 11.5pt; }
+
+/* themes as boxed table rows */
+.themes { border: 2pt solid var(--ink); background: #fff; justify-content: stretch; }
+.theme, .theme:first-child { border-top: 1.5pt solid var(--ink); padding: 0; gap: 0; grid-template-columns: 44mm 1fr; flex: 1; }
+.theme:first-child { border-top: 0; }
+.theme-head { padding: 3.5mm; border-right: 1.5pt solid var(--ink); }
+.theme-head .num { font-family: var(--mono); font-weight: 500; font-size: 8pt; }
+.theme-head .num::before { content: "SEC."; }
+.theme-head h2 { font-size: 17pt; }
+.tiles { gap: 0; }
+.tile { padding: 3mm; border-left: 1px solid #bdbdb8; }
+.tile:first-child { border-left: 0; }
+.fig { background: var(--soft); border: 1px solid #bdbdb8; }
+.venue { font-weight: 500; letter-spacing: 0; font-size: 7.2pt; color: var(--ink); margin-top: 1.8mm; }
+.venue::before { content: "> "; color: var(--accent); }
+.badge { font-family: var(--mono); background: var(--ink); font-weight: 500; letter-spacing: 0; }
+.tile h3 { font-size: 11pt; }
+.tile p { font-size: 8.2pt; }
+
+.compute { margin-top: 4mm; margin-left: 0; margin-right: 0; padding: 5mm 5mm; background: var(--ink); }
+.compute-stats dt { font-family: var(--mono); font-weight: 500; }
+.compute-stats div:nth-child(-n+3) dt { color: var(--accent); }
+.foot { border-top: 1.5pt solid var(--ink); color: var(--ink); }
+
+/* page 2 */
+.pi-photo { border: 1.5pt solid var(--ink); filter: grayscale(1) contrast(1.2); }
+.pi-name { font-size: 36pt; }
+.pi-title { font-family: var(--mono); font-weight: 500; font-size: 9pt; }
+.pi-bio { font-size: 11pt; }
+.block { border-top: 2.5pt solid var(--ink); }
+.sec span { font-family: var(--mono); font-weight: 500; }
+.sec span::before { content: "SEC."; }
+.rows li, .paper-list li { border-color: #bdbdb8 !important; }
+.rows .yr { font-family: var(--mono); font-weight: 500; }
+.mini-stats dt { font-family: var(--mono); font-weight: 500; color: var(--ink); }
+.mini-stats div:first-child dt { color: var(--accent); }
+.logos { border: 1.5pt solid var(--ink); background: #fff; padding: 2.5mm 3mm; }
+.clips img { border: 1.5pt solid var(--ink); }
+
+.join { background: var(--ink); margin-left: 0; margin-right: 0; padding: 5mm; border-left: 4mm solid var(--accent); }
+.join h2 { font-size: 40pt; }
+.join p { color: #cfcfcf; }
+.roles span { font-family: var(--mono); font-weight: 500; border-color: #888; }
+
+/* fit to A3 */
+.hero h1 { font-size: 44pt; max-width: 22ch; }
+.lede { max-width: 60ch; }
+.theme-head { padding: 3mm; }
+.tile { padding: 2.5mm; }
+.logos { padding: 2mm 3mm; margin-top: 1.5mm; }
+.logos img { height: 8mm; }
+.clips img { height: 24mm; }
+.block { padding: 3mm 0 3.5mm; }
