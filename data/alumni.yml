@@ -17,6 +17,11 @@
   url: https://rishi-a.github.io
   note: First PhD graduate · Fulbright-Nehru Fellow
   story: /experiences/rishiraj.html
+- name: Aditya Mehta
+  group: BTech
+  year: 2026
+  now: Gen-AI Developer at Barclays Investment Bank
+  story: /experiences/aditya.html
 - name: Aditi Agarwal
   group: BTech
   year: 2024
@@ -51,10 +56,11 @@
   group: BTech
   year: 2024
   now: Data Scientist at Skan.ai
-- name: Kalash Kankariya
+- name: Kalash Kankaria
   group: BTech
   year: 2024
-  now: Data Scientist at Skan.ai
+  now: MS in Computational Finance at Carnegie Mellon University (previously Data Scientist at Skan.ai)
+  story: /experiences/kalash.html
 - name: Rahul Chembakasseril
   group: BTech
   year: 2024
