@@ -124,6 +124,11 @@ toc: false
 <span class="news-content">Two research announcements: <a href="papers/2026/flowsat.qmd"><b>FlowSat</b></a> accepted at <b>BMVC 2026</b>, and <a href="papers/2026/signal-descriptors.qmd"><b>Efficient Time Series SSL via Signal Descriptors</b></a> accepted for a <b>Short Presentation at IEEE DSAA 2026</b>. Paper PDFs, research summaries and code links are now available.</span>
 </div>
 
+<div class="news-item category-paper" data-category="paper">
+<span class="news-date">Jun</span>
+<span class="news-icon">📄</span>
+<span class="news-content">Paper accepted (oral) at the MILETS Workshop @ ACM KDD 2026: Feature-Informed Self-Supervised Learning for Time Series Understanding!</span>
+</div>
 
 <div class="news-item category-award" data-category="award">
 <span class="news-date">Jun</span>
@@ -152,7 +157,7 @@ toc: false
 <div class="news-item category-award" data-category="award">
 <span class="news-date">Jan</span>
 <span class="news-icon">🏆</span>
-<span class="news-content">Balbir Prasad, Saaransh Shandilya and Parv Thecker awarded IndiaAI MTech Fellowships!</span>
+<span class="news-content">Balbir Prasad, Saaransh Shandilya and Parv Thacker awarded IndiaAI MTech Fellowships!</span>
 </div>
 
 </div>
@@ -166,6 +171,12 @@ toc: false
 <span class="news-date">Dec</span>
 <span class="news-icon">💰</span>
 <span class="news-content">Received ANRF ARG (Anusandhan National Research Foundation - Accelerate Research Grant)!</span>
+</div>
+
+<div class="news-item category-award" data-category="award">
+<span class="news-date">Nov</span>
+<span class="news-icon">📜</span>
+<span class="news-content">Filed Indian patent application for ApneaEye — non-contact screening and classification of sleep apnea (App. No. 202521107821)!</span>
 </div>
 
 <div class="news-item category-paper" data-category="paper">
