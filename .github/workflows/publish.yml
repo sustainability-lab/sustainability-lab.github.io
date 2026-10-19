@@ -25,6 +25,10 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          # Pinned to the version the site is built and checked with locally
+          # (listing templates and theming were verified on 1.4.554).
+          version: 1.4.554
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
