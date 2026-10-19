@@ -58,11 +58,12 @@ format:
     code-copy: true
     code-overflow: wrap
     date-format: "MMMM D, YYYY"
+    include-after-body: theme/toggle.html
     include-in-header:
       text: |
         <script>
-        // First visit: follow the OS light/dark setting. The navbar toggle overrides it.
-        try { if (!localStorage.getItem("quarto-color-scheme") && window.matchMedia("(prefers-color-scheme: dark)").matches) localStorage.setItem("quarto-color-scheme", "alternate"); } catch (e) {}
+        // Follow the OS light/dark setting until someone uses the switch (see theme/toggle.html).
+        try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quarto-color-scheme", window.matchMedia("(prefers-color-scheme: dark)").matches ? "alternate" : "default"); } catch (e) {}
         </script>
 
 execute:

@@ -1,0 +1,36 @@
+<script>
+// Light/dark switch styled like nipunbatra.github.io (sun → moon pill).
+// It drives Quarto's own colour-scheme switch and hides Quarto's icon.
+// Until someone uses the switch, the site follows the OS setting.
+(() => {
+  const KEY = 'lab-theme-chosen';
+  const isDark = () => document.body.classList.contains('quarto-dark');
+  const mkButton = () => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'mode'; b.setAttribute('role', 'switch');
+    b.setAttribute('aria-label', 'Dark mode'); b.title = 'Light or dark appearance';
+    b.innerHTML = '<span class="sky"></span><span class="stars"><b style="left:9px;top:6px"></b><b style="left:15px;top:15px"></b><b style="left:23px;top:8px;opacity:.7"></b></span><span class="knob"></span>';
+    b.addEventListener('click', () => {
+      try { localStorage.setItem(KEY, '1'); } catch (_) {}
+      if (window.quartoToggleColorScheme) window.quartoToggleColorScheme();
+    });
+    return b;
+  };
+  const sync = () => document.querySelectorAll('.mode').forEach(b => b.setAttribute('aria-checked', String(isDark())));
+  const init = () => {
+    const tools = document.querySelector('.quarto-navbar-tools');
+    const nav = document.querySelector('#quarto-header .navbar .container-fluid') || document.querySelector('#quarto-header nav');
+    if (!nav) return;
+    const btn = mkButton();
+    if (tools) tools.prepend(btn); else nav.appendChild(btn);
+    sync();
+    new MutationObserver(sync).observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+    mq.addEventListener('change', e => {
+      let chosen = null; try { chosen = localStorage.getItem(KEY); } catch (_) {}
+      if (!chosen && e.matches !== isDark() && window.quartoToggleColorScheme) window.quartoToggleColorScheme();
+    });
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true }); else init();
+})();
+</script>

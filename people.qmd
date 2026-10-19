@@ -3,6 +3,7 @@ title: ""
 pagetitle: "People · Sustainability Lab"
 description-meta: "Members and alumni of the Sustainability Lab, IIT Gandhinagar — PhD and MTech students, research fellows, and 50+ alumni now in academia and industry."
 page-layout: custom
+lightbox: true
 aliases:
   - members.html
   - alumni.html
@@ -31,11 +32,16 @@ listing:
     contents: data/alumni.yml
     template: _templates/alumni.ejs
     sort: false
-  - id: quotes
-    contents: data/quotes.yml
-    template: _templates/quotes.ejs
-    sort: false
+  - id: people-stories
+    contents: experiences
+    template: _templates/stories.ejs
+    sort: "date desc"
     max-items: 6
+  - id: people-photos
+    contents: data/photos.yml
+    template: _templates/life-photos.ejs
+    include: {home: true}
+    sort: false
 ---
 
 ::: {.frame .page-main}
@@ -100,21 +106,21 @@ listing:
   <h2 id="stories">In their words</h2>
 ```
 
-::: {#quotes}
+::: {#people-stories}
 :::
 
 ```{=html}
-  <p style="margin-top:16px"><a class="arrow" href="experiences.html">All 16 stories</a></p>
+  <p style="margin-top:16px"><a class="arrow" href="experiences.html">All stories</a></p>
 </section>
 
 <section>
   <h2 id="photos">Photos</h2>
-  <div class="grid g4" style="gap:8px">
-    <img class="photo" style="aspect-ratio:4/3" src="images/memories/2025-Akshardham-all.jpg" alt="The lab, 2025" loading="lazy">
-    <img class="photo" style="aspect-ratio:4/3" src="images/memories/2026-zeel-phd-students.jpeg" alt="Dr. Zeel B Patel's PhD defence, 2026" loading="lazy">
-    <img class="photo" style="aspect-ratio:4/3" src="images/memories/2025-graduating-mtech-1.jpg" alt="MTech graduation, 2025" loading="lazy">
-    <img class="photo" style="aspect-ratio:4/3" src="images/memories/2023-July-all.jpg" alt="The lab, July 2023" loading="lazy">
-  </div>
+```
+
+::: {#people-photos}
+:::
+
+```{=html}
   <p style="margin-top:12px"><a class="arrow" href="memories.html">All photos by year</a></p>
 </section>
 

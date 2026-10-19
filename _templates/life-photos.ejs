@@ -1,0 +1,5 @@
+<div class="life-photos">
+<% for (const p of items) { %>
+<figure><a href="<%= p.src %>" class="lightbox" data-gallery="life" data-glightbox="title: <%= String(p.title).replace(/;/g,',') %>; description: <%= String(p.description || p.caption || '').replace(/;/g,',') %>"><img src="<%= p.src %>" alt="<%= p.title %>" loading="lazy"></a><figcaption><%= p.title %> · <%= p.when %></figcaption></figure>
+<% } %>
+</div>

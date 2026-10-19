@@ -3,12 +3,23 @@ title: ""
 pagetitle: "Sustainability Lab · IIT Gandhinagar"
 description-meta: "Sustainability Lab at IIT Gandhinagar — AI for a sustainable future, led by Prof. Nipun Batra. Research in air quality, health sensing, energy and Earth observation. Recruiting PhD students and interns."
 page-layout: custom
+lightbox: true
 listing:
   - id: news-latest
     contents: data/news.yml
     template: _templates/news-latest.ejs
     sort: false
     max-items: 5
+  - id: life-photos
+    contents: data/photos.yml
+    template: _templates/life-photos.ejs
+    include: {home: true}
+    sort: false
+  - id: life-stories
+    contents: experiences
+    template: _templates/stories.ejs
+    sort: "date desc"
+    max-items: 3
   - id: selected-work
     contents: data/publications.yml
     template: _templates/pubs-selected.ejs
@@ -64,6 +75,23 @@ listing:
       <p class="small" style="margin-top:10px"><a href="join.html">Open positions</a> &nbsp;·&nbsp; <a href="https://sustainability-lab.github.io/sustainability-research-bootcamp/">Research Skills Bootcamp</a></p>
     </div>
   </div>
+</section>
+
+<section class="life">
+  <div class="head-row"><h2>Life in the lab</h2><span class="small"><a class="arrow" href="memories.html">All photos</a> &nbsp; <a class="arrow" href="experiences.html">All stories</a></span></div>
+```
+
+::: {#life-photos}
+:::
+
+```{=html}
+  <h3 class="life-sub">In their words</h3>
+```
+
+::: {#life-stories}
+:::
+
+```{=html}
 </section>
 
 <section>

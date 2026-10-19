@@ -1,4 +1,5 @@
 # Lab photos, newest first. src: image in images/memories/. caption: one line; description: shown in the full-screen view.
+# home: true shows the photo in the "Life in the lab" mosaic on the homepage (keep it to five; the first one is shown large).
 - year: 2026
   month: February 2026
   src: /images/memories/2026-zeel-phd-committee.jpeg
@@ -13,6 +14,7 @@
   caption: Current PhD students celebrating with Dr. Zeel
   description: PhD Defence Celebration - Current PhD students celebrating Dr. Zeel B Patel's successful thesis defence, marking a proud moment for the Sustainability Lab.
   when: February 2026
+  home: true
 - year: 2026
   month: February 2026
   src: /images/memories/2026-zeel-phd-jrfs-mtech.jpeg
@@ -34,6 +36,7 @@
   caption: Special celebration with faculty members
   description: 2025 MTech Graduation with Faculty - A special moment with faculty members celebrating the achievements of our graduating MTech students who have contributed significantly to sustainability research.
   when: June 2025
+  home: true
 - year: 2025
   month: June 2025
   src: /images/memories/2025-graduating-mtech-3.jpg
@@ -55,6 +58,7 @@
   caption: All participants and organizers of the summer school program
   description: ACM Summer School 2025 Complete Group - All participants and organizers of the ACM Summer School 2025, showcasing the diverse community of researchers and students who came together for this enriching academic experience.
   when: June 2025
+  home: true
 - year: 2025
   month: May 2025
   src: /images/memories/2025-Akshardham-all.jpg
@@ -76,6 +80,7 @@
   caption: Showcasing our research and innovations at IIT Gandhinagar
   description: Curiosity Carnival'25 at IITGN - Sustainability Lab showcasing our research and innovations at the prestigious Curiosity Carnival at IIT Gandhinagar, engaging with students and researchers.
   when: January 2025
+  home: true
 - year: 2025
   month: January 2025
   src: /images/memories/Dinner-Jan-2025.jpg
@@ -90,6 +95,7 @@
   caption: Heartwarming reunion with our global alumni network
   description: Alumni Homecoming 2024 - A heartwarming reunion with our alumni who have gone on to make significant impacts in industry and academia worldwide.
   when: December 2024
+  home: true
 - year: 2024
   month: July 2024
   src: /images/memories/compass24.jpg
