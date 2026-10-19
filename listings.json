@@ -2,6 +2,8 @@
   {
     "listing": "/experiences.html",
     "items": [
+      "/experiences/aditya.html",
+      "/experiences/kalash.html",
       "/experiences/aadya.html",
       "/experiences/rishiraj.html",
       "/experiences/vannsh.html",
@@ -31,6 +33,8 @@
   {
     "listing": "/people.html",
     "items": [
+      "/experiences/aditya.html",
+      "/experiences/kalash.html",
       "/experiences/aadya.html",
       "/experiences/rishiraj.html",
       "/experiences/vannsh.html",
@@ -52,6 +56,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/experiences/aditya.html",
+      "/experiences/kalash.html",
       "/experiences/aadya.html",
       "/experiences/rishiraj.html",
       "/experiences/vannsh.html",
