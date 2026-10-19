@@ -11,7 +11,9 @@ Source for <https://sustainability-lab.github.io>, the website of the Sustainabi
 | Add a news item | top of `data/news.yml` |
 | Add a paper | top of `data/publications.yml` + figure/PDF in `papers/<year>/` + `.bib` in `papers/bibtex/` (see `papers/README.md`) |
 | Add a student story | new file in `experiences/<firstname>.qmd` (copy an existing one) |
-| Add lab photos | `memories.qmd` + images in `images/memories/` |
+| Add lab photos | `data/photos.yml` + images in `images/memories/` |
+| Add an award | `data/awards.yml` + photos in `images/awards/` |
+| Add press coverage | `data/media.yml` + image in `images/media/` |
 | Update openings | `join.qmd` |
 | Update handbook pages | `handbook/*.qmd` |
 
@@ -23,7 +25,7 @@ Each data file has a comment at the top listing its fields.
 index.qmd  research.qmd  people.qmd  join.qmd  news.qmd   main pages
 papers/            publications page, PDFs and figures by year, BibTeX
 handbook/          lab handbook (onboarding, culture, writing, compute, ...)
-data/              members, alumni, news, publications, quotes (YAML)
+data/              members, alumni, news, publications, awards, media, photos, quotes (YAML)
 _templates/        how the YAML is turned into HTML (EJS listing templates)
 theme/             light.scss / dark.scss (colour tokens), site.scss, legacy.scss
 images/            brand/, illustrations/, members/, memories/, awards/, media/, funders/
