@@ -11,13 +11,79 @@
       "/experiences/RYeeshu.html",
       "/experiences/aditi.html",
       "/experiences/karm.html",
-      "/experiences/aabhas.html",
       "/experiences/ankita.html",
+      "/experiences/aabhas.html",
       "/experiences/hetvi.html",
       "/experiences/aadesh.html",
       "/experiences/souvik.html",
       "/experiences/rithwik.html",
       "/experiences/gautam.html"
     ]
+  },
+  {
+    "listing": "/awards.html",
+    "items": []
+  },
+  {
+    "listing": "/join.html",
+    "items": []
+  },
+  {
+    "listing": "/people.html",
+    "items": [
+      "/experiences/aadya.html",
+      "/experiences/rishiraj.html",
+      "/experiences/vannsh.html",
+      "/experiences/shataxi.html",
+      "/experiences/arun.html",
+      "/experiences/devodita.html",
+      "/experiences/RYeeshu.html",
+      "/experiences/aditi.html",
+      "/experiences/karm.html",
+      "/experiences/ankita.html",
+      "/experiences/aabhas.html",
+      "/experiences/hetvi.html",
+      "/experiences/aadesh.html",
+      "/experiences/souvik.html",
+      "/experiences/rithwik.html",
+      "/experiences/gautam.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/experiences/aadya.html",
+      "/experiences/rishiraj.html",
+      "/experiences/vannsh.html",
+      "/experiences/shataxi.html",
+      "/experiences/arun.html",
+      "/experiences/devodita.html",
+      "/experiences/RYeeshu.html",
+      "/experiences/aditi.html",
+      "/experiences/karm.html",
+      "/experiences/ankita.html",
+      "/experiences/aabhas.html",
+      "/experiences/hetvi.html",
+      "/experiences/aadesh.html",
+      "/experiences/souvik.html",
+      "/experiences/rithwik.html",
+      "/experiences/gautam.html"
+    ]
+  },
+  {
+    "listing": "/media.html",
+    "items": []
+  },
+  {
+    "listing": "/papers/index.html",
+    "items": []
+  },
+  {
+    "listing": "/news.html",
+    "items": []
+  },
+  {
+    "listing": "/memories.html",
+    "items": []
   }
 ]

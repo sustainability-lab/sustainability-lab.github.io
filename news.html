@@ -2,24 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Latest news from the Sustainability Lab, IIT Gandhinagar — publications, awards, and milestones in AI for sustainability.">
+<meta name="description" content="News from the Sustainability Lab, IIT Gandhinagar: papers, awards, grants, talks, people and events.">
 
-<title>News – Sustainability Lab</title>
+<title>News · Sustainability Lab</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -38,16 +32,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href=".//images/favicon-sl.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-eaeb381c6b7494c50009502241a4985c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f1d32d5390065e8a1d369ae0db672c27.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,14 +72,77 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-news-all .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<meta property="og:title" content="News – Sustainability Lab">
+    const options = {
+      valueNames: ['listing-when','listing-type','listing-text',{ data: ['index'] },{ data: ['categories'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-when","listing-type","listing-text"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-news-all'] = new List('listing-news-all', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<script>
+// Follow the OS light/dark setting until someone uses the switch (see theme/toggle.html).
+try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quarto-color-scheme", window.matchMedia("(prefers-color-scheme: dark)").matches ? "alternate" : "default"); } catch (e) {}
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="News · Sustainability Lab">
 <meta property="og:image" content="https://sustainability-lab.github.io/images/logo.png">
 <meta property="og:site_name" content="Sustainability Lab">
 <meta property="og:image:height" content="612">
 <meta property="og:image:width" content="2000">
-<meta name="twitter:title" content="News – Sustainability Lab">
+<meta name="twitter:title" content="News · Sustainability Lab">
 <meta name="twitter:image" content="https://sustainability-lab.github.io/images/logo.png">
 <meta name="twitter:creator" content="@nipun_batra">
 <meta name="twitter:card" content="summary_large_image">
@@ -90,633 +150,581 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:image-width" content="2000">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/brand/logo-light.svg" alt="Sustainability Lab" class="navbar-logo">
+    </a>
+  </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text"><img id="theme-logo" data-light-src="/images/logo_light.svg" data-dark-src="/images/logo_dark.svg" src="./images/logo_light.svg" style="height: 90px !important;"></span></a>
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-people" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">People</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-people">    
-        <li>
-    <a class="dropdown-item" href="./members.html">
- <span class="dropdown-text">Current Team</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./alumni.html">
- <span class="dropdown-text">Alumni</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./experiences.html">
- <span class="dropdown-text">Alumni Experiences</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./memories.html">
- <span class="dropdown-text">Memories</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Research</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
-        <li>
-    <a class="dropdown-item" href="./projects.html">
- <span class="dropdown-text">All Projects &amp; Research</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./papers/index.html">
- <span class="dropdown-text">Publications</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./openings.html"> 
-<span class="menu-text">Openings</span></a>
+    <a class="nav-link" href="./papers/index.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lab-handbook" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Lab Handbook</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-lab-handbook">    
-        <li>
-    <a class="dropdown-item" href="./computational-resources.html">
- <span class="dropdown-text">Computational Resources</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./people.html"> 
+<span class="menu-text">People</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./lab_culture.html">
- <span class="dropdown-text">Lab Culture</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./join.html"> 
+<span class="menu-text">Join</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./upskilling.html">
- <span class="dropdown-text">Academic &amp; Research Skills</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./handbook/index.html"> 
+<span class="menu-text">Handbook</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./design-kit.html">
- <span class="dropdown-text">Design Kit</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link active" href="./news.html" aria-current="page"> 
 <span class="menu-text">News</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./media.html"> 
-<span class="menu-text">Media coverage</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./awards.html"> 
-<span class="menu-text">Awards</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Events</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-events">    
-        <li>
-    <a class="dropdown-item" href="./events/index.html">
- <span class="dropdown-text">Events Home</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="https://sustainability-lab.github.io/acm-summer-2025/">
- <span class="dropdown-text">ACM India Summer School 2025</span></a>
-  </li>  
-    </ul>
-  </li>
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">News</h1>
-</div>
 
 
 
-<div class="quarto-title-meta column-page">
 
-    
-  
-    
+<div class="frame page-main">
+<section>
+  <div class="grid g2" style="align-items:center;gap:44px">
+    <div>
+      <h1 class="page">News</h1>
+      <p class="lede" style="margin-top:12px">Papers, awards, grants, talks and people — in one place.</p>
+      <p class="small"><a href="awards.html">Awards &amp; photos</a> · <a href="media.html">Media coverage</a> · <a href="events/index.html">Events</a></p>
+    </div>
+    <img class="ill" src="images/illustrations/talk.webp" alt="">
   </div>
-  
-
-
-</header>
-
-
-<style>
-.filter-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 20px;
-}
-
-.filter-btn {
-    padding: 4px 10px;
-    border: 1px solid #e2e8f0;
-    border-radius: 4px;
-    background: white;
-    color: #5a6070;
-    font-size: 0.8rem;
-    cursor: pointer;
-    transition: all 0.15s ease;
-}
-
-.filter-btn:hover {
-    border-color: #c44536;
-    color: #c44536;
-}
-
-.filter-btn.active {
-    background: #c44536;
-    border-color: #c44536;
-    color: white;
-}
-
-.year-section {
-    margin-bottom: 24px;
-}
-
-.year-header {
-    color: #c44536;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 8px;
-    padding-bottom: 4px;
-    border-bottom: 2px solid #e2e8f0;
-}
-
-.news-list {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.news-item {
-    padding: 6px 10px;
-    border-left: 3px solid #e2e8f0;
-    background: #fafbfc;
-    font-size: 0.9rem;
-    line-height: 1.4;
-}
-
-.news-item:hover {
-    background: #f0f4f8;
-}
-
-.news-date {
-    color: #5a6070;
-    font-weight: 600;
-    font-size: 0.75rem;
-    margin-right: 8px;
-}
-
-.news-icon {
-    margin-right: 6px;
-}
-
-.news-content {
-    color: #1a1a2e;
-}
-
-.news-content a {
-    color: #c44536;
-    text-decoration: none;
-}
-
-.news-content a:hover {
-    text-decoration: underline;
-}
-
-/* Category colors */
-.category-award { border-left-color: #f59e0b; }
-.category-paper { border-left-color: #10b981; }
-.category-event { border-left-color: #ef4444; }
-.category-joining { border-left-color: #3b82f6; }
-.category-talk { border-left-color: #8b5cf6; }
-.category-media { border-left-color: #ec4899; }
-.category-thesis { border-left-color: #06b6d4; }
-.category-grant { border-left-color: #84cc16; }
-
-.hidden {
-    display: none !important;
-}
-</style>
-<div class="filter-container">
-<button class="filter-btn active" data-category="all">
-All
-</button>
-<button class="filter-btn" data-category="award">
-🏆 Awards
-</button>
-<button class="filter-btn" data-category="paper">
-📄 Papers
-</button>
-<button class="filter-btn" data-category="event">
-🎉 Events
-</button>
-<button class="filter-btn" data-category="joining">
-👋 Joining
-</button>
-<button class="filter-btn" data-category="talk">
-🎤 Talks
-</button>
-<button class="filter-btn" data-category="thesis">
-🎓 Thesis
-</button>
-<button class="filter-btn" data-category="grant">
-💰 Grants
-</button>
-</div>
-<div class="year-section">
-<h2 class="year-header anchored">
+  <div class="chips" id="newschips"><button class="chip on" data-c="all">All</button><button class="chip" data-c="paper">Papers</button><button class="chip" data-c="award">Awards</button><button class="chip" data-c="grant">Grants</button><button class="chip" data-c="people">People</button><button class="chip" data-c="talk">Talks</button><button class="chip" data-c="event">Events</button></div>
+<div id="listing-news-all" class="quarto-listing quarto-listing-container-custom">
+<div class="newsfeed">
+<div class="year" data-year="2026">
 2026
-</h2>
-<div class="news-list">
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Sep</span> <span class="news-content">Two research announcements: <a href="./papers/2026/flowsat.html"><b>FlowSat</b></a> accepted at <b>BMVC 2026</b>, and <a href="./papers/2026/signal-descriptors.html"><b>Efficient Time Series SSL via Signal Descriptors</b></a> accepted for a <b>Short Presentation at IEEE DSAA 2026</b>. Paper PDFs, research summaries and code links are now available.</span></p>
 </div>
-<div class="news-item category-award" data-category="award">
-<p><span class="news-date">Jun</span> <span class="news-icon">🏆</span> <span class="news-content"><b>NILMBench2026</b> wins the <b>Best Paper Award — Runner-Up</b> at <a href="./awards.html#2026">BuildSys 2026</a> (ACM Sustainability Week, Banff, Canada)! Led by 2nd-year undergraduates Aayush Kuloor, Anurag Singh, and Harsh Dhru.</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Sep</span><span><span class="label">Paper</span>Two research announcements: <a href="./papers/2026/flowsat.html"><b>FlowSat</b></a> accepted at <b>BMVC 2026</b>, and <a href="./papers/2026/signal-descriptors.html"><b>Efficient Time Series SSL via Signal Descriptors</b></a> accepted for a <b>Short Presentation at IEEE DSAA 2026</b>. Paper PDFs, research summaries and code links are now available.</span>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">May</span> <span class="news-icon">📄</span> <span class="news-content"><b>ThermEval</b> accepted at <a href="./papers/index.html#2026">KDD 2026</a>! Benchmarking vision-language models on thermal imagery with Ayush Shrivastava, Kirtan Gangani, Laksh Jain, and Mayank Goel (CMU).</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Jun</span><span><span class="label">Paper</span>Paper accepted (oral) at the MILETS Workshop @ ACM KDD 2026: Feature-Informed Self-Supervised Learning for Time Series Understanding!</span>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">May</span> <span class="news-icon">📄</span> <span class="news-content"><b>NILMBench2026</b> accepted at <a href="./papers/index.html#2026">BuildSys 2026</a>! A reproducible benchmark for energy disaggregation, led entirely by 2nd-year undergraduates Aayush Kuloor, Anurag Singh, and Harsh Dhru.</span></p>
+<div class="list-row" data-type="award">
+<span class="d">Jun</span><span><span class="label">Award</span><b>NILMBench2026</b> wins the <b>Best Paper Award — Runner-Up</b> at <a href="./awards.html#2026">BuildSys 2026</a> (ACM Sustainability Week, Banff, Canada)! Led by 2nd-year undergraduates Aayush Kuloor, Anurag Singh, and Harsh Dhru.</span>
 </div>
-<div class="news-item category-thesis" data-category="thesis">
-<p><span class="news-date">Feb</span> <span class="news-icon">🎓</span> <span class="news-content">Dr.&nbsp;Zeel B Patel successfully defends his PhD thesis. Second PhD graduate from the lab. Congratulations!</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">May</span><span><span class="label">Paper</span><b>ThermEval</b> accepted at <a href="./papers/index.html#2026">KDD 2026</a>! Benchmarking vision-language models on thermal imagery with Ayush Shrivastava, Kirtan Gangani, Laksh Jain, and Mayank Goel (CMU).</span>
 </div>
-<div class="news-item category-award" data-category="award">
-<p><span class="news-date">Jan</span> <span class="news-icon">🏆</span> <span class="news-content">Balbir Prasad, Saaransh Shandilya and Parv Thecker awarded IndiaAI MTech Fellowships!</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">May</span><span><span class="label">Paper</span><b>NILMBench2026</b> accepted at <a href="./papers/index.html#2026">BuildSys 2026</a>! A reproducible benchmark for energy disaggregation, led entirely by 2nd-year undergraduates Aayush Kuloor, Anurag Singh, and Harsh Dhru.</span>
 </div>
+<div class="list-row" data-type="people">
+<span class="d">Feb</span><span><span class="label">People</span>Dr.&nbsp;Zeel B Patel successfully defends his PhD thesis. Second PhD graduate from the lab. Congratulations!</span>
 </div>
+<div class="list-row" data-type="award">
+<span class="d">Jan</span><span><span class="label">Award</span>Balbir Prasad, Saaransh Shandilya and Parv Thacker awarded IndiaAI MTech Fellowships!</span>
 </div>
-<div class="year-section">
-<h2 class="year-header anchored">
+<div class="year" data-year="2025">
 2025
-</h2>
-<div class="news-list">
-<div class="news-item category-grant" data-category="grant">
-<p><span class="news-date">Dec</span> <span class="news-icon">💰</span> <span class="news-content">Received ANRF ARG (Anusandhan National Research Foundation - Accelerate Research Grant)!</span></p>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Nov</span> <span class="news-icon">📄</span> <span class="news-content">Paper accepted at AAAI 2026</span></p>
+<div class="list-row" data-type="grant">
+<span class="d">Dec</span><span><span class="label">Grant</span>Received ANRF ARG (Anusandhan National Research Foundation - Accelerate Research Grant)!</span>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Oct</span> <span class="news-icon">📄</span> <span class="news-content">Paper accepted at CODS-COMAD 2025</span></p>
+<div class="list-row" data-type="award">
+<span class="d">Nov</span><span><span class="label">Award</span>Filed Indian patent application for ApneaEye — non-contact screening and classification of sleep apnea (App. No.&nbsp;202521107821)!</span>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Sep</span> <span class="news-icon">📄</span> <span class="news-content">Paper accepted at NeurIPS 2025</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Nov</span><span><span class="label">Paper</span>Paper accepted at AAAI 2026</span>
 </div>
-<div class="news-item category-joining" data-category="joining">
-<p><span class="news-date">Aug</span> <span class="news-icon">👋</span> <span class="news-content">Kirtan Gangani and Deena Lad join Sustainability Lab as Research Assistants. Welcome!</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Oct</span><span><span class="label">Paper</span>Paper accepted at CODS-COMAD 2025</span>
 </div>
-<div class="news-item category-award" data-category="award">
-<p><span class="news-date">Jun</span> <span class="news-icon">🏆</span> <span class="news-content">Prof.&nbsp;Nipun Batra receives <a href="./awards.html#2025" target="_blank">Test of Time Award for NILMTK</a>! Recognition for significant long-term impact on energy disaggregation research.</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Sep</span><span><span class="label">Paper</span>Paper accepted at NeurIPS 2025</span>
 </div>
-<div class="news-item category-award" data-category="award">
-<p><span class="news-date">Jun</span> <span class="news-icon">🏆</span> <span class="news-content">Dr.&nbsp;Rishiraj Adhikary receives <a href="./awards.html#2025" target="_blank">Commendation for Outstanding Research (PhD)</a> at IIT Gandhinagar Convocation 2025!</span></p>
+<div class="list-row" data-type="people">
+<span class="d">Aug</span><span><span class="label">People</span>Kirtan Gangani and Deena Lad join Sustainability Lab as Research Assistants. Welcome!</span>
 </div>
-<div class="news-item category-award" data-category="award">
-<p><span class="news-date">Jun</span> <span class="news-icon">🏆</span> <span class="news-content">Prof.&nbsp;Nipun Batra wins the <a href="./awards.html#2025" target="_blank">SIGEnergy Rising Star Award 2025</a>!</span></p>
+<div class="list-row" data-type="award">
+<span class="d">Jun</span><span><span class="label">Award</span>Prof.&nbsp;Nipun Batra receives <a href="./awards.html#2025" target="_blank">Test of Time Award for NILMTK</a>! Recognition for significant long-term impact on energy disaggregation research.</span>
 </div>
-<div class="news-item category-event" data-category="event">
-<p><span class="news-date">Jun</span> <span class="news-icon">🎉</span> <span class="news-content">Organizing <a href="https://sustainability-lab.github.io/acm-summer-2025/" target="_blank">ACM India Summer School 2025</a> on AI for Social Good at IIT Gandhinagar (June 2-13, 2025)</span></p>
+<div class="list-row" data-type="award">
+<span class="d">Jun</span><span><span class="label">Award</span>Dr.&nbsp;Rishiraj Adhikary receives <a href="./awards.html#2025" target="_blank">Commendation for Outstanding Research (PhD)</a> at IIT Gandhinagar Convocation 2025!</span>
 </div>
-<div class="news-item category-award" data-category="award">
-<p><span class="news-date">Jan</span> <span class="news-icon">🏆</span> <span class="news-content">Prof.&nbsp;Nipun Batra receives <a href="./awards.html#2025" target="_blank">Excellence in Teaching Award</a> based on outstanding teaching contributions and active learning strategies!</span></p>
+<div class="list-row" data-type="award">
+<span class="d">Jun</span><span><span class="label">Award</span>Prof.&nbsp;Nipun Batra wins the <a href="./awards.html#2025" target="_blank">SIGEnergy Rising Star Award 2025</a>!</span>
 </div>
-<div class="news-item category-award" data-category="award">
-<p><span class="news-date">Jan</span> <span class="news-icon">🏆</span> <span class="news-content">Shataxi Dubey wins <a href="./awards.html#2025" target="_blank">Third Prize in Simply Speaking 4.0 Competition</a> organized by Leadership Development Initiative, IITGN!</span></p>
+<div class="list-row" data-type="event">
+<span class="d">Jun</span><span><span class="label">Event</span>Organizing <a href="https://sustainability-lab.github.io/acm-summer-2025/" target="_blank">ACM India Summer School 2025</a> on AI for Social Good at IIT Gandhinagar (June 2-13, 2025)</span>
 </div>
-<div class="news-item category-award" data-category="award">
-<p><span class="news-date">Jan</span> <span class="news-icon">🏆</span> <span class="news-content">Shrimay Shah and Dhruv Gupta win <a href="./awards.html#2025" target="_blank">Third Prize in Undergraduate Research Showcase</a> for Brick Kilns Detection project!</span></p>
+<div class="list-row" data-type="award">
+<span class="d">Jan</span><span><span class="label">Award</span>Prof.&nbsp;Nipun Batra receives <a href="./awards.html#2025" target="_blank">Excellence in Teaching Award</a> based on outstanding teaching contributions and active learning strategies!</span>
 </div>
-<div class="news-item category-joining" data-category="joining">
-<p><span class="news-date">Jan</span> <span class="news-icon">👋</span> <span class="news-content">Tanu and Meenakshi join Sustainability Lab as Junior Research Fellows. Welcome!</span></p>
+<div class="list-row" data-type="award">
+<span class="d">Jan</span><span><span class="label">Award</span>Shataxi Dubey wins <a href="./awards.html#2025" target="_blank">Third Prize in Simply Speaking 4.0 Competition</a> organized by Leadership Development Initiative, IITGN!</span>
 </div>
-<div class="news-item category-thesis" data-category="thesis">
-<p><span class="news-date">Jan</span> <span class="news-icon">🎓</span> <span class="news-content">Dr.&nbsp;Rishiraj Adhikary successfully defends his PhD thesis. Congratulations!</span></p>
+<div class="list-row" data-type="award">
+<span class="d">Jan</span><span><span class="label">Award</span>Shrimay Shah and Dhruv Gupta win <a href="./awards.html#2025" target="_blank">Third Prize in Undergraduate Research Showcase</a> for Brick Kilns Detection project!</span>
 </div>
+<div class="list-row" data-type="people">
+<span class="d">Jan</span><span><span class="label">People</span>Tanu and Meenakshi join Sustainability Lab as Junior Research Fellows. Welcome!</span>
 </div>
+<div class="list-row" data-type="people">
+<span class="d">Jan</span><span><span class="label">People</span>Dr.&nbsp;Rishiraj Adhikary successfully defends his PhD thesis. Congratulations!</span>
 </div>
-<div class="year-section">
-<h2 class="year-header anchored">
+<div class="year" data-year="2024">
 2024
-</h2>
-<div class="news-list">
-<div class="news-item category-award" data-category="award">
-<p><span class="news-date">Nov</span> <span class="news-icon">🏆</span> <span class="news-content">Prof.&nbsp;Nipun Batra promoted to Associate Professor at IIT Gandhinagar!</span></p>
 </div>
-<div class="news-item category-award" data-category="award">
-<p><span class="news-date">Aug</span> <span class="news-icon">🏆</span> <span class="news-content">Devodita wins the Bhalodia-Khetan Summer Research Excellence Award for ML sustainability project!</span></p>
+<div class="list-row" data-type="award">
+<span class="d">Nov</span><span><span class="label">Award</span>Prof.&nbsp;Nipun Batra promoted to Associate Professor at IIT Gandhinagar!</span>
 </div>
-<div class="news-item category-talk" data-category="talk">
-<p><span class="news-date">Jul</span> <span class="news-icon">🎤</span> <span class="news-content">Talk on “Smart Health Sensing for Sustainable Future” at <a href="https://www.pdpu.ac.in" target="_blank">PDEU</a></span></p>
+<div class="list-row" data-type="award">
+<span class="d">Aug</span><span><span class="label">Award</span>Devodita wins the Bhalodia-Khetan Summer Research Excellence Award for ML sustainability project!</span>
 </div>
-<div class="news-item category-talk" data-category="talk">
-<p><span class="news-date">Jul</span> <span class="news-icon">🎤</span> <span class="news-content"><a href="https://www.youtube.com/watch?v=2kgnmqx-RwM" target="_blank">Doctoral Consortium keynote</a> “Within and Beyond: Lessons in Computational Sustainability” at <a href="https://compass.acm.org" target="_blank">ACM Compass’24</a></span></p>
+<div class="list-row" data-type="talk">
+<span class="d">Jul</span><span><span class="label">Talk</span>Talk on “Smart Health Sensing for Sustainable Future” at <a href="https://www.pdpu.ac.in" target="_blank">PDEU</a></span>
 </div>
-<div class="news-item category-award" data-category="award">
-<p><span class="news-date">Jun</span> <span class="news-icon">🏆</span> <span class="news-content">Zeel wins the prestigious Microsoft Research India PhD Award!</span></p>
+<div class="list-row" data-type="talk">
+<span class="d">Jul</span><span><span class="label">Talk</span><a href="https://www.youtube.com/watch?v=2kgnmqx-RwM" target="_blank">Doctoral Consortium keynote</a> “Within and Beyond: Lessons in Computational Sustainability” at <a href="https://compass.acm.org" target="_blank">ACM Compass’24</a></span>
 </div>
-<div class="news-item category-thesis" data-category="thesis">
-<p><span class="news-date">Jun</span> <span class="news-icon">🎓</span> <span class="news-content">Ayush and Suraj successfully defend their Masters thesis!</span></p>
+<div class="list-row" data-type="award">
+<span class="d">Jun</span><span><span class="label">Award</span>Zeel wins the prestigious Microsoft Research India PhD Award!</span>
 </div>
-<div class="news-item category-award" data-category="award">
-<p><span class="news-date">Apr</span> <span class="news-icon">🏆</span> <span class="news-content">Rishiraj selected for the prestigious <a href="https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html" target="_blank">Heidelberg Laureate Forum</a>!</span></p>
+<div class="list-row" data-type="people">
+<span class="d">Jun</span><span><span class="label">People</span>Ayush and Suraj successfully defend their Masters thesis!</span>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Jan</span> <span class="news-icon">📄</span> <span class="news-content">“JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery” accepted at <a href="https://dl.acm.org/toc/imwut/2023/7/4" target="_blank">IMWUT 2024</a></span></p>
+<div class="list-row" data-type="award">
+<span class="d">Apr</span><span><span class="label">Award</span>Rishiraj selected for the prestigious <a href="https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html" target="_blank">Heidelberg Laureate Forum</a>!</span>
 </div>
-<div class="news-item category-joining" data-category="joining">
-<p><span class="news-date">Jan</span> <span class="news-icon">👋</span> <span class="news-content">Shataxi, Prince and Poornima join the lab. Welcome!</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Jan</span><span><span class="label">Paper</span>“JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery” accepted at <a href="https://dl.acm.org/toc/imwut/2023/7/4" target="_blank">IMWUT 2024</a></span>
 </div>
+<div class="list-row" data-type="people">
+<span class="d">Jan</span><span><span class="label">People</span>Shataxi, Prince and Poornima join the lab. Welcome!</span>
 </div>
-</div>
-<div class="year-section">
-<h2 class="year-header anchored">
+<div class="year" data-year="2023">
 2023
-</h2>
-<div class="news-list">
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Dec</span> <span class="news-icon">📄</span> <span class="news-content">“AirDelhi: Fine-Grained Spatio-Temporal PM Dataset” poster at <a href="https://neurips.cc/virtual/2023/poster/73476" target="_blank">NeurIPS 2023</a></span></p>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Oct</span> <span class="news-icon">📄</span> <span class="news-content">“Scalable Identification of Brick Kilns with Active Learning” at <a href="https://neurips.cc/virtual/2023/78770" target="_blank">NeurIPS 2023</a> workshop</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Dec</span><span><span class="label">Paper</span>“AirDelhi: Fine-Grained Spatio-Temporal PM Dataset” poster at <a href="https://neurips.cc/virtual/2023/poster/73476" target="_blank">NeurIPS 2023</a></span>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Sep</span> <span class="news-icon">📄</span> <span class="news-content">“Fine-Grained Spatio-Temporal PM Dataset From Delhi” at <a href="https://papers.nips.cc/paper_files/paper/2023/hash/ee799aff607fcf39c01df6391e96f92c-Abstract-Datasets_and_Benchmarks.html" target="_blank">NeurIPS 2023</a> Datasets Track</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Oct</span><span><span class="label">Paper</span>“Scalable Identification of Brick Kilns with Active Learning” at <a href="https://neurips.cc/virtual/2023/78770" target="_blank">NeurIPS 2023</a> workshop</span>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Sep</span> <span class="news-icon">📄</span> <span class="news-content">“Conformal Prediction: A Visual Introduction” at <a href="https://visxai.io/2023" target="_blank">VisXAI 23</a></span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Sep</span><span><span class="label">Paper</span>“Fine-Grained Spatio-Temporal PM Dataset From Delhi” at <a href="https://papers.nips.cc/paper_files/paper/2023/hash/ee799aff607fcf39c01df6391e96f92c-Abstract-Datasets_and_Benchmarks.html" target="_blank">NeurIPS 2023</a> Datasets Track</span>
 </div>
-<div class="news-item category-joining" data-category="joining">
-<p><span class="news-date">Jun</span> <span class="news-icon">👋</span> <span class="news-content">Khush and Rishabh join the lab. Welcome!</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Sep</span><span><span class="label">Paper</span>“Conformal Prediction: A Visual Introduction” at <a href="https://visxai.io/2023" target="_blank">VisXAI 23</a></span>
 </div>
-<div class="news-item category-thesis" data-category="thesis">
-<p><span class="news-date">Jun</span> <span class="news-icon">🎓</span> <span class="news-content">Ankita successfully defends her Masters thesis!</span></p>
+<div class="list-row" data-type="people">
+<span class="d">Jun</span><span><span class="label">People</span>Khush and Rishabh join the lab. Welcome!</span>
 </div>
-<div class="news-item category-joining" data-category="joining">
-<p><span class="news-date">Jan</span> <span class="news-icon">👋</span> <span class="news-content">Ayush and Suraj join the lab. Welcome!</span></p>
+<div class="list-row" data-type="people">
+<span class="d">Jun</span><span><span class="label">People</span>Ankita successfully defends her Masters thesis!</span>
 </div>
+<div class="list-row" data-type="people">
+<span class="d">Jan</span><span><span class="label">People</span>Ayush and Suraj join the lab. Welcome!</span>
 </div>
-</div>
-<div class="year-section">
-<h2 class="year-header anchored">
+<div class="year" data-year="2022">
 2022
-</h2>
-<div class="news-list">
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Nov</span> <span class="news-icon">📄</span> <span class="news-content">“I do not know”: Quantifying Uncertainty in NN for NILM at <a href="https://dl.acm.org/doi/proceedings/10.1145/3563357" target="_blank">BuildSys 2022</a></span></p>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Oct</span> <span class="news-icon">📄</span> <span class="news-content">“Uncertainty Disentanglement with Non-stationary Heteroscedastic GPs” at <a href="https://gp-seminar-series.github.io/neurips-2022/" target="_blank">NeurIPS 2022</a></span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Nov</span><span><span class="label">Paper</span>“I do not know”: Quantifying Uncertainty in NN for NILM at <a href="https://dl.acm.org/doi/proceedings/10.1145/3563357" target="_blank">BuildSys 2022</a></span>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Oct</span> <span class="news-icon">📄</span> <span class="news-content">“Challenges in Gaussian Processes for NILM” at <a href="https://gp-seminar-series.github.io/neurips-2022/" target="_blank">NeurIPS 2022</a></span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Oct</span><span><span class="label">Paper</span>“Uncertainty Disentanglement with Non-stationary Heteroscedastic GPs” at <a href="https://gp-seminar-series.github.io/neurips-2022/" target="_blank">NeurIPS 2022</a></span>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Oct</span> <span class="news-icon">📄</span> <span class="news-content">“SpiroMask: Measuring Lung Function Using Consumer-Grade Masks” at <a href="https://dl.acm.org/toc/health/2023/4/1" target="_blank">ACM HEALTH</a></span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Oct</span><span><span class="label">Paper</span>“Challenges in Gaussian Processes for NILM” at <a href="https://gp-seminar-series.github.io/neurips-2022/" target="_blank">NeurIPS 2022</a></span>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Sep</span> <span class="news-icon">📄</span> <span class="news-content">“Continuous Respiration Rate Detection While Walking” at <a href="https://dl.acm.org/doi/proceedings/10.1145/3544793" target="_blank">UbiComp 2022</a></span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Oct</span><span><span class="label">Paper</span>“SpiroMask: Measuring Lung Function Using Consumer-Grade Masks” at <a href="https://dl.acm.org/toc/health/2023/4/1" target="_blank">ACM HEALTH</a></span>
 </div>
-<div class="news-item category-talk" data-category="talk">
-<p><span class="news-date">Aug</span> <span class="news-icon">🎤</span> <span class="news-content">Zeel presented “Accurate and Scalable Non-Stationary GPs” at <a href="https://cstep.in/" target="_blank">ASIC</a>, Bangalore</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Sep</span><span><span class="label">Paper</span>“Continuous Respiration Rate Detection While Walking” at <a href="https://dl.acm.org/doi/proceedings/10.1145/3544793" target="_blank">UbiComp 2022</a></span>
 </div>
-<div class="news-item category-award" data-category="award">
-<p><span class="news-date">May</span> <span class="news-icon">🏆</span> <span class="news-content">Zeel selected as Google Summer of Code contributor at TensorFlow with <a href="https://www.cs.ubc.ca/~murphyk/" target="_blank">Dr.&nbsp;Kevin P. Murphy</a>!</span></p>
+<div class="list-row" data-type="talk">
+<span class="d">Aug</span><span><span class="label">Talk</span>Zeel presented “Accurate and Scalable Non-Stationary GPs” at <a href="https://cstep.in/" target="_blank">ASIC</a>, Bangalore</span>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Apr</span> <span class="news-icon">📄</span> <span class="news-content">“Samachar: Print News Media on Air Pollution in India” at <a href="https://dl.acm.org/doi/10.1145/3530190.3534812" target="_blank">ACM COMPASS 22</a></span></p>
+<div class="list-row" data-type="award">
+<span class="d">May</span><span><span class="label">Award</span>Zeel selected as Google Summer of Code contributor at TensorFlow with <a href="https://www.cs.ubc.ca/~murphyk/" target="_blank">Dr.&nbsp;Kevin P. Murphy</a>!</span>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Jan</span> <span class="news-icon">📄</span> <span class="news-content">“Vastr-GAN: Versatile Apparel Synthesised from Text” at <a href="https://dblp.org/db/conf/comad/comad2022.html" target="_blank">CODS-COMAD 2022</a></span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Apr</span><span><span class="label">Paper</span>“Samachar: Print News Media on Air Pollution in India” at <a href="https://dl.acm.org/doi/10.1145/3530190.3534812" target="_blank">ACM COMPASS 22</a></span>
 </div>
-<div class="news-item category-joining" data-category="joining">
-<p><span class="news-date">Jan</span> <span class="news-icon">👋</span> <span class="news-content">Ankita joins the lab. Welcome!</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Jan</span><span><span class="label">Paper</span>“Vastr-GAN: Versatile Apparel Synthesised from Text” at <a href="https://dblp.org/db/conf/comad/comad2022.html" target="_blank">CODS-COMAD 2022</a></span>
 </div>
+<div class="list-row" data-type="people">
+<span class="d">Jan</span><span><span class="label">People</span>Ankita joins the lab. Welcome!</span>
 </div>
-</div>
-<div class="year-section">
-<h2 class="year-header anchored">
+<div class="year" data-year="2021">
 2021
-</h2>
-<div class="news-list">
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Dec</span> <span class="news-icon">📄</span> <span class="news-content">“Accurate and Scalable Non-Stationary GPs” at <a href="https://aaai-2022.virtualchair.net/poster_aisi11178" target="_blank">AAAI 2022</a></span></p>
 </div>
-<div class="news-item category-grant" data-category="grant">
-<p><span class="news-date">Nov</span> <span class="news-icon">💰</span> <span class="news-content">Received $5000 cloud credit grant from Google Research</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Dec</span><span><span class="label">Paper</span>“Accurate and Scalable Non-Stationary GPs” at <a href="https://aaai-2022.virtualchair.net/poster_aisi11178" target="_blank">AAAI 2022</a></span>
 </div>
-<div class="news-item category-award" data-category="award">
-<p><span class="news-date">Nov</span> <span class="news-icon">🏆</span> <span class="news-content">Rishiraj wins <a href="https://www.usief.org.in/" target="_blank">Fulbright-Nehru Doctoral Research Fellowship</a>!</span></p>
+<div class="list-row" data-type="grant">
+<span class="d">Nov</span><span><span class="label">Grant</span>Received $5000 cloud credit grant from Google Research</span>
 </div>
-<div class="news-item category-award" data-category="award">
-<p><span class="news-date">Oct</span> <span class="news-icon">🏆</span> <span class="news-content">Rishiraj wins <a href="https://www.pmrf.in/" target="_blank">Prime Minister Research Fellowship</a>!</span></p>
+<div class="list-row" data-type="award">
+<span class="d">Nov</span><span><span class="label">Award</span>Rishiraj wins <a href="https://www.usief.org.in/" target="_blank">Fulbright-Nehru Doctoral Research Fellowship</a>!</span>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Sep</span> <span class="news-icon">📄</span> <span class="news-content">Neural network approaches to NILMTK-contrib at <a href="https://dl.acm.org/doi/10.1145/3486611.3486652" target="_blank">BuildSys 2021</a></span></p>
+<div class="list-row" data-type="award">
+<span class="d">Oct</span><span><span class="label">Award</span>Rishiraj wins <a href="https://www.pmrf.in/" target="_blank">Prime Minister Research Fellowship</a>!</span>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Sep</span> <span class="news-icon">📄</span> <span class="news-content"><a href="https://nipunbatra.github.io/hmm/" target="_blank">Exploring Hidden Markov Models</a> at <a href="https://visxai.io/2021.html" target="_blank">IEEE VisxAI 2021</a></span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Sep</span><span><span class="label">Paper</span>Neural network approaches to NILMTK-contrib at <a href="https://dl.acm.org/doi/10.1145/3486611.3486652" target="_blank">BuildSys 2021</a></span>
 </div>
-<div class="news-item category-talk" data-category="talk">
-<p><span class="news-date">Aug</span> <span class="news-icon">🎤</span> <span class="news-content">Teaching <a href="https://www.craft.do/s/MAdQrLOO9ErCvc" target="_blank">Ubiquitous Computing</a> course</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Sep</span><span><span class="label">Paper</span><a href="https://nipunbatra.github.io/hmm/" target="_blank">Exploring Hidden Markov Models</a> at <a href="https://visxai.io/2021.html" target="_blank">IEEE VisxAI 2021</a></span>
 </div>
-<div class="news-item category-talk" data-category="talk">
-<p><span class="news-date">Feb</span> <span class="news-icon">🎤</span> <span class="news-content">Publication chair for <a href="https://cods-comad.in/" target="_blank">CODS-COMAD 2022</a></span></p>
+<div class="list-row" data-type="talk">
+<span class="d">Aug</span><span><span class="label">Talk</span>Teaching <a href="https://www.craft.do/s/MAdQrLOO9ErCvc" target="_blank">Ubiquitous Computing</a> course</span>
 </div>
+<div class="list-row" data-type="talk">
+<span class="d">Feb</span><span><span class="label">Talk</span>Publication chair for <a href="https://cods-comad.in/" target="_blank">CODS-COMAD 2022</a></span>
 </div>
-</div>
-<div class="year-section">
-<h2 class="year-header anchored">
+<div class="year" data-year="2020">
 2020
-</h2>
-<div class="news-list">
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Dec</span> <span class="news-icon">📄</span> <span class="news-content">Air quality perceptions from social media accepted at ACM CSCW</span></p>
 </div>
-<div class="news-item category-grant" data-category="grant">
-<p><span class="news-date">Nov</span> <span class="news-icon">💰</span> <span class="news-content">CISCO grant on edge non-intrusive load monitoring</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Dec</span><span><span class="label">Paper</span>Air quality perceptions from social media accepted at ACM CSCW</span>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Oct</span> <span class="news-icon">📄</span> <span class="news-content"><a href="https://patel-zeel.github.io/active-learning-visualization/" target="_blank">Active Learning visualization</a> at <a href="https://visxai.io/2020" target="_blank">IEEE VisxAI 2020</a></span></p>
+<div class="list-row" data-type="grant">
+<span class="d">Nov</span><span><span class="label">Grant</span>CISCO grant on edge non-intrusive load monitoring</span>
 </div>
-<div class="news-item category-grant" data-category="grant">
-<p><span class="news-date">Oct</span> <span class="news-icon">💰</span> <span class="news-content">SERB grant on AI and sensor networks for air quality</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Oct</span><span><span class="label">Paper</span><a href="https://patel-zeel.github.io/active-learning-visualization/" target="_blank">Active Learning visualization</a> at <a href="https://visxai.io/2020" target="_blank">IEEE VisxAI 2020</a></span>
 </div>
-<div class="news-item category-grant" data-category="grant">
-<p><span class="news-date">Sep</span> <span class="news-icon">💰</span> <span class="news-content">Google grant on COVID and air quality linkages</span></p>
+<div class="list-row" data-type="grant">
+<span class="d">Oct</span><span><span class="label">Grant</span>SERB grant on AI and sensor networks for air quality</span>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">May</span> <span class="news-icon">📄</span> <span class="news-content"><a href="https://distill.pub/2020/bayesian-optimization/" target="_blank">Bayesian Optimization</a> article published on Distill</span></p>
+<div class="list-row" data-type="grant">
+<span class="d">Sep</span><span><span class="label">Grant</span>Google grant on COVID and air quality linkages</span>
 </div>
-<div class="news-item category-talk" data-category="talk">
-<p><span class="news-date">Feb</span> <span class="news-icon">🎤</span> <span class="news-content">Faculty development program on data science (TEQIP)</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">May</span><span><span class="label">Paper</span><a href="https://distill.pub/2020/bayesian-optimization/" target="_blank">Bayesian Optimization</a> article published on Distill</span>
 </div>
-<div class="news-item category-talk" data-category="talk">
-<p><span class="news-date">Feb</span> <span class="news-icon">🎤</span> <span class="news-content">ACM India event with Yann LeCun and Shwetak Patel</span></p>
+<div class="list-row" data-type="talk">
+<span class="d">Feb</span><span><span class="label">Talk</span>Faculty development program on data science (TEQIP)</span>
 </div>
-<div class="news-item category-talk" data-category="talk">
-<p><span class="news-date">Jan</span> <span class="news-icon">🎤</span> <span class="news-content">Four posters presented at CODS COMAD 2020</span></p>
+<div class="list-row" data-type="talk">
+<span class="d">Feb</span><span><span class="label">Talk</span>ACM India event with Yann LeCun and Shwetak Patel</span>
 </div>
+<div class="list-row" data-type="talk">
+<span class="d">Jan</span><span><span class="label">Talk</span>Four posters presented at CODS COMAD 2020</span>
 </div>
-</div>
-<div class="year-section">
-<h2 class="year-header anchored">
+<div class="year" data-year="2019">
 2019
-</h2>
-<div class="news-list">
-<div class="news-item category-talk" data-category="talk">
-<p><span class="news-date">Nov</span> <span class="news-icon">🎤</span> <span class="news-content">ML talk at INS Valsura for Indian Navy, Army and Air Force officers</span></p>
 </div>
-<div class="news-item category-talk" data-category="talk">
-<p><span class="news-date">Nov</span> <span class="news-icon">🎤</span> <span class="news-content">Energy disaggregation talk at ACM BuildSys 2019, NYC</span></p>
+<div class="list-row" data-type="talk">
+<span class="d">Nov</span><span><span class="label">Talk</span>ML talk at INS Valsura for Indian Navy, Army and Air Force officers</span>
 </div>
-<div class="news-item category-talk" data-category="talk">
-<p><span class="news-date">Nov</span> <span class="news-icon">🎤</span> <span class="news-content">Air quality talk at Google, Bangalore</span></p>
+<div class="list-row" data-type="talk">
+<span class="d">Nov</span><span><span class="label">Talk</span>Energy disaggregation talk at ACM BuildSys 2019, NYC</span>
 </div>
-<div class="news-item category-talk" data-category="talk">
-<p><span class="news-date">Apr</span> <span class="news-icon">🎤</span> <span class="news-content">Computational Sustainability talk at Nirma University</span></p>
+<div class="list-row" data-type="talk">
+<span class="d">Nov</span><span><span class="label">Talk</span>Air quality talk at Google, Bangalore</span>
 </div>
-<div class="news-item category-talk" data-category="talk">
-<p><span class="news-date">Mar</span> <span class="news-icon">🎤</span> <span class="news-content">Computational Sustainability talk at ROCS 2019</span></p>
+<div class="list-row" data-type="talk">
+<span class="d">Apr</span><span><span class="label">Talk</span>Computational Sustainability talk at Nirma University</span>
 </div>
-<div class="news-item category-paper" data-category="paper">
-<p><span class="news-date">Jan</span> <span class="news-icon">📄</span> <span class="news-content">Paper accepted at WWW</span></p>
+<div class="list-row" data-type="talk">
+<span class="d">Mar</span><span><span class="label">Talk</span>Computational Sustainability talk at ROCS 2019</span>
 </div>
-<div class="news-item category-talk" data-category="talk">
-<p><span class="news-date">Jan</span> <span class="news-icon">🎤</span> <span class="news-content">Teaching Machine Learning course</span></p>
+<div class="list-row" data-type="paper">
+<span class="d">Jan</span><span><span class="label">Paper</span>Paper accepted at WWW</span>
 </div>
+<div class="list-row" data-type="talk">
+<span class="d">Jan</span><span><span class="label">Talk</span>Teaching Machine Learning course</span>
 </div>
-</div>
-<div class="year-section">
-<h2 class="year-header anchored">
+<div class="year" data-year="2018">
 2018
-</h2>
-<div class="news-list">
-<div class="news-item category-talk" data-category="talk">
-<p><span class="news-date">Nov</span> <span class="news-icon">🎤</span> <span class="news-content">Haroon presented paper at BuildSys 18</span></p>
 </div>
-<div class="news-item category-grant" data-category="grant">
-<p><span class="news-date">Nov</span> <span class="news-icon">💰</span> <span class="news-content">Microsoft AI for Earth grant ($15000 Azure credits)</span></p>
+<div class="list-row" data-type="talk">
+<span class="d">Nov</span><span><span class="label">Talk</span>Haroon presented paper at BuildSys 18</span>
 </div>
-<div class="news-item category-talk" data-category="talk">
-<p><span class="news-date">Aug</span> <span class="news-icon">🎤</span> <span class="news-content">Research methods for CS bootcamp at IITGN</span></p>
+<div class="list-row" data-type="grant">
+<span class="d">Nov</span><span><span class="label">Grant</span>Microsoft AI for Earth grant ($15000 Azure credits)</span>
 </div>
-<div class="news-item category-grant" data-category="grant">
-<p><span class="news-date">Jul</span> <span class="news-icon">💰</span> <span class="news-content">Titan XP GPU grant from NVidia</span></p>
+<div class="list-row" data-type="talk">
+<span class="d">Aug</span><span><span class="label">Talk</span>Research methods for CS bootcamp at IITGN</span>
 </div>
-<div class="news-item category-joining" data-category="joining">
-<p><span class="news-date">Jul</span> <span class="news-icon">👋</span> <span class="news-content">Joined CSE at IITGN as Assistant Professor</span></p>
+<div class="list-row" data-type="grant">
+<span class="d">Jul</span><span><span class="label">Grant</span>Titan XP GPU grant from NVidia</span>
 </div>
+<div class="list-row" data-type="people">
+<span class="d">Jul</span><span><span class="label">People</span>Joined CSE at IITGN as Assistant Professor</span>
 </div>
 </div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+<nav id="news-all-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div>
+  <p class="small muted" style="margin-top:18px">Adding news? Edit <code>data/news.yml</code>.</p>
+</section>
 <script>
-document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
-        const category = this.dataset.category;
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-        document.querySelectorAll('.news-item').forEach(item => {
-            item.classList.toggle('hidden', category !== 'all' && item.dataset.category !== category);
-        });
-        document.querySelectorAll('.year-section').forEach(section => {
-            section.classList.toggle('hidden', section.querySelectorAll('.news-item:not(.hidden)').length === 0);
-        });
-    });
+document.querySelectorAll('#newschips .chip').forEach(c => c.onclick = () => {
+  document.querySelectorAll('#newschips .chip').forEach(x => x.classList.toggle('on', x === c));
+  const rows = document.querySelectorAll('.newsfeed .list-row');
+  rows.forEach(r => r.style.display = (c.dataset.c === 'all' || r.dataset.type === c.dataset.c) ? '' : 'none');
+  document.querySelectorAll('.newsfeed .year').forEach(y => {
+    let el = y.nextElementSibling, any = false;
+    while (el && !el.classList.contains('year')) { if (el.style.display !== 'none') any = true; el = el.nextElementSibling; }
+    y.style.display = any ? '' : 'none';
+  });
 });
 </script>
+</div>
 
 
 
-</main> <!-- /main -->
+
+
+<script>
+// Light/dark switch styled like nipunbatra.github.io (sun → moon pill).
+// It drives Quarto's own colour-scheme switch and hides Quarto's icon.
+// Until someone uses the switch, the site follows the OS setting.
+(() => {
+  const KEY = 'lab-theme-chosen';
+  const isDark = () => document.body.classList.contains('quarto-dark');
+  const mkButton = () => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'mode'; b.setAttribute('role', 'switch');
+    b.setAttribute('aria-label', 'Dark mode'); b.title = 'Light or dark appearance';
+    b.innerHTML = '<span class="sky"></span><span class="stars"><b style="left:9px;top:6px"></b><b style="left:15px;top:15px"></b><b style="left:23px;top:8px;opacity:.7"></b></span><span class="knob"></span>';
+    b.addEventListener('click', () => {
+      try { localStorage.setItem(KEY, '1'); } catch (_) {}
+      if (window.quartoToggleColorScheme) window.quartoToggleColorScheme();
+    });
+    return b;
+  };
+  const sync = () => document.querySelectorAll('.mode').forEach(b => b.setAttribute('aria-checked', String(isDark())));
+  const init = () => {
+    const tools = document.querySelector('.quarto-navbar-tools');
+    const nav = document.querySelector('#quarto-header .navbar .container-fluid') || document.querySelector('#quarto-header nav');
+    if (!nav) return;
+    const btn = mkButton();
+    if (tools) tools.prepend(btn); else nav.appendChild(btn);
+    sync();
+    new MutationObserver(sync).observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+    mq.addEventListener('change', e => {
+      let chosen = null; try { chosen = localStorage.getItem(KEY); } catch (_) {}
+      if (!chosen && e.matches !== isDark() && window.quartoToggleColorScheme) window.quartoToggleColorScheme();
+    });
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true }); else init();
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
         }
       }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
       return false;
     }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
     }
-    const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
@@ -724,184 +732,184 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
       }
       return codeEl.innerText;
     }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
-    });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
     }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/sustainability-lab\.github\.io");
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
       }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
-        }
-      }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/sustainability-lab\.github\.io");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
         }
       }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
       } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
         }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
       }
     }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
           }
         } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
+          // See if we can fetch this
+          fetch(url.split('#')[0])
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
+            const note = htmlDoc.getElementById(id);
             if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
+              const html = processXRef(id, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -909,205 +917,199 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
             instance.show();
           });
         }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
       } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
             }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
         });
       }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
     }
-  });
-  </script>
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2026 Sustainability Lab, IIT Gandhinagar</p>
+<p>© 2026 Sustainability Lab, IIT Gandhinagar<br> <a href="mailto:nipun.batra@iitgn.ac.in">nipun.batra@iitgn.ac.in</a> · <a href="./flyer.pdf">Lab flyer</a></p>
 </div>   
     <div class="nav-footer-center">
-<p><a href="./papers/index.html">Publications</a> | <a href="https://sustainability-lab.github.io/sustainability-research-bootcamp/"><strong>Research Skills Bootcamp</strong></a> | <a href="mailto:nipun.batra@iitgn.ac.in">Contact</a></p>
+<p><a href="https://www.youtube.com/@SustainabilityLab-SL">Lab YouTube</a> · <a href="https://www.youtube.com/@NipunBatra0">Teaching YouTube</a> · <a href="https://x.com/nipun_batra">X</a> · <a href="https://www.linkedin.com/in/nipunbatra0/">LinkedIn</a> · <a href="https://github.com/sustainability-lab">GitHub</a></p>
 </div>
     <div class="nav-footer-right">
-<p>Built with <a href="https://quarto.org/">Quarto</a> | <span id="last-updated"></span></p>
+<p>Supported by Google, Cisco, NVIDIA, Microsoft, SERB/ANRF, MoES, DST, STARS, GUJCOST, CoE in AI (MHRD), Gujarat Forest Dept. and Jio</p>
 </div>
   </div>
 </footer>
-<script>
-  function updateLogo() {
-    const logo = document.getElementById("theme-logo");
-    if (!logo) return;
-
-    const isDarkMode = document.body.classList.contains("quarto-dark");
-    const newSrc = isDarkMode ? logo.dataset.darkSrc : logo.dataset.lightSrc;
-
-    if (logo.src !== newSrc) {
-      logo.src = newSrc;
-    }
-  }
-
-  // Detect theme change
-  const observer = new MutationObserver(updateLogo);
-  observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
-
-  // Ensure correct logo on initial load
-  document.addEventListener("DOMContentLoaded", updateLogo);
-
-  // Set last updated date
-  document.addEventListener("DOMContentLoaded", function() {
-    const lastUpdatedEl = document.getElementById("last-updated");
-    if (lastUpdatedEl) {
-      const now = new Date();
-      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      lastUpdatedEl.textContent = 'Last Updated: ' + now.toLocaleDateString('en-US', options);
-    }
-  });
-</script>
 
 
 

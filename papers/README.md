@@ -16,14 +16,14 @@ Complete guide for managing publications on the Sustainability Lab website.
 }
 ```
 
-**Step 2:** Add entry to `papers/index.qmd` (see existing entries for template)
+**Step 2:** Add an entry at the top of `data/publications.yml` (copy an existing one: title, authors, venue, year, type, themes, figure, links)
 
 **Step 3:** Add image to `papers/2025/yourpaper.png` (250x180px recommended)
 
 **Step 4:** Push to GitHub
 
 ```bash
-git add papers/bibtex/yourpaper2025.bib papers/index.qmd papers/2025/yourpaper.png
+git add papers/bibtex/yourpaper2025.bib data/publications.yml papers/2025/yourpaper.png
 git commit -m "Add new paper: Your Title"
 git push
 ```
@@ -48,7 +48,7 @@ papers/
 ├── 2025/
 │   ├── yourpaper.png           # Paper thumbnails (you add these)
 │   └── yourpaper.pdf           # Optional PDFs
-├── index.qmd                   # Publications page (you edit this)
+├── index.qmd                   # Publications page (generated from data/publications.yml)
 ├── README.md                   # This file
 └── Scripts (auto-run by GitHub Actions):
     ├── aggregate_bibtex_simple.py

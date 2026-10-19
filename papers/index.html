@@ -2,24 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="Publications from the Sustainability Lab, IIT Gandhinagar — peer-reviewed research on AI for sustainability, energy disaggregation (NILM), air quality, health sensing, and Earth observation at venues including NeurIPS, KDD, AAAI, IMWUT, and BuildSys.">
 
-<title>Publications – Sustainability Lab</title>
+<title>Publications · Sustainability Lab</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -38,16 +32,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="..//images/favicon-sl.svg" rel="icon" type="image/svg+xml">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-eaeb381c6b7494c50009502241a4985c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f1d32d5390065e8a1d369ae0db672c27.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,1383 +72,1435 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-selected .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<meta property="og:title" content="Publications – Sustainability Lab">
-<meta property="og:description" content="AI-driven research for a sustainable future at IIT Gandhinagar, led by Prof.&nbsp;Nipun Batra. PhD, postdoc, and internship openings in AI for sustainability, health sensing, energy analytics, and environmental monitoring.">
-<meta property="og:image" content="https://sustainability-lab.github.io/papers/2026/flowsat-samples.webp">
+    const options = {
+      valueNames: ['listing-title','listing-authors','listing-venue','listing-year','listing-type','listing-themes','listing-figure','listing-links','listing-selected','listing-short','listing-venue_short','listing-award','listing-summary',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-authors","listing-venue","listing-year","listing-type","listing-themes","listing-figure","listing-links","listing-selected","listing-short","listing-venue_short","listing-award","listing-summary"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-selected'] = new List('listing-selected', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-all-pubs .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-authors','listing-venue','listing-year','listing-type','listing-themes','listing-figure','listing-summary','listing-links','listing-selected','listing-short','listing-venue_short','listing-award',{ data: ['index'] },{ data: ['categories'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-authors","listing-venue","listing-year","listing-type","listing-themes","listing-figure","listing-summary","listing-links","listing-selected","listing-short","listing-venue_short","listing-award"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-all-pubs'] = new List('listing-all-pubs', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<script>
+// Follow the OS light/dark setting until someone uses the switch (see theme/toggle.html).
+try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quarto-color-scheme", window.matchMedia("(prefers-color-scheme: dark)").matches ? "alternate" : "default"); } catch (e) {}
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="Publications · Sustainability Lab">
+<meta property="og:image" content="https://sustainability-lab.github.io/images/logo.png">
 <meta property="og:site_name" content="Sustainability Lab">
-<meta property="og:image:alt" content="Satellite-style images generated by FlowSat; model outputs, not observations">
-<meta name="twitter:title" content="Publications – Sustainability Lab">
-<meta name="twitter:description" content="AI-driven research for a sustainable future at IIT Gandhinagar, led by Prof.&nbsp;Nipun Batra. PhD, postdoc, and internship openings in AI for sustainability, health sensing, energy analytics, and environmental monitoring.">
-<meta name="twitter:image" content="https://sustainability-lab.github.io/papers/2026/flowsat-samples.webp">
+<meta property="og:image:height" content="612">
+<meta property="og:image:width" content="2000">
+<meta name="twitter:title" content="Publications · Sustainability Lab">
+<meta name="twitter:image" content="https://sustainability-lab.github.io/images/logo.png">
 <meta name="twitter:creator" content="@nipun_batra">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image:alt" content="Satellite-style images generated by FlowSat; model outputs, not observations">
+<meta name="twitter:image-height" content="612">
+<meta name="twitter:image-width" content="2000">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/brand/logo-light.svg" alt="Sustainability Lab" class="navbar-logo">
+    </a>
+  </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text"><img id="theme-logo" data-light-src="/images/logo_light.svg" data-dark-src="/images/logo_dark.svg" src="../images/logo_light.svg" style="height: 90px !important;"></span></a>
+    <a class="nav-link" href="../research.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-people" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">People</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-people">    
-        <li>
-    <a class="dropdown-item" href="../members.html">
- <span class="dropdown-text">Current Team</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../alumni.html">
- <span class="dropdown-text">Alumni</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../experiences.html">
- <span class="dropdown-text">Alumni Experiences</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../memories.html">
- <span class="dropdown-text">Memories</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Research</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
-        <li>
-    <a class="dropdown-item" href="../projects.html">
- <span class="dropdown-text">All Projects &amp; Research</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../papers/index.html">
- <span class="dropdown-text">Publications</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
-    <a class="nav-link" href="../openings.html"> 
-<span class="menu-text">Openings</span></a>
+    <a class="nav-link active" href="../papers/index.html" aria-current="page"> 
+<span class="menu-text">Publications</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lab-handbook" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Lab Handbook</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-lab-handbook">    
-        <li>
-    <a class="dropdown-item" href="../computational-resources.html">
- <span class="dropdown-text">Computational Resources</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../people.html"> 
+<span class="menu-text">People</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../lab_culture.html">
- <span class="dropdown-text">Lab Culture</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../join.html"> 
+<span class="menu-text">Join</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../upskilling.html">
- <span class="dropdown-text">Academic &amp; Research Skills</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../handbook/index.html"> 
+<span class="menu-text">Handbook</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../design-kit.html">
- <span class="dropdown-text">Design Kit</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="../news.html"> 
 <span class="menu-text">News</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../media.html"> 
-<span class="menu-text">Media coverage</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../awards.html"> 
-<span class="menu-text">Awards</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Events</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-events">    
-        <li>
-    <a class="dropdown-item" href="../events/index.html">
- <span class="dropdown-text">Events Home</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="https://sustainability-lab.github.io/acm-summer-2025/">
- <span class="dropdown-text">ACM India Summer School 2025</span></a>
-  </li>  
-    </ul>
-  </li>
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#download-publications-in-multiple-formats" id="toc-download-publications-in-multiple-formats" class="nav-link active" data-scroll-target="#download-publications-in-multiple-formats">Download Publications in Multiple Formats</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">2026</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2025</a></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2024</a></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2023</a></li>
-  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2022</a></li>
-  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">2021</a></li>
-  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6">2020</a></li>
-  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7">2019</a></li>
-  <li><a href="#section-8" id="toc-section-8" class="nav-link" data-scroll-target="#section-8">2018</a></li>
-  <li><a href="#section-9" id="toc-section-9" class="nav-link" data-scroll-target="#section-9">2017</a></li>
-  <li><a href="#section-10" id="toc-section-10" class="nav-link" data-scroll-target="#section-10">2016</a></li>
-  <li><a href="#section-11" id="toc-section-11" class="nav-link" data-scroll-target="#section-11">2015</a></li>
-  <li><a href="#section-12" id="toc-section-12" class="nav-link" data-scroll-target="#section-12">2014</a></li>
-  <li><a href="#and-before" id="toc-and-before" class="nav-link" data-scroll-target="#and-before">2013 and before</a></li>
-  </ul>
-</nav>
-    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Publications</h1>
+
+
+
+<div class="frame page-main">
+<section>
+  <h1 class="page">Publications</h1>
+  <p class="muted" style="margin:10px 0 0">Since 2012 · <a href="https://scholar.google.co.in/citations?user=rFGzHlIAAAAJ">Google Scholar</a> · Download all: <a href="bibtex/all_publications.bib">BibTeX</a> · <a href="exports/all_publications.csv">CSV</a> · <a href="exports/all_publications.txt">Text</a> · <a href="../papers/exports/all_publications.html">Markdown</a> · <a href="exports/all_publications.docx">Word</a></p>
+  <div class="kicker" style="margin-top:30px">Selected</div>
+<div id="listing-selected" class="quarto-listing quarto-listing-container-custom">
+<div class="sel">
+<p><a href="https://arxiv.org/abs/2602.14989"><img src="../papers/2026/thermeval-portraits.webp" alt="" loading="lazy"><b>ThermEval</b><span>KDD 2026</span></a></p>
+<p><a href="../papers/2026/nilmbench2026_buildsys.pdf"><img src="../papers/2026/nilmbench2026-fig1.png" alt="" loading="lazy"><b>NILMBench2026</b><span>BuildSys 2026 · Best Paper Runner-Up</span></a></p>
+<p><a href="https://openreview.net/pdf?id=efGzsxVSEC"><img src="../papers/2025/sentinelkilndb-fcbk.png" alt="" loading="lazy"><b>SentinelKilnDB</b><span>NeurIPS 2025 Datasets &amp; Benchmarks</span></a></p>
+<p><a href="../papers/2024/IMWUT_JoulesEye.pdf"><img src="../papers/2024/jouleseye.png" alt="" loading="lazy"><b>JoulesEye</b><span>IMWUT / UbiComp 2024</span></a></p>
+<p><a href="../papers/2014/batra_nilmtk.pdf"><img src="../papers/2014/nilmtk-pipeline.png" alt="" loading="lazy"><b>NILMTK</b><span>ACM e-Energy 2014 · Test-of-Time Award 2025</span></a></p>
 </div>
-
-
-
-<div class="quarto-title-meta column-page-left">
-
-    
-  
-    
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section>
+  <div class="chips" id="pubchips">
+    <button class="chip on" data-t="all">All</button><button class="chip" data-t="air">Clean Air</button><button class="chip" data-t="health">Health</button><button class="chip" data-t="energy">Energy</button><button class="chip" data-t="earth">Earth Obs.</button><button class="chip" data-t="methods">Methods</button><button class="chip" data-t="interactive">Interactive</button>
+    <input class="search" id="pubsearch" type="search" placeholder="Search title, author, venue" aria-label="Search publications">
   </div>
-  
-
-
-</header>
-
-
-<section id="download-publications-in-multiple-formats" class="level2">
-<h2 class="anchored" data-anchor-id="download-publications-in-multiple-formats">Download Publications in Multiple Formats</h2>
-<p><strong>Download:</strong> <a href="bibtex/all_publications.bib">BibTeX</a> | <a href="exports/all_publications.txt">Text</a> | <a href="exports/all_publications.csv">CSV</a> | <a href="../papers/exports/all_publications.html">Markdown</a> | <a href="exports/all_publications.docx">Word</a></p>
-<div class="filter-container" style="margin: 20px 0; padding: 15px; background: #f8f9fa; border-radius: 8px;">
-<div style="margin-bottom: 10px; font-weight: 500; color: #374151;">Filter by Type:</div>
-<div class="filter-buttons" style="display: flex; flex-wrap: wrap; gap: 8px;">
-<button class="filter-btn active" data-filter="all" onclick="filterByType('all')" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: #3b82f6; color: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">All</button>
-<button class="filter-btn" data-filter="paper" onclick="filterByType('paper')" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Papers</button>
-<button class="filter-btn" data-filter="demo" onclick="filterByType('demo')" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Demos</button>
-<button class="filter-btn" data-filter="preprint" onclick="filterByType('preprint')" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Preprints</button>
-<button class="filter-btn" data-filter="thesis" onclick="filterByType('thesis')" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Thesis</button>
-<button class="filter-btn" data-filter="interactive" onclick="filterByType('interactive')" style="padding: 6px 14px; border: 1px solid #d1d5db; border-radius: 20px; background: white; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;">Interactive Articles</button>
+  <p class="small muted" id="pubcount" style="margin:6px 0 0"></p>
+<div id="listing-all-pubs" class="quarto-listing quarto-listing-container-custom">
+<div id="publist">
+<div id="2026" class="year" data-year="2026">
+2026
 </div>
-</div>
-</section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">2026</h2>
-<div id="flowsat-2026" class="paper" data-type="paper">
-<img src="2026/flowsat-samples.webp" class="paper-image" alt="Satellite-style images generated by FlowSat; model outputs, not observations" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
+<div class="pub" data-t="earth paper">
+<img class="fig" src="../papers/2026/flowsat-samples.webp" alt="" loading="lazy">
+<div>
+<div class="t">
 FlowSat: Flow-Matching Diffusion Transformers with Metadata Conditioning for Satellite Image Generation
-</p>
-<p>
-Digvijay Singh Parihar<em>, Rishabh Mondal</em>, Nipun Batra
-</p>
-<p>
-<i>British Machine Vision Conference (BMVC), 2026</i>
-</p>
-<p>
-Flow-matching satellite image generation with geometry-aware acquisition metadata.
-</p>
-<p>
-<small>*Equal contribution.</small>
-</p>
-<p><a href="2026/flowsat-bmvc2026.pdf" class="paper-button">PDF</a> <a href="../papers/2026/flowsat.html" class="paper-button">Research summary</a> <a href="https://dsp81.github.io/flowsat-satellite-image/" class="paper-button">Project Page</a> <a href="bibtex/flowsat2026.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
+</div>
+<div class="a">
+Digvijay Singh Parihar*, Rishabh Mondal*, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+British Machine Vision Conference (BMVC), 2026
+</div>
+<div class="l">
+<a href="../papers/2026/flowsat-bmvc2026.pdf">PDF</a><a href="../papers/2026/flowsat.html">Summary</a><a href="https://dsp81.github.io/flowsat-satellite-image/">Project</a><a href="../papers/bibtex/flowsat2026.bib">BibTeX</a>
 </div>
 </div>
-<div id="signal-descriptors-2026" class="paper" data-type="paper">
-<img src="2026/signal-descriptors-method.svg" class="paper-image" alt="Conceptual diagram of learning to predict statistical, temporal and spectral descriptors" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
+</div>
+<div class="pub" data-t="health paper">
+<img class="fig" src="../papers/2026/signal-descriptors-method.svg" alt="" loading="lazy">
+<div>
+<div class="t">
 Efficient Time Series SSL via Signal Descriptors
-</p>
-<p>
-Parv Thacker<em>, Ayush Shrivastava</em>, Nipun Batra
-</p>
-<p>
-<i>IEEE International Conference on Data Science and Advanced Analytics (DSAA), 2026 — Short Presentation</i>
-</p>
-<p>
-Learning time-series representations by predicting signal descriptors, evaluated on two wearable sensing benchmarks.
-</p>
-<p>
-<small>*Equal contribution. Earlier version presented at the MiLeTS workshop at KDD 2026.</small>
-</p>
-<p><a href="2026/signal-descriptors-dsaa2026.pdf" class="paper-button">PDF</a> <a href="../papers/2026/signal-descriptors.html" class="paper-button">Project Page</a> <a href="https://github.com/parvthacker/SSL-for-Time-Series" class="paper-button">Code</a> <a href="bibtex/signal-descriptors2026.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
+</div>
+<div class="a">
+Parv Thacker*, Ayush Shrivastava*, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+IEEE International Conference on Data Science and Advanced Analytics (DSAA), 2026 — Short Presentation
+</div>
+<div class="l">
+<a href="../papers/2026/signal-descriptors-dsaa2026.pdf">PDF</a><a href="../papers/2026/signal-descriptors.html">Project</a><a href="https://github.com/parvthacker/SSL-for-Time-Series">Code</a><a href="../papers/bibtex/signal-descriptors2026.bib">BibTeX</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2026/thermeval.png" class="paper-image" alt="ThermEval: A Structured Benchmark for Evaluation of Vision-Language Models on Thermal Imagery" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #fce4ec; color: #ad1457; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Vision-Language Models</span> <span class="tag" style="background: #e8f5e8; color: #2e7d32; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Thermal Imaging</span> <span class="tag" style="background: #fff3e0; color: #ef6c00; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Benchmark</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="health paper">
+<div class="fig none">
+
+</div>
+<div>
+<div class="t">
+Feature-Informed Self-Supervised Learning for Time Series Understanding
+</div>
+<div class="a">
+Parv Thacker, Ayush Shrivastava, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+MILETS Workshop @ KDD 2026, The 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (Oral)
+</div>
+<div class="l">
+
+</div>
+</div>
+</div>
+<div class="pub" data-t="health paper">
+<img class="fig" src="../papers/2026/thermeval-portraits.webp" alt="" loading="lazy">
+<div>
+<div class="t">
 ThermEval: A Structured Benchmark for Evaluation of Vision-Language Models on Thermal Imagery
-</p>
-<p>
-Ayush Shrivastava<em>, Kirtan Gangani</em>, Laksh Jain*, Mayank Goel, Nipun Batra
-</p>
-<p>
-<i>KDD 2026, The 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining</i>
-</p>
-<p><a href="https://arxiv.org/abs/2602.14989" class="paper-button">arXiv</a> <a href="https://sustainability-lab.github.io/thermeval/" class="paper-button">Project Page</a> <a href="bibtex/thermeval2026.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
+</div>
+<div class="a">
+Ayush Shrivastava*, Kirtan Gangani*, Laksh Jain*, Mayank Goel, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+KDD 2026, The 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining
+</div>
+<div class="l">
+<a href="https://arxiv.org/abs/2602.14989">arXiv</a><a href="https://sustainability-lab.github.io/thermeval/">Project</a><a href="../papers/bibtex/thermeval2026.bib">BibTeX</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2026/nilmbench2026.png" class="paper-image" alt="NILMBench2026: A Benchmark for Energy Disaggregation" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span> <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Benchmark</span> <span class="tag" style="background: #fff3e0; color: #ef6c00; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Energy Disaggregation</span></p>
 </div>
-<p class="paper-title">
-NILMBench2026: A Benchmark for Energy Disaggregation
-</p>
-<p>
-Aayush Kuloor<em>, Anurag Singh</em>, Harsh Dhru*, Nipun Batra
-</p>
-<p>
-<i>BuildSys 2026, The 13th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation</i>
-</p>
-<p style="margin: 6px 0;">
-<span style="background: #fff8e1; color: #b8860b; border: 1px solid #f0c14b; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600;">🏆 Best Paper Award — Runner-Up</span>
-</p>
-<p><a href="2026/nilmbench2026_buildsys.pdf" class="paper-button">PDF</a> <a href="bibtex/nilmbench2026.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2026/nilmbench2026-fig1.png" alt="" loading="lazy">
+<div>
+<div class="t">
+NILMBench2026: A Benchmark for Energy Disaggregation<span class="badge">Best Paper Runner-Up</span>
+</div>
+<div class="a">
+Aayush Kuloor*, Anurag Singh*, Harsh Dhru*, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+BuildSys 2026, The 13th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation
+</div>
+<div class="l">
+<a href="../papers/2026/nilmbench2026_buildsys.pdf">PDF</a><a href="../papers/bibtex/nilmbench2026.bib">BibTeX</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2026/gdmi.jpg" class="paper-image" alt="Scalable Air-Quality Sensor Placement via Gradient-Based Mutual Information Maximization" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #e3f2fd; color: #201f1fff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span> <span class="tag" style="background: #e8f5e8; color: #167ad8ff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Neural Process</span> <span class="tag" style="background: #fff3e0; color: #101010ff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Active Learning</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="air methods paper">
+<img class="fig" src="../papers/2026/gdmi.jpg" alt="" loading="lazy">
+<div>
+<div class="t">
 Scalable Air-Quality Sensor Placement via Gradient-Based Mutual Information Maximization
-</p>
-<p>
-Zeel B Patel, Vinayak Rana, Nipun Batra
-</p>
-<p>
-<i>AI for Social Impact Track, AAAI 2026, The Fortieth AAAI Conference on Artificial Intelligence</i>
-</p>
-<p><a href="2026/aaai_2026_air_active_gradient_camera_ready.pdf" class="paper-button">PDF</a> <a href="https://sustainability-lab.github.io/gdmi/" class="paper-button">Project Page</a> <a href="bibtex/gdmi.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://www.youtube.com/watch?v=1E3f3kMZgfw" class="paper-button">YouTube (Hindi)</a> <a href="https://www.youtube.com/watch?v=r2KbcqY7Khw" class="paper-button">YouTube (English)</a> <a href="https://github.com/sustainability-lab/gdmi-aqs" class="paper-button">Github</a></p>
+</div>
+<div class="a">
+Zeel B Patel, Vinayak Rana, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+AI for Social Impact Track, AAAI 2026, The Fortieth AAAI Conference on Artificial Intelligence
+</div>
+<div class="l">
+<a href="../papers/2026/aaai_2026_air_active_gradient_camera_ready.pdf">PDF</a><a href="https://sustainability-lab.github.io/gdmi/">Project</a><a href="../papers/bibtex/gdmi.bib">BibTeX</a><a href="https://www.youtube.com/watch?v=1E3f3kMZgfw">Video</a><a href="https://www.youtube.com/watch?v=r2KbcqY7Khw">Video</a><a href="https://github.com/sustainability-lab/gdmi-aqs">Code</a>
 </div>
 </div>
-</section>
-<section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1">2025</h2>
-<div class="paper" data-type="paper">
-<img src="2025/vayubuddy.png" class="paper-image" alt="VayuBench and VayuChat: Executable Benchmarking and Deployment of LLMs for Multi-Dataset Air Quality Analytics" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #e3f2fd; color: #201f1fff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span> <span class="tag" style="background: #e8f5e8; color: #167ad8ff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Large Language Models</span> <span class="tag" style="background: #fff3e0; color: #101010ff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Code Generation</span></p>
 </div>
-<p class="paper-title">
+<div id="2025" class="year" data-year="2025">
+2025
+</div>
+<div class="pub" data-t="air paper">
+<img class="fig" src="../papers/2025/vayubuddy.png" alt="" loading="lazy">
+<div>
+<div class="t">
 VayuBench and VayuChat: Executable Benchmarking and Deployment of LLMs for Multi-Dataset Air Quality Analytics
-</p>
-<p>
-Vedant Acharya, Abhay Pisharodi, Ratnesh Pasi, Rishabh Mondal, Nipun Batra
-</p>
-<p>
-<i>ACM IKDD CODS 2025 - 13th International Conference on Data Science (ADS Track)</i>
-</p>
-<p><a href="2025/vayubench_cods2025.pdf" class="paper-button">PDF</a> <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuChat" class="paper-button">Project Demo</a> <a href="bibtex/vayubench2025.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/sustainability-lab/VayuBench" class="paper-button">Github</a></p>
+</div>
+<div class="a">
+Vedant Acharya, Abhay Pisharodi, Ratnesh Pasi, Rishabh Mondal, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+ACM IKDD CODS 2025 - 13th International Conference on Data Science (ADS Track)
+</div>
+<div class="l">
+<a href="../papers/2025/vayubench_cods2025.pdf">PDF</a><a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuChat">Demo</a><a href="../papers/bibtex/vayubench2025.bib">BibTeX</a><a href="https://github.com/sustainability-lab/VayuBench">Code</a>
 </div>
 </div>
-<div class="paper" data-type="demo">
-<img src="2025/vayuchat_demo.png" class="paper-image" alt="VayuChat: An LLM-Powered Conversational Interface for Air Quality Data Analytics" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #e3f2fd; color: #201f1fff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span> <span class="tag" style="background: #e8f5e8; color: #167ad8ff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Large Language Models</span> <span class="tag" style="background: #ede7f6; color: #512da8; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Demo</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="air demo">
+<img class="fig" src="../papers/2025/vayuchat_demo.png" alt="" loading="lazy">
+<div>
+<div class="t">
 VayuChat: An LLM-Powered Conversational Interface for Air Quality Data Analytics
-</p>
-<p>
-Vedant Acharya, Abhay Pisharodi, Rishabh Mondal, Nipun Batra
-</p>
-<p>
-<i>ACM IKDD CODS 2025 - 13th International Conference on Data Science (Demo)</i>
-</p>
-<p><a href="2025/vayuchat_demo_cods2025.pdf" class="paper-button">PDF</a> <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuChat" class="paper-button">Live Demo</a> <a href="https://www.youtube.com/watch?v=d6rklL05cs4" class="paper-button">YouTube</a> <a href="bibtex/vayuchat_demo2025.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
+</div>
+<div class="a">
+Vedant Acharya, Abhay Pisharodi, Rishabh Mondal, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+ACM IKDD CODS 2025 - 13th International Conference on Data Science (Demo)
+</div>
+<div class="l">
+<a href="../papers/2025/vayuchat_demo_cods2025.pdf">PDF</a><a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuChat">Demo</a><a href="https://www.youtube.com/watch?v=d6rklL05cs4">Video</a><a href="../papers/bibtex/vayuchat_demo2025.bib">BibTeX</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2025/sentinelkilndb.png" class="paper-image" alt="SENTINELKILNDB: A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #e3f2fd; color: #a40a0aff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Computer Vision</span> <span class="tag" style="background: #e8f5e8; color: #2e7d32; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Sustainability</span> <span class="tag" style="background: #fff3e0; color: #0040efff; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Earth Observation</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="earth paper">
+<img class="fig" src="../papers/2025/sentinelkilndb-fcbk.png" alt="" loading="lazy">
+<div>
+<div class="t">
 SENTINELKILNDB: A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery
-</p>
-<p>
-Rishabh Mondal, Jeet Parab, Heer Kubadia, Shataxi Dubey, Shardul Junagade, Zeel B Patel, Nipun Batra
-</p>
-<p>
-<i>Datasets and Benchmarks Track, NeurIPS 2025, The Thirty-Ninth Annual Conference on Neural Information Processing Systems</i>
-</p>
-<p><a href="https://openreview.net/pdf?id=efGzsxVSEC" class="paper-button">PDF</a> <a href="https://www.kaggle.com/datasets/rishabhsnip/sentinelkiln-dataset" class="paper-button">Dataset</a> <a href="https://sustainability-lab.github.io/sentinelkilndb/" class="paper-button">Project Page</a> <a href="bibtex/sentinelkilndb.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="" class="paper-button">YouTube</a> <!-- <a href="https://docs.google.com/presentation/d/19jIDm3kSZlOdnhgIIvWf8tZNjMx0dRcCmp0Z3nZVUEw/edit?usp=sharing" class="paper-button">Google AQ Summit 2024</a> --> <!-- <a href="https://docs.google.com/presentation/d/1PniVOoJEedGP-5N4hSqg21xjSv7v2uT4xSKNe1qB2vo/edit?usp=sharing" class="paper-button">IITD Talk</a> --> <a href="https://github.com/rishabh-mondal/SENTINELKILNDB_NeurIPS_2025" class="paper-button">Github</a></p>
-<div id="bibtex-sentinelkilndb" class="bibtex-content" style="display: none;">
-<p><span class="citation" data-cites="article">@article</span>{mondal2025sentinelkilndb, title={SentinelKilnDB: A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery}, author={Mondal, Rishabh and Parab, Jeet and Kubadia, Heer and Dubey, Shataxi and Junagade, Shardul and Patel, Zeel B and Batra, Nipun}, journal={Advances in Neural Information Processing Systems}, year={2025} }</p>
+</div>
+<div class="a">
+Rishabh Mondal, Jeet Parab, Heer Kubadia, Shataxi Dubey, Shardul Junagade, Zeel B Patel, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+Datasets and Benchmarks Track, NeurIPS 2025, The Thirty-Ninth Annual Conference on Neural Information Processing Systems
+</div>
+<div class="l">
+<a href="https://openreview.net/pdf?id=efGzsxVSEC">PDF</a><a href="https://www.kaggle.com/datasets/rishabhsnip/sentinelkiln-dataset">Dataset</a><a href="https://sustainability-lab.github.io/sentinelkilndb/">Project</a><a href="../papers/bibtex/sentinelkilndb.bib">BibTeX</a><a href="https://docs.google.com/presentation/d/19jIDm3kSZlOdnhgIIvWf8tZNjMx0dRcCmp0Z3nZVUEw/edit?usp=sharing">Google AQ Summit 2024</a><a href="https://docs.google.com/presentation/d/1PniVOoJEedGP-5N4hSqg21xjSv7v2uT4xSKNe1qB2vo/edit?usp=sharing">IITD Talk</a><a href="https://github.com/rishabh-mondal/SENTINELKILNDB_NeurIPS_2025">Code</a>
 </div>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2024/Brick_Kilns.png" class="paper-image" alt="Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #e3f2fd; color: #1565c0; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Computer Vision</span> <span class="tag" style="background: #e8f5e8; color: #2e7d32; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Sustainability</span> <span class="tag" style="background: #fff3e0; color: #ef6c00; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Policy</span></p>
-</div>
-<p class="paper-title">
+<div class="pub" data-t="earth paper">
+<img class="fig" src="../papers/2024/Brick_Kilns.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data
-</p>
-<p>
-Zeel B Patel, Rishabh Mondal, Shataxi Dubey, Suraj Jaiswal, Sarath Guttikunda, Nipun Batra
-</p>
-<p>
-<i>ACM Journal on Computing and Sustainable Societies (JCSS), Volume 3, Issue 3, 2025</i>
-</p>
-<p><a href="https://doi.org/10.1145/3736649" class="paper-button">PDF</a> <a href="bibtex/space2policy2025.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://www.youtube.com/watch?v=BeQt_vrnsic" class="paper-button">YouTube</a> <a href="https://docs.google.com/presentation/d/19jIDm3kSZlOdnhgIIvWf8tZNjMx0dRcCmp0Z3nZVUEw/edit?usp=sharing" class="paper-button">Google AQ Summit 2024</a> <a href="https://docs.google.com/presentation/d/1PniVOoJEedGP-5N4hSqg21xjSv7v2uT4xSKNe1qB2vo/edit?usp=sharing" class="paper-button">IITD Talk</a> <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/brick_kiln_interactive_visualize" class="paper-button">HuggingFace</a></p>
-<div id="bibtex-space2policy2025" class="bibtex-content" style="display: none;">
-<p><span class="citation" data-cites="article">@article</span>{patel2025space, title={Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data}, author={Patel, Zeel B and Mondal, Rishabh and Dubey, Shataxi and Jaiswal, Suraj and Guttikunda, Sarath and Batra, Nipun}, journal={ACM Journal on Computing and Sustainable Societies (JCSS)}, year={2025} }</p>
+</div>
+<div class="a">
+Zeel B Patel, Rishabh Mondal, Shataxi Dubey, Suraj Jaiswal, Sarath Guttikunda, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+ACM Journal on Computing and Sustainable Societies (JCSS), Volume 3, Issue 3, 2025
+</div>
+<div class="l">
+<a href="https://doi.org/10.1145/3736649">PDF</a><a href="../papers/bibtex/space2policy2025.bib">BibTeX</a><a href="https://www.youtube.com/watch?v=BeQt_vrnsic">Video</a><a href="https://docs.google.com/presentation/d/19jIDm3kSZlOdnhgIIvWf8tZNjMx0dRcCmp0Z3nZVUEw/edit?usp=sharing">Google AQ Summit 2024</a><a href="https://docs.google.com/presentation/d/1PniVOoJEedGP-5N4hSqg21xjSv7v2uT4xSKNe1qB2vo/edit?usp=sharing">IITD Talk</a><a href="https://huggingface.co/spaces/SustainabilityLabIITGN/brick_kiln_interactive_visualize">Demo</a>
 </div>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2025/conformal_nilm.png" class="paper-image" alt="Distribution-Free Uncertainty Quantification and Calibration for Energy Disaggregation" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span> <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span> <span class="tag" style="background: #fff3e0; color: #ef6c00; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Uncertainty Quantification</span></p>
-</div>
-<p class="paper-title">
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2025/conformal_nilm.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Distribution-Free Uncertainty Quantification and Calibration for Energy Disaggregation
-</p>
-<p>
-Haikoo Khandor, R Yeeshu Dhurandhar, Dhairya Shah, Nipun Batra
-</p>
-<p>
-<i>ACM Journal on Computing and Sustainable Societies (JCSS) 2025</i>
-</p>
-<p><a href="https://doi.org/10.1145/3748334" class="paper-button">PDF</a> <a href="bibtex/conformal_nilm2025.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
+</div>
+<div class="a">
+Haikoo Khandor, R Yeeshu Dhurandhar, Dhairya Shah, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+ACM Journal on Computing and Sustainable Societies (JCSS) 2025
+</div>
+<div class="l">
+<a href="https://doi.org/10.1145/3748334">PDF</a><a href="../papers/bibtex/conformal_nilm2025.bib">BibTeX</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2025/3hdm_parameter.png" class="paper-image" alt="Constraining the 3HDM Parameter Space using Active Learning" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span> <span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Physics</span> <span class="tag" style="background: #fff3e0; color: #ef6c00; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Active Learning</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="methods paper">
+<img class="fig" src="../papers/2025/3hdm_parameter.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Constraining the 3HDM Parameter Space using Active Learning
-</p>
-<p>
-Nipun Batra, Baradhwaj Coleppa, Akshat Khanna, Santosh Kumar Rai, Agnivo Sarkar
-</p>
-<p>
-<i>Physical Review D, 2025</i>
-</p>
-<p><a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.112.015011" class="paper-button">PDF</a> <a href="bibtex/3hdm_parameter.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>, Baradhwaj Coleppa, Akshat Khanna, Santosh Kumar Rai, Agnivo Sarkar
+</div>
+<div class="v">
+Physical Review D, 2025
+</div>
+<div class="l">
+<a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.112.015011">PDF</a><a href="../papers/bibtex/3hdm_parameter.bib">BibTeX</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2025/pollutant_exposure.jpg" class="paper-image" alt="Optimizing Pollutant Exposure, Energy Consumption, and Thermal Comfort in a House via Deep Reinforcement Learning Control" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f1f8e9; color: #558b2f; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span> <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Reinforcement Learning</span> <span class="tag" style="background: #fff3e0; color: #ef6c00; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Building Energy</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="air health energy paper">
+<img class="fig" src="../papers/2025/pollutant_exposure.jpg" alt="" loading="lazy">
+<div>
+<div class="t">
 Optimizing Pollutant Exposure, Energy Consumption, and Thermal Comfort in a House via Deep Reinforcement Learning Control
-</p>
-<p>
-Nishchaya Kumar Mishra, Nipun Batra, Sameer Patel
-</p>
-<p>
-<i>Journal of Building Engineering, 2025</i>
-</p>
-<p><a href="https://www.sciencedirect.com/science/article/pii/S2352710225000105" class="paper-button">PDF</a> <a href="bibtex/pollutant_exposure.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
+</div>
+<div class="a">
+Nishchaya Kumar Mishra, <span class="me">Nipun Batra</span>, Sameer Patel
+</div>
+<div class="v">
+Journal of Building Engineering, 2025
+</div>
+<div class="l">
+<a href="https://www.sciencedirect.com/science/article/pii/S2352710225000105">PDF</a><a href="../papers/bibtex/pollutant_exposure.bib">BibTeX</a>
 </div>
 </div>
-</section>
-<section id="section-2" class="level2">
-<h2 class="anchored" data-anchor-id="section-2">2024</h2>
-<div class="paper" data-type="preprint">
-<img src="2024/NILM_AL.png" class="paper-image" alt="Benchmarking Active Learning for NILM" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span> <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span></p>
 </div>
-<p class="paper-title">
+<div id="2024" class="year" data-year="2024">
+2024
+</div>
+<div class="pub" data-t="energy methods preprint">
+<img class="fig" src="../papers/2024/NILM_AL.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Benchmarking Active Learning for NILM
-</p>
-<p>
-Dhruv Patel, Ankita Kumari Jain, Haikoo Khandor, Xhitij Choudhary, Nipun Batra
-</p>
-<p>
-<i>arXiv 2024</i>
-</p>
-<p><a href="https://arxiv.org/abs/2411.15805" class="paper-button">arXiv</a> <a href="bibtex/nilm_al2024.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <!-- <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/brick_kiln_interactive_visualize" class="paper-button">HuggingFace</a> --></p>
+</div>
+<div class="a">
+Dhruv Patel, Ankita Kumari Jain, Haikoo Khandor, Xhitij Choudhary, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+arXiv 2024
+</div>
+<div class="l">
+<a href="https://arxiv.org/abs/2411.15805">arXiv</a><a href="../papers/bibtex/nilm_al2024.bib">BibTeX</a><a href="https://huggingface.co/spaces/SustainabilityLabIITGN/brick_kiln_interactive_visualize">Demo</a>
 </div>
 </div>
-<div class="paper" data-type="preprint">
-<img src="2024/SpiroActive.png" class="paper-image" alt="SpiroActive: Active Learning for Efficient Data Acquisition for Spirometry" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #fce4ec; color: #c2185b; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Health</span> <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="health methods preprint">
+<img class="fig" src="../papers/2024/SpiroActive.png" alt="" loading="lazy">
+<div>
+<div class="t">
 SpiroActive: Active Learning for Efficient Data Acquisition for Spirometry
-</p>
-<p>
-Ankita Kumari Jain, Nitish Sharma, Madhav Kanda, Nipun Batra
-</p>
-<p>
-<i>arXiv 2024</i>
-</p>
-<p><a href="https://arxiv.org/abs/2410.22950" class="paper-button">arXiv</a> <a href="bibtex/spiroactive2024.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <!-- <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/brick_kiln_interactive_visualize" class="paper-button">HuggingFace</a> --></p>
+</div>
+<div class="a">
+Ankita Kumari Jain, Nitish Sharma, Madhav Kanda, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+arXiv 2024
+</div>
+<div class="l">
+<a href="https://arxiv.org/abs/2410.22950">arXiv</a><a href="../papers/bibtex/spiroactive2024.bib">BibTeX</a><a href="https://huggingface.co/spaces/SustainabilityLabIITGN/brick_kiln_interactive_visualize">Demo</a>
 </div>
 </div>
-<div class="paper" data-type="preprint">
-<img src="2024/VayuBuddy_diagram.png" class="paper-image" alt="VayuBuddy: an LLM-Powered Chatbot to Democratize Air Quality Insights" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f1f8e9; color: #558b2f; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span> <span class="tag" style="background: #e8eaf6; color: #3f51b5; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NLP</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="air preprint">
+<img class="fig" src="../papers/2024/VayuBuddy_diagram.png" alt="" loading="lazy">
+<div>
+<div class="t">
 VayuBuddy: an LLM-Powered Chatbot to Democratize Air Quality Insights
-</p>
-<p>
-Zeel B Patel, Yash Bachwana, Nitish Sharma, Sarath Guttikunda, Nipun Batra
-</p>
-<p>
-<i>arXiv 2024</i>
-</p>
-<p><a href="https://arxiv.org/abs/2411.12760" class="paper-button">arXiv</a> <a href="bibtex/vayubuddy2024.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://docs.google.com/presentation/d/1E3rXyLsp7dWBI4LSL7eOpKLXzjShEawxIUv8vTNVU0Y/edit?usp=sharing" class="paper-button">Google AQ Summit 2024</a> <a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuBuddy" class="paper-button">HuggingFace</a> <a href="https://www.divyabhaskar.co.in/epaper/detail-page/ahmedabad-city-bhaskar/44/2024-12-17" class="paper-button">News: Divya Bhaskar</a> <a href="https://epaper.indianexpress.com/3953344/Ahmedabad/December-17-2024#page/3/2" class="paper-button">News: Indian Express</a> <a href="https://epaper.ahmedabadmirror.com/3953285/Ahmedabad-Mirror/Dec-17-2024#page/5/2" class="paper-button">News: Ahmedabad Mirror</a> <a href="https://chitralekha.com/news/vayubuddy-empowering-communities-to-breathe-cleaner-air/" class="paper-button">News: Chitralekha</a></p>
+</div>
+<div class="a">
+Zeel B Patel, Yash Bachwana, Nitish Sharma, Sarath Guttikunda, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+arXiv 2024
+</div>
+<div class="l">
+<a href="https://arxiv.org/abs/2411.12760">arXiv</a><a href="../papers/bibtex/vayubuddy2024.bib">BibTeX</a><a href="https://docs.google.com/presentation/d/1E3rXyLsp7dWBI4LSL7eOpKLXzjShEawxIUv8vTNVU0Y/edit?usp=sharing">Google AQ Summit 2024</a><a href="https://huggingface.co/spaces/SustainabilityLabIITGN/VayuBuddy">Demo</a><a href="https://www.divyabhaskar.co.in/epaper/detail-page/ahmedabad-city-bhaskar/44/2024-12-17">News: Divya Bhaskar</a><a href="https://epaper.indianexpress.com/3953344/Ahmedabad/December-17-2024#page/3/2">News: Indian Express</a><a href="https://epaper.ahmedabadmirror.com/3953285/Ahmedabad-Mirror/Dec-17-2024#page/5/2">News: Ahmedabad Mirror</a><a href="https://chitralekha.com/news/vayubuddy-empowering-communities-to-breathe-cleaner-air/">News: Chitralekha</a>
 </div>
 </div>
-<div class="paper" data-type="preprint">
-<img src="2022/Scalable_GaussianProcesses.png" class="paper-image" alt="Data from small monitoring networks is unreliable: Case of Indian cities" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f1f8e9; color: #558b2f; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span> <span class="tag" style="background: #ffebee; color: #c62828; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Preprint</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="air preprint">
+<img class="fig" src="../papers/2022/Scalable_GaussianProcesses.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Data from small monitoring networks is unreliable: Case of Indian cities
-</p>
-<p>
-Sai Krishna Dammalapati, Sarath Guttikunda, Nipun Batra, Zeel B Patel
-</p>
-<p>
-<i>SIM-air Working Paper Series #48-2024</i>
-</p>
-<p><a href="https://ssrn.com/abstract=4956327" class="paper-button">SSRN</a> <a href="bibtex/small_monitoring_networks2024.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
+</div>
+<div class="a">
+Sai Krishna Dammalapati, Sarath Guttikunda, <span class="me">Nipun Batra</span>, Zeel B Patel
+</div>
+<div class="v">
+SIM-air Working Paper Series #48-2024
+</div>
+<div class="l">
+<a href="https://ssrn.com/abstract=4956327">SSRN</a><a href="../papers/bibtex/small_monitoring_networks2024.bib">BibTeX</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2024/jouleseye.png" class="paper-image" alt="JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #fce4ec; color: #c2185b; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Health</span> <span class="tag" style="background: #e3f2fd; color: #1565c0; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Computer Vision</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="health energy paper">
+<img class="fig" src="../papers/2024/jouleseye.png" alt="" loading="lazy">
+<div>
+<div class="t">
 JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising
-</p>
-<p>
-Rishiraj Adhikary, Maite Sadeh, Nipun Batra, Mayank Goel
-</p>
-<p>
-<i>ACM Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) 2024</i>; and <i>ACM Ubicomp 2024</i>
-</p>
-<p><a href="../papers/2024/IMWUT_JoulesEye.pdf" class="paper-button">PDF</a> <a href="bibtex/jouleseye2024.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/rishi-a/JoulesEye-Release" class="paper-button">Github</a> <a href="../slides/2024/JoulesEye-ACM-PIC.pdf" class="paper-button">Poster</a> <a href="https://www.youtube.com/watch?v=5J9KqrDnj20" class="paper-button">YouTube</a> <a href="https://indianexpress.com/article/cities/ahmedabad/research-scholar-at-iitgn-develops-device-to-overcome-fitness-monitoring-limitations-9180741/" class="paper-button">News coverage</a> <a href="https://medium.com/@lalitagod100/iitgn-researcher-creates-gadget-to-get-around-restrictions-on-fitness-tracking-80869cea0264" class="paper-button">Medium Article</a> <a href="https://www.cs.cmu.edu/news/2024/jouleseye" class="paper-button">CMU News</a> <a href="https://www.hackster.io/news/your-wearable-is-lying-to-you-28f2e5f56338" class="paper-button">Hackster</a></p>
-<div id="bibtex-jouleseye2024" class="bibtex-content" style="display: none;">
-<p><span class="citation" data-cites="article">@article</span>{adhikary2024jouleseye, title={JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising}, author={Adhikary, Rishiraj and Sadeh, Maite and Batra, Nipun and Goel, Mayank}, journal={Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies}, volume={8}, number={2}, pages={1–32}, year={2024}, publisher={ACM} }</p>
+</div>
+<div class="a">
+Rishiraj Adhikary, Maite Sadeh, <span class="me">Nipun Batra</span>, Mayank Goel
+</div>
+<div class="v">
+ACM Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) 2024
+</div>
+<div class="l">
+<a href="../papers/2024/IMWUT_JoulesEye.pdf">PDF</a><a href="../papers/bibtex/jouleseye2024.bib">BibTeX</a><a href="https://github.com/rishi-a/JoulesEye-Release">Code</a><a href="../slides/2024/JoulesEye-ACM-PIC.pdf">Poster</a><a href="https://www.youtube.com/watch?v=5J9KqrDnj20">Video</a><a href="https://indianexpress.com/article/cities/ahmedabad/research-scholar-at-iitgn-develops-device-to-overcome-fitness-monitoring-limitations-9180741/">News coverage</a><a href="https://medium.com/@lalitagod100/iitgn-researcher-creates-gadget-to-get-around-restrictions-on-fitness-tracking-80869cea0264">Medium Article</a><a href="https://www.cs.cmu.edu/news/2024/jouleseye">CMU News</a><a href="https://www.hackster.io/news/your-wearable-is-lying-to-you-28f2e5f56338">Hackster</a>
 </div>
 </div>
 </div>
-</section>
-<section id="section-3" class="level2">
-<h2 class="anchored" data-anchor-id="section-3">2023</h2>
-<div class="paper" data-type="paper">
-<img src="2023/airdelhi.png" class="paper-image" alt="AIRDELHI: Fine-Grained Spatio-Temporal Particulate Matter Dataset From Delhi For ML based Modeling" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f1f8e9; color: #558b2f; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span> <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span> <span class="tag" style="background: #fff8e1; color: #f57f17; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Dataset</span></p>
+<div id="2023" class="year" data-year="2023">
+2023
 </div>
-<p class="paper-title">
+<div class="pub" data-t="air paper">
+<img class="fig" src="../papers/2023/airdelhi.png" alt="" loading="lazy">
+<div>
+<div class="t">
 AIRDELHI: Fine-Grained Spatio-Temporal Particulate Matter Dataset From Delhi For ML based Modeling
-</p>
-<p>
-Sachin Chauhan, Zeel B Patel, Sayan Ranu, Rijurekha Sen, and Nipun Batra.
-</p>
-<p>
-<i>Datasets and Benchmarks Track, NeurIPS 2023, the Thirty-seventh Annual Conference on Neural Information Processing Systems</i>
-</p>
-<p><a href="../papers/2023/airdelhi.pdf" class="paper-button">PDF</a> <a href="bibtex/airdelhi2023.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/sachin-iitd/DelhiPMDatasetBenchmark" class="paper-button">Github</a></p>
+</div>
+<div class="a">
+Sachin Chauhan, Zeel B Patel, Sayan Ranu, Rijurekha Sen, and <span class="me">Nipun Batra</span>.
+</div>
+<div class="v">
+Datasets and Benchmarks Track, NeurIPS 2023, the Thirty-seventh Annual Conference on Neural Information Processing Systems
+</div>
+<div class="l">
+<a href="../papers/2023/airdelhi.pdf">PDF</a><a href="../papers/bibtex/airdelhi2023.bib">BibTeX</a><a href="https://github.com/sachin-iitd/DelhiPMDatasetBenchmark">Code</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2023/spiromask-hero.png" class="paper-image" alt="SpiroMask: measuring Lung function using consumer-grade masks" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #fce4ec; color: #c2185b; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Health</span> <span class="tag" style="background: #e0f2f1; color: #00695c; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">IoT</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="health paper">
+<img class="fig" src="../papers/2023/spiromask-hero.png" alt="" loading="lazy">
+<div>
+<div class="t">
 SpiroMask: measuring Lung function using consumer-grade masks
-</p>
-<p>
-Rishiraj Adhikary, Dhruvi Lodhavia, Chris Francis, Rohit Patil, Tanmay Srivastava, Prerna Khanna, Nipun Batra, Joseph Breda, Jacob Peplinski, Shwetak Patel
-</p>
-<p>
-<i>ACM Transactions on Computing for Healthcare 2023</i>
-</p>
-<p><a href="../papers/2023/spiromask.pdf" class="paper-button">PDF</a> <a href="bibtex/spiromask2023.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/rishi-a/SpiroMask" class="paper-button">Github</a> <a href="../slides/2023/SpiroMask.pptx" class="paper-button">Slides (PDF)</a> <a href="https://www.ahmedabadmirror.com/iit-gn-researchers-devise-mask-to-measure-lung-health/81846808.html" class="paper-button">News coverage</a> <a href="https://www.edgeimpulse.com/blog/just-take-a-deep-breath/" class="paper-button">EdgeImpulse Article</a></p>
+</div>
+<div class="a">
+Rishiraj Adhikary, Dhruvi Lodhavia, Chris Francis, Rohit Patil, Tanmay Srivastava, Prerna Khanna, <span class="me">Nipun Batra</span>, Joseph Breda, Jacob Peplinski, Shwetak Patel
+</div>
+<div class="v">
+ACM Transactions on Computing for Healthcare 2023
+</div>
+<div class="l">
+<a href="../papers/2023/spiromask.pdf">PDF</a><a href="../papers/bibtex/spiromask2023.bib">BibTeX</a><a href="https://github.com/rishi-a/SpiroMask">Code</a><a href="https://github.com/sustainability-lab/sustainability-lab.github.io/releases/download/slide-sources/SpiroMask.pptx">Slides (.pptx)</a><a href="https://www.ahmedabadmirror.com/iit-gn-researchers-devise-mask-to-measure-lung-health/81846808.html">News coverage</a><a href="https://www.edgeimpulse.com/blog/just-take-a-deep-breath/">EdgeImpulse Article</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2023/deepgp_cods.png" class="paper-image" alt="Deep Gaussian Processes for Air Quality Inference" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f1f8e9; color: #558b2f; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span> <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="air methods paper">
+<img class="fig" src="../papers/2023/deepgp_cods.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Deep Gaussian Processes for Air Quality Inference
-</p>
-<p>
-Aadesh Desai, Eshan Gujarathi, Saagar Parikh, Sachin Yadav, Zeel B Patel, Nipun Batra
-</p>
-<p>
-<i>ACM IKDD CODS-COMAD 2023 - 6th Joint International Conference on Data Science &amp; Management of Data</i>
-</p>
-<p><a href="https://doi.org/10.1145/3570991.3571004" class="paper-button">PDF</a> <a href="bibtex/deepgp_cods2023.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
+</div>
+<div class="a">
+Aadesh Desai, Eshan Gujarathi, Saagar Parikh, Sachin Yadav, Zeel B Patel, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+ACM IKDD CODS-COMAD 2023 - 6th Joint International Conference on Data Science &amp; Management of Data
+</div>
+<div class="l">
+<a href="https://doi.org/10.1145/3570991.3571004">PDF</a><a href="../papers/bibtex/deepgp_cods2023.bib">BibTeX</a>
 </div>
 </div>
-</section>
-<section id="section-4" class="level2">
-<h2 class="anchored" data-anchor-id="section-4">2022</h2>
-<div class="paper" data-type="paper">
-<img src="2022/I_Dont_Know.png" class="paper-image" alt="&quot;I do not know&quot;: Quantifying Uncertainty in Neural Network Based Approaches for Non-Intrusive Load Monitoring" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span> <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span></p>
 </div>
-<p class="paper-title">
+<div id="2022" class="year" data-year="2022">
+2022
+</div>
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2022/I_Dont_Know.png" alt="" loading="lazy">
+<div>
+<div class="t">
 “I do not know”: Quantifying Uncertainty in Neural Network Based Approaches for Non-Intrusive Load Monitoring
-</p>
-<p>
-Vibhuti Bansal, Rohit Khoiwal, Hetvi Shastri, Haikoo Khandor, Nipun Batra
-</p>
-<p>
-<i>The 9th ACM International Conference on Systems for Energy-Efficient Built Environments (BuildSys 2022)</i>
-</p>
-<p><a href="../papers/2022/buildsys22-nilm.pdf" class="paper-button">PDF</a> <a href="bibtex/uncertainty_nilm2022.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/VibhutiBansal-11/NILM_Uncertainty" class="paper-button">Github</a> <a href="https://www.youtube.com/watch?v=wt0zuNb-9mo" class="paper-button">Youtube</a> <a href="../slides/2021/batra-buildsys21-slides.pdf" class="paper-button">Slides (PDF)</a></p>
+</div>
+<div class="a">
+Vibhuti Bansal, Rohit Khoiwal, Hetvi Shastri, Haikoo Khandor, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+The 9th ACM International Conference on Systems for Energy-Efficient Built Environments (BuildSys 2022)
+</div>
+<div class="l">
+<a href="../papers/2022/buildsys22-nilm.pdf">PDF</a><a href="../papers/bibtex/uncertainty_nilm2022.bib">BibTeX</a><a href="https://github.com/VibhutiBansal-11/NILM_Uncertainty">Code</a><a href="https://www.youtube.com/watch?v=wt0zuNb-9mo">Video</a><a href="../slides/2021/batra-buildsys21-slides.pdf">Slides</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="../papers/2022/compass-india.png" class="paper-image" alt="Samachar: Print News Media on Air Pollution in India" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f1f8e9; color: #558b2f; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span> <span class="tag" style="background: #e8eaf6; color: #3f51b5; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NLP</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="air paper">
+<img class="fig" src="../papers/2022/compass-india.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Samachar: Print News Media on Air Pollution in India
-</p>
-<p>
-Karm Patel, Rishiraj Adhikary, Zeel B Patel, Nipun Batra, Sarath Guttikunda
-</p>
-<p>
-<i>ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (COMPASS) (COMPASS ’22)</i>
-</p>
-<p><a href="../papers/2022/compass22-samachaar.pdf" class="paper-button">PDF</a> <a href="bibtex/samachar2022.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/karm-patel/Samachar-News-media-on-air-pollution" class="paper-button">Github</a> <a href="../slides/2022/Samachar_Compass.pdf" class="paper-button">Slides (PDF)</a> <a href="../slides/2022/Samachar_Compass.pptx" class="paper-button">Slides (Pptx)</a></p>
+</div>
+<div class="a">
+Karm Patel, Rishiraj Adhikary, Zeel B Patel, <span class="me">Nipun Batra</span>, Sarath Guttikunda
+</div>
+<div class="v">
+ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (COMPASS) (COMPASS ’22)
+</div>
+<div class="l">
+<a href="../papers/2022/compass22-samachaar.pdf">PDF</a><a href="../papers/bibtex/samachar2022.bib">BibTeX</a><a href="https://github.com/karm-patel/Samachar-News-media-on-air-pollution">Code</a><a href="../slides/2022/Samachar_Compass.pdf">Slides</a><a href="https://github.com/sustainability-lab/sustainability-lab.github.io/releases/download/slide-sources/Samachar_Compass.pptx">Slides (.pptx)</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2022/Scalable_GaussianProcesses.png" class="paper-image" alt="Accurate and Scalable Gaussian Processes for Fine-grained Air Quality Inference" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f1f8e9; color: #558b2f; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span> <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="air methods paper">
+<img class="fig" src="../papers/2022/Scalable_GaussianProcesses.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Accurate and Scalable Gaussian Processes for Fine-grained Air Quality Inference
-</p>
-<p>
-Zeel B Patel, Palak Purohit, Harsh Patel, Shivam Sahni, and Nipun Batra
-</p>
-<p>
-<i>Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI-22)</i>
-</p>
-<p><a href="../papers/2022/aaai_22_air.pdf" class="paper-button">PDF</a> <a href="bibtex/gaussian_processes2022.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/patel-zeel/AAAI22" class="paper-button">Github</a> <a href="../slides/2022/AAAI22_Poster.pdf" class="paper-button">Poster</a> <a href="https://www.youtube.com/watch?v=zAEOeIU0d78&amp;t=6517s" class="paper-button">Youtube</a> <a href="../slides/2022/AAAI22.pdf" class="paper-button">Slides (PDF)</a> <a href="../slides/2022/AAAI22.pptx" class="paper-button">Slides (Pptx)</a></p>
+</div>
+<div class="a">
+Zeel B Patel, Palak Purohit, Harsh Patel, Shivam Sahni, and <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI-22)
+</div>
+<div class="l">
+<a href="../papers/2022/aaai_22_air.pdf">PDF</a><a href="../papers/bibtex/gaussian_processes2022.bib">BibTeX</a><a href="https://github.com/patel-zeel/AAAI22">Code</a><a href="../slides/2022/AAAI22_Poster.pdf">Poster</a><a href="https://www.youtube.com/watch?v=zAEOeIU0d78&amp;t=6517s">Video</a><a href="../slides/2022/AAAI22.pdf">Slides</a><a href="https://github.com/sustainability-lab/sustainability-lab.github.io/releases/download/slide-sources/AAAI22.pptx">Slides (.pptx)</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2022/Vastr-Gan.png" class="paper-image" alt="Vastr-GAN: Versatile Apparel Synthesised from Text using a Robust Generative Adversarial Network" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #e8eaf6; color: #3f51b5; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NLP</span> <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="methods paper">
+<img class="fig" src="../papers/2022/Vastr-Gan.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Vastr-GAN: Versatile Apparel Synthesised from Text using a Robust Generative Adversarial Network
-</p>
-<p>
+</div>
+<div class="a">
 Shastri, Hetvi; Lodhavia, Dhruvi; Purohit, Palak; Kaoshik, Ronak; Batra, Nipun
-</p>
-<p>
-<i>CODS-COMAD ’22 : 5th Joint International Conference on Data Science &amp; Management of Data (9th ACM IKDD CODS and 27th COMAD)</i>
-</p>
-<p><a href="2022/CODS_COMAD_22_Vastr-Gan.pdf" class="paper-button">PDF</a> <a href="bibtex/vastr_gan2022.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/Dhruvi-Lodhavia/Vastr-GAN/tree/main/FY-GAN" class="paper-button">Github</a></p>
+</div>
+<div class="v">
+CODS-COMAD ’22 : 5th Joint International Conference on Data Science &amp; Management of Data (9th ACM IKDD CODS and 27th COMAD)
+</div>
+<div class="l">
+<a href="../papers/2022/CODS_COMAD_22_Vastr-Gan.pdf">PDF</a><a href="../papers/bibtex/vastr_gan2022.bib">BibTeX</a><a href="https://github.com/Dhruvi-Lodhavia/Vastr-GAN/tree/main/FY-GAN">Code</a>
 </div>
 </div>
-</section>
-<section id="section-5" class="level2">
-<h2 class="anchored" data-anchor-id="section-5">2021</h2>
-<div class="paper" data-type="paper">
-<img src="2021/ACM-CHI-21_Vartalaap.png" class="paper-image" alt="Vartalaap: what drives #airquality discussions: politics, pollution or pseudo-science?" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f1f8e9; color: #558b2f; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Air Quality</span> <span class="tag" style="background: #e8eaf6; color: #3f51b5; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NLP</span></p>
 </div>
-<p class="paper-title">
+<div id="2021" class="year" data-year="2021">
+2021
+</div>
+<div class="pub" data-t="air paper">
+<img class="fig" src="../papers/2021/ACM-CHI-21_Vartalaap.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Vartalaap: what drives #airquality discussions: politics, pollution or pseudo-science?
-</p>
-<p>
-Rishiraj Adhikary, Zeel B. Patel, Tanmay Srivastava, Nipun Batra, Mayank Singh, Udit Bhatia, and Sarath Guttikunda
-</p>
-<p>
-<i>Proceedings of the ACM on Human-Computer Interaction 5, no. CSCW1 (2021)</i>
-</p>
-<p><a href="2021/vartalaap.pdf" class="paper-button">PDF</a> <a href="bibtex/vartalaap2021.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/rishi-a/Vartalaap" class="paper-button">Github</a> <a href="../slides/2021/CSCW-Full-Presentation.pdf" class="paper-button">Slides (PDF)</a> <a href="../slides/2021/CSCW-Full-Presentation.pdf" class="paper-button">Slides (pptx)</a></p>
+</div>
+<div class="a">
+Rishiraj Adhikary, Zeel B. Patel, Tanmay Srivastava, <span class="me">Nipun Batra</span>, Mayank Singh, Udit Bhatia, and Sarath Guttikunda
+</div>
+<div class="v">
+Proceedings of the ACM on Human-Computer Interaction 5, no. CSCW1 (2021)
+</div>
+<div class="l">
+<a href="../papers/2021/vartalaap.pdf">PDF</a><a href="../papers/bibtex/vartalaap2021.bib">BibTeX</a><a href="https://github.com/rishi-a/Vartalaap">Code</a><a href="../slides/2021/CSCW-Full-Presentation.pdf">Slides</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2021/buildsys21.png" class="paper-image" alt="Neural Network Approaches and Dataset Parser for NILM Toolkit" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span> <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2021/buildsys21.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Neural Network Approaches and Dataset Parser for NILM Toolkit
-</p>
-<p>
-Hetvi Shastri, Nipun Batra
-</p>
-<p>
-<i>8th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (Buildsys)</i>
-</p>
-<p><a href="../papers/2021/buildsys.pdf" class="paper-button">PDF</a> <a href="bibtex/nilmtk_buildsys2021.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="../slides/2021/buildsys21-slides.pdf" class="paper-button">Slides (PDF)</a> <a href="https://www.youtube.com/watch?v=jHXBVaVFhl8&amp;t=24835s" class="paper-button">YouTube</a> <a href="https://github.com/nilmtk/nilmtk-contrib" class="paper-button">Github</a></p>
+</div>
+<div class="a">
+Hetvi Shastri, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+8th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (Buildsys)
+</div>
+<div class="l">
+<a href="../papers/2021/buildsys.pdf">PDF</a><a href="../papers/bibtex/nilmtk_buildsys2021.bib">BibTeX</a><a href="../slides/2021/buildsys21-slides.pdf">Slides</a><a href="https://www.youtube.com/watch?v=jHXBVaVFhl8&amp;t=24835s">Video</a><a href="https://github.com/nilmtk/nilmtk-contrib">Code</a>
 </div>
 </div>
-<div class="paper" data-type="interactive">
-<img src="2021/VisXAI21_HMM.png" class="paper-image" alt="Exploring Hidden Markov Models : An interactive illustration" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
+</div>
+<div class="pub" data-t="methods interactive">
+<img class="fig" src="../papers/2021/VisXAI21_HMM.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Exploring Hidden Markov Models : An interactive illustration
-</p>
-<p>
-Kukunuri Rithwik, Rishiraj Adhikary, Mahika Om Jaguste, Nipun Batra and Ashish Tendulkar
-</p>
-<p>
-<i>4th Workshop on Visualization for AI Explainability (VISxAI’21)</i>
-</p>
-<p><a href="https://nipunbatra.github.io/hmm/" class="paper-button">Article</a> <a href="bibtex/hmm_visxai2021.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
+</div>
+<div class="a">
+Kukunuri Rithwik, Rishiraj Adhikary, Mahika Om Jaguste, <span class="me">Nipun Batra</span> and Ashish Tendulkar
+</div>
+<div class="v">
+4th Workshop on Visualization for AI Explainability (VISxAI’21)
+</div>
+<div class="l">
+<a href="https://nipunbatra.github.io/hmm/">Article</a><a href="../papers/bibtex/hmm_visxai2021.bib">BibTeX</a>
 </div>
 </div>
-</section>
-<section id="section-6" class="level2">
-<h2 class="anchored" data-anchor-id="section-6">2020</h2>
-<div class="paper" data-type="interactive">
-<img src="2020/VisXAI20_Active_Learning.png" class="paper-image" alt="Active Learning: A Visual Tour" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
+</div>
+<div id="2020" class="year" data-year="2020">
+2020
+</div>
+<div class="pub" data-t="methods interactive">
+<img class="fig" src="../papers/2020/VisXAI20_Active_Learning.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Active Learning: A Visual Tour
-</p>
-<p>
-Zeel B Patel, Nipun Batra
-</p>
-<p>
-<i>3rd Workshop on Visualization for AI Explainability (VISxAI’20)</i>
-</p>
-<p><a href="https://patel-zeel.github.io/active-learning-visualization/" class="paper-button">Article</a> <a href="bibtex/active_learning_visxai2020.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
+</div>
+<div class="a">
+Zeel B Patel, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+3rd Workshop on Visualization for AI Explainability (VISxAI’20)
+</div>
+<div class="l">
+<a href="https://patel-zeel.github.io/active-learning-visualization/">Article</a><a href="../papers/bibtex/active_learning_visxai2020.bib">BibTeX</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2020/EDGE_NILM.png" class="paper-image" alt="EdgeNILM: towards NILM on edge devices" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span> <span class="tag" style="background: #e0f2f1; color: #00695c; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">IoT</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2020/EDGE_NILM.png" alt="" loading="lazy">
+<div>
+<div class="t">
 EdgeNILM: towards NILM on edge devices
-</p>
-<p>
-Kukunuri, Rithwik, Anup Aglawe, Jainish Chauhan, Kratika Bhagtani, Rohan Patil, Sumit Walia, and Nipun Batra
-</p>
-<p>
-<i>Proceedings of the 7th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation, pp.&nbsp;90-99. 2020.</i>
-</p>
-<p><a href="2020/edge_nilm.pdf" class="paper-button">PDF</a> <a href="bibtex/edgenilm2020.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/EdgeNILM/EdgeNILM" class="paper-button">Github</a></p>
+</div>
+<div class="a">
+Kukunuri, Rithwik, Anup Aglawe, Jainish Chauhan, Kratika Bhagtani, Rohan Patil, Sumit Walia, and <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+Proceedings of the 7th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation, pp.&nbsp;90-99. 2020.
+</div>
+<div class="l">
+<a href="../papers/2020/edge_nilm.pdf">PDF</a><a href="../papers/bibtex/edgenilm2020.bib">BibTeX</a><a href="https://github.com/EdgeNILM/EdgeNILM">Code</a>
 </div>
 </div>
-<div class="paper" data-type="interactive">
-<img src="2020/Distil20_BayesOpt.png" class="paper-image" alt="Exploring Bayesian Optimization" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="methods interactive">
+<img class="fig" src="../papers/2020/Distil20_BayesOpt.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Exploring Bayesian Optimization
-</p>
-<p>
-Apoorv Agnihotri, Nipun Batra
-</p>
-<p>
-<i>Distill Journal 2020</i>
-</p>
-<p><a href="https://distill.pub/2020/bayesian-optimization/" class="paper-button">Article</a> <a href="bibtex/bayesian_optimization_distill2020.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
+</div>
+<div class="a">
+Apoorv Agnihotri, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+Distill Journal 2020
+</div>
+<div class="l">
+<a href="https://distill.pub/2020/bayesian-optimization/">Article</a><a href="../papers/bibtex/bayesian_optimization_distill2020.bib">BibTeX</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2020/COMAD20_PlantDoc.png" class="paper-image" alt="PlantDoc: A Dataset for Visual Plant Disease Detection." loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #e3f2fd; color: #1565c0; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Computer Vision</span> <span class="tag" style="background: #fff8e1; color: #f57f17; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Dataset</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="earth paper">
+<img class="fig" src="../papers/2020/COMAD20_PlantDoc.png" alt="" loading="lazy">
+<div>
+<div class="t">
 PlantDoc: A Dataset for Visual Plant Disease Detection.
-</p>
-<p>
-Davinder Singh, Naman Jain, Pranjali Jain, Pratik Kayal, Sudhakar Kumawat, Nipun Batra
-</p>
-<p>
-<i>ACM India Joint International Conference on Data Science &amp; Management of Data (CODS-COMAD 2020)</i>
-</p>
-<p><a href="https://arxiv.org/pdf/1911.10317.pdf" class="paper-button">PDF</a> <a href="bibtex/plantdoc2020.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/pratikkayal/PlantDoc-Object-Detection-Dataset" class="paper-button">Dataset</a> <a href="https://github.com/pratikkayal/PlantDoc-Dataset" class="paper-button">Github</a></p>
+</div>
+<div class="a">
+Davinder Singh, Naman Jain, Pranjali Jain, Pratik Kayal, Sudhakar Kumawat, <span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+ACM India Joint International Conference on Data Science &amp; Management of Data (CODS-COMAD 2020)
+</div>
+<div class="l">
+<a href="https://arxiv.org/pdf/1911.10317.pdf">PDF</a><a href="../papers/bibtex/plantdoc2020.bib">BibTeX</a><a href="https://github.com/pratikkayal/PlantDoc-Object-Detection-Dataset">Dataset</a><a href="https://github.com/pratikkayal/PlantDoc-Dataset">Code</a>
 </div>
 </div>
-</section>
-<section id="section-7" class="level2">
-<h2 class="anchored" data-anchor-id="section-7">2019</h2>
-<div class="paper" data-type="paper">
-<img src="2019/CIKM19_ActiveCollabSensing.png" class="paper-image" alt="Active Collaborative Sensing for Energy Breakdown" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span> <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span></p>
 </div>
-<p class="paper-title">
+<div id="2019" class="year" data-year="2019">
+2019
+</div>
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2019/CIKM19_ActiveCollabSensing.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Active Collaborative Sensing for Energy Breakdown
-</p>
-<p>
-Yiling Jia, Nipun Batra, Hongning Wang, Kamin Whitehouse
-</p>
-<p>
-<i>The 28th ACM International Conference on Information and Knowledge Management (CIKM’2019)</i>
-</p>
-<p><a href="2019/batra_CIKM_19.pdf" class="paper-button">PDF</a> <a href="bibtex/active_collaborative_sensing2019.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/yilingjia/ActSense" class="paper-button">Github</a> <a href="../slides/2019/ActiveSensing_CIKM2019.pdf" class="paper-button">Slides (PDF)</a></p>
+</div>
+<div class="a">
+Yiling Jia, <span class="me">Nipun Batra</span>, Hongning Wang, Kamin Whitehouse
+</div>
+<div class="v">
+The 28th ACM International Conference on Information and Knowledge Management (CIKM’2019)
+</div>
+<div class="l">
+<a href="../papers/2019/batra_CIKM_19.pdf">PDF</a><a href="../papers/bibtex/active_collaborative_sensing2019.bib">BibTeX</a><a href="https://github.com/yilingjia/ActSense">Code</a><a href="../slides/2019/ActiveSensing_CIKM2019.pdf">Slides</a>
 </div>
 </div>
-<div class="paper" data-type="demo">
-<img src="2019/Buildsys19_demo.png" class="paper-image" alt="Demo Abstract: A demonstration of reproducible state-of-the-art energy disaggregation using NILMTK" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="energy demo">
+<img class="fig" src="../papers/2019/Buildsys19_demo.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Demo Abstract: A demonstration of reproducible state-of-the-art energy disaggregation using NILMTK
-</p>
-<p>
-Nipun Batra, Rithwik Kukunuri, Ayush Pandey, Raktim Malakar, Rajat Kumar, Odysseas Krystalakos, Mingjun Zhong, Paulo Meira, Oliver Parson
-</p>
-<p>
-<i>The 6th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys ’19)</i>
-</p>
-<p><a href="2019/batra_buildsys19demo.pdf" class="paper-button">PDF</a> <a href="bibtex/nilmtk_demo2019.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>, Rithwik Kukunuri, Ayush Pandey, Raktim Malakar, Rajat Kumar, Odysseas Krystalakos, Mingjun Zhong, Paulo Meira, Oliver Parson
+</div>
+<div class="v">
+The 6th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys ’19)
+</div>
+<div class="l">
+<a href="../papers/2019/batra_buildsys19demo.pdf">PDF</a><a href="../papers/bibtex/nilmtk_demo2019.bib">BibTeX</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2019/Buildsys19_NILMTK.png" class="paper-image" alt="Towards reproducible state-of-the-art energy disaggregation" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2019/Buildsys19_NILMTK.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Towards reproducible state-of-the-art energy disaggregation
-</p>
-<p>
-Nipun Batra, Rithwik Kukunuri, Ayush Pandey, Raktim Malakar, Rajat Kumar, Odysseas Krystalakos, Mingjun Zhong, Paulo Meira, Oliver Parson
-</p>
-<p>
-<i>The 6th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys ’19)</i>
-</p>
-<p><a href="2019/batra_buildsys_19.pdf" class="paper-button">PDF</a> <a href="bibtex/nilmtk_reproducible2019.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/nilmtk/nilmtk-contrib" class="paper-button">Github</a></p>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>, Rithwik Kukunuri, Ayush Pandey, Raktim Malakar, Rajat Kumar, Odysseas Krystalakos, Mingjun Zhong, Paulo Meira, Oliver Parson
+</div>
+<div class="v">
+The 6th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys ’19)
+</div>
+<div class="l">
+<a href="../papers/2019/batra_buildsys_19.pdf">PDF</a><a href="../papers/bibtex/nilmtk_reproducible2019.bib">BibTeX</a><a href="https://github.com/nilmtk/nilmtk-contrib">Code</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2019/jia19_TreeCNN.png" class="paper-image" alt="A Tree-Structured Neural Network Model for Household Energy Breakdown" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span> <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2019/jia19_TreeCNN.png" alt="" loading="lazy">
+<div>
+<div class="t">
 A Tree-Structured Neural Network Model for Household Energy Breakdown
-</p>
-<p>
-Yiling Jia, Nipun Batra, Hongning Wang, Kamin Whitehouse
-</p>
-<p>
-<i>Proceedings of the 2019 World Wide Web Conference (WWW ’19)</i>
-</p>
-<p><a href="2019/jia_www19.pdf" class="paper-button">PDF</a> <a href="bibtex/tree_cnn2019.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/yilingjia/TreeCNN-for-Energy-Breakdown" class="paper-button">Github</a></p>
+</div>
+<div class="a">
+Yiling Jia, <span class="me">Nipun Batra</span>, Hongning Wang, Kamin Whitehouse
+</div>
+<div class="v">
+Proceedings of the 2019 World Wide Web Conference (WWW ’19)
+</div>
+<div class="l">
+<a href="../papers/2019/jia_www19.pdf">PDF</a><a href="../papers/bibtex/tree_cnn2019.bib">BibTeX</a><a href="https://github.com/yilingjia/TreeCNN-for-Energy-Breakdown">Code</a>
 </div>
 </div>
-</section>
-<section id="section-8" class="level2">
-<h2 class="anchored" data-anchor-id="section-8">2018</h2>
-<div class="paper" data-type="paper">
-<img src="2018/buildsys18_RIMOR.png" class="paper-image" alt="Rimor: Towards Identifying Anomalous Appliances in Buildings" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span></p>
 </div>
-<p class="paper-title">
+<div id="2018" class="year" data-year="2018">
+2018
+</div>
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2018/buildsys18_RIMOR.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Rimor: Towards Identifying Anomalous Appliances in Buildings
-</p>
-<p>
-Haroon Rashid, Nipun Batra, Pushpendra Singh
-</p>
-<p>
-<i>Proceedings of the 5th Conference on Systems for Built Environments (Buildsys 18)</i>
-</p>
-<p><a href="https://dl.acm.org/doi/10.1145/3276774.3276797" class="paper-button">PDF</a> <a href="bibtex/rimor2018.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/loneharoon/AnomAppliance" class="paper-button">Github</a></p>
+</div>
+<div class="a">
+Haroon Rashid, <span class="me">Nipun Batra</span>, Pushpendra Singh
+</div>
+<div class="v">
+Proceedings of the 5th Conference on Systems for Built Environments (Buildsys 18)
+</div>
+<div class="l">
+<a href="https://dl.acm.org/doi/10.1145/3276774.3276797">PDF</a><a href="../papers/bibtex/rimor2018.bib">BibTeX</a><a href="https://github.com/loneharoon/AnomAppliance">Code</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2018/AAAI18_EnergyBreakdown.png" class="paper-image" alt="Transferring Decomposed Tensors for Scalable Energy Breakdown across Regions" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span> <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2018/AAAI18_EnergyBreakdown.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Transferring Decomposed Tensors for Scalable Energy Breakdown across Regions
-</p>
-<p>
-Nipun Batra, Yiling Jia, Hongning Wang, Kamin Whitehouse
-</p>
-<p>
-<i>AAAI 2018, Thirty-Second AAAI Conference on Artificial Intelligence (AAAI-18)</i>
-</p>
-<p><a href="2018/batra_aaai_2018.pdf" class="paper-button">PDF</a> <a href="bibtex/energy_breakdown_aaai2018.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/nipunbatra/transferable-energy-breakdown" class="paper-button">Github</a></p>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>, Yiling Jia, Hongning Wang, Kamin Whitehouse
+</div>
+<div class="v">
+AAAI 2018, Thirty-Second AAAI Conference on Artificial Intelligence (AAAI-18)
+</div>
+<div class="l">
+<a href="../papers/2018/batra_aaai_2018.pdf">PDF</a><a href="../papers/bibtex/energy_breakdown_aaai2018.bib">BibTeX</a><a href="https://github.com/nipunbatra/transferable-energy-breakdown">Code</a>
 </div>
 </div>
-</section>
-<section id="section-9" class="level2">
-<h2 class="anchored" data-anchor-id="section-9">2017</h2>
-<div class="paper" data-type="thesis">
-<img src="2017/Phd_Thesis.png" class="paper-image" alt="Systems and Analytical Techniques Towards Practical Energy Breakdown for Homes" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span></p>
 </div>
-<p class="paper-title">
+<div id="2017" class="year" data-year="2017">
+2017
+</div>
+<div class="pub" data-t="energy thesis">
+<img class="fig" src="../papers/2017/Phd_Thesis.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Systems and Analytical Techniques Towards Practical Energy Breakdown for Homes
-</p>
-<p>
-Nipun Batra
-</p>
-<p>
-<i>Ph.D.&nbsp;Thesis</i>
-</p>
-<p><a href="2017/batra_thesis.pdf" class="paper-button">PDF</a> <a href="bibtex/phd_thesis2017.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+Ph.D.&nbsp;Thesis
+</div>
+<div class="l">
+<a href="../papers/2017/batra_thesis.pdf">PDF</a><a href="../papers/bibtex/phd_thesis2017.bib">BibTeX</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2017/AAAI17_MatrixFactor.png" class="paper-image" alt="Matrix Factorisation for Scalable Energy Breakdown" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span> <span class="tag" style="background: #e1f5fe; color: #0277bd; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">Machine Learning</span></p>
 </div>
-<p class="paper-title">
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2017/AAAI17_MatrixFactor.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Matrix Factorisation for Scalable Energy Breakdown
-</p>
-<p>
-Nipun Batra, Hongning Wang, Amarjeet Singh, Kamin Whitehouse
-</p>
-<p>
-<i>AAAI 2017, Thirty-First AAAI Conference on Artificial Intelligence (AAAI-17)</i>
-</p>
-<p><a href="2017/batra_aaai2017.pdf" class="paper-button">PDF</a> <a href="bibtex/matrix_factorization_aaai2017.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/nipunbatra/mf-energybreakdown" class="paper-button">Github</a> <a href="../slides/2017/aaai_poster_2017.pdf" class="paper-button">Poster</a></p>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>, Hongning Wang, Amarjeet Singh, Kamin Whitehouse
+</div>
+<div class="v">
+AAAI 2017, Thirty-First AAAI Conference on Artificial Intelligence (AAAI-17)
+</div>
+<div class="l">
+<a href="../papers/2017/batra_aaai2017.pdf">PDF</a><a href="../papers/bibtex/matrix_factorization_aaai2017.bib">BibTeX</a><a href="https://github.com/nipunbatra/mf-energybreakdown">Code</a><a href="../slides/2017/aaai_poster_2017.pdf">Poster</a>
 </div>
 </div>
-</section>
-<section id="section-10" class="level2">
-<h2 class="anchored" data-anchor-id="section-10">2016</h2>
-<div class="paper" data-type="paper">
-<img src="2016/Gemello.png" class="paper-image" alt="Gemello: Creating a Detailed Energy Breakdown from just the Monthly Electricity Bill" loading="lazy">
-<div class="paper-details">
-<div class="research-tags" style="margin-bottom: 8px;">
-<p><span class="tag" style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 6px;">NILM</span></p>
 </div>
-<p class="paper-title">
+<div id="2016" class="year" data-year="2016">
+2016
+</div>
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2016/Gemello.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Gemello: Creating a Detailed Energy Breakdown from just the Monthly Electricity Bill
-</p>
-<p>
-Nipun Batra, Amarjeet Singh, Kamin Whitehouse
-</p>
-<p>
-<i>KDD 2016, 22nd ACM SIGKDD conference on knowledge discovery and data mining</i>
-</p>
-<p><a href="https://dl.acm.org/doi/10.1145/2939672.2939735" class="paper-button">PDF</a> <a href="bibtex/gemello2016.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/nipunbatra/Gemello" class="paper-button">Github</a> <a href="https://www.youtube.com/watch?v=pzgqd9OhvDA" class="paper-button">Youtube</a> <a href="../slides/2017/kdd_poster_final.pdf" class="paper-button">Poster</a></p>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>, Amarjeet Singh, Kamin Whitehouse
+</div>
+<div class="v">
+KDD 2016, 22nd ACM SIGKDD conference on knowledge discovery and data mining
+</div>
+<div class="l">
+<a href="https://dl.acm.org/doi/10.1145/2939672.2939735">PDF</a><a href="../papers/bibtex/gemello2016.bib">BibTeX</a><a href="https://github.com/nipunbatra/Gemello">Code</a><a href="https://www.youtube.com/watch?v=pzgqd9OhvDA">Video</a><a href="../slides/2016/kdd_poster_final.pdf">Poster</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2016/IWNILM16_ExploringEnergyDisaggregation.png" class="paper-image" alt="Exploring The Value of Energy Disaggregation Through Actionable Feedback" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
+</div>
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2016/IWNILM16_ExploringEnergyDisaggregation.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Exploring The Value of Energy Disaggregation Through Actionable Feedback
-</p>
-<p>
-Nipun Batra, Amarjeet Singh, Kamin Whitehouse
-</p>
-<p>
-<i>3rd International Workshop on Non-Intrusive Load Monitoring</i>
-</p>
-<p><a href="http://nilmworkshop.org/2016/proceedings/Paper_ID08.pdf" class="paper-button">PDF</a> <a href="bibtex/exploring_energy_disaggregation2016.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="http://nilmworkshop.org/2016/slides/NipunBatra1.pdf" class="paper-button">Slides</a> <a href="https://youtu.be/B8UueBmU3Cs" class="paper-button">Youtube</a></p>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>, Amarjeet Singh, Kamin Whitehouse
+</div>
+<div class="v">
+3rd International Workshop on Non-Intrusive Load Monitoring
+</div>
+<div class="l">
+<a href="http://nilmworkshop.org/2016/proceedings/Paper_ID08.pdf">PDF</a><a href="../papers/bibtex/exploring_energy_disaggregation2016.bib">BibTeX</a><a href="http://nilmworkshop.org/2016/slides/NipunBatra1.pdf">Slides</a><a href="https://youtu.be/B8UueBmU3Cs">Video</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2016/IWNILM16_CreatingDetailedEnergyBreakdown.png" class="paper-image" alt="Creating a Detailed Energy Breakdown from just the Monthly Electricity Bill" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
+</div>
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2016/IWNILM16_CreatingDetailedEnergyBreakdown.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Creating a Detailed Energy Breakdown from just the Monthly Electricity Bill
-</p>
-<p>
-Nipun Batra, Amarjeet Singh, Kamin Whitehouse
-</p>
-<p>
-<i>3rd International Workshop on Non-Intrusive Load Monitoring</i>
-</p>
-<p><a href="http://nilmworkshop.org/2016/proceedings/Paper_ID07.pdf" class="paper-button">PDF</a> <a href="bibtex/creating_detailed_energy_breakdown2016.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="http://nilmworkshop.org/2016/slides/NipunBatra2.pdf" class="paper-button">Slides</a> <a href="https://www.youtube.com/watch?v=LUauYdlbH74" class="paper-button">Youtube</a></p>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>, Amarjeet Singh, Kamin Whitehouse
+</div>
+<div class="v">
+3rd International Workshop on Non-Intrusive Load Monitoring
+</div>
+<div class="l">
+<a href="http://nilmworkshop.org/2016/proceedings/Paper_ID07.pdf">PDF</a><a href="../papers/bibtex/creating_detailed_energy_breakdown2016.bib">BibTeX</a><a href="http://nilmworkshop.org/2016/slides/NipunBatra2.pdf">Slides</a><a href="https://www.youtube.com/watch?v=LUauYdlbH74">Video</a>
 </div>
 </div>
-</section>
-<section id="section-11" class="level2">
-<h2 class="anchored" data-anchor-id="section-11">2015</h2>
-<div class="paper" data-type="paper">
-<img src="2015/buildsys15.png" class="paper-image" alt="If You Measure It, Can You Improve It? Exploring The Value of Energy Disaggregation" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
+</div>
+<div id="2015" class="year" data-year="2015">
+2015
+</div>
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2015/buildsys15.png" alt="" loading="lazy">
+<div>
+<div class="t">
 If You Measure It, Can You Improve It? Exploring The Value of Energy Disaggregation
-</p>
-<p>
-Nipun Batra, Amarjeet Singh, Kamin Whitehouse
-</p>
-<p>
-<i>2nd ACM International Conference on Embedded Systems For Energy-Efficient Built Environments (Buildsys 2015)</i>
-</p>
-<p><a href="2015/batra_buildsys_15.pdf" class="paper-button">PDF</a> <a href="bibtex/if_you_measure_it2015.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/nipunbatra/nilm-actionable" class="paper-button">Github</a> <a href="../slides/2015/batra_buildsys_2015_slides final.key" class="paper-button">Slides (.key)</a> <a href="../slides/2015/batra_buildsys_2015_slides final.pdf" class="paper-button">Slides (.pdf)</a></p>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>, Amarjeet Singh, Kamin Whitehouse
+</div>
+<div class="v">
+2nd ACM International Conference on Embedded Systems For Energy-Efficient Built Environments (Buildsys 2015)
+</div>
+<div class="l">
+<a href="../papers/2015/batra_buildsys_15.pdf">PDF</a><a href="../papers/bibtex/if_you_measure_it2015.bib">BibTeX</a><a href="https://github.com/nipunbatra/nilm-actionable">Code</a><a href="https://github.com/sustainability-lab/sustainability-lab.github.io/releases/download/slide-sources/batra_buildsys_2015_slides_final.key">Slides (.key)</a><a href="../slides/2015/batra_buildsys_2015_slides_final.pdf">Slides</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2015/sensys15.png" class="paper-image" alt="Non Intrusive Load Monitoring: Systems, Metrics and Use Cases" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
+</div>
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2015/sensys15.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Non Intrusive Load Monitoring: Systems, Metrics and Use Cases
-</p>
-<p>
-Nipun Batra
-</p>
-<p>
-<i>Doctoral Colloqium of the 13th ACM Conference on Embedded Networked Sensor Systems (SenSys 2015)</i>
-</p>
-<p>
-<strong>[Best presentation award]</strong>
-</p>
-<p><a href="2015/batra_sensys_dc_15.pdf" class="paper-button">PDF</a> <a href="bibtex/nilm_sensys_dc2015.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="../slides/2015/sensys_dc_trimmed.key" class="paper-button">Slides (.key)</a> <a href="../slides/2015/sensys_dc_trimmed.pdf" class="paper-button">Slides (.pdf)</a></p>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>
+</div>
+<div class="v">
+Doctoral Colloqium of the 13th ACM Conference on Embedded Networked Sensor Systems (SenSys 2015)
+</div>
+<div class="l">
+<a href="../papers/2015/batra_sensys_dc_15.pdf">PDF</a><a href="../papers/bibtex/nilm_sensys_dc2015.bib">BibTeX</a><a href="https://github.com/sustainability-lab/sustainability-lab.github.io/releases/download/slide-sources/sensys_dc_trimmed.key">Slides (.key)</a><a href="../slides/2015/sensys_dc_trimmed.pdf">Slides</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2015/NILMTK_Dataport.png" class="paper-image" alt="Dataport and NILMTK: A Building Data Set Designed for Non-intrusive Load Monitoring" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
+</div>
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2015/NILMTK_Dataport.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Dataport and NILMTK: A Building Data Set Designed for Non-intrusive Load Monitoring
-</p>
-<p>
-Oliver Parson, Grant Fisher, April Hersey, Nipun Batra, Jack Kelly, Amarjeet Singh, William Knottenbelt, Alex Rogers.
-</p>
-<p>
-<i>1st International Symposium on Signal Processing Applications in Smart Buildings at 3rd IEEE Global Conference on Signal and Information Processing, Orlando, FL, USA, 14-16 December, 2015.</i>
-</p>
-<p><a href="../papers/2015/globalsip_smart_buildings_15_camera_ready.pdf" class="paper-button">PDF</a> <a href="bibtex/dataport_nilmtk2015.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
+</div>
+<div class="a">
+Oliver Parson, Grant Fisher, April Hersey, <span class="me">Nipun Batra</span>, Jack Kelly, Amarjeet Singh, William Knottenbelt, Alex Rogers.
+</div>
+<div class="v">
+1st International Symposium on Signal Processing Applications in Smart Buildings at 3rd IEEE Global Conference on Signal and Information Processing, Orlando, FL, USA, 14-16 December, 2015.
+</div>
+<div class="l">
+<a href="../papers/2015/globalsip_smart_buildings_15_camera_ready.pdf">PDF</a><a href="../papers/bibtex/dataport_nilmtk2015.bib">BibTeX</a>
 </div>
 </div>
-</section>
-<section id="section-12" class="level2">
-<h2 class="anchored" data-anchor-id="section-12">2014</h2>
-<div class="paper" data-type="demo">
-<img src="2014/buildsys14_NILMTKv2.png" class="paper-image" alt="NILMTK v0. 2: A Non-intrusive Load Monitoring Toolkit for Large Scale Data Sets" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
+</div>
+<div id="2014" class="year" data-year="2014">
+2014
+</div>
+<div class="pub" data-t="energy demo">
+<img class="fig" src="../papers/2014/buildsys14_NILMTKv2.png" alt="" loading="lazy">
+<div>
+<div class="t">
 NILMTK v0. 2: A Non-intrusive Load Monitoring Toolkit for Large Scale Data Sets
-</p>
-<p>
-Jack Kelly, Nipun Batra, Oliver Parson, Haimonti Dutta, William Knottenbelt, Alex Rogers, Amarjeet Singh, Mani Srivastava.
-</p>
-<p>
-<i>First ACM International Conference on Embedded Systems For Energy-Efficient Built Environments (Buildsys 2014)</i>
-</p>
-<p>
-<strong>[Best demo award]</strong>
-</p>
-<p><a href="2014/batra_nilmtk_v2.pdf" class="paper-button">PDF</a> <a href="bibtex/nilmtk_v02_2014.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/nilmtk/nilmtk" class="paper-button">Demo</a> <a href="../slides/2014/buildsys_2014_nilmtk_poster.pdf" class="paper-button">Poster</a></p>
+</div>
+<div class="a">
+Jack Kelly, <span class="me">Nipun Batra</span>, Oliver Parson, Haimonti Dutta, William Knottenbelt, Alex Rogers, Amarjeet Singh, Mani Srivastava.
+</div>
+<div class="v">
+First ACM International Conference on Embedded Systems For Energy-Efficient Built Environments (Buildsys 2014)
+</div>
+<div class="l">
+<a href="../papers/2014/batra_nilmtk_v2.pdf">PDF</a><a href="../papers/bibtex/nilmtk_v02_2014.bib">BibTeX</a><a href="https://github.com/nilmtk/nilmtk">Demo</a><a href="../slides/2014/buildsys_2014_nilmtk_poster.pdf">Poster</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2014/buildsys14_BitsWatts.png" class="paper-image" alt="Bits and Watts: Improving energy disaggregation performance using power line communication modems" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
+</div>
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2014/buildsys14_BitsWatts.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Bits and Watts: Improving energy disaggregation performance using power line communication modems
-</p>
-<p>
-Nipun Batra, Manoj Gulati, Puneet Jain, Kamin Whitehouse, Amarjeet Singh
-</p>
-<p>
-<i>First ACM International Conference on Embedded Systems For Energy-Efficient Built Environments (Buildsys 2014)</i>
-</p>
-<p><a href="2014/batra_plc.pdf" class="paper-button">PDF</a> <a href="bibtex/bits_watts2014.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="../slides/2014/bits_watts_poster.pdf" class="paper-button">Poster</a></p>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>, Manoj Gulati, Puneet Jain, Kamin Whitehouse, Amarjeet Singh
+</div>
+<div class="v">
+First ACM International Conference on Embedded Systems For Energy-Efficient Built Environments (Buildsys 2014)
+</div>
+<div class="l">
+<a href="../papers/2014/batra_plc.pdf">PDF</a><a href="../papers/bibtex/bits_watts2014.bib">BibTeX</a><a href="../slides/2014/bits_watts_poster.pdf">Poster</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2014/ACM-energy14_NILMTK.png" class="paper-image" alt="NILMTK: An Open Source Toolkit for Non-intrusive Load Monitoring" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
-NILMTK: An Open Source Toolkit for Non-intrusive Load Monitoring
-</p>
-<p>
-Nipun Batra, Jack Kelly, Oliver Parson, Haimonti Dutta, William Knottenbelt, Alex Rogers, Amarjeet Singh, Mani Srivastava
-</p>
-<p>
-<i>5th International Conference on Future Energy Systems (ACM e-Energy), Cambridge, UK. 2014</i>
-</p>
-<p><a href="2014/batra_nilmtk.pdf" class="paper-button">PDF</a> <a href="bibtex/nilmtk_acm_energy2014.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/nilmtk/nilmtk" class="paper-button">Github</a> <a href="../slides/2014/nilmtk_presentation.pdf" class="paper-button">Slides (.pdf)</a> <a href="../slides/2014/nilmtk_presentation.pptx" class="paper-button">Slides (.pptx)</a></p>
+</div>
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2014/nilmtk-pipeline.png" alt="" loading="lazy">
+<div>
+<div class="t">
+NILMTK: An Open Source Toolkit for Non-intrusive Load Monitoring<span class="badge">Test-of-Time Award 2025</span>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>, Jack Kelly, Oliver Parson, Haimonti Dutta, William Knottenbelt, Alex Rogers, Amarjeet Singh, Mani Srivastava
+</div>
+<div class="v">
+5th International Conference on Future Energy Systems (ACM e-Energy), Cambridge, UK. 2014
+</div>
+<div class="l">
+<a href="../papers/2014/batra_nilmtk.pdf">PDF</a><a href="../papers/bibtex/nilmtk_acm_energy2014.bib">BibTeX</a><a href="https://github.com/nilmtk/nilmtk">Code</a><a href="../slides/2014/nilmtk_presentation.pdf">Slides</a><a href="https://github.com/sustainability-lab/sustainability-lab.github.io/releases/download/slide-sources/nilmtk_presentation.pptx">Slides (.pptx)</a>
 </div>
 </div>
-<div class="paper" data-type="preprint">
-<img src="2014/TechReport_NILM.png" class="paper-image" alt="A comparison of non-intrusive load monitoring methods for commercial and residential buildings" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
+</div>
+<div class="pub" data-t="energy preprint">
+<img class="fig" src="../papers/2014/TechReport_NILM.png" alt="" loading="lazy">
+<div>
+<div class="t">
 A comparison of non-intrusive load monitoring methods for commercial and residential buildings
-</p>
-<p>
-Nipun Batra, Oliver Parson, Mario Berges, Amarjeet Singh, Alex Rogers
-</p>
-<p>
-<i>Tech. report</i>
-</p>
-<p><a href="https://arxiv.org/pdf/1408.6595.pdf" class="paper-button">PDF</a> <a href="bibtex/nilm_comparison2014.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://combed.github.io/" class="paper-button">COMBED Dataset</a></p>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>, Oliver Parson, Mario Berges, Amarjeet Singh, Alex Rogers
+</div>
+<div class="v">
+Tech. report
+</div>
+<div class="l">
+<a href="https://arxiv.org/pdf/1408.6595.pdf">PDF</a><a href="../papers/bibtex/nilm_comparison2014.bib">BibTeX</a><a href="https://combed.github.io/">Dataset</a>
 </div>
 </div>
-<div class="paper" data-type="thesis">
-<img src="2014/Phd_Qual14.png" class="paper-image" alt="Data Driven Energy Efficiency in Buildings" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
+</div>
+<div class="pub" data-t="energy thesis">
+<img class="fig" src="../papers/2014/Phd_Qual14.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Data Driven Energy Efficiency in Buildings
-</p>
-<p>
-Nipun Batra, Amarjeet Singh, Pushpendra Singh, Haimonti Dutta, Venkatesh Sarangan, Mani Srivastava
-</p>
-<p>
-<i>PhD. qualifiers report, IIIT Delhi</i>
-</p>
-<p><a href="http://arxiv.org/abs/1404.7227" class="paper-button">PDF</a> <a href="bibtex/data_driven_energy2014.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="../slides/2014/compre.pdf" class="paper-button">Slides (.pdf)</a></p>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>, Amarjeet Singh, Pushpendra Singh, Haimonti Dutta, Venkatesh Sarangan, Mani Srivastava
+</div>
+<div class="v">
+PhD. qualifiers report, IIIT Delhi
+</div>
+<div class="l">
+<a href="http://arxiv.org/abs/1404.7227">PDF</a><a href="../papers/bibtex/data_driven_energy2014.bib">BibTeX</a><a href="../slides/2014/compre.pdf">Slides</a>
 </div>
 </div>
-</section>
-<section id="and-before" class="level2">
-<h2 class="anchored" data-anchor-id="and-before">2013 and before</h2>
-<div class="paper" data-type="paper">
-<img src="2013/builsys13_ItsDifferent.png" class="paper-image" alt="It’s Different: Insights into home energy consumption in India" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
+</div>
+<div id="2013" class="year" data-year="2013">
+2013
+</div>
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2013/builsys13_ItsDifferent.png" alt="" loading="lazy">
+<div>
+<div class="t">
 It’s Different: Insights into home energy consumption in India
-</p>
-<p>
-Nipun Batra, Manoj Gulati, Amarjeet Singh, Mani Srivastava
-</p>
-<p>
-<i>5th ACM Workshop On Embedded Systems For Energy-Efficient Buildings (Buildsys 2013)</i>
-</p>
-<p><a href="../papers/2013/buildsys_2013.pdf" class="paper-button">PDF</a> <a href="bibtex/its_different2013.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/nipunbatra/Home_Deployment" class="paper-button">Github</a> <a href="http://iawe.github.io/" class="paper-button">Dataset</a> <a href="../slides/2013/buildsys_13_slides.pptx" class="paper-button">Slides (.pptx)</a> <a href="../slides/2013/buildsys_13_slides.pdf" class="paper-button">Slides (.pdf)</a></p>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>, Manoj Gulati, Amarjeet Singh, Mani Srivastava
+</div>
+<div class="v">
+5th ACM Workshop On Embedded Systems For Energy-Efficient Buildings (Buildsys 2013)
+</div>
+<div class="l">
+<a href="../papers/2013/buildsys_2013.pdf">PDF</a><a href="../papers/bibtex/its_different2013.bib">BibTeX</a><a href="https://github.com/nipunbatra/Home_Deployment">Code</a><a href="http://iawe.github.io/">Dataset</a><a href="https://github.com/sustainability-lab/sustainability-lab.github.io/releases/download/slide-sources/buildsys_13_slides.pptx">Slides (.pptx)</a><a href="../slides/2013/buildsys_13_slides.pdf">Slides</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2013/ICMLA13_INDIC.png" class="paper-image" alt="INDiC: Improved Non-Intrusive load monitoring using load Division and Calibration" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
+</div>
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2013/ICMLA13_INDIC.png" alt="" loading="lazy">
+<div>
+<div class="t">
 INDiC: Improved Non-Intrusive load monitoring using load Division and Calibration
-</p>
-<p>
-Nipun Batra, Haimonti Dutta, Amarjeet Singh
-</p>
-<p>
-<i>The 12th International Conference on Machine Learning and Applications (ICMLA’13)</i>
-</p>
-<p><a href="2013/batra_indic_2013.pdf" class="paper-button">PDF</a> <a href="bibtex/indic2013.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="../slides/2013/icmla.pptx" class="paper-button">Slides (.pptx)</a> <a href="../slides/2013/icmla.pdf" class="paper-button">Slides (.pdf)</a></p>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>, Haimonti Dutta, Amarjeet Singh
+</div>
+<div class="v">
+The 12th International Conference on Machine Learning and Applications (ICMLA’13)
+</div>
+<div class="l">
+<a href="../papers/2013/batra_indic_2013.pdf">PDF</a><a href="../papers/bibtex/indic2013.bib">BibTeX</a><a href="https://github.com/sustainability-lab/sustainability-lab.github.io/releases/download/slide-sources/icmla.pptx">Slides (.pptx)</a><a href="../slides/2013/icmla.pdf">Slides</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2013/ISSNIP13_OBMS.png" class="paper-image" alt="Experiences with Occupancy Based Building Management Systems" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
+</div>
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2013/ISSNIP13_OBMS.png" alt="" loading="lazy">
+<div>
+<div class="t">
 Experiences with Occupancy Based Building Management Systems
-</p>
-<p>
-Nipun Batra, Pandarasamy Arjunan, Amarjeet Singh, Pushpendra Singh
-</p>
-<p>
-<i>2013 IEEE Eighth International Conference on Intelligent Sensors, Sensor Networks and Information Processing (ISSNIP ’13)</i>
-</p>
-<p><a href="2013/batra_issnip_2013.pdf" class="paper-button">PDF</a> <a href="bibtex/obms2013.bib" class="paper-button bibtex-btn" download="">BibTeX</a></p>
+</div>
+<div class="a">
+<span class="me">Nipun Batra</span>, Pandarasamy Arjunan, Amarjeet Singh, Pushpendra Singh
+</div>
+<div class="v">
+2013 IEEE Eighth International Conference on Intelligent Sensors, Sensor Networks and Information Processing (ISSNIP ’13)
+</div>
+<div class="l">
+<a href="../papers/2013/batra_issnip_2013.pdf">PDF</a><a href="../papers/bibtex/obms2013.bib">BibTeX</a>
 </div>
 </div>
-<div class="paper" data-type="paper">
-<img src="2012/buildsys12_SensorAct.png" class="paper-image" alt="SensorAct: A Privacy and Security Aware Federated Middleware for Building Management" loading="lazy">
-<div class="paper-details">
-<p class="paper-title">
+</div>
+<div class="pub" data-t="energy paper">
+<img class="fig" src="../papers/2012/buildsys12_SensorAct.png" alt="" loading="lazy">
+<div>
+<div class="t">
 SensorAct: A Privacy and Security Aware Federated Middleware for Building Management
-</p>
-<p>
-Pandarasamy Arjunan, Nipun Batra, Haksoo Choi, Amarjeet Singh, Pushpendra Singh, Mani Srivastava
-</p>
-<p>
-<i>BuildSys ’12: Proceedings of the Fourth ACM Workshop on Embedded Sensing Systems for Energy-Efficiency in Buildings</i>
-</p>
-<p><a href="https://dl.acm.org/doi/pdf/10.1145/2422531.2422547" class="paper-button">PDF</a> <a href="bibtex/sensoract2012.bib" class="paper-button bibtex-btn" download="">BibTeX</a> <a href="https://github.com/iiitd-ucla-pc3" class="paper-button">Github</a></p>
+</div>
+<div class="a">
+Pandarasamy Arjunan, <span class="me">Nipun Batra</span>, Haksoo Choi, Amarjeet Singh, Pushpendra Singh, Mani Srivastava
+</div>
+<div class="v">
+BuildSys ’12: Proceedings of the Fourth ACM Workshop on Embedded Sensing Systems for Energy-Efficiency in Buildings
+</div>
+<div class="l">
+<a href="https://dl.acm.org/doi/pdf/10.1145/2422531.2422547">PDF</a><a href="../papers/bibtex/sensoract2012.bib">BibTeX</a><a href="https://github.com/iiitd-ucla-pc3">Code</a>
 </div>
 </div>
-<style>
-/* Paper layout and image sizing */
-.paper {
-  display: flex !important;
-  gap: 20px !important;
-  margin: 20px 0 !important;
-  padding: 20px !important;
-  border: 1px solid #e5e7eb !important;
-  border-radius: 8px !important;
-}
-
-.paper-image {
-  width: 250px !important;
-  height: 180px !important;
-  object-fit: contain !important;
-  border-radius: 6px !important;
-  flex-shrink: 0 !important;
-}
-
-.paper-details {
-  flex: 1 !important;
-}
-
-/* Research area tags */
-.research-tags {
-  margin-bottom: 8px !important;
-}
-
-.tag {
-  display: inline-block !important;
-  padding: 2px 8px !important;
-  border-radius: 12px !important;
-  font-size: 0.75rem !important;
-  margin-right: 6px !important;
-  border: 1px solid rgba(0,0,0,0.1) !important;
-}
-
-/* BibTeX functionality styling */
-.bibtex-btn {
-  background-color: #10b981 !important;
-  font-size: 0.8rem !important;
-}
-
-.bibtex-btn:hover {
-  background-color: #059669 !important;
-}
-
-.bibtex-content {
-  display: none;
-}
-
-.copy-notification {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: #10b981;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 4px;
-  font-weight: 500;
-  z-index: 1000;
-  font-size: 0.9rem;
-  animation: slideIn 0.3s ease;
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* Filtering - CSS handles visibility */
-.paper.hidden {
-  display: none !important;
-}
-
-.year-section.hidden {
-  display: none !important;
-}
-
-/* CSS-only separators between visible papers */
-.paper:not(.hidden) + .paper:not(.hidden) {
-  border-top: 1px solid #e5e7eb !important;
-  padding-top: 20px !important;
-  margin-top: 20px !important;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .paper {
-    flex-direction: column !important;
-  }
-
-  .paper-image {
-    width: 100% !important;
-    height: 150px !important;
-  }
-}
-</style>
-<script>
-function filterByType(type) {
-  // Update button styles
-  document.querySelectorAll('.filter-btn').forEach(function(btn) {
-    var isActive = btn.getAttribute('data-filter') === type;
-    btn.classList.toggle('active', isActive);
-    btn.style.background = isActive ? '#3b82f6' : 'white';
-    btn.style.color = isActive ? 'white' : '#374151';
-  });
-
-  // Toggle hidden class on papers - CSS handles separators automatically
-  document.querySelectorAll('.paper[data-type]').forEach(function(paper) {
-    var match = type === 'all' || paper.getAttribute('data-type') === type;
-    paper.classList.toggle('hidden', !match);
-  });
-
-  // Update year headers visibility
-  document.querySelectorAll('h2').forEach(function(header) {
-    if (header.textContent.indexOf('Download') !== -1) return;
-    var next = header.nextElementSibling;
-    var hasVisible = false;
-    while (next && next.tagName !== 'H2') {
-      if (next.classList && next.classList.contains('paper') && !next.classList.contains('hidden')) {
-        hasVisible = true;
-        break;
-      }
-      next = next.nextElementSibling;
-    }
-    header.style.display = hasVisible ? '' : 'none';
-  });
-}
-</script>
-
-
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+<nav id="all-pubs-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div>
+  <p class="small muted" style="margin-top:18px">Adding a paper? See <a href="https://github.com/sustainability-lab/sustainability-lab.github.io/blob/main/papers/README.md">papers/README.md</a> — one entry in <code>data/publications.yml</code>.</p>
 </section>
+<script>
+(function () {
+  let theme = 'all';
+  const q = document.getElementById('pubsearch');
+  function apply() {
+    const term = q.value.toLowerCase().trim(); let n = 0;
+    const pubs = document.querySelectorAll('#publist .pub');
+    pubs.forEach(p => {
+      const ok = (theme === 'all' || p.dataset.t.split(' ').includes(theme)) && (!term || p.textContent.toLowerCase().includes(term));
+      p.style.display = ok ? '' : 'none'; if (ok) n++;
+    });
+    document.querySelectorAll('#publist .year').forEach(y => {
+      let el = y.nextElementSibling, any = false;
+      while (el && !el.classList.contains('year')) { if (el.style.display !== 'none') any = true; el = el.nextElementSibling; }
+      y.style.display = any ? '' : 'none';
+    });
+    document.getElementById('pubcount').textContent = n + ' of ' + pubs.length + ' papers';
+  }
+  document.querySelectorAll('#pubchips .chip').forEach(c => c.onclick = () => {
+    document.querySelectorAll('#pubchips .chip').forEach(x => x.classList.toggle('on', x === c));
+    theme = c.dataset.t; apply();
+  });
+  q.oninput = apply;
+  apply();
+})();
+</script>
+</div>
 
-</main> <!-- /main -->
+
+
+
+
+<script>
+// Light/dark switch styled like nipunbatra.github.io (sun → moon pill).
+// It drives Quarto's own colour-scheme switch and hides Quarto's icon.
+// Until someone uses the switch, the site follows the OS setting.
+(() => {
+  const KEY = 'lab-theme-chosen';
+  const isDark = () => document.body.classList.contains('quarto-dark');
+  const mkButton = () => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'mode'; b.setAttribute('role', 'switch');
+    b.setAttribute('aria-label', 'Dark mode'); b.title = 'Light or dark appearance';
+    b.innerHTML = '<span class="sky"></span><span class="stars"><b style="left:9px;top:6px"></b><b style="left:15px;top:15px"></b><b style="left:23px;top:8px;opacity:.7"></b></span><span class="knob"></span>';
+    b.addEventListener('click', () => {
+      try { localStorage.setItem(KEY, '1'); } catch (_) {}
+      if (window.quartoToggleColorScheme) window.quartoToggleColorScheme();
+    });
+    return b;
+  };
+  const sync = () => document.querySelectorAll('.mode').forEach(b => b.setAttribute('aria-checked', String(isDark())));
+  const init = () => {
+    const tools = document.querySelector('.quarto-navbar-tools');
+    const nav = document.querySelector('#quarto-header .navbar .container-fluid') || document.querySelector('#quarto-header nav');
+    if (!nav) return;
+    const btn = mkButton();
+    if (tools) tools.prepend(btn); else nav.appendChild(btn);
+    sync();
+    new MutationObserver(sync).observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+    mq.addEventListener('change', e => {
+      let chosen = null; try { chosen = localStorage.getItem(KEY); } catch (_) {}
+      if (!chosen && e.matches !== isDark() && window.quartoToggleColorScheme) window.quartoToggleColorScheme();
+    });
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true }); else init();
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
         }
       }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
       return false;
     }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
     }
-    const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
@@ -1459,184 +1508,184 @@ function filterByType(type) {
       }
       return codeEl.innerText;
     }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
-    });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
     }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/sustainability-lab\.github\.io");
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
       }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
-        }
-      }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/sustainability-lab\.github\.io");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
         }
       }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
       } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
         }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
       }
     }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
           }
         } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
+          // See if we can fetch this
+          fetch(url.split('#')[0])
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
+            const note = htmlDoc.getElementById(id);
             if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
+              const html = processXRef(id, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -1644,205 +1693,199 @@ function filterByType(type) {
             instance.show();
           });
         }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
       } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
             }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
         });
       }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
     }
-  });
-  </script>
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2026 Sustainability Lab, IIT Gandhinagar</p>
+<p>© 2026 Sustainability Lab, IIT Gandhinagar<br> <a href="mailto:nipun.batra@iitgn.ac.in">nipun.batra@iitgn.ac.in</a> · <a href="../flyer.pdf">Lab flyer</a></p>
 </div>   
     <div class="nav-footer-center">
-<p><a href="../papers/index.html">Publications</a> | <a href="https://sustainability-lab.github.io/sustainability-research-bootcamp/"><strong>Research Skills Bootcamp</strong></a> | <a href="mailto:nipun.batra@iitgn.ac.in">Contact</a></p>
+<p><a href="https://www.youtube.com/@SustainabilityLab-SL">Lab YouTube</a> · <a href="https://www.youtube.com/@NipunBatra0">Teaching YouTube</a> · <a href="https://x.com/nipun_batra">X</a> · <a href="https://www.linkedin.com/in/nipunbatra0/">LinkedIn</a> · <a href="https://github.com/sustainability-lab">GitHub</a></p>
 </div>
     <div class="nav-footer-right">
-<p>Built with <a href="https://quarto.org/">Quarto</a> | <span id="last-updated"></span></p>
+<p>Supported by Google, Cisco, NVIDIA, Microsoft, SERB/ANRF, MoES, DST, STARS, GUJCOST, CoE in AI (MHRD), Gujarat Forest Dept. and Jio</p>
 </div>
   </div>
 </footer>
-<script>
-  function updateLogo() {
-    const logo = document.getElementById("theme-logo");
-    if (!logo) return;
-
-    const isDarkMode = document.body.classList.contains("quarto-dark");
-    const newSrc = isDarkMode ? logo.dataset.darkSrc : logo.dataset.lightSrc;
-
-    if (logo.src !== newSrc) {
-      logo.src = newSrc;
-    }
-  }
-
-  // Detect theme change
-  const observer = new MutationObserver(updateLogo);
-  observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
-
-  // Ensure correct logo on initial load
-  document.addEventListener("DOMContentLoaded", updateLogo);
-
-  // Set last updated date
-  document.addEventListener("DOMContentLoaded", function() {
-    const lastUpdatedEl = document.getElementById("last-updated");
-    if (lastUpdatedEl) {
-      const now = new Date();
-      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      lastUpdatedEl.textContent = 'Last Updated: ' + now.toLocaleDateString('en-US', options);
-    }
-  });
-</script>
 
 
 
