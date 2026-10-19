@@ -13,9 +13,9 @@ Please see below for two posters that we have made in the past.
 ![Example research poster (second)](images/sample/sample-poster-2.jpg){loading="lazy"}
 
 Please find the presentation files corresponding to the first poster
-1. [Apple Keynote](https://github.com/nipunbatra/nipunbatra.github.io/blob/main/slides/2017/aaai_poster.key)
+1. [Apple Keynote](https://github.com/sustainability-lab/sustainability-lab.github.io/releases/download/slide-sources/aaai_poster.key)
 
-2. [MS Powerpoint](https://github.com/nipunbatra/nipunbatra.github.io/blob/main/slides/2017/aaai_poster.pptx)
+2. [MS Powerpoint](https://github.com/sustainability-lab/sustainability-lab.github.io/releases/download/slide-sources/aaai_poster.pptx)
 
 3. [Google Slides](https://docs.google.com/presentation/d/1mH50SOlfErQ683_DwXBcrxCixZ3DX3Mx/edit?usp=sharing&ouid=109104637369595830870&rtpof=true&sd=true)
 

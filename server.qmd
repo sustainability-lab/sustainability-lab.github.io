@@ -5,7 +5,7 @@ title: "Server Policy"
 
 #### How to get access
 
-Send an email to Mr. [Raviraj Sukhadiya](raviraj.s@iitgn.ac.in), keeping Prof. [Nipun Batra](nipun.batra@iitgn.ac.in) in cc. Mention the following details in your request: i) server name; ii) purpose for access.
+Send an email to Mr. [Raviraj Sukhadiya](mailto:raviraj.s@iitgn.ac.in), keeping Prof. [Nipun Batra](mailto:nipun.batra@iitgn.ac.in) in cc. Mention the following details in your request: i) server name; ii) purpose for access.
 
 #### Don'ts
 - Do not use the server for personal use or anything not related to the project. This includes any classwork or homework.
