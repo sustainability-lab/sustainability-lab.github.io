@@ -81,7 +81,8 @@ figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; }
 .film-open:hover .film-play, .film-open:focus-visible .film-play { background: #8f231c; }
 .film-dialog { padding: 0; border: 0; background: #000; width: min(1280px, 94vw); max-width: none; overflow: visible; }
 .film-dialog::backdrop { background: rgba(12, 14, 13, .88); }
-.film-dialog video { display: block; width: 100%; aspect-ratio: 16/9; background: #000; }
+.film-frame { aspect-ratio: 16/9; background: #000; }
+.film-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
 .film-dialog form { position: absolute; right: 0; top: -40px; }
 .film-close { border: 0; background: none; color: #fffefa; font: 600 15px var(--body); padding: 6px 0; cursor: pointer; }
 .film-close:hover { color: #f1a399; }

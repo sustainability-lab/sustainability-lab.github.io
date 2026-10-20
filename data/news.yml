@@ -4,6 +4,10 @@
 #   photos: optional list of {src, alt}      press: optional list of {label, url} (media coverage)
 #   links: optional list of {label, url}
 #   film: optional one-line version (≤ 60 characters) for the lab film's "This quarter" card
+- when: 2026-10
+  type: other
+  film: The first lab film is out
+  text: 'Our first lab film: <a href="https://youtu.be/wi7nu7pTJqc"><b>the lab in 2½ minutes</b></a>, on our research, people and alumni, drawn from the lab''s own data. Watch it in 4K on YouTube.'
 - when: 2026-09
   type: paper
   film: FlowSat at BMVC 2026, Signal Descriptors at IEEE DSAA 2026

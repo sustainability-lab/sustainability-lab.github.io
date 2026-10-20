@@ -3,7 +3,7 @@
 A 2½-minute film about the lab, made from the site's own data, so a new edition each quarter is one command.
 
 ```
-make -C _film            # → out/lab-film.mp4 (master), out/web/lab-film.mp4 (site), images/film/poster.jpg
+make -C _film            # → out/lab-film.mp4 (1080p master), out/web/lab-film.mp4 (18 MB copy for talks), images/film/poster.jpg
 make -C _film 4k         # → out/lab-film-4k.mp4, 3840×2160 for YouTube
 make -C _film studio     # live preview: scrub the timeline, edit a scene, see it update
 ```
@@ -45,13 +45,18 @@ Remotion is free for non-profit organisations under its licence (see `node_modul
 
 ## Publishing
 
-The homepage poster (`images/film/poster.jpg`, about 100 KB) is committed. The film itself (about 18 MB) is too large for git, so it lives as an asset on the repository's `film` release; the publish workflow downloads it into `images/film/` before rendering, and GitHub Pages serves it like any other file. To publish a new edition:
+The homepage shows `images/film/poster.jpg` (committed) with a "Watch the lab film" button. The button opens the film from the lab's YouTube channel in a dialog; the YouTube player loads only when pressed (`index.qmd`, `data-youtube`). For a new edition:
 
-```
-gh release upload film _film/out/web/lab-film.mp4 --clobber      # replaces the live film
-cp _film/out/web/lab-film.mp4 /tmp/lab-film-2027-01.mp4 && gh release upload film /tmp/lab-film-2027-01.mp4   # dated archive copy
-```
+1. `make -C _film 4k`, then upload `out/lab-film-4k.mp4` to the lab channel, private first:
 
-then re-run the "Quarto Publish" workflow (`gh workflow run publish.yml`) or push any commit. The release was created on 2026-10-20 with the first edition; the 4K version is on the lab's YouTube channel.
+   ```
+   yt-lab upload _film/out/lab-film-4k.mp4 --title "Sustainability Lab, IIT Gandhinagar: AI for a sustainable future (January 2027)" \
+     --description-file description.txt --category 27 --privacy private --synthetic --language en \
+     --thumbnail _film/out/web/thumbnail-1280.jpg
+   ```
 
-`out/lab-film.mp4` is the 1080p master (about 40 MB) for presentations; `make -C _film 4k` makes the 3840×2160 version that goes to YouTube, with `out/web/thumbnail-1280.jpg` as its thumbnail. Canvas layers draw at the render's pixel ratio (`DPR` in `src/theme.ts`), so the dots stay sharp at 4K.
+   The description of the first edition (with chapter times) is a good template: `yt-lab status wi7nu7pTJqc --json`.
+2. Watch it in YouTube Studio, then make it public: `yt-lab update <id> --privacy public`.
+3. Put the new video ID in `index.qmd` (the `data-youtube` attribute and the "open on YouTube" link) and add a news item.
+
+The first edition (October 2026) is https://youtu.be/wi7nu7pTJqc. `out/web/lab-film.mp4` (18 MB) is a lighter copy for talks and slides; the repository's `film` release keeps the October 2026 copy.

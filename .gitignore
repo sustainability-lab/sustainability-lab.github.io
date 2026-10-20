@@ -9,5 +9,5 @@ docs/
 # design mockups (local only)
 _mockups/
 
-# the lab film is published as a release asset and fetched at build time (see _film/README.md)
+# rendered film files stay local; the homepage plays the film from YouTube (see _film/README.md)
 images/film/*.mp4
