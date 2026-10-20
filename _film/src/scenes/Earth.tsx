@@ -7,7 +7,7 @@ import { beat, chapter, F } from "../data";
 import { BeatText, Chapter, Reveal } from "../lib/chapter";
 import { flat, indiaRings, ringsPath } from "../lib/geo";
 import { Count, E, inOut, lerp, pt, useT } from "../lib/motion";
-import { C, FONT, H, W } from "../theme";
+import { C, FONT, H, W, DPR } from "../theme";
 import { BAR } from "../timing";
 
 export const EARTH_LEN = 10 * BAR;
@@ -29,6 +29,7 @@ const KilnLayer: React.FC<{ t: number; view: typeof VIEW; opacity: number }> = (
   const ref = useRef<HTMLCanvasElement>(null);
   useLayoutEffect(() => {
     const g = ref.current!.getContext("2d")!;
+    g.setTransform(DPR, 0, 0, DPR, 0, 0);
     g.clearRect(0, 0, W, H);
     const proj = flat(view);
     const shown = Math.floor(K.n * pt(t, T.kl + 0.3, SWEEP, E.linear));
@@ -44,7 +45,7 @@ const KilnLayer: React.FC<{ t: number; view: typeof VIEW; opacity: number }> = (
       g.fillRect(x - r / 2, y - r / 2, r, r);
     }
   }, [t, view]);
-  return <canvas ref={ref} width={W} height={H} style={{ position: "absolute", inset: 0, opacity }} />;
+  return <canvas ref={ref} width={W * DPR} height={H * DPR} style={{ position: "absolute", inset: 0, width: W, height: H, opacity }} />;
 };
 
 /** A Sentinel-2 tile whose oriented kiln boxes draw on one by one. */

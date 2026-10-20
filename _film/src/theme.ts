@@ -7,6 +7,9 @@ export const W = 1920;
 export const H = 1080;
 export const M = 120; // outer margin
 
+/** Pixel ratio of the render: 1 at 1080p, 2 with `--scale=2` (4K). Canvas layers draw at this density. */
+export const DPR = typeof window === "undefined" ? 1 : Math.max(1, window.devicePixelRatio || 1);
+
 const dmSans = loadDMSans("normal", { weights: ["400", "500", "600", "700"], subsets: ["latin", "latin-ext"] });
 const dmMono = loadDMMono("normal", { weights: ["400", "500"], subsets: ["latin"] });
 

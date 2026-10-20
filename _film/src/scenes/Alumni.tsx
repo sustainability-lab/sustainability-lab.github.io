@@ -4,7 +4,7 @@ import { AbsoluteFill, Img, staticFile } from "remotion";
 import { F } from "../data";
 import { equalEarth, geoDistance, GN, world } from "../lib/geo";
 import { Appear, E, Kicker, pt, Rise, useT, Words } from "../lib/motion";
-import { C, FONT, H, M, W } from "../theme";
+import { C, FONT, H, M, W, DPR } from "../theme";
 import { BAR } from "../timing";
 
 export const ALUMNI_LEN = 6 * BAR;
@@ -55,6 +55,7 @@ export const Alumni: React.FC = () => {
 
   useLayoutEffect(() => {
     const g = ref.current!.getContext("2d")!;
+    g.setTransform(DPR, 0, 0, DPR, 0, 0);
     g.clearRect(0, 0, W, H);
     g.fillStyle = "#59615a";
     for (const [lat, lon] of world) {
@@ -76,7 +77,7 @@ export const Alumni: React.FC = () => {
         <Sfx key={k} at={0.9 + k * 0.17 + 1.0} name="ping" volume={0.4} />
       ))}
       <div style={{ position: "absolute", inset: 0, opacity: on * (1 - out) }}>
-        <canvas ref={ref} width={W} height={H} style={{ position: "absolute", inset: 0 }} />
+        <canvas ref={ref} width={W * DPR} height={H * DPR} style={{ position: "absolute", inset: 0, width: W, height: H }} />
         <svg width={W} height={H} style={{ position: "absolute", inset: 0 }}>
           {order.map(({ p, i }, k) => {
             const at = 0.9 + k * 0.17;

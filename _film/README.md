@@ -4,6 +4,7 @@ A 2½-minute film about the lab, made from the site's own data, so a new edition
 
 ```
 make -C _film            # → out/lab-film.mp4 (master), out/web/lab-film.mp4 (site), images/film/poster.jpg
+make -C _film 4k         # → out/lab-film-4k.mp4, 3840×2160 for YouTube
 make -C _film studio     # live preview: scrub the timeline, edit a scene, see it update
 ```
 
@@ -51,6 +52,6 @@ gh release upload film _film/out/web/lab-film.mp4 --clobber      # replaces the 
 cp _film/out/web/lab-film.mp4 /tmp/lab-film-2027-01.mp4 && gh release upload film /tmp/lab-film-2027-01.mp4   # dated archive copy
 ```
 
-then re-run the "Quarto Publish" workflow (`gh workflow run publish.yml`) or push any commit. The release was created on 2026-10-20 with the first edition; the full-quality master is on the lab's YouTube channel.
+then re-run the "Quarto Publish" workflow (`gh workflow run publish.yml`) or push any commit. The release was created on 2026-10-20 with the first edition; the 4K version is on the lab's YouTube channel.
 
-`out/lab-film.mp4` is the full-quality master (about 40 MB) for YouTube or presentations, with `out/web/thumbnail-1280.jpg` as its thumbnail.
+`out/lab-film.mp4` is the 1080p master (about 40 MB) for presentations; `make -C _film 4k` makes the 3840×2160 version that goes to YouTube, with `out/web/thumbnail-1280.jpg` as its thumbnail. Canvas layers draw at the render's pixel ratio (`DPR` in `src/theme.ts`), so the dots stay sharp at 4K.

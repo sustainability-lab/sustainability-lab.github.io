@@ -4,7 +4,7 @@ import kilns from "../../data/kilns.json";
 import { F } from "../data";
 import { flat, indiaRings, ringsPath } from "../lib/geo";
 import { sigmoidPts, SignalPath } from "../lib/signal";
-import { C, FONT, H, M, W } from "../theme";
+import { C, FONT, H, M, W, DPR } from "../theme";
 
 const K = kilns as unknown as { n: number; pts: [number, number, number][] };
 const VIEW = { lon0: 81.6, lat0: 26.4, k: 68, cx: 1330, cy: 560 };
@@ -19,6 +19,7 @@ export const Poster: React.FC<{ variant?: "full" | "web" }> = ({ variant = "full
   const proj = useMemo(() => flat(web ? { lon0: 83.4, lat0: 25.6, k: 78, cx: 1010, cy: 500 } : VIEW), [web]);
   useLayoutEffect(() => {
     const g = ref.current!.getContext("2d")!;
+    g.setTransform(DPR, 0, 0, DPR, 0, 0);
     g.clearRect(0, 0, W, H);
     g.globalCompositeOperation = "lighter";
     g.fillStyle = "rgba(230, 72, 60, 0.6)";
@@ -32,7 +33,7 @@ export const Poster: React.FC<{ variant?: "full" | "web" }> = ({ variant = "full
       <svg width={W} height={H} style={{ position: "absolute", inset: 0 }}>
         <path d={ringsPath(indiaRings, proj)} fill={C.nightSoft} stroke={C.nightRule} strokeWidth={2} />
       </svg>
-      <canvas ref={ref} width={W} height={H} style={{ position: "absolute", inset: 0, filter: "drop-shadow(0 0 6px rgba(230,72,60,.45))" }} />
+      <canvas ref={ref} width={W * DPR} height={H * DPR} style={{ position: "absolute", inset: 0, width: W, height: H, filter: "drop-shadow(0 0 6px rgba(230,72,60,.45))" }} />
       {web ? (
         <div style={{ position: "absolute", right: M, top: 70, fontFamily: FONT.mono, fontSize: 30, color: C.nightMuted, textAlign: "right" }}>
           {K.n.toLocaleString("en-US")} brick kilns, found from space

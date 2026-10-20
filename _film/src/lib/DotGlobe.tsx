@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useRef } from "react";
 import { globe, isFront, ortho } from "./geo";
-import { W, H } from "../theme";
+import { W, H, DPR } from "../theme";
 
 type Props = {
   rotLon: number;
@@ -22,6 +22,7 @@ export const DotGlobe: React.FC<Props> = ({ rotLon, rotLat, r, cx, cy, land, ind
   useLayoutEffect(() => {
     const c = ref.current!;
     const g = c.getContext("2d")!;
+    g.setTransform(DPR, 0, 0, DPR, 0, 0);
     g.clearRect(0, 0, W, H);
     const proj = ortho(rotLon, rotLat, r, cx, cy);
     if (outline) {
@@ -53,7 +54,7 @@ export const DotGlobe: React.FC<Props> = ({ rotLon, rotLat, r, cx, cy, land, ind
     }
     g.globalAlpha = 1;
   }, [rotLon, rotLat, r, cx, cy, land, india, indiaMix, dot, outline]);
-  return <canvas ref={ref} width={W} height={H} style={{ position: "absolute", inset: 0, opacity }} />;
+  return <canvas ref={ref} width={W * DPR} height={H * DPR} style={{ position: "absolute", inset: 0, width: W, height: H, opacity }} />;
 };
 
 export { isFront };
