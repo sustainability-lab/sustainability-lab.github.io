@@ -1,6 +1,8 @@
-# Lab news, newest first. One entry per item:
-#   when: YYYY-MM   type: paper | award | grant | people | talk | event | media | talk | other
-#   text: one sentence (HTML links allowed)   image: optional, e.g. /images/awards/x.jpg
+# Lab news, newest first: papers, awards, grants, people, talks, events and press — all in one place.
+#   when: YYYY-MM (or YYYY)   type: paper | award | grant | people | talk | event | media
+#   text: one sentence (HTML allowed)        note: optional extra line, e.g. an award citation
+#   photos: optional list of {src, alt}      press: optional list of {label, url} (media coverage)
+#   links: optional list of {label, url}
 - when: 2026-09
   type: paper
   text: 'Two research announcements: <a href="/papers/2026/flowsat.html"><b>FlowSat</b></a> accepted at <b>BMVC 2026</b>, and <a href="/papers/2026/signal-descriptors.html"><b>Efficient Time Series SSL via Signal Descriptors</b></a> accepted for a <b>Short Presentation at IEEE DSAA 2026</b>. Paper PDFs, research summaries and code links are now available.'
@@ -9,7 +11,16 @@
   text: 'Paper accepted (oral) at the MILETS Workshop @ ACM KDD 2026: Feature-Informed Self-Supervised Learning for Time Series Understanding!'
 - when: 2026-06
   type: award
-  text: <b>NILMBench2026</b> wins the <b>Best Paper Award — Runner-Up</b> at <a href="/awards.html#2026">BuildSys 2026</a> (ACM Sustainability Week, Banff, Canada)! Led by 2nd-year undergraduates Aayush Kuloor, Anurag Singh, and Harsh Dhru.
+  text: <b>NILMBench2026</b> wins the <b>Best Paper Award — Runner-Up</b> at <b>BuildSys 2026</b> (ACM Sustainability Week, Banff, Canada)! Led by 2nd-year undergraduates Aayush Kuloor, Anurag Singh, and Harsh Dhru.
+  note: 'For "NILMBench2026: A Benchmark for Energy Disaggregation" at the 13th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (ACM BuildSys 2026), ACM Sustainability Week, Banff, Canada. The work was led entirely by second-year undergraduates.'
+  photos:
+  - src: /images/awards/nilmbench-buildsys2026-runnerup.jpg
+    alt: BuildSys 2026 Best Paper Runner-Up ceremony
+  - src: /images/awards/nilmbench-buildsys2026-announcement.png
+    alt: ACM BuildSys 2026 Best Paper Awards announcement
+  links:
+  - label: Paper
+    url: /papers/index.html#2026
 - when: 2026-05
   type: paper
   text: <b>ThermEval</b> accepted at <a href="/papers/index.html#2026">KDD 2026</a>! Benchmarking vision-language models on thermal imagery with Ayush Shrivastava, Kirtan Gangani, Laksh Jain, and Mayank Goel (CMU).
@@ -30,7 +41,15 @@
   text: Filed Indian patent application for ApneaEye — non-contact screening and classification of sleep apnea (App. No. 202521107821)!
 - when: 2025-11
   type: paper
-  text: Paper accepted at AAAI 2026
+  text: 'Paper accepted at AAAI 2026 (AI for Social Impact): fast, differentiable air-quality sensor placement.'
+  photos:
+  - src: /images/media/aaai_media_coverage.jpg
+    alt: Fast and Differentiable Sensor Placement
+  press:
+  - label: DD News
+    url: https://www.youtube.com/watch?v=QOeNE8YOTeU&t=405s
+  - label: The Live Ahmedabad
+    url: https://theliveahmedabad.com/2025/11/04/iit-gandhinagar-ai-pinpoints-optimal-locations-for-air-quality-sensors-orders-of-magnitude-faster/
 - when: 2025-10
   type: paper
   text: Paper accepted at CODS-COMAD 2025
@@ -42,37 +61,102 @@
   text: Kirtan Gangani and Deena Lad join Sustainability Lab as Research Assistants. Welcome!
 - when: 2025-06
   type: award
-  text: Prof. Nipun Batra receives <a href="/awards.html#2025" target="_blank">Test of Time Award for NILMTK</a>! Recognition for significant long-term impact on energy disaggregation research.
+  text: Prof. Nipun Batra receives <b>Test of Time Award for NILMTK</b>! Recognition for significant long-term impact on energy disaggregation research.
+  note: For significant long-term impact and contributions to the energy disaggregation research community
+  photos:
+  - src: /images/awards/nipun-test-time.jpg
+    alt: Test of Time Award
+  - src: /images/awards/screen-test-time.jpg
+    alt: Test of Time Award Announcement
+  - src: /images/awards/nipun-certificate-test-time.jpg
+    alt: Test of Time Award Certificate
 - when: 2025-06
   type: award
-  text: Dr. Rishiraj Adhikary receives <a href="/awards.html#2025" target="_blank">Commendation for Outstanding Research (PhD)</a> at IIT Gandhinagar Convocation 2025!
+  text: Dr. Rishiraj Adhikary receives <b>Commendation for Outstanding Research (PhD)</b> at IIT Gandhinagar Convocation 2025!
+  note: IIT Gandhinagar Convocation 2025
+  photos:
+  - src: /images/awards/rishiraj-1.jpeg
+    alt: Rishiraj Award Ceremony 1
+  - src: /images/awards/rishiraj-2.jpg
+    alt: Rishiraj Award Ceremony 2
 - when: 2025-06
   type: award
-  text: Prof. Nipun Batra wins the <a href="/awards.html#2025" target="_blank">SIGEnergy Rising Star Award 2025</a>!
+  text: Prof. Nipun Batra wins the <b>SIGEnergy Rising Star Award 2025</b>!
+  note: 'Citation: "For contributions to reproducible toolkits, scalable models, and uncertainty-aware approaches for practical energy disaggregation."'
+  photos:
+  - src: /images/awards/nipun-sigenergy.jpg
+    alt: SIGEnergy Rising Star Award
+  - src: /images/awards/screen-sigenergy.jpg
+    alt: SIGEnergy Award Announcement
+  - src: /images/awards/nipun-certificate-rising-star.jpg
+    alt: SIGEnergy Rising Star Certificate
 - when: 2025-06
   type: event
   text: Organizing <a href="https://sustainability-lab.github.io/acm-summer-2025/" target="_blank">ACM India Summer School 2025</a> on AI for Social Good at IIT Gandhinagar (June 2-13, 2025)
+  photos:
+  - src: /images/events/acm-summer-2025.png
+    alt: ACM India Summer School 2025 poster
+  - src: /images/memories/2025-acm-summer-school-2.jpg
+    alt: ACM Summer School 2025 group
+  links:
+  - label: School website
+    url: https://sustainability-lab.github.io/acm-summer-2025/
 - when: 2025-01
   type: award
-  text: Prof. Nipun Batra receives <a href="/awards.html#2025" target="_blank">Excellence in Teaching Award</a> based on outstanding teaching contributions and active learning strategies!
+  text: Prof. Nipun Batra receives <b>Excellence in Teaching Award</b> based on outstanding teaching contributions and active learning strategies!
+  note: 'Citation: "Based on his contributions and achievements in teaching, as evidenced by students'' feedback on his teaching, including outstanding organization and conduct of courses as well as the adoption of active learning strategies."'
+  photos:
+  - src: /images/awards/nipun-teaching24.jpeg
+    alt: Excellence in Teaching Award 1
+  - src: /images/awards/nipun-teaching24-2.jpeg
+    alt: Excellence in Teaching Award 2
 - when: 2025-01
   type: award
-  text: Shataxi Dubey wins <a href="/awards.html#2025" target="_blank">Third Prize in Simply Speaking 4.0 Competition</a> organized by Leadership Development Initiative, IITGN!
+  text: Shataxi Dubey wins <b>Third Prize in Simply Speaking 4.0 Competition</b> organized by Leadership Development Initiative, IITGN!
+  note: Organized by Leadership Development Initiative, IITGN
+  photos:
+  - src: /images/awards/shataxi-ldi.png
+    alt: Shataxi LDI Award
 - when: 2025-01
   type: award
-  text: Shrimay Shah and Dhruv Gupta win <a href="/awards.html#2025" target="_blank">Third Prize in Undergraduate Research Showcase</a> for Brick Kilns Detection project!
+  text: Shrimay Shah and Dhruv Gupta win <b>Third Prize in Undergraduate Research Showcase</b> for Brick Kilns Detection project!
+  note: 'Project: "Brick Kilns Detection and Compliance Study" (guided by Prof. Nipun Batra)'
 - when: 2025-01
   type: people
   text: Tanu and Meenakshi join Sustainability Lab as Junior Research Fellows. Welcome!
 - when: 2025-01
   type: people
   text: Dr. Rishiraj Adhikary successfully defends his PhD thesis. Congratulations!
+- when: 2024-12
+  type: media
+  text: <b>VayuBuddy</b>, our LLM-powered air-quality chatbot, in the news.
+  photos:
+  - src: /images/media/VayuBuddy_cover_padded.png
+    alt: VayuBuddy - LLM-powered Air Quality Chatbot
+  press:
+  - label: Indian Express
+    url: https://epaper.indianexpress.com/3953344/Ahmedabad/December-17-2024#page/3/2
+  - label: Ahmedabad Mirror
+    url: https://epaper.ahmedabadmirror.com/3953285/Ahmedabad-Mirror/Dec-17-2024#page/5/2
+  - label: Chitralekha
+    url: https://chitralekha.com/news/vayubuddy-empowering-communities-to-breathe-cleaner-air/
+  - label: Divya Bhaskar
+    url: https://www.divyabhaskar.co.in/epaper/detail-page/ahmedabad-city-bhaskar/44/2024-12-17
+  links:
+  - label: Paper
+    url: https://arxiv.org/abs/2411.12760
 - when: 2024-11
   type: award
   text: Prof. Nipun Batra promoted to Associate Professor at IIT Gandhinagar!
 - when: 2024-08
   type: award
   text: Devodita wins the Bhalodia-Khetan Summer Research Excellence Award for ML sustainability project!
+  note: 'Project: "ML for Sustainability: Satellite Data Preprocessing for Detecting Pollution Sources Using Computer Vision" ₹50,000 cash prize and Certificate of Excellence'
+  photos:
+  - src: /images/awards/devodita-1.png
+    alt: Devodita Award 1
+  - src: /images/awards/devodita-3.png
+    alt: Devodita Award 2
 - when: 2024-07
   type: talk
   text: Talk on "Smart Health Sensing for Sustainable Future" at <a href="https://www.pdpu.ac.in" target="_blank">PDEU</a>
@@ -82,30 +166,89 @@
 - when: 2024-06
   type: award
   text: Zeel wins the prestigious Microsoft Research India PhD Award!
+  links:
+  - label: Details
+    url: https://www.microsoft.com/en-us/research/lab/microsoft-research-india/
 - when: 2024-06
   type: people
   text: Ayush and Suraj successfully defend their Masters thesis!
 - when: 2024-04
   type: award
   text: Rishiraj selected for the prestigious <a href="https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html" target="_blank">Heidelberg Laureate Forum</a>!
+  note: One of only 200 individuals worldwide selected to meet laureates from various fields, including Turing Award winners
+  photos:
+  - src: /images/awards/rishiraj-hlf.jpg
+    alt: Rishiraj at HLF Poster Presentation
+  links:
+  - label: Details
+    url: https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024.html
 - when: 2024-01
   type: paper
   text: '"JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery" accepted at <a href="https://dl.acm.org/toc/imwut/2023/7/4" target="_blank">IMWUT 2024</a>'
+  photos:
+  - src: /images/media/JoulesEye_Hackster.io.png
+    alt: JoulesEye - Thermal Imaging for Fitness
+  press:
+  - label: Hackster.io
+    url: https://www.hackster.io/news/your-wearable-is-lying-to-you-28f2e5f56338
+  - label: Indian Express
+    url: https://indianexpress.com/article/cities/ahmedabad/research-scholar-at-iitgn-develops-device-to-overcome-fitness-monitoring-limitations-9180741/
+  - label: CMU News
+    url: https://www.cs.cmu.edu/news/2024/jouleseye
+  - label: ZME Science
+    url: https://www.zmescience.com/science/news-science/smartwatch-thermal-camera-calories/
+  - label: TechXplore
+    url: https://techxplore.com/news/2024-04-thermal-camera-calorie.html
+  - label: EurekaAlert
+    url: https://www.eurekalert.org/news-releases/1040652
 - when: 2024-01
   type: people
   text: Shataxi, Prince and Poornima join the lab. Welcome!
 - when: 2023-12
   type: paper
   text: '"AirDelhi: Fine-Grained Spatio-Temporal PM Dataset" poster at <a href="https://neurips.cc/virtual/2023/poster/73476" target="_blank">NeurIPS 2023</a>'
+- when: 2023-11
+  type: award
+  text: Prof. Nipun Batra receives the <b>Young Alumni Award</b> from IIIT Delhi.
+  photos:
+  - src: /images/awards/nipun-ya1.jpeg
+    alt: Young Alumni Award 1
+  - src: /images/awards/nipun-ya2.jpeg
+    alt: Young Alumni Award 2
+  - src: /images/awards/nipun-ya3.jpeg
+    alt: Young Alumni Award 3
+  links:
+  - label: Link
+    url: https://x.com/nipun_batra/status/1702672278436135241
 - when: 2023-10
   type: paper
   text: '"Scalable Identification of Brick Kilns with Active Learning" at <a href="https://neurips.cc/virtual/2023/78770" target="_blank">NeurIPS 2023</a> workshop'
+- when: 2023-10
+  type: award
+  text: Rishiraj Adhikary is a finalist for the <b>UbiComp Gaetano Borriello Outstanding Student Award</b>.
+  photos:
+  - src: /images/media/GaetanoAward.png
+    alt: UbiComp Gaetano Borriello Award finalists
+  - src: /images/awards/rishiraj-ubicomp.JPG
+    alt: Rishiraj receiving UbiComp certificate
+  links:
+  - label: Details
+    url: https://ubicomp.org/sc/awards.html
 - when: 2023-09
   type: paper
   text: '"Fine-Grained Spatio-Temporal PM Dataset From Delhi" at <a href="https://papers.nips.cc/paper_files/paper/2023/hash/ee799aff607fcf39c01df6391e96f92c-Abstract-Datasets_and_Benchmarks.html" target="_blank">NeurIPS 2023</a> Datasets Track'
 - when: 2023-09
   type: paper
   text: '"Conformal Prediction: A Visual Introduction" at <a href="https://visxai.io/2023" target="_blank">VisXAI 23</a>'
+- when: 2023-07
+  type: award
+  text: Ankita Jain receives the <b>Gold Medal for Outstanding Research</b> and the <b>President's Gold Medal (MTech)</b> at the IITGN Convocation 2023.
+  photos:
+  - src: /images/awards/ankita-gm-2-3.png
+    alt: Ankita Gold Medal
+  links:
+  - label: Link
+    url: https://iitgn.ac.in/convocation/archives/2023/
 - when: 2023-06
   type: people
   text: Khush and Rishabh join the lab. Welcome!
@@ -115,6 +258,12 @@
 - when: 2023-01
   type: people
   text: Ayush and Suraj join the lab. Welcome!
+- when: '2023'
+  type: event
+  text: 'Co-organised <b>MEDFUSE</b>: Medicine, Engineering and Data Fusion for Health.'
+  photos:
+  - src: /images/events/MEDFUSE_NEW.png
+    alt: MEDFUSE poster
 - when: 2022-11
   type: paper
   text: '"I do not know": Quantifying Uncertainty in NN for NILM at <a href="https://dl.acm.org/doi/proceedings/10.1145/3563357" target="_blank">BuildSys 2022</a>'
@@ -127,6 +276,14 @@
 - when: 2022-10
   type: paper
   text: '"SpiroMask: Measuring Lung Function Using Consumer-Grade Masks" at <a href="https://dl.acm.org/toc/health/2023/4/1" target="_blank">ACM HEALTH</a>'
+  photos:
+  - src: /images/media/spiromask-news-1.jpeg
+    alt: SpiroMask - Smart Mask for Lung Health
+  press:
+  - label: Ahmedabad Mirror
+    url: https://www.ahmedabadmirror.com/iit-gn-researchers-devise-mask-to-measure-lung-health/81846808.html
+  - label: EdgeImpulse
+    url: https://www.edgeimpulse.com/blog/just-take-a-deep-breath/
 - when: 2022-09
   type: paper
   text: '"Continuous Respiration Rate Detection While Walking" at <a href="https://dl.acm.org/doi/proceedings/10.1145/3544793" target="_blank">UbiComp 2022</a>'
@@ -136,6 +293,10 @@
 - when: 2022-05
   type: award
   text: Zeel selected as Google Summer of Code contributor at TensorFlow with <a href="https://www.cs.ubc.ca/~murphyk/" target="_blank">Dr. Kevin P. Murphy</a>!
+  note: At TensorFlow under mentorship of Kevin P. Murphy --- For recent award announcements and lab news, visit our [News page](news.qmd).
+  links:
+  - label: Details
+    url: https://www.tensorflow.org/
 - when: 2022-04
   type: paper
   text: '"Samachar: Print News Media on Air Pollution in India" at <a href="https://dl.acm.org/doi/10.1145/3530190.3534812" target="_blank">ACM COMPASS 22</a>'
@@ -145,6 +306,12 @@
 - when: 2022-01
   type: people
   text: Ankita joins the lab. Welcome!
+- when: '2022'
+  type: award
+  text: 'Zeel B Patel contributes as a co-author to Kevin P. Murphy''s book <i>Probabilistic Machine Learning: Advanced Topics</i>.'
+  links:
+  - label: Link
+    url: https://probml.github.io/pml-book/book2.html
 - when: 2021-12
   type: paper
   text: '"Accurate and Scalable Non-Stationary GPs" at <a href="https://aaai-2022.virtualchair.net/poster_aisi11178" target="_blank">AAAI 2022</a>'
@@ -154,9 +321,30 @@
 - when: 2021-11
   type: award
   text: Rishiraj wins <a href="https://www.usief.org.in/" target="_blank">Fulbright-Nehru Doctoral Research Fellowship</a>!
+  note: USIEF Fellowship
+  links:
+  - label: Details
+    url: https://www.usief.org.in/
+  photos:
+  - src: /images/media/educationtimes-fulbright.png
+    alt: Fulbright-Nehru Fellowship
+  press:
+  - label: Education Times
+    url: https://www.educationtimes.com/article/scholarships/91766182/cross-domain-knowledge-helped-phd-student-get-fullbright-nehru-doctoral-research-fellowship
+  - label: Indian Express
+    url: https://indianexpress.com/article/cities/ahmedabad/iitgn-phd-scholar-bags-fulbright-nehru-fellowship-7928541/
+  - label: Ahmedabad Mirror
+    url: https://ahmedabadmirror.com/iitgns-phd-scholar-awarded-fellowship/81833150.html
+  - label: India Education Diary
+    url: https://indiaeducationdiary.in/iit-gandhinagar-phd-scholar-bags-the-prestigious-fulbright-nehru-doctoral-research-fellowship-2022-23/
+  - label: Careers 360
+    url: https://news.careers360.com/iit-gandhinagar-computer-science-engineering-phd-scholar-wins-fulbright-nehru-doctoral-research-fellowship-2022-23
 - when: 2021-10
   type: award
   text: Rishiraj wins <a href="https://www.pmrf.in/" target="_blank">Prime Minister Research Fellowship</a>!
+  links:
+  - label: Details
+    url: https://www.pmrf.in/
 - when: 2021-09
   type: paper
   text: Neural network approaches to NILMTK-contrib at <a href="https://dl.acm.org/doi/10.1145/3486611.3486652" target="_blank">BuildSys 2021</a>

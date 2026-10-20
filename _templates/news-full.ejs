@@ -1,14 +1,20 @@
 <%
 const MON = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const LABEL = {paper:'Paper', award:'Award', grant:'Grant', people:'People', talk:'Talk', event:'Event', media:'Media', other:'News'};
-const full = true;
 const unesc = s => String(s).replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&amp;/g,"&");
-let year = null;
+let year = null; let k = 0;
 %>
 <div class="newsfeed">
 <% for (const n of items) {
   const w = String(n.when); const y = w.slice(0,4); const m = w.length > 4 ? MON[parseInt(w.slice(5,7))] : '';
-  if (full && y !== year) { year = y; %><div class="year" data-year="<%= y %>"><%= y %></div><% } %>
-<div class="list-row" data-type="<%= n.type %>"><span class="d"><%= full ? (m || '—') : (m ? m + ' ' + y : y) %></span><span><span class="label"><%= LABEL[n.type] || n.type %></span><%= unesc(n.text) %><% if (full && n.image) { %><img class="thumb" src="<%= n.image %>" alt="" loading="lazy"><% } %></span></div>
+  const types = [n.type].concat((n.press && n.press.length) ? ['media'] : []).join(' ');
+  if (y !== year) { year = y; %><div class="year" id="y<%= y %>" data-year="<%= y %>"><%= y %></div><% } k++; %>
+<div class="list-row news-row" data-type="<%= types %>"><span class="d"><%= m || '—' %></span><div class="nbody">
+<p class="ntext"><span class="label"><%= LABEL[n.type] || n.type %></span><%= unesc(n.text) %></p>
+<% if (n.note) { %><p class="nnote"><%= unesc(String(n.note).replace(/\*/g,'&#42;')) %></p><% } %>
+<% if (n.photos && n.photos.length) { %><div class="nphotos"><% for (const p of n.photos) { %><a href="<%= p.src %>" class="lightbox" data-gallery="news-<%= k %>" title="<%= p.alt || '' %>"><img src="<%= p.src %>" alt="<%= p.alt || '' %>" loading="lazy"></a><% } %></div><% } %>
+<% if (n.press && n.press.length) { %><p class="npress"><span>In the press:</span> <% for (const l of n.press) { %><a href="<%= l.url %>"><%= l.label %></a><% } %></p><% } %>
+<% if (n.links && n.links.length) { %><p class="nlinks"><% for (const l of n.links) { %><a href="<%= l.url %>"><%= l.label %></a><% } %></p><% } %>
+</div></div>
 <% } %>
 </div>

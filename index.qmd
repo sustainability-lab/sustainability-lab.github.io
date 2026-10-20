@@ -124,10 +124,10 @@ listing:
     <span>Our research, people and openings on two pages. PDF.</span>
   </a>
   <div class="side-links">
-    <a href="awards.html">Awards &amp; recognition</a>
-    <a href="media.html">Media coverage</a>
+    <a href="news.html?type=award">Awards &amp; recognition</a>
+    <a href="news.html?type=media">Media coverage</a>
     <a href="memories.html">Photos</a>
-    <a href="events/index.html">Events</a>
+    <a href="news.html?type=event">Events</a>
   </div>
 </div>
 ```

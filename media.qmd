@@ -1,38 +1,12 @@
 ---
 title: ""
-pagetitle: "Media Coverage · Sustainability Lab"
-description-meta: "Press and media coverage of Sustainability Lab research at IIT Gandhinagar — AI for air quality, energy, and health sensing."
+pagetitle: "Media coverage · Sustainability Lab"
 page-layout: custom
-listing:
-  - id: media-list
-    contents: data/media.yml
-    template: _templates/media.ejs
-    sort: false
+description-meta: "Media coverage from the Sustainability Lab, IIT Gandhinagar, now part of the News page."
 ---
 
-::: {.frame .page-main}
-
 ```{=html}
-<section>
-  <h1 class="page">Media coverage</h1>
-  <p class="lede" style="margin-top:12px">Our research in the press. For media enquiries, write to <a href="mailto:nipun.batra@iitgn.ac.in">nipun.batra@iitgn.ac.in</a>.</p>
-</section>
-<section>
+<meta http-equiv="refresh" content="0; url=news.html?type=media">
+<script>location.replace("news.html?type=media" + location.hash);</script>
+<div class="frame page-main"><p>Media coverage now live on the <a href="news.html?type=media">News page</a>.</p></div>
 ```
-
-::: {#media-list}
-:::
-
-```{=html}
-</section>
-<section>
-  <h2>Talks</h2>
-  <div class="grid g2">
-    <a class="card-link" href="https://www.youtube.com/watch?v=-pyj8cTdUK4"><img class="photo" style="aspect-ratio:16/9" src="https://nipunbatra.github.io/images/tedx-conversation.jpg" alt="" loading="lazy"><b>TEDxConversations, IIT Gandhinagar · Season 2</b></a>
-    <a class="card-link" href="https://youtu.be/_pCP6ZvH1VM"><img class="photo" style="aspect-ratio:16/9" src="https://nipunbatra.github.io/images/iiitd-podcast.jpg" alt="" loading="lazy"><b>IIIT-Delhi AlumX Ep. 05 — from IIIT-Delhi to AI &amp; sustainability</b></a>
-  </div>
-  <p style="margin-top:14px"><a class="arrow" href="https://www.youtube.com/@SustainabilityLab-SL">Lab YouTube channel</a></p>
-</section>
-```
-
-:::

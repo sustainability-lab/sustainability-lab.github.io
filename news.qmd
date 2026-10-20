@@ -1,8 +1,9 @@
 ---
 title: ""
 pagetitle: "News · Sustainability Lab"
-description-meta: "News from the Sustainability Lab, IIT Gandhinagar: papers, awards, grants, talks, people and events."
+description-meta: "News from the Sustainability Lab, IIT Gandhinagar: papers, awards, grants, talks, events, people and press coverage."
 page-layout: custom
+lightbox: true
 listing:
   - id: news-all
     contents: data/news.yml
@@ -17,31 +18,36 @@ listing:
   <div class="grid g2" style="align-items:center;gap:44px">
     <div>
       <h1 class="page">News</h1>
-      <p class="lede" style="margin-top:12px">Papers, awards, grants, talks and people — in one place.</p>
-      <p class="small"><a href="awards.html">Awards &amp; photos</a> · <a href="media.html">Media coverage</a> · <a href="events/index.html">Events</a></p>
+      <p class="lede" style="margin-top:12px">Papers, awards, grants, talks, events and press, newest first, all in one place. Click a photo to enlarge it.</p>
+      <p class="small"><a href="memories.html">Photos</a> · <a href="experiences.html">Student stories</a></p>
     </div>
     <img class="ill" src="images/illustrations/talk.webp" alt="">
   </div>
-  <div class="chips" id="newschips"><button class="chip on" data-c="all">All</button><button class="chip" data-c="paper">Papers</button><button class="chip" data-c="award">Awards</button><button class="chip" data-c="grant">Grants</button><button class="chip" data-c="people">People</button><button class="chip" data-c="talk">Talks</button><button class="chip" data-c="event">Events</button></div>
+  <div class="chips" id="newschips"><button class="chip on" data-c="all">All</button><button class="chip" data-c="paper">Papers</button><button class="chip" data-c="award">Awards</button><button class="chip" data-c="media">Media</button><button class="chip" data-c="grant">Grants</button><button class="chip" data-c="people">People</button><button class="chip" data-c="talk">Talks</button><button class="chip" data-c="event">Events</button></div>
 ```
 
 ::: {#news-all}
 :::
 
 ```{=html}
-  <p class="small muted" style="margin-top:18px">Adding news? Edit <code>data/news.yml</code>.</p>
+  <p class="small muted" style="margin-top:18px">Adding news, an award or press coverage? One entry in <code>data/news.yml</code>.</p>
 </section>
 <script>
-document.querySelectorAll('#newschips .chip').forEach(c => c.onclick = () => {
-  document.querySelectorAll('#newschips .chip').forEach(x => x.classList.toggle('on', x === c));
-  const rows = document.querySelectorAll('.newsfeed .list-row');
-  rows.forEach(r => r.style.display = (c.dataset.c === 'all' || r.dataset.type === c.dataset.c) ? '' : 'none');
-  document.querySelectorAll('.newsfeed .year').forEach(y => {
-    let el = y.nextElementSibling, any = false;
-    while (el && !el.classList.contains('year')) { if (el.style.display !== 'none') any = true; el = el.nextElementSibling; }
-    y.style.display = any ? '' : 'none';
-  });
-});
+(function () {
+  const chips = document.querySelectorAll('#newschips .chip');
+  function apply(c) {
+    chips.forEach(x => x.classList.toggle('on', x.dataset.c === c));
+    document.querySelectorAll('.newsfeed .list-row').forEach(r => r.style.display = (c === 'all' || r.dataset.type.split(' ').includes(c)) ? '' : 'none');
+    document.querySelectorAll('.newsfeed .year').forEach(y => {
+      let el = y.nextElementSibling, any = false;
+      while (el && !el.classList.contains('year')) { if (el.style.display !== 'none') any = true; el = el.nextElementSibling; }
+      y.style.display = any ? '' : 'none';
+    });
+  }
+  chips.forEach(c => c.onclick = () => { apply(c.dataset.c); history.replaceState(null, '', c.dataset.c === 'all' ? 'news.html' : 'news.html?type=' + c.dataset.c); });
+  const t = new URLSearchParams(location.search).get('type');
+  if (t && [...chips].some(c => c.dataset.c === t)) apply(t);
+})();
 </script>
 ```
 

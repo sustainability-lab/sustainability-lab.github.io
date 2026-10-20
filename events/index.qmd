@@ -1,30 +1,12 @@
 ---
 title: ""
 pagetitle: "Events · Sustainability Lab"
-description-meta: "Events organized or co-organized by the Sustainability Lab, IIT Gandhinagar — including the ACM India Summer School on AI for Social Good and MEDFUSE."
 page-layout: custom
-lightbox: true
+description-meta: "Events from the Sustainability Lab, IIT Gandhinagar, now part of the News page."
 ---
 
-::: {.frame .page-main}
-
 ```{=html}
-<section>
-  <h1 class="page">Events</h1>
-  <p class="lede" style="margin-top:12px">Schools and workshops the lab has organised or co-organised.</p>
-</section>
-<section>
-  <div class="event-row">
-    <a href="../images/events/acm-summer-2025.png" class="lightbox"><img src="../images/events/acm-summer-2025.png" alt="ACM India Summer School 2025 poster" loading="lazy"></a>
-    <div><div class="kicker">June 2–13, 2025 · IIT Gandhinagar</div><h2>ACM India Summer School on AI for Social Good</h2>
-      <p class="muted">Organised by the Sustainability Lab at IIT Gandhinagar.</p>
-      <p><a class="arrow" href="https://sustainability-lab.github.io/acm-summer-2025/">Programme, speakers and materials</a></p></div>
-  </div>
-  <div class="event-row">
-    <a href="../images/events/MEDFUSE_NEW.png" class="lightbox"><img src="../images/events/MEDFUSE_NEW.png" alt="MEDFUSE poster" loading="lazy"></a>
-    <div><div class="kicker">2023</div><h2>MEDFUSE: Medicine, Engineering and Data Fusion for Health</h2></div>
-  </div>
-</section>
+<meta http-equiv="refresh" content="0; url=../news.html?type=event">
+<script>location.replace("../news.html?type=event" + location.hash);</script>
+<div class="frame page-main"><p>Events now live on the <a href="../news.html?type=event">News page</a>.</p></div>
 ```
-
-:::

@@ -1,59 +1,12 @@
 ---
 title: ""
-pagetitle: "Awards & Recognition · Sustainability Lab"
-description-meta: "Awards and recognition earned by the Sustainability Lab, IIT Gandhinagar — including the ACM e-Energy Test-of-Time Award, ACM SIGEnergy Rising Star, and the ACM BuildSys 2026 Best Paper Runner-Up."
+pagetitle: "Awards · Sustainability Lab"
 page-layout: custom
-lightbox: true
-listing:
-  - id: awards-list
-    contents: data/awards.yml
-    template: _templates/awards.ejs
-    include: {category: Awards}
-    sort: false
-  - id: fellowships-list
-    contents: data/awards.yml
-    template: _templates/awards.ejs
-    include: {category: Fellowships}
-    sort: false
-  - id: recognition-list
-    contents: data/awards.yml
-    template: _templates/awards.ejs
-    include: {category: Recognition}
-    sort: false
+description-meta: "Awards from the Sustainability Lab, IIT Gandhinagar, now part of the News page."
 ---
 
-::: {.frame .page-main}
-
 ```{=html}
-<section>
-  <h1 class="page">Awards &amp; recognition</h1>
-  <p class="lede" style="margin-top:12px">Awards, fellowships and honours for the lab's students and work. Click a photo to enlarge it.</p>
-  <div class="jump"><a href="#awards">Awards</a><a href="#fellowships">Fellowships</a><a href="#recognition">Other recognition</a><a href="news.html">News</a></div>
-</section>
-<section id="awards"><h2>Awards</h2>
+<meta http-equiv="refresh" content="0; url=news.html?type=award">
+<script>location.replace("news.html?type=award" + location.hash);</script>
+<div class="frame page-main"><p>Awards now live on the <a href="news.html?type=award">News page</a>.</p></div>
 ```
-
-::: {#awards-list}
-:::
-
-```{=html}
-</section>
-<section id="fellowships"><h2>Fellowships</h2>
-```
-
-::: {#fellowships-list}
-:::
-
-```{=html}
-</section>
-<section id="recognition"><h2>Other recognition</h2>
-```
-
-::: {#recognition-list}
-:::
-
-```{=html}
-</section>
-```
-
-:::
