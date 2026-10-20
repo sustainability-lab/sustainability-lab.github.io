@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Press and media coverage of Sustainability Lab research at IIT Gandhinagar — AI for air quality, energy, and health sensing.">
+<meta name="description" content="Media coverage from the Sustainability Lab, IIT Gandhinagar, now part of the News page.">
 
-<title>Media Coverage · Sustainability Lab</title>
+<title>Media coverage · Sustainability Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,9 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href=".//images/favicon-sl.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<link href=".//images/brand/favicon.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -72,77 +70,27 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-media-list .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-image','listing-text','listing-links','listing-featured',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: ["listing-title","listing-image","listing-text","listing-links","listing-featured"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-media-list'] = new List('listing-media-list', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
+<link rel="icon" type="image/png" sizes="32x32" href="./images/brand/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./images/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#fffefa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1e1c" media="(prefers-color-scheme: dark)">
 <script>
 // Follow the OS light/dark setting until someone uses the switch (see theme/toggle.html).
 try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quarto-color-scheme", window.matchMedia("(prefers-color-scheme: dark)").matches ? "alternate" : "default"); } catch (e) {}
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<meta property="og:title" content="Media Coverage · Sustainability Lab">
-<meta property="og:image" content="https://sustainability-lab.github.io/images/media/aaai_media_coverage.jpg">
+<meta property="og:title" content="Media coverage · Sustainability Lab">
+<meta property="og:image" content="https://sustainability-lab.github.io/images/logo.png">
 <meta property="og:site_name" content="Sustainability Lab">
-<meta name="twitter:title" content="Media Coverage · Sustainability Lab">
-<meta name="twitter:image" content="https://sustainability-lab.github.io/images/media/aaai_media_coverage.jpg">
+<meta property="og:image:height" content="612">
+<meta property="og:image:width" content="2000">
+<meta name="twitter:title" content="Media coverage · Sustainability Lab">
+<meta name="twitter:image" content="https://sustainability-lab.github.io/images/logo.png">
 <meta name="twitter:creator" content="@nipun_batra">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="612">
+<meta name="twitter:image-width" content="2000">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -203,111 +151,9 @@ window.Quarto = {
 
 
 
-<div class="frame page-main">
-<section>
-  <h1 class="page">Media coverage</h1>
-  <p class="lede" style="margin-top:12px">Our research in the press. For media enquiries, write to <a href="mailto:nipun.batra@iitgn.ac.in">nipun.batra@iitgn.ac.in</a>.</p>
-</section>
-<section>
-<div id="listing-media-list" class="quarto-listing quarto-listing-container-custom">
-<div class="media-list">
-<div class="media-row">
-<img src="./images/media/aaai_media_coverage.jpg" alt="Fast and Differentiable Sensor Placement" loading="lazy">
-<div>
-<h3>
-Fast and Differentiable Sensor Placement
-</h3>
-<p class="muted">
-Our <a href="./papers/2026/aaai_2026_air_active_gradient_camera_ready.pdf">AAAI 2026 paper</a> work on fast, differentiable sensor placement has gained wide attention for its ability to scale air-quality monitoring and support fairer, data-driven deployment across regions.
-</p>
-<p class="small press">
-<a href="https://www.youtube.com/watch?v=QOeNE8YOTeU&amp;t=405s">DD News</a><a href="https://theliveahmedabad.com/2025/11/04/iit-gandhinagar-ai-pinpoints-optimal-locations-for-air-quality-sensors-orders-of-magnitude-faster/">The Live Ahmedabad</a>
-</p>
-</div>
-</div>
-<div class="media-row">
-<img src="./images/media/VayuBuddy_cover_padded.png" alt="VayuBuddy - LLM-powered Air Quality Chatbot" loading="lazy">
-<div>
-<h3>
-VayuBuddy - LLM-powered Air Quality Chatbot
-</h3>
-<p class="muted">
-<a href="https://arxiv.org/abs/2411.12760">VayuBuddy</a> democratizes air quality insights for cleaner air.
-</p>
-<p class="small press">
-<a href="https://epaper.indianexpress.com/3953344/Ahmedabad/December-17-2024#page/3/2">Indian Express</a><a href="https://epaper.ahmedabadmirror.com/3953285/Ahmedabad-Mirror/Dec-17-2024#page/5/2">Ahmedabad Mirror</a><a href="https://chitralekha.com/news/vayubuddy-empowering-communities-to-breathe-cleaner-air/">Chitralekha</a><a href="https://www.divyabhaskar.co.in/epaper/detail-page/ahmedabad-city-bhaskar/44/2024-12-17">Divya Bhaskar</a>
-</p>
-</div>
-</div>
-<div class="media-row">
-<img src="./images/media/JoulesEye_Hackster.io.png" alt="JoulesEye - Thermal Imaging for Fitness" loading="lazy">
-<div>
-<h3>
-JoulesEye - Thermal Imaging for Fitness
-</h3>
-<p class="muted">
-<a href="https://dl.acm.org/doi/abs/10.1145/3631422">JoulesEye</a> revolutionizes fitness tracking (with <a href="http://www.mayankgoel.com/">Prof.&nbsp;Mayank Goel</a>, CMU).
-</p>
-<p class="small press">
-<a href="https://www.hackster.io/news/your-wearable-is-lying-to-you-28f2e5f56338">Hackster.io</a><a href="https://indianexpress.com/article/cities/ahmedabad/research-scholar-at-iitgn-develops-device-to-overcome-fitness-monitoring-limitations-9180741/">Indian Express</a><a href="https://www.cs.cmu.edu/news/2024/jouleseye">CMU News</a><a href="https://www.zmescience.com/science/news-science/smartwatch-thermal-camera-calories/">ZME Science</a><a href="https://techxplore.com/news/2024-04-thermal-camera-calorie.html">TechXplore</a><a href="https://www.eurekalert.org/news-releases/1040652">EurekaAlert</a>
-</p>
-</div>
-</div>
-<div class="media-row">
-<img src="./images/media/GaetanoAward.png" alt="UbiComp Gaetano Borriello Award Finalist" loading="lazy">
-<div>
-<h3>
-UbiComp Gaetano Borriello Award Finalist
-</h3>
-<p class="muted">
-<a href="https://rishi-a.github.io">Rishiraj Adhikary</a> - finalist for <a href="https://ubicomp.org/sc/awards.html">Outstanding Student Award</a> 2023.
-</p>
-</div>
-</div>
-<div class="media-row">
-<img src="./images/media/educationtimes-fulbright.png" alt="Fulbright-Nehru Fellowship" loading="lazy">
-<div>
-<h3>
-Fulbright-Nehru Fellowship
-</h3>
-<p class="muted">
-<a href="https://rishi-a.github.io">Rishiraj Adhikary</a> - 9-month research at CMU with <a href="http://www.mayankgoel.com/">Prof.&nbsp;Mayank Goel</a>.
-</p>
-<p class="small press">
-<a href="https://www.educationtimes.com/article/scholarships/91766182/cross-domain-knowledge-helped-phd-student-get-fullbright-nehru-doctoral-research-fellowship">Education Times</a><a href="https://indianexpress.com/article/cities/ahmedabad/iitgn-phd-scholar-bags-fulbright-nehru-fellowship-7928541/">Indian Express</a><a href="https://ahmedabadmirror.com/iitgns-phd-scholar-awarded-fellowship/81833150.html">Ahmedabad Mirror</a><a href="https://indiaeducationdiary.in/iit-gandhinagar-phd-scholar-bags-the-prestigious-fulbright-nehru-doctoral-research-fellowship-2022-23/">India Education Diary</a><a href="https://news.careers360.com/iit-gandhinagar-computer-science-engineering-phd-scholar-wins-fulbright-nehru-doctoral-research-fellowship-2022-23">Careers 360</a>
-</p>
-</div>
-</div>
-<div class="media-row">
-<img src="./images/media/spiromask-news-1.jpeg" alt="SpiroMask - Smart Mask for Lung Health" loading="lazy">
-<div>
-<h3>
-SpiroMask - Smart Mask for Lung Health
-</h3>
-<p class="muted">
-<a href="https://dl.acm.org/doi/10.1145/3570167">SpiroMask</a> enables lung health monitoring using consumer-grade masks.
-</p>
-<p class="small press">
-<a href="https://www.ahmedabadmirror.com/iit-gn-researchers-devise-mask-to-measure-lung-health/81846808.html">Ahmedabad Mirror</a><a href="https://www.edgeimpulse.com/blog/just-take-a-deep-breath/">EdgeImpulse</a>
-</p>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section>
-<section>
-  <h2>Talks</h2>
-  <div class="grid g2">
-    <a class="card-link" href="https://www.youtube.com/watch?v=-pyj8cTdUK4"><img class="photo" style="aspect-ratio:16/9" src="https://nipunbatra.github.io/images/tedx-conversation.jpg" alt="" loading="lazy"><b>TEDxConversations, IIT Gandhinagar · Season 2</b></a>
-    <a class="card-link" href="https://youtu.be/_pCP6ZvH1VM"><img class="photo" style="aspect-ratio:16/9" src="https://nipunbatra.github.io/images/iiitd-podcast.jpg" alt="" loading="lazy"><b>IIIT-Delhi AlumX Ep. 05 — from IIIT-Delhi to AI &amp; sustainability</b></a>
-  </div>
-  <p style="margin-top:14px"><a class="arrow" href="https://www.youtube.com/@SustainabilityLab-SL">Lab YouTube channel</a></p>
-</section>
-</div>
-
+<meta http-equiv="refresh" content="0; url=news.html?type=media">
+<script>location.replace("news.html?type=media" + location.hash);</script>
+<div class="frame page-main"><p>Media coverage now live on the <a href="news.html?type=media">News page</a>.</p></div>
 
 
 

@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href=".//images/favicon-sl.svg" rel="icon" type="image/svg+xml">
+<link href=".//images/brand/favicon.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -82,10 +82,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-when','listing-type','listing-text',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-when','listing-type','listing-text','listing-note','listing-photos','listing-links','listing-press',{ data: ['index'] },{ data: ['categories'] }],
       page: 25,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-when","listing-type","listing-text"],
+      searchColumns: ["listing-when","listing-type","listing-text","listing-note","listing-photos","listing-links","listing-press"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -186,6 +186,10 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<link rel="icon" type="image/png" sizes="32x32" href="./images/brand/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./images/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#fffefa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1e1c" media="(prefers-color-scheme: dark)">
 <script>
 // Follow the OS light/dark setting until someone uses the switch (see theme/toggle.html).
 try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quarto-color-scheme", window.matchMedia("(prefers-color-scheme: dark)").matches ? "alternate" : "default"); } catch (e) {}
@@ -423,7 +427,7 @@ No matching items
 <span class="d">Jun 2026</span><span><span class="label">Paper</span>Paper accepted (oral) at the MILETS Workshop @ ACM KDD 2026: Feature-Informed Self-Supervised Learning for Time Series Understanding!</span>
 </div>
 <div class="list-row" data-type="award">
-<span class="d">Jun 2026</span><span><span class="label">Award</span><b>NILMBench2026</b> wins the <b>Best Paper Award — Runner-Up</b> at <a href="./awards.html#2026">BuildSys 2026</a> (ACM Sustainability Week, Banff, Canada)! Led by 2nd-year undergraduates Aayush Kuloor, Anurag Singh, and Harsh Dhru.</span>
+<span class="d">Jun 2026</span><span><span class="label">Award</span><b>NILMBench2026</b> wins the <b>Best Paper Award — Runner-Up</b> at <b>BuildSys 2026</b> (ACM Sustainability Week, Banff, Canada)! Led by 2nd-year undergraduates Aayush Kuloor, Anurag Singh, and Harsh Dhru.</span>
 </div>
 <div class="list-row" data-type="paper">
 <span class="d">May 2026</span><span><span class="label">Paper</span><b>ThermEval</b> accepted at <a href="./papers/index.html#2026">KDD 2026</a>! Benchmarking vision-language models on thermal imagery with Ayush Shrivastava, Kirtan Gangani, Laksh Jain, and Mayank Goel (CMU).</span>
@@ -444,10 +448,10 @@ No matching items
     <span>Our research, people and openings on two pages. PDF.</span>
   </a>
   <div class="side-links">
-    <a href="awards.html">Awards &amp; recognition</a>
-    <a href="media.html">Media coverage</a>
+    <a href="news.html?type=award">Awards &amp; recognition</a>
+    <a href="news.html?type=media">Media coverage</a>
     <a href="memories.html">Photos</a>
-    <a href="events/index.html">Events</a>
+    <a href="news.html?type=event">Events</a>
   </div>
 </div>
 </div>

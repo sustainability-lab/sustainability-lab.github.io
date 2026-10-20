@@ -23,10 +23,6 @@
     ]
   },
   {
-    "listing": "/awards.html",
-    "items": []
-  },
-  {
     "listing": "/join.html",
     "items": []
   },
@@ -75,10 +71,6 @@
       "/experiences/rithwik.html",
       "/experiences/gautam.html"
     ]
-  },
-  {
-    "listing": "/media.html",
-    "items": []
   },
   {
     "listing": "/papers/index.html",
