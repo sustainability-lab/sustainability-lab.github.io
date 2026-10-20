@@ -100,36 +100,20 @@ This page provides brand assets, templates, and resources for lab members and co
 
 ---
 
-### Favicon - "SL" Logo
+### Favicon (current, 2026)
 
-**Download**: [SVG](../images/favicon-sl.svg) | [PNG](../images/favicon-sl.png) | [PDF](../images/favicon-sl.pdf)
+![](../images/brand/favicon.svg){width="64"}
 
-Bold, readable "SL" favicon with brand gradient - perfect visibility at all sizes.
+The logo's sigmoid in white on a red square (`#b52d24`), drawn as shapes so it renders the same everywhere.
+
+**Download**: [SVG](../images/brand/favicon.svg) | [PNG 32](../images/brand/favicon-32.png) | [PNG 192](../images/brand/icon-192.png) | [PNG 512](../images/brand/icon-512.png) | [Apple touch icon 180](../images/brand/apple-touch-icon.png)
 
 <details>
-<summary>Show SVG code</summary>
+<summary>Previous "SL" favicon (retired)</summary>
 
-```svg
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <title>Sustainability Lab - SL Favicon</title>
-  <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#334155;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <circle cx="50" cy="50" r="48" fill="url(#bgGradient)" stroke="#ffffff" stroke-width="4"/>
-  <text x="28" y="68" font-family="Roboto, system-ui, sans-serif" font-size="42" font-weight="700" fill="#ffffff" text-anchor="middle">S</text>
-  <text x="72" y="68" font-family="Roboto, system-ui, sans-serif" font-size="42" font-weight="700" fill="#ffffff" text-anchor="middle">L</text>
-</svg>
-```
+[SVG](../images/favicon-sl.svg) | [PNG](../images/favicon-sl.png) | [PDF](../images/favicon-sl.pdf) | [16px SVG](../images/favicon-16.svg) | [32px SVG](../images/favicon-32.svg)
 
 </details>
-
-### Multiple Sizes Available:
-- **Standard**: [favicon-sl.svg](../images/favicon-sl.svg) (100x100)
-- **Small**: [favicon-16.svg](../images/favicon-16.svg) (16x16) 
-- **Medium**: [favicon-32.svg](../images/favicon-32.svg) (32x32)
 
 ---
 

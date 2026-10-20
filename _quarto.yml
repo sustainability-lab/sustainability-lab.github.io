@@ -10,7 +10,7 @@ website:
   title: "Sustainability Lab"
   site-url: https://sustainability-lab.github.io
   description: "AI-driven research for a sustainable future at IIT Gandhinagar, led by Prof. Nipun Batra. PhD, postdoc, and internship openings in AI for sustainability, health sensing, energy analytics, and environmental monitoring."
-  favicon: /images/favicon-sl.svg
+  favicon: /images/brand/favicon.svg
   image: /images/logo.png
   open-graph: true
   twitter-card:
@@ -61,6 +61,10 @@ format:
     include-after-body: theme/toggle.html
     include-in-header:
       text: |
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/favicon-32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/apple-touch-icon.png">
+        <meta name="theme-color" content="#fffefa" media="(prefers-color-scheme: light)">
+        <meta name="theme-color" content="#1b1e1c" media="(prefers-color-scheme: dark)">
         <script>
         // Follow the OS light/dark setting until someone uses the switch (see theme/toggle.html).
         try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quarto-color-scheme", window.matchMedia("(prefers-color-scheme: dark)").matches ? "alternate" : "default"); } catch (e) {}
