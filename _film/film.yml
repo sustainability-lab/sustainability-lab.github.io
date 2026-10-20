@@ -1,0 +1,153 @@
+# Lab intro film — curation only.
+#
+# Facts come from the site and are pulled in automatically each time the film is built:
+#   data/news.yml          → "This quarter" (items from the last `quarter_months` months)
+#   data/alumni.yml        → PhD graduates, alumni counts (PhD and MTech only)
+#   data/photos.yml        → Life in the lab (the `photos` list below picks which)
+#   data/publications.yml  → venues and figures for the selected-work wall
+#   _flyer/flyer.yml       → funders, join text, venue name aliases
+# This file holds the film's own words. Keep every line short: it is read in motion.
+# Rebuild:  make -C _film        (see _film/README.md)
+
+edition: October 2026          # shown in the corner of the last frame
+quarter_months: 4              # how far back "This quarter" looks
+url: sustainability-lab.github.io
+join_url: https://sustainability-lab.github.io/join.html
+music: score.mp3               # in _film/audio/; see README for how it was made
+
+# Opening: four words, four real signals drawn by one red line.
+hook:
+  - word: Air.
+    caption: "PM2.5 in Delhi, daily, 2017–2025 · CPCB"
+  - word: Land.
+    caption: "Brick kilns along the Indo-Gangetic Plain, by longitude · SentinelKilnDB"
+  - word: Breath.
+    caption: "Breathing seen by a thermal camera · illustrative"
+  - word: Power.
+    caption: "One Delhi home, one day · iAWE dataset"
+tagline: AI for a sustainable future.
+
+place:
+  kicker: IIT Gandhinagar · Gujarat, India
+  coords: "23.21° N   72.68° E"
+  statement: We build sensors, datasets and machine learning for clean air, Earth observation, health and energy.
+  coda: And we release them openly.
+
+# Four chapters in flyer order. Each beat is one idea on screen; `tag` is the paper or project behind it.
+chapters:
+  - key: air
+    name: Clean Air
+    headline: Most Indian cities have few air monitors.
+    beats:
+      - id: stations
+        title: "{stations} government monitors cover {cities} cities."
+        tag: CPCB continuous monitoring stations
+      - id: field
+        title: Our models fill the gaps, and pick where the next monitor should go.
+        tag: Gaussian processes · AAAI 2022 | Sensor placement · AAAI 2026
+      - id: airdelhi
+        title: Sensors on Delhi's buses map its air, street by street.
+        tag: AirDelhi · NeurIPS 2023 Datasets & Benchmarks
+      - id: vayuchat
+        title: Anyone can ask the data a question.
+        question: Which city had the worst air in December 2024?
+        tag: VayuChat · VayuBench · CODS 2025
+  - key: earth
+    name: Earth Observation
+    headline: Brick kilns are spread over areas too large to survey.
+    beats:
+      - id: kilns
+        title: So we find them from space.
+        text: "{kilns} kilns across five states of the Indo-Gangetic Plain."
+        tag: SentinelKilnDB
+      - id: sentinelkilndb
+        title: 62,671 hand-validated kilns in four countries.
+        text: Over 2.8 million km² of Sentinel-2 imagery.
+        tag: SentinelKilnDB · NeurIPS 2025 Datasets & Benchmarks
+      - id: policy
+        title: Then check each one against siting rules.
+        tag: Space to Policy · ACM JCSS 2025
+      - id: flowsat
+        title: And generate satellite images from metadata.
+        tag: FlowSat · BMVC 2026
+        new: true
+  - key: health
+    name: Health Sensing
+    headline: Measuring lung function or calories burned usually needs a clinic.
+    beats:
+      - id: jouleseye
+        title: A thermal camera on a phone reads your breathing.
+        text: 5.8% error in calorie estimates, against 37.6% for heart-rate smartwatches.
+        tag: JoulesEye · IMWUT 2024 · with Carnegie Mellon
+      - id: spiromask
+        title: A microphone inside an N95 mask measures lung function.
+        tag: SpiroMask · ACM Transactions on Computing for Healthcare
+      - id: thermeval
+        title: We test where vision-language models fail on thermal images.
+        tag: ThermEval · KDD 2026
+      - id: apneaeye
+        title: And screen for sleep apnea without touching the sleeper.
+        tag: ApneaEye · patent filed 2025
+  - key: energy
+    name: Energy
+    headline: A bill says how much a home used, not what used it.
+    beats:
+      - id: nilm
+        title: We split one meter's signal into appliances.
+        text: "One Delhi home, one day, one meter."
+        tag: Energy disaggregation · iAWE dataset
+      - id: nilmtk
+        title: NILMTK, the open-source toolkit the field has used since 2014.
+        tag: Test-of-Time Award · ACM e-Energy 2025
+      - id: nilmbench
+        title: NILMBench2026 was led by second-year undergraduates.
+        tag: Best Paper Runner-Up · ACM BuildSys 2026
+
+work:
+  kicker: Published at
+  venues: [NeurIPS, KDD, AAAI, WWW, IMWUT, BMVC, BuildSys, e-Energy]   # one cell each, in this order
+  badges:                      # an award shown on its venue's cell
+    BuildSys: Best Paper Runner-Up 2026
+    e-Energy: Test-of-Time Award 2025
+  quarter_title: This quarter
+
+people:
+  title: Life in the lab
+  photos:                       # file names in images/memories/, in film order
+    - 2026-zeel-phd-students.jpeg
+    - 2025-acm-summer-school-2.jpg
+    - Curiosity.jpg
+    - 2025-graduating-mtech-2.jpg
+    - 2024-dec-alum-meet.jpg
+    - 2025-Akshardham-all.jpg
+
+alumni:
+  title: Where our alumni are now
+  # Standout destinations only, each confirmed by the lab site or the person's own page
+  # (researched 2026-09-23; see sustain-social/LabPromo60/.tesseract-work/src/people/alumni-destinations.md).
+  places:
+    - { name: University of Cambridge, lat: 52.20, lon: 0.12 }
+    - { name: ETH Zurich, lat: 47.38, lon: 8.55 }
+    - { name: Univ. of Tübingen, lat: 48.52, lon: 9.06 }
+    - { name: Carnegie Mellon, lat: 40.44, lon: -79.94 }
+    - { name: Johns Hopkins, lat: 39.33, lon: -76.62 }
+    - { name: NYU, lat: 40.73, lon: -73.99 }
+    - { name: Stony Brook, lat: 40.91, lon: -73.12 }
+    - { name: UMass Amherst, lat: 42.39, lon: -72.53 }
+    - { name: UIUC, lat: 40.11, lon: -88.23 }
+    - { name: Rice University, lat: 29.72, lon: -95.40 }
+    - { name: Caltech, lat: 34.14, lon: -118.13 }
+    - { name: UC San Diego, lat: 32.88, lon: -117.23 }
+    - { name: Microsoft Research India, lat: 12.97, lon: 77.59 }
+    - { name: Google DeepMind, lat: 12.93, lon: 77.62 }
+    - { name: IISc, lat: 13.02, lon: 77.57 }
+    - { name: IIT Bombay, lat: 19.13, lon: 72.92 }
+    - { name: IIT Madras, lat: 12.99, lon: 80.23 }
+  also_at: [Apple, Microsoft, LinkedIn, Oracle, Qualcomm, Samsung R&D, Salesforce]
+  featured:                     # PhD graduates, from data/alumni.yml
+    - { name: Dr. Rishiraj Adhikary, photo: rishiraj.jpg }
+    - { name: Dr. Zeel B Patel, photo: zeel.jpg }
+
+join:
+  title: Join us.
+  # roles and text come from _flyer/flyer.yml → join

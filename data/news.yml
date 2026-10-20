@@ -3,14 +3,18 @@
 #   text: one sentence (HTML allowed)        note: optional extra line, e.g. an award citation
 #   photos: optional list of {src, alt}      press: optional list of {label, url} (media coverage)
 #   links: optional list of {label, url}
+#   film: optional one-line version (≤ 60 characters) for the lab film's "This quarter" card
 - when: 2026-09
   type: paper
+  film: FlowSat at BMVC 2026, Signal Descriptors at IEEE DSAA 2026
   text: 'Two research announcements: <a href="/papers/2026/flowsat.html"><b>FlowSat</b></a> accepted at <b>BMVC 2026</b>, and <a href="/papers/2026/signal-descriptors.html"><b>Efficient Time Series SSL via Signal Descriptors</b></a> accepted for a <b>Short Presentation at IEEE DSAA 2026</b>. Paper PDFs, research summaries and code links are now available.'
 - when: 2026-06
   type: paper
+  film: Oral at the MiLeTS workshop at KDD 2026
   text: 'Paper accepted (oral) at the MILETS Workshop @ ACM KDD 2026: Feature-Informed Self-Supervised Learning for Time Series Understanding!'
 - when: 2026-06
   type: award
+  film: NILMBench2026 is Best Paper Runner-Up at ACM BuildSys
   text: <b>NILMBench2026</b> wins the <b>Best Paper Award — Runner-Up</b> at <b>BuildSys 2026</b> (ACM Sustainability Week, Banff, Canada)! Led by 2nd-year undergraduates Aayush Kuloor, Anurag Singh, and Harsh Dhru.
   note: 'For "NILMBench2026: A Benchmark for Energy Disaggregation" at the 13th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (ACM BuildSys 2026), ACM Sustainability Week, Banff, Canada. The work was led entirely by second-year undergraduates.'
   photos:

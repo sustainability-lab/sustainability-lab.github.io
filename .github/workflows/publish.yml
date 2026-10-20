@@ -30,6 +30,13 @@ jobs:
           # (listing templates and theming were verified on 1.4.554).
           version: 1.4.554
 
+      # The lab film is too large for git; it lives as an asset on the `film` release
+      # (see _film/README.md) and is copied into images/film/ before rendering.
+      - name: Fetch the lab film
+        run: gh release download film --pattern lab-film.mp4 --dir images/film --clobber || echo "No film release yet"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
