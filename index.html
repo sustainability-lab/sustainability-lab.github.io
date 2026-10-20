@@ -82,10 +82,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-when','listing-type','listing-text','listing-note','listing-photos','listing-links','listing-press',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-when','listing-type','listing-film','listing-text','listing-note','listing-photos','listing-links','listing-press',{ data: ['index'] },{ data: ['categories'] }],
       page: 25,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-when","listing-type","listing-text","listing-note","listing-photos","listing-links","listing-press"],
+      searchColumns: ["listing-when","listing-type","listing-film","listing-text","listing-note","listing-photos","listing-links","listing-press"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -312,11 +312,32 @@ window.Quarto = {
         <a class="btn btn-outline-primary" href="papers/index.html">Publications</a>
       </div>
     </div>
-    <figure class="figure">
-      <img class="photo figure-img" style="aspect-ratio:4/3" src="images/memories/2025-Akshardham-all.jpg" alt="The Sustainability Lab, 2025">
-      <figcaption>The lab, 2025 · <a href="people.html">meet everyone</a></figcaption>
+    <figure class="film figure">
+      <button class="film-open" type="button" aria-haspopup="dialog" aria-controls="film-dialog">
+        <img src="images/film/poster.jpg" width="1600" height="900" alt="Still from the lab film: 30,638 brick kilns found from space across the Indo-Gangetic Plain" class="figure-img">
+        <span class="film-cta"><span class="film-play" aria-hidden="true"></span><span><b>Watch the lab film</b><span>2½ minutes · sound on</span></span></span>
+      </button>
+      <figcaption>Our research, people and alumni in one short film · <a href="people.html">meet everyone</a></figcaption>
     </figure>
   </div>
+  <dialog id="film-dialog" class="film-dialog" aria-label="The Sustainability Lab film">
+    <form method="dialog"><button class="film-close" aria-label="Close the film">Close ×</button></form>
+    <video controls="" playsinline="" preload="none" poster="images/film/poster.jpg">
+      <source src="images/film/lab-film.mp4" type="video/mp4">
+    </video>
+  </dialog>
+  <script>
+    (() => {
+      const dialog = document.getElementById("film-dialog");
+      const video = dialog.querySelector("video");
+      document.querySelector(".film-open").addEventListener("click", () => {
+        dialog.showModal();
+        video.play().catch(() => {});
+      });
+      dialog.addEventListener("close", () => video.pause());
+      dialog.addEventListener("click", (e) => { if (e.target === dialog) dialog.close(); });
+    })();
+  </script>
 </section>
 
 
