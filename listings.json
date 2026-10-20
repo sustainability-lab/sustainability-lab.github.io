@@ -1,6 +1,14 @@
 [
   {
-    "listing": "/experiences.html",
+    "listing": "/news.html",
+    "items": []
+  },
+  {
+    "listing": "/memories.html",
+    "items": []
+  },
+  {
+    "listing": "/people.html",
     "items": [
       "/experiences/aditya.html",
       "/experiences/kalash.html",
@@ -23,11 +31,7 @@
     ]
   },
   {
-    "listing": "/join.html",
-    "items": []
-  },
-  {
-    "listing": "/people.html",
+    "listing": "/experiences.html",
     "items": [
       "/experiences/aditya.html",
       "/experiences/kalash.html",
@@ -77,11 +81,7 @@
     "items": []
   },
   {
-    "listing": "/news.html",
-    "items": []
-  },
-  {
-    "listing": "/memories.html",
+    "listing": "/join.html",
     "items": []
   }
 ]

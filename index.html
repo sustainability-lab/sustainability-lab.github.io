@@ -139,9 +139,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-execute','listing-language','listing-page-layout','listing-toc','listing-title','listing-author','listing-date','listing-image','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-execute','listing-language','listing-page-layout','listing-toc','listing-title','listing-author','listing-date','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-execute","listing-language","listing-page-layout","listing-toc","listing-title","listing-author","listing-date","listing-image","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-execute","listing-language","listing-page-layout","listing-toc","listing-title","listing-author","listing-date","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-image"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -312,29 +312,30 @@ window.Quarto = {
         <a class="btn btn-outline-primary" href="papers/index.html">Publications</a>
       </div>
     </div>
+    <!-- The lab film lives on YouTube; the player loads only when someone presses play. New edition: change the ID in both places. -->
     <figure class="film figure">
-      <button class="film-open" type="button" aria-haspopup="dialog" aria-controls="film-dialog">
+      <button class="film-open" type="button" aria-haspopup="dialog" aria-controls="film-dialog" data-youtube="wi7nu7pTJqc">
         <img src="images/film/poster.jpg" width="1600" height="900" alt="Still from the lab film: 30,638 brick kilns found from space across the Indo-Gangetic Plain" class="figure-img">
-        <span class="film-cta"><span class="film-play" aria-hidden="true"></span><span><b>Watch the lab film</b><span>2½ minutes · sound on</span></span></span>
+        <span class="film-cta"><span class="film-play" aria-hidden="true"></span><span><b>Watch the lab film</b><span>2½ minutes · on YouTube, in 4K</span></span></span>
       </button>
-      <figcaption>Our research, people and alumni in one short film · <a href="people.html">meet everyone</a></figcaption>
+      <figcaption>Our research, people and alumni in one short film · <a href="https://youtu.be/wi7nu7pTJqc">open on YouTube</a></figcaption>
     </figure>
   </div>
   <dialog id="film-dialog" class="film-dialog" aria-label="The Sustainability Lab film">
     <form method="dialog"><button class="film-close" aria-label="Close the film">Close ×</button></form>
-    <video controls="" playsinline="" preload="none" poster="images/film/poster.jpg">
-      <source src="images/film/lab-film.mp4" type="video/mp4">
-    </video>
+    <div class="film-frame"></div>
   </dialog>
   <script>
     (() => {
+      const open = document.querySelector(".film-open");
       const dialog = document.getElementById("film-dialog");
-      const video = dialog.querySelector("video");
-      document.querySelector(".film-open").addEventListener("click", () => {
+      const frame = dialog.querySelector(".film-frame");
+      open.addEventListener("click", () => {
+        frame.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + open.dataset.youtube +
+          '?autoplay=1&rel=0&playsinline=1" title="The Sustainability Lab film" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
         dialog.showModal();
-        video.play().catch(() => {});
       });
-      dialog.addEventListener("close", () => video.pause());
+      dialog.addEventListener("close", () => { frame.innerHTML = ""; });
       dialog.addEventListener("click", (e) => { if (e.target === dialog) dialog.close(); });
     })();
   </script>
@@ -441,6 +442,9 @@ No matching items
 <div class="head-row"><h2>Latest</h2><a class="arrow small" href="news.html">All news</a></div>
 <div id="listing-news-latest" class="quarto-listing quarto-listing-container-custom">
 <div class="newsfeed">
+<div class="list-row" data-type="other">
+<span class="d">Oct 2026</span><span><span class="label">News</span>Our first lab film: <a href="https://youtu.be/wi7nu7pTJqc"><b>the lab in 2½ minutes</b></a>, on our research, people and alumni, drawn from the lab’s own data. Watch it in 4K on YouTube.</span>
+</div>
 <div class="list-row" data-type="paper">
 <span class="d">Sep 2026</span><span><span class="label">Paper</span>Two research announcements: <a href="./papers/2026/flowsat.html"><b>FlowSat</b></a> accepted at <b>BMVC 2026</b>, and <a href="./papers/2026/signal-descriptors.html"><b>Efficient Time Series SSL via Signal Descriptors</b></a> accepted for a <b>Short Presentation at IEEE DSAA 2026</b>. Paper PDFs, research summaries and code links are now available.</span>
 </div>
@@ -452,9 +456,6 @@ No matching items
 </div>
 <div class="list-row" data-type="paper">
 <span class="d">May 2026</span><span><span class="label">Paper</span><b>ThermEval</b> accepted at <a href="./papers/index.html#2026">KDD 2026</a>! Benchmarking vision-language models on thermal imagery with Ayush Shrivastava, Kirtan Gangani, Laksh Jain, and Mayank Goel (CMU).</span>
-</div>
-<div class="list-row" data-type="paper">
-<span class="d">May 2026</span><span><span class="label">Paper</span><b>NILMBench2026</b> accepted at <a href="./papers/index.html#2026">BuildSys 2026</a>! A reproducible benchmark for energy disaggregation, led entirely by 2nd-year undergraduates Aayush Kuloor, Anurag Singh, and Harsh Dhru.</span>
 </div>
 </div>
 <div class="listing-no-matching d-none">
