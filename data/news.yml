@@ -6,6 +6,10 @@
 #   film: optional one-line version (≤ 60 characters) for the lab film's "This quarter" card
 - when: 2026-10
   type: other
+  film: A two-minute film on VayuChat
+  text: 'New film: <a href="https://youtu.be/Nn7wVC7UBKc"><b>VayuChat in two minutes</b></a>, on checked answers over CPCB air-quality data, weather from our own WRF model, offline phone apps, and VayuChat in the field with CEEW. Watch it in 4K on YouTube, or try <a href="https://sustainability-lab.github.io/vayuchat/">VayuChat</a>.'
+- when: 2026-10
+  type: other
   film: The first lab film is out
   text: 'Our first lab film: <a href="https://youtu.be/wi7nu7pTJqc"><b>the lab in 2½ minutes</b></a>, on our research, people and alumni, drawn from the lab''s own data. Watch it in 4K on YouTube.'
 - when: 2026-09
