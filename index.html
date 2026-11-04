@@ -139,9 +139,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-execute','listing-language','listing-page-layout','listing-toc','listing-title','listing-author','listing-date','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-execute','listing-language','listing-page-layout','listing-toc','listing-title','listing-author','listing-date','listing-image','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-execute","listing-language","listing-page-layout","listing-toc","listing-title","listing-author","listing-date","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-image"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-execute","listing-language","listing-page-layout","listing-toc","listing-title","listing-author","listing-date","listing-image","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -443,6 +443,9 @@ No matching items
 <div id="listing-news-latest" class="quarto-listing quarto-listing-container-custom">
 <div class="newsfeed">
 <div class="list-row" data-type="other">
+<span class="d">Nov 2026</span><span><span class="label">News</span>New film: <a href="https://youtu.be/l7RZ6flF4RI"><b>ThermEval in four minutes</b></a>, on our KDD 2026 benchmark: why thermal images matter, 70,221 questions for 25 vision-language models, the ThermEval-D dataset, and why today’s models often read the colours, not the heat. Watch it in 4K on YouTube, or see the <a href="https://sustainability-lab.github.io/thermeval/">project page</a>.</span>
+</div>
+<div class="list-row" data-type="other">
 <span class="d">Oct 2026</span><span><span class="label">News</span>New film: <a href="https://youtu.be/Nn7wVC7UBKc"><b>VayuChat in two minutes</b></a>, on checked answers over CPCB air-quality data, weather from our own WRF model, offline phone apps, and VayuChat in the field with CEEW. Watch it in 4K on YouTube, or try <a href="https://sustainability-lab.github.io/vayuchat/">VayuChat</a>.</span>
 </div>
 <div class="list-row" data-type="other">
@@ -453,9 +456,6 @@ No matching items
 </div>
 <div class="list-row" data-type="paper">
 <span class="d">Jun 2026</span><span><span class="label">Paper</span>Paper accepted (oral) at the MILETS Workshop @ ACM KDD 2026: Feature-Informed Self-Supervised Learning for Time Series Understanding!</span>
-</div>
-<div class="list-row" data-type="award">
-<span class="d">Jun 2026</span><span><span class="label">Award</span><b>NILMBench2026</b> wins the <b>Best Paper Award — Runner-Up</b> at <b>BuildSys 2026</b> (ACM Sustainability Week, Banff, Canada)! Led by 2nd-year undergraduates Aayush Kuloor, Anurag Singh, and Harsh Dhru.</span>
 </div>
 </div>
 <div class="listing-no-matching d-none">
