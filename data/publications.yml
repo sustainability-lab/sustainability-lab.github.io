@@ -61,6 +61,8 @@
     url: https://arxiv.org/abs/2602.14989
   - label: Project
     url: https://sustainability-lab.github.io/thermeval/
+  - label: Video
+    url: https://www.youtube.com/watch?v=l7RZ6flF4RI
   - label: BibTeX
     url: /papers/bibtex/thermeval2026.bib
   selected: true

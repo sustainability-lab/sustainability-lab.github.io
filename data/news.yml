@@ -4,6 +4,10 @@
 #   photos: optional list of {src, alt}      press: optional list of {label, url} (media coverage)
 #   links: optional list of {label, url}
 #   film: optional one-line version (≤ 60 characters) for the lab film's "This quarter" card
+- when: 2026-11
+  type: other
+  film: A four-minute film on ThermEval (KDD 2026)
+  text: 'New film: <a href="https://youtu.be/l7RZ6flF4RI"><b>ThermEval in four minutes</b></a>, on our KDD 2026 benchmark: why thermal images matter, 70,221 questions for 25 vision-language models, the ThermEval-D dataset, and why today''s models often read the colours, not the heat. Watch it in 4K on YouTube, or see the <a href="https://sustainability-lab.github.io/thermeval/">project page</a>.'
 - when: 2026-10
   type: other
   film: A two-minute film on VayuChat
