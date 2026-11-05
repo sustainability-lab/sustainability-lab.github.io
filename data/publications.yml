@@ -11,7 +11,7 @@
   type: paper
   themes:
   - earth
-  figure: /papers/2026/flowsat-samples.webp
+  figure: /papers/2026/flowsat-illustration.webp
   summary: Flow-matching satellite image generation with geometry-aware acquisition metadata. *Equal contribution.
   links:
   - label: PDF
@@ -29,7 +29,7 @@
   type: paper
   themes:
   - health
-  figure: /papers/2026/signal-descriptors-method.svg
+  figure: /papers/2026/signal-descriptors-illustration.webp
   summary: Learning time-series representations by predicting signal descriptors, evaluated on two wearable sensing benchmarks. *Equal contribution. Earlier version presented at the MiLeTS workshop at KDD 2026.
   links:
   - label: PDF
@@ -95,7 +95,7 @@
   themes:
   - air
   - methods
-  figure: /papers/2026/gdmi.jpg
+  figure: /papers/2026/gdmi-sensor-placement-illustration.webp
   links:
   - label: PDF
     url: /papers/2026/aaai_2026_air_active_gradient_camera_ready.pdf
@@ -176,7 +176,7 @@
   type: paper
   themes:
   - earth
-  figure: /papers/2024/Brick_Kilns.png
+  figure: /papers/2025/space-to-policy-illustration.webp
   links:
   - label: PDF
     url: https://doi.org/10.1145/3736649
@@ -339,7 +339,7 @@
   type: paper
   themes:
   - air
-  figure: /papers/2023/airdelhi.png
+  figure: /papers/2023/airdelhi-illustration.webp
   links:
   - label: PDF
     url: /papers/2023/airdelhi.pdf
@@ -354,7 +354,7 @@
   type: paper
   themes:
   - health
-  figure: /papers/2023/spiromask-hero.png
+  figure: /papers/2023/spiromask-illustration.webp
   links:
   - label: PDF
     url: /papers/2023/spiromask.pdf
@@ -376,7 +376,7 @@
   themes:
   - air
   - methods
-  figure: /papers/2023/deepgp_cods.png
+  figure: /papers/2023/deep-gp-air-quality-illustration.webp
   links:
   - label: PDF
     url: https://doi.org/10.1145/3570991.3571004
@@ -408,7 +408,7 @@
   type: paper
   themes:
   - air
-  figure: /papers/2022/compass-india.png
+  figure: /papers/2022/samachar-illustration.webp
   links:
   - label: PDF
     url: /papers/2022/compass22-samachaar.pdf
@@ -428,7 +428,7 @@
   themes:
   - air
   - methods
-  figure: /papers/2022/Scalable_GaussianProcesses.png
+  figure: /papers/2022/scalable-gp-air-quality-illustration.webp
   links:
   - label: PDF
     url: /papers/2022/aaai_22_air.pdf
@@ -451,7 +451,7 @@
   type: paper
   themes:
   - methods
-  figure: /papers/2022/Vastr-Gan.png
+  figure: /papers/2022/vastr-gan-illustration.webp
   links:
   - label: PDF
     url: /papers/2022/CODS_COMAD_22_Vastr-Gan.pdf
@@ -466,7 +466,7 @@
   type: paper
   themes:
   - air
-  figure: /papers/2021/ACM-CHI-21_Vartalaap.png
+  figure: /papers/2021/vartalaap-illustration.webp
   links:
   - label: PDF
     url: /papers/2021/vartalaap.pdf
@@ -483,7 +483,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2021/buildsys21.png
+  figure: /papers/2021/nilmtk-nn-parsers-illustration.webp
   links:
   - label: PDF
     url: /papers/2021/buildsys.pdf
@@ -502,7 +502,7 @@
   type: interactive
   themes:
   - methods
-  figure: /papers/2021/VisXAI21_HMM.png
+  figure: /papers/2021/exploring-hidden-markov-models-illustration.webp
   links:
   - label: Article
     url: https://nipunbatra.github.io/hmm/
@@ -515,7 +515,7 @@
   type: interactive
   themes:
   - methods
-  figure: /papers/2020/VisXAI20_Active_Learning.png
+  figure: /papers/2020/active-learning-illustration.webp
   links:
   - label: Article
     url: https://patel-zeel.github.io/active-learning-visualization/
@@ -543,7 +543,7 @@
   type: interactive
   themes:
   - methods
-  figure: /papers/2020/Distil20_BayesOpt.png
+  figure: /papers/2020/exploring-bayesian-optimization-illustration.webp
   links:
   - label: Article
     url: https://distill.pub/2020/bayesian-optimization/
@@ -556,7 +556,7 @@
   type: paper
   themes:
   - earth
-  figure: /papers/2020/COMAD20_PlantDoc.png
+  figure: /papers/2020/plantdoc-illustration.webp
   links:
   - label: PDF
     url: https://arxiv.org/pdf/1911.10317.pdf
@@ -573,7 +573,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2019/CIKM19_ActiveCollabSensing.png
+  figure: /papers/2019/active-collab-sensing-illustration.webp
   links:
   - label: PDF
     url: /papers/2019/batra_CIKM_19.pdf
@@ -603,7 +603,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2019/Buildsys19_NILMTK.png
+  figure: /papers/2019/nilmtk-contrib-illustration.webp
   links:
   - label: PDF
     url: /papers/2019/batra_buildsys_19.pdf
@@ -618,7 +618,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2019/jia19_TreeCNN.png
+  figure: /papers/2019/tree-cnn-breakdown-illustration.webp
   links:
   - label: PDF
     url: /papers/2019/jia_www19.pdf
@@ -648,7 +648,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2018/AAAI18_EnergyBreakdown.png
+  figure: /papers/2018/tensor-transfer-illustration.webp
   links:
   - label: PDF
     url: /papers/2018/batra_aaai_2018.pdf
@@ -663,7 +663,7 @@
   type: thesis
   themes:
   - energy
-  figure: /papers/2017/Phd_Thesis.png
+  figure: /papers/2017/phd-thesis-illustration.webp
   links:
   - label: PDF
     url: /papers/2017/batra_thesis.pdf
@@ -693,7 +693,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2016/Gemello.png
+  figure: /papers/2016/gemello-illustration.webp
   links:
   - label: PDF
     url: https://dl.acm.org/doi/10.1145/2939672.2939735
@@ -783,7 +783,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2015/NILMTK_Dataport.png
+  figure: /papers/2015/dataport-and-nilmtk-illustration.webp
   links:
   - label: PDF
     url: /papers/2015/globalsip_smart_buildings_15_camera_ready.pdf
@@ -814,7 +814,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2014/buildsys14_BitsWatts.png
+  figure: /papers/2014/bits-and-watts-illustration.webp
   links:
   - label: PDF
     url: /papers/2014/batra_plc.pdf
@@ -852,7 +852,7 @@
   type: preprint
   themes:
   - energy
-  figure: /papers/2014/TechReport_NILM.png
+  figure: /papers/2014/nilm-commercial-residential-illustration.webp
   links:
   - label: PDF
     url: https://arxiv.org/pdf/1408.6595.pdf
@@ -867,7 +867,7 @@
   type: thesis
   themes:
   - energy
-  figure: /papers/2014/Phd_Qual14.png
+  figure: /papers/2014/phd-qualifier-illustration.webp
   links:
   - label: PDF
     url: http://arxiv.org/abs/1404.7227
@@ -882,7 +882,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2013/builsys13_ItsDifferent.png
+  figure: /papers/2013/it-s-different-illustration.webp
   links:
   - label: PDF
     url: /papers/2013/buildsys_2013.pdf
@@ -903,7 +903,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2013/ICMLA13_INDIC.png
+  figure: /papers/2013/indic-illustration.webp
   links:
   - label: PDF
     url: /papers/2013/batra_indic_2013.pdf
@@ -920,7 +920,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2013/ISSNIP13_OBMS.png
+  figure: /papers/2013/occupancy-bms-illustration.webp
   links:
   - label: PDF
     url: /papers/2013/batra_issnip_2013.pdf
