@@ -210,7 +210,9 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 </section>
 
 <section id="tools">
-  <h2>Datasets &amp; tools you can use</h2>
+  <div class="area" style="border-bottom:0;padding-top:0"><img class="ill" src="images/illustrations/datasets-tools.webp" alt=""><div>
+  <h2 style="margin-bottom:6px">Datasets &amp; tools you can use</h2>
+  <p class="muted">Toolkits, benchmarks and datasets released with our papers, for others to use and build on.</p></div></div>
   <div class="grid g3" style="gap:0 28px">
     <div class="list-row"><span class="d">Toolkit</span><span><a href="https://github.com/nilmtk/nilmtk">NILMTK</a> — energy disaggregation</span></div>
     <div class="list-row"><span class="d">Benchmark</span><span><a href="papers/2026/nilmbench2026_buildsys.pdf">NILMBench2026</a> — reproducible NILM</span></div>
@@ -259,6 +261,35 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
     });
   };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true }); else init();
+})();
+</script>
+<script>
+// Navbar logo: inline the SVG so it follows the theme colours, and draw the
+// sigmoid once per browser session (axes, then the curve, then the wordmark).
+// Skipped entirely for visitors who prefer reduced motion.
+(() => {
+  const img = document.querySelector('.navbar-logo');
+  if (!img || !window.fetch) return;
+  fetch(img.getAttribute('src')).then(r => r.ok ? r.text() : Promise.reject()).then(txt => {
+    const box = document.createElement('span');
+    box.innerHTML = txt.trim();
+    const svg = box.querySelector('svg');
+    if (!svg) return;
+    svg.setAttribute('class', 'navbar-logo lab-logo-svg');
+    svg.setAttribute('role', 'img');
+    svg.setAttribute('aria-label', img.getAttribute('alt') || 'Sustainability Lab');
+    svg.querySelectorAll('[stroke]').forEach(el => el.removeAttribute('stroke'));
+    svg.querySelectorAll('[fill]:not([fill="none"])').forEach(el => el.removeAttribute('fill'));
+    img.replaceWith(svg);
+    let seen = false;
+    try { seen = sessionStorage.getItem('lab-logo-drawn') === '1'; sessionStorage.setItem('lab-logo-drawn', '1'); } catch (_) {}
+    if (seen || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    svg.querySelectorAll('line, path').forEach(el => {
+      const len = el.getTotalLength ? el.getTotalLength() : 120;
+      el.style.strokeDasharray = len; el.style.strokeDashoffset = len;
+    });
+    svg.classList.add('draw');
+  }).catch(() => {});
 })();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

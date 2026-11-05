@@ -456,6 +456,35 @@ Vansh Jani<br>[17-May-2024]
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true }); else init();
 })();
 </script>
+<script>
+// Navbar logo: inline the SVG so it follows the theme colours, and draw the
+// sigmoid once per browser session (axes, then the curve, then the wordmark).
+// Skipped entirely for visitors who prefer reduced motion.
+(() => {
+  const img = document.querySelector('.navbar-logo');
+  if (!img || !window.fetch) return;
+  fetch(img.getAttribute('src')).then(r => r.ok ? r.text() : Promise.reject()).then(txt => {
+    const box = document.createElement('span');
+    box.innerHTML = txt.trim();
+    const svg = box.querySelector('svg');
+    if (!svg) return;
+    svg.setAttribute('class', 'navbar-logo lab-logo-svg');
+    svg.setAttribute('role', 'img');
+    svg.setAttribute('aria-label', img.getAttribute('alt') || 'Sustainability Lab');
+    svg.querySelectorAll('[stroke]').forEach(el => el.removeAttribute('stroke'));
+    svg.querySelectorAll('[fill]:not([fill="none"])').forEach(el => el.removeAttribute('fill'));
+    img.replaceWith(svg);
+    let seen = false;
+    try { seen = sessionStorage.getItem('lab-logo-drawn') === '1'; sessionStorage.setItem('lab-logo-drawn', '1'); } catch (_) {}
+    if (seen || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    svg.querySelectorAll('line, path').forEach(el => {
+      const len = el.getTotalLength ? el.getTotalLength() : 120;
+      el.style.strokeDasharray = len; el.style.strokeDashoffset = len;
+    });
+    svg.classList.add('draw');
+  }).catch(() => {});
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
