@@ -47,7 +47,7 @@
   type: paper
   themes:
   - health
-  figure: /papers/2026/signal-descriptors-hhar-compute.png
+  figure: /papers/2026/feature-informed-ssl-illustration.webp
   links: []
 - title: 'ThermEval: A Structured Benchmark for Evaluation of Vision-Language Models on Thermal Imagery'
   authors: Ayush Shrivastava*, Kirtan Gangani*, Laksh Jain*, Mayank Goel, Nipun Batra
@@ -116,7 +116,7 @@
   type: paper
   themes:
   - air
-  figure: /papers/2025/vayubench-thumb.webp
+  figure: /papers/2025/vayubench-illustration.webp
   links:
   - label: PDF
     url: /papers/2025/vayubench_cods2025.pdf
@@ -133,7 +133,7 @@
   type: demo
   themes:
   - air
-  figure: /papers/2025/vayuchat-demo-thumb.webp
+  figure: /papers/2025/vayuchat-demo-illustration.webp
   links:
   - label: PDF
     url: /papers/2025/vayuchat_demo_cods2025.pdf
@@ -197,7 +197,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2025/conformal-nilm-thumb.webp
+  figure: /papers/2025/conformal-nilm-illustration.webp
   links:
   - label: PDF
     url: https://doi.org/10.1145/3748334
@@ -210,7 +210,7 @@
   type: paper
   themes:
   - methods
-  figure: /papers/2025/3hdm-thumb.webp
+  figure: /papers/2025/3hdm-illustration.webp
   links:
   - label: PDF
     url: https://journals.aps.org/prd/abstract/10.1103/PhysRevD.112.015011
@@ -225,7 +225,7 @@
   - air
   - health
   - energy
-  figure: /papers/2025/pollutant-exposure-thumb.webp
+  figure: /papers/2025/pollutant-exposure-illustration.webp
   links:
   - label: PDF
     url: https://www.sciencedirect.com/science/article/pii/S2352710225000105
@@ -239,7 +239,7 @@
   themes:
   - energy
   - methods
-  figure: /papers/2024/nilm-al-thumb.webp
+  figure: /papers/2024/nilm-al-illustration.webp
   links:
   - label: arXiv
     url: https://arxiv.org/abs/2411.15805
@@ -255,7 +255,7 @@
   themes:
   - health
   - methods
-  figure: /papers/2024/spiroactive-thumb.webp
+  figure: /papers/2024/spiroactive-illustration.webp
   links:
   - label: arXiv
     url: https://arxiv.org/abs/2410.22950
@@ -270,7 +270,7 @@
   type: preprint
   themes:
   - air
-  figure: /papers/2024/vayubuddy-thumb.webp
+  figure: /papers/2024/vayubuddy-illustration.webp
   links:
   - label: arXiv
     url: https://arxiv.org/abs/2411.12760
@@ -295,7 +295,7 @@
   type: preprint
   themes:
   - air
-  figure: /papers/2024/small-monitoring-networks-thumb.webp
+  figure: /papers/2024/small-monitoring-networks-illustration.webp
   links:
   - label: SSRN
     url: https://ssrn.com/abstract=4956327
@@ -389,7 +389,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2022/i-do-not-know-thumb.webp
+  figure: /papers/2022/i-do-not-know-illustration.webp
   links:
   - label: PDF
     url: /papers/2022/buildsys22-nilm.pdf
@@ -528,7 +528,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2020/edgenilm-thumb.webp
+  figure: /papers/2020/edgenilm-illustration.webp
   links:
   - label: PDF
     url: /papers/2020/edge_nilm.pdf
@@ -590,7 +590,7 @@
   type: demo
   themes:
   - energy
-  figure: /papers/2019/buildsys19-demo-thumb.webp
+  figure: /papers/2019/buildsys19-demo-illustration.webp
   links:
   - label: PDF
     url: /papers/2019/batra_buildsys19demo.pdf
@@ -633,7 +633,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2018/rimor-thumb.webp
+  figure: /papers/2018/rimor-illustration.webp
   links:
   - label: PDF
     url: https://dl.acm.org/doi/10.1145/3276774.3276797
@@ -676,7 +676,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2017/aaai17-mf-thumb.webp
+  figure: /papers/2017/aaai17-mf-illustration.webp
   links:
   - label: PDF
     url: /papers/2017/batra_aaai2017.pdf
@@ -712,7 +712,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2016/IWNILM16_ExploringEnergyDisaggregation.png
+  figure: /papers/2016/iwnilm16-actionable-feedback-illustration.webp
   links:
   - label: PDF
     url: http://nilmworkshop.org/2016/proceedings/Paper_ID08.pdf
@@ -729,7 +729,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2016/iwnilm16-energy-breakdown-thumb.webp
+  figure: /papers/2016/iwnilm16-energy-breakdown-illustration.webp
   links:
   - label: PDF
     url: http://nilmworkshop.org/2016/proceedings/Paper_ID07.pdf
@@ -746,7 +746,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2015/buildsys15-thumb.webp
+  figure: /papers/2015/buildsys15-illustration.webp
   links:
   - label: PDF
     url: /papers/2015/batra_buildsys_15.pdf
@@ -765,7 +765,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2015/sensys15-thumb.webp
+  figure: /papers/2015/sensys15-illustration.webp
   summary: '**[Best presentation award]**'
   links:
   - label: PDF
@@ -796,7 +796,7 @@
   type: demo
   themes:
   - energy
-  figure: /papers/2014/nilmtk-v2-thumb.webp
+  figure: /papers/2014/nilmtk-v2-illustration.webp
   summary: '**[Best demo award]**'
   links:
   - label: PDF
@@ -933,7 +933,7 @@
   type: paper
   themes:
   - energy
-  figure: /papers/2012/sensoract-thumb.webp
+  figure: /papers/2012/sensoract-illustration.webp
   links:
   - label: PDF
     url: https://dl.acm.org/doi/pdf/10.1145/2422531.2422547
