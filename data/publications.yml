@@ -2,6 +2,8 @@
 #   type: paper | preprint | demo | thesis | interactive
 #   themes: any of air | health | energy | earth | methods
 #   figure: a figure from the paper (put files in papers/<year>/)
+#   figure_dark: optional dark-mode version; without it the figure is colour-inverted in dark mode,
+#     so add one when the figure contains photos (see papers/README.md)
 #   award: optional short label, e.g. "Best Paper Runner-Up"
 #   selected: true to show it in the "Selected" strip on top (add short + venue_short)
 - title: 'FlowSat: Flow-Matching Diffusion Transformers with Metadata Conditioning for Satellite Image Generation'
@@ -57,6 +59,7 @@
   themes:
   - health
   figure: /papers/2026/thermeval-abstract.webp
+  figure_dark: /papers/2026/thermeval-abstract-dark.webp
   links:
   - label: arXiv
     url: https://arxiv.org/abs/2602.14989
@@ -151,6 +154,7 @@
   themes:
   - earth
   figure: /papers/2025/sentinelkilndb-abstract.webp
+  figure_dark: /papers/2025/sentinelkilndb-abstract-dark.webp
   links:
   - label: PDF
     url: https://openreview.net/pdf?id=efGzsxVSEC
@@ -310,6 +314,7 @@
   - health
   - energy
   figure: /papers/2024/jouleseye-abstract.webp
+  figure_dark: /papers/2024/jouleseye-abstract-dark.webp
   links:
   - label: PDF
     url: /papers/2024/IMWUT_JoulesEye.pdf
