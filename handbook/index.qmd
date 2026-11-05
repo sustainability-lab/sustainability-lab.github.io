@@ -34,6 +34,7 @@ aliases:
   </div>
   <div>
     <div class="kicker">Compute</div>
+    <img class="ill" src="../images/illustrations/compute.webp" alt="" style="margin-bottom:10px;aspect-ratio:2/1">
     <div class="list-row"><span class="d">Servers</span><span>GPU servers, DGX Spark and workstations — <a href="compute.html">specs &amp; benchmarks</a></span></div>
     <div class="list-row"><span class="d">Access</span><span><a href="server-policy.html">Server policy</a> · fair use</span></div>
     <div class="list-row"><span class="d">Brand</span><span><a href="design-kit.html">Design kit</a> · logos, slide &amp; poster templates</span></div>

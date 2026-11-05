@@ -58,7 +58,7 @@ format:
     code-copy: true
     code-overflow: wrap
     date-format: "MMMM D, YYYY"
-    include-after-body: theme/toggle.html
+    include-after-body: [theme/toggle.html, theme/logo.html]
     include-in-header:
       text: |
         <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/favicon-32.png">

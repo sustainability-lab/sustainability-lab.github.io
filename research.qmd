@@ -68,7 +68,9 @@ aliases:
 </section>
 
 <section id="tools">
-  <h2>Datasets &amp; tools you can use</h2>
+  <div class="area" style="border-bottom:0;padding-top:0"><img class="ill" src="images/illustrations/datasets-tools.webp" alt=""><div>
+  <h2 style="margin-bottom:6px">Datasets &amp; tools you can use</h2>
+  <p class="muted">Toolkits, benchmarks and datasets released with our papers, for others to use and build on.</p></div></div>
   <div class="grid g3" style="gap:0 28px">
     <div class="list-row"><span class="d">Toolkit</span><span><a href="https://github.com/nilmtk/nilmtk">NILMTK</a> — energy disaggregation</span></div>
     <div class="list-row"><span class="d">Benchmark</span><span><a href="papers/2026/nilmbench2026_buildsys.pdf">NILMBench2026</a> — reproducible NILM</span></div>
