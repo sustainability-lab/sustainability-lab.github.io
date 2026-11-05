@@ -82,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-authors','listing-venue','listing-year','listing-type','listing-themes','listing-figure','listing-links','listing-selected','listing-short','listing-venue_short','listing-award','listing-summary',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-authors','listing-venue','listing-year','listing-type','listing-themes','listing-figure','listing-figure_dark','listing-links','listing-selected','listing-short','listing-venue_short','listing-award','listing-summary',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-authors","listing-venue","listing-year","listing-type","listing-themes","listing-figure","listing-links","listing-selected","listing-short","listing-venue_short","listing-award","listing-summary"],
+      searchColumns: ["listing-title","listing-authors","listing-venue","listing-year","listing-type","listing-themes","listing-figure","listing-figure_dark","listing-links","listing-selected","listing-short","listing-venue_short","listing-award","listing-summary"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -110,10 +110,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-authors','listing-venue','listing-year','listing-type','listing-themes','listing-figure','listing-summary','listing-links','listing-selected','listing-short','listing-venue_short','listing-award',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-authors','listing-venue','listing-year','listing-type','listing-themes','listing-figure','listing-summary','listing-links','listing-figure_dark','listing-selected','listing-short','listing-venue_short','listing-award',{ data: ['index'] },{ data: ['categories'] }],
       page: 25,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-authors","listing-venue","listing-year","listing-type","listing-themes","listing-figure","listing-summary","listing-links","listing-selected","listing-short","listing-venue_short","listing-award"],
+      searchColumns: ["listing-title","listing-authors","listing-venue","listing-year","listing-type","listing-themes","listing-figure","listing-summary","listing-links","listing-figure_dark","listing-selected","listing-short","listing-venue_short","listing-award"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -243,10 +243,10 @@ window.Quarto = {
   <div class="kicker" style="margin-top:30px">Selected</div>
 <div id="listing-selected" class="quarto-listing quarto-listing-container-custom">
 <div class="sel">
-<p><a href="https://arxiv.org/abs/2602.14989"><img src="../papers/2026/thermeval-abstract.webp" alt="" loading="lazy"><b>ThermEval</b><span>KDD 2026</span></a></p>
+<p><a href="https://arxiv.org/abs/2602.14989"><img class="has-dark" src="../papers/2026/thermeval-abstract.webp" alt="" loading="lazy"><img class="fig-dark" src="../papers/2026/thermeval-abstract-dark.webp" alt="" loading="lazy"><b>ThermEval</b><span>KDD 2026</span></a></p>
 <p><a href="../papers/2026/nilmbench2026_buildsys.pdf"><img src="../papers/2026/nilmbench2026-abstract.webp" alt="" loading="lazy"><b>NILMBench2026</b><span>BuildSys 2026 · Best Paper Runner-Up</span></a></p>
-<p><a href="https://openreview.net/pdf?id=efGzsxVSEC"><img src="../papers/2025/sentinelkilndb-abstract.webp" alt="" loading="lazy"><b>SentinelKilnDB</b><span>NeurIPS 2025 Datasets &amp; Benchmarks</span></a></p>
-<p><a href="../papers/2024/IMWUT_JoulesEye.pdf"><img src="../papers/2024/jouleseye-abstract.webp" alt="" loading="lazy"><b>JoulesEye</b><span>IMWUT / UbiComp 2024</span></a></p>
+<p><a href="https://openreview.net/pdf?id=efGzsxVSEC"><img class="has-dark" src="../papers/2025/sentinelkilndb-abstract.webp" alt="" loading="lazy"><img class="fig-dark" src="../papers/2025/sentinelkilndb-abstract-dark.webp" alt="" loading="lazy"><b>SentinelKilnDB</b><span>NeurIPS 2025 Datasets &amp; Benchmarks</span></a></p>
+<p><a href="../papers/2024/IMWUT_JoulesEye.pdf"><img class="has-dark" src="../papers/2024/jouleseye-abstract.webp" alt="" loading="lazy"><img class="fig-dark" src="../papers/2024/jouleseye-abstract-dark.webp" alt="" loading="lazy"><b>JoulesEye</b><span>IMWUT / UbiComp 2024</span></a></p>
 <p><a href="../papers/2014/batra_nilmtk.pdf"><img src="../papers/2014/nilmtk-abstract.webp" alt="" loading="lazy"><b>NILMTK</b><span>ACM e-Energy 2014 · Test-of-Time Award 2025</span></a></p>
 </div>
 <div class="listing-no-matching d-none">
@@ -317,7 +317,7 @@ MILETS Workshop @ KDD 2026, The 32nd ACM SIGKDD Conference on Knowledge Discover
 </div>
 </div>
 <div class="pub" data-t="health paper">
-<img class="fig" src="../papers/2026/thermeval-abstract.webp" alt="" loading="lazy">
+<img class="fig has-dark" src="../papers/2026/thermeval-abstract.webp" alt="" loading="lazy"><img class="fig fig-dark" src="../papers/2026/thermeval-abstract-dark.webp" alt="" loading="lazy">
 <div>
 <div class="t">
 ThermEval: A Structured Benchmark for Evaluation of Vision-Language Models on Thermal Imagery
@@ -405,7 +405,7 @@ ACM IKDD CODS 2025 - 13th International Conference on Data Science (Demo)
 </div>
 </div>
 <div class="pub" data-t="earth paper">
-<img class="fig" src="../papers/2025/sentinelkilndb-abstract.webp" alt="" loading="lazy">
+<img class="fig has-dark" src="../papers/2025/sentinelkilndb-abstract.webp" alt="" loading="lazy"><img class="fig fig-dark" src="../papers/2025/sentinelkilndb-abstract-dark.webp" alt="" loading="lazy">
 <div>
 <div class="t">
 SENTINELKILNDB: A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery
@@ -561,7 +561,7 @@ SIM-air Working Paper Series #48-2024
 </div>
 </div>
 <div class="pub" data-t="health energy paper">
-<img class="fig" src="../papers/2024/jouleseye-abstract.webp" alt="" loading="lazy">
+<img class="fig has-dark" src="../papers/2024/jouleseye-abstract.webp" alt="" loading="lazy"><img class="fig fig-dark" src="../papers/2024/jouleseye-abstract-dark.webp" alt="" loading="lazy">
 <div>
 <div class="t">
 JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising

@@ -20,6 +20,8 @@ Complete guide for managing publications on the Sustainability Lab website.
 
 **Step 3:** Add image to `papers/2025/yourpaper.png` (250x180px recommended)
 
+In dark mode the figure is colour-inverted (black lines on white become light lines on dark). That's right for line art but turns photos into negatives, so if the figure contains photos, also save a dark version (`yourpaper-dark.webp`: light lines on `#1a1a1a`, photos left as they are) and set `figure_dark:` in the entry.
+
 **Step 4:** Push to GitHub
 
 ```bash
