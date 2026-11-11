@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="How we write papers in the lab: structure, abstract, introduction, related work, method, evaluation, figures, tables and sentences. Every rule has a worked example, and the whole guide also ships as an AI-agent skill.">
 
 <title>Sustainability Lab - Writing Papers</title>
 <style>
@@ -114,13 +115,13 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 
 
 <meta property="og:title" content="Sustainability Lab - Writing Papers">
-<meta property="og:description" content="AI-driven research for a sustainable future at IIT Gandhinagar, led by Prof.&nbsp;Nipun Batra. PhD, postdoc, and internship openings in AI for sustainability, health sensing, energy analytics, and environmental monitoring.">
+<meta property="og:description" content="How we write papers in the lab: structure, abstract, introduction, related work, method, evaluation, figures, tables and sentences. Every rule has a worked example, and the whole guide also ships as an AI-agent skill.">
 <meta property="og:image" content="https://sustainability-lab.github.io/images/logo.png">
 <meta property="og:site_name" content="Sustainability Lab">
 <meta property="og:image:height" content="612">
 <meta property="og:image:width" content="2000">
 <meta name="twitter:title" content="Sustainability Lab - Writing Papers">
-<meta name="twitter:description" content="AI-driven research for a sustainable future at IIT Gandhinagar, led by Prof.&nbsp;Nipun Batra. PhD, postdoc, and internship openings in AI for sustainability, health sensing, energy analytics, and environmental monitoring.">
+<meta name="twitter:description" content="How we write papers in the lab: structure, abstract, introduction, related work, method, evaluation, figures, tables and sentences. Every rule has a worked example, and the whole guide also ships as an AI-agent skill.">
 <meta name="twitter:image" content="https://sustainability-lab.github.io/images/logo.png">
 <meta name="twitter:creator" content="@nipun_batra">
 <meta name="twitter:card" content="summary_large_image">
@@ -182,7 +183,56 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#five-principles" id="toc-five-principles" class="nav-link active" data-scroll-target="#five-principles">Five principles</a></li>
+  <li><a href="#skeleton" id="toc-skeleton" class="nav-link" data-scroll-target="#skeleton">The skeleton: abstract, introduction, paper</a></li>
+  <li><a href="#title" id="toc-title" class="nav-link" data-scroll-target="#title">Title</a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#background-and-related-work" id="toc-background-and-related-work" class="nav-link" data-scroll-target="#background-and-related-work">Background and related work</a>
+  <ul class="collapse">
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
+  <li><a href="#related-work" id="toc-related-work" class="nav-link" data-scroll-target="#related-work">Related work</a></li>
+  </ul></li>
+  <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation">Evaluation</a>
+  <ul class="collapse">
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  </ul></li>
+  <li><a href="#analysis-limitations-and-conclusion" id="toc-analysis-limitations-and-conclusion" class="nav-link" data-scroll-target="#analysis-limitations-and-conclusion">Analysis, limitations and conclusion</a></li>
+  <li><a href="#sentences" id="toc-sentences" class="nav-link" data-scroll-target="#sentences">Sentences</a>
+  <ul class="collapse">
+  <li><a href="#active-voice" id="toc-active-voice" class="nav-link" data-scroll-target="#active-voice">Active voice</a></li>
+  <li><a href="#short-sentences" id="toc-short-sentences" class="nav-link" data-scroll-target="#short-sentences">Short sentences</a></li>
+  <li><a href="#emphasis" id="toc-emphasis" class="nav-link" data-scroll-target="#emphasis">Emphasis</a></li>
+  <li><a href="#cut-the-filler" id="toc-cut-the-filler" class="nav-link" data-scroll-target="#cut-the-filler">Cut the filler</a></li>
+  <li><a href="#numbers-and-terms" id="toc-numbers-and-terms" class="nav-link" data-scroll-target="#numbers-and-terms">Numbers and terms</a></li>
+  <li><a href="#american-and-british-english" id="toc-american-and-british-english" class="nav-link" data-scroll-target="#american-and-british-english">American and British English</a></li>
+  </ul></li>
+  <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures">Figures</a>
+  <ul class="collapse">
+  <li><a href="#one-message-and-a-self-contained-caption" id="toc-one-message-and-a-self-contained-caption" class="nav-link" data-scroll-target="#one-message-and-a-self-contained-caption">One message, and a self-contained caption</a></li>
+  <li><a href="#colour-that-means-something" id="toc-colour-that-means-something" class="nav-link" data-scroll-target="#colour-that-means-something">Colour that means something</a></li>
+  <li><a href="#latexify-figures" id="toc-latexify-figures" class="nav-link" data-scroll-target="#latexify-figures">LaTeXify figures</a></li>
+  </ul></li>
+  <li><a href="#tables" id="toc-tables" class="nav-link" data-scroll-target="#tables">Tables</a></li>
+  <li><a href="#latex-hygiene" id="toc-latex-hygiene" class="nav-link" data-scroll-target="#latex-hygiene">LaTeX hygiene</a>
+  <ul class="collapse">
+  <li><a href="#comments-in-latex" id="toc-comments-in-latex" class="nav-link" data-scroll-target="#comments-in-latex">Comments in LaTeX</a></li>
+  </ul></li>
+  <li><a href="#reviewing-a-draft" id="toc-reviewing-a-draft" class="nav-link" data-scroll-target="#reviewing-a-draft">Reviewing a draft</a></li>
+  <li><a href="#paper-timelines" id="toc-paper-timelines" class="nav-link" data-scroll-target="#paper-timelines">Paper timelines</a></li>
+  <li><a href="#ai-agents" id="toc-ai-agents" class="nav-link" data-scroll-target="#ai-agents">Grammarly, AI tools and agents</a>
+  <ul class="collapse">
+  <li><a href="#the-paper-writing-skill" id="toc-the-paper-writing-skill" class="nav-link" data-scroll-target="#the-paper-writing-skill">The paper-writing skill</a></li>
+  </ul></li>
+  <li><a href="#pre-submission-checklist" id="toc-pre-submission-checklist" class="nav-link" data-scroll-target="#pre-submission-checklist">Pre-submission checklist</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -192,6 +242,11 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <h1 class="title">Writing Papers</h1>
 </div>
 
+<div>
+  <div class="description">
+    How we write papers in the lab: structure, abstract, introduction, related work, method, evaluation, figures, tables and sentences. Every rule has a worked example, and the whole guide also ships as an AI-agent skill.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -206,48 +261,612 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 </header>
 
 
-<p>Paper writing is a key part of research. This page contains some tips and tricks for writing papers. Paper writing is a skill that you will develop over time. But, it needs deliberate practice.</p>
-<section id="paper-structure-and-abstract" class="level4">
-<h4 class="anchored" data-anchor-id="paper-structure-and-abstract">Paper structure and Abstract</h4>
-<p>I gave a talk (<a href="https://www.youtube.com/watch?v=LoCoplWgvp4">recording here</a>, <a href="https://github.com/nipunbatra/CS-Research-Methods-Bootcamp/blob/master/RM101.pdf">slides here</a>) on how to write a paper. I recommend watching it. Other materials from the talk are available <a href="https://github.com/nipunbatra/CS-Research-Methods-Bootcamp">here</a>.</p>
-</section>
-<section id="latexify-figures" class="level4">
-<h4 class="anchored" data-anchor-id="latexify-figures">LaTeXify figures</h4>
-<p>Use our <a href="https://github.com/sustainability-lab/latexify">LaTeXify Python package</a> to transform matplotlib figures into publication-ready plots. See our <a href="../handbook/latexify-plots.html">local guide</a> for installation and examples. Key benefits:</p>
+<style>
+.wp-ill { width: 100%; aspect-ratio: 16/9; object-fit: cover; background: var(--ill); margin: 0.4rem 0 1.2rem; }
+.wp-fig img { border: 1px solid var(--rule); }
+body.quarto-dark .wp-ill, body.quarto-dark .wp-fig img { filter: brightness(.88); }
+.ba { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 1rem 0 1.4rem; }
+.ba > div { padding: 12px 16px 4px; background: var(--soft); border-left: 4px solid; }
+.ba > div > :last-child { margin-bottom: 0.6rem; }
+.ba .bad { border-color: #8a8a8a; }
+.ba .good { border-color: #0072B2; }
+.ba .bad::before, .ba .good::before { display: block; font-weight: 700; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 6px; }
+.ba .bad::before { content: "✗  Before"; color: var(--muted); }
+.ba .good::before { content: "✓  After"; color: #0072B2; }
+body.quarto-dark .ba .good::before { color: #56B4E9; }
+.example { background: var(--soft); border-left: 4px solid var(--rule); padding: 12px 16px 2px; margin: 1rem 0 1.4rem; }
+.example::before { content: "Example"; display: block; font-weight: 700; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.lead-hl { color: var(--accent); font-weight: 600; }
+.bridge-hl { color: #0072B2; font-style: italic; }
+body.quarto-dark .bridge-hl { color: #56B4E9; }
+@media (max-width: 760px) { .ba { grid-template-columns: 1fr; } }
+/* The site's legacy rule gives every <pre> a dark background, but Quarto's highlighter emits dark token colours. Keep tokens readable here. */
+pre.sourceCode code span { color: #d4d4d4 !important; }
+pre.sourceCode code span.co { color: #9aab9a !important; font-style: italic; }
+pre.sourceCode code span.kw, pre.sourceCode code span.fu, pre.sourceCode code span.bu, pre.sourceCode code span.cf { color: #8cc8f0 !important; }
+pre.sourceCode code span.st, pre.sourceCode code span.ss { color: #e2a07c !important; }
+pre.sourceCode code span.dv, pre.sourceCode code span.fl { color: #b8d7a3 !important; }
+.wp-abs td:nth-child(3) { min-width: 55%; }
+</pre></style>
+<p><img src="../images/handbook/writing-papers/hero.webp" class="wp-ill img-fluid" alt="Eight small tiles, each one line, grow into eight paragraph tiles, which flow into a stack of paper pages."></p>
+<p>This page sets out how we write papers in the lab. It is for students writing their first paper, for anyone reviewing a draft, and for AI agents that help with either. Writing is a skill, and like any skill it improves with <em>deliberate</em> practice. This page gives you something concrete to practise against.</p>
+<p>Every rule comes with an example. The examples follow one running paper, <strong>Kestrel</strong>. Kestrel is <em>invented</em>. It counts birds from recordings made on cheap phones, and all its numbers are made up. We chose a topic outside our lab’s work so that you notice the rules, not the topic.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Using an AI agent?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This guide also ships as an <strong>agent skill</strong> that Claude Code, Codex, Gemini and similar agents can follow. See <a href="#ai-agents">Using this guide with AI agents</a>.</p>
+</div>
+</div>
+<section id="five-principles" class="level2">
+<h2 class="anchored" data-anchor-id="five-principles">Five principles</h2>
+<p>Every rule on this page comes from one of five principles.</p>
 <ol type="1">
-<li><strong>Precise Figure Sizing</strong>: Automatic sizing relative to column width or page width - manual sizing within <code>\begin{figure}</code> blocks is rarely needed</li>
-<li><strong>Font Size Control</strong>: Sets font size relative to document text font size to ensure optimal readability</li>
-<li><strong>LaTeX Font Matching</strong>: Converts fonts to LaTeX fonts so figures seamlessly match your document typography</li>
+<li><strong>Write for a smart reader from a neighbouring field.</strong> Picture a researcher who knows machine learning well but has never read a paper in your subfield. That reader should be able to follow every section.</li>
+<li><strong>State the point first.</strong> Every abstract line, paragraph, section and caption opens with its takeaway. The details follow.</li>
+<li><strong>Go from concrete to abstract.</strong> Show a small example with real numbers, and then give the general form.</li>
+<li><strong>Back every claim with evidence.</strong> Use a number, a table, a figure, a proof or a citation. If you cannot back a claim, narrow it until you can.</li>
+<li><strong>Be honest.</strong> Show your failures and limitations yourself, before a reviewer finds them. A reviewer trusts you more when you do.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/handbook/writing-papers/reader.webp" class="wp-ill img-fluid figure-img" alt="A stack of paper pages on one platform, connected by a small bridge with a red arrow to a figure reading a booklet on another platform."></p>
+<figcaption>The reader you write for knows the field next door. Your job is to build the bridge.</figcaption>
+</figure>
+</div>
+</section>
+<section id="skeleton" class="level2">
+<h2 class="anchored" data-anchor-id="skeleton">The skeleton: abstract, introduction, paper</h2>
+<p>I gave a talk on how to write a paper (<a href="https://www.youtube.com/watch?v=LoCoplWgvp4">recording</a>, <a href="https://github.com/nipunbatra/CS-Research-Methods-Bootcamp/blob/master/RM101.pdf">slides</a>), and I recommend watching it. Other material from the talk is in the <a href="https://github.com/nipunbatra/CS-Research-Methods-Bootcamp">Research Methods Bootcamp</a> repository. The core idea is simple: <strong>the abstract is the skeleton of the paper.</strong></p>
+<p>Write the abstract <em>first</em>. Each abstract line then grows into one paragraph of the introduction. Each paragraph then grows into one section of the paper.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/handbook/writing-papers/skeleton.svg" class="wp-fig img-fluid figure-img" alt="Three columns of eight boxes linked by arrows: abstract lines, introduction paragraphs and paper sections."></p>
+<figcaption>One abstract line becomes one introduction paragraph, which becomes one section. The insight line is optional.</figcaption>
+</figure>
+</div>
+<p><strong>A quick test.</strong> Read only the first sentence of each introduction paragraph, in order. If those sentences read like your abstract, the structure works. If they don’t, fix the structure before you polish any sentence.</p>
+</section>
+<section id="title" class="level2">
+<h2 class="anchored" data-anchor-id="title">Title</h2>
+<p>A good title names the method and says what it does. Keep it short.</p>
+<div class="ba">
+<div class="bad">
+<p>A Novel Deep Learning Framework for Robust Few-Shot Bioacoustic Species Classification Using Low-Cost Mobile Devices in Real-World Settings</p>
+</div>
+<div class="good">
+<p>Kestrel: Few-Shot Bird Counting from Cheap Phone Recordings</p>
+</div>
+</div>
+<ul>
+<li><strong>Give the method a name people can say.</strong> A real word that fits the idea works best. If you build an acronym, make it spell out the subtitle.</li>
+<li><strong>Use no word the paper does not earn.</strong> Drop words like <em>novel</em>, <em>robust</em> and <em>real-world</em> unless the paper argues them explicitly.</li>
+<li><strong>Keep scoping words that are true.</strong> “Cheap phone recordings” is a promise you can keep. “Any audio” is not.</li>
+<li><strong>Put the name in a macro</strong>, so a late rename is a one-line change:</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\newcommand</span>{<span class="ex">\method</span>}{Kestrel<span class="fu">\xspace</span>}   <span class="co">% needs \usepackage{xspace}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>We follow the structure from <a href="https://github.com/nipunbatra/CS-Research-Methods-Bootcamp/blob/master/RM101.pdf">RM101</a>: seven parts, plus an optional <em>insight</em>. Each part gets one line, so a full abstract is <strong>7–8 lines</strong>. A line may hold two short sentences.</p>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 22%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Part</th>
+<th>What it says</th>
+<th>Kestrel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 Context</td>
+<td>Where the field is</td>
+<td>Bird counts tell ecologists how habitats change. Volunteers now record birdsong on cheap phones, at a scale no survey team can match.</td>
+</tr>
+<tr class="even">
+<td>2 Motivation</td>
+<td>The problem</td>
+<td>But phone audio is noisy, and most species have only a handful of labelled calls.</td>
+</tr>
+<tr class="odd">
+<td>3 Prior art</td>
+<td>Why existing work falls short</td>
+<td>Existing classifiers need hundreds of clean calls per species. On phone audio, their accuracy drops from 91% to 54%.</td>
+</tr>
+<tr class="even">
+<td>4 Insight <em>(optional)</em></td>
+<td>What explains the gap</td>
+<td>We find that the phone’s microphone, not the bird, causes most of this drop.</td>
+</tr>
+<tr class="odd">
+<td>5 Approach</td>
+<td>What we do</td>
+<td>We present Kestrel, which learns to undo each phone’s microphone before it classifies a call. Kestrel needs only five labelled calls to add a new species.</td>
+</tr>
+<tr class="even">
+<td>6 Evaluation</td>
+<td>How we test it</td>
+<td>We test it on 12,000 clips from 40 phone models and 150 species, against six baselines.</td>
+</tr>
+<tr class="odd">
+<td>7 Results</td>
+<td>What we found, in numbers</td>
+<td>Kestrel reaches 83% accuracy on phone audio, against 61% for the best baseline. That baseline needs a hundred labelled calls per species; Kestrel needs five.</td>
+</tr>
+<tr class="even">
+<td>8 Conclusion</td>
+<td>What it means, and its limits</td>
+<td>Cheap phones can thus support bird surveys at scale. Kestrel still fails on overlapping calls, which we leave to future work.</td>
+</tr>
+</tbody>
+</table>
+<p>Here is the same content, written the way first drafts usually are, and then rewritten.</p>
+<div class="ba">
+<div class="bad">
+<p>Bird population monitoring is an important problem in ecology which has received a lot of attention, and with the proliferation of low-cost smartphones it has become possible for large numbers of volunteers to record bird vocalisations, although the resulting recordings are noisy and labelled data for most species is scarce. Existing approaches, which are mostly based on deep convolutional networks trained on curated recordings, have been shown to perform well on clean audio, but it is observed that their accuracy degrades significantly when they are applied to recordings collected using phones. In this paper, a novel framework called Kestrel is proposed, in which the frequency response of each device is estimated and compensated before classification is performed, and a few-shot learning strategy is employed so that new species can be added with only a small number of labelled examples. Extensive experiments were conducted on a large dataset and it is shown that Kestrel significantly outperforms state-of-the-art baselines, which demonstrates the effectiveness of the proposed approach.</p>
+</div>
+<div class="good">
+<p>Bird counts tell ecologists how habitats change. Volunteers now record birdsong on cheap phones, at a scale no survey team can match. But phone audio is noisy, and most species have only a handful of labelled calls. Existing classifiers need hundreds of clean calls per species. On phone audio, their accuracy drops from 91% to 54%. We find that the phone’s microphone, not the bird, causes most of this drop. We present Kestrel, which learns to undo each phone’s microphone before it classifies a call. Kestrel needs only five labelled calls to add a new species. We test it on 12,000 clips from 40 phone models and 150 species, against six baselines. Kestrel reaches 83% accuracy on phone audio, against 61% for the best baseline. That baseline needs a hundred labelled calls per species; Kestrel needs five. Cheap phones can thus support bird surveys at scale. Kestrel still fails on overlapping calls, which we leave to future work.</p>
+</div>
+</div>
+<p>The two versions are almost the same length. The second one says <em>more</em>. It gives the size of the drop, the insight, the data, the margin over the best baseline, and a limitation. The first one hides behind “significantly” and “extensive”.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/handbook/writing-papers/sentence-lengths.svg" class="wp-fig img-fluid figure-img" alt="Two bar charts of words per sentence. Before: four sentences of 26 to 50 words. After: thirteen sentences of 7 to 16 words."></p>
+<figcaption>Sentence lengths in the two abstracts above, counted by the script that draws this figure. The rewrite has three times as many sentences, and none is longer than 16 words.</figcaption>
+</figure>
+</div>
+<p><strong>Abstract rules</strong></p>
+<ul>
+<li><strong>Keep sentences short.</strong> Most should run 10–20 words, and none should go past about 25.</li>
+<li><strong>Make every number comparative.</strong> Write “83%, against 61% for the best baseline”, never a bare “83%”.</li>
+<li><strong>Put the main limitation in the last line.</strong> It costs one clause and buys a lot of trust.</li>
+<li><strong>Expand an acronym only if the reader needs it</strong>, and only once.</li>
+<li><strong>Leave out filler</strong> like “In this paper”, “extensive experiments” and “demonstrates the effectiveness”.</li>
+</ul>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The introduction is the abstract, grown. Write <strong>one paragraph per abstract line</strong>, in the same order. Each paragraph has the same anatomy.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/handbook/writing-papers/paragraph.svg" class="wp-fig img-fluid figure-img" alt="Two paragraph boxes. The first has a bold lead sentence, grey body lines and a blue bridge question; an arrow leads to the second paragraph's bold lead."></p>
+<figcaption>Each paragraph opens with a lead sentence that states its point and ends with a bridge to the next paragraph.</figcaption>
+</figure>
+</div>
+<p><strong>The lead sentence sets the tone.</strong> It states the point of the paragraph. If a reader skims only the lead sentences, they should still get the argument.</p>
+<div class="ba">
+<div class="bad">
+<p>Bird monitoring has a long history. Early surveys relied on trained observers walking fixed routes, and later work introduced automated recorders…</p>
+</div>
+<div class="good">
+<p>Existing bird classifiers fail on phone audio. Trained on clean recordings, they reach 91% accuracy; on phone clips of the same calls, they reach 54%…</p>
+</div>
+</div>
+<p><strong>The last sentence builds a bridge.</strong> It leads the reader into the next paragraph, so the paragraphs connect <em>organically</em>. A question works well just before the insight: <span class="bridge-hl">“So why does accuracy collapse on phones?”</span> The next paragraph then opens with the answer: <span class="lead-hl">“We find that the microphone, not the bird, causes the drop.”</span></p>
+<p>More rules for the introduction:</p>
+<ul>
+<li><strong>Don’t use bold run-in heads</strong> like “<strong>Challenges.</strong>” or “<strong>Our approach.</strong>” The lead sentence does that job, and does it better.</li>
+<li><strong>State your goals once and reuse them.</strong> For example: <em>Kestrel must be accurate on phone audio (G1) and need few labels per species (G2).</em> The evaluation later answers G1 and G2 by name.</li>
+<li><strong>Include a results paragraph</strong> with the headline numbers. Many drafts skip it, and reviewers notice.</li>
+<li><strong>Keep the contributions short:</strong> three to five items, ideally in running prose.</li>
+<li><strong>Put the caveats at the end.</strong> Don’t list weaknesses before the reader knows the method.</li>
+</ul>
+</section>
+<section id="background-and-related-work" class="level2">
+<h2 class="anchored" data-anchor-id="background-and-related-work">Background and related work</h2>
+<p>These are <strong>two separate sections</strong>, and they do two different jobs. <em>Background</em> teaches what the reader needs in order to follow your method. <em>Related work</em> places your paper among other papers.</p>
+<section id="background" class="level3">
+<h3 class="anchored" data-anchor-id="background">Background</h3>
+<ul>
+<li><strong>Open with why the section exists:</strong> “We now describe how phone microphones distort sound, because Kestrel must undo that distortion.”</li>
+<li><strong>Explain in plain words, with one picture or analogy.</strong> For example: <em>a phone colours sound the way a tinted window colours light; each phone has its own tint.</em></li>
+<li><strong>Define every symbol the method uses later.</strong> Define each one once, here.</li>
+<li><strong>End with the two or three facts the method builds on.</strong></li>
+<li><strong>Add a figure</strong> if the mechanism is hard to picture.</li>
+</ul>
+<p>Put background <em>before</em> related work whenever the way you group prior work depends on it.</p>
+</section>
+<section id="related-work" class="level3">
+<h3 class="anchored" data-anchor-id="related-work">Related work</h3>
+<p><strong>The first sentence is always “We now categorize …”.</strong> It names the axis along which you group prior work. Pick an axis that matters for your contribution, such as <em>what methods need</em>, <em>where they act</em> or <em>what they assume</em>.</p>
+<p>Then write <strong>one family per paragraph</strong>. Give each family a short run-in head, which is fine here. Open with a verdict, and <strong>end with one line on how you relate</strong>: what you share, how you differ, and what the difference buys.</p>
+<div class="example">
+<p>We now categorize prior work by <em>what it needs to learn a new species</em>.</p>
+<p><strong>Supervised classifiers.</strong> Supervised classifiers are accurate on clean audio, but they need <em>hundreds</em> of labelled calls per species. They train on curated recordings [3, 7] and degrade on phone audio [12]. <span class="bridge-hl">Like them, Kestrel classifies calls with a neural network; unlike them, it needs five calls per species, not hundreds.</span></p>
+<p><strong>Denoising front-ends.</strong> Denoising front-ends clean the audio before any classifier sees it [5, 9]. They remove background noise, but they <em>cannot</em> remove the microphone’s own colouring, because that colouring is not noise. <span class="bridge-hl">Like them, Kestrel fixes the audio before classification; unlike them, it models each phone, which is where most of the error comes from.</span></p>
+</div>
+<ul>
+<li><strong>Group by idea, never by date.</strong> “Recent work” ages quickly, and it has no thread.</li>
+<li><strong>Use the same groups in your comparison table</strong> as in the text.</li>
+<li><strong>Every claim about another method must come from its paper or your own run.</strong> Say which.</li>
+</ul>
+</section>
+</section>
+<section id="method" class="level2">
+<h2 class="anchored" data-anchor-id="method">Method</h2>
+<p>Lead with the <strong>intuition</strong>: one picture, in three to five sentences. Someone who reads only that paragraph should know what the method does and why it works. Then organise the method around <strong>plain questions</strong>. Each question becomes a subsection, and inside each one, the same four beats repeat.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/handbook/writing-papers/method-steps.svg" class="wp-fig img-fluid figure-img" alt="A box labelled intuition first feeds three step boxes. Below, four coloured boxes in a row: why, toy example, how, guarantee."></p>
+<figcaption>Method structure: intuition first, then one step per plain question, then the same four beats inside every step.</figcaption>
+</figure>
+</div>
+<p><strong>A toy example teaches more than an equation.</strong> Use two dimensions and numbers small enough to check in your head. Follow the same toy through every step.</p>
+<div class="example">
+<p>Suppose sound has just two frequency bands, <em>low</em> and <em>high</em>. A bird sings with energy (4, 2). Phone A halves the high band, so it records (4, 1). From a few clips, Kestrel learns that phone A’s gain is (1, 0.5). It divides the gain out: (4, 1) ÷ (1, 0.5) = (4, 2). The bird’s song is back. Real audio has hundreds of bands, but every step works the same way.</p>
+</div>
+<p>More rules for the method:</p>
+<ul>
+<li><strong>Keep the method generic, with no exact counts.</strong> “We record clips from several phones” belongs in the method. “40 phone models” belongs in the evaluation.</li>
+<li><strong>Use few equations:</strong> only the ones the reader needs to follow the argument. Move derivations and implementation details to the appendix.</li>
+<li><strong>Present textbook results as design guarantees,</strong> and name the parts that are truly new. Don’t list a textbook theorem as a contribution.</li>
+<li><strong>Keep notation clean.</strong> Never use one symbol for two things.</li>
+<li><strong>Verify every toy number in code</strong> before it goes into the paper.</li>
+</ul>
+</section>
+<section id="evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="evaluation">Evaluation</h2>
+<p>Call the section <em>Evaluation</em>, and make it <strong>question-driven</strong>. A model I like is the evaluation of <a href="https://www.kdd.org/kdd2016/papers/files/adp1036-batraA.pdf">Gemello (KDD 2016)</a>. The reader can predict its skeleton: data, baselines, metric, then one experiment per question.</p>
+<p><strong>Open with the questions,</strong> each tied to a goal from the introduction:</p>
+<div class="example">
+<p>We now evaluate Kestrel against the goals of Section 1. We ask:</p>
+<ul>
+<li><strong>Q1</strong> (G1): Is Kestrel accurate on phone audio?</li>
+<li><strong>Q2</strong> (G2): How few labelled calls does a new species need?</li>
+<li><strong>Q3</strong>: Does Kestrel work on phones it has never seen?</li>
+<li><strong>Q4</strong>: Which part of Kestrel matters most?</li>
+</ul>
+</div>
+<section id="setup" class="level3">
+<h3 class="anchored" data-anchor-id="setup">Setup</h3>
+<ul>
+<li><p><strong>Scenario.</strong> Write one sentence on the real use case: <em>“Our setup mimics a volunteer survey, where each species has a few expert-labelled calls.”</em> Derive the protocol from that sentence.</p></li>
+<li><p><strong>Data.</strong> Say <em>why</em> you chose this data. Give <strong>one table of every data set</strong>, with its size, its purpose and what it tests. State plainly that the test data shares nothing with the training data.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Set</th>
+<th>Size</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Clean calls</td>
+<td>30,000 clips</td>
+<td>Pre-training only</td>
+</tr>
+<tr class="even">
+<td>Phone clips, 30 models</td>
+<td>9,000 clips</td>
+<td>Main test (Q1, Q2)</td>
+</tr>
+<tr class="odd">
+<td>Phone clips, 10 new models</td>
+<td>3,000 clips</td>
+<td>Unseen phones (Q3)</td>
+</tr>
+</tbody>
+</table></li>
+<li><p><strong>Baselines in groups</strong>, each with a reason it is there: the standard method, the strongest one, the closest to yours, or what a practitioner would try first.</p></li>
+<li><p><strong>Give every baseline its best chance.</strong> Tune all methods with the same rule. Use the authors’ code where you can. Check that your copy reproduces a published number.</p></li>
+<li><p><strong>Metrics, listed by goal.</strong> Define each one so the reader could recompute it, and say whether higher or lower is better.</p></li>
+<li><p><strong>Protocol.</strong> Give the number of seeds, the confidence intervals and the statistical tests.</p></li>
+<li><p><strong>Reproducibility.</strong> Say what you will release.</p></li>
+</ul>
+<p><strong>A new metric gets its own subsection inside Evaluation,</strong> not its own section. Open with the failure it fixes, using your own numbers. List each failure with its fix, and give the formula last.</p>
+</section>
+<section id="results" class="level3">
+<h3 class="anchored" data-anchor-id="results">Results</h3>
+<p><strong>Make each subsection a question, and answer it in its first sentence.</strong></p>
+<div class="ba">
+<div class="bad">
+<p><strong>5.3 Results on unseen devices.</strong> In this section, we present results on devices not seen during training. Table 3 shows the accuracy of all methods…</p>
+</div>
+<div class="good">
+<p><strong>5.3 Does Kestrel work on phones it has never seen?</strong> Yes, nearly as well: 79% on ten unseen phone models, against 83% on seen ones (Table 3)…</p>
+</div>
+</div>
+<p><strong>Give one headline figure</strong> that tells the main result at a glance. A trade-off plot with your method alone in the good corner beats any bar chart.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/handbook/writing-papers/headline.svg" class="wp-fig img-fluid figure-img" alt="Left, a grouped bar chart with seven colours and a legend. Right, a scatter plot of accuracy against labels needed, with grey baselines bottom left and a blue Kestrel star alone in a shaded goal region at top right."></p>
+<figcaption>The same invented results drawn two ways. The bar chart needs a legend and a careful read. The trade-off plot shows the message at once: Kestrel is alone in the good corner.</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Explain <em>why</em> each baseline family fails,</strong> in one bullet each. Numbers alone do not convince.</li>
+<li><strong>Use an oracle or upper bound</strong> to separate the parts of your method. For example: <em>with perfect phone labels, accuracy rises only from 83% to 85%, so phone detection is not the bottleneck.</em></li>
+<li><strong>Choose sensitivity analyses that answer real questions,</strong> such as “how many labelled calls does a new species need?”.</li>
+<li><strong>Report effect sizes with intervals,</strong> not only p-values. For zero events, use the <em>rule of three</em>: 0 errors in 1,000 trials means an error rate of at most about 0.3%, at 95% confidence.</li>
+<li><strong>Show failure cases,</strong> with their causes.</li>
+</ul>
+</section>
+</section>
+<section id="analysis-limitations-and-conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-limitations-and-conclusion">Analysis, limitations and conclusion</h2>
+<p><strong>Analysis</strong> asks <em>“Why does it work?”</em>. Write one question per design choice, in method order, each answered in its first sentence. Show both sides of every choice: too little fails, too much hurts, and there is a sweet spot. Admit what you cannot explain.</p>
+<p><strong>Limitations</strong> come as a numbered list. Each item has an <em>italic verdict</em>, the evidence, and a way forward.</p>
+<div class="example">
+<ol type="1">
+<li><em>Kestrel fails on overlapping calls.</em> When two species sing at once, accuracy falls to 41%. Source separation before classification is a natural next step.</li>
+</ol>
+</div>
+<p><strong>The conclusion</strong> mirrors the abstract’s last lines in four to six sentences: problem, insight, method, headline numbers, takeaway. Two sentences are too few.</p>
+</section>
+<section id="sentences" class="level2">
+<h2 class="anchored" data-anchor-id="sentences">Sentences</h2>
+<section id="active-voice" class="level3">
+<h3 class="anchored" data-anchor-id="active-voice">Active voice</h3>
+<p>Use the <strong>active voice</strong>, with “we” for what <em>you</em> did. Active sentences are shorter. They also make clear who did what.</p>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Passive</th>
+<th>Active</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>It is observed that accuracy drops on phones.</td>
+<td>Accuracy drops on phones.</td>
+</tr>
+<tr class="even">
+<td>Experiments were conducted on 12,000 clips.</td>
+<td>We test Kestrel on 12,000 clips.</td>
+</tr>
+<tr class="odd">
+<td>A novel framework, Kestrel, is proposed.</td>
+<td>We present Kestrel.</td>
+</tr>
+<tr class="even">
+<td>The gain is estimated from a few clips.</td>
+<td>Kestrel estimates the gain from a few clips.</td>
+</tr>
+</tbody>
+</table>
+<p>The passive is fine when the actor doesn’t matter: <em>“The clips were recorded between 2019 and 2023.”</em></p>
+</section>
+<section id="short-sentences" class="level3">
+<h3 class="anchored" data-anchor-id="short-sentences">Short sentences</h3>
+<p>Aim for a median of about <strong>15–18 words</strong> and a maximum of about <strong>25</strong>. Split any sentence with three or more clauses. Give each sentence <em>one</em> idea. The <a href="#abstract">sentence-length figure</a> shows what this does to an abstract.</p>
+</section>
+<section id="emphasis" class="level3">
+<h3 class="anchored" data-anchor-id="emphasis">Emphasis</h3>
+<p>Use <code>\emph{}</code> on the few words that carry the argument: <em>every</em>, <em>only</em>, <em>not</em>, <em>before</em>. Use it for contrast and for new terms. Don’t use it for decoration. One or two per paragraph is plenty.</p>
+<div class="example">
+<p>Denoising removes background noise, but it <em>cannot</em> remove the microphone’s colouring. Kestrel models <em>each phone</em>, not each recording.</p>
+</div>
+</section>
+<section id="cut-the-filler" class="level3">
+<h3 class="anchored" data-anchor-id="cut-the-filler">Cut the filler</h3>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Instead of</th>
+<th>Write</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>In this paper, we propose</td>
+<td>We present</td>
+</tr>
+<tr class="even">
+<td>It is worth noting that X</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>The intuition is simple: X</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>a novel / crucial / groundbreaking method</td>
+<td>a method (show why it matters)</td>
+</tr>
+<tr class="odd">
+<td>significantly better</td>
+<td>83% vs 61% (and the test, if you mean statistical significance)</td>
+</tr>
+<tr class="even">
+<td>due to the fact that</td>
+<td>because</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Write like a person.</strong> Avoid inflated words, stacked hedges (“may potentially suggest”) and three-item lists that are only there for rhythm.</p>
+</section>
+<section id="numbers-and-terms" class="level3">
+<h3 class="anchored" data-anchor-id="numbers-and-terms">Numbers and terms</h3>
+<ul>
+<li><strong>Never write a bare number.</strong> Compare it to something, and give its unit and its <em>n</em>.</li>
+<li><strong>Use one word per concept.</strong> If you call it a <em>gain</em>, don’t switch to <em>response</em>, <em>profile</em> and <em>filter</em> later.</li>
+<li><strong>Expand an acronym once</strong>, and only if you use it again.</li>
+</ul>
+</section>
+<section id="american-and-british-english" class="level3">
+<h3 class="anchored" data-anchor-id="american-and-british-english">American and British English</h3>
+<p>Some spellings differ: British “colour” and “optimise” are American “color” and “optimize”. There are also a few differences in grammar. Pick one variety and stick to it. Most of our previous papers use British English, though this often depends on the co-authors.</p>
+</section>
+</section>
+<section id="figures" class="level2">
+<h2 class="anchored" data-anchor-id="figures">Figures</h2>
+<section id="one-message-and-a-self-contained-caption" class="level3">
+<h3 class="anchored" data-anchor-id="one-message-and-a-self-contained-caption">One message, and a self-contained caption</h3>
+<p>Give each figure <strong>one message</strong>, and make that message the first sentence of the caption. A reader who sees only the figure and its caption should understand it.</p>
+<div class="ba">
+<div class="bad">
+<p><strong>Figure 4.</strong> Results of different methods on the phone dataset.</p>
+</div>
+<div class="good">
+<p><strong>Figure 4. Kestrel is the only method that is both accurate and label-efficient.</strong> Each point is one method: accuracy on phone audio (x) against labelled calls needed per species (y, log scale). The shaded corner is the goal.</p>
+</div>
+</div>
+<p>If a figure needs a paragraph to decode, split it into step-by-step panels with one idea per panel, or move the detailed version to the appendix.</p>
+</section>
+<section id="colour-that-means-something" class="level3">
+<h3 class="anchored" data-anchor-id="colour-that-means-something">Colour that means something</h3>
+<p>Use <strong>one colour code for the whole paper.</strong> Give each colour a meaning, and state the code once. Show movement or change as a <em>colour change</em>: the problem starts orange, your method’s blue arrow moves it, and it lands green.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/handbook/writing-papers/colour-code.svg" class="wp-fig img-fluid figure-img" alt="Two diagrams of an input moved by our method and by a baseline. Left: arbitrary pink, yellow and sky colours. Right: orange input, blue arrow to a green ticked output, grey dashed arrow to a hollow crossed output."></p>
+<figcaption>Colour as meaning. On the left the colours are arbitrary, so the reader needs a legend. On the right the same code holds across the whole paper.</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Use a colour-blind-safe palette.</strong> <a href="https://jfly.uni-koeln.de/color/">Okabe–Ito</a> is a good default.</li>
+<li><strong>Never let meaning depend on colour alone.</strong> Add ✓/✗, filled and hollow markers, or direct labels.</li>
+<li><strong>Give neutral categories neutral colours,</strong> so they never clash with the semantic code.</li>
+<li><strong>Keep text at least 6–7 pt</strong> at final size. Check the rendered PDF for overlaps, clipping and margin overflow.</li>
+<li><strong>Read every plotted number from your results files,</strong> not from memory.</li>
+</ul>
+</section>
+<section id="latexify-figures" class="level3">
+<h3 class="anchored" data-anchor-id="latexify-figures">LaTeXify figures</h3>
+<p>Use our <a href="https://github.com/sustainability-lab/latexify">LaTeXify Python package</a> to turn matplotlib figures into publication-ready plots. See our <a href="../handbook/latexify-plots.html">local guide</a> for installation and examples. It gives you three things:</p>
+<ol type="1">
+<li><strong>Precise figure sizing.</strong> Figures are sized relative to the column or page width, so you rarely need manual sizing inside <code>\begin{figure}</code>.</li>
+<li><strong>Font size control.</strong> Font size is set relative to the document’s text size, so labels stay readable.</li>
+<li><strong>LaTeX font matching.</strong> Figures use LaTeX fonts, so they match the rest of the document.</li>
 </ol>
 <blockquote class="blockquote">
-<p>Tip: You can find page width and column width with <code>\the\textwidth</code> and <code>\the\columnwidth</code> commands, respectively.</p>
+<p>Tip: You can find the page width and column width with <code>\the\textwidth</code> and <code>\the\columnwidth</code>.</p>
 </blockquote>
 </section>
-<section id="self-contained-figures-and-tables-and-captions" class="level4">
-<h4 class="anchored" data-anchor-id="self-contained-figures-and-tables-and-captions">Self-contained figures and tables (and captions)</h4>
 </section>
-<section id="tables" class="level4">
-<h4 class="anchored" data-anchor-id="tables">Tables</h4>
-<p>We follow this excellent <a href="https://people.inf.ethz.ch/markusp/teaching/guides/guide-tables.pdf">small guide to making nice tables</a> by Markus Püschel.</p>
+<section id="tables" class="level2">
+<h2 class="anchored" data-anchor-id="tables">Tables</h2>
+<p>We follow this excellent <a href="https://people.inf.ethz.ch/markusp/teaching/guides/guide-tables.pdf">short guide to making nice tables</a> by Markus Püschel. In addition:</p>
+<ul>
+<li><strong>Lead the caption with the takeaway</strong>, then say what each column means.</li>
+<li><strong>Label column groups with the question or goal</strong> they answer, such as “G1: accurate?”.</li>
+<li><strong>Leave no empty cells in headline columns.</strong> A “–” in a key column is a gap in your evidence. Fill it.</li>
+<li><strong>Use counts when <em>n</em> is small</strong> (7/10, not 70%).</li>
+<li><strong>State your bold and underline rule</strong>, and shade your own method’s row.</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">table</span>}[t]</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\caption</span>{<span class="fu">\textbf</span>{Kestrel is the most accurate method on phone audio, with the fewest labels.}</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    Accuracy (<span class="fu">\%</span>, higher is better) on seen and unseen phone models, and labelled calls needed per species</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    (lower is better). Best in <span class="fu">\textbf</span>{bold}.}</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">\label</span>{<span class="ex">tab:main</span>}</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">\begin</span>{<span class="ex">tabular</span>}{lccc}</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\toprule</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">&amp;</span> <span class="fu">\multicolumn</span>{2}{c}{G1: accurate?} <span class="op">&amp;</span> G2: few labels? <span class="fu">\\</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\cmidrule</span>(lr){2-3}<span class="fu">\cmidrule</span>(lr){4-4}</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    Method <span class="op">&amp;</span> Seen phones <span class="op">&amp;</span> Unseen phones <span class="op">&amp;</span> Calls / species <span class="fu">\\</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\midrule</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    Fine-tuned transformer <span class="op">&amp;</span> 61 <span class="op">&amp;</span> 55 <span class="op">&amp;</span> 100 <span class="fu">\\</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\rowcolor</span>{gray!12} <span class="fu">\method</span> (ours) <span class="op">&amp;</span> <span class="fu">\textbf</span>{83} <span class="op">&amp;</span> <span class="fu">\textbf</span>{79} <span class="op">&amp;</span> <span class="fu">\textbf</span>{5} <span class="fu">\\</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\bottomrule</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="kw">\end</span>{<span class="ex">tabular</span>}</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">table</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="comments-in-latex" class="level4">
-<h4 class="anchored" data-anchor-id="comments-in-latex">Comments in LaTeX</h4>
-<p>We typically create a macro corresponding to different author initials (I use <code>\nb</code> for example) and then use that to create comments in the text. This is useful for commenting on the text, or for leaving notes to yourself. For example, I might write <code>\nb{I'm not sure about this sentence}</code> and then I can search for all instances of <code>\nb</code> to find all of my comments.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\newcommand</span>{<span class="ex">\nb</span>}[1]{{<span class="fu">\color</span>{red}<span class="fu">\small</span> <span class="fu">\iftoggle</span>{hide}{}{<span class="fu">\textbf</span>{Nipun's comment:} #1}}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="latex-hygiene" class="level2">
+<h2 class="anchored" data-anchor-id="latex-hygiene">LaTeX hygiene</h2>
+<ul>
+<li><strong>Use <code>\cref</code> for every reference.</strong> Never hand-type “Figure 3” or “Table S2”. This includes references into the supplement: load <code>xr-hyper</code>, add <code>\externaldocument[S-]{supp}</code>, and write <code>\cref{S-tab:ablation}</code>. On Overleaf, add a <code>latexmkrc</code> file so that the supplement is compiled too.</li>
+<li><strong>Use macros</strong> for the method name, metric names and recurring symbols.</li>
+<li><strong>Keep a label scheme:</strong> <code>sec:</code>, <code>fig:</code>, <code>tab:</code>, <code>eq:</code>.</li>
+<li><strong>Write one sentence per source line.</strong> Diffs and reviews become much easier.</li>
+</ul>
+<section id="comments-in-latex" class="level3">
+<h3 class="anchored" data-anchor-id="comments-in-latex">Comments in LaTeX</h3>
+<p>We create a comment macro for each author’s initials (I use <code>\nb</code>). Comments are useful for notes on the text, and for notes to yourself. I might write <code>\nb{I'm not sure about this sentence}</code>, and later search for every <code>\nb</code> to find my comments. Put all notes behind one switch, so the submission build hides them:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\newif\ifshownotes</span> <span class="fu">\shownotestrue</span>   <span class="co">% \shownotesfalse for submission</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">\newcommand</span>{<span class="ex">\nb</span>}[1]{<span class="fu">\ifshownotes</span>{<span class="fu">\color</span>{red}<span class="fu">\small\textbf</span>{Nipun:} #1}<span class="fu">\fi</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>A separate <code>submission.tex</code> that sets <code>\shownotesfalse</code> and then inputs the paper makes this a one-click switch.</p>
 </section>
-<section id="active-vs-passive-voice" class="level4">
-<h4 class="anchored" data-anchor-id="active-vs-passive-voice">Active v/s Passive Voice</h4>
 </section>
-<section id="american-vs-british-english" class="level4">
-<h4 class="anchored" data-anchor-id="american-vs-british-english">American v/s British English</h4>
-<p>There are a few differences in spelling between American and British English. For example, the word “colour” in British English is spelled “color” in American English. The word “optimise” in British English is spelled “optimize” in American English. There are also some differences in grammar. I recommend picking one and sticking to it. Most of our previous papers have used British English (but often this depends on the set of co-authors).</p>
+<section id="reviewing-a-draft" class="level2">
+<h2 class="anchored" data-anchor-id="reviewing-a-draft">Reviewing a draft</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/handbook/writing-papers/review.webp" class="wp-ill img-fluid figure-img" alt="A draft page with red underlines and margin speech bubbles, a red arrow, and a cleaner page with a check mark; a pencil lies in front."></p>
+<figcaption>Review in two layers: comments that explain why, and a suggested rewrite next to the original.</figcaption>
+</figure>
+</div>
+<p>When you review someone’s draft, whether you are a student, an adviser or an AI agent, use the same protocol:</p>
+<ol type="1">
+<li><strong>Don’t overwrite the author’s text.</strong> Add inline comments, and put a <em>suggested rewrite</em> after the original, behind the notes switch. The author decides what to keep.</li>
+<li><strong>Comment on the why, not just the what.</strong> “The lead sentence is history, so it doesn’t set the tone; lead with the claim” teaches. “Rewrite this” doesn’t.</li>
+<li><strong>Check every number you move or rephrase</strong> against its source table, figure or code. Rewriting can silently change a claim, such as “all 10” becoming “7 of 10”.</li>
+<li><strong>Mark anything you inferred</strong> with a “please check” note.</li>
+<li><strong>End with a short review guide:</strong> what changed and where, which runs are still needed, and which facts the author should confirm.</li>
+</ol>
 </section>
-<section id="paper-timelines" class="level4">
-<h4 class="anchored" data-anchor-id="paper-timelines">Paper timelines</h4>
+<section id="paper-timelines" class="level2">
+<h2 class="anchored" data-anchor-id="paper-timelines">Paper timelines</h2>
+<p>Plan <em>backwards</em> from the deadline. The schedule below is a starting point; adjust it to the venue and the project.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/handbook/writing-papers/timeline.svg" class="wp-fig img-fluid figure-img" alt="A Gantt chart over eight weeks before a deadline: abstract and figure sketches first, experiments until week minus three, draft, internal review, revision and a final checklist week."></p>
+<figcaption>A suggested eight-week plan. Writing starts while experiments run, results freeze three weeks out, and the last week is for checks, not new content.</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Write the abstract and sketch the figures in week one.</strong> They tell you which experiments you still need.</li>
+<li><strong>Freeze results about three weeks before the deadline.</strong> After that, write; don’t run.</li>
+<li><strong>Book an internal review:</strong> your adviser and one peer who is <em>not</em> on the paper. The peer is your “reader from a neighbouring field”.</li>
+<li><strong>Keep the last week for checks:</strong> page limit, anonymity, references, figures and the checklist below.</li>
+</ul>
 </section>
-<section id="grammarly-and-other-ai-tools" class="level4">
-<h4 class="anchored" data-anchor-id="grammarly-and-other-ai-tools">Grammarly and other AI tools</h4>
-<p>I recommend students use Grammarly (or a similar) tool to check their writing once they have done a complete pass of editing. I do not recommend relying a lot on ChatGPT-like tools for writing papers as they can often lead to “correct” sounding but “incorrect” sentences.</p>
+<section id="ai-agents" class="level2">
+<h2 class="anchored" data-anchor-id="ai-agents">Grammarly, AI tools and agents</h2>
+<p>I recommend that students use Grammarly (or a similar tool) to check their writing, once they have done a complete pass of editing. I do not recommend relying heavily on ChatGPT-like tools to write papers. They often produce sentences that <em>sound</em> correct but are not.</p>
+<p>AI agents are most useful as <strong>reviewers and checkers</strong>, not as authors. They can flag long sentences, passive voice, hand-typed references and numbers that disagree with a table. They should never invent a number or a citation. You remain responsible for every claim.</p>
+<section id="the-paper-writing-skill" class="level3">
+<h3 class="anchored" data-anchor-id="the-paper-writing-skill">The paper-writing skill</h3>
+<p>This guide also ships as an <strong>agent skill</strong>: a folder of instructions that an agent loads when it writes or reviews a paper. It lives in its own repository, <a href="https://github.com/sustainability-lab/paper-writing"><strong>sustainability-lab/paper-writing</strong></a>, and holds three files:</p>
+<ul>
+<li><code>SKILL.md</code>: the entry point, with the workflow and the core rules.</li>
+<li><code>reference.md</code>: every rule, section by section.</li>
+<li><code>checklist.md</code>: the pre-submission checklist.</li>
+</ul>
+<p><strong>Claude Code.</strong> Install it as a plugin, once, for all your projects:</p>
+<pre class="text"><code>/plugin marketplace add sustainability-lab/paper-writing
+/plugin install paper-writing@sustainability-lab</code></pre>
+<p>Then ask: <em>“Review the introduction of main.tex using the paper-writing skill.”</em></p>
+<p><strong>Other agents (Codex, Gemini CLI, Cursor).</strong> Copy the repository’s <code>skills/paper-writing/</code> folder into your paper’s repository, for example as <code>docs/writing/</code>. Then add one line to the project’s <code>AGENTS.md</code> or <code>GEMINI.md</code>: <em>“When writing or reviewing the paper, follow docs/writing/SKILL.md.”</em></p>
+<p>To change a rule, open a pull request on the repository, and update this page too, so that the two stay in step.</p>
+</section>
+</section>
+<section id="pre-submission-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="pre-submission-checklist">Pre-submission checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">The abstract has 7–8 parts, short sentences, and the main limitation in its last line.</label></li>
+<li><label><input type="checkbox">The introduction’s lead sentences, read in order, give the abstract.</label></li>
+<li><label><input type="checkbox">Every paragraph opens with its point, and the introduction has no bold run-in heads.</label></li>
+<li><label><input type="checkbox">Background and related work are separate. Related work opens with “We now categorize”, and each family ends with how we relate.</label></li>
+<li><label><input type="checkbox">The method gives the intuition first, follows a toy example, and contains no experiment counts.</label></li>
+<li><label><input type="checkbox">The evaluation goes from questions, to setup, to answer-first results, with one headline figure.</label></li>
+<li><label><input type="checkbox">Every baseline got its best chance, and no headline cell is empty.</label></li>
+<li><label><input type="checkbox">Every number in the text matches its table or figure.</label></li>
+<li><label><input type="checkbox">Every reference uses <code>\cref</code>, including references to the supplement.</label></li>
+<li><label><input type="checkbox">All figures share one colour code, are colour-blind safe, and have text of at least 6–7 pt.</label></li>
+<li><label><input type="checkbox">No symbol stands for two things.</label></li>
+<li><label><input type="checkbox">The limitations form a numbered list with ways forward, and the conclusion runs 4–6 sentences.</label></li>
+<li><label><input type="checkbox">Page limit and anonymity are checked, and all notes are off in the submission build.</label></li>
+</ul>
 
 
 </section>
