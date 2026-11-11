@@ -22,6 +22,9 @@ body.quarto-dark .wp-ill, body.quarto-dark .wp-fig img { filter: invert(.9) hue-
 .example { background: var(--soft); border-left: 4px solid var(--rule); padding: 12px 16px 2px; margin: 1rem 0 1.4rem; }
 .example::before { content: "Example"; display: block; font-weight: 700; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
 .lead-hl { color: var(--accent); font-weight: 600; }
+.cmt { margin: -0.9rem 0 1.6rem; padding: 8px 14px; border-left: 4px solid var(--accent); font-size: .93rem; }
+.cmt::before { content: "Comment on the draft"; display: block; font-weight: 700; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin-bottom: 2px; }
+.cmt > :last-child { margin-bottom: 0; }
 .bridge-hl { color: var(--ok); font-style: italic; }
 @media (max-width: 760px) { .ba { grid-template-columns: 1fr; } }
 /* Example-paper switch: every .pv block belongs to one paper; only the chosen paper's blocks show. */
@@ -35,10 +38,10 @@ body.quarto-dark .wp-ill, body.quarto-dark .wp-fig img { filter: invert(.9) hue-
 body.quarto-dark .paper-switch button[aria-selected="true"] { color: #1b1e1c; }
 body.quarto-dark .paper-switch button[aria-selected="true"] small { color: rgba(27,30,28,.75); }
 .ps-about { color: var(--muted); font-size: .92rem; margin: .4rem 0 1.2rem; }
-.pv { display: none; }
-html:not([data-paper]) .pv[data-paper="kestrel"], html[data-paper="kestrel"] .pv[data-paper="kestrel"],
+.pv { display: none; }  /* shown blocks and spans get their normal display back via revert */
+html:not([data-paper]) .pv[data-paper="gemello"], html[data-paper="kestrel"] .pv[data-paper="kestrel"],
 html[data-paper="gemello"] .pv[data-paper="gemello"], html[data-paper="thermeval"] .pv[data-paper="thermeval"],
-html[data-paper="jouleseye"] .pv[data-paper="jouleseye"], html[data-paper="gdmi"] .pv[data-paper="gdmi"] { display: block; }
+html[data-paper="jouleseye"] .pv[data-paper="jouleseye"], html[data-paper="gdmi"] .pv[data-paper="gdmi"] { display: revert; }
 /* The site's legacy rule gives every <pre> a dark background, but Quarto's highlighter emits dark token colours. Keep tokens readable here. */
 pre.sourceCode code span { color: #d4d4d4 !important; }
 pre.sourceCode code span.co { color: #9aab9a !important; font-style: italic; }
@@ -53,21 +56,21 @@ pre.sourceCode code span.dv, pre.sourceCode code span.fl { color: #b8d7a3 !impor
 
 This page sets out how we write papers in the lab. It is for students writing their first paper, for anyone reviewing a draft, and for AI agents that help with either. Writing is a skill, and like any skill it improves with *deliberate* practice. This page gives you something concrete to practise against.
 
-Every rule comes with a **before and after**. Pick the paper the examples follow with the switch below. **Kestrel** is invented: it counts birds from cheap phone recordings, and its numbers are made up, so you notice the rules and not the topic. The other four are **our own papers**. For those, the *after* follows the published paper and its numbers. The *before* is an invented first draft, the kind every paper starts as.
+Every rule comes with a **before and after**, and every example follows one paper. Pick the paper with the switch below, and the whole page changes with it: text, tables and figures. Four are **our own published papers**. For those, the *after* follows the published paper and its numbers, and the *before* is an invented first draft, the kind every paper starts as. **Kestrel**, the last one, is invented outright: it counts birds from cheap phone recordings, and its numbers are made up.
 
 ```{=html}
 <div class="paper-switch" role="tablist" aria-label="Paper the examples follow">
-  <button type="button" role="tab" data-paper="kestrel">Kestrel <small>invented</small></button>
   <button type="button" role="tab" data-paper="gemello">Gemello <small>KDD ’16</small></button>
   <button type="button" role="tab" data-paper="thermeval">ThermEval <small>KDD ’26</small></button>
-  <button type="button" role="tab" data-paper="jouleseye">JoulesEye <small>IMWUT ’24</small></button>
+  <button type="button" role="tab" data-paper="jouleseye">JoulesEye <small>IMWUT ’23</small></button>
   <button type="button" role="tab" data-paper="gdmi">GD-MI <small>AAAI ’26</small></button>
+  <button type="button" role="tab" data-paper="kestrel">Kestrel <small>invented</small></button>
 </div>
 <p class="ps-about pv" data-paper="kestrel"><b>Kestrel</b> counts birds from recordings made on cheap phones. It is invented, and so are its numbers.</p>
 <p class="ps-about pv" data-paper="gemello"><b>Gemello</b> estimates how much energy each appliance in a home uses, from just the monthly electricity bill. <a href="../papers/2016/batra_kdd.pdf">Paper</a></p>
 <p class="ps-about pv" data-paper="thermeval"><b>ThermEval</b> asks whether vision-language models can read thermal images. <a href="https://arxiv.org/abs/2602.14989">Paper</a> · <a href="https://sustainability-lab.github.io/thermeval/">project</a></p>
 <p class="ps-about pv" data-paper="jouleseye"><b>JoulesEye</b> estimates calories burned from breathing, seen by a phone's thermal camera. <a href="../papers/2024/IMWUT_JoulesEye.pdf">Paper</a></p>
-<p class="ps-about pv" data-paper="gdmi"><b>GD-MI</b> decides where to put new air-quality sensors, by gradient ascent on mutual information. <a href="../papers/2026/aaai_2026_air_active_gradient_camera_ready.pdf">Paper</a> · <a href="https://sustainability-lab.github.io/gdmi/">project</a></p>
+<p class="ps-about pv" data-paper="gdmi"><b>GD-MI</b> decides where to put new air-quality sensors, by moving them all at once with gradient descent. <a href="../papers/2026/aaai_2026_air_active_gradient_camera_ready.pdf">Paper</a> · <a href="https://sustainability-lab.github.io/gdmi/">project</a></p>
 ```
 
 ::: {.callout-tip}
@@ -165,9 +168,36 @@ The *after* says what is new, *gradient-based*, instead of claiming *efficient* 
 - **Keep scoping words that are true.** "Cheap phone recordings" is a promise you can keep. "Any audio" is not.
 - **Put the name in a macro**, so a late rename is a one-line change:
 
+::: {.pv paper="gemello"}
+```tex
+\newcommand{\method}{Gemello\xspace}   % needs \usepackage{xspace}
+```
+:::
+
+::: {.pv paper="thermeval"}
+```tex
+\newcommand{\method}{ThermEval\xspace}     % needs \usepackage{xspace}
+\newcommand{\dataset}{ThermEval-D\xspace}  % the paper names its dataset separately
+```
+:::
+
+::: {.pv paper="jouleseye"}
+```tex
+\newcommand{\method}{JoulesEye\xspace}   % needs \usepackage{xspace}
+```
+:::
+
+::: {.pv paper="gdmi"}
+```tex
+\newcommand{\method}{GD-MI\xspace}   % needs \usepackage{xspace}
+```
+:::
+
+::: {.pv paper="kestrel"}
 ```tex
 \newcommand{\method}{Kestrel\xspace}   % needs \usepackage{xspace}
 ```
+:::
 
 ## Abstract
 
@@ -261,7 +291,7 @@ The draft says "a large number of question-answer pairs", "multiple tasks" and "
 | 5 Approach | What we do | We present JoulesEye, which tracks breathing with a smartphone thermal camera and estimates calories burned from it. |
 | 6 Evaluation | How we test it | We test it on 54 participants who cycled and ran at high intensity, against a lab-grade calorimeter. |
 | 7 Results | What we found, in numbers | JoulesEye's error is 5.8%, against 37.6% for smartwatch methods that use heart rate alone. |
-| 8 Conclusion | What it means, and its limits | A 32×24-pixel thermal camera, small enough to fit in a watch, is enough. We tested cycling and running only. |
+| 8 Conclusion | What it means, and its limits | A 32×24-pixel camera, small enough for a watch, also beats heart rate alone when combined with it. The calorimeter mask hid the nostrils, so the main test adds the camera's measured error to a chest belt's breathing rate. |
 
 Here is a first draft of the same abstract, and the rewrite.
 
@@ -270,7 +300,7 @@ Here is a first draft of the same abstract, and the rewrite.
 Fitness tracking using wearable devices has become extremely popular in recent years, and estimation of calories burned is one of the most widely used features. However, it has been observed in the literature that such estimates can be inaccurate. In this work, a novel system named JoulesEye is proposed, which leverages thermal imaging along with advanced signal processing and deep learning techniques to estimate energy expenditure in an accurate manner. A user study was conducted with a number of participants performing different exercises, and it was found that the proposed system achieves significantly lower error than commercial devices. The results demonstrate the feasibility and great potential of thermal sensing for health monitoring applications.
 :::
 ::: {.good}
-Phones and watches measure heart rate well, and fitness apps use it to estimate calories burned. But these estimates can be wrong by over 40%, too far off for medical use. Watches estimate calories from heart rate alone, and accurate methods need a face mask and lab equipment. Breathing carries information about calorie burn that heart rate misses. A thermal camera can see each breath, as the air at the nostrils warms and cools. We present JoulesEye, which tracks breathing with a smartphone thermal camera and estimates calories burned from it. We test it on 54 participants who cycled and ran at high intensity, against a lab-grade calorimeter. JoulesEye's error is 5.8%, against 37.6% for smartwatch methods that use heart rate alone. A 32×24-pixel thermal camera, small enough to fit in a watch, is enough. We tested cycling and running only, and other activities remain future work.
+Phones and watches measure heart rate well, and fitness apps use it to estimate calories burned. But these estimates can be wrong by over 40%, too far off for medical use. Watches estimate calories from heart rate alone, and accurate methods need a face mask and lab equipment. Breathing carries information about calorie burn that heart rate misses. A thermal camera can see each breath, as the air at the nostrils warms and cools. We present JoulesEye, which tracks breathing with a smartphone thermal camera and estimates calories burned from it. We test it on 54 participants who cycled and ran at high intensity, against a lab-grade calorimeter. JoulesEye's error is 5.8%, against 37.6% for smartwatch methods that use heart rate alone. A 32×24-pixel camera, small enough for a watch, also beats heart rate alone when combined with it: 10.1% against 12%. The calorimeter's mask hid the nostrils, so our main test uses a chest belt's breathing rate with the camera's measured error added.
 :::
 :::
 
@@ -283,11 +313,11 @@ The draft never says *why* thermal imaging should work. The rewrite gives the re
 | 1 Context | Where the field is | Over 99% of the world's people breathe air above WHO limits. India has about 500 official monitoring stations for 1.4 billion people. |
 | 2 Motivation | The problem | Each new station is expensive, so where we place the next ones matters. |
 | 3 Prior art | Why existing work falls short | Mutual information (MI) picks informative sites, but its cost grows with every candidate site it checks. Cheap heuristics scale, but they cluster sensors or place them redundantly. |
-| 4 Insight *(optional)* | What explains the gap | If sensor coordinates are continuous parameters, we can move all the new sensors at once by gradient ascent on MI, with no search over sites. |
+| 4 Insight *(optional)* | What explains the gap | If sensor coordinates are continuous parameters, we can move all the new sensors at once by gradient descent, with no search over candidate sites. |
 | 5 Approach | What we do | We present GD-MI. Its runtime does not grow with the number of sensors or the size of the candidate grid. |
 | 6 Evaluation | How we test it | We test it on PM2.5 data across India, against random placement, the maximum-variance heuristic and greedy MI. |
-| 7 Results | What we found, in numbers | GD-MI lowers the error (RMSE) by 4% compared with the maximum-variance heuristic. With nine new sensors in one state, it reaches an RMSE of 5.8, against 5.6 for greedy MI, and runs orders of magnitude faster. |
-| 8 Conclusion | What it means, and its limits | MI-based placement becomes practical at national scale. Gradient ascent can stall in local optima, which restarts could reduce. |
+| 7 Results | What we found, in numbers | With 100 new sensors across India, GD-MI lowers the error (RMSE) by 4% compared with the maximum-variance heuristic. With nine new sensors in one state, it reaches 5.8, against 5.6 for greedy MI, which is feasible only at that smaller scale. |
+| 8 Conclusion | What it means, and its limits | Information-based placement becomes feasible at national scale. Gradient descent depends on where the sensors start, and can stop in a local minimum. |
 
 Here is a first draft of the same abstract, and the rewrite.
 
@@ -296,11 +326,11 @@ Here is a first draft of the same abstract, and the rewrite.
 Air pollution is a major problem worldwide and monitoring it is very important. Sensor placement is a well-studied problem and many approaches have been proposed in the literature, including mutual information based approaches which are known to be computationally expensive. In this paper we propose a novel, efficient and scalable gradient-based framework for optimal sensor placement which leverages the power of differentiable optimization. Extensive experiments on a large real-world dataset show that our approach significantly outperforms the baselines while being much faster, demonstrating its effectiveness for real-world deployment.
 :::
 ::: {.good}
-Over 99% of the world's people breathe air above WHO limits. India has about 500 official monitoring stations for 1.4 billion people, and each new station is expensive. So where we place the next ones matters. Mutual information (MI) picks informative sites, but its cost grows with every candidate site it checks. Cheap heuristics scale, but they cluster sensors or place them redundantly. We treat sensor coordinates as continuous parameters, so we can move all the new sensors at once by gradient ascent on MI. We call this GD-MI. Its runtime does not grow with the number of sensors or the size of the candidate grid. We test it on PM2.5 data across India, against random placement, the maximum-variance heuristic and greedy MI. GD-MI lowers the error by 4% compared with the maximum-variance heuristic. With nine new sensors in one state, it reaches an RMSE of 5.8, against 5.6 for greedy MI, and runs orders of magnitude faster. Gradient ascent can stall in local optima, which restarts could reduce.
+Over 99% of the world's people breathe air above WHO limits. India has about 500 official monitoring stations for 1.4 billion people, and each new station is expensive. So where we place the next ones matters. Mutual information (MI) picks informative sites, but its cost grows with every candidate site it checks. Cheap heuristics scale, but they cluster sensors or place them redundantly. We treat sensor coordinates as continuous parameters, so we can move all the new sensors at once by gradient descent. We call this GD-MI. Its runtime does not grow with the number of sensors or the size of the candidate grid. We test it on PM2.5 data across India, against random placement, the maximum-variance heuristic and greedy MI. With 100 new sensors, GD-MI lowers the error by 4% compared with the maximum-variance heuristic. With nine new sensors in one state, it reaches an RMSE of 5.8, against 5.6 for greedy MI, which is feasible only at that scale. Gradient descent depends on where the sensors start, and can stop in a local minimum.
 :::
 :::
 
-The draft claims *efficient*, *scalable* and *significantly outperforms*, and backs none of them. The rewrite shows the honest comparison too: greedy MI is slightly more accurate (5.6 against 5.8), and GD-MI wins on speed. Reviewers trust a paper that says where its method loses.
+The draft claims *efficient*, *scalable* and *significantly outperforms*, and backs none of them. The rewrite shows the honest comparison too: greedy MI is slightly more accurate (5.6 against 5.8), and GD-MI wins on scale. Reviewers trust a paper that says where its method loses. One thing even the published paper could add: it calls GD-MI "orders of magnitude faster", but reports no runtime. Every reader will want that number.
 :::
 
 ::: {.pv paper="kestrel"}
@@ -336,7 +366,25 @@ The draft claims *efficient*, *scalable* and *significantly outperforms*, and ba
 
 The introduction is the abstract, grown. Write **one paragraph per abstract line**, in the same order. Each paragraph has the same anatomy.
 
-![Each paragraph opens with a lead sentence that states its point and ends with a bridge to the next paragraph.](../images/handbook/writing-papers/paragraph.svg){.wp-fig fig-alt="Two paragraph boxes. The first has a bold lead sentence, grey body lines and a bridge question; an arrow leads to the second paragraph's bold lead."}
+::: {.pv paper="gemello"}
+![Each paragraph opens with a lead sentence that states its point, and ends with a bridge to the next paragraph.](../images/handbook/writing-papers/paragraph-gemello.svg){.wp-fig fig-alt="Two paragraph boxes for Gemello: a lead sentence, body lines and a bridge question, with an arrow to the next paragraph's lead."}
+:::
+
+::: {.pv paper="thermeval"}
+![Each paragraph opens with a lead sentence that states its point, and ends with a bridge to the next paragraph.](../images/handbook/writing-papers/paragraph-thermeval.svg){.wp-fig fig-alt="Two paragraph boxes for ThermEval: a lead sentence, body lines and a bridge question, with an arrow to the next paragraph's lead."}
+:::
+
+::: {.pv paper="jouleseye"}
+![Each paragraph opens with a lead sentence that states its point, and ends with a bridge to the next paragraph.](../images/handbook/writing-papers/paragraph-jouleseye.svg){.wp-fig fig-alt="Two paragraph boxes for JoulesEye: a lead sentence, body lines and a bridge question, with an arrow to the next paragraph's lead."}
+:::
+
+::: {.pv paper="gdmi"}
+![Each paragraph opens with a lead sentence that states its point, and ends with a bridge to the next paragraph.](../images/handbook/writing-papers/paragraph-gdmi.svg){.wp-fig fig-alt="Two paragraph boxes for GD-MI: a lead sentence, body lines and a bridge question, with an arrow to the next paragraph's lead."}
+:::
+
+::: {.pv paper="kestrel"}
+![Each paragraph opens with a lead sentence that states its point, and ends with a bridge to the next paragraph.](../images/handbook/writing-papers/paragraph-kestrel.svg){.wp-fig fig-alt="Two paragraph boxes for Kestrel: a lead sentence, body lines and a bridge question, with an arrow to the next paragraph's lead."}
+:::
 
 **The lead sentence sets the tone.** It states the point of the paragraph. If a reader skims only the lead sentences, they should still get the argument.
 
@@ -379,7 +427,7 @@ We do not know whether vision-language models can read a thermal image. They des
 Wearable devices have become increasingly popular over the last decade, and millions of people now use them to track their health and fitness...
 :::
 ::: {.good}
-Smartwatches get calories burned wrong, often by more than 40%. They estimate it from heart rate alone, and heart rate misses much of what the body is doing...
+Smartwatch calorie estimates can be wrong by more than 40%. They estimate it from heart rate alone, and heart rate misses much of what the body is doing...
 :::
 :::
 :::
@@ -420,7 +468,7 @@ India has about 500 official air-quality stations for 1.4 billion people. New st
 More rules for the introduction:
 
 - **Don't use bold run-in heads** like "**Challenges.**" or "**Our approach.**" The lead sentence does that job, and does it better.
-- **State your goals once and reuse them.** For example: *Kestrel must be accurate on phone audio (G1) and need few labels per species (G2).* The evaluation later answers G1 and G2 by name.
+- **State your goals once and reuse them.** For example: [*Gemello must be as accurate as methods that need hardware in every home (G1), use only data that already exists (G2), and need few metered homes to learn from (G3).*]{.pv paper="gemello"}[*ThermEval must test each step towards reading temperature on its own (G1), and score temperature answers against measured values, not guesses (G2).*]{.pv paper="thermeval"}[*JoulesEye must sense breathing while the user cycles or runs hard (G1), estimate calories burned more accurately than a smartwatch (G2), and work with a thermal camera small enough for a watch (G3).*]{.pv paper="jouleseye"}[*GD-MI must place sensors nearly as well as greedy MI (G1), at a cost that does not grow with the grid (G2), without clustering them (G3).*]{.pv paper="gdmi"}[*Kestrel must be accurate on phone audio (G1) and need few labels per species (G2).*]{.pv paper="kestrel"} The evaluation later answers G1 and G2 by name.
 - **Include a results paragraph** with the headline numbers. Many drafts skip it, and reviewers notice.
 - **Keep the contributions short:** three to five items, ideally in running prose.
 - **Put the caveats at the end.** Don't list weaknesses before the reader knows the method.
@@ -431,8 +479,8 @@ These are **two separate sections**, and they do two different jobs. *Background
 
 ### Background
 
-- **Open with why the section exists:** "We now describe how phone microphones distort sound, because Kestrel must undo that distortion."
-- **Explain in plain words, with one picture or analogy.** For example: *a phone colours sound the way a tinted window colours light; each phone has its own tint.*
+- **Open with why the section exists:** ["We now describe what each kind of electricity meter records, because Gemello works from the coarsest one: the monthly bill."]{.pv paper="gemello"}["We now describe how a thermal camera turns temperatures into colours, because most ThermEval tasks ask a model to turn those colours back into temperatures."]{.pv paper="thermeval"}["We now describe how the body burns energy and how breathing reflects it, because JoulesEye estimates calories burned from breathing alone."]{.pv paper="jouleseye"}["We now describe how a neural process predicts PM2.5 and how sure it is, because GD-MI places sensors to shrink that uncertainty."]{.pv paper="gdmi"}["We now describe how phone microphones distort sound, because Kestrel must undo that distortion."]{.pv paper="kestrel"}
+- **Explain in plain words, with one picture or analogy.** For example: [*the monthly bill is the total at the bottom of a grocery receipt; an energy breakdown is the itemised list above it.*]{.pv paper="gemello"}[*a thermal image is a map of temperatures painted with a colour key; the colour bar is the map's legend, and a new colour map repaints the same map.*]{.pv paper="thermeval"}[*heart rate is like an engine's revs: two engines at the same revs can burn very different amounts of fuel, depending on their size.*]{.pv paper="jouleseye"}[*each sensor is a lamp in a dark room; uncertainty is the dark, and two lamps side by side light the same patch twice.*]{.pv paper="gdmi"}[*a phone colours sound the way a tinted window colours light; each phone has its own tint.*]{.pv paper="kestrel"}
 - **Define every symbol the method uses later.** Define each one once, here.
 - **End with the two or three facts the method builds on.**
 - **Add a figure** if the mechanism is hard to picture.
@@ -445,12 +493,54 @@ Put background *before* related work whenever the way you group prior work depen
 
 Then write **one family per paragraph**. Give each family a short run-in head, which is fine here. Open with a verdict, and **end with one line on how you relate**: what you share, how you differ, and what the difference buys.
 
+::: {.pv paper="gemello"}
+::: {.example}
+We now categorize prior work by *what it must install in each home*.
+
+**Per-appliance and indirect sensing.** Sensing systems give accurate breakdowns, but they need hardware in *every* home. Some put a sensor on each appliance [26, 16] or circuit [37]; others infer use from vibration, temperature or electrical noise [32, 25, 20]. <span class="bridge-hl">Like them, Gemello learns from appliance-level measurements; unlike them, it needs those measurements in only a few homes, not all.</span>
+
+**Non-intrusive load monitoring (NILM).** NILM needs only one meter per home, but that meter must sample every minute or faster [39, 11]. Most smart meters record every 15 minutes or hourly, and most of the world has none. NILM also needs a model of each appliance, and such models have not been shown to transfer across homes [21, 33]. <span class="bridge-hl">Like NILM, Gemello starts from a home's total energy; unlike NILM, it needs one reading a month and no appliance models.</span>
+:::
+:::
+
+::: {.pv paper="thermeval"}
+::: {.example}
+We now categorize prior work by *whether it can score a temperature answer*.
+
+**RGB benchmarks for VLMs.** RGB benchmarks test perception and reasoning broadly, but *only* on ordinary photos. MME, MMBench, SEED-Bench and MM-Vet cover many tasks [21, 35, 36, 42, 58, 59], and newer benchmarks add adversarial and harder questions [37, 49]. <span class="bridge-hl">Like them, ThermEval scores VLMs on visual questions; unlike them, its images encode temperature, where a plausible answer can still be wrong.</span>
+
+**Thermal and multispectral benchmarks.** These benchmarks do use thermal images, but they allow *only* fixed-choice answers. One builds multiple-choice questions with GPT-4o [15]; RGB-Th-Bench asks binary questions and never tests temperature reading [47]. <span class="bridge-hl">Like them, ThermEval tests VLMs on thermal images; unlike them, it also asks for temperatures in degrees, scored against measured per-pixel values.</span>
+:::
+:::
+
+::: {.pv paper="jouleseye"}
+::: {.example}
+We now categorize prior work by *what it can still sense while the user exercises*.
+
+**Respiration sensing.** Chest belts, RGB cameras and earables track breathing well at rest, but vigorous motion drowns the signal. A chest belt confuses pedalling with breathing, because both move the chest at a similar rate [31]. RGB methods amplify light flickering across a moving face [77], and earable methods were tested on everyday head movements [2]. <span class="bridge-hl">Like them, JoulesEye needs no mask; unlike them, it sees warm and cool air at the nostrils, which room lighting does not affect.</span>
+
+**Energy expenditure estimation.** Wearables estimate calories from motion or heart rate, which is convenient but error prone. Accelerometer methods rely on predictive equations that vary widely [47], and heart-rate watches disagree from brand to brand [17]. Accurate alternatives need ECG probes across the torso [54] or confine one person to a room watched by a thermal camera [26, 38]. <span class="bridge-hl">Like them, JoulesEye uses a sensor a watch can carry; unlike them, it adds breathing, which tracks calorie burn better than heart rate.</span>
+:::
+:::
+
+::: {.pv paper="gdmi"}
+::: {.example}
+We now categorise prior work by *how it searches for sites*.
+
+**Greedy mutual information.** Greedy MI picks sites one at a time, each the one that most reduces uncertainty over the map [3, 7]. Because MI is submodular, this greedy choice is provably near-optimal. But it must score *every* candidate site before each pick, and its Gaussian-process model scales cubically with the data [7, 12]. <span class="bridge-hl">Like it, GD-MI scores placements by the uncertainty they remove; unlike it, GD-MI never scores each candidate site.</span>
+
+**Learned placement policies.** Neural processes learn from many past pollution maps and give uncertainty quickly on a new one [5, 9]. Placement methods built on them still pick sites one at a time from a discrete list, and that choice cannot be differentiated [2]. <span class="bridge-hl">Like them, GD-MI uses a neural process for its uncertainty; unlike them, it moves all the new sensors at once, by gradient descent.</span>
+:::
+:::
+
+::: {.pv paper="kestrel"}
 ::: {.example}
 We now categorize prior work by *what it needs to learn a new species*.
 
 **Supervised classifiers.** Supervised classifiers are accurate on clean audio, but they need *hundreds* of labelled calls per species. They train on curated recordings [3, 7] and degrade on phone audio [12]. <span class="bridge-hl">Like them, Kestrel classifies calls with a neural network; unlike them, it needs five calls per species, not hundreds.</span>
 
 **Denoising front-ends.** Denoising front-ends clean the audio before any classifier sees it [5, 9]. They remove background noise, but they *cannot* remove the microphone's own colouring, because that colouring is not noise. <span class="bridge-hl">Like them, Kestrel fixes the audio before classification; unlike them, it models each phone, which is where most of the error comes from.</span>
+:::
 :::
 
 - **Group by idea, never by date.** "Recent work" ages quickly, and it has no thread.
@@ -461,17 +551,61 @@ We now categorize prior work by *what it needs to learn a new species*.
 
 Lead with the **intuition**: one picture, in three to five sentences. Someone who reads only that paragraph should know what the method does and why it works. Then organise the method around **plain questions**. Each question becomes a subsection, and inside each one, the same four beats repeat.
 
-![Method structure: intuition first, then one step per plain question, then the same four beats inside every step.](../images/handbook/writing-papers/method-steps.svg){.wp-fig fig-alt="A box labelled intuition first feeds three step boxes. Below, four coloured boxes in a row: why, toy example, how, guarantee."}
+::: {.pv paper="gemello"}
+![Method structure: intuition first, then one step per plain question, then the same four beats inside every step.](../images/handbook/writing-papers/method-steps-gemello.svg){.wp-fig fig-alt="The Gemello intuition in one box, feeding three plain-question steps; below, four beats: why, toy example, how, guarantee."}
+:::
+
+::: {.pv paper="thermeval"}
+![Method structure: intuition first, then one step per plain question, then the same four beats inside every step.](../images/handbook/writing-papers/method-steps-thermeval.svg){.wp-fig fig-alt="The ThermEval intuition in one box, feeding three plain-question steps; below, four beats: why, toy example, how, guarantee."}
+:::
+
+::: {.pv paper="jouleseye"}
+![Method structure: intuition first, then one step per plain question, then the same four beats inside every step.](../images/handbook/writing-papers/method-steps-jouleseye.svg){.wp-fig fig-alt="The JoulesEye intuition in one box, feeding three plain-question steps; below, four beats: why, toy example, how, guarantee."}
+:::
+
+::: {.pv paper="gdmi"}
+![Method structure: intuition first, then one step per plain question, then the same four beats inside every step.](../images/handbook/writing-papers/method-steps-gdmi.svg){.wp-fig fig-alt="The GD-MI intuition in one box, feeding three plain-question steps; below, four beats: why, toy example, how, guarantee."}
+:::
+
+::: {.pv paper="kestrel"}
+![Method structure: intuition first, then one step per plain question, then the same four beats inside every step.](../images/handbook/writing-papers/method-steps-kestrel.svg){.wp-fig fig-alt="The Kestrel intuition in one box, feeding three plain-question steps; below, four beats: why, toy example, how, guarantee."}
+:::
 
 **A toy example teaches more than an equation.** Use two dimensions and numbers small enough to check in your head. Follow the same toy through every step.
 
+::: {.pv paper="gemello"}
+::: {.example}
+Suppose we want the lighting energy of home X, which has 1,500 sq ft. Three metered homes have 1,400, 1,600 and 3,000 sq ft. They use 20, 30 and 80 kWh a month on lights. For lighting, Gemello compares floor area, so X's two nearest twins are the first two homes. It averages their lighting: (20 + 30) ÷ 2 = 25 kWh. For heating and cooling, it compares summer bills instead, so X may get different twins. Real homes have many features and many metered homes, but every step works the same way.
+:::
+:::
+
+::: {.pv paper="thermeval"}
+::: {.example}
+Suppose a colour bar runs from 30 °C (dark) to 40 °C (bright) in ten equal steps, so each step is 1 °C. Person A's nose sits on step 4, so it is 34 °C. Person B's nose sits on step 6, so it is 36 °C. B is hotter, and the camera's stored temperatures confirm it. A model that reads 34 as 340 has broken the colour-bar link. A model that answers 37 °C for every nose has ignored the pixels. Each wrong answer points to a different broken link.
+:::
+:::
+
+::: {.pv paper="jouleseye"}
+::: {.example}
+Suppose we watch the nostrils for 10 seconds. Their brightness rises and falls four times: warm air out, cool air in. So the breathing rate is 4 × 6 = 24 breaths a minute. The first model turns this rate into the volume of air breathed out. The second turns that volume into oxygen used, say 10 ml per kg per minute. For a 60 kg rider, that is 10 × 60 = 600 ml, or 0.6 litres, a minute. At 5 kcal per litre of oxygen, the rider burns 0.6 × 5 = 3 kcal a minute. Real models learn both steps from data, but the chain is the same.
+:::
+:::
+
+::: {.pv paper="gdmi"}
+::: {.example}
+Suppose the map has just two sites. Site A sits next to an existing station, so the model is fairly sure of it: uncertainty 1. Site B is far from any station: uncertainty 9. A new sensor at position *x*, from A (*x* = 0) to B (*x* = 1), clears the uncertainty near it. That leaves *x* + 9(1 − *x*) = 9 − 8*x* in total. We start the sensor at *x* = 0.25, which leaves 7. The gradient is −8, so moving towards B helps. One step of size 0.05 takes it to *x* = 0.65, which leaves 3.8. The next step would carry it past B, so we snap it to B, which leaves 1. Real maps have thousands of sites and many sensors, but every step works the same way.
+:::
+:::
+
+::: {.pv paper="kestrel"}
 ::: {.example}
 Suppose sound has just two frequency bands, *low* and *high*. A bird sings with energy (4, 2). Phone A halves the high band, so it records (4, 1). From a few clips, Kestrel learns that phone A's gain is (1, 0.5). It divides the gain out: (4, 1) ÷ (1, 0.5) = (4, 2). The bird's song is back. Real audio has hundreds of bands, but every step works the same way.
+:::
 :::
 
 More rules for the method:
 
-- **Keep the method generic, with no exact counts.** "We record clips from several phones" belongs in the method. "40 phone models" belongs in the evaluation.
+- **Keep the method generic, with no exact counts.** ["We match each home to its nearest metered homes" belongs in the method. "57 homes from Dataport, with K from 1 to 6" belongs in the evaluation.]{.pv paper="gemello"}["We test each model at several imaging distances" belongs in the method. "2 ft, 6 ft and 10 ft" belongs in the evaluation.]{.pv paper="thermeval"}["We track the nostrils in the thermal video" belongs in the method. "A FLIR One Pro at 8.6 frames per second" belongs in the evaluation.]{.pv paper="jouleseye"}["We start from the existing stations and add *k* new sensors" belongs in the method. "Up to 100 new sensors, added to India's CPCB network" belongs in the evaluation.]{.pv paper="gdmi"}["We record clips from several phones" belongs in the method. "40 phone models" belongs in the evaluation.]{.pv paper="kestrel"}
 - **Use few equations:** only the ones the reader needs to follow the argument. Move derivations and implementation details to the appendix.
 - **Present textbook results as design guarantees,** and name the parts that are truly new. Don't list a textbook theorem as a contribution.
 - **Keep notation clean.** Never use one symbol for two things.
@@ -483,6 +617,53 @@ Call the section *Evaluation*, and make it **question-driven**. A model I like i
 
 **Open with the questions,** each tied to a goal from the introduction:
 
+::: {.pv paper="gemello"}
+::: {.example}
+We now evaluate Gemello against the goals of Section 1. We ask:
+
+- **Q1** (G1, G2): From the monthly bill alone, is Gemello as accurate as methods that meter each home?
+- **Q2** (G1): Does that still hold when those methods get 2-minute data?
+- **Q3** (G3): How many metered homes does Gemello need to learn from?
+- **Q4**: Does 15-minute smart-meter data help, where a home has it?
+- **Q5**: What makes two homes similar, for each appliance?
+:::
+:::
+
+::: {.pv paper="thermeval"}
+::: {.example}
+We now use ThermEval to test 25 VLMs against the goals of Section 1. We ask:
+
+- **Q1** (G1): Can VLMs recognise a thermal image, even after recolouring?
+- **Q2** (G1): Can they read the colour bar?
+- **Q3** (G2): Can they tell which person, or which body part, is hotter?
+- **Q4** (G2): Can they estimate a temperature in degrees?
+- **Q5**: Do larger models, richer prompts or fine-tuning close the gap?
+:::
+:::
+
+::: {.pv paper="jouleseye"}
+::: {.example}
+We now evaluate JoulesEye against the goals of Section 1. We ask:
+
+- **Q1** (G1): How accurately does JoulesEye measure breathing while people cycle and run?
+- **Q2** (G2): Does it estimate calories burned more accurately than a smartwatch?
+- **Q3** (G3): Does a 32×24-pixel thermal camera still work?
+- **Q4**: Which inputs matter most: breathing, heart rate or skin temperature?
+:::
+:::
+
+::: {.pv paper="gdmi"}
+::: {.example}
+We now evaluate GD-MI against the goals of Section 1. We ask:
+
+- **Q1**: Which model gives the most useful uncertainty to place sensors with?
+- **Q2** (G1): How close does GD-MI come to greedy MI, in a region small enough for greedy MI to run?
+- **Q3** (G1, G2): Across all of India, where greedy MI is too slow, does GD-MI beat the maximum-variance heuristic?
+- **Q4** (G3): Does GD-MI spread sensors out where the heuristic clusters them?
+:::
+:::
+
+::: {.pv paper="kestrel"}
 ::: {.example}
 We now evaluate Kestrel against the goals of Section 1. We ask:
 
@@ -491,17 +672,54 @@ We now evaluate Kestrel against the goals of Section 1. We ask:
 - **Q3**: Does Kestrel work on phones it has never seen?
 - **Q4**: Which part of Kestrel matters most?
 :::
+:::
 
 ### Setup
 
-- **Scenario.** Write one sentence on the real use case: *"Our setup mimics a volunteer survey, where each species has a few expert-labelled calls."* Derive the protocol from that sentence.
+- **Scenario.** Write one sentence on the real use case: [*"Our setup mimics a utility that has metered a few homes appliance by appliance, and has only monthly bills for the rest."*]{.pv paper="gemello"}[*"Our setup mimics a user who shows an off-the-shelf model a false-coloured thermal image and asks a plain question."*]{.pv paper="thermeval"}[*"Our setup mimics a gym session: a phone on the handlebar or treadmill console films the face while the person cycles or runs."*]{.pv paper="jouleseye"}[*"Our setup mimics a planner who adds sensors to India's existing CPCB network, choosing sites from past years and judged on later ones."*]{.pv paper="gdmi"}[*"Our setup mimics a volunteer survey, where each species has a few expert-labelled calls."*]{.pv paper="kestrel"} Derive the protocol from that sentence.
 - **Data.** Say *why* you chose this data. Give **one table of every data set**, with its size, its purpose and what it tests. State plainly that the test data shares nothing with the training data.
 
-  | Set | Size | Purpose |
-  |---|---|---|
-  | Clean calls | 30,000 clips | Pre-training only |
-  | Phone clips, 30 models | 9,000 clips | Main test (Q1, Q2) |
-  | Phone clips, 10 new models | 3,000 clips | Unseen phones (Q3) |
+
+::: {.pv paper="gemello"}
+| Set | Size | Purpose |
+|---|---|---|
+| Monthly bills and home facts (Dataport, Texas, 2013) | 57 homes, 12 months each | Gemello's only input (Q1, Q2, Q5) |
+| Appliance submeters, same homes | 12 to 32 homes per appliance | Ground truth, and the twins Gemello averages |
+| Whole-home power, 15-minute (and 2-minute for LBM) | Same homes | Baselines' input (Q1, Q2); optional extra for Gemello (Q4) |
+| Random subsets of the metered homes | 7 homes upwards, 100 draws each | How many metered homes Gemello needs (Q3) |
+:::
+
+::: {.pv paper="thermeval"}
+| Set | Size | Purpose |
+|---|---|---|
+| FLIR and LLVIP road scenes (public) | 40,000 questions | Modality and colour maps (Q1); counting |
+| ThermEval-D, colour bars | 8,376 questions | Reading the colour bar (Q2) |
+| ThermEval-D, people and objects | 21,845 questions | Comparing and estimating temperatures (Q3, Q4) |
+:::
+
+::: {.pv paper="jouleseye"}
+| Set | Size | Purpose |
+|---|---|---|
+| Session 1: thermal video and chest belt, no mask | 54 participants, 3 min each | Breathing accuracy (Q1) |
+| Session 2: calorimeter mask, chest belt, Apple Watch | 54 participants, 15 min each | Calorie accuracy, inputs (Q2, Q4) |
+| Watch prototype: 32×24 thermal camera | 5 participants, 1 min running | Low resolution (Q3) |
+:::
+
+::: {.pv paper="gdmi"}
+| Set | Monthly PM2.5 maps | Purpose |
+|---|---|---|
+| Training | Jan 1998 – Dec 2008 | Train the neural processes |
+| Validation | Jan 2009 – Dec 2010 | Choose the model (Q1); Madhya Pradesh case study (Q2) |
+| Test | Jan 2011 – Dec 2018 | Placement across India (Q3, Q4) |
+:::
+
+::: {.pv paper="kestrel"}
+| Set | Size | Purpose |
+|---|---|---|
+| Clean calls | 30,000 clips | Pre-training only |
+| Phone clips, 30 models | 9,000 clips | Main test (Q1, Q2) |
+| Phone clips, 10 new models | 3,000 clips | Unseen phones (Q3) |
+:::
 
 - **Baselines in groups**, each with a reason it is there: the standard method, the strongest one, the closest to yours, or what a practitioner would try first.
 - **Give every baseline its best chance.** Tune all methods with the same rule. Use the authors' code where you can. Check that your copy reproduces a published number.
@@ -515,6 +733,51 @@ We now evaluate Kestrel against the goals of Section 1. We ask:
 
 **Make each subsection a question, and answer it in its first sentence.**
 
+::: {.pv paper="gemello"}
+::: {.ba}
+::: {.bad}
+**4.5 Results.** In this section, we present the results of our approach and the baselines. Figure 3 shows the energy accuracy of all methods...
+:::
+::: {.good}
+**4.5 From the monthly bill alone, is Gemello as accurate as methods that meter each home?** Yes, and on HVAC it is more accurate: 76%, against 61% for FHMM and 56% for LBM (Figure 3). Only on the fridge does LBM lead, 72% against 69%...
+:::
+:::
+:::
+
+::: {.pv paper="thermeval"}
+::: {.ba}
+::: {.bad}
+**5.4 Task 5: Thermal Reasoning.** In this section, we evaluate the ability of VLMs to reason over thermal intensities. Table 4 shows the results of all models on the two subtasks...
+:::
+::: {.good}
+**5.4 Can VLMs tell which of two people is hotter?** Not reliably. The best model, Gemini 3 Pro, is right 74% of the time, against 84% for people and 50% by chance (Table 4)...
+:::
+:::
+:::
+
+::: {.pv paper="jouleseye"}
+::: {.ba}
+::: {.bad}
+**6.2 Result on estimating energy expenditure.** In this section, we present the results of energy expenditure estimation using different inputs. Figure 9 shows the MAPE of all the inputs...
+:::
+::: {.good}
+**6.2 Does JoulesEye estimate calories better than a smartwatch?** Yes, by a wide margin: 5.8% error, against 37.6% for the Apple Watch's own estimate (Figure 9)...
+:::
+:::
+:::
+
+::: {.pv paper="gdmi"}
+::: {.ba}
+::: {.bad}
+**5.4 Results across India.** In this section, we present the results of the large-scale experiment. Figure 2 shows the RMSE of all methods as a function of the number of added stations...
+:::
+::: {.good}
+**5.4 Does GD-MI beat the maximum-variance heuristic across India?** Yes, and by more as the budget grows: with 100 new sensors, its RMSE is 7.1, against 7.4 for MaxVar (Figure 2)...
+:::
+:::
+:::
+
+::: {.pv paper="kestrel"}
 ::: {.ba}
 ::: {.bad}
 **5.3 Results on unseen devices.** In this section, we present results on devices not seen during training. Table 3 shows the accuracy of all methods...
@@ -523,14 +786,34 @@ We now evaluate Kestrel against the goals of Section 1. We ask:
 **5.3 Does Kestrel work on phones it has never seen?** Yes, nearly as well: 79% on ten unseen phone models, against 83% on seen ones (Table 3)...
 :::
 :::
+:::
+
 
 **Give one headline figure** that tells the main result at a glance. A trade-off plot with your method alone in the good corner beats any bar chart.
 
-![The same invented results drawn two ways. The bar chart needs a legend and a careful read. The trade-off plot shows the message at once: Kestrel is alone in the good corner.](../images/handbook/writing-papers/headline.svg){.wp-fig fig-alt="Left, a grouped bar chart with seven colours and a legend. Right, a scatter plot of accuracy against labels needed, with grey baselines bottom left and a blue Kestrel star alone in a shaded goal region at top right."}
+::: {.pv paper="gemello"}
+![Gemello's results drawn two ways. The bars need a legend and a careful read. The dot plot shows the message at once: from one meter reading a month, Gemello is the most accurate on heating and cooling, and close behind LBM on the fridge. Numbers from the paper's text.](../images/handbook/writing-papers/headline-gemello.svg){.wp-fig fig-alt="Left, grouped bars for FHMM, LBM and Gemello on HVAC and fridge with a legend. Right, two rows of labelled dots: Gemello highest on heating and cooling at 76%, and at 69% on the fridge against LBM's 72%."}
+:::
+
+::: {.pv paper="thermeval"}
+![ThermEval's Task 5 results drawn two ways. Twenty-four bars in alphabetical order hide the message. Against model size it is plain: open models from 0.3B to 235B parameters scatter around chance, and even the best model stays below people. Numbers from Table 4.](../images/handbook/writing-papers/headline-thermeval.svg){.wp-fig fig-alt="Left, 24 coloured bars of accuracy in alphabetical order. Right, accuracy against model size on a log axis: grey dots near the 50% chance line, a line for people at 84%, and Gemini 3 Pro at 74% in a strip for models of undisclosed size."}
+:::
+
+::: {.pv paper="jouleseye"}
+![JoulesEye's calorie errors drawn two ways. Coded bars send the reader to a legend. Sorted and labelled, the message is plain: every input with breathing stays under 6% error, against 10–12% for heart rate and 37.6% for the watch's own estimate. Numbers from Figure 9.](../images/handbook/writing-papers/headline-jouleseye.svg){.wp-fig fig-alt="Left, seven coloured bars labelled I1 to I7 with a legend. Right, horizontal bars sorted by error with direct labels: four breathing inputs in red at 5.0 to 5.8%, heart rate at 10.2 and 12%, the smartwatch at 37.6%."}
+:::
+
+::: {.pv paper="gdmi"}
+![GD-MI's results drawn two ways. The bars hide that greedy MI was never run across India. The dot plot says it: GD-MI comes close to greedy MI where MI can run, and beats the maximum-variance heuristic at national scale. Numbers from the paper's text.](../images/handbook/writing-papers/headline-gdmi.svg){.wp-fig fig-alt="Left, grouped bars of RMSE for greedy MI, GD-MI and MaxVar in two settings, with a legend. Right, two rows of labelled dots: in one state, greedy MI 5.6, GD-MI 5.8, MaxVar 6.3; across India, GD-MI 7.1 and MaxVar 7.4, with greedy MI not run."}
+:::
+
+::: {.pv paper="kestrel"}
+![The same invented results drawn two ways. The bar chart needs a legend and a careful read. The trade-off plot shows the message at once: Kestrel is alone in the good corner.](../images/handbook/writing-papers/headline-kestrel.svg){.wp-fig fig-alt="Left, a grouped bar chart with seven colours and a legend. Right, a scatter plot of accuracy against labels needed, with grey baselines bottom left and a red Kestrel star alone in a shaded goal region at top right."}
+:::
 
 - **Explain *why* each baseline family fails,** in one bullet each. Numbers alone do not convince.
-- **Use an oracle or upper bound** to separate the parts of your method. For example: *with perfect phone labels, accuracy rises only from 83% to 85%, so phone detection is not the bottleneck.*
-- **Choose sensitivity analyses that answer real questions,** such as "how many labelled calls does a new species need?".
+- **Use an oracle or upper bound** to separate the parts of your method. For example: [*with a perfect choice of twins, the paper's Oracle beats Gemello on every appliance, so finding similar homes, not averaging them, limits accuracy.*]{.pv paper="gemello"}[*fine-tuning Qwen-VL 2.5 (8B) doubles its body-part ranking accuracy, from 0.32 to 0.64, but leaves two-person accuracy at 0.60, against 0.84 for people.*]{.pv paper="thermeval"}[*even perfect heart rate leaves 10.2% error, against 5.8% for estimated breathing. Perfect breathing reaches 5.0%, so the signal matters more than sensing it perfectly.*]{.pv paper="jouleseye"}[*with nine new sensors, slow greedy MI reaches an RMSE of 5.6 and MaxVar 6.3; GD-MI, at 5.8, closes most of that gap.*]{.pv paper="gdmi"}[*with perfect phone labels, accuracy rises only from 83% to 85%, so phone detection is not the bottleneck.*]{.pv paper="kestrel"}
+- **Choose sensitivity analyses that answer real questions,** such as ["how many metered homes does Gemello need to learn from?"]{.pv paper="gemello"}["does the temperature error grow as the camera moves from 2 ft to 10 ft away?"]{.pv paper="thermeval"}["how many seconds of breathing does one estimate need?"]{.pv paper="jouleseye"}["how does the gain over the heuristic change as the budget grows from 10 to 100 new sensors?"]{.pv paper="gdmi"}["how many labelled calls does a new species need?"]{.pv paper="kestrel"}.
 - **Report effect sizes with intervals,** not only p-values. For zero events, use the *rule of three*: 0 errors in 1,000 trials means an error rate of at most about 0.3%, at 95% confidence.
 - **Show failure cases,** with their causes.
 
@@ -540,8 +823,34 @@ We now evaluate Kestrel against the goals of Section 1. We ask:
 
 **Limitations** come as a numbered list. Each item has an *italic verdict*, the evidence, and a way forward.
 
+::: {.pv paper="gemello"}
+::: {.example}
+1. *Gemello gives monthly totals, not a power trace.* It averages its twins' monthly energy, so it cannot serve uses that need the trace, such as activity recognition or anomaly detection. Where a home has a smart meter, adding Gemello's features to a trace-level method such as LBM is a natural next step.
+:::
+:::
+
+::: {.pv paper="thermeval"}
+::: {.example}
+1. *Even after fine-tuning, temperature errors are too large for safety-critical use.* The fine-tuned Qwen-VL 2.5 still misses absolute temperatures by 1–2 °C on T6 and T7. Its region error falls only from 2.85 °C to 2.60 °C. Pretraining that includes physical sensor data, not only RGB photos, is a natural next step.
+:::
+:::
+
+::: {.pv paper="jouleseye"}
+::: {.example}
+1. *The watch prototype is too slow for running.* Its camera runs at 3 frames per second, so its breathing error is 8.1%, against 2.1% for the phone camera. Alone, its calorie error is 15.4%, worse than heart rate's 12%; with heart rate, it is 10.1%. A faster low-resolution camera is the natural next step.
+:::
+:::
+
+::: {.pv paper="gdmi"}
+::: {.example}
+1. *GD-MI can stop in a poor local minimum.* Gradient descent depends on where the sensors start, so results vary from run to run. Figures 1 and 2 show the spread over five random starts. Running several starts, or starting from the heuristic's placement, is a natural next step.
+:::
+:::
+
+::: {.pv paper="kestrel"}
 ::: {.example}
 1. *Kestrel fails on overlapping calls.* When two species sing at once, accuracy falls to 41%. Source separation before classification is a natural next step.
+:::
 :::
 
 **The conclusion** mirrors the abstract's last lines in four to six sentences: problem, insight, method, headline numbers, takeaway. Two sentences are too few.
@@ -552,14 +861,52 @@ We now evaluate Kestrel against the goals of Section 1. We ask:
 
 Use the **active voice**, with "we" for what *you* did. Active sentences are shorter. They also make clear who did what.
 
+::: {.pv paper="gemello"}
+| Passive | Active |
+|---|---|
+| It is observed that FHMM performs poorly on the dryer. | FHMM performs poorly on the dryer. |
+| Experiments were conducted on 57 homes. | We test Gemello on 57 homes. |
+| A novel approach, Gemello, is proposed. | We present Gemello. |
+| Lighting energy is estimated from homes of similar area. | Gemello estimates lighting energy from homes of similar area. |
+:::
+
+::: {.pv paper="thermeval"}
+| Passive | Active |
+|---|---|
+| It is observed that complex colour maps lead to more failures. | Colour maps such as Summer and Spring cause more errors. |
+| Experiments were conducted on 25 VLMs. | We evaluate 25 VLMs. |
+| A novel benchmark, ThermEval, is proposed. | We present ThermEval. |
+| Model outputs are parsed by a language model. | A text-only LLM parses each model's answer. |
+:::
+
+::: {.pv paper="jouleseye"}
+| Passive | Active |
+|---|---|
+| It has been observed that calorie estimates from wearables are inaccurate. | Wearable calorie estimates can be wrong by over 40%. |
+| Experiments were conducted on 54 participants. | We test JoulesEye on 54 participants. |
+| A novel system, JoulesEye, is proposed. | We present JoulesEye. |
+| The nostril region is tracked across frames. | JoulesEye tracks the nostrils across frames. |
+:::
+
+::: {.pv paper="gdmi"}
+| Passive | Active |
+|---|---|
+| It is observed that MaxVar clusters sensors. | MaxVar clusters sensors. |
+| Experiments were conducted on PM2.5 data across India. | We test GD-MI on PM2.5 data across India. |
+| A novel gradient-based framework is proposed. | We present GD-MI. |
+| The sensor coordinates are updated with Adam. | GD-MI updates the sensor coordinates with Adam. |
+:::
+
+::: {.pv paper="kestrel"}
 | Passive | Active |
 |---|---|
 | It is observed that accuracy drops on phones. | Accuracy drops on phones. |
 | Experiments were conducted on 12,000 clips. | We test Kestrel on 12,000 clips. |
 | A novel framework, Kestrel, is proposed. | We present Kestrel. |
 | The gain is estimated from a few clips. | Kestrel estimates the gain from a few clips. |
+:::
 
-The passive is fine when the actor doesn't matter: *"The clips were recorded between 2019 and 2023."*
+The passive is fine when the actor doesn't matter: [*"The appliance data were recorded at one-minute resolution."*]{.pv paper="gemello"}[*"All images were captured with a TOPDON TC001 Plus thermal camera."*]{.pv paper="thermeval"}[*"The data were collected in December and January, in a room kept at 76 °F."*]{.pv paper="jouleseye"}[*"The PM2.5 maps were built from satellite, chemical-model and ground data, on a 0.1° grid."*]{.pv paper="gdmi"}[*"The clips were recorded between 2019 and 2023."*]{.pv paper="kestrel"}
 
 ### Short sentences
 
@@ -569,8 +916,34 @@ Aim for a median of about **15–18 words** and a maximum of about **25**. Split
 
 Use `\emph{}` on the few words that carry the argument: *every*, *only*, *not*, *before*. Use it for contrast and for new terms. Don't use it for decoration. One or two per paragraph is plenty.
 
+::: {.pv paper="gemello"}
+::: {.example}
+NILM needs a meter reading *every minute*; Gemello needs one *a month*. It defines similarity *per appliance*, not per home.
+:::
+:::
+
+::: {.pv paper="thermeval"}
+::: {.example}
+Most VLMs can *find* the colour bar, but several cannot *read* it. A thermal image encodes *temperature*, not colour or texture.
+:::
+:::
+
+::: {.pv paper="jouleseye"}
+::: {.example}
+A chest belt *cannot* tell breathing from pedalling, because both move the chest at a similar rate. JoulesEye watches the *nostrils*, not the chest.
+:::
+:::
+
+::: {.pv paper="gdmi"}
+::: {.example}
+Greedy MI must score *every* candidate site before it places each sensor. GD-MI moves *all* the new sensors at once, so a finer grid adds *no* extra search.
+:::
+:::
+
+::: {.pv paper="kestrel"}
 ::: {.example}
 Denoising removes background noise, but it *cannot* remove the microphone's colouring. Kestrel models *each phone*, not each recording.
+:::
 :::
 
 ### Cut the filler
@@ -581,7 +954,7 @@ Denoising removes background noise, but it *cannot* remove the microphone's colo
 | It is worth noting that X | X |
 | The intuition is simple: X | X |
 | a novel / crucial / groundbreaking method | a method (show why it matters) |
-| significantly better | 83% vs 61% (and the test, if you mean statistical significance) |
+| [comparable to or better than]{.pv paper="gemello"}[significantly below human performance]{.pv paper="thermeval"}[significantly better]{.pv paper="jouleseye"}[significantly better]{.pv paper="gdmi"}[significantly better]{.pv paper="kestrel"} | [76% vs 61% and 56% on HVAC; 69% vs 72% on the fridge, where LBM wins]{.pv paper="gemello"}[74% vs 84% (and the test, if you mean statistical significance)]{.pv paper="thermeval"}[5.8% vs 37.6% error (MAPE) for the Apple Watch's own estimate]{.pv paper="jouleseye"}[RMSE of 7.1 against 7.4 for MaxVar with 100 new sensors, 4% lower (and the test, if you mean statistical significance)]{.pv paper="gdmi"}[83% vs 61% (and the test, if you mean statistical significance)]{.pv paper="kestrel"} |
 | due to the fact that | because |
 
 **Write like a person.** Avoid inflated words, stacked hedges ("may potentially suggest") and three-item lists that are only there for rhythm.
@@ -589,7 +962,7 @@ Denoising removes background noise, but it *cannot* remove the microphone's colo
 ### Numbers and terms
 
 - **Never write a bare number.** Compare it to something, and give its unit and its *n*.
-- **Use one word per concept.** If you call it a *gain*, don't switch to *response*, *profile* and *filter* later.
+- **Use one word per concept.** [If you call them *metered homes*, don't switch to *submetered*, *train*, *instrumented* and *neighbourhood homes* later.]{.pv paper="gemello"}[If you call it a *colour bar*, don't switch to *colorbar*, *temperature scale* and *legend* later.]{.pv paper="thermeval"}[If you call it *energy expenditure*, don't switch to *calorie burn*, *caloric expenditure* and *VO2* later.]{.pv paper="jouleseye"}[If you call TNP-D the *surrogate*, don't switch to *predictive model*, *the NP* and *the model* later.]{.pv paper="gdmi"}[If you call it a *gain*, don't switch to *response*, *profile* and *filter* later.]{.pv paper="kestrel"}
 - **Expand an acronym once**, and only if you use it again.
 
 ### American and British English
@@ -602,6 +975,51 @@ Some spellings differ: British "colour" and "optimise" are American "color" and 
 
 Give each figure **one message**, and make that message the first sentence of the caption. A reader who sees only the figure and its caption should understand it.
 
+::: {.pv paper="gemello"}
+::: {.ba}
+::: {.bad}
+**Figure 3.** Energy accuracy of different approaches across appliances.
+:::
+::: {.good}
+**Figure 3. From the monthly bill alone, Gemello is as accurate as methods that meter each home.** Each group is one appliance; bars give energy accuracy (%, higher is better) for FHMM, LBM and Gemello, with standard errors across homes. LBM leads on the fridge, 72% to 69%.
+:::
+:::
+:::
+
+::: {.pv paper="thermeval"}
+::: {.ba}
+::: {.bad}
+**Figure 2.** Overview of the tasks in the ThermEval benchmark.
+:::
+::: {.good}
+**Figure 2. ThermEval asks seven kinds of question, each one step closer to reading temperature.** From left: is it thermal (T1–T2), how many people (T3), what the colour bar says (T4), who is hotter (T5) and how hot (T6–T7). Each panel shows one real question from the benchmark.
+:::
+:::
+:::
+
+::: {.pv paper="jouleseye"}
+::: {.ba}
+::: {.bad}
+**Figure 9.** MAPE of energy expenditure estimation for different inputs.
+:::
+::: {.good}
+**Figure 9. Breathing predicts calories burned far better than heart rate.** Error (MAPE, lower is better) of each input's calorie estimate against an indirect calorimeter. Every input with breathing (RR) stays under 6%; heart rate alone gives 10–12%, and the Apple Watch's own estimate 37.6%.
+:::
+:::
+:::
+
+::: {.pv paper="gdmi"}
+::: {.ba}
+::: {.bad}
+**Figure 1.** Results of different methods on the regional subset.
+:::
+::: {.good}
+**Figure 1. With nine new sensors, GD-MI nearly matches greedy MI and beats MaxVar.** Validation RMSE in Madhya Pradesh (lower is better) as 0 to 9 sensors join the existing CPCB stations. Bands show the 25th to 75th percentile over five runs of the two random methods, GD-MI and Random.
+:::
+:::
+:::
+
+::: {.pv paper="kestrel"}
 ::: {.ba}
 ::: {.bad}
 **Figure 4.** Results of different methods on the phone dataset.
@@ -610,6 +1028,8 @@ Give each figure **one message**, and make that message the first sentence of th
 **Figure 4. Kestrel is the only method that is both accurate and label-efficient.** Each point is one method: accuracy on phone audio (x) against labelled calls needed per species (y, log scale). The shaded corner is the goal.
 :::
 :::
+:::
+
 
 If a figure needs a paragraph to decode, split it into step-by-step panels with one idea per panel, or move the detailed version to the appendix.
 
@@ -645,6 +1065,104 @@ We follow this excellent [short guide to making nice tables](https://people.inf.
 - **Use counts when *n* is small** (7/10, not 70%).
 - **State your bold and underline rule**, and shade your own method's row.
 
+::: {.pv paper="gemello"}
+```tex
+\begin{table}[t]
+  \caption{\textbf{From the monthly bill alone, \method is the most accurate on HVAC.}
+    Energy accuracy (\%, higher is better) on the two appliances reported in the text, and the data each
+    method needs from every home. LBM is best on the fridge. Best in \textbf{bold}.}
+  \label{tab:main}
+  \begin{tabular}{lccc}
+    \toprule
+    & \multicolumn{2}{c}{G1: accurate?} & G2: existing data only? \\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-4}
+    Method & HVAC & Fridge & Data from each home \\
+    \midrule
+    FHMM & 61 & 39 & 15-minute power \\
+    LBM & 56 & \textbf{72} & 15-minute power \\
+    \rowcolor{gray!12} \method (ours) & \textbf{76} & 69 & \textbf{Monthly bill} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+```
+:::
+
+::: {.pv paper="thermeval"}
+```tex
+\begin{table}[t]
+  \caption{\textbf{No model matches people at telling which of two people is hotter, and fine-tuning helps only on ranking body parts.}
+    Task 5 accuracy (higher is better; chance is 0.50 for two people and 0.17 for ranking three body parts)
+    and Task 6 error in $^\circ$C (lower is better). Best model in each column in \textbf{bold};
+    people are a reference, not a competitor.}
+  \label{tab:reasoning}
+  \begin{tabular}{lcccc}
+    \toprule
+    & \multicolumn{2}{c}{Q3: who is hotter?} & \multicolumn{2}{c}{Q4: how hot?} \\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+    Model (parameters) & Two people & Body parts & Marker & Region \\
+    \midrule
+    Qwen A22 (235B)              & 0.48 & 0.34 & 3.72 & 3.40 \\
+    Intern-VL 3 (38B)            & 0.64 & 0.41 & 3.63 & 2.59 \\
+    Qwen-VL 2.5 (8B), zero-shot  & 0.60 & 0.32 & 2.88 & 2.85 \\
+    \rowcolor{gray!12} Qwen-VL 2.5 (8B), fine-tuned on \method & 0.60 & \textbf{0.64} & 2.40 & 2.60 \\
+    Gemini 3 Pro (not disclosed) & \textbf{0.74} & 0.61 & \textbf{1.86} & \textbf{1.47} \\
+    \midrule
+    People                       & 0.84 & 0.54 & 2.73 & 2.04 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+```
+:::
+
+::: {.pv paper="jouleseye"}
+```tex
+\begin{table}[t]
+  \caption{\textbf{\method stays accurate across body types; the Apple Watch does not.}
+    Error of calorie estimates (MAPE, \%, lower is better) against an indirect calorimeter,
+    for all 54 participants and split by body mass index (BMI). Best in \textbf{bold}.}
+  \label{tab:bmi}
+  \begin{tabular}{lccc}
+    \toprule
+    & \multicolumn{3}{c}{G2: accurate calories?} \\
+    \cmidrule(lr){2-4}
+    Method & All & Normal BMI & Overweight BMI \\
+    \midrule
+    Apple Watch (heart rate) & 37.6 & 29.7 & 51.8 \\
+    \rowcolor{gray!12} \method (breathing) & \textbf{5.8} & \textbf{5.2} & \textbf{6.9} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+```
+:::
+
+::: {.pv paper="gdmi"}
+```tex
+\begin{table}[t]
+  \caption{\textbf{TNP-D gives the most accurate predictions and, on the validation years, the best-calibrated uncertainty.}
+    Negative log-likelihood (NLL) and RMSE ($\mu$g/m$^3$) of each model on held-out PM2.5; lower is better for both.
+    We choose the model on validation (2009--2010); test (2011--2018) is shown too. Best in \textbf{bold}.}
+  \label{tab:surrogate}
+  \begin{tabular}{lcccc}
+    \toprule
+    & \multicolumn{2}{c}{Calibrated uncertainty? NLL} & \multicolumn{2}{c}{Accurate? RMSE} \\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+    Model & Val. & Test & Val. & Test \\
+    \midrule
+    CNP              & $0.48$  & $0.98$          & 11.46         & 24.99 \\
+    Random Forest    & $-0.11$ & $2.43$          & 6.55          & 15.37 \\
+    Gaussian Process & $-0.19$ & $0.42$          & 5.16          & 10.31 \\
+    CANP             & $-0.19$ & $0.82$          & 6.15          & 14.48 \\
+    ConvCNP          & $-0.27$ & $0.59$          & 5.28          & 10.78 \\
+    ConvGNP          & $-0.30$ & $1.04$          & 5.31          & 12.25 \\
+    TabPFN           & $-0.37$ & $\mathbf{0.39}$ & 5.09          & 11.23 \\
+    \rowcolor{gray!12} TNP-D (chosen) & $\mathbf{-0.44}$ & $0.51$ & \textbf{4.90} & \textbf{9.11} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+```
+:::
+
+::: {.pv paper="kestrel"}
 ```tex
 \begin{table}[t]
   \caption{\textbf{Kestrel is the most accurate method on phone audio, with the fewest labels.}
@@ -663,6 +1181,7 @@ We follow this excellent [short guide to making nice tables](https://people.inf.
   \end{tabular}
 \end{table}
 ```
+:::
 
 ## LaTeX hygiene
 
@@ -751,10 +1270,10 @@ To change a rule, open a pull request on the repository, and update this page to
 ```{=html}
 <script>
 (() => {
-  const papers = ["kestrel", "gemello", "thermeval", "jouleseye", "gdmi"];
+  const papers = ["gemello", "thermeval", "jouleseye", "gdmi", "kestrel"];
   const buttons = document.querySelectorAll(".paper-switch button");
   function choose(p, save) {
-    if (!papers.includes(p)) p = "kestrel";
+    if (!papers.includes(p)) p = "gemello";
     document.documentElement.dataset.paper = p;
     buttons.forEach(b => b.setAttribute("aria-selected", b.dataset.paper === p));
     if (save) {
@@ -764,7 +1283,7 @@ To change a rule, open a pull request on the repository, and update this page to
   }
   let start = new URLSearchParams(location.search).get("paper");
   if (!start) { try { start = localStorage.getItem("wp-paper"); } catch (e) {} }
-  choose(start || "kestrel", false);
+  choose(start || "gemello", false);
   buttons.forEach(b => b.addEventListener("click", () => {
     // Keep the clicked switch where it is on screen while the content above it changes height.
     const y = b.getBoundingClientRect().top;
