@@ -6,8 +6,9 @@ Run from the repository root (needs pdflatex, pdfcrop and pdftocairo):
 
 1. latexify-before-after.svg: the same plot set in a two-column paper twice, once as a default
    matplotlib PNG shrunk to the column and once made with LaTeXify at the column width.
-2. table-<paper>.svg: each paper's table from the page's Tables section, built up in four steps:
-   a first draft, booktabs rules, right-aligned numbers at one precision, then the organised table.
+2. table-<paper>.svg: each paper's table (tables_data.py) built up in four steps: a first draft,
+   booktabs rules, units in the header with numbers right-aligned at one precision, then organised.
+   The organised LaTeX is also copied into the page's Tables section, so the two never drift.
 """
 import re
 import shutil
@@ -19,6 +20,8 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+
+from tables_data import DRAFTS, FINALS
 
 OUT = Path("images/handbook/writing-papers").resolve()
 PAGE = Path("handbook/writing-papers.qmd")
@@ -107,106 +110,81 @@ def latexify_example(tmp):
     compile_to_svg(tmp, "latexify-before-after", body)
 
 
-def tables():
-    """Each paper's booktabs table from the page, as {paper: latex}."""
-    text = PAGE.read_text()
-    section = text[text.index("\n## Tables"):text.index("\n## LaTeX hygiene")]
-    found = {}
-    for paper, body in re.findall(r'::: \{\.pv paper="(\w+)"\}\n```tex\n(.*?)```\n:::', section, re.S):
-        found[paper] = body
-    return found
+UNITS = [("%", r" (\%)"), ("°C", r" ($^\circ$C)")]
 
 
-NUM = re.compile(r"^-?\d+(\.\d+)?$")
+def number(cell):
+    """(value text, unit header) for a numeric draft cell, else None."""
+    c = cell.strip()
+    for u, head in UNITS:
+        if c.endswith(u):
+            c = c[: -len(u)].strip()
+            break
+    else:
+        head = ""
+    c = c.replace("-.", "-0.")
+    return (c, head) if re.match(r"^-?\d+(\.\d+)?$", c) else None
 
 
-def bare(cell):
-    """A cell's number without bold or math markup, or None for a text cell."""
-    c = re.sub(r"\\(textbf|mathbf)\{(.*?)\}", r"\2", cell.strip()).replace("$", "").strip()
-    return c if NUM.match(c) else None
-
-
-def parse(table):
-    """Split a booktabs table into caption, column spec, header lines and blocks of body rows."""
-    cap = re.search(r"\\caption\{(.*?)\}\n\s*\\label", table, re.S).group(1)
-    spec = re.search(r"\\begin\{tabular\}\{(\w+)\}", table).group(1)
-    inner = table[table.index(r"\toprule") + len(r"\toprule"):table.index(r"\bottomrule")]
-    head, body = inner.split(r"\midrule", 1)
-    heads = [h.strip() for h in head.strip().split("\n")]
-    blocks = [[r.strip() for r in blk.strip().split("\n") if r.strip()] for blk in body.split(r"\midrule")]
-    return cap, spec, heads, blocks
-
-
-def cells(row):
-    shade = row.startswith(r"\rowcolor")
-    row = re.sub(r"^\\rowcolor\{[^}]*\}\s*", "", row).rstrip("\\ ").rstrip()
-    return shade, [c.strip() for c in row.split("&")]
-
-
-def numeric_columns(blocks, ncol):
-    rows = [cells(r)[1] for blk in blocks for r in blk]
-    return [all(len(r) > j and bare(r[j]) is not None for r in rows) for j in range(ncol)]
-
-
-def right_align(spec, numeric):
-    return "".join("r" if numeric[j] else ch for j, ch in enumerate(spec))
-
-
-def sloppy(cell, k):
-    """The same value written at a different precision, as first drafts do."""
-    n = bare(cell)
-    if n is None:
-        return cell
-    if "." in n:
-        return [n.rstrip("0").rstrip("."), n + "0", n][k % 3]
-    return n + ".0" if k % 2 else n
-
-
-def plain(cell):
-    n = bare(cell)
-    return n if n is not None else re.sub(r"\\textbf\{(.*?)\}", r"\1", cell)
-
-
-def build_up(table):
+def build_up(draft, final):
     """Four versions of one table, each fixing one more thing; the values never change."""
-    cap, spec, heads, blocks = parse(table)
-    names = heads[-1]  # the row of column names; any rows above it group the columns
-    ncol = len(cells(names)[1])
-    numeric = numeric_columns(blocks, ncol)
-    rows = [r for blk in blocks for r in blk]
+    header, rows = draft["header"], draft["rows"]
+    n = len(header)
+    numeric = [all(number(r[j]) for r in rows) for j in range(n)]
 
-    def tab(colspec, lines):
-        return "\\begin{tabular}{%s}\n%s\n\\end{tabular}" % (colspec, "\n".join(lines))
+    def tab(spec, lines):
+        return "\\begin{tabular}{%s}\n%s\n\\end{tabular}" % (spec, "\n".join(lines))
 
-    # 1. Grid, everything centred, mixed precision, no emphasis.
-    l1 = [r"\hline", names, r"\hline"]
-    for k, r in enumerate(rows):
-        l1 += [" & ".join(sloppy(c, k + j) if numeric[j] else plain(c) for j, c in enumerate(cells(r)[1])) + r" \\", r"\hline"]
-    step1 = tab("|" + "|".join("c" * len(spec)) + "|", l1)
-    # 2. booktabs rules; still centred and mixed.
-    l2 = [r"\toprule", names, r"\midrule"] + [l for l in l1[3:] if l != r"\hline"] + [r"\bottomrule"]
-    step2 = tab("c" * len(spec), l2)
-    # 3. Numbers right-aligned at the same precision.
-    l3 = [r"\toprule", names, r"\midrule"] + [" & ".join(plain(c) for c in cells(r)[1]) + r" \\" for r in rows] + [r"\bottomrule"]
-    step3 = tab(right_align("l" * len(spec), numeric), l3)
-    # 4. Organised: the page's table as written.
-    step4 = table[table.index(r"\begin{tabular}"):table.index(r"\end{tabular}") + len(r"\end{tabular}")]
+    def line(cs):
+        return " & ".join(cs) + r" \\"
+
+    raw = [[c.replace("%", r"\%") for c in r] for r in rows]
+    step1 = tab("|" + "|".join("c" * n) + "|", [r"\hline", line(header), r"\hline"]
+                + [x for r in raw for x in (line(r), r"\hline")])
+    step2 = tab("c" * n, [r"\toprule", line(header), r"\midrule"] + [line(r) for r in raw] + [r"\bottomrule"])
+    # 3. Units move to the header; numbers right-aligned at one precision per column.
+    heads, cols = list(header), []
+    for j in range(n):
+        if not numeric[j]:
+            cols.append([r[j] for r in rows])
+            continue
+        vals = [number(r[j]) for r in rows]
+        unit = next((h for _, h in vals if h), "")
+        heads[j] += unit
+        # Trailing zeros a draft added ("5.80") are not real precision.
+        places = max(len(v.split(".")[1].rstrip("0")) if "." in v else 0 for v, _ in vals)
+        cols.append([f"{float(v):.{places}f}".replace("-", "$-$") for v, _ in vals])
+    body3 = [line([cols[j][i] for j in range(n)]) for i in range(len(rows))]
+    step3 = tab("".join("r" if numeric[j] else "l" for j in range(n)),
+                [r"\toprule", line(heads), r"\midrule"] + body3 + [r"\bottomrule"])
+    cap = re.search(r"\\caption\{(.*?)\}\n\s*\\label", final, re.S).group(1)
+    step4 = final[final.index(r"\begin{tabular}"):final.index(r"\end{tabular}") + len(r"\end{tabular}")]
     return cap, [step1, step2, step3, step4]
+
+
+def sync_page():
+    """Put each paper's organised table on the page as its LaTeX snippet."""
+    text = PAGE.read_text()
+    a, b = text.index("\n## Tables"), text.index("\n## LaTeX hygiene")
+    section = re.sub(r'(::: \{\.pv paper="(\w+)"\}\n```tex\n).*?(```\n:::)',
+                     lambda m: m.group(1) + FINALS[m.group(2)] + m.group(3), text[a:b], flags=re.S)
+    PAGE.write_text(text[:a] + section + text[b:])
 
 
 NAMES = {"gemello": "Gemello", "thermeval": "ThermEval", "jouleseye": "JoulesEye", "gdmi": "GD-MI", "kestrel": "Kestrel"}
 
 STEPS = [
-    ("1. First draft", "a grid of rules, every column centred, the same values at mixed precision, a caption below that says nothing"),
+    ("1. First draft", "a grid, everything centred, units in every cell, mixed precision, rows in the order they were run"),
     ("2. booktabs", "three horizontal rules and no vertical ones; the caption moves above"),
-    ("3. Numbers right-aligned, same precision", "digits line up, so you compare values at a glance"),
-    ("4. Organised", "columns grouped by the question they answer, the best result in bold, our row shaded, the message in the caption"),
+    ("3. Units in the header, numbers right-aligned at one precision", "digits line up, so values compare at a glance"),
+    ("4. Organised", "rows grouped and sorted, columns grouped by question, reference rows apart, best in bold, the message in the caption"),
 ]
 
 
 def table_examples(tmp):
-    for paper, table in tables().items():
-        cap, steps = build_up(table)
+    sync_page()
+    for paper in DRAFTS:
+        cap, steps = build_up(DRAFTS[paper], FINALS[paper])
         parts = []
         for k, ((title, why), t) in enumerate(zip(STEPS, steps)):
             parts.append(r"{\sffamily\footnotesize\textbf{%s}\quad\color{gray}%s}\par\vspace{5pt}" % (title, why))

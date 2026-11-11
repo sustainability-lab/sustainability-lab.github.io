@@ -1064,7 +1064,7 @@ Then include it at its natural size, `\includegraphics{accuracy-vs-size.pdf}`, w
 
 ## Tables
 
-We follow this excellent [short guide to making nice tables](https://people.inf.ethz.ch/markusp/teaching/guides/guide-tables.pdf) by Markus Püschel. Below, the selected paper's table is built up one fix at a time. The numbers are the same in every step.
+We follow this excellent [short guide to making nice tables](https://people.inf.ethz.ch/markusp/teaching/guides/guide-tables.pdf) by Markus Püschel. Below, the selected paper's results table is built up one fix at a time, from a typical first draft. The numbers are the same in every step.
 
 ::: {.pv paper="gemello"}
 ![The same Gemello table built up in four steps. The values never change; only how they are set does.](../images/handbook/writing-papers/table-gemello.svg){.wp-fig fig-alt="The Gemello results table typeset four times with LaTeX: a grid with centred, mixed-precision numbers and a caption below; booktabs rules with the caption above; numbers right-aligned at one precision; and the final table with goal-grouped columns, bold best results, a shaded row and a message-first caption."}
@@ -1089,9 +1089,14 @@ We follow this excellent [short guide to making nice tables](https://people.inf.
 What each step buys:
 
 1. **Remove the grid.** Vertical lines and a rule under every row make the eye read lines, not numbers. Use `booktabs`: `\toprule`, `\midrule` and `\bottomrule`, plus `\cmidrule` under a column group. Never use vertical or double lines. Put the caption *above* the table, because a reader scans a table from the top.
-2. **Right-align numbers, and give a column one precision.** Then digits of the same place sit in one column, and a longer number really is a bigger one. In the first draft, 0.6 next to 0.64 looks like a less precise result, not the same precision. Pick the decimals your measurement supports, and use them for every cell in the column. With `siunitx`, an `S` column aligns on the decimal point.
+2. **Move units to the header, right-align numbers, and give a column one precision.** "MAPE (%)" in the header means each cell holds only a number. Right-aligned, the digits of the same place sit in one column, so a longer number really is a bigger one. In a first draft, 5% next to 5.80% looks like two precisions, not two results. Pick the decimals your measurement supports and use them for every cell in the column; with `siunitx`, an `S` column aligns on the decimal point.
 3. **Left-align text,** and keep it short. A centred text column has a ragged edge on both sides.
-4. **Organise for the reader.** Group columns under the question or goal they answer. Put units in the header, not in every cell. Set reference rows, such as people or an oracle, apart with a `\midrule`. Bold the best value in each column, shade your own row, and say both rules in the caption.
+4. **Organise for the reader,** not in the order you ran things:
+   - *Rows:* group them by kind (baselines and yours, open and closed models, heart rate and breathing), and sort within each group by size or by the main metric.
+   - *Names:* write what a row is ("Heart rate, Apple Watch"), not your script's label ("Estimated HR").
+   - *Columns:* group them under the question they answer, with `\cmidrule` under each group.
+   - *Reference rows,* such as people, an oracle or ground-truth inputs, go last, set apart by a `\midrule`.
+   - Bold the best value in each column, shade your own row, and say both rules in the caption.
 5. **Lead the caption with the message,** then say what the columns mean and which direction is better.
 
 Two more rules for our papers:
@@ -1105,18 +1110,19 @@ The LaTeX for step 4:
 ```tex
 \begin{table}[t]
   \caption{\textbf{From the monthly bill alone, \method is the most accurate on HVAC.}
-    Energy accuracy (\%, higher is better) on the two appliances reported in the text, and the data each
-    method needs from every home. LBM is best on the fridge. Best in \textbf{bold}.}
+    Energy accuracy (\%, higher is better) and what each method needs from every home.
+    LBM is best on the fridge. Best in \textbf{bold}.}
   \label{tab:main}
-  \begin{tabular}{lrrl}
+  \begin{tabular}{lllrr}
     \toprule
-    & \multicolumn{2}{c}{G1: accurate?} & G2: existing data only? \\
-    \cmidrule(lr){2-3}\cmidrule(lr){4-4}
-    Method & HVAC & Fridge & Data from each home \\
+    & \multicolumn{2}{c}{Needs from each home} & \multicolumn{2}{c}{Accuracy (\%)} \\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+    Method & Meter & Read & HVAC & Fridge \\
     \midrule
-    FHMM & 61 & 39 & 15-minute power \\
-    LBM & 56 & \textbf{72} & 15-minute power \\
-    \rowcolor{gray!12} \method (ours) & \textbf{76} & 69 & \textbf{Monthly bill} \\
+    FHMM & Smart meter & Every 15 min & 61 & 39 \\
+    LBM  & Smart meter & Every 15 min & 56 & \textbf{72} \\
+    \midrule
+    \rowcolor{gray!12} \method (ours) & Billing meter & Once a month & \textbf{76} & 69 \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -1126,24 +1132,26 @@ The LaTeX for step 4:
 ::: {.pv paper="thermeval"}
 ```tex
 \begin{table}[t]
-  \caption{\textbf{No model matches people at telling which of two people is hotter, and fine-tuning helps only on ranking body parts.}
-    Task 5 accuracy (higher is better; chance is 0.50 for two people and 0.17 for ranking three body parts)
-    and Task 6 error in $^\circ$C (lower is better). Best model in each column in \textbf{bold};
-    people are a reference, not a competitor.}
+  \caption{\textbf{No model matches people at telling who is hotter, and size does not help.}
+    Task 5 accuracy (higher is better; chance is 0.50 and 0.17) and Task 6 error in $^\circ$C
+    (lower is better). Open models are sorted by size; people are a reference. Best model in \textbf{bold}.}
   \label{tab:reasoning}
-  \begin{tabular}{lrrrr}
+  \begin{tabular}{lrrrrr}
     \toprule
-    & \multicolumn{2}{c}{Q3: who is hotter?} & \multicolumn{2}{c}{Q4: how hot?} \\
-    \cmidrule(lr){2-3}\cmidrule(lr){4-5}
-    Model (parameters) & Two people & Body parts & Marker & Region \\
+    & & \multicolumn{2}{c}{Who is hotter? (acc.)} & \multicolumn{2}{c}{How hot? ($^\circ$C)} \\
+    \cmidrule(lr){3-4}\cmidrule(lr){5-6}
+    Model & Params & Two people & Body parts & Marker & Region \\
     \midrule
-    Qwen A22 (235B)              & 0.48 & 0.34 & 3.72 & 3.40 \\
-    Intern-VL 3 (38B)            & 0.64 & 0.41 & 3.63 & 2.59 \\
-    Qwen-VL 2.5 (8B), zero-shot  & 0.60 & 0.32 & 2.88 & 2.85 \\
-    \rowcolor{gray!12} Qwen-VL 2.5 (8B), fine-tuned on \method & 0.60 & \textbf{0.64} & 2.40 & 2.60 \\
-    Gemini 3 Pro (not disclosed) & \textbf{0.74} & 0.61 & \textbf{1.86} & \textbf{1.47} \\
+    \multicolumn{6}{l}{\textit{Open, zero-shot}} \\
+    Qwen-VL 2.5  & 8B   & 0.60 & 0.32 & 2.88 & 2.85 \\
+    Intern-VL 3  & 38B  & 0.64 & 0.41 & 3.63 & 2.59 \\
+    Qwen A22     & 235B & 0.48 & 0.34 & 3.72 & 3.40 \\
+    \multicolumn{6}{l}{\textit{Fine-tuned on \method}} \\
+    \rowcolor{gray!12} Qwen-VL 2.5 & 8B & 0.60 & \textbf{0.64} & 2.40 & 2.60 \\
+    \multicolumn{6}{l}{\textit{Closed}} \\
+    Gemini 3 Pro & n/a  & \textbf{0.74} & 0.61 & \textbf{1.86} & \textbf{1.47} \\
     \midrule
-    People                       & 0.84 & 0.54 & 2.73 & 2.04 \\
+    People       &      & 0.84 & 0.54 & 2.73 & 2.04 \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -1153,18 +1161,26 @@ The LaTeX for step 4:
 ::: {.pv paper="jouleseye"}
 ```tex
 \begin{table}[t]
-  \caption{\textbf{\method stays accurate across body types; the Apple Watch does not.}
-    Error of calorie estimates (MAPE, \%, lower is better) against an indirect calorimeter,
-    for all 54 participants and split by body mass index (BMI). Best in \textbf{bold}.}
-  \label{tab:bmi}
-  \begin{tabular}{lrrr}
+  \caption{\textbf{Every input that includes breathing keeps the calorie error under 6\%.}
+    Mean absolute percentage error (MAPE, \%, lower is better) against an indirect calorimeter,
+    54 participants. The camera's breathing rate is simulated from a chest belt plus the camera's
+    measured error. Reference rows use the calorimeter's own signals.}
+  \label{tab:inputs}
+  \begin{tabular}{llr}
     \toprule
-    & \multicolumn{3}{c}{G2: accurate calories?} \\
-    \cmidrule(lr){2-4}
-    Method & All & Normal BMI & Overweight BMI \\
+    Input & Source & MAPE (\%) \\
     \midrule
-    Apple Watch (heart rate) & 37.6 & 29.7 & 51.8 \\
-    \rowcolor{gray!12} \method (breathing) & \textbf{5.8} & \textbf{5.2} & \textbf{6.9} \\
+    \multicolumn{3}{l}{\textit{Heart rate, as watches use}} \\
+    Watch's own calorie estimate      & Apple Watch & 37.6 \\
+    Heart rate                        & Apple Watch & 12.0 \\
+    \multicolumn{3}{l}{\textit{Breathing, as \method uses}} \\
+    \rowcolor{gray!12} Breathing                     & Camera (simulated) & 5.8 \\
+    Breathing + heart rate            & Camera, watch & 5.5 \\
+    Breathing + heart rate + temperature & Camera, watch & \textbf{5.2} \\
+    \midrule
+    \multicolumn{3}{l}{\textit{Reference: the calorimeter's own signals}} \\
+    Heart rate                        & Chest band  & 10.2 \\
+    Breathing                         & Calorimeter & 5.0 \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -1174,24 +1190,27 @@ The LaTeX for step 4:
 ::: {.pv paper="gdmi"}
 ```tex
 \begin{table}[t]
-  \caption{\textbf{TNP-D gives the most accurate predictions and, on the validation years, the best-calibrated uncertainty.}
-    Negative log-likelihood (NLL) and RMSE ($\mu$g/m$^3$) of each model on held-out PM2.5; lower is better for both.
-    We choose the model on validation (2009--2010); test (2011--2018) is shown too. Best in \textbf{bold}.}
+  \caption{\textbf{TNP-D predicts PM2.5 most accurately, so GD-MI uses it.}
+    RMSE ($\mu$g/m$^3$) and negative log-likelihood (NLL) on held-out years; lower is better for both.
+    We choose on validation (2009--10) and also show test (2011--18). Models are grouped by family
+    and sorted by validation RMSE. Best in \textbf{bold}.}
   \label{tab:surrogate}
   \begin{tabular}{lrrrr}
     \toprule
-    & \multicolumn{2}{c}{Calibrated uncertainty? NLL} & \multicolumn{2}{c}{Accurate? RMSE} \\
+    & \multicolumn{2}{c}{Accurate? RMSE} & \multicolumn{2}{c}{Calibrated? NLL} \\
     \cmidrule(lr){2-3}\cmidrule(lr){4-5}
     Model & Val. & Test & Val. & Test \\
     \midrule
-    CNP              & $0.48$  & $0.98$          & 11.46         & 24.99 \\
-    Random Forest    & $-0.11$ & $2.43$          & 6.55          & 15.37 \\
-    Gaussian Process & $-0.19$ & $0.42$          & 5.16          & 10.31 \\
-    CANP             & $-0.19$ & $0.82$          & 6.15          & 14.48 \\
-    ConvCNP          & $-0.27$ & $0.59$          & 5.28          & 10.78 \\
-    ConvGNP          & $-0.30$ & $1.04$          & 5.31          & 12.25 \\
-    TabPFN           & $-0.37$ & $\mathbf{0.39}$ & 5.09          & 11.23 \\
-    \rowcolor{gray!12} TNP-D (chosen) & $\mathbf{-0.44}$ & $0.51$ & \textbf{4.90} & \textbf{9.11} \\
+    \multicolumn{5}{l}{\textit{Neural processes}} \\
+    \rowcolor{gray!12} TNP-D (chosen) & \textbf{4.90} & \textbf{9.11} & \textbf{$-$0.44} & 0.51 \\
+    ConvCNP          & 5.28  & 10.78 & $-$0.27 & 0.59 \\
+    ConvGNP          & 5.31  & 12.25 & $-$0.30 & 1.04 \\
+    CANP             & 6.15  & 14.48 & $-$0.19 & 0.82 \\
+    CNP              & 11.46 & 24.99 & 0.48    & 0.98 \\
+    \multicolumn{5}{l}{\textit{Other models}} \\
+    TabPFN           & 5.09  & 11.23 & $-$0.37 & \textbf{0.39} \\
+    Gaussian process & 5.16  & 10.31 & $-$0.19 & 0.42 \\
+    Random forest    & 6.55  & 15.37 & $-$0.11 & 2.43 \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -1202,16 +1221,23 @@ The LaTeX for step 4:
 ```tex
 \begin{table}[t]
   \caption{\textbf{Kestrel is the most accurate method on phone audio, with the fewest labels.}
-    Accuracy (\%, higher is better) on seen and unseen phone models, and labelled calls needed per species
-    (lower is better). Best in \textbf{bold}.}
+    Accuracy (\%, higher is better) on seen and unseen phone models, and labelled calls needed
+    per species (lower is better). Methods are grouped by how many labels they need. Best in \textbf{bold}.}
   \label{tab:main}
   \begin{tabular}{lrrr}
     \toprule
-    & \multicolumn{2}{c}{G1: accurate?} & G2: few labels? \\
+    & \multicolumn{2}{c}{G1: accurate? (\%)} & G2: few labels? \\
     \cmidrule(lr){2-3}\cmidrule(lr){4-4}
     Method & Seen phones & Unseen phones & Calls / species \\
     \midrule
-    Fine-tuned transformer & 61 & 55 & 100 \\
+    \multicolumn{4}{l}{\textit{Need a hundred calls or more}} \\
+    Supervised CNN          & 54 & 48 & 200 \\
+    CNN + augmentation      & 57 & 50 & 200 \\
+    Denoising + CNN         & 60 & 52 & 200 \\
+    Domain adaptation       & 58 & 56 & 100 \\
+    Fine-tuned transformer  & 61 & 55 & 100 \\
+    \multicolumn{4}{l}{\textit{Need a few calls}} \\
+    Few-shot prototypes     & 49 & 45 & \textbf{5} \\
     \rowcolor{gray!12} \method (ours) & \textbf{83} & \textbf{79} & \textbf{5} \\
     \bottomrule
   \end{tabular}
