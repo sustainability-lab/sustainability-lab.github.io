@@ -57,7 +57,7 @@ pre.sourceCode code span.dv, pre.sourceCode code span.fl { color: #b8d7a3 !impor
 
 This page sets out how we write papers in the lab. It is for students writing their first paper, for anyone reviewing a draft, and for AI agents that help with either. Writing is a skill, and like any skill it improves with *deliberate* practice. This page gives you something concrete to practise against.
 
-Every rule comes with a **before and after**, and every example follows one paper. Pick the paper with the switch below, and the whole page changes with it: text, tables and figures. Four are **our own published papers**. For those, the *after* follows the published paper and its numbers, and the *before* is an invented first draft, the kind every paper starts as. **Kestrel**, the last one, is invented outright: it counts birds from cheap phone recordings, and its numbers are made up. Near the end, [twenty real before-and-afters](#real-drafts) show how our published papers changed from first draft to print.
+Every rule comes with a **before and after**, and every example follows one paper. Pick the paper with the switch below, and the whole page changes with it: text, tables and figures. Four are **our own published papers**. For those, the *after* follows the published paper and its numbers, and the *before* is an invented first draft, the kind every paper starts as. **Kestrel**, the last one, is invented outright: it counts birds from cheap phone recordings, and its numbers are made up.
 
 ```{=html}
 <div class="paper-switch" role="tablist" aria-label="Paper the examples follow">
@@ -794,27 +794,7 @@ We now evaluate Kestrel against the goals of Section 1. We ask:
 :::
 
 
-**Give one headline figure** that tells the main result at a glance. A trade-off plot with your method alone in the good corner beats any bar chart.
-
-::: {.pv paper="gemello"}
-![Gemello's results drawn two ways. The bars need a legend and a careful read. The dot plot shows the message at once: from one meter reading a month, Gemello is the most accurate on heating and cooling, and close behind LBM on the fridge. Numbers from the paper's text.](../images/handbook/writing-papers/headline-gemello.svg){.wp-fig fig-alt="Left, grouped bars for FHMM, LBM and Gemello on HVAC and fridge with a legend. Right, two rows of labelled dots: Gemello highest on heating and cooling at 76%, and at 69% on the fridge against LBM's 72%."}
-:::
-
-::: {.pv paper="thermeval"}
-![ThermEval's Task 5 results drawn two ways. Twenty-four bars in alphabetical order hide the message. Against model size it is plain: open models from 0.3B to 235B parameters scatter around chance, and even the best model stays below people. Numbers from Table 4.](../images/handbook/writing-papers/headline-thermeval.svg){.wp-fig fig-alt="Left, 24 coloured bars of accuracy in alphabetical order. Right, accuracy against model size on a log axis: grey dots near the 50% chance line, a line for people at 84%, and Gemini 3 Pro at 74% in a strip for models of undisclosed size."}
-:::
-
-::: {.pv paper="jouleseye"}
-![JoulesEye's calorie errors drawn two ways. Coded bars send the reader to a legend. Sorted and labelled, the message is plain: every input with breathing stays under 6% error, against 10–12% for heart rate and 37.6% for the watch's own estimate. Numbers from Figure 9.](../images/handbook/writing-papers/headline-jouleseye.svg){.wp-fig fig-alt="Left, seven coloured bars labelled I1 to I7 with a legend. Right, horizontal bars sorted by error with direct labels: four breathing inputs in red at 5.0 to 5.8%, heart rate at 10.2 and 12%, the smartwatch at 37.6%."}
-:::
-
-::: {.pv paper="gdmi"}
-![GD-MI's results drawn two ways. The bars hide that greedy MI was never run across India. The dot plot says it: GD-MI comes close to greedy MI where MI can run, and beats the maximum-variance heuristic at national scale. Numbers from the paper's text.](../images/handbook/writing-papers/headline-gdmi.svg){.wp-fig fig-alt="Left, grouped bars of RMSE for greedy MI, GD-MI and MaxVar in two settings, with a legend. Right, two rows of labelled dots: in one state, greedy MI 5.6, GD-MI 5.8, MaxVar 6.3; across India, GD-MI 7.1 and MaxVar 7.4, with greedy MI not run."}
-:::
-
-::: {.pv paper="kestrel"}
-![The same invented results drawn two ways. The bar chart needs a legend and a careful read. The trade-off plot shows the message at once: Kestrel is alone in the good corner.](../images/handbook/writing-papers/headline-kestrel.svg){.wp-fig fig-alt="Left, a grouped bar chart with seven colours and a legend. Right, a scatter plot of accuracy against labels needed, with grey baselines bottom left and a red Kestrel star alone in a shaded goal region at top right."}
-:::
+**Give one headline figure** that tells the main result at a glance.
 
 - **Explain *why* each baseline family fails,** in one bullet each. Numbers alone do not convince.
 - **Use an oracle or upper bound** to separate the parts of your method. For example: [*with a perfect choice of twins, the paper's Oracle beats Gemello on every appliance, so finding similar homes, not averaging them, limits accuracy.*]{.pv paper="gemello"}[*fine-tuning Qwen-VL 2.5 (8B) doubles its body-part ranking accuracy, from 0.32 to 0.64, but leaves two-person accuracy at 0.60, against 0.84 for people.*]{.pv paper="thermeval"}[*even perfect heart rate leaves 10.2% error, against 5.8% for estimated breathing. Perfect breathing reaches 5.0%, so the signal matters more than sensing it perfectly.*]{.pv paper="jouleseye"}[*with nine new sensors, slow greedy MI reaches an RMSE of 5.6 and MaxVar 6.3; GD-MI, at 5.8, closes most of that gap.*]{.pv paper="gdmi"}[*with perfect phone labels, accuracy rises only from 83% to 85%, so phone detection is not the bottleneck.*]{.pv paper="kestrel"}
@@ -1058,17 +1038,64 @@ Use **one colour code for the whole paper.** Give each colour a meaning, and sta
 
 ### LaTeXify figures
 
-Use our [LaTeXify Python package](https://github.com/sustainability-lab/latexify) to turn matplotlib figures into publication-ready plots. See our [local guide](latexify-plots.qmd) for installation and examples. It gives you three things:
+A figure made at the wrong size gets scaled to fit the column, and its text shrinks or swells with it. Here is the same plot, from ThermEval's Table 4, set in a two-column paper twice. The text around it is 9 pt.
 
-1. **Precise figure sizing.** Figures are sized relative to the column or page width, so you rarely need manual sizing inside `\begin{figure}`.
-2. **Font size control.** Font size is set relative to the document's text size, so labels stay readable.
-3. **LaTeX font matching.** Figures use LaTeX fonts, so they match the rest of the document.
+![The same plot in a 3.33-inch column. Left: matplotlib's defaults, a 6.4-inch PNG shrunk to fit, so its labels print at about 5 pt in a different typeface. Right: made with LaTeXify at the column width, so the labels are 8–9 pt Computer Modern, the same as the text.](../images/handbook/writing-papers/latexify-before-after.svg){.wp-fig fig-alt="Two columns of a paper with the same paragraph and the same scatter plot. Left, the plot is a shrunk default matplotlib figure with tiny sans-serif labels, a box frame and a title. Right, the plot uses the paper's serif font at text size, with no frame and a caption that leads with its message."}
 
-> Tip: You can find the page width and column width with `\the\textwidth` and `\the\columnwidth`.
+Why it matters:
+
+- **Readable text.** A 6.4-inch figure shrunk into a 3.33-inch column prints its 10 pt labels at about 5 pt, below the 6–7 pt minimum most venues ask for. A figure made at the column width needs no scaling, so 9 pt stays 9 pt.
+- **One typeface.** LaTeXify sets the figure in the paper's own font, so a symbol like $\alpha$ looks the same in the plot and in the text.
+- **Sharp at any zoom.** It saves a vector PDF, not a PNG that blurs when a reviewer zooms in.
+- **Less clutter.** It drops the box frame and lightens the axes. The message goes in the caption, not in a plot title.
+
+Use our [LaTeXify Python package](https://github.com/sustainability-lab/latexify), and see the [local guide](latexify-plots.qmd) for installation. Set the width from your template: `\the\columnwidth` in the paper prints it.
+
+```python
+import latexify
+latexify.latexify(fig_width=3.33)   # \columnwidth in inches; columns=2 for a full-width figure
+fig, ax = plt.subplots()
+...
+latexify.format_axes(ax)
+latexify.save_fig("accuracy-vs-size.pdf")
+```
+
+Then include it at its natural size, `\includegraphics{accuracy-vs-size.pdf}`, with no `width=` that would rescale it.
 
 ## Tables
 
-We follow this excellent [short guide to making nice tables](https://people.inf.ethz.ch/markusp/teaching/guides/guide-tables.pdf) by Markus Püschel. In addition:
+We follow this excellent [short guide to making nice tables](https://people.inf.ethz.ch/markusp/teaching/guides/guide-tables.pdf) by Markus Püschel. Here is the same table typeset both ways, from the selected paper:
+
+::: {.pv paper="gemello"}
+![The same table typeset twice. Before: vertical rules, a line under every row, and a caption below that says nothing. After: booktabs rules, no vertical lines, a caption above that leads with the message, and the paper's own row shaded.](../images/handbook/writing-papers/table-gemello.svg){.wp-fig fig-alt="The Gemello results table typeset twice with LaTeX: first with a grid of vertical and horizontal lines and a generic caption below, then in booktabs style with three horizontal rules and a caption above that states the finding."}
+:::
+
+::: {.pv paper="thermeval"}
+![The same table typeset twice. Before: vertical rules, a line under every row, and a caption below that says nothing. After: booktabs rules, no vertical lines, a caption above that leads with the message, and the paper's own row shaded.](../images/handbook/writing-papers/table-thermeval.svg){.wp-fig fig-alt="The ThermEval results table typeset twice with LaTeX: first with a grid of vertical and horizontal lines and a generic caption below, then in booktabs style with three horizontal rules and a caption above that states the finding."}
+:::
+
+::: {.pv paper="jouleseye"}
+![The same table typeset twice. Before: vertical rules, a line under every row, and a caption below that says nothing. After: booktabs rules, no vertical lines, a caption above that leads with the message, and the paper's own row shaded.](../images/handbook/writing-papers/table-jouleseye.svg){.wp-fig fig-alt="The JoulesEye results table typeset twice with LaTeX: first with a grid of vertical and horizontal lines and a generic caption below, then in booktabs style with three horizontal rules and a caption above that states the finding."}
+:::
+
+::: {.pv paper="gdmi"}
+![The same table typeset twice. Before: vertical rules, a line under every row, and a caption below that says nothing. After: booktabs rules, no vertical lines, a caption above that leads with the message, and the paper's own row shaded.](../images/handbook/writing-papers/table-gdmi.svg){.wp-fig fig-alt="The GD-MI results table typeset twice with LaTeX: first with a grid of vertical and horizontal lines and a generic caption below, then in booktabs style with three horizontal rules and a caption above that states the finding."}
+:::
+
+::: {.pv paper="kestrel"}
+![The same table typeset twice. Before: vertical rules, a line under every row, and a caption below that says nothing. After: booktabs rules, no vertical lines, a caption above that leads with the message, and the paper's own row shaded.](../images/handbook/writing-papers/table-kestrel.svg){.wp-fig fig-alt="The Kestrel results table typeset twice with LaTeX: first with a grid of vertical and horizontal lines and a generic caption below, then in booktabs style with three horizontal rules and a caption above that states the finding."}
+:::
+
+The guide's rules, with `booktabs`:
+
+- **No vertical lines,** and no double lines. Columns separate themselves through alignment and space.
+- **Three horizontal rules:** `\toprule`, `\midrule` and `\bottomrule`. Use `\cmidrule` under a column group, never `\hline` under every row.
+- **Caption above the table.** A reader scans a table from the top.
+- **Align numbers on the right,** or on the decimal point (`siunitx`'s `S` column), and give each the same number of decimals.
+- **Put units in the column header,** not in every cell.
+- **Don't repeat what every row shares.** Say it once in the header or the caption.
+
+In addition, for our papers:
 
 - **Lead the caption with the takeaway**, then say what each column means.
 - **Label column groups with the question or goal** they answer, such as "G1: accurate?".
@@ -1223,351 +1250,6 @@ When you review someone's draft, whether you are a student, an adviser or an AI 
 3. **Check every number you move or rephrase** against its source table, figure or code. Rewriting can silently change a claim, such as "all 10" becoming "7 of 10".
 4. **Mark anything you inferred** with a "please check" note.
 5. **End with a short review guide:** what changed and where, which runs are still needed, and which facts the author should confirm.
-
-The next section shows this protocol at work on our own papers.
-
-## How our published papers got better {#real-drafts}
-
-These are real drafts of our own published papers, taken from their Overleaf history. The *before* is an earlier version and the *after* is the published text, both cut to the sentences that show the point. Comments are quoted as the adviser or a co-author wrote them, with only typos fixed.
-
-### Titles and abstracts
-
-**Say how the method works, not that it is fast.** [GD-MI, AAAI 2026]{.src}
-
-::: {.ba}
-::: {.bad}
-Fast and Scalable Sensor Placement for Air Quality Monitoring
-:::
-::: {.good}
-Scalable Air-Quality Sensor Placement via Gradient-Based Mutual Information Maximization
-:::
-:::
-
-**Say why the problem matters first. Then give findings, not a list of contributions.** [ThermEval, KDD 2026]{.src}
-
-::: {.ba}
-::: {.bad}
-Images of different modalities possess unique characteristics that define their utility across various domains. … This paper introduces ThermEval, a comprehensive benchmark designed to evaluate the zero-shot performance of VLMs on thermal imagery… ThermEval makes three key contributions: (1) identification of critical gaps in VLMs' understanding of thermal imagery characteristics, (2) a structured evaluation framework for thermal-specific reasoning capabilities, and (3) a novel dataset…
-:::
-::: {.good}
-Thermal sensing plays a critical role in settings where visible spectrum fails, including night-time surveillance, search & rescue, autonomous driving, and medical screening. … Evaluating 25 open-source and closed-source VLMs, we find that models consistently fail at temperature-grounded reasoning, degrade under colormap transformations, and default to language priors or fixed responses, with only marginal gains from prompting or supervised fine-tuning.
-:::
-:::
-
-::: {.cmt}
-you have to motivate the need/importance of thermal imagery before
-
-Can you try and remove 1-3 not so useful sentences and get 1-3 lines instead of insights? like: language priors, etc.. 4-5 such points in abstract would be good.
-:::
-
-**Don't stop the abstract at the method. Give the results, with numbers.** [FlowSat, BMVC 2026]{.src}
-
-::: {.ba}
-::: {.bad}
-…yet existing generative foundation models inherit dated architectural choices from natural-image diffusion. We present FlowSat, the first Diffusion Transformer (DiT) trained with flow matching for satellite imagery that conditions on the geographic and acquisition metadata intrinsic to remote-sensing data… FlowSat fine-tunes from a large pretrained text-to-image DiT backbone … so that metadata modulates the network at the global semantic level rather than as pixel-grade input channels.
-:::
-::: {.good}
-…yet existing models inherit slow denoising U-Nets from natural-image diffusion and treat acquisition metadata weakly… On fMoW-RGB, FlowSat attains the best FID and CLIP score among compared methods in only 20 Euler steps, at least 2.5× fewer than competing diffusion baselines. An encoder-controlled ablation attributes the gain to the geometry-aware encoding itself, improving FID from 46.81 to 37.96 with roughly 11× fewer conditioning parameters than a plain sinusoidal encoder.
-:::
-:::
-
-### Introductions
-
-**Go concrete. Open with one real question that people cannot yet answer.** [VayuBench, CODS 2025]{.src}
-
-::: {.ba}
-::: {.bad}
-Our focus on open-source models serves several important purposes: …
-
-Q1: How can we evaluate LLM performance on complex and specialized air pollution related data analysis tasks?
-:::
-::: {.good}
-Even seemingly simple questions such as 'How did PM2.5 levels change in Delhi last year?' remain difficult for most stakeholders to answer directly. …
-
-Large language models (LLMs) have emerged as powerful tools for translating natural-language requests into executable analyses, offering the potential to make environmental data as accessible as a search query.
-:::
-:::
-
-**End the introduction with your results, not with the last task.** [ThermEval, KDD 2026]{.src}
-
-::: {.ba}
-::: {.bad}
-T6 Activity Classification: Evaluates high-level semantic reasoning by requiring models to infer human activities (e.g., sleeping, walking, sitting) based solely on thermal postures and heat distribution patterns, without relying on visual appearance cues.
-:::
-::: {.good}
-We evaluate 25 VLMs ranging from 0.3B to over 200B parameters, spanning both open-source and closed-source families… While most VLMs reliably distinguish raw thermal from RGB images, performance degrades sharply on tasks requiring temperature reasoning or estimation. … These failure modes appear across model scales, indicating that the limitation lies in cross-modal grounding rather than model size. … This work makes the following contributions:
-:::
-:::
-
-::: {.cmt}
-the intro ends suddenly..
-
-can we break into 2 paras -- first one on method, evaluation; next one on insights. We can expand insights by 2-3 lines.
-:::
-
-**Make each contribution a claim that points to its evidence.** [SentinelKilnDB, NeurIPS 2025]{.src}
-
-::: {.ba}
-::: {.bad}
-We envision SentinelKilnDB being used for the following research directions: … Oriented object detection in low-resolution, multi-spectral imagery with fine-grained class separation.
-:::
-::: {.good}
-1. We introduce SentinelKilnDB, a Sentinel-2 benchmark containing bounding boxes of 62,671 brick kilns across South Asia … (see Section …).
-2. We provide a benchmark of 28 state-of-the-art object detection models developed over the past decade … (see Table …).
-3. We show that pre-training remote sensing foundation models on satellite imagery yields significant gains over prior models … (see Table …).
-:::
-:::
-
-::: {.cmt}
-Let's highlight our contributions in bullet points as per the recent trend.
-:::
-
-### Related work
-
-**Open with a road map. Then, for each category: what exists, why it is not enough, what you do.** [ThermEval, KDD 2026]{.src}
-
-::: {.ba}
-::: {.bad}
-…However, these benchmarks remain RGB-centric and do not assess performance across alternative modalities.
-
-**Thermal and Other Multi-Spectral Benchmarks.** Multispectral benchmarks highlight that different modalities encode distinct physical properties: thermal images capture temperature, depth images measure distance, and X-rays reveal internal structures. Thermal imagery is particularly relevant in safety-critical and low-visibility settings.
-:::
-::: {.good}
-…We organize related work into three categories. First, we review benchmarks developed for thermal and multispectral modalities. Second, we survey existing thermal and infrared datasets. Finally, we discuss common evaluation practices…
-
-**Thermal and Multi-Spectral Benchmarks.** *Existing benchmarks provide limited evaluation of the reasoning required for thermal understanding.* … In contrast, ThermEval targets thermal-specific challenges through structured tasks that require temperature reasoning and numerical estimation.
-:::
-:::
-
-::: {.cmt}
-we now categorize related work ...
-
-I find this subsection weak. We'd ideally want -- what exists, why not enough. in contrast, our work ...
-:::
-
-**Credit what prior work did. Then name what is still missing.** [NILMBench, BuildSys 2026]{.src}
-
-::: {.ba}
-::: {.bad}
-While foundational tools like the Non-Intrusive Load Monitoring Toolkit (NILMTK) have solved key issues related to data and metric standardization, new critical gaps have emerged. … Most modern comparisons remain computationally blind, ignoring efficiency metrics like inference time, FLOPs, and parameters. Prior work has focused on improving/benchmarking a few models rather than doing an extensive analysis of many models.
-:::
-::: {.good}
-Despite this rapid innovation, reproducibly comparing diverse NILM models remains a significant challenge. Foundational toolkits such as NILMTK standardized datasets and pipelines, yet recent model comparisons emphasize accuracy, overlooking compute-efficiency metrics like FLOPs, parameters, and inference time. Moreover, evaluations typically focus on a single temporal resolution, limiting applicability across real-world use cases…
-:::
-:::
-
-::: {.cmt}
-we never shoot down prior work like this.
-:::
-
-**Say why prior work falls short, by its mechanism. "Expensive" is not a reason.** [GD-MI, AAAI 2026]{.src}
-
-::: {.ba}
-::: {.bad}
-A greedy naive placement of sensors based on maximum uncertainty fails to account for interaction effects between sensor locations and can lead to suboptimal joint configurations.
-:::
-::: {.good}
-Principled methods grounded in information theory, such as maximizing mutual information (MI) between selected sensors and the unobserved field, can yield high-quality placements. However, MI-based acquisition requires a look-ahead evaluation at each candidate site to estimate potential information gain, making its runtime scale linearly with the number of candidates…
-:::
-:::
-
-::: {.cmt}
-Can also mention that exactMI type acquisitions are expensive and non scalable.
-:::
-
-### Claims the evidence can carry
-
-**Cite what you claim, and use the right word.** [ThermEval, KDD 2026]{.src}
-
-::: {.ba}
-::: {.bad}
-Concurrently, large-scale vision-language models (VLMs) such as LLaMA, LLaVA, Qwen-VL, and many others have redefined the landscape of multimodal AI. … Yet, their efficacy on out-of-distribution (OOD) modalities like thermal imagery remains largely unexamined.
-:::
-::: {.good}
-VLMs achieve strong performance on RGB, even without task-specific training, as evidenced by numerous benchmarks evaluating their capabilities across diverse RGB-centric tasks. However, it is not clear whether these models can generalize to thermal imagery. This leads to an important question: **Can VLMs trained predominantly on RGB data reason effectively about temperature-specific tasks in thermal images?**
-:::
-:::
-
-::: {.cmt}
-break the para..concurrently isn't perhaps needed here..
-
-citations to prove this?
-
-I don't think OOD is correct here...maybe say uncommon/specialised/..non-RGB..
-:::
-
-**Narrow a risky claim until you can back it, and say it plainly.** [NILMBench, BuildSys 2026]{.src}
-
-::: {.ba}
-::: {.bad}
-Second, and more critically, our cross-building evaluation uncovers a systemic failure to generalize, a fundamental limitation in the current state of the art. We demonstrate that even top-performing models are effective interpolators but poor extrapolators, consistently failing to disaggregate power levels and temporal signatures that fall outside their training distribution.
-:::
-::: {.good}
-(2) More critically, most models fail to generalize across buildings[,] especially when test appliances exhibit power characteristics unseen during training. While some architectures strike a better trade-off between accuracy and efficiency, poor cross-building generalization remains the key bottleneck for real-world adoption.
-:::
-:::
-
-::: {.cmt}
-I suggest rephrasing this and toning down the claim -- this is risky. we can avoid interpolators, extrapolators etc. but say more simply if an appliance in a test home has different power characteristics to ...
-:::
-
-**Check every number against the plot. Claim only what the data show.** [VayuChat, CODS 2025]{.src}
-
-::: {.ba}
-::: {.bad}
-Strong correlation: Years with higher wind speeds (2019, 2020) had relatively lower PM2.5 concentrations
-
-2023 was the worst year with lowest wind speeds (0.6 m/s) and highest PM2.5 (312 µg/m³)
-:::
-::: {.good}
-While we observe a strong negative correlation between PM2.5 and [w]ind speed during 2019 and 2020, a more comprehensive analysis requires considering both temperature and wind speed. The lowest wind speeds (0.6 m/s) were recorded in 2023, while 2021 had the highest PM2.5 levels at 325 µg/m³.
-:::
-:::
-
-::: {.cmt}
-verify this …
-
-While wind speed is the strongest meteorological factor in determining PM 2.5 levels during winter, temperature plays a very important role too. … We could write a sentence that says while we observe a strong correlation with wind speed, a more comprehensive picture can be obtained if we consider the effects of temperature and wind speed together.
-:::
-
-### Justify every choice
-
-**Give a reason for every number you chose.** [VayuBench, CODS 2025]{.src}
-
-::: {.ba}
-::: {.bad}
-We generate n = 5 code samples for each query.
-:::
-::: {.good}
-For each query, we sample n = 5 completions using temperature sampling (temperature = 0.8, top-p = 0.95). Prior work (e.g., …) often uses n = 20–100, but this is computationally prohibitive for our large dataset and multi-model comparison. Trial runs showed that after n = 5, the improvement became very small, so choosing (n = 5) gives a good balance between variety and efficiency.
-:::
-:::
-
-::: {.cmt}
-why 5? based on what?
-:::
-
-**Say where your categories came from.** [VayuBench, CODS 2025]{.src}
-
-::: {.ba}
-::: {.bad}
-Percentage distribution of each query category across the 5000 queries included in VayuBench. Category abbreviations defined in Section …
-:::
-::: {.good}
-Guided by these goals, we drafted 65 seed questions across seven categories, all rooted in realistic policy and research scenarios. … A structured survey of policymakers, analysts, and practitioners rated the importance of each category (1–5 scale), suggested missing query types, and provided real-world examples.
-:::
-:::
-
-::: {.cmt}
-why these? did you discuss with any expert? any survey?
-:::
-
-**Justify each split before a reviewer asks.** [NILMBench, BuildSys 2026]{.src}
-
-::: {.ba}
-::: {.bad}
-T1: Intra-Building Generalization. … UK-DALE, REDD, REFIT: Train on 30 days from Building 1; test on a held-out 1 week.
-
-T2: … UK-DALE: Train on B1, B2; test on B4. REDD: Train on B1, B2, B3; test on B6. REFIT: Train on B2, B3; test on B4.
-:::
-::: {.good}
-For UK-DALE, REDD, and REFIT, we train on 30 days from B1 and test on a held-out 1 week from B1. This building was selected based on the presence of consistent data for ≥ 4 target appliances and recording duration ≥ 30 days.
-
-While cross-validation is generally preferred, we use a static split for Task T2 because the buildings in our dataset have disjoint temporal coverage.
-:::
-:::
-
-::: {.cmt}
-we need to strongly motivate the inclusion and exclusion criteria -- else reviewers will surely ask why X and why not Z..
-
-held out from same or different building? why did we choose Building 1 ... so make strong arguments so that it doesn't appear we did something to save time or randomly..
-
-we may be asked -- why not cross-validation; train on 2 and test on 3rd and rotate these sets?
-:::
-
-### Results and captions
-
-**Describe what a model does, not what it assumes.** [ThermEval, KDD 2026]{.src}
-
-::: {.ba}
-::: {.bad}
-PaliGemma, in particular, always assumes RGB input, yielding fixed accuracies of 0.5 for Task 1 and 0 for Task 2.
-:::
-::: {.good}
-Notably, BLIP-2 consistently predicts all inputs as thermal images, which leads to poor performance on the tasks.
-:::
-:::
-
-::: {.cmt}
-how do we know it assumes RGB? I would tone down, cut this sentence
-:::
-
-**Define every mark in a table in its caption.** [SentinelKilnDB, NeurIPS 2025]{.src}
-
-::: {.ba}
-::: {.bad}
-Comparison of oriented object detection methods across categories, including backbone, bounding box type (AA: Axis-Aligned, OBB: Oriented), overall mean Average Precision (mAP), and per-class mAP for CFCBK, FCBK, and Zigzag kiln types.
-:::
-::: {.good}
-… The CA mAP50 refers to the class-agnostic mAP value, while CFCBK, FCBK, and Zigzag indicate class-wise AP50 scores. In the table, we mark the highest score in bold and underline the second-highest score in each column.
-:::
-:::
-
-::: {.cmt}
-meaning of bold and underline
-:::
-
-**Lead the caption with the message. The key comes after.** [FlowSat, BMVC 2026]{.src}
-
-::: {.ba}
-::: {.bad}
-Positioning against prior satellite generators. FM = flow matching; Struct. meta = structured (geometry-aware), global metadata conditioning; Zero-init = pretrained prior preserved at initialisation. ✓/✗ denote presence/absence.
-:::
-::: {.good}
-Positioning against prior satellite generators. FlowSat uniquely combines a flow-matching (FM) DiT, structured geometry-aware global metadata conditioning (Struct.), and a zero-initialised pathway preserving the pretrained prior (Z-init), with the fewest sampling steps. w/ t: folded into the timestep embedding; partial: subset of standard metadata fields.
-:::
-:::
-
-### Limitations and future work
-
-**Don't spin an awkward result. Report it as the limitation it is.** [Signal-descriptor SSL, DSAA 2026]{.src}
-
-::: {.ba}
-::: {.bad}
-The feature set size ablation revealed that representation quality is generally robust to the number of feature descriptors utilized, although intermediate feature set sizes produced the best results.
-:::
-::: {.good}
-The method is not free of inductive bias, only of augmentation: it replaces contrastive transformations with a fixed set of TSFEL descriptors, and the feature-set-size ablation shows this choice is consequential, with performance following an inverted-U trend and no principled criterion for selecting the subset.
-:::
-:::
-
-**Name the data you will add, and say why.** [VayuChat, CODS 2025]{.src}
-
-::: {.ba}
-::: {.bad}
-Expanding datasets: Extend VayuChat to include air quality data from multiple countries, along with additional weather and environmental datasets for richer analysis.
-:::
-::: {.good}
-(2) Expanding datasets, adding ERA5 reanalysis, satellite products, and land-use or emission inventories for richer spatial and temporal coverage
-:::
-:::
-
-::: {.cmt}
-what other datasets? perhaps … ERA5? why? as sensor data is limited?
-:::
-
-### Comments in brief
-
-- **Open each section with its goal.** "always have a line describing the goal/content of this section.."
-- **Write in the active voice.** "You want to mention things in active voice: We curate ...."
-- **Justify how you chose models.** "how did you shortlist or choose these VLMs?"
-- **Don't let scales confuse readers.** "50,000 VQA -- and here 500 -- people may get confused between the scale difference."
-- **Few dashes; write like a person.** "far too much usage of dashes gives away AI usage .. minimize."
-- **Expand acronyms on first use.** "whenever you present some abbrv. for first time in the paper -- expand it out."
-- **No human verbs for models.** "avoid words like memorize"
-- **Make every caption self-contained.** "we need to mention Task .. in all captions do this.."
-- **Known results are not findings.** "but this is known in the community. So please also report the F1 metric numbers."
-- **One message, shared axes, panel labels.** "redo this figure. No need for the grid; the x-axis should be the exact same for all 3 subplot. Maybe label them as a), b), c)…also the takeaway is confusing"
 
 ## Paper timelines
 
