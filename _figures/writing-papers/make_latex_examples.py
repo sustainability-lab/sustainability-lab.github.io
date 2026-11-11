@@ -6,8 +6,8 @@ Run from the repository root (needs pdflatex, pdfcrop and pdftocairo):
 
 1. latexify-before-after.svg: the same plot set in a two-column paper twice, once as a default
    matplotlib PNG shrunk to the column and once made with LaTeXify at the column width.
-2. table-<paper>.svg: each paper's table from the page's Tables section, typeset twice: a common
-   first draft (vertical rules, \\hline everywhere, caption below) and the booktabs version.
+2. table-<paper>.svg: each paper's table from the page's Tables section, built up in four steps:
+   a first draft, booktabs rules, right-aligned numbers at one precision, then the organised table.
 """
 import re
 import shutil
@@ -117,34 +117,110 @@ def tables():
     return found
 
 
-def first_draft(table):
-    """Turn a booktabs table into the version most first drafts have."""
-    t = table.replace(r"\rowcolor{gray!12} ", "")
-    t = re.sub(r"\\begin\{tabular\}\{(\w+)\}", lambda m: r"\begin{tabular}{|" + "|".join(m.group(1)) + "|}", t)
-    t = re.sub(r"\\cmidrule\([^)]*\)\{[^}]*\}", "", t)
-    t = re.sub(r"^\s*\n", "", t, flags=re.M)
-    t = t.replace(r"\toprule", r"\hline\hline").replace(r"\midrule", r"\hline").replace(r"\bottomrule", r"\hline")
-    t = re.sub(r"\\\\\n(\s+)(?!\\hline)", r"\\\\ \\hline\n\1", t)  # a rule under every row
-    t = re.sub(r"\\multicolumn\{(\d+)\}\{c\}", r"\\multicolumn{\1}{c|}", t)
-    cap = re.search(r"\\caption\{.*?\}\n\s*\\label", t, re.S)
-    if cap:
-        t = t.replace(cap.group(0), r"\label")
-    return t.replace(r"\end{tabular}", r"\end{tabular}" + "\n  \\caption{Results of different methods.}")
+NUM = re.compile(r"^-?\d+(\.\d+)?$")
+
+
+def bare(cell):
+    """A cell's number without bold or math markup, or None for a text cell."""
+    c = re.sub(r"\\(textbf|mathbf)\{(.*?)\}", r"\2", cell.strip()).replace("$", "").strip()
+    return c if NUM.match(c) else None
+
+
+def parse(table):
+    """Split a booktabs table into caption, column spec, header lines and blocks of body rows."""
+    cap = re.search(r"\\caption\{(.*?)\}\n\s*\\label", table, re.S).group(1)
+    spec = re.search(r"\\begin\{tabular\}\{(\w+)\}", table).group(1)
+    inner = table[table.index(r"\toprule") + len(r"\toprule"):table.index(r"\bottomrule")]
+    head, body = inner.split(r"\midrule", 1)
+    heads = [h.strip() for h in head.strip().split("\n")]
+    blocks = [[r.strip() for r in blk.strip().split("\n") if r.strip()] for blk in body.split(r"\midrule")]
+    return cap, spec, heads, blocks
+
+
+def cells(row):
+    shade = row.startswith(r"\rowcolor")
+    row = re.sub(r"^\\rowcolor\{[^}]*\}\s*", "", row).rstrip("\\ ").rstrip()
+    return shade, [c.strip() for c in row.split("&")]
+
+
+def numeric_columns(blocks, ncol):
+    rows = [cells(r)[1] for blk in blocks for r in blk]
+    return [all(len(r) > j and bare(r[j]) is not None for r in rows) for j in range(ncol)]
+
+
+def right_align(spec, numeric):
+    return "".join("r" if numeric[j] else ch for j, ch in enumerate(spec))
+
+
+def sloppy(cell, k):
+    """The same value written at a different precision, as first drafts do."""
+    n = bare(cell)
+    if n is None:
+        return cell
+    if "." in n:
+        return [n.rstrip("0").rstrip("."), n + "0", n][k % 3]
+    return n + ".0" if k % 2 else n
+
+
+def plain(cell):
+    n = bare(cell)
+    return n if n is not None else re.sub(r"\\textbf\{(.*?)\}", r"\1", cell)
+
+
+def build_up(table):
+    """Four versions of one table, each fixing one more thing; the values never change."""
+    cap, spec, heads, blocks = parse(table)
+    names = heads[-1]  # the row of column names; any rows above it group the columns
+    ncol = len(cells(names)[1])
+    numeric = numeric_columns(blocks, ncol)
+    rows = [r for blk in blocks for r in blk]
+
+    def tab(colspec, lines):
+        return "\\begin{tabular}{%s}\n%s\n\\end{tabular}" % (colspec, "\n".join(lines))
+
+    # 1. Grid, everything centred, mixed precision, no emphasis.
+    l1 = [r"\hline", names, r"\hline"]
+    for k, r in enumerate(rows):
+        l1 += [" & ".join(sloppy(c, k + j) if numeric[j] else plain(c) for j, c in enumerate(cells(r)[1])) + r" \\", r"\hline"]
+    step1 = tab("|" + "|".join("c" * len(spec)) + "|", l1)
+    # 2. booktabs rules; still centred and mixed.
+    l2 = [r"\toprule", names, r"\midrule"] + [l for l in l1[3:] if l != r"\hline"] + [r"\bottomrule"]
+    step2 = tab("c" * len(spec), l2)
+    # 3. Numbers right-aligned at the same precision.
+    l3 = [r"\toprule", names, r"\midrule"] + [" & ".join(plain(c) for c in cells(r)[1]) + r" \\" for r in rows] + [r"\bottomrule"]
+    step3 = tab(right_align("l" * len(spec), numeric), l3)
+    # 4. Organised: the page's table as written.
+    step4 = table[table.index(r"\begin{tabular}"):table.index(r"\end{tabular}") + len(r"\end{tabular}")]
+    return cap, [step1, step2, step3, step4]
 
 
 NAMES = {"gemello": "Gemello", "thermeval": "ThermEval", "jouleseye": "JoulesEye", "gdmi": "GD-MI", "kestrel": "Kestrel"}
 
+STEPS = [
+    ("1. First draft", "a grid of rules, every column centred, the same values at mixed precision, a caption below that says nothing"),
+    ("2. booktabs", "three horizontal rules and no vertical ones; the caption moves above"),
+    ("3. Numbers right-aligned, same precision", "digits line up, so you compare values at a glance"),
+    ("4. Organised", "columns grouped by the question they answer, the best result in bold, our row shaded, the message in the caption"),
+]
+
 
 def table_examples(tmp):
-    for paper, after in tables().items():
-        before = first_draft(after)
-        label = r"{\sffamily\footnotesize\color{gray}\textbf{%s}: %s}\par"
-        body = (label % ("BEFORE", "vertical rules, a line under every row, caption below") + before
-                + r"\vspace{14pt}\setcounter{table}{0}" + label % ("AFTER", "booktabs, the message first in the caption") + after)
-        body = body.replace(r"\begin{table}[t]", r"\begin{table}[h!]")
+    for paper, table in tables().items():
+        cap, steps = build_up(table)
+        parts = []
+        for k, ((title, why), t) in enumerate(zip(STEPS, steps)):
+            parts.append(r"{\sffamily\footnotesize\textbf{%s}\quad\color{gray}%s}\par\vspace{5pt}" % (title, why))
+            if k == 3:
+                parts.append(r"\captionof{table}{%s}\vspace{2pt}" % cap)
+            elif k > 0:
+                parts.append(r"\captionof{table}{Results of different methods.}\vspace{2pt}")
+            parts.append(r"{\small " + t + r"}\par")
+            if k == 0:
+                parts.append(r"\vspace{2pt}{\small\textbf{Table 1:} Results of different methods.}\par")
+            parts.append(r"\vspace{16pt}\setcounter{table}{0}")
         pre = (r"\newcommand{\method}{%s\xspace}\usepackage{xspace}\usepackage{caption}"
-               r"\captionsetup{font=small,labelfont=bf}") % NAMES[paper]
-        compile_to_svg(tmp, f"table-{paper}", body, pre, width=5.6)
+               r"\captionsetup{font=small,labelfont=bf,skip=3pt,justification=raggedright,singlelinecheck=false}") % NAMES[paper]
+        compile_to_svg(tmp, f"table-{paper}", "\n".join(parts), pre, width=6.6)
 
 
 if __name__ == "__main__":

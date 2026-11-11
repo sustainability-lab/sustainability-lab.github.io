@@ -1064,44 +1064,42 @@ Then include it at its natural size, `\includegraphics{accuracy-vs-size.pdf}`, w
 
 ## Tables
 
-We follow this excellent [short guide to making nice tables](https://people.inf.ethz.ch/markusp/teaching/guides/guide-tables.pdf) by Markus Püschel. Here is the same table typeset both ways, from the selected paper:
+We follow this excellent [short guide to making nice tables](https://people.inf.ethz.ch/markusp/teaching/guides/guide-tables.pdf) by Markus Püschel. Below, the selected paper's table is built up one fix at a time. The numbers are the same in every step.
 
 ::: {.pv paper="gemello"}
-![The same table typeset twice. Before: vertical rules, a line under every row, and a caption below that says nothing. After: booktabs rules, no vertical lines, a caption above that leads with the message, and the paper's own row shaded.](../images/handbook/writing-papers/table-gemello.svg){.wp-fig fig-alt="The Gemello results table typeset twice with LaTeX: first with a grid of vertical and horizontal lines and a generic caption below, then in booktabs style with three horizontal rules and a caption above that states the finding."}
+![The same Gemello table built up in four steps. The values never change; only how they are set does.](../images/handbook/writing-papers/table-gemello.svg){.wp-fig fig-alt="The Gemello results table typeset four times with LaTeX: a grid with centred, mixed-precision numbers and a caption below; booktabs rules with the caption above; numbers right-aligned at one precision; and the final table with goal-grouped columns, bold best results, a shaded row and a message-first caption."}
 :::
 
 ::: {.pv paper="thermeval"}
-![The same table typeset twice. Before: vertical rules, a line under every row, and a caption below that says nothing. After: booktabs rules, no vertical lines, a caption above that leads with the message, and the paper's own row shaded.](../images/handbook/writing-papers/table-thermeval.svg){.wp-fig fig-alt="The ThermEval results table typeset twice with LaTeX: first with a grid of vertical and horizontal lines and a generic caption below, then in booktabs style with three horizontal rules and a caption above that states the finding."}
+![The same ThermEval table built up in four steps. The values never change; only how they are set does.](../images/handbook/writing-papers/table-thermeval.svg){.wp-fig fig-alt="The ThermEval results table typeset four times with LaTeX: a grid with centred, mixed-precision numbers and a caption below; booktabs rules with the caption above; numbers right-aligned at one precision; and the final table with goal-grouped columns, bold best results, a shaded row and a message-first caption."}
 :::
 
 ::: {.pv paper="jouleseye"}
-![The same table typeset twice. Before: vertical rules, a line under every row, and a caption below that says nothing. After: booktabs rules, no vertical lines, a caption above that leads with the message, and the paper's own row shaded.](../images/handbook/writing-papers/table-jouleseye.svg){.wp-fig fig-alt="The JoulesEye results table typeset twice with LaTeX: first with a grid of vertical and horizontal lines and a generic caption below, then in booktabs style with three horizontal rules and a caption above that states the finding."}
+![The same JoulesEye table built up in four steps. The values never change; only how they are set does.](../images/handbook/writing-papers/table-jouleseye.svg){.wp-fig fig-alt="The JoulesEye results table typeset four times with LaTeX: a grid with centred, mixed-precision numbers and a caption below; booktabs rules with the caption above; numbers right-aligned at one precision; and the final table with goal-grouped columns, bold best results, a shaded row and a message-first caption."}
 :::
 
 ::: {.pv paper="gdmi"}
-![The same table typeset twice. Before: vertical rules, a line under every row, and a caption below that says nothing. After: booktabs rules, no vertical lines, a caption above that leads with the message, and the paper's own row shaded.](../images/handbook/writing-papers/table-gdmi.svg){.wp-fig fig-alt="The GD-MI results table typeset twice with LaTeX: first with a grid of vertical and horizontal lines and a generic caption below, then in booktabs style with three horizontal rules and a caption above that states the finding."}
+![The same GD-MI table built up in four steps. The values never change; only how they are set does.](../images/handbook/writing-papers/table-gdmi.svg){.wp-fig fig-alt="The GD-MI results table typeset four times with LaTeX: a grid with centred, mixed-precision numbers and a caption below; booktabs rules with the caption above; numbers right-aligned at one precision; and the final table with goal-grouped columns, bold best results, a shaded row and a message-first caption."}
 :::
 
 ::: {.pv paper="kestrel"}
-![The same table typeset twice. Before: vertical rules, a line under every row, and a caption below that says nothing. After: booktabs rules, no vertical lines, a caption above that leads with the message, and the paper's own row shaded.](../images/handbook/writing-papers/table-kestrel.svg){.wp-fig fig-alt="The Kestrel results table typeset twice with LaTeX: first with a grid of vertical and horizontal lines and a generic caption below, then in booktabs style with three horizontal rules and a caption above that states the finding."}
+![The same Kestrel table built up in four steps. The values never change; only how they are set does.](../images/handbook/writing-papers/table-kestrel.svg){.wp-fig fig-alt="The Kestrel results table typeset four times with LaTeX: a grid with centred, mixed-precision numbers and a caption below; booktabs rules with the caption above; numbers right-aligned at one precision; and the final table with goal-grouped columns, bold best results, a shaded row and a message-first caption."}
 :::
 
-The guide's rules, with `booktabs`:
+What each step buys:
 
-- **No vertical lines,** and no double lines. Columns separate themselves through alignment and space.
-- **Three horizontal rules:** `\toprule`, `\midrule` and `\bottomrule`. Use `\cmidrule` under a column group, never `\hline` under every row.
-- **Caption above the table.** A reader scans a table from the top.
-- **Align numbers on the right,** or on the decimal point (`siunitx`'s `S` column), and give each the same number of decimals.
-- **Put units in the column header,** not in every cell.
-- **Don't repeat what every row shares.** Say it once in the header or the caption.
+1. **Remove the grid.** Vertical lines and a rule under every row make the eye read lines, not numbers. Use `booktabs`: `\toprule`, `\midrule` and `\bottomrule`, plus `\cmidrule` under a column group. Never use vertical or double lines. Put the caption *above* the table, because a reader scans a table from the top.
+2. **Right-align numbers, and give a column one precision.** Then digits of the same place sit in one column, and a longer number really is a bigger one. In the first draft, 0.6 next to 0.64 looks like a less precise result, not the same precision. Pick the decimals your measurement supports, and use them for every cell in the column. With `siunitx`, an `S` column aligns on the decimal point.
+3. **Left-align text,** and keep it short. A centred text column has a ragged edge on both sides.
+4. **Organise for the reader.** Group columns under the question or goal they answer. Put units in the header, not in every cell. Set reference rows, such as people or an oracle, apart with a `\midrule`. Bold the best value in each column, shade your own row, and say both rules in the caption.
+5. **Lead the caption with the message,** then say what the columns mean and which direction is better.
 
-In addition, for our papers:
+Two more rules for our papers:
 
-- **Lead the caption with the takeaway**, then say what each column means.
-- **Label column groups with the question or goal** they answer, such as "G1: accurate?".
 - **Leave no empty cells in headline columns.** A "–" in a key column is a gap in your evidence. Fill it.
 - **Use counts when *n* is small** (7/10, not 70%).
-- **State your bold and underline rule**, and shade your own method's row.
+
+The LaTeX for step 4:
 
 ::: {.pv paper="gemello"}
 ```tex
@@ -1110,7 +1108,7 @@ In addition, for our papers:
     Energy accuracy (\%, higher is better) on the two appliances reported in the text, and the data each
     method needs from every home. LBM is best on the fridge. Best in \textbf{bold}.}
   \label{tab:main}
-  \begin{tabular}{lccc}
+  \begin{tabular}{lrrl}
     \toprule
     & \multicolumn{2}{c}{G1: accurate?} & G2: existing data only? \\
     \cmidrule(lr){2-3}\cmidrule(lr){4-4}
@@ -1133,7 +1131,7 @@ In addition, for our papers:
     and Task 6 error in $^\circ$C (lower is better). Best model in each column in \textbf{bold};
     people are a reference, not a competitor.}
   \label{tab:reasoning}
-  \begin{tabular}{lcccc}
+  \begin{tabular}{lrrrr}
     \toprule
     & \multicolumn{2}{c}{Q3: who is hotter?} & \multicolumn{2}{c}{Q4: how hot?} \\
     \cmidrule(lr){2-3}\cmidrule(lr){4-5}
@@ -1159,7 +1157,7 @@ In addition, for our papers:
     Error of calorie estimates (MAPE, \%, lower is better) against an indirect calorimeter,
     for all 54 participants and split by body mass index (BMI). Best in \textbf{bold}.}
   \label{tab:bmi}
-  \begin{tabular}{lccc}
+  \begin{tabular}{lrrr}
     \toprule
     & \multicolumn{3}{c}{G2: accurate calories?} \\
     \cmidrule(lr){2-4}
@@ -1180,7 +1178,7 @@ In addition, for our papers:
     Negative log-likelihood (NLL) and RMSE ($\mu$g/m$^3$) of each model on held-out PM2.5; lower is better for both.
     We choose the model on validation (2009--2010); test (2011--2018) is shown too. Best in \textbf{bold}.}
   \label{tab:surrogate}
-  \begin{tabular}{lcccc}
+  \begin{tabular}{lrrrr}
     \toprule
     & \multicolumn{2}{c}{Calibrated uncertainty? NLL} & \multicolumn{2}{c}{Accurate? RMSE} \\
     \cmidrule(lr){2-3}\cmidrule(lr){4-5}
@@ -1207,7 +1205,7 @@ In addition, for our papers:
     Accuracy (\%, higher is better) on seen and unseen phone models, and labelled calls needed per species
     (lower is better). Best in \textbf{bold}.}
   \label{tab:main}
-  \begin{tabular}{lccc}
+  \begin{tabular}{lrrr}
     \toprule
     & \multicolumn{2}{c}{G1: accurate?} & G2: few labels? \\
     \cmidrule(lr){2-3}\cmidrule(lr){4-4}
