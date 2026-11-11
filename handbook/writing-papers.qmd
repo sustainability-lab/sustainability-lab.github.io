@@ -7,24 +7,38 @@ aliases:
 
 ```{=html}
 <style>
-.wp-ill { width: 100%; aspect-ratio: 16/9; object-fit: cover; background: var(--ill); margin: 0.4rem 0 1.2rem; }
+.wp-ill { width: 100%; aspect-ratio: 16/9; object-fit: contain; background: #fffefa; margin: 0.4rem 0 1.2rem; }
 .wp-fig img { border: 1px solid var(--rule); }
-body.quarto-dark .wp-ill, body.quarto-dark .wp-fig img { filter: brightness(.88); }
+/* Dark mode: the figures are ink on white, so flip them like the paper thumbnails. */
+body.quarto-dark .wp-ill, body.quarto-dark .wp-fig img { filter: invert(.9) hue-rotate(180deg); }
 .ba { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 1rem 0 1.4rem; }
 .ba > div { padding: 12px 16px 4px; background: var(--soft); border-left: 4px solid; }
 .ba > div > :last-child { margin-bottom: 0.6rem; }
-.ba .bad { border-color: #8a8a8a; }
-.ba .good { border-color: #0072B2; }
+.ba .bad { border-color: var(--muted); }
+.ba .good { border-color: var(--ok); }
 .ba .bad::before, .ba .good::before { display: block; font-weight: 700; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 6px; }
 .ba .bad::before { content: "✗  Before"; color: var(--muted); }
-.ba .good::before { content: "✓  After"; color: #0072B2; }
-body.quarto-dark .ba .good::before { color: #56B4E9; }
+.ba .good::before { content: "✓  After"; color: var(--ok); }
 .example { background: var(--soft); border-left: 4px solid var(--rule); padding: 12px 16px 2px; margin: 1rem 0 1.4rem; }
 .example::before { content: "Example"; display: block; font-weight: 700; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
 .lead-hl { color: var(--accent); font-weight: 600; }
-.bridge-hl { color: #0072B2; font-style: italic; }
-body.quarto-dark .bridge-hl { color: #56B4E9; }
+.bridge-hl { color: var(--ok); font-style: italic; }
 @media (max-width: 760px) { .ba { grid-template-columns: 1fr; } }
+/* Example-paper switch: every .pv block belongs to one paper; only the chosen paper's blocks show. */
+.paper-switch { position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; align-items: center; gap: 4px; padding: 8px 0; margin: 1rem 0 .3rem; background: var(--paper); border-bottom: 1px solid var(--rule); }
+.paper-switch .ps-label { flex: none; font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-right: 4px; }
+.paper-switch button { flex: none; border: 1px solid var(--rule); background: transparent; color: var(--ink); border-radius: 999px; padding: 3px 8px; font: inherit; font-size: .82rem; white-space: nowrap; cursor: pointer; }
+.paper-switch button small { font-size: .74rem; }
+.paper-switch button small { color: var(--muted); margin-left: 3px; }
+.paper-switch button[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.paper-switch button[aria-selected="true"] small { color: rgba(255,255,255,.8); }
+body.quarto-dark .paper-switch button[aria-selected="true"] { color: #1b1e1c; }
+body.quarto-dark .paper-switch button[aria-selected="true"] small { color: rgba(27,30,28,.75); }
+.ps-about { color: var(--muted); font-size: .92rem; margin: .4rem 0 1.2rem; }
+.pv { display: none; }
+html:not([data-paper]) .pv[data-paper="kestrel"], html[data-paper="kestrel"] .pv[data-paper="kestrel"],
+html[data-paper="gemello"] .pv[data-paper="gemello"], html[data-paper="thermeval"] .pv[data-paper="thermeval"],
+html[data-paper="jouleseye"] .pv[data-paper="jouleseye"], html[data-paper="gdmi"] .pv[data-paper="gdmi"] { display: block; }
 /* The site's legacy rule gives every <pre> a dark background, but Quarto's highlighter emits dark token colours. Keep tokens readable here. */
 pre.sourceCode code span { color: #d4d4d4 !important; }
 pre.sourceCode code span.co { color: #9aab9a !important; font-style: italic; }
@@ -35,11 +49,26 @@ pre.sourceCode code span.dv, pre.sourceCode code span.fl { color: #b8d7a3 !impor
 </style>
 ```
 
-![](../images/handbook/writing-papers/hero.webp){.wp-ill fig-alt="Eight small tiles, each one line, grow into eight paragraph tiles, which flow into a stack of paper pages."}
+![](../images/handbook/writing-papers/hero.webp){.wp-ill fig-alt="A desk seen from above: one index card with a single line, a red ink arrow to a row of short paragraph cards, and a stack of finished pages."}
 
 This page sets out how we write papers in the lab. It is for students writing their first paper, for anyone reviewing a draft, and for AI agents that help with either. Writing is a skill, and like any skill it improves with *deliberate* practice. This page gives you something concrete to practise against.
 
-Every rule comes with an example. The examples follow one running paper, **Kestrel**. Kestrel is *invented*. It counts birds from recordings made on cheap phones, and all its numbers are made up. We chose a topic outside our lab's work so that you notice the rules, not the topic.
+Every rule comes with a **before and after**. Pick the paper the examples follow with the switch below. **Kestrel** is invented: it counts birds from cheap phone recordings, and its numbers are made up, so you notice the rules and not the topic. The other four are **our own papers**. For those, the *after* follows the published paper and its numbers. The *before* is an invented first draft, the kind every paper starts as.
+
+```{=html}
+<div class="paper-switch" role="tablist" aria-label="Paper the examples follow">
+  <button type="button" role="tab" data-paper="kestrel">Kestrel <small>invented</small></button>
+  <button type="button" role="tab" data-paper="gemello">Gemello <small>KDD ’16</small></button>
+  <button type="button" role="tab" data-paper="thermeval">ThermEval <small>KDD ’26</small></button>
+  <button type="button" role="tab" data-paper="jouleseye">JoulesEye <small>IMWUT ’24</small></button>
+  <button type="button" role="tab" data-paper="gdmi">GD-MI <small>AAAI ’26</small></button>
+</div>
+<p class="ps-about pv" data-paper="kestrel"><b>Kestrel</b> counts birds from recordings made on cheap phones. It is invented, and so are its numbers.</p>
+<p class="ps-about pv" data-paper="gemello"><b>Gemello</b> estimates how much energy each appliance in a home uses, from just the monthly electricity bill. <a href="../papers/2016/batra_kdd.pdf">Paper</a></p>
+<p class="ps-about pv" data-paper="thermeval"><b>ThermEval</b> asks whether vision-language models can read thermal images. <a href="https://arxiv.org/abs/2602.14989">Paper</a> · <a href="https://sustainability-lab.github.io/thermeval/">project</a></p>
+<p class="ps-about pv" data-paper="jouleseye"><b>JoulesEye</b> estimates calories burned from breathing, seen by a phone's thermal camera. <a href="../papers/2024/IMWUT_JoulesEye.pdf">Paper</a></p>
+<p class="ps-about pv" data-paper="gdmi"><b>GD-MI</b> decides where to put new air-quality sensors, by gradient ascent on mutual information. <a href="../papers/2026/aaai_2026_air_active_gradient_camera_ready.pdf">Paper</a> · <a href="https://sustainability-lab.github.io/gdmi/">project</a></p>
+```
 
 ::: {.callout-tip}
 ## Using an AI agent?
@@ -56,7 +85,7 @@ Every rule on this page comes from one of five principles.
 4. **Back every claim with evidence.** Use a number, a table, a figure, a proof or a citation. If you cannot back a claim, narrow it until you can.
 5. **Be honest.** Show your failures and limitations yourself, before a reviewer finds them. A reviewer trusts you more when you do.
 
-![The reader you write for knows the field next door. Your job is to build the bridge.](../images/handbook/writing-papers/reader.webp){.wp-ill fig-alt="A stack of paper pages on one platform, connected by a small bridge with a red arrow to a figure reading a booklet on another platform."}
+![The reader you write for knows the field next door. Your job is to build the bridge.](../images/handbook/writing-papers/reader.webp){.wp-ill fig-alt="Two cliffs joined by a footbridge whose planks are being laid in red: a stack of papers on one side, a researcher from another field reading a booklet on the other."}
 
 ## The skeleton: abstract, introduction, paper {#skeleton}
 
@@ -72,6 +101,7 @@ Write the abstract *first*. Each abstract line then grows into one paragraph of 
 
 A good title names the method and says what it does. Keep it short.
 
+::: {.pv paper="kestrel"}
 ::: {.ba}
 ::: {.bad}
 A Novel Deep Learning Framework for Robust Few-Shot Bioacoustic Species Classification Using Low-Cost Mobile Devices in Real-World Settings
@@ -79,6 +109,55 @@ A Novel Deep Learning Framework for Robust Few-Shot Bioacoustic Species Classifi
 ::: {.good}
 Kestrel: Few-Shot Bird Counting from Cheap Phone Recordings
 :::
+:::
+:::
+
+::: {.pv paper="gemello"}
+::: {.ba}
+::: {.bad}
+A Novel Data-Driven Approach for Scalable Non-Intrusive Appliance-Level Energy Estimation in Residential Buildings
+:::
+::: {.good}
+Gemello: Creating a Detailed Energy Breakdown from just the Monthly Electricity Bill
+:::
+:::
+The *after* says what you get (a breakdown) from what you already have (the monthly bill). *Gemello* is Italian for *twin*: the method finds each home's twins among homes that are already metered.
+:::
+
+::: {.pv paper="thermeval"}
+::: {.ba}
+::: {.bad}
+Towards a Comprehensive Understanding of the Capabilities of State-of-the-Art Vision-Language Models on Thermal Images
+:::
+::: {.good}
+ThermEval: A Structured Benchmark for Evaluation of Vision-Language Models on Thermal Imagery
+:::
+:::
+The *before* hides the contribution behind "towards" and "comprehensive understanding". The *after* names the benchmark first, so people can cite it in one word.
+:::
+
+::: {.pv paper="jouleseye"}
+::: {.ba}
+::: {.bad}
+A Novel Smartphone-Based Deep Learning Approach for Accurate Calorie Estimation Using Thermal Data
+:::
+::: {.good}
+JoulesEye: Energy Expenditure Estimation and Respiration Sensing from Thermal Imagery While Exercising
+:::
+:::
+*JoulesEye* is a name people can say and remember: joules of energy, seen by an eye. The subtitle then names both outputs and the setting, *while exercising*, which is where watches fail.
+:::
+
+::: {.pv paper="gdmi"}
+::: {.ba}
+::: {.bad}
+An Efficient and Scalable Novel Framework for Optimal Sensor Placement in Air Quality Monitoring Networks
+:::
+::: {.good}
+Scalable Air-Quality Sensor Placement via Gradient-Based Mutual Information Maximization
+:::
+:::
+The *after* says what is new, *gradient-based*, instead of claiming *efficient* and *novel*. One step better: the paper calls its method **GD-MI**, so the title could lead with it, as in *GD-MI: Scalable Air-Quality Sensor Placement via Gradient-Based Mutual Information*.
 :::
 
 - **Give the method a name people can say.** A real word that fits the idea works best. If you build an acronym, make it spell out the subtitle.
@@ -94,6 +173,7 @@ Kestrel: Few-Shot Bird Counting from Cheap Phone Recordings
 
 We follow the structure from [RM101](https://github.com/nipunbatra/CS-Research-Methods-Bootcamp/blob/master/RM101.pdf): seven parts, plus an optional *insight*. Each part gets one line, so a full abstract is **7–8 lines**. A line may hold two short sentences.
 
+::: {.pv paper="kestrel"}
 | Part | What it says | Kestrel |
 |-----------|------------|------------------------------|
 | 1 Context | Where the field is | Bird counts tell ecologists how habitats change. Volunteers now record birdsong on cheap phones, at a scale no survey team can match. |
@@ -117,8 +197,132 @@ Bird counts tell ecologists how habitats change. Volunteers now record birdsong 
 :::
 
 The two versions are almost the same length. The second one says *more*. It gives the size of the drop, the insight, the data, the margin over the best baseline, and a limitation. The first one hides behind "significantly" and "extensive".
+:::
 
-![Sentence lengths in the two abstracts above, counted by the script that draws this figure. The rewrite has three times as many sentences, and none is longer than 16 words.](../images/handbook/writing-papers/sentence-lengths.svg){.wp-fig fig-alt="Two bar charts of words per sentence. Before: four sentences of 26 to 50 words. After: thirteen sentences of 7 to 16 words."}
+::: {.pv paper="gemello"}
+| Part | What it says | Gemello |
+|-----------|------------|------------------------------|
+| 1 Context | Where the field is | The first step to saving energy in a home is often an energy breakdown: how much each appliance uses, like an itemised grocery bill. |
+| 2 Motivation | The problem | But producing one needs hardware installed in every home, so it does not scale. |
+| 3 Prior art | Why existing work falls short | Disaggregation methods split a home's total power into appliances, but they need high-frequency metering in each home. |
+| 4 Insight *(optional)* | What explains the gap | Homes in a region are alike, and "alike" can be defined per appliance: similar seasonal bills mean similar heating and cooling; similar floor area means similar lighting. |
+| 5 Approach | What we do | We present Gemello, which estimates a home's breakdown from similar homes whose breakdown is known. It needs only the monthly bill and facts such as floor area and household size. |
+| 6 Evaluation | How we test it | We test it on 57 homes from the public Dataport data set, against two disaggregation methods that need metering in each home. |
+| 7 Results | What we found, in numbers | Gemello estimates heating and cooling energy with 76% accuracy, against 61% and 56% for the two baselines. With only seven metered homes to learn from, it still reaches about 69%. |
+| 8 Conclusion | What it means, and its limits | Its inputs already exist for most homes, so it could be used today. It gives monthly estimates only, and only for common appliances. |
+
+Here is a first draft of the same abstract, and the rewrite.
+
+::: {.ba}
+::: {.bad}
+Energy conservation in residential buildings is an important research problem and has received significant attention from the research community. Appliance-level energy feedback has been shown to be useful, but existing non-intrusive load monitoring techniques suffer from several limitations which hinder their large-scale adoption. In this paper, a novel data-driven approach called Gemello is proposed, which leverages readily available data to estimate appliance-level energy consumption in a scalable manner. The proposed approach is evaluated on a real-world data set and the results demonstrate that it achieves promising performance compared to state-of-the-art techniques.
+:::
+::: {.good}
+The first step to saving energy in a home is often an energy breakdown: how much each appliance uses. But producing one needs hardware installed in every home, so it does not scale. Disaggregation methods need high-frequency metering in each home. Homes in a region are alike, and "alike" can be defined per appliance. Similar seasonal bills mean similar heating and cooling; similar floor area means similar lighting. We present Gemello, which estimates a home's breakdown from similar homes whose breakdown is known. It needs only the monthly bill and facts such as floor area and household size. We test it on 57 homes from the public Dataport data set, against two methods that need metering in each home. Gemello estimates heating and cooling energy with 76% accuracy, against 61% and 56% for the baselines. With only seven metered homes to learn from, it still reaches about 69%. Its inputs already exist for most homes, so it could be used today. It gives monthly estimates only, and only for common appliances.
+:::
+:::
+
+The draft names no limitation of prior work: "several limitations which hinder their large-scale adoption" could mean anything. The rewrite names the one that matters, hardware in every home, and the whole paper answers it. The published paper is honest in another way worth copying: for the fridge, one baseline beats Gemello (72% against 69%), and the paper says so.
+:::
+
+::: {.pv paper="thermeval"}
+| Part | What it says | ThermEval |
+|-----------|------------|------------------------------|
+| 1 Context | Where the field is | Vision-language models (VLMs) answer questions about ordinary photos well. Thermal cameras see heat instead of light, which matters at night, in search and rescue and in medical screening. |
+| 2 Motivation | The problem | But a thermal image encodes temperature, not colour or texture, and no benchmark tests whether VLMs can reason about it. |
+| 3 Prior art | Why existing work falls short | VLM benchmarks use RGB images, and thermal datasets release coloured pictures without the temperatures behind them. |
+| 4 Insight *(optional)* | What shapes the design | Reading a temperature takes a chain of steps: recognise the modality, read the colour bar, then map pixels to degrees. |
+| 5 Approach | What we do | We present ThermEval, which tests each link with more than 70,000 questions across seven tasks. Its new dataset, ThermEval-D, has over 3,500 thermal images with per-pixel temperatures. |
+| 6 Evaluation | How we test it | We evaluate 25 VLMs, from 0.3B to over 200B parameters, against human annotators. |
+| 7 Results | What we found, in numbers | Asked which of two people is warmer, the best model is right 74% of the time, against 84% for people. Models often answer from language priors, such as a textbook body temperature, instead of the pixels. |
+| 8 Conclusion | What it means, and its limits | Bigger models do not reliably do better, and fine-tuning helps only on some tasks. Thermal understanding needs its own evaluation. |
+
+Here is a first draft of the same abstract, and the rewrite.
+
+::: {.ba}
+::: {.bad}
+Vision-language models have recently attracted significant attention in the computer vision community and have been shown to achieve impressive performance on a wide variety of tasks. However, their capabilities on thermal imagery, which is an important modality for numerous applications, have not been comprehensively studied. In this paper, a novel and comprehensive benchmark called ThermEval is proposed, which consists of a large number of question-answer pairs spanning multiple tasks, along with a new dataset containing thermal images with temperature annotations. Extensive experiments are conducted on a wide range of state-of-the-art open-source and closed-source models, and it is observed that the models struggle significantly on several tasks. Our findings demonstrate the effectiveness of the proposed benchmark and provide valuable insights for future research in this important area.
+:::
+::: {.good}
+Vision-language models (VLMs) answer questions about ordinary photos well. Thermal cameras see heat instead of light, which matters at night, in search and rescue and in medical screening. But a thermal image encodes temperature, not colour or texture, and no benchmark tests whether VLMs can reason about it. VLM benchmarks use RGB images, and thermal datasets release coloured pictures without the temperatures behind them. Reading a temperature takes a chain of steps: recognise the modality, read the colour bar, then map pixels to degrees. We present ThermEval, which tests each link with more than 70,000 questions across seven tasks. Its new dataset, ThermEval-D, has over 3,500 thermal images with per-pixel temperatures. We evaluate 25 VLMs, from 0.3B to over 200B parameters, against human annotators. Asked which of two people is warmer, the best model is right 74% of the time, against 84% for people. Models often answer from language priors, such as a textbook body temperature, instead of the pixels. Bigger models do not reliably do better, and fine-tuning helps only on some tasks. Thermal understanding needs its own evaluation.
+:::
+:::
+
+The draft says "a large number of question-answer pairs", "multiple tasks" and "a wide range of models". The rewrite gives each number: 70,000, seven and 25. "The models struggle significantly" becomes 74% against 84%, and the rewrite says *how* they fail: they answer from what they expect, not from what they see.
+:::
+
+::: {.pv paper="jouleseye"}
+| Part | What it says | JoulesEye |
+|-----------|------------|------------------------------|
+| 1 Context | Where the field is | Phones and watches measure heart rate well, and fitness apps use it to estimate calories burned. |
+| 2 Motivation | The problem | But these estimates can be wrong by over 40%, too far off for medical use. |
+| 3 Prior art | Why existing work falls short | Watches estimate calories from heart rate alone. Accurate methods need a face mask and lab equipment. |
+| 4 Insight *(optional)* | What explains the gap | Breathing carries information about calorie burn that heart rate misses, and a thermal camera can see each breath as the air at the nostrils warms and cools. |
+| 5 Approach | What we do | We present JoulesEye, which tracks breathing with a smartphone thermal camera and estimates calories burned from it. |
+| 6 Evaluation | How we test it | We test it on 54 participants who cycled and ran at high intensity, against a lab-grade calorimeter. |
+| 7 Results | What we found, in numbers | JoulesEye's error is 5.8%, against 37.6% for smartwatch methods that use heart rate alone. |
+| 8 Conclusion | What it means, and its limits | A 32×24-pixel thermal camera, small enough to fit in a watch, is enough. We tested cycling and running only. |
+
+Here is a first draft of the same abstract, and the rewrite.
+
+::: {.ba}
+::: {.bad}
+Fitness tracking using wearable devices has become extremely popular in recent years, and estimation of calories burned is one of the most widely used features. However, it has been observed in the literature that such estimates can be inaccurate. In this work, a novel system named JoulesEye is proposed, which leverages thermal imaging along with advanced signal processing and deep learning techniques to estimate energy expenditure in an accurate manner. A user study was conducted with a number of participants performing different exercises, and it was found that the proposed system achieves significantly lower error than commercial devices. The results demonstrate the feasibility and great potential of thermal sensing for health monitoring applications.
+:::
+::: {.good}
+Phones and watches measure heart rate well, and fitness apps use it to estimate calories burned. But these estimates can be wrong by over 40%, too far off for medical use. Watches estimate calories from heart rate alone, and accurate methods need a face mask and lab equipment. Breathing carries information about calorie burn that heart rate misses. A thermal camera can see each breath, as the air at the nostrils warms and cools. We present JoulesEye, which tracks breathing with a smartphone thermal camera and estimates calories burned from it. We test it on 54 participants who cycled and ran at high intensity, against a lab-grade calorimeter. JoulesEye's error is 5.8%, against 37.6% for smartwatch methods that use heart rate alone. A 32×24-pixel thermal camera, small enough to fit in a watch, is enough. We tested cycling and running only, and other activities remain future work.
+:::
+:::
+
+The draft never says *why* thermal imaging should work. The rewrite gives the reason in one line, breathing, and the reader can then follow everything after it. "Significantly lower error" becomes 5.8% against 37.6%.
+:::
+
+::: {.pv paper="gdmi"}
+| Part | What it says | GD-MI |
+|-----------|------------|------------------------------|
+| 1 Context | Where the field is | Over 99% of the world's people breathe air above WHO limits. India has about 500 official monitoring stations for 1.4 billion people. |
+| 2 Motivation | The problem | Each new station is expensive, so where we place the next ones matters. |
+| 3 Prior art | Why existing work falls short | Mutual information (MI) picks informative sites, but its cost grows with every candidate site it checks. Cheap heuristics scale, but they cluster sensors or place them redundantly. |
+| 4 Insight *(optional)* | What explains the gap | If sensor coordinates are continuous parameters, we can move all the new sensors at once by gradient ascent on MI, with no search over sites. |
+| 5 Approach | What we do | We present GD-MI. Its runtime does not grow with the number of sensors or the size of the candidate grid. |
+| 6 Evaluation | How we test it | We test it on PM2.5 data across India, against random placement, the maximum-variance heuristic and greedy MI. |
+| 7 Results | What we found, in numbers | GD-MI lowers the error (RMSE) by 4% compared with the maximum-variance heuristic. With nine new sensors in one state, it reaches an RMSE of 5.8, against 5.6 for greedy MI, and runs orders of magnitude faster. |
+| 8 Conclusion | What it means, and its limits | MI-based placement becomes practical at national scale. Gradient ascent can stall in local optima, which restarts could reduce. |
+
+Here is a first draft of the same abstract, and the rewrite.
+
+::: {.ba}
+::: {.bad}
+Air pollution is a major problem worldwide and monitoring it is very important. Sensor placement is a well-studied problem and many approaches have been proposed in the literature, including mutual information based approaches which are known to be computationally expensive. In this paper we propose a novel, efficient and scalable gradient-based framework for optimal sensor placement which leverages the power of differentiable optimization. Extensive experiments on a large real-world dataset show that our approach significantly outperforms the baselines while being much faster, demonstrating its effectiveness for real-world deployment.
+:::
+::: {.good}
+Over 99% of the world's people breathe air above WHO limits. India has about 500 official monitoring stations for 1.4 billion people, and each new station is expensive. So where we place the next ones matters. Mutual information (MI) picks informative sites, but its cost grows with every candidate site it checks. Cheap heuristics scale, but they cluster sensors or place them redundantly. We treat sensor coordinates as continuous parameters, so we can move all the new sensors at once by gradient ascent on MI. We call this GD-MI. Its runtime does not grow with the number of sensors or the size of the candidate grid. We test it on PM2.5 data across India, against random placement, the maximum-variance heuristic and greedy MI. GD-MI lowers the error by 4% compared with the maximum-variance heuristic. With nine new sensors in one state, it reaches an RMSE of 5.8, against 5.6 for greedy MI, and runs orders of magnitude faster. Gradient ascent can stall in local optima, which restarts could reduce.
+:::
+:::
+
+The draft claims *efficient*, *scalable* and *significantly outperforms*, and backs none of them. The rewrite shows the honest comparison too: greedy MI is slightly more accurate (5.6 against 5.8), and GD-MI wins on speed. Reviewers trust a paper that says where its method loses.
+:::
+
+::: {.pv paper="kestrel"}
+![Sentence lengths in the two abstracts above, counted by the script that draws this figure. The rewrite has more, shorter sentences, and none runs much past 25 words.](../images/handbook/writing-papers/sentence-lengths-kestrel.svg){.wp-fig fig-alt="Two bar charts of words per sentence, for the first draft and the rewrite of the kestrel abstract."}
+:::
+
+::: {.pv paper="gemello"}
+![Sentence lengths in the two abstracts above, counted by the script that draws this figure. The rewrite has more, shorter sentences, and none runs much past 25 words.](../images/handbook/writing-papers/sentence-lengths-gemello.svg){.wp-fig fig-alt="Two bar charts of words per sentence, for the first draft and the rewrite of the gemello abstract."}
+:::
+
+::: {.pv paper="thermeval"}
+![Sentence lengths in the two abstracts above, counted by the script that draws this figure. The rewrite has more, shorter sentences, and none runs much past 25 words.](../images/handbook/writing-papers/sentence-lengths-thermeval.svg){.wp-fig fig-alt="Two bar charts of words per sentence, for the first draft and the rewrite of the thermeval abstract."}
+:::
+
+::: {.pv paper="jouleseye"}
+![Sentence lengths in the two abstracts above, counted by the script that draws this figure. The rewrite has more, shorter sentences, and none runs much past 25 words.](../images/handbook/writing-papers/sentence-lengths-jouleseye.svg){.wp-fig fig-alt="Two bar charts of words per sentence, for the first draft and the rewrite of the jouleseye abstract."}
+:::
+
+::: {.pv paper="gdmi"}
+![Sentence lengths in the two abstracts above, counted by the script that draws this figure. The rewrite has more, shorter sentences, and none runs much past 25 words.](../images/handbook/writing-papers/sentence-lengths-gdmi.svg){.wp-fig fig-alt="Two bar charts of words per sentence, for the first draft and the rewrite of the gdmi abstract."}
+:::
+
 
 **Abstract rules**
 
@@ -132,10 +336,11 @@ The two versions are almost the same length. The second one says *more*. It give
 
 The introduction is the abstract, grown. Write **one paragraph per abstract line**, in the same order. Each paragraph has the same anatomy.
 
-![Each paragraph opens with a lead sentence that states its point and ends with a bridge to the next paragraph.](../images/handbook/writing-papers/paragraph.svg){.wp-fig fig-alt="Two paragraph boxes. The first has a bold lead sentence, grey body lines and a blue bridge question; an arrow leads to the second paragraph's bold lead."}
+![Each paragraph opens with a lead sentence that states its point and ends with a bridge to the next paragraph.](../images/handbook/writing-papers/paragraph.svg){.wp-fig fig-alt="Two paragraph boxes. The first has a bold lead sentence, grey body lines and a bridge question; an arrow leads to the second paragraph's bold lead."}
 
 **The lead sentence sets the tone.** It states the point of the paragraph. If a reader skims only the lead sentences, they should still get the argument.
 
+::: {.pv paper="kestrel"}
 ::: {.ba}
 ::: {.bad}
 Bird monitoring has a long history. Early surveys relied on trained observers walking fixed routes, and later work introduced automated recorders...
@@ -144,8 +349,73 @@ Bird monitoring has a long history. Early surveys relied on trained observers wa
 Existing bird classifiers fail on phone audio. Trained on clean recordings, they reach 91% accuracy; on phone clips of the same calls, they reach 54%...
 :::
 :::
+:::
 
-**The last sentence builds a bridge.** It leads the reader into the next paragraph, so the paragraphs connect *organically*. A question works well just before the insight: <span class="bridge-hl">"So why does accuracy collapse on phones?"</span> The next paragraph then opens with the answer: <span class="lead-hl">"We find that the microphone, not the bird, causes the drop."</span>
+::: {.pv paper="gemello"}
+::: {.ba}
+::: {.bad}
+Energy conservation in buildings has been an active area of research for several decades, and a wide variety of techniques have been proposed...
+:::
+::: {.good}
+Buildings use more than 30% of the world's energy, and an energy breakdown, how much each appliance uses, is one of the best ways to cut it...
+:::
+:::
+:::
+
+::: {.pv paper="thermeval"}
+::: {.ba}
+::: {.bad}
+Thermal imaging has a long history. It was first developed for military night vision, and over the decades it has found uses in industry, medicine and many other fields...
+:::
+::: {.good}
+We do not know whether vision-language models can read a thermal image. They describe ordinary photos well, but a thermal image encodes temperature, not colour or texture...
+:::
+:::
+:::
+
+::: {.pv paper="jouleseye"}
+::: {.ba}
+::: {.bad}
+Wearable devices have become increasingly popular over the last decade, and millions of people now use them to track their health and fitness...
+:::
+::: {.good}
+Smartwatches get calories burned wrong, often by more than 40%. They estimate it from heart rate alone, and heart rate misses much of what the body is doing...
+:::
+:::
+:::
+
+::: {.pv paper="gdmi"}
+::: {.ba}
+::: {.bad}
+Air pollution has been widely studied over the past decades, and many methods for monitoring it have been proposed in the literature...
+:::
+::: {.good}
+India has about 500 official air-quality stations for 1.4 billion people. New stations are expensive, so each one must go where it adds the most information...
+:::
+:::
+:::
+
+**The last sentence builds a bridge.** It leads the reader into the next paragraph, so the paragraphs connect *organically*. A question works well just before the insight:
+
+::: {.pv paper="kestrel"}
+<span class="bridge-hl">"So why does accuracy collapse on phones?"</span> The next paragraph then opens with the answer: <span class="lead-hl">"We find that the microphone, not the bird, causes the drop."</span>
+:::
+
+::: {.pv paper="gemello"}
+<span class="bridge-hl">"So can we get a breakdown without installing anything in the home?"</span> The next paragraph then opens with the answer: <span class="lead-hl">"Yes, if we borrow it from similar homes that are already metered."</span>
+:::
+
+::: {.pv paper="thermeval"}
+<span class="bridge-hl">"So can a model trained on ordinary photos read temperature at all?"</span> The next paragraph then opens with how we find out: <span class="lead-hl">"To answer this, we break thermal understanding into seven tasks, from easy to hard."</span>
+:::
+
+::: {.pv paper="jouleseye"}
+<span class="bridge-hl">"So what does the watch miss?"</span> The next paragraph then opens with the answer: <span class="lead-hl">"It misses breathing, and a thermal camera can see every breath."</span>
+:::
+
+::: {.pv paper="gdmi"}
+<span class="bridge-hl">"Mutual information picks good sites, so why isn't it used at national scale?"</span> The next paragraph then opens with the answer: <span class="lead-hl">"Because its cost grows with every candidate site it checks."</span>
+:::
 
 More rules for the introduction:
 
@@ -477,3 +747,30 @@ To change a rule, open a pull request on the repository, and update this page to
 - [ ] No symbol stands for two things.
 - [ ] The limitations form a numbered list with ways forward, and the conclusion runs 4–6 sentences.
 - [ ] Page limit and anonymity are checked, and all notes are off in the submission build.
+
+```{=html}
+<script>
+(() => {
+  const papers = ["kestrel", "gemello", "thermeval", "jouleseye", "gdmi"];
+  const buttons = document.querySelectorAll(".paper-switch button");
+  function choose(p, save) {
+    if (!papers.includes(p)) p = "kestrel";
+    document.documentElement.dataset.paper = p;
+    buttons.forEach(b => b.setAttribute("aria-selected", b.dataset.paper === p));
+    if (save) {
+      try { localStorage.setItem("wp-paper", p); } catch (e) {}
+      const u = new URL(location.href); u.searchParams.set("paper", p); history.replaceState(null, "", u);
+    }
+  }
+  let start = new URLSearchParams(location.search).get("paper");
+  if (!start) { try { start = localStorage.getItem("wp-paper"); } catch (e) {} }
+  choose(start || "kestrel", false);
+  buttons.forEach(b => b.addEventListener("click", () => {
+    // Keep the clicked switch where it is on screen while the content above it changes height.
+    const y = b.getBoundingClientRect().top;
+    choose(b.dataset.paper, true);
+    window.scrollBy(0, b.getBoundingClientRect().top - y);
+  }));
+})();
+</script>
+```

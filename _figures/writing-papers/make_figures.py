@@ -22,6 +22,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 # Site tokens (theme/light.scss) and Okabe-Ito for the semantic colour code.
 PAPER, INK, MUTED, RULE, SOFT, ACCENT = "#fffefa", "#222522", "#60645e", "#d4d6ce", "#f0efe8", "#b52d24"
 ORANGE, GREEN, BLUE, GREY = "#E69F00", "#009E73", "#0072B2", "#8a8a8a"
+BRIDGE = "#2f7d4a"  # the site's --ok green: bridges here and on the page
 PURPLE, YELLOW, SKY = "#CC79A7", "#F0E442", "#56B4E9"
 
 plt.rcParams.update({
@@ -109,17 +110,17 @@ def paragraph():
             ww = [0.50, 0.47, 0.51, 0.33][k % 4]
             ax.add_patch(Rectangle((x + 0.02, y0 + 0.255 - k * 0.05), ww, 0.018, color=RULE, lw=0))
         if bridge:
-            ax.text(x + 0.02, y0 + 0.045, bridge, fontsize=11.5, style="italic", va="center", color=BLUE)
+            ax.text(x + 0.02, y0 + 0.045, bridge, fontsize=11.5, style="italic", va="center", color=BRIDGE)
         return x, w
 
     x, w = para(0.53, "Existing bird classifiers fail on phone audio.", "So why does accuracy collapse on phones?", 4)
     para(0.04, "We find that the microphone, not the bird, causes the drop.", None, 4)
-    arrow(ax, (0.47, 0.575), (0.47, 0.445), color=BLUE, lw=1.8)
+    arrow(ax, (0.47, 0.575), (0.47, 0.445), color=BRIDGE, lw=1.8)
 
     notes = [
         (0.88, ACCENT, "Lead sentence", "States the point. Read alone,\nit gives the whole paragraph."),
         (0.70, MUTED, "Body", "Backs the point: a number,\nan example, a citation."),
-        (0.555, BLUE, "Bridge sentence", "Raises the question that the\nnext paragraph answers."),
+        (0.555, BRIDGE, "Bridge sentence", "Raises the question that the\nnext paragraph answers."),
         (0.39, ACCENT, "Next lead", "Answers it at once."),
     ]
     for y, c, h, t in notes:
@@ -129,35 +130,22 @@ def paragraph():
     save(fig, "paragraph")
 
 
-# 3. Sentence lengths: the same abstract, before and after -------------------------------
-BEFORE = (
-    "Bird population monitoring is an important problem in ecology which has received a lot of attention, "
-    "and with the proliferation of low-cost smartphones it has become possible for large numbers of volunteers "
-    "to record bird vocalisations, although the resulting recordings are noisy and labelled data for most species is scarce. "
-    "Existing approaches, which are mostly based on deep convolutional networks trained on curated recordings, "
-    "have been shown to perform well on clean audio, but it is observed that their accuracy degrades significantly "
-    "when they are applied to recordings collected using phones. "
-    "In this paper, a novel framework called Kestrel is proposed, in which the frequency response of each device "
-    "is estimated and compensated before classification is performed, and a few-shot learning strategy is employed "
-    "so that new species can be added with only a small number of labelled examples. "
-    "Extensive experiments were conducted on a large dataset and it is shown that Kestrel significantly outperforms "
-    "state-of-the-art baselines, which demonstrates the effectiveness of the proposed approach."
-)
-AFTER = (
-    "Bird counts tell ecologists how habitats change. "
-    "Volunteers now record birdsong on cheap phones, at a scale no survey team can match. "
-    "But phone audio is noisy, and most species have only a handful of labelled calls. "
-    "Existing classifiers need hundreds of clean calls per species. "
-    "On phone audio, their accuracy drops from 91% to 54%. "
-    "We find that the phone's microphone, not the bird, causes most of this drop. "
-    "We present Kestrel, which learns to undo each phone's microphone before it classifies a call. "
-    "Kestrel needs only five labelled calls to add a new species. "
-    "We test it on 12,000 clips from 40 phone models and 150 species, against six baselines. "
-    "Kestrel reaches 83% accuracy on phone audio, against 61% for the best baseline. "
-    "That baseline needs a hundred labelled calls per species; Kestrel needs five. "
-    "Cheap phones can thus support bird surveys at scale. "
-    "Kestrel still fails on overlapping calls, which we leave to future work."
-)
+# 3. Sentence lengths: the same abstract, before and after, for every example paper -------
+# The abstracts are read from the page itself, so the figure always matches the text.
+PAGE = Path("handbook/writing-papers.qmd")
+
+
+def abstracts():
+    """Yield (paper, before, after) for each paper's first-draft and rewritten abstract."""
+    text = PAGE.read_text()
+    section = text[text.index("\n## Abstract"):text.index("\n## Introduction")]
+    for m in re.finditer(r'::: \{\.pv paper="(\w+)"\}(.*?)\n:::\n(?=\n::: \{\.pv|\n!\[)', section, re.S):
+        paper, body = m.group(1), m.group(2)
+        if "{.bad}" not in body:
+            continue
+        before = re.search(r"::: \{\.bad\}\n(.*?)\n:::", body, re.S).group(1)
+        after = re.search(r"::: \{\.good\}\n(.*?)\n:::", body, re.S).group(1)
+        yield paper, before, after
 
 
 def sentence_lengths(text):
@@ -166,28 +154,29 @@ def sentence_lengths(text):
 
 
 def lengths():
-    b, a = sentence_lengths(BEFORE), sentence_lengths(AFTER)
-    stats = {"before": (len(b), sum(b), statistics.median(b), max(b)),
-             "after": (len(a), sum(a), statistics.median(a), max(a))}
-    fig, axes = plt.subplots(1, 2, figsize=(10, 3.8), sharey=True,
-                             gridspec_kw={"width_ratios": [len(b) + 2, len(a) + 2]})
-    for ax, L, name, col in [(axes[0], b, "Before", GREY), (axes[1], a, "After", BLUE)]:
-        ax.axhspan(10, 20, color=SOFT, zorder=0)
-        ax.axhline(25, color=ACCENT, lw=1.2, ls=(0, (4, 3)))
-        ax.bar(range(1, len(L) + 1), L, color=col, width=0.7, zorder=2)
-        n, tot, med, mx = len(L), sum(L), statistics.median(L), max(L)
-        ax.set_title(f"{name}: {n} sentences, {tot} words\nmedian {med:g} words, longest {mx}",
-                     fontsize=11.5, loc="left", color=INK)
-        ax.set_xticks(range(1, len(L) + 1))
-        ax.set_xlabel("Sentence")
-        for s in ("top", "right"):
-            ax.spines[s].set_visible(False)
-    axes[0].set_ylabel("Words in sentence")
-    axes[0].set_ylim(0, 62)
-    axes[1].text(len(a) + 0.6, 25.8, "upper limit (~25)", color=ACCENT, fontsize=10, ha="right", va="bottom")
-    axes[1].text(len(a) + 0.6, 15, "aim: 10–20", color=MUTED, fontsize=10, ha="right", va="center")
-    fig.tight_layout()
-    save(fig, "sentence-lengths")
+    stats = {}
+    for paper, before, after in abstracts():
+        b, a = sentence_lengths(before), sentence_lengths(after)
+        fig, axes = plt.subplots(1, 2, figsize=(10, 3.8), sharey=True,
+                                 gridspec_kw={"width_ratios": [len(b) + 2, len(a) + 2]})
+        for ax, L, name, col in [(axes[0], b, "First draft", GREY), (axes[1], a, "Rewrite", ACCENT)]:
+            ax.axhspan(10, 20, color=SOFT, zorder=0)
+            ax.axhline(25, color=INK, lw=1.0, ls=(0, (4, 3)))
+            ax.bar(range(1, len(L) + 1), L, color=col, width=0.7, zorder=2)
+            n, tot, med, mx = len(L), sum(L), statistics.median(L), max(L)
+            ax.set_title(f"{name}: {n} sentences, {tot} words\nmedian {med:g} words, longest {mx}",
+                         fontsize=11.5, loc="left", color=INK)
+            ax.set_xticks(range(1, len(L) + 1))
+            ax.set_xlabel("Sentence")
+            for sp in ("top", "right"):
+                ax.spines[sp].set_visible(False)
+        axes[0].set_ylabel("Words in sentence")
+        axes[0].set_ylim(0, max(62, max(b) + 6))
+        axes[1].text(len(a) + 0.6, 25.8, "upper limit (~25)", color=INK, fontsize=10, ha="right", va="bottom")
+        axes[1].text(len(a) + 0.6, 15, "aim: 10–20", color=MUTED, fontsize=10, ha="right", va="center")
+        fig.tight_layout()
+        save(fig, f"sentence-lengths-{paper}")
+        stats[paper] = {k: (len(L), sum(L), statistics.median(L), max(L)) for k, L in (("before", b), ("after", a))}
     return stats
 
 
@@ -258,8 +247,8 @@ def headline():
     ax.text(50.2, 5, "Few-shot prototypes", fontsize=9.5, color=MUTED, va="center")
     ax.text(62.2, 100, "Fine-tuned transformer\n(best baseline)", fontsize=9.5, color=MUTED, va="center")
     ax.text(61.5, 190, "Four CNN variants", fontsize=9.5, color=MUTED, va="center")
-    ax.scatter(OURS[1], OURS[2], s=190, marker="*", color=BLUE, zorder=4, ec=INK, lw=0.6)
-    ax.text(OURS[1] - 1.2, OURS[2] * 1.35, "Kestrel", fontsize=11.5, fontweight="bold", color=BLUE, ha="right")
+    ax.scatter(OURS[1], OURS[2], s=190, marker="*", color=ACCENT, zorder=4, ec=INK, lw=0.6)
+    ax.text(OURS[1] - 1.2, OURS[2] * 1.35, "Kestrel", fontsize=11.5, fontweight="bold", color=ACCENT, ha="right")
     ax.set_yscale("log")
     ax.set_ylim(300, 3)  # fewer labels is better, so up is better
     ax.set_xlim(45, 92)
@@ -318,7 +307,7 @@ def timeline():
     ]
     fig, ax = plt.subplots(figsize=(10, 3.9))
     for i, (t, s, e) in enumerate(tasks):
-        c = BLUE if "review" in t or "Checklist" in t else (GREY if t == "Experiments" else INK)
+        c = ACCENT if "review" in t or "Checklist" in t else (GREY if t == "Experiments" else INK)
         ax.barh(i, e - s, left=s, height=0.55, color=c, alpha=0.9 if c != INK else 0.75)
         ax.text(-8.25, i, t, ha="right", va="center", fontsize=10.5)
     ax.axvline(0, color=ACCENT, lw=2)
@@ -345,5 +334,6 @@ if __name__ == "__main__":
     headline()
     method()
     timeline()
-    for k, (n, tot, med, mx) in st.items():
-        print(f"{k}: {n} sentences, {tot} words, median {med}, longest {mx}")
+    for paper, d in st.items():
+        for k, (n, tot, med, mx) in d.items():
+            print(f"{paper} {k}: {n} sentences, {tot} words, median {med}, longest {mx}")
