@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="360pt" viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-11T16:34:25.157260</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 360 
+L 720 360 
+L 720 0 
+L 0 0 
+z
+" style="fill: #fffefa"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30.24 72 
+L 689.76 72 
+Q 698.4 72 698.4 67.68 
+L 698.4 22.32 
+Q 698.4 18 689.76 18 
+L 30.24 18 
+Q 21.6 18 21.6 22.32 
+L 21.6 67.68 
+Q 21.6 72 30.24 72 
+z
+" clip-path="url(#pbc27199c01)" style="fill: #f0efe8; stroke: #60645e; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 30.24 154.8 
+L 228.96 154.8 
+Q 237.6 154.8 237.6 150.48 
+L 237.6 105.12 
+Q 237.6 100.8 228.96 100.8 
+L 30.24 100.8 
+Q 21.6 100.8 21.6 105.12 
+L 21.6 150.48 
+Q 21.6 154.8 30.24 154.8 
+z
+" clip-path="url(#pbc27199c01)" style="fill: #fffefa; stroke: #60645e; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 360 72 
+Q 244.8 85.5 130.710435 98.869871 
+" clip-path="url(#pbc27199c01)" style="fill: none; stroke: #60645e; stroke-linecap: round"/>
+    <path d="M 134.495472 100.238629 
+L 130.710435 98.869871 
+L 134.076464 96.663097 
+z
+" clip-path="url(#pbc27199c01)" style="fill: #60645e; stroke: #60645e; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 260.64 154.8 
+L 459.36 154.8 
+Q 468 154.8 468 150.48 
+L 468 105.12 
+Q 468 100.8 459.36 100.8 
+L 260.64 100.8 
+Q 252 100.8 252 105.12 
+L 252 150.48 
+Q 252 154.8 260.64 154.8 
+z
+" clip-path="url(#pbc27199c01)" style="fill: #fffefa; stroke: #60645e; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 360 72 
+Q 360 85.5 360 97.881966 
+" clip-path="url(#pbc27199c01)" style="fill: none; stroke: #60645e; stroke-linecap: round"/>
+    <path d="M 361.8 94.281966 
+L 360 97.881966 
+L 358.2 94.281966 
+z
+" clip-path="url(#pbc27199c01)" style="fill: #60645e; stroke: #60645e; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 491.04 154.8 
+L 689.76 154.8 
+Q 698.4 154.8 698.4 150.48 
+L 698.4 105.12 
+Q 698.4 100.8 689.76 100.8 
+L 491.04 100.8 
+Q 482.4 100.8 482.4 105.12 
+L 482.4 150.48 
+Q 482.4 154.8 491.04 154.8 
+z
+" clip-path="url(#pbc27199c01)" style="fill: #fffefa; stroke: #60645e; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 360 72 
+Q 475.2 85.5 589.289565 98.869871 
+" clip-path="url(#pbc27199c01)" style="fill: none; stroke: #60645e; stroke-linecap: round"/>
+    <path d="M 585.923536 96.663097 
+L 589.289565 98.869871 
+L 585.504528 100.238629 
+z
+" clip-path="url(#pbc27199c01)" style="fill: #60645e; stroke: #60645e; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 30.24 331.2 
+L 164.16 331.2 
+Q 172.8 331.2 172.8 326.88 
+L 172.8 213.12 
+Q 172.8 208.8 164.16 208.8 
+L 30.24 208.8 
+Q 21.6 208.8 21.6 213.12 
+L 21.6 326.88 
+Q 21.6 331.2 30.24 331.2 
+z
+" clip-path="url(#pbc27199c01)" style="fill: #fffefa; stroke: #60645e; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 176.4 270 
+Q 183.6 270 189.458359 270 
+" clip-path="url(#pbc27199c01)" style="fill: none; stroke: #60645e; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 185.458359 268 
+L 189.458359 270 
+L 185.458359 272 
+z
+" clip-path="url(#pbc27199c01)" style="fill: #60645e; stroke: #60645e; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 203.04 331.2 
+L 336.96 331.2 
+Q 345.6 331.2 345.6 326.88 
+L 345.6 213.12 
+Q 345.6 208.8 336.96 208.8 
+L 203.04 208.8 
+Q 194.4 208.8 194.4 213.12 
+L 194.4 326.88 
+Q 194.4 331.2 203.04 331.2 
+z
+" clip-path="url(#pbc27199c01)" style="fill: #fffefa; stroke: #b52d24; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 349.2 270 
+Q 356.4 270 362.258359 270 
+" clip-path="url(#pbc27199c01)" style="fill: none; stroke: #60645e; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 358.258359 268 
+L 362.258359 270 
+L 358.258359 272 
+z
+" clip-path="url(#pbc27199c01)" style="fill: #60645e; stroke: #60645e; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 375.84 331.2 
+L 509.76 331.2 
+Q 518.4 331.2 518.4 326.88 
+L 518.4 213.12 
+Q 518.4 208.8 509.76 208.8 
+L 375.84 208.8 
+Q 367.2 208.8 367.2 213.12 
+L 367.2 326.88 
+Q 367.2 331.2 375.84 331.2 
+z
+" clip-path="url(#pbc27199c01)" style="fill: #fffefa; stroke: #60645e; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 522 270 
+Q 529.2 270 535.058359 270 
+" clip-path="url(#pbc27199c01)" style="fill: none; stroke: #60645e; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 531.058359 268 
+L 535.058359 270 
+L 531.058359 272 
+z
+" clip-path="url(#pbc27199c01)" style="fill: #60645e; stroke: #60645e; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 548.64 331.2 
+L 682.56 331.2 
+Q 691.2 331.2 691.2 326.88 
+L 691.2 213.12 
+Q 691.2 208.8 682.56 208.8 
+L 548.64 208.8 
+Q 540 208.8 540 213.12 
+L 540 326.88 
+Q 540 331.2 548.64 331.2 
+z
+" clip-path="url(#pbc27199c01)" style="fill: #fffefa; stroke: #60645e; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: start; fill: #222522" x="36" y="37.305469" transform="rotate(-0 36 37.305469)">Intuition first</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: start; fill: #222522" x="36" y="58.517183" transform="rotate(-0 36 58.517183)">“Reading heat is a chain of steps. We test each link alone, so a failure shows where the chain breaks.”</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: start; fill: #60645e" x="32.4" y="115.858496" transform="rotate(-0 32.4 115.858496)">Step 1</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: start; fill: #222522" x="32.4" y="141.446572" transform="rotate(-0 32.4 141.446572)">Is it a thermal image?</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: start; fill: #60645e" x="262.8" y="115.858496" transform="rotate(-0 262.8 115.858496)">Step 2</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: start; fill: #222522" x="262.8" y="141.44668" transform="rotate(-0 262.8 141.44668)">Can it read the colour bar?</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: start; fill: #60645e" x="493.2" y="115.858496" transform="rotate(-0 493.2 115.858496)">Step 3</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: start; fill: #222522" x="493.2" y="141.44668" transform="rotate(-0 493.2 141.44668)">Can it reason about heat?</text>
+   </g>
+   <g id="text_9">
+    <text style="font-style: italic; font-size: 11px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: start; fill: #60645e" x="21.6" y="180" transform="rotate(-0 21.6 180)">Inside every step, the same four beats:</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: middle; fill: #222522" x="97.2" y="240.834741" transform="rotate(-0 97.2 240.834741)">Why</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; fill: #222522" transform="translate(45.832031 288.398525)">one sentence on what</text>
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; fill: #222522" transform="translate(65.686875 301.276201)">the step is for</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: middle; fill: #222522" x="270" y="240.834741" transform="rotate(-0 270 240.834741)">Toy example</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; fill: #222522" transform="translate(225.057539 288.414111)">2–4 sentences with</text>
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; fill: #222522" transform="translate(222.158555 301.214678)">real (small) numbers</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: middle; fill: #222522" x="442.8" y="240.834863" transform="rotate(-0 442.8 240.834863)">How</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; fill: #222522" transform="translate(404.278945 288.398525)">short bullets and</text>
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; fill: #222522" transform="translate(412.441055 301.212217)">one equation</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: middle; fill: #222522" x="615.6" y="240.834863" transform="rotate(-0 615.6 240.834863)">Guarantee</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; fill: #222522" transform="translate(570.068555 287.416611)">one plain sentence;</text>
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; fill: #222522" transform="translate(556.649883 301.214678)">the proof goes elsewhere</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pbc27199c01">
+   <rect x="0" y="0" width="720" height="360"/>
+  </clipPath>
+ </defs>
+</svg>

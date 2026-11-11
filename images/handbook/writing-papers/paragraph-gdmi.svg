@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="345.6pt" viewBox="0 0 720 345.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-11T16:34:24.580542</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 345.6 
+L 720 345.6 
+L 720 0 
+L 0 0 
+z
+" style="fill: #fffefa"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30.24 162.432 
+L 423.36 162.432 
+Q 432 162.432 432 158.2848 
+L 432 28.3392 
+Q 432 24.192 423.36 24.192 
+L 30.24 24.192 
+Q 21.6 24.192 21.6 28.3392 
+L 21.6 158.2848 
+Q 21.6 162.432 30.24 162.432 
+z
+" clip-path="url(#p41b5af605b)" style="fill: #fffefa; stroke: #d4d6ce; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 21.6 55.296 
+L 27.36 55.296 
+L 27.36 29.376 
+L 21.6 29.376 
+z
+" clip-path="url(#p41b5af605b)" style="fill: #b52d24"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 36 74.304 
+L 396 74.304 
+L 396 68.0832 
+L 36 68.0832 
+z
+" clip-path="url(#p41b5af605b)" style="fill: #d4d6ce"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 36 91.584 
+L 374.4 91.584 
+L 374.4 85.3632 
+L 36 85.3632 
+z
+" clip-path="url(#p41b5af605b)" style="fill: #d4d6ce"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 36 108.864 
+L 403.2 108.864 
+L 403.2 102.6432 
+L 36 102.6432 
+z
+" clip-path="url(#p41b5af605b)" style="fill: #d4d6ce"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 36 126.144 
+L 273.6 126.144 
+L 273.6 119.9232 
+L 36 119.9232 
+z
+" clip-path="url(#p41b5af605b)" style="fill: #d4d6ce"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 30.24 331.776 
+L 423.36 331.776 
+Q 432 331.776 432 327.6288 
+L 432 197.6832 
+Q 432 193.536 423.36 193.536 
+L 30.24 193.536 
+Q 21.6 193.536 21.6 197.6832 
+L 21.6 327.6288 
+Q 21.6 331.776 30.24 331.776 
+z
+" clip-path="url(#p41b5af605b)" style="fill: #fffefa; stroke: #d4d6ce; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 21.6 224.64 
+L 27.36 224.64 
+L 27.36 198.72 
+L 21.6 198.72 
+z
+" clip-path="url(#p41b5af605b)" style="fill: #b52d24"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 36 243.648 
+L 396 243.648 
+L 396 237.4272 
+L 36 237.4272 
+z
+" clip-path="url(#p41b5af605b)" style="fill: #d4d6ce"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 36 260.928 
+L 374.4 260.928 
+L 374.4 254.7072 
+L 36 254.7072 
+z
+" clip-path="url(#p41b5af605b)" style="fill: #d4d6ce"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 36 278.208 
+L 403.2 278.208 
+L 403.2 271.9872 
+L 36 271.9872 
+z
+" clip-path="url(#p41b5af605b)" style="fill: #d4d6ce"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 36 295.488 
+L 273.6 295.488 
+L 273.6 289.2672 
+L 36 289.2672 
+z
+" clip-path="url(#p41b5af605b)" style="fill: #d4d6ce"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 338.4 146.88 
+Q 338.4 169.344 338.4 189.795539 
+" clip-path="url(#p41b5af605b)" style="fill: none; stroke: #2f7d4a; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 340.8 184.995539 
+L 338.4 189.795539 
+L 336 184.995539 
+z
+" clip-path="url(#p41b5af605b)" style="fill: #2f7d4a; stroke: #2f7d4a; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 446.4 41.472 
+L 468 41.472 
+" clip-path="url(#p41b5af605b)" style="fill: none; stroke: #b52d24; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 446.4 103.68 
+L 468 103.68 
+" clip-path="url(#p41b5af605b)" style="fill: none; stroke: #60645e; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 446.4 153.792 
+L 468 153.792 
+" clip-path="url(#p41b5af605b)" style="fill: none; stroke: #2f7d4a; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 446.4 210.816 
+L 468 210.816 
+" clip-path="url(#p41b5af605b)" style="fill: none; stroke: #b52d24; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: start; fill: #222522" x="36" y="45.35548" transform="rotate(-0 36 45.35548)">India has about 500 stations for 1.4 billion people.</text>
+   </g>
+   <g id="text_2">
+    <text style="font-style: italic; font-size: 11px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: start; fill: #2f7d4a" x="36" y="149.726572" transform="rotate(-0 36 149.726572)">MI picks good sites, so why isn't it used at national scale?</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: start; fill: #222522" x="36" y="214.699372" transform="rotate(-0 36 214.699372)">Because its cost grows with every candidate site it checks.</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: start; fill: #b52d24" x="478.8" y="34.904634" transform="rotate(-0 478.8 34.904634)">Lead sentence</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; fill: #222522" transform="translate(478.8 51.631274)">States the point. Read alone,</text>
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; fill: #222522" transform="translate(478.8 63.059253)">it gives the whole paragraph.</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: start; fill: #60645e" x="478.8" y="97.112409" transform="rotate(-0 478.8 97.112409)">Body</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; fill: #222522" transform="translate(478.8 113.839274)">Backs the point: a number,</text>
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; fill: #222522" transform="translate(478.8 125.267253)">an example, a citation.</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: start; fill: #2f7d4a" x="478.8" y="147.224409" transform="rotate(-0 478.8 147.224409)">Bridge sentence</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; fill: #222522" transform="translate(478.8 163.951274)">Raises the question that the</text>
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; fill: #222522" transform="translate(478.8 175.379253)">next paragraph answers.</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: start; fill: #b52d24" x="478.8" y="204.248634" transform="rotate(-0 478.8 204.248634)">Next lead</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 10.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans'; text-anchor: start; fill: #222522" x="478.8" y="220.188287" transform="rotate(-0 478.8 220.188287)">Answers it at once.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p41b5af605b">
+   <rect x="0" y="0" width="720" height="345.6"/>
+  </clipPath>
+ </defs>
+</svg>
