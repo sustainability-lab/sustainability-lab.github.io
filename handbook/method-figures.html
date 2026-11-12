@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="How to draw the figure that explains your method, with 28 method figures from top papers and what to borrow from each.">
+
+<title>Sustainability Lab - Making Method Figures</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="..//images/brand/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link rel="icon" type="image/png" sizes="32x32" href="../images/brand/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../images/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#fffefa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1e1c" media="(prefers-color-scheme: dark)">
+<script>
+// Follow the OS light/dark setting until someone uses the switch (see theme/toggle.html).
+try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quarto-color-scheme", window.matchMedia("(prefers-color-scheme: dark)").matches ? "alternate" : "default"); } catch (e) {}
+</script>
+
+
+<meta property="og:title" content="Sustainability Lab - Making Method Figures">
+<meta property="og:description" content="How to draw the figure that explains your method, with 28 method figures from top papers and what to borrow from each.">
+<meta property="og:image" content="https://sustainability-lab.github.io/images/logo.png">
+<meta property="og:site_name" content="Sustainability Lab">
+<meta property="og:image:height" content="612">
+<meta property="og:image:width" content="2000">
+<meta name="twitter:title" content="Sustainability Lab - Making Method Figures">
+<meta name="twitter:description" content="How to draw the figure that explains your method, with 28 method figures from top papers and what to borrow from each.">
+<meta name="twitter:image" content="https://sustainability-lab.github.io/images/logo.png">
+<meta name="twitter:creator" content="@nipun_batra">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="612">
+<meta name="twitter:image-width" content="2000">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/brand/logo-light.svg" alt="Sustainability Lab" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../papers/index.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../people.html"> 
+<span class="menu-text">People</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../join.html"> 
+<span class="menu-text">Join</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../handbook/index.html"> 
+<span class="menu-text">Handbook</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../news.html"> 
+<span class="menu-text">News</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#choose-the-question" id="toc-choose-the-question" class="nav-link active" data-scroll-target="#choose-the-question">Choose the question</a></li>
+  <li><a href="#what-happens-to-one-input" id="toc-what-happens-to-one-input" class="nav-link" data-scroll-target="#what-happens-to-one-input">What happens to one input?</a></li>
+  <li><a href="#what-is-it-made-of" id="toc-what-is-it-made-of" class="nav-link" data-scroll-target="#what-is-it-made-of">What is it made of?</a></li>
+  <li><a href="#what-is-the-new-piece" id="toc-what-is-the-new-piece" class="nav-link" data-scroll-target="#what-is-the-new-piece">What is the new piece?</a></li>
+  <li><a href="#how-does-it-differ-from-what-came-before" id="toc-how-does-it-differ-from-what-came-before" class="nav-link" data-scroll-target="#how-does-it-differ-from-what-came-before">How does it differ from what came before?</a></li>
+  <li><a href="#how-does-it-learn" id="toc-how-does-it-learn" class="nav-link" data-scroll-target="#how-does-it-learn">How does it learn?</a></li>
+  <li><a href="#why-should-it-work" id="toc-why-should-it-work" class="nav-link" data-scroll-target="#why-should-it-work">Why should it work?</a></li>
+  <li><a href="#what-the-28-have-in-common" id="toc-what-the-28-have-in-common" class="nav-link" data-scroll-target="#what-the-28-have-in-common">What the 28 have in common</a></li>
+  <li><a href="#make-your-own" id="toc-make-your-own" class="nav-link" data-scroll-target="#make-your-own">Make your own</a></li>
+  <li><a href="#checklist" id="toc-checklist" class="nav-link" data-scroll-target="#checklist">Checklist</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Making Method Figures</h1>
+</div>
+
+<div>
+  <div class="description">
+    How to draw the figure that explains your method, with 28 method figures from top papers and what to borrow from each.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+/* No child combinators here: Quarto escapes them inside page styles. */
+.hf-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 20px; grid-auto-flow: dense; margin: 1rem 0 2.2rem; align-items: start; }
+.hf { border-top: 3px solid var(--accent); padding-top: .6rem; min-width: 0; scroll-margin-top: 90px; }
+.hf.wide { grid-column: 1 / -1; }
+.hf p { margin: 0 0 .35rem; font-size: .93rem; line-height: 1.45; }
+.hf .hd { font-size: 1rem; }
+.hf .cap { display: block; font-size: .82rem; font-style: italic; color: var(--muted); margin: .1rem 0 .4rem; }
+.hf .meta, .hf-note { font-size: .76rem; color: var(--muted); }
+.hf img { display: block; width: 100%; max-height: 560px; object-fit: contain; background: #fff; border: 1px solid var(--rule); margin: .45rem 0 .5rem; }
+/* Dark mode: never invert. The figures hold photos, and their colours carry meaning. Only soften the white. */
+body.quarto-dark .hf img { filter: brightness(.88); }
+.hf-scroll { overflow-x: auto; }
+.hf-scroll table { font-size: .8rem; min-width: 620px; }
+@media (max-width: 760px) { .hf-grid { grid-template-columns: 1fr; } }
+</style>
+<p>The method figure is a separate figure from the <a href="../handbook/hero-figures.html">hero figure</a>. The hero figure answers <em>why should I care?</em> The method figure answers <strong><em>how does it work?</em></strong></p>
+<table class="table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 41%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Hero figure</th>
+<th>Method figure</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Answers</strong></td>
+<td>Why should I care?</td>
+<td>How does it work?</td>
+</tr>
+<tr class="even">
+<td><strong>Sits</strong></td>
+<td>On page 1</td>
+<td>Where the method section starts</td>
+</tr>
+<tr class="odd">
+<td><strong>Shows</strong></td>
+<td>Problem, idea, payoff</td>
+<td>Steps, parts, and what is new</td>
+</tr>
+<tr class="even">
+<td><strong>Detail</strong></td>
+<td>None</td>
+<td>Enough to explain the idea back, not to rewrite the code</td>
+</tr>
+</tbody>
+</table>
+<p>A method figure can answer six different questions. Pick the one where your novelty lives. This page shows 28 method figures from NeurIPS, ICML, ICLR, CVPR, ICCV, ECCV, KDD, AAAI, NAACL, MICCAI, JMLR and Nature, grouped by that question. They cover vision, language models, graphs, time series, weather, remote sensing and classic machine learning.</p>
+<section id="choose-the-question" class="level2">
+<h2 class="anchored" data-anchor-id="choose-the-question">Choose the question</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Your novelty is</th>
+<th>The figure answers</th>
+<th>Draw</th>
+<th>See</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A new sequence of steps</td>
+<td>What happens to one input?</td>
+<td>One example, shown at every step</td>
+<td><a href="#nerf">NeRF</a>, <a href="#yolo">YOLO</a>, <a href="#graphsage">GraphSAGE</a>, <a href="#gencast">GenCast</a>, <a href="#rag">RAG</a></td>
+</tr>
+<tr class="even">
+<td>A new model</td>
+<td>What is it made of?</td>
+<td>The parts, with the new ones marked</td>
+<td><a href="#transformer">Transformer</a>, <a href="#unet">U-Net</a>, <a href="#vit">Vision Transformer</a>, <a href="#sam">Segment Anything</a>, <a href="#dit">Diffusion Transformer</a>, <a href="#flamingo">Flamingo</a></td>
+</tr>
+<tr class="odd">
+<td>One piece in a known model</td>
+<td>What is the new piece?</td>
+<td>Only that piece, before and after</td>
+<td><a href="#resnet-block">ResNet</a>, <a href="#controlnet">ControlNet</a>, <a href="#lora">LoRA</a>, <a href="#dropout">Dropout</a></td>
+</tr>
+<tr class="even">
+<td>A choice among known designs</td>
+<td>How does it differ?</td>
+<td>The alternatives side by side, yours last</td>
+<td><a href="#efficientnet-scaling">EfficientNet</a>, <a href="#fpn">Feature Pyramid Networks</a>, <a href="#convnext">ConvNeXt</a>, <a href="#timellm">Time-LLM</a>, <a href="#tot">Tree of Thoughts</a></td>
+</tr>
+<tr class="odd">
+<td>A new way to train</td>
+<td>How does it learn?</td>
+<td>What the objective compares</td>
+<td><a href="#cyclegan-model">CycleGAN</a>, <a href="#simclr">SimCLR</a>, <a href="#bert">BERT</a>, <a href="#satclip">SatCLIP</a></td>
+</tr>
+<tr class="even">
+<td>An idea that needs intuition</td>
+<td>Why should it work?</td>
+<td>A toy case in two dimensions</td>
+<td><a href="#lime-toy">LIME</a>, <a href="#node2vec">node2vec</a>, <a href="#maml">MAML</a>, <a href="#scoresde">Score-based SDEs</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Our default for an applied paper:</strong> one real example followed through every step, with the new step in colour and everything standard in grey. If the novelty is one block, add a second, small figure of only that block.</p>
+</section>
+<section id="what-happens-to-one-input" class="level2">
+<h2 class="anchored" data-anchor-id="what-happens-to-one-input">What happens to one input?</h2>
+<p>Your novelty is a new sequence of steps. Follow one example through all of them.</p>
+<div class="hf-grid">
+<div id="nerf" class="hf wide">
+<p><span class="hd"><strong>NeRF</strong> · ECCV 2020 · <a href="https://arxiv.org/abs/2003.08934">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/nerf.webp" class="img-fluid" loading="lazy" alt="Four panels lettered a to d: points sampled along camera rays through a scene, a small network giving colour and density, curves of density along two rays, and a loss against the true pixel."></p>
+<p><span class="meta">vision · Figure 2 · page 5, full width · real data</span></p>
+<p><span class="cap">Its caption opens: “An overview of our neural radiance field scene representation and differentiable rendering procedure.”</span></p>
+<p>One scene runs through four lettered panels, and the caption walks from (a) to (d) in the same order.</p>
+<p><strong>Borrow:</strong> Letter the stages, and reuse the letters in the caption and the text.</p>
+<p><span class="meta">Mildenhall et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="yolo" class="hf">
+<p><span class="hd"><strong>YOLO</strong> · CVPR 2016 · <a href="https://arxiv.org/abs/1506.02640">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/yolo.webp" class="img-fluid" loading="lazy" alt="A photo of a dog and a bicycle with a grid on it; in parallel, the same photo with many boxes and a coloured class map; then the photo with three final boxes."></p>
+<p><span class="meta">vision · Figure 2 · page 2, one column · real data</span></p>
+<p><span class="cap">Its caption opens: “The Model.”</span></p>
+<p>One photo becomes a grid, then boxes and a class map in parallel, then the final detections. Every stage is a picture of the data.</p>
+<p><strong>Borrow:</strong> Show the data at each stage, not the name of the stage.</p>
+<p><span class="meta">Redmon et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="graphsage" class="hf wide">
+<p><span class="hd"><strong>GraphSAGE</strong> · NeurIPS 2017 · <a href="https://arxiv.org/abs/1706.02216">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/graphsage.webp" class="img-fluid" loading="lazy" alt="The same small graph three times: a neighbourhood is sampled around a red node, features flow inward along coloured edges, and the red node's label is predicted."></p>
+<p><span class="meta">graphs · Figure 1 · page 2, full width · schematic</span></p>
+<p><span class="cap">Its caption opens: “Visual illustration of the GraphSAGE sample and aggregate approach.”</span></p>
+<p>Three numbered steps on the same small graph. Colour shows which nodes each step touches.</p>
+<p><strong>Borrow:</strong> Use one toy example, redrawn at every step.</p>
+<p><span class="meta">Hamilton et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="gencast" class="hf">
+<p><span class="hd"><strong>GenCast</strong> · Nature 2024 · <a href="https://arxiv.org/abs/2312.15796">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/gencast.webp" class="img-fluid" loading="lazy" alt="Columns of globes showing weather states. In each column a noisy globe is refined step by step into a forecast, which is passed along a time axis to the next column. The first column is shaded blue."></p>
+<p><span class="meta">weather · Figure 1 · page 2, one column · real data</span></p>
+<p><span class="cap">Its caption opens: “Schematic of how GenCast produces a forecast.”</span></p>
+<p>Real weather states sit at every node. Noise is refined into a forecast, and that forecast feeds the next step. A blue box isolates one step.</p>
+<p><strong>Borrow:</strong> Shade one pass of a loop, then show it repeating.</p>
+<p><span class="meta">Price et al.&nbsp;CC BY 4.0.</span></p>
+</div>
+<div id="rag" class="hf wide">
+<p><span class="hd"><strong>RAG</strong> · NeurIPS 2020 · <a href="https://arxiv.org/abs/2005.11401">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/rag.webp" class="img-fluid" loading="lazy" alt="Example questions on the left enter a query encoder; a retriever finds documents in an index; a generator reads them and produces the answers shown on the right. A dashed arrow across the top is labelled end-to-end backprop."></p>
+<p><span class="meta">language models · Figure 1 · page 2, full width · real data</span></p>
+<p><span class="cap">Its caption opens: “Overview of our approach.”</span></p>
+<p>Three real questions go in on the left and their answers come out on the right. Two rounded boxes group the retriever and the generator, and a dashed arrow on top shows what is trained end to end.</p>
+<p><strong>Borrow:</strong> Group the boxes into the two or three parts that your text names. <strong>Watch out:</strong> It is dense at print size.</p>
+<p><span class="meta">Lewis et al.&nbsp;© the authors.</span></p>
+</div>
+</div>
+</section>
+<section id="what-is-it-made-of" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-it-made-of">What is it made of?</h2>
+<p>Your novelty is a new model. Draw its parts, and mark the new ones.</p>
+<div class="hf-grid">
+<div id="transformer" class="hf">
+<p><span class="hd"><strong>Transformer</strong> · NeurIPS 2017 · <a href="https://arxiv.org/abs/1706.03762">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/transformer.webp" class="img-fluid" loading="lazy" alt="An encoder stack and a decoder stack of coloured blocks: attention in orange, feed-forward in blue, add and norm in yellow, each stack marked N times."></p>
+<p><span class="meta">language · Figure 1 · page 3, one column · schematic</span></p>
+<p><span class="cap">Its caption opens: “The Transformer - model architecture.”</span></p>
+<p>Colour means block type, and the same colour is the same block everywhere. “N×” replaces a stack of copies.</p>
+<p><strong>Borrow:</strong> Use one colour per kind of block, and a repeat mark in place of repeats.</p>
+<p><span class="meta">Vaswani et al.&nbsp;Reproduced under the permission stated in the paper.</span></p>
+</div>
+<div id="unet" class="hf wide">
+<p><span class="hd"><strong>U-Net</strong> · MICCAI 2015 · <a href="https://arxiv.org/abs/1505.04597">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/unet.webp" class="img-fluid" loading="lazy" alt="Blue boxes arranged in a U shape, with grey arrows crossing from the left arm to the right arm, and a legend of five arrow colours."></p>
+<p><span class="meta">medical imaging · Figure 1 · page 2, full width · schematic</span></p>
+<p><span class="cap">Its caption opens: “U-net architecture (example for 32x32 pixels in the lowest resolution).”</span></p>
+<p>The layout is the idea: down one side, up the other, with skip arrows across. A legend gives each arrow colour one meaning.</p>
+<p><strong>Borrow:</strong> Give each arrow style one meaning, and say it in a legend. <strong>Watch out:</strong> The size labels are tiny.</p>
+<p><span class="meta">Ronneberger et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="vit" class="hf wide">
+<p><span class="hd"><strong>Vision Transformer</strong> · ICLR 2021 · <a href="https://arxiv.org/abs/2010.11929">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/vit.webp" class="img-fluid" loading="lazy" alt="Left: a photo cut into nine patches, which are embedded and fed to a transformer encoder and a classification head. Right: the encoder block drawn in detail."></p>
+<p><span class="meta">vision · Figure 1 · page 3, full width · real data</span></p>
+<p><span class="cap">Its caption opens: “Model overview.”</span></p>
+<p>The overview is on the left, with real image patches going in. The one block that needs detail is enlarged on the right.</p>
+<p><strong>Borrow:</strong> Give the overview first, then zoom into one block.</p>
+<p><span class="meta">Dosovitskiy et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="sam" class="hf wide">
+<p><span class="hd"><strong>Segment Anything</strong> · ICCV 2023 · <a href="https://arxiv.org/abs/2304.02643">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/sam.webp" class="img-fluid" loading="lazy" alt="A photo of scissors enters a large image-encoder box; a small prompt encoder takes points, a box or text; a small mask decoder gives three masks with scores."></p>
+<p><span class="meta">vision · Figure 4 · page 5, full width · real data</span></p>
+<p><span class="cap">Its caption opens: “Segment Anything Model (SAM) overview.”</span></p>
+<p>A real image goes in and real masks come out. The heavy encoder is drawn large and the light decoder small, which is the point of the design.</p>
+<p><strong>Borrow:</strong> Let the size of a box show its cost.</p>
+<p><span class="meta">Kirillov et al.&nbsp;From the authors’ repository, Apache 2.0 licence.</span></p>
+</div>
+<div id="dit" class="hf wide">
+<p><span class="hd"><strong>Diffusion Transformer</strong> · ICCV 2023 · <a href="https://arxiv.org/abs/2212.09748">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/dit.webp" class="img-fluid" loading="lazy" alt="Left: the overall model as a short stack. Centre: one block in full colour. Right: two alternative blocks drawn faded."></p>
+<p><span class="meta">image generation · Figure 3 · page 3, full width · schematic</span></p>
+<p><span class="cap">Its caption opens: “The Diffusion Transformer (DiT) architecture.”</span></p>
+<p>The chosen block is in full colour. The two variants that were tried are faded beside it.</p>
+<p><strong>Borrow:</strong> Fade the alternatives you tried, and keep yours in colour.</p>
+<p><span class="meta">Peebles and Xie. CC BY 4.0.</span></p>
+</div>
+<div id="flamingo" class="hf wide">
+<p><span class="hd"><strong>Flamingo</strong> · NeurIPS 2022 · <a href="https://arxiv.org/abs/2204.14198">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/flamingo.webp" class="img-fluid" loading="lazy" alt="Two photos pass through blue vision encoders marked with snowflakes and purple resamplers into a stack of language-model blocks; a key says blue is pretrained and frozen, purple is trained from scratch."></p>
+<p><span class="meta">vision and language · Figure 3 · page 4, full width · real data</span></p>
+<p><span class="cap">Its caption opens: “Flamingo architecture overview.”</span></p>
+<p>A two-colour key separates what is frozen from what is trained, and a real example of photos and text runs through the model.</p>
+<p><strong>Borrow:</strong> Mark the trained and the frozen parts, with a key.</p>
+<p><span class="meta">Alayrac et al.&nbsp;© the authors.</span></p>
+</div>
+</div>
+</section>
+<section id="what-is-the-new-piece" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-the-new-piece">What is the new piece?</h2>
+<p>Your novelty is one piece inside a known model. Draw only that piece.</p>
+<div class="hf-grid">
+<div id="resnet-block" class="hf">
+<p><span class="hd"><strong>ResNet</strong> · CVPR 2016 · <a href="https://arxiv.org/abs/1512.03385">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/resnet-block.webp" class="img-fluid" loading="lazy" alt="Two weight layers in a column, with a curved arrow carrying the input x around them to an addition."></p>
+<p><span class="meta">vision · Figure 2 · page 2, one column · schematic</span></p>
+<p><span class="cap">Its caption opens: “Residual learning: a building block.”</span></p>
+<p>Two layers, one curved arrow, and symbols that match the equations. That is the whole contribution.</p>
+<p><strong>Borrow:</strong> If the novelty is one connection, draw one connection.</p>
+<p><span class="meta">He et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="controlnet" class="hf">
+<p><span class="hd"><strong>ControlNet</strong> · ICCV 2023 · <a href="https://arxiv.org/abs/2302.05543">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/controlnet.webp" class="img-fluid" loading="lazy" alt="Left, before: one grey network block. Right, after: the same block locked, beside a blue trainable copy joined by two zero-convolution layers."></p>
+<p><span class="meta">image generation · Figure 2 · page 3, one column · schematic</span></p>
+<p><span class="cap">Its caption opens: “A neural block takes a feature map x as input and outputs another feature map y, as shown in (a).”</span></p>
+<p>Before and after, side by side. The original block is grey and locked, and everything that was added is blue.</p>
+<p><strong>Borrow:</strong> Draw “before” in grey, and add your part in one colour.</p>
+<p><span class="meta">Zhang et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="lora" class="hf">
+<p><span class="hd"><strong>LoRA</strong> · ICLR 2022 · <a href="https://arxiv.org/abs/2106.09685">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/lora.webp" class="img-fluid" loading="lazy" alt="A blue square of pretrained weights beside two orange trapezoids, A and B, that narrow to a small width r between them."></p>
+<p><span class="meta">language models · Figure 1 · page 1, one column · schematic</span></p>
+<p><span class="cap">Its caption opens: “Our reparametrization.”</span></p>
+<p>Blue is frozen and orange is trained. The orange shapes narrow to r, the low rank.</p>
+<p><strong>Borrow:</strong> Let a shape show the key quantity.</p>
+<p><span class="meta">Hu et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="dropout" class="hf wide">
+<p><span class="hd"><strong>Dropout</strong> · JMLR 2014 · <a href="https://jmlr.org/papers/v15/srivastava14a.html">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/dropout.webp" class="img-fluid" loading="lazy" alt="Two small neural networks side by side. The left one is fully connected. In the right one several units are crossed out and their connections are gone."></p>
+<p><span class="meta">classic ML · Figure 1 · page 2, full width · schematic</span></p>
+<p><span class="cap">Its caption opens: “Dropout Neural Net Model.”</span></p>
+<p>The same network twice: complete on the left, and with crossed-out units on the right. It needs no equation.</p>
+<p><strong>Borrow:</strong> Show the same thing before and after your change.</p>
+<p><span class="meta">Srivastava et al.&nbsp;© the authors.</span></p>
+</div>
+</div>
+</section>
+<section id="how-does-it-differ-from-what-came-before" class="level2">
+<h2 class="anchored" data-anchor-id="how-does-it-differ-from-what-came-before">How does it differ from what came before?</h2>
+<p>Your novelty is a choice among known designs. Draw them side by side, yours last.</p>
+<div class="hf-grid">
+<div id="efficientnet-scaling" class="hf wide">
+<p><span class="hd"><strong>EfficientNet</strong> · ICML 2019 · <a href="https://arxiv.org/abs/1905.11946">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/efficientnet-scaling.webp" class="img-fluid" loading="lazy" alt="Five network sketches: a baseline, a wider one, a deeper one, a higher-resolution one, and one scaled in all three ways."></p>
+<p><span class="meta">vision · Figure 2 · page 2, full width · schematic</span></p>
+<p><span class="cap">Its caption opens: “Model Scaling.”</span></p>
+<p>A baseline, three ways to scale one dimension, and then ours, all drawn with the same shapes.</p>
+<p><strong>Borrow:</strong> Line up the alternatives, and put yours last.</p>
+<p><span class="meta">Tan and Le. © the authors.</span></p>
+</div>
+<div id="fpn" class="hf">
+<p><span class="hd"><strong>Feature Pyramid Networks</strong> · CVPR 2017 · <a href="https://arxiv.org/abs/1612.03144">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/fpn.webp" class="img-fluid" loading="lazy" alt="Four small diagrams of stacked feature maps with predict arrows, lettered a to d; the fourth, the paper's own, has thick outlines at every level."></p>
+<p><span class="meta">vision · Figure 1 · page 1, one column · schematic</span></p>
+<p><span class="cap">Its caption opens: “(a) Using an image pyramid to build a feature pyramid.”</span></p>
+<p>Four pyramid designs in one drawing style. Thicker outlines mean stronger features, so the reader sees what each design lacks.</p>
+<p><strong>Borrow:</strong> Use one drawing style for every alternative, and one cue for quality.</p>
+<p><span class="meta">Lin et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="convnext" class="hf">
+<p><span class="hd"><strong>ConvNeXt</strong> · CVPR 2022 · <a href="https://arxiv.org/abs/2201.03545">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/convnext.webp" class="img-fluid" loading="lazy" alt="Three block diagrams side by side, labelled Swin Transformer block, ResNet block and ConvNeXt block, each a column of layers with their sizes."></p>
+<p><span class="meta">vision · Figure 4 · page 5, one column · schematic</span></p>
+<p><span class="cap">Its caption opens: “Block designs for a ResNet, a Swin Transformer, and a ConvNeXt.”</span></p>
+<p>Three blocks side by side, with every layer and size written out. The reader can count the differences.</p>
+<p><strong>Borrow:</strong> For a change inside a block, put the blocks next to each other at one scale.</p>
+<p><span class="meta">Liu et al.&nbsp;CC BY 4.0.</span></p>
+</div>
+<div id="timellm" class="hf wide">
+<p><span class="hd"><strong>Time-LLM</strong> · ICLR 2024 · <a href="https://arxiv.org/abs/2310.01728">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/timellm.webp" class="img-fluid" loading="lazy" alt="Three small panels: task-specific learning, model fine-tuning, and model reprogramming, with icons for frozen and fine-tuned parts and a list of benefits."></p>
+<p><span class="meta">time series · Figure 1 · page 3, full width · schematic</span></p>
+<p><span class="cap">Its caption opens: “Schematic illustration of reprogramming large language models (LLMs) in comparison of (a) task-specific learning and (b) model fine-tuning.”</span></p>
+<p>Three ways to adapt a model to time series, (a) to (c), with a flame on trained parts and a snowflake on frozen ones.</p>
+<p><strong>Borrow:</strong> Place your approach in a row with the existing ones. <strong>Watch out:</strong> Its icons and labels are small.</p>
+<p><span class="meta">Jin et al.&nbsp;CC BY 4.0.</span></p>
+</div>
+<div id="tot" class="hf wide">
+<p><span class="hd"><strong>Tree of Thoughts</strong> · NeurIPS 2023 · <a href="https://arxiv.org/abs/2305.10601">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/tot.webp" class="img-fluid" loading="lazy" alt="Four panels from input to output: a single arrow, a chain of boxes, several chains with a majority vote, and a tree of boxes in which a green path leads to the output."></p>
+<p><span class="meta">language models · Figure 1 · page 2, full width · schematic</span></p>
+<p><span class="cap">Its caption opens: “Schematic illustrating various approaches to problem solving with LLMs.”</span></p>
+<p>Four ways to prompt a language model, drawn with the same boxes, from one straight line to a tree. Ours is the last panel, and green marks the path that is kept.</p>
+<p><strong>Borrow:</strong> Draw the earlier methods as simpler versions of yours.</p>
+<p><span class="meta">Yao et al.&nbsp;CC BY 4.0.</span></p>
+</div>
+</div>
+</section>
+<section id="how-does-it-learn" class="level2">
+<h2 class="anchored" data-anchor-id="how-does-it-learn">How does it learn?</h2>
+<p>Your novelty is how the model is trained. Draw what the objective compares.</p>
+<div class="hf-grid">
+<div id="cyclegan-model" class="hf wide">
+<p><span class="hd"><strong>CycleGAN</strong> · ICCV 2017 · <a href="https://arxiv.org/abs/1703.10593">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/cyclegan-model.webp" class="img-fluid" loading="lazy" alt="Three panels: two domains X and Y joined by mappings G and F; a sample sent from X to Y and back, with the gap marked as cycle-consistency loss; and the reverse."></p>
+<p><span class="meta">image generation · Figure 3 · page 3, full width · schematic</span></p>
+<p><span class="cap">Its caption opens: “(a) Our model contains two mapping functions G: X → Y and F: Y → X, and associated adversarial discriminators …”</span></p>
+<ol type="a">
+<li>shows the two mappings. (b) and (c) show one sample going round the loop and landing near where it started.</li>
+</ol>
+<p><strong>Borrow:</strong> To explain a loss, draw what it compares.</p>
+<p><span class="meta">Zhu et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="simclr" class="hf">
+<p><span class="hd"><strong>SimCLR</strong> · ICML 2020 · <a href="https://arxiv.org/abs/2002.05709">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/simclr.webp" class="img-fluid" loading="lazy" alt="An image x is augmented into two views, each passed through an encoder f and a head g, with a double arrow between the two outputs labelled maximize agreement."></p>
+<p><span class="meta">vision · Figure 2 · page 2, one column · schematic</span></p>
+<p><span class="cap">Its caption opens: “A simple framework for contrastive learning of visual representations.”</span></p>
+<p>One image, two views, two branches, and one arrow labelled “Maximize agreement”. Every symbol is used in the text.</p>
+<p><strong>Borrow:</strong> Label the figure with the paper’s own symbols.</p>
+<p><span class="meta">Chen et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="bert" class="hf wide">
+<p><span class="hd"><strong>BERT</strong> · NAACL 2019 · <a href="https://arxiv.org/abs/1810.04805">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/bert.webp" class="img-fluid" loading="lazy" alt="Two copies of the same model, labelled pre-training and fine-tuning, with different inputs below and different outputs above."></p>
+<p><span class="meta">language · Figure 1 · page 3, full width · schematic</span></p>
+<p><span class="cap">Its caption opens: “Overall pre-training and fine-tuning procedures for BERT.”</span></p>
+<p>Pre-training and fine-tuning are drawn as the same model twice, so the reader sees that only the inputs and outputs change.</p>
+<p><strong>Borrow:</strong> Draw the two phases side by side, with the same shapes.</p>
+<p><span class="meta">Devlin et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="satclip" class="hf wide">
+<p><span class="hd"><strong>SatCLIP</strong> · AAAI 2025 · <a href="https://arxiv.org/abs/2311.17179">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/satclip.webp" class="img-fluid" loading="lazy" alt="Left: a globe with satellite tiles and their coordinates feeding an image encoder and a location encoder with a contrastive objective. Right: the location encoder reused for a downstream task."></p>
+<p><span class="meta">remote sensing · Figure 2 · page 4, full width · real data</span></p>
+<p><span class="cap">Its caption opens: “The SatCLIP pretraining and deployment pipeline.”</span></p>
+<p>Pretraining is on the left and use is on the right, with real satellite tiles and coordinates. Each encoder keeps its colour across both halves.</p>
+<p><strong>Borrow:</strong> Show how it is trained and how it is used, in one figure.</p>
+<p><span class="meta">Klemmer et al.&nbsp;CC BY 4.0.</span></p>
+</div>
+</div>
+</section>
+<section id="why-should-it-work" class="level2">
+<h2 class="anchored" data-anchor-id="why-should-it-work">Why should it work?</h2>
+<p>Your idea needs an intuition first. Draw a toy case in two dimensions.</p>
+<div class="hf-grid">
+<div id="lime-toy" class="hf">
+<p><span class="hd"><strong>LIME</strong> · KDD 2016 · <a href="https://arxiv.org/abs/1602.04938">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/lime-toy.webp" class="img-fluid" loading="lazy" alt="A pink and blue region with a wiggly boundary, a bold red cross for the point being explained, nearby samples sized by closeness, and a straight dashed line."></p>
+<p><span class="meta">classic ML · Figure 3 · page 4, one column · schematic</span></p>
+<p><span class="cap">Its caption opens: “Toy example to present intuition for LIME.”</span></p>
+<p>A toy in two dimensions: a wiggly decision boundary, one point to explain, and a straight dashed line that fits only nearby.</p>
+<p><strong>Borrow:</strong> Draw the idea in two dimensions before the real pipeline.</p>
+<p><span class="meta">Ribeiro et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="node2vec" class="hf">
+<p><span class="hd"><strong>node2vec</strong> · KDD 2016 · <a href="https://arxiv.org/abs/1607.00653">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/node2vec.webp" class="img-fluid" loading="lazy" alt="Five nodes: t, v and three neighbours of v. Each edge out of v is labelled with a weight: one over p, one, or one over q."></p>
+<p><span class="meta">graphs · Figure 2 · page 4, one column · schematic</span></p>
+<p><span class="cap">Its caption opens: “Illustration of the random walk procedure in node2vec.”</span></p>
+<p>Five nodes are enough. The walk has just moved from t to v, and each possible next edge carries its bias.</p>
+<p><strong>Borrow:</strong> Use the smallest example that shows the rule.</p>
+<p><span class="meta">Grover and Leskovec. © the authors.</span></p>
+</div>
+<div id="maml" class="hf">
+<p><span class="hd"><strong>MAML</strong> · ICML 2017 · <a href="https://arxiv.org/abs/1703.03400">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/maml.webp" class="img-fluid" loading="lazy" alt="A thick curve labelled theta ends at a point. Three grey arrows show the gradients of three task losses, and three dashed lines lead from the point to three nearby optima. A key separates meta-learning from adaptation."></p>
+<p><span class="meta">classic ML · Figure 1 · page 2, one column · schematic</span></p>
+<p><span class="cap">Its caption opens: “Diagram of our model-agnostic meta-learning algorithm (MAML), which optimizes for a representation θ that can quickly adapt to new tasks.”</span></p>
+<p>One curve and three dashed lines: the parameters move to a point from which each task’s optimum is one short step away.</p>
+<p><strong>Borrow:</strong> A sketch of the geometry can explain an algorithm faster than its pseudocode.</p>
+<p><span class="meta">Finn et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="scoresde" class="hf wide">
+<p><span class="hd"><strong>Score-based SDEs</strong> · ICLR 2021 · <a href="https://arxiv.org/abs/2011.13456">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/method/scoresde.webp" class="img-fluid" loading="lazy" alt="A forward equation above a strip of images in which a dog dissolves into noise, and a reverse equation below, with the score term boxed."></p>
+<p><span class="meta">generative models · Figure 1 · page 2, full width · real data</span></p>
+<p><span class="cap">Its caption opens: “Solving a reverse-time SDE yields a score-based generative model.”</span></p>
+<p>The equations and the picture are stacked. A photo dissolves into noise along the top arrow and comes back along the bottom one.</p>
+<p><strong>Borrow:</strong> Put the equation next to what it does.</p>
+<p><span class="meta">Song et al.&nbsp;© the authors.</span></p>
+</div>
+</div>
+</section>
+<section id="what-the-28-have-in-common" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-28-have-in-common">What the 28 have in common</h2>
+<ul>
+<li><strong>It sits with the method.</strong> 26 of 28 are on pages 2 to 5, where the method is first described.</li>
+<li><strong>It can double as the hero.</strong> In 14 of 28 it is Figure 1: those papers have no separate hero figure. If your idea <em>is</em> the method, one figure can do both jobs.</li>
+<li><strong>It is a schematic.</strong> Only 9 of 28 show real data, against 20 of 24 hero figures. The ones that do, such as NeRF, YOLO and Segment Anything, are the easiest to follow.</li>
+<li><strong>Colour and shape mean something.</strong> Frozen against trained, old against new, one colour per kind of block. The best ones give each colour one meaning.</li>
+<li><strong>Its caption is often only a label.</strong> 11 of 28 open with a title such as “Model overview.” A sentence that says what the method does, as ControlNet’s and MAML’s do, helps the reader more.</li>
+<li><strong>It leaves things out.</strong> “N×” stands for a stack, a zoom stands for the detail, and the standard parts are small or grey.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+All 28 on the same axes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="hf-scroll">
+<table class="table">
+<thead>
+<tr class="header">
+<th>Paper</th>
+<th>Field</th>
+<th>Answers</th>
+<th>Figure</th>
+<th>Page</th>
+<th>Width</th>
+<th>Shows</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="#nerf">NeRF</a></td>
+<td>vision</td>
+<td>What happens to one input?</td>
+<td>2</td>
+<td>5</td>
+<td>full</td>
+<td>real data</td>
+</tr>
+<tr class="even">
+<td><a href="#yolo">YOLO</a></td>
+<td>vision</td>
+<td>What happens to one input?</td>
+<td>2</td>
+<td>2</td>
+<td>column</td>
+<td>real data</td>
+</tr>
+<tr class="odd">
+<td><a href="#graphsage">GraphSAGE</a></td>
+<td>graphs</td>
+<td>What happens to one input?</td>
+<td>1</td>
+<td>2</td>
+<td>full</td>
+<td>schematic</td>
+</tr>
+<tr class="even">
+<td><a href="#gencast">GenCast</a></td>
+<td>weather</td>
+<td>What happens to one input?</td>
+<td>1</td>
+<td>2</td>
+<td>column</td>
+<td>real data</td>
+</tr>
+<tr class="odd">
+<td><a href="#rag">RAG</a></td>
+<td>language models</td>
+<td>What happens to one input?</td>
+<td>1</td>
+<td>2</td>
+<td>full</td>
+<td>real data</td>
+</tr>
+<tr class="even">
+<td><a href="#transformer">Transformer</a></td>
+<td>language</td>
+<td>What is it made of?</td>
+<td>1</td>
+<td>3</td>
+<td>column</td>
+<td>schematic</td>
+</tr>
+<tr class="odd">
+<td><a href="#unet">U-Net</a></td>
+<td>medical imaging</td>
+<td>What is it made of?</td>
+<td>1</td>
+<td>2</td>
+<td>full</td>
+<td>schematic</td>
+</tr>
+<tr class="even">
+<td><a href="#vit">Vision Transformer</a></td>
+<td>vision</td>
+<td>What is it made of?</td>
+<td>1</td>
+<td>3</td>
+<td>full</td>
+<td>real data</td>
+</tr>
+<tr class="odd">
+<td><a href="#sam">Segment Anything</a></td>
+<td>vision</td>
+<td>What is it made of?</td>
+<td>4</td>
+<td>5</td>
+<td>full</td>
+<td>real data</td>
+</tr>
+<tr class="even">
+<td><a href="#dit">Diffusion Transformer</a></td>
+<td>image generation</td>
+<td>What is it made of?</td>
+<td>3</td>
+<td>3</td>
+<td>full</td>
+<td>schematic</td>
+</tr>
+<tr class="odd">
+<td><a href="#flamingo">Flamingo</a></td>
+<td>vision and language</td>
+<td>What is it made of?</td>
+<td>3</td>
+<td>4</td>
+<td>full</td>
+<td>real data</td>
+</tr>
+<tr class="even">
+<td><a href="#resnet-block">ResNet</a></td>
+<td>vision</td>
+<td>What is the new piece?</td>
+<td>2</td>
+<td>2</td>
+<td>column</td>
+<td>schematic</td>
+</tr>
+<tr class="odd">
+<td><a href="#controlnet">ControlNet</a></td>
+<td>image generation</td>
+<td>What is the new piece?</td>
+<td>2</td>
+<td>3</td>
+<td>column</td>
+<td>schematic</td>
+</tr>
+<tr class="even">
+<td><a href="#lora">LoRA</a></td>
+<td>language models</td>
+<td>What is the new piece?</td>
+<td>1</td>
+<td>1</td>
+<td>column</td>
+<td>schematic</td>
+</tr>
+<tr class="odd">
+<td><a href="#dropout">Dropout</a></td>
+<td>classic ML</td>
+<td>What is the new piece?</td>
+<td>1</td>
+<td>2</td>
+<td>full</td>
+<td>schematic</td>
+</tr>
+<tr class="even">
+<td><a href="#efficientnet-scaling">EfficientNet</a></td>
+<td>vision</td>
+<td>How does it differ from what came before?</td>
+<td>2</td>
+<td>2</td>
+<td>full</td>
+<td>schematic</td>
+</tr>
+<tr class="odd">
+<td><a href="#fpn">Feature Pyramid Networks</a></td>
+<td>vision</td>
+<td>How does it differ from what came before?</td>
+<td>1</td>
+<td>1</td>
+<td>column</td>
+<td>schematic</td>
+</tr>
+<tr class="even">
+<td><a href="#convnext">ConvNeXt</a></td>
+<td>vision</td>
+<td>How does it differ from what came before?</td>
+<td>4</td>
+<td>5</td>
+<td>column</td>
+<td>schematic</td>
+</tr>
+<tr class="odd">
+<td><a href="#timellm">Time-LLM</a></td>
+<td>time series</td>
+<td>How does it differ from what came before?</td>
+<td>1</td>
+<td>3</td>
+<td>full</td>
+<td>schematic</td>
+</tr>
+<tr class="even">
+<td><a href="#tot">Tree of Thoughts</a></td>
+<td>language models</td>
+<td>How does it differ from what came before?</td>
+<td>1</td>
+<td>2</td>
+<td>full</td>
+<td>schematic</td>
+</tr>
+<tr class="odd">
+<td><a href="#cyclegan-model">CycleGAN</a></td>
+<td>image generation</td>
+<td>How does it learn?</td>
+<td>3</td>
+<td>3</td>
+<td>full</td>
+<td>schematic</td>
+</tr>
+<tr class="even">
+<td><a href="#simclr">SimCLR</a></td>
+<td>vision</td>
+<td>How does it learn?</td>
+<td>2</td>
+<td>2</td>
+<td>column</td>
+<td>schematic</td>
+</tr>
+<tr class="odd">
+<td><a href="#bert">BERT</a></td>
+<td>language</td>
+<td>How does it learn?</td>
+<td>1</td>
+<td>3</td>
+<td>full</td>
+<td>schematic</td>
+</tr>
+<tr class="even">
+<td><a href="#satclip">SatCLIP</a></td>
+<td>remote sensing</td>
+<td>How does it learn?</td>
+<td>2</td>
+<td>4</td>
+<td>full</td>
+<td>real data</td>
+</tr>
+<tr class="odd">
+<td><a href="#lime-toy">LIME</a></td>
+<td>classic ML</td>
+<td>Why should it work?</td>
+<td>3</td>
+<td>4</td>
+<td>column</td>
+<td>schematic</td>
+</tr>
+<tr class="even">
+<td><a href="#node2vec">node2vec</a></td>
+<td>graphs</td>
+<td>Why should it work?</td>
+<td>2</td>
+<td>4</td>
+<td>column</td>
+<td>schematic</td>
+</tr>
+<tr class="odd">
+<td><a href="#maml">MAML</a></td>
+<td>classic ML</td>
+<td>Why should it work?</td>
+<td>1</td>
+<td>2</td>
+<td>column</td>
+<td>schematic</td>
+</tr>
+<tr class="even">
+<td><a href="#scoresde">Score-based SDEs</a></td>
+<td>generative models</td>
+<td>Why should it work?</td>
+<td>1</td>
+<td>2</td>
+<td>full</td>
+<td>real data</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="make-your-own" class="level2">
+<h2 class="anchored" data-anchor-id="make-your-own">Make your own</h2>
+<ol type="1">
+<li><strong>Choose the question,</strong> from the table above. One figure answers one question.</li>
+<li><strong>Take the labels from your method section.</strong> Use the same names and the same symbols as the text.</li>
+<li><strong>Follow one example,</strong> and show the data at each step, not only the name of the step.</li>
+<li><strong>Keep one reading direction.</strong> A solid arrow means “data flows”. Use another line style for anything else, such as a loss or a gradient, and say so.</li>
+<li><strong>Give colour one meaning:</strong> grey for what exists, one colour for what is new. If parts are frozen and parts are trained, mark them.</li>
+<li><strong>Letter the stages</strong> (a), (b), (c), and reuse the letters in the caption and the section headings.</li>
+<li><strong>Leave out what the reader knows.</strong> Write “N×” for repeats. Put the full detail in a second figure or the appendix.</li>
+<li><strong>Stop at about seven boxes.</strong> If you need more, you need two figures.</li>
+<li><strong>Build it at final width,</strong> as a vector PDF, with text of at least 6 to 7 pt.</li>
+<li><strong>Test it.</strong> Give the figure and its caption to a labmate, without the method section, and ask them to explain the method back.</li>
+</ol>
+</section>
+<section id="checklist" class="level2">
+<h2 class="anchored" data-anchor-id="checklist">Checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">The figure answers one question, and the caption says which.</label></li>
+<li><label><input type="checkbox">The new part is obvious at a glance.</label></li>
+<li><label><input type="checkbox">One example runs through it, and the data is visible at each step.</label></li>
+<li><label><input type="checkbox">Every arrow style, colour and shape has one meaning.</label></li>
+<li><label><input type="checkbox">Its names and symbols match the text and the equations.</label></li>
+<li><label><input type="checkbox">Its stages are lettered, and the caption follows the letters.</label></li>
+<li><label><input type="checkbox">It has about seven boxes or fewer at the top level.</label></li>
+<li><label><input type="checkbox">Every label is legible in the compiled PDF, and spelt correctly.</label></li>
+</ul>
+<p><span class="hf-note">The figures are reproduced from the cited papers for teaching and criticism only. Each belongs to its authors and publisher. If you are an author and would like a figure removed, please write to us.</span></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script>
+// Light/dark switch styled like nipunbatra.github.io (sun → moon pill).
+// It drives Quarto's own colour-scheme switch and hides Quarto's icon.
+// Until someone uses the switch, the site follows the OS setting.
+(() => {
+  const KEY = 'lab-theme-chosen';
+  const isDark = () => document.body.classList.contains('quarto-dark');
+  const mkButton = () => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'mode'; b.setAttribute('role', 'switch');
+    b.setAttribute('aria-label', 'Dark mode'); b.title = 'Light or dark appearance';
+    b.innerHTML = '<span class="sky"></span><span class="stars"><b style="left:9px;top:6px"></b><b style="left:15px;top:15px"></b><b style="left:23px;top:8px;opacity:.7"></b></span><span class="knob"></span>';
+    b.addEventListener('click', () => {
+      try { localStorage.setItem(KEY, '1'); } catch (_) {}
+      if (window.quartoToggleColorScheme) window.quartoToggleColorScheme();
+    });
+    return b;
+  };
+  const sync = () => document.querySelectorAll('.mode').forEach(b => b.setAttribute('aria-checked', String(isDark())));
+  const init = () => {
+    const tools = document.querySelector('.quarto-navbar-tools');
+    const nav = document.querySelector('#quarto-header .navbar .container-fluid') || document.querySelector('#quarto-header nav');
+    if (!nav) return;
+    const btn = mkButton();
+    if (tools) tools.prepend(btn); else nav.appendChild(btn);
+    sync();
+    new MutationObserver(sync).observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+    mq.addEventListener('change', e => {
+      let chosen = null; try { chosen = localStorage.getItem(KEY); } catch (_) {}
+      if (!chosen && e.matches !== isDark() && window.quartoToggleColorScheme) window.quartoToggleColorScheme();
+    });
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true }); else init();
+})();
+</script>
+<script>
+// Navbar logo: inline the SVG so it follows the theme colours, and draw the
+// sigmoid once per browser session (axes, then the curve, then the wordmark).
+// Skipped entirely for visitors who prefer reduced motion.
+(() => {
+  const img = document.querySelector('.navbar-logo');
+  if (!img || !window.fetch) return;
+  fetch(img.getAttribute('src')).then(r => r.ok ? r.text() : Promise.reject()).then(txt => {
+    const box = document.createElement('span');
+    box.innerHTML = txt.trim();
+    const svg = box.querySelector('svg');
+    if (!svg) return;
+    svg.setAttribute('class', 'navbar-logo lab-logo-svg');
+    svg.setAttribute('role', 'img');
+    svg.setAttribute('aria-label', img.getAttribute('alt') || 'Sustainability Lab');
+    svg.querySelectorAll('[stroke]').forEach(el => el.removeAttribute('stroke'));
+    svg.querySelectorAll('[fill]:not([fill="none"])').forEach(el => el.removeAttribute('fill'));
+    img.replaceWith(svg);
+    let seen = false;
+    try { seen = sessionStorage.getItem('lab-logo-drawn') === '1'; sessionStorage.setItem('lab-logo-drawn', '1'); } catch (_) {}
+    if (seen || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    svg.querySelectorAll('line, path').forEach(el => {
+      const len = el.getTotalLength ? el.getTotalLength() : 120;
+      el.style.strokeDasharray = len; el.style.strokeDashoffset = len;
+    });
+    svg.classList.add('draw');
+  }).catch(() => {});
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/sustainability-lab\.github\.io");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Sustainability Lab, IIT Gandhinagar<br> <a href="mailto:nipun.batra@iitgn.ac.in">nipun.batra@iitgn.ac.in</a> · <a href="../flyer.pdf">Lab flyer</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p><a href="https://www.youtube.com/@SustainabilityLab-SL">Lab YouTube</a> · <a href="https://www.youtube.com/@NipunBatra0">Teaching YouTube</a> · <a href="https://x.com/nipun_batra">X</a> · <a href="https://www.linkedin.com/in/nipunbatra0/">LinkedIn</a> · <a href="https://github.com/sustainability-lab">GitHub</a></p>
+</div>
+    <div class="nav-footer-right">
+<p>Supported by Google, Cisco, NVIDIA, Microsoft, SERB/ANRF, MoES, DST, STARS, GUJCOST, CoE in AI (MHRD), Gujarat Forest Dept. and Jio</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

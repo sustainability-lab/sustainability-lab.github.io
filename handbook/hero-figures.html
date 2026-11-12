@@ -201,8 +201,11 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 .hf.prob { border-color: var(--muted); } .hf.idea { border-color: var(--accent); } .hf.pay { border-color: var(--ok); } .hf.scope { border-color: var(--ink); }
 .hf p { margin: 0 0 .35rem; font-size: .93rem; line-height: 1.45; }
 .hf .hd { font-size: 1rem; }
+.hf .cap { display: block; font-size: .82rem; font-style: italic; color: var(--muted); margin: .1rem 0 .4rem; }
 .hf .meta, .hf-note { font-size: .76rem; color: var(--muted); }
 .hf img { display: block; width: 100%; background: #fff; border: 1px solid var(--rule); margin: .45rem 0 .5rem; }
+/* Dark mode: never invert. The figures hold photos, and their colours carry meaning. Only soften the white. */
+body.quarto-dark .hf img { filter: brightness(.88); }
 .hf-scroll { overflow-x: auto; }
 .hf-scroll table { font-size: .8rem; min-width: 640px; }
 @media (max-width: 760px) { .hf-grid { grid-template-columns: 1fr; } }
@@ -213,7 +216,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <li><span class="k idea">Idea</span> What is the one thing that changes that?</li>
 <li><span class="k pay">Payoff</span> What becomes possible, and by how much?</li>
 </ol>
-<p>It is a visual abstract, not the architecture diagram. This page shows 24 first figures from ICML, NeurIPS, ICLR, CVPR, ICCV, ECCV, KDD, AAAI and SIGGRAPH, and what to borrow from each. It is part of <a href="../handbook/writing-papers.html#hero-figures">Writing Papers</a>.</p>
+<p>It is a visual abstract, not the architecture diagram: for that, see <a href="../handbook/method-figures.html">Making method figures</a>. This page shows 24 first figures from ICML, NeurIPS, ICLR, CVPR, ICCV, ECCV, KDD, AAAI and SIGGRAPH, and what to borrow from each. It is part of <a href="../handbook/writing-papers.html#hero-figures">Writing Papers</a>.</p>
 <section id="choose-what-leads" class="level2">
 <h2 class="anchored" data-anchor-id="choose-what-leads">Choose what leads</h2>
 <p>Ask which sentence of the abstract a reviewer should repeat to the other reviewers. Draw that sentence.</p>
@@ -287,6 +290,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>Informer</strong> · AAAI 2021 · <a href="https://arxiv.org/abs/2012.07436">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/informer.webp" class="img-fluid" loading="lazy" alt="Two small plots: a short and a long forecast of one series, and an LSTM whose error rises and speed falls as the forecast lengthens."></p>
 <p><span class="k prob">problem</span> <span class="meta">· plot · page 1, one column</span></p>
+<p><span class="cap">Its caption opens: “(a) LSTF can cover an extended period than the short sequence predictions, making vital distinction in policy-planning and investment-protecting.”</span></p>
 <p>It measures an existing model breaking as the forecast gets longer. The new method is not even shown.</p>
 <p><strong>Borrow:</strong> If a reader may doubt the gap, plot the baseline failing.</p>
 <p><span class="meta">Figure 1, Zhou et al.&nbsp;© the authors.</span></p>
@@ -295,6 +299,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>ResNet</strong> · CVPR 2016 · <a href="https://arxiv.org/abs/1512.03385">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/resnet.webp" class="img-fluid" loading="lazy" alt="Two plots of error against training iterations. In both, the 56-layer curve lies above the 20-layer curve."></p>
 <p><span class="k prob">problem</span> <span class="meta">· plot · page 1, one column</span></p>
+<p><span class="cap">Its caption opens: “Training error (left) and test error (right) on CIFAR-10 with 20-layer and 56-layer “plain” networks.”</span></p>
 <p>Two lines per plot, named on the lines. The deeper network is worse, which nobody expects.</p>
 <p><strong>Borrow:</strong> A surprising measurement is a complete Figure 1.</p>
 <p><span class="meta">Figure 1, He et al.&nbsp;© the authors.</span></p>
@@ -303,6 +308,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>Chain-of-Thought</strong> · NeurIPS 2022 · <a href="https://arxiv.org/abs/2201.11903">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/cot.webp" class="img-fluid" loading="lazy" alt="Two columns. Standard prompting gives a wrong answer with a red cross. Chain-of-thought prompting, with highlighted reasoning, gives the right answer with a tick."></p>
 <p><span class="k prob">problem</span> → <span class="k idea">idea</span> → <span class="k pay">payoff</span> <span class="meta">· contrast pair · page 1, full width</span></p>
+<p><span class="cap">Its caption opens: “Chain-of-thought prompting enables large language models to tackle complex arithmetic, commonsense, and symbolic reasoning tasks.”</span></p>
 <p>The two columns are identical except for the highlighted text, so the eye lands on the idea. ✗ becomes ✓.</p>
 <p><strong>Borrow:</strong> Hold everything fixed except your idea, and colour only that.</p>
 <p><span class="meta">Figure 1, Wei et al.&nbsp;CC BY 4.0.</span></p>
@@ -317,6 +323,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>CLIP</strong> · ICML 2021 · <a href="https://arxiv.org/abs/2103.00020">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/clip.webp" class="img-fluid" loading="lazy" alt="Three numbered panels: contrastive pre-training on a grid of images against captions, building a classifier from class names, and zero-shot prediction on a photo of a dog."></p>
 <p><span class="k idea">idea</span> → <span class="k pay">payoff</span> <span class="meta">· strip · page 2, full width</span></p>
+<p><span class="cap">Its caption opens: “Summary of our approach.”</span></p>
 <p>Three numbered panels show how the model is trained, and then how it is used.</p>
 <p><strong>Borrow:</strong> Number the panels, and end on the use.</p>
 <p><span class="meta">Figure 1, Radford et al.&nbsp;From the authors’ repository, MIT licence.</span></p>
@@ -325,6 +332,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>MAE</strong> · CVPR 2022 · <a href="https://arxiv.org/abs/2111.06377">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/mae.webp" class="img-fluid" loading="lazy" alt="A flamingo photo with most patches masked; the visible patches enter a large encoder; a small decoder rebuilds the full image."></p>
 <p><span class="k idea">idea</span> → <span class="k pay">payoff</span> <span class="meta">· strip · page 1, one column</span></p>
+<p><span class="cap">Its caption opens: “Our MAE architecture.”</span></p>
 <p>An architecture with five elements and one real image. The big encoder takes few patches; the small decoder takes all.</p>
 <p><strong>Borrow:</strong> Draw only what is new, and let size mean something.</p>
 <p><span class="meta">Figure 1, He et al.&nbsp;CC BY 4.0.</span></p>
@@ -333,6 +341,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>LIME</strong> · KDD 2016 · <a href="https://arxiv.org/abs/1602.04938">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/lime.webp" class="img-fluid" loading="lazy" alt="A model predicts flu from a patient's symptoms; a magnifying glass labelled LIME highlights sneeze and headache; a doctor makes the decision."></p>
 <p><span class="k prob">problem</span> → <span class="k idea">idea</span> → <span class="k pay">payoff</span> <span class="meta">· strip · page 2, full width</span></p>
+<p><span class="cap">Its caption opens: “Explaining individual predictions.”</span></p>
 <p>One patient tells the whole method, and the figure ends at the doctor who decides.</p>
 <p><strong>Borrow:</strong> End at the person who uses the output. <strong>Watch out:</strong> Generic icons. Use a real case today.</p>
 <p><span class="meta">Figure 1, Ribeiro et al.&nbsp;© the authors.</span></p>
@@ -341,6 +350,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>Generative Image Dynamics</strong> · CVPR 2024 · <a href="https://arxiv.org/abs/2309.07906">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/gid.webp" class="img-fluid" loading="lazy" alt="A photo of a rose, then colourful motion maps at several frequencies, then a looping video and interactive dynamics shown as time slices."></p>
 <p><span class="k idea">idea</span> → <span class="k pay">payoff</span> <span class="meta">· strip · page 1, full width</span></p>
+<p><span class="cap">Its caption opens: “We model a generative image-space prior on scene motion: from a single RGB image, our method generates a spectral volume …”</span></p>
 <p>The middle panel shows what the new representation looks like, where most papers put a labelled box.</p>
 <p><strong>Borrow:</strong> Replace boxes with pictures of what is inside them.</p>
 <p><span class="meta">Figure 1, Li et al.&nbsp;© the authors.</span></p>
@@ -349,6 +359,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>AnySat</strong> · CVPR 2025 · <a href="https://arxiv.org/abs/2412.14123">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/anysat.webp" class="img-fluid" loading="lazy" alt="Five satellite datasets with different sensors and resolutions flow into one box labelled AnySat, which feeds five tasks with real output maps."></p>
 <p><span class="k prob">problem</span> → <span class="k idea">idea</span> → <span class="k pay">payoff</span> <span class="meta">· funnel · page 1, one column</span></p>
+<p><span class="cap">Its caption opens: “Multi-Dataset Training.”</span></p>
 <p>Many real inputs, one model, many real outputs. The shape is the claim.</p>
 <p><strong>Borrow:</strong> For generality, draw the funnel and fill both ends with real samples.</p>
 <p><span class="meta">Figure 1, Astruc et al.&nbsp;CC BY 4.0.</span></p>
@@ -357,6 +368,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>Swin Transformer</strong> · ICCV 2021 · <a href="https://arxiv.org/abs/2103.14030">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/swin.webp" class="img-fluid" loading="lazy" alt="Two stacks of feature maps. Swin has three scales and serves classification, detection and segmentation. ViT has one scale and serves classification only."></p>
 <p><span class="k idea">idea</span> → <span class="k prob">problem</span> <span class="meta">· contrast pair · page 1, one column</span></p>
+<p><span class="cap">Its caption opens: “(a) The proposed Swin Transformer builds hierarchical feature maps by merging image patches (shown in gray) in deeper layers …”</span></p>
 <p>Ours and the nearest baseline are drawn with the same shapes, so the only difference is the contribution.</p>
 <p><strong>Borrow:</strong> Draw the baseline the same way as your method.</p>
 <p><span class="meta">Figure 1, Liu et al.&nbsp;CC BY 4.0.</span></p>
@@ -365,6 +377,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>YOLO</strong> · CVPR 2016 · <a href="https://arxiv.org/abs/1506.02640">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/yolo.webp" class="img-fluid" loading="lazy" alt="A photo of a person, a dog and a horse; one network; the same photo with a labelled box on each. Three steps are listed."></p>
 <p><span class="k idea">idea</span> → <span class="k pay">payoff</span> <span class="meta">· strip · page 1, one column</span></p>
+<p><span class="cap">Its caption opens: “The YOLO Detection System.”</span></p>
 <p>The claim is simplicity, and the figure is one photo, one network and three steps.</p>
 <p><strong>Borrow:</strong> If simplicity is the point, stop at three parts. <strong>Watch out:</strong> Tiny in print.</p>
 <p><span class="meta">Figure 1, Redmon et al.&nbsp;© the authors.</span></p>
@@ -373,6 +386,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>LLMTime</strong> · NeurIPS 2023 · <a href="https://arxiv.org/abs/2310.07820">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/llmtime.webp" class="img-fluid" loading="lazy" alt="A language model completes a sentence and, below it, a string of numbers that is a forecast. Two small plots on the right show results."></p>
 <p><span class="k idea">idea</span> → <span class="k pay">payoff</span> <span class="meta">· strip · page 2, full width</span></p>
+<p><span class="cap">Its caption opens: “We propose LLMTime, a method for time series forecasting with large language models (LLMs) by encoding numbers as text and sampling possible extrapolations as text completions.”</span></p>
 <p>Text above, numbers below, the same model between. The analogy is the idea, and two small plots pay it off.</p>
 <p><strong>Borrow:</strong> For “treat X as Y”, draw X and Y in parallel.</p>
 <p><span class="meta">Figure 1, Gruver et al.&nbsp;© the authors.</span></p>
@@ -387,6 +401,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>3D Gaussian Splatting</strong> · SIGGRAPH 2023 · <a href="https://arxiv.org/abs/2308.04079">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/3dgs.webp" class="img-fluid" loading="lazy" alt="Six crops of one bicycle wheel: three earlier methods, the paper's method twice, and ground truth. Each carries its frame rate, training time and PSNR."></p>
 <p><span class="k prob">problem</span> → <span class="k pay">payoff</span> <span class="meta">· comparison row · page 1, full width</span></p>
+<p><span class="cap">Its caption opens: “Our method achieves real-time rendering of radiance fields with quality that equals the previous method with the best quality …”</span></p>
 <p>One scene for every method, with speed, training time and quality printed on each image.</p>
 <p><strong>Borrow:</strong> Put the numbers on the picture, and include the ground truth.</p>
 <p><span class="meta">Figure 1, Kerbl et al.&nbsp;CC BY 4.0.</span></p>
@@ -395,6 +410,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>EfficientNet</strong> · ICML 2019 · <a href="https://arxiv.org/abs/1905.11946">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/efficientnet.webp" class="img-fluid" loading="lazy" alt="Accuracy against number of parameters. A red line of EfficientNet models rises above dashed lines of other named models."></p>
 <p><span class="k pay">payoff</span> <span class="meta">· plot · page 1, one column</span></p>
+<p><span class="cap">Its caption opens: “Model Size vs.&nbsp;ImageNet Accuracy.”</span></p>
 <p>The claim is a trade-off, so the figure is the trade-off: one red line above every named rival.</p>
 <p><strong>Borrow:</strong> Plot accuracy against cost, and label the points directly.</p>
 <p><span class="meta">Figure 1, Tan and Le. From the authors’ repository, Apache 2.0 licence.</span></p>
@@ -403,6 +419,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>CycleGAN</strong> · ICCV 2017 · <a href="https://arxiv.org/abs/1703.10593">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/cyclegan.webp" class="img-fluid" loading="lazy" alt="Image pairs translated both ways: Monet and photos, zebras and horses, summer and winter. Below, one photo in four painters' styles."></p>
 <p><span class="k pay">payoff</span> <span class="meta">· gallery · page 1, full width</span></p>
+<p><span class="cap">Its caption opens: “Given any two unordered image collections X and Y, our algorithm learns to automatically “translate” an image from one into the other and vice versa …”</span></p>
 <p>Examples anyone can judge in a second, and a two-way arrow for the method’s key property.</p>
 <p><strong>Borrow:</strong> Choose examples a stranger can judge.</p>
 <p><span class="meta">Figure 1, Zhu et al.&nbsp;© the authors.</span></p>
@@ -411,6 +428,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>pix2pix</strong> · CVPR 2017 · <a href="https://arxiv.org/abs/1611.07004">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/pix2pix.webp" class="img-fluid" loading="lazy" alt="Six input and output pairs: labels to street scene, labels to facade, black-and-white to colour, aerial to map, day to night, edges to photo."></p>
 <p><span class="k pay">payoff</span> <span class="meta">· gallery · page 1, full width</span></p>
+<p><span class="cap">Its caption opens: “Many problems in image processing, graphics, and vision involve translating an input image into a corresponding output image.”</span></p>
 <p>Six problems solved the same way, each as an input and an output under a two-word title.</p>
 <p><strong>Borrow:</strong> For breadth, repeat one small unit.</p>
 <p><span class="meta">Figure 1, Isola et al.&nbsp;© the authors.</span></p>
@@ -419,6 +437,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>DINO</strong> · ICCV 2021 · <a href="https://arxiv.org/abs/2104.14294">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/dino.webp" class="img-fluid" loading="lazy" alt="Eight photos, each beside an attention map in which the main object glows."></p>
 <p><span class="k pay">payoff</span> <span class="meta">· gallery · page 1, full width</span></p>
+<p><span class="cap">Its caption opens: “Self-attention from a Vision Transformer with 8 × 8 patches trained with no supervision.”</span></p>
 <p>The finding is a surprise, so the figure shows only the surprise: objects light up without any labels.</p>
 <p><strong>Borrow:</strong> Show the unexpected behaviour on many inputs.</p>
 <p><span class="meta">Figure 1, Caron et al.&nbsp;CC BY 4.0.</span></p>
@@ -427,6 +446,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>ImageBind</strong> · CVPR 2023 · <a href="https://arxiv.org/abs/2305.05665">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/imagebind.webp" class="img-fluid" loading="lazy" alt="Three numbered boxes: a sound retrieves images, depth and text; a bird photo plus wave sounds gives birds in water; sounds generate images."></p>
 <p><span class="k pay">payoff</span> <span class="meta">· gallery · page 1, full width</span></p>
+<p><span class="cap">Its caption opens: “ImageBind’s joint embedding space enables novel multimodal capabilities.”</span></p>
 <p>Three new abilities in three numbered boxes, shown before the model is explained.</p>
 <p><strong>Borrow:</strong> Give each new ability a box and a three-word title.</p>
 <p><span class="meta">Figure 1, Girdhar et al.&nbsp;© the authors.</span></p>
@@ -435,6 +455,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>GeoChat</strong> · CVPR 2024 · <a href="https://arxiv.org/abs/2311.15826">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/geochat.webp" class="img-fluid" loading="lazy" alt="One aerial image in the centre with six dialogue boxes around it, each a different task."></p>
 <p><span class="k pay">payoff</span> <span class="meta">· hub · page 1, one column</span></p>
+<p><span class="cap">Its caption opens: “GeoChat can accomplish multiple tasks for remote-sensing (RS) image comprehension in a unified framework.”</span></p>
 <p>One aerial image with six tasks around it. Colours tie each answer to its region.</p>
 <p><strong>Borrow:</strong> Hold the input fixed, and vary the question. <strong>Watch out:</strong> Dense at column width.</p>
 <p><span class="meta">Figure 1, Kuckreja et al.&nbsp;CC BY 4.0.</span></p>
@@ -449,6 +470,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>Segment Anything</strong> · ICCV 2023 · <a href="https://arxiv.org/abs/2304.02643">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/sam.webp" class="img-fluid" loading="lazy" alt="Three panels labelled task, model and data: promptable segmentation, the model's three parts, and a data loop giving one billion masks."></p>
 <p><span class="k scope">scope</span> <span class="meta">· triptych · page 1, full width</span></p>
+<p><span class="cap">Its caption opens: “We aim to build a foundation model for segmentation by introducing three interconnected components …”</span></p>
 <p>Three contributions, three panels, and the same three names as the introduction.</p>
 <p><strong>Borrow:</strong> Give each contribution a panel, with matching words.</p>
 <p><span class="meta">Figure 1, Kirillov et al.&nbsp;© the authors.</span></p>
@@ -457,6 +479,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>SatlasPretrain</strong> · ICCV 2023 · <a href="https://arxiv.org/abs/2211.15660">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/satlas.webp" class="img-fluid" loading="lazy" alt="A globe with arrows to real satellite tiles for deforestation, wind turbines, floods, vessels and more, and a box of key statistics."></p>
 <p><span class="k scope">scope</span> → <span class="k pay">payoff</span> <span class="meta">· hub · page 1, full width</span></p>
+<p><span class="cap">Its caption opens: “SatlasPretrain is a large-scale remote sensing dataset.”</span></p>
 <p>A globe for coverage, real tiles named by their use, and the counts in one box.</p>
 <p><strong>Borrow:</strong> For a dataset: real samples, real uses, three or four counts.</p>
 <p><span class="meta">Figure 1, Bastani et al.&nbsp;CC BY 4.0.</span></p>
@@ -465,6 +488,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>SWE-bench</strong> · ICLR 2024 · <a href="https://arxiv.org/abs/2310.06770">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/swebench.webp" class="img-fluid" loading="lazy" alt="A GitHub issue and codebase, a language model that writes a pull request, and unit tests that fail before and pass after."></p>
 <p><span class="k scope">scope</span> → <span class="k pay">payoff</span> <span class="meta">· strip · page 1, full width</span></p>
+<p><span class="cap">Its caption opens: “SWE-bench sources task instances from real-world Python repositories by connecting GitHub issues to merged pull request solutions that resolve related tests.”</span></p>
 <p>It follows one real issue from input to score, so the task and the metric are learnt together.</p>
 <p><strong>Borrow:</strong> For a benchmark, show one item end to end.</p>
 <p><span class="meta">Figure 1, Jimenez et al.&nbsp;CC BY 4.0.</span></p>
@@ -473,6 +497,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>SustainBench</strong> · NeurIPS 2021 · <a href="https://arxiv.org/abs/2111.04724">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/sustainbench.webp" class="img-fluid" loading="lazy" alt="Coloured blocks, one per Sustainable Development Goal, each listing tasks with an input image, an output image and a count of examples."></p>
 <p><span class="k scope">scope</span> <span class="meta">· gallery · page 2, one column</span></p>
+<p><span class="cap">Its caption opens: “Datasets and tasks included in SustainBench ranging from poverty prediction to land cover classification …”</span></p>
 <p>Fifteen tasks, grouped and coloured by the goal each serves, each with its input, output and size.</p>
 <p><strong>Borrow:</strong> Group many items by something the reader cares about. <strong>Watch out:</strong> Near the limit for one figure.</p>
 <p><span class="meta">Figure 1, Yeh et al.&nbsp;© the authors.</span></p>
@@ -481,6 +506,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>CheXpert</strong> · AAAI 2019 · <a href="https://arxiv.org/abs/1901.07031">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/chexpert.webp" class="img-fluid" loading="lazy" alt="Two chest X-rays feed a model, which gives a probability for each of 14 findings."></p>
 <p><span class="k scope">scope</span> → <span class="k pay">payoff</span> <span class="meta">· strip · page 1, one column</span></p>
+<p><span class="cap">Its caption opens: “The CheXpert task is to predict the probability of different observations from multi-view chest radiographs.”</span></p>
 <p>One real case defines the task: these X-rays in, these fourteen probabilities out.</p>
 <p><strong>Borrow:</strong> Show one real input and its full output.</p>
 <p><span class="meta">Figure 1, Irvin et al.&nbsp;CC BY 4.0.</span></p>
@@ -489,6 +515,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <p><span class="hd"><strong>BLINK</strong> · ECCV 2024 · <a href="https://arxiv.org/abs/2404.12390">paper</a></span></p>
 <p><img src="../images/handbook/writing-papers/hero/blink.webp" class="img-fluid" loading="lazy" alt="Ten sample tasks around the BLINK logo, each an image with marked points and a one-line question."></p>
 <p><span class="k scope">scope</span> <span class="meta">· hub · page 1, full width</span></p>
+<p><span class="cap">Its caption opens: “The Blink Benchmark.”</span></p>
 <p>Each task is an image and a question that the reader can try, which shows they are easy for people.</p>
 <p><strong>Borrow:</strong> Let the reader attempt a sample. <strong>Watch out:</strong> Very small in print.</p>
 <p><span class="meta">Figure 1, Fu et al.&nbsp;CC BY-NC-SA 4.0.</span></p>
@@ -502,6 +529,7 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
 <li><strong>Real data.</strong> 20 of 24 are built from real images, series or text, not icons.</li>
 <li><strong>Few parts.</strong> Most have two to four groups. A gallery repeats one small unit.</li>
 <li><strong>Rarely an architecture.</strong> Only MAE calls itself one, and it has five elements.</li>
+<li><strong>Captions differ.</strong> 7 of 24 open with a label, such as “Our MAE architecture.” The strongest open with the claim itself, as Chain-of-Thought, DINO and ImageBind do.</li>
 <li><strong>Few numbers.</strong> Only 5 carry a measured result. The rest show outputs that anyone can judge by eye. A forecast or a temperature cannot be judged by eye, so <strong>our figures need the number</strong>.</li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
