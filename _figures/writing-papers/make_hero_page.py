@@ -133,6 +133,35 @@ add("blink", "BLINK", "ECCV 2024", "2404.12390", "hub", 1, True, "yes", "none", 
     "Ten sample tasks around the BLINK logo, each an image with marked points and a one-line question.", "Fu et al. CC BY-NC-SA 4.0",
     "Very small in print.")
 
+# Opening sentence of each figure's own caption, checked against the paper. "…" marks a cut.
+CAP = {
+ "informer": "(a) LSTF can cover an extended period than the short sequence predictions, making vital distinction in policy-planning and investment-protecting.",
+ "resnet": "Training error (left) and test error (right) on CIFAR-10 with 20-layer and 56-layer “plain” networks.",
+ "cot": "Chain-of-thought prompting enables large language models to tackle complex arithmetic, commonsense, and symbolic reasoning tasks.",
+ "clip": "Summary of our approach.",
+ "mae": "Our MAE architecture.",
+ "lime": "Explaining individual predictions.",
+ "gid": "We model a generative image-space prior on scene motion: from a single RGB image, our method generates a spectral volume …",
+ "anysat": "Multi-Dataset Training.",
+ "swin": "(a) The proposed Swin Transformer builds hierarchical feature maps by merging image patches (shown in gray) in deeper layers …",
+ "yolo": "The YOLO Detection System.",
+ "llmtime": "We propose LLMTime, a method for time series forecasting with large language models (LLMs) by encoding numbers as text and sampling possible extrapolations as text completions.",
+ "3dgs": "Our method achieves real-time rendering of radiance fields with quality that equals the previous method with the best quality …",
+ "efficientnet": "Model Size vs. ImageNet Accuracy.",
+ "cyclegan": "Given any two unordered image collections X and Y, our algorithm learns to automatically “translate” an image from one into the other and vice versa …",
+ "pix2pix": "Many problems in image processing, graphics, and vision involve translating an input image into a corresponding output image.",
+ "dino": "Self-attention from a Vision Transformer with 8 × 8 patches trained with no supervision.",
+ "imagebind": "ImageBind’s joint embedding space enables novel multimodal capabilities.",
+ "geochat": "GeoChat can accomplish multiple tasks for remote-sensing (RS) image comprehension in a unified framework.",
+ "sam": "We aim to build a foundation model for segmentation by introducing three interconnected components …",
+ "satlas": "SatlasPretrain is a large-scale remote sensing dataset.",
+ "swebench": "SWE-bench sources task instances from real-world Python repositories by connecting GitHub issues to merged pull request solutions that resolve related tests.",
+ "sustainbench": "Datasets and tasks included in SustainBench ranging from poverty prediction to land cover classification …",
+ "chexpert": "The CheXpert task is to predict the probability of different observations from multi-view chest radiographs.",
+ "blink": "The Blink Benchmark.",
+}
+assert set(CAP) == {e["key"] for e in E}
+labels = sum(len(CAP[e["key"]].split()) <= 5 for e in E)
 N = len(E)
 assert N == 24
 order = list(GROUPS)
@@ -157,8 +186,11 @@ CSS = '''```{=html}
 .hf.prob { border-color: var(--muted); } .hf.idea { border-color: var(--accent); } .hf.pay { border-color: var(--ok); } .hf.scope { border-color: var(--ink); }
 .hf p { margin: 0 0 .35rem; font-size: .93rem; line-height: 1.45; }
 .hf .hd { font-size: 1rem; }
+.hf .cap { display: block; font-size: .82rem; font-style: italic; color: var(--muted); margin: .1rem 0 .4rem; }
 .hf .meta, .hf-note { font-size: .76rem; color: var(--muted); }
 .hf img { display: block; width: 100%; background: #fff; border: 1px solid var(--rule); margin: .45rem 0 .5rem; }
+/* Dark mode: never invert. The figures hold photos, and their colours carry meaning. Only soften the white. */
+body.quarto-dark .hf img { filter: brightness(.88); }
 .hf-scroll { overflow-x: auto; }
 .hf-scroll table { font-size: .8rem; min-width: 640px; }
 @media (max-width: 760px) { .hf-grid { grid-template-columns: 1fr; } }
@@ -181,7 +213,7 @@ The hero figure is Figure 1: the picture a reviewer sees before reading the intr
 2. [Idea]{{.k .idea}} What is the one thing that changes that?
 3. [Payoff]{{.k .pay}} What becomes possible, and by how much?
 
-It is a visual abstract, not the architecture diagram. This page shows {N} first figures from ICML, NeurIPS, ICLR, CVPR, ICCV, ECCV, KDD, AAAI and SIGGRAPH, and what to borrow from each. It is part of [Writing Papers](writing-papers.qmd#hero-figures).
+It is a visual abstract, not the architecture diagram: for that, see [Making method figures](method-figures.qmd). This page shows {N} first figures from ICML, NeurIPS, ICLR, CVPR, ICCV, ECCV, KDD, AAAI and SIGGRAPH, and what to borrow from each. It is part of [Writing Papers](writing-papers.qmd#hero-figures).
 
 ## Choose what leads
 
@@ -212,6 +244,7 @@ for g, (title, when) in GROUPS.items():
         P(f"[**{e['name']}** · {e['venue']} · [paper](https://arxiv.org/abs/{e['arxiv']})]{{.hd}}\n")
         P(f"![]({IMG}{e['key']}.webp){{fig-alt=\"{e['alt']}\" loading=\"lazy\"}}\n")
         P(f"{flow} [· {e['layout']} · page {e['page']}, {col}]{{.meta}}\n")
+        P(f"[Its caption opens: “{CAP[e['key']]}”]{{.cap}}\n")
         P(f"{e['why']}\n")
         P(f"**Borrow:** {e['borrow']}{watch}\n")
         P(f"[Figure 1, {e['credit']}.]{{.meta}}")
@@ -224,6 +257,7 @@ P(f"""## What the {N} have in common
 - **Real data.** {real} of {N} are built from real images, series or text, not icons.
 - **Few parts.** Most have two to four groups. A gallery repeats one small unit.
 - **Rarely an architecture.** Only MAE calls itself one, and it has five elements.
+- **Captions differ.** {labels} of {N} open with a label, such as "Our MAE architecture." The strongest open with the claim itself, as Chain-of-Thought, DINO and ImageBind do.
 - **Few numbers.** Only {result} carry a measured result. The rest show outputs that anyone can judge by eye. A forecast or a temperature cannot be judged by eye, so **our figures need the number**.
 
 ::: {{.callout-note collapse="true"}}

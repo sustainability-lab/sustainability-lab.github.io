@@ -15,8 +15,11 @@ toc: true
 .hf.prob { border-color: var(--muted); } .hf.idea { border-color: var(--accent); } .hf.pay { border-color: var(--ok); } .hf.scope { border-color: var(--ink); }
 .hf p { margin: 0 0 .35rem; font-size: .93rem; line-height: 1.45; }
 .hf .hd { font-size: 1rem; }
+.hf .cap { display: block; font-size: .82rem; font-style: italic; color: var(--muted); margin: .1rem 0 .4rem; }
 .hf .meta, .hf-note { font-size: .76rem; color: var(--muted); }
 .hf img { display: block; width: 100%; background: #fff; border: 1px solid var(--rule); margin: .45rem 0 .5rem; }
+/* Dark mode: never invert. The figures hold photos, and their colours carry meaning. Only soften the white. */
+body.quarto-dark .hf img { filter: brightness(.88); }
 .hf-scroll { overflow-x: auto; }
 .hf-scroll table { font-size: .8rem; min-width: 640px; }
 @media (max-width: 760px) { .hf-grid { grid-template-columns: 1fr; } }
@@ -29,7 +32,7 @@ The hero figure is Figure 1: the picture a reviewer sees before reading the intr
 2. [Idea]{.k .idea} What is the one thing that changes that?
 3. [Payoff]{.k .pay} What becomes possible, and by how much?
 
-It is a visual abstract, not the architecture diagram. This page shows 24 first figures from ICML, NeurIPS, ICLR, CVPR, ICCV, ECCV, KDD, AAAI and SIGGRAPH, and what to borrow from each. It is part of [Writing Papers](writing-papers.qmd#hero-figures).
+It is a visual abstract, not the architecture diagram: for that, see [Making method figures](method-figures.qmd). This page shows 24 first figures from ICML, NeurIPS, ICLR, CVPR, ICCV, ECCV, KDD, AAAI and SIGGRAPH, and what to borrow from each. It is part of [Writing Papers](writing-papers.qmd#hero-figures).
 
 ## Choose what leads
 
@@ -60,6 +63,8 @@ Use this when the gap itself is your news.
 
 [problem]{.k .prob} [· plot · page 1, one column]{.meta}
 
+[Its caption opens: “(a) LSTF can cover an extended period than the short sequence predictions, making vital distinction in policy-planning and investment-protecting.”]{.cap}
+
 It measures an existing model breaking as the forecast gets longer. The new method is not even shown.
 
 **Borrow:** If a reader may doubt the gap, plot the baseline failing.
@@ -73,6 +78,8 @@ It measures an existing model breaking as the forecast gets longer. The new meth
 
 [problem]{.k .prob} [· plot · page 1, one column]{.meta}
 
+[Its caption opens: “Training error (left) and test error (right) on CIFAR-10 with 20-layer and 56-layer “plain” networks.”]{.cap}
+
 Two lines per plot, named on the lines. The deeper network is worse, which nobody expects.
 
 **Borrow:** A surprising measurement is a complete Figure 1.
@@ -85,6 +92,8 @@ Two lines per plot, named on the lines. The deeper network is worse, which nobod
 ![](../images/handbook/writing-papers/hero/cot.webp){fig-alt="Two columns. Standard prompting gives a wrong answer with a red cross. Chain-of-thought prompting, with highlighted reasoning, gives the right answer with a tick." loading="lazy"}
 
 [problem]{.k .prob} → [idea]{.k .idea} → [payoff]{.k .pay} [· contrast pair · page 1, full width]{.meta}
+
+[Its caption opens: “Chain-of-thought prompting enables large language models to tackle complex arithmetic, commonsense, and symbolic reasoning tasks.”]{.cap}
 
 The two columns are identical except for the highlighted text, so the eye lands on the idea. ✗ becomes ✓.
 
@@ -106,6 +115,8 @@ Use this when one idea carries the paper.
 
 [idea]{.k .idea} → [payoff]{.k .pay} [· strip · page 2, full width]{.meta}
 
+[Its caption opens: “Summary of our approach.”]{.cap}
+
 Three numbered panels show how the model is trained, and then how it is used.
 
 **Borrow:** Number the panels, and end on the use.
@@ -118,6 +129,8 @@ Three numbered panels show how the model is trained, and then how it is used.
 ![](../images/handbook/writing-papers/hero/mae.webp){fig-alt="A flamingo photo with most patches masked; the visible patches enter a large encoder; a small decoder rebuilds the full image." loading="lazy"}
 
 [idea]{.k .idea} → [payoff]{.k .pay} [· strip · page 1, one column]{.meta}
+
+[Its caption opens: “Our MAE architecture.”]{.cap}
 
 An architecture with five elements and one real image. The big encoder takes few patches; the small decoder takes all.
 
@@ -132,6 +145,8 @@ An architecture with five elements and one real image. The big encoder takes few
 
 [problem]{.k .prob} → [idea]{.k .idea} → [payoff]{.k .pay} [· strip · page 2, full width]{.meta}
 
+[Its caption opens: “Explaining individual predictions.”]{.cap}
+
 One patient tells the whole method, and the figure ends at the doctor who decides.
 
 **Borrow:** End at the person who uses the output. **Watch out:** Generic icons. Use a real case today.
@@ -144,6 +159,8 @@ One patient tells the whole method, and the figure ends at the doctor who decide
 ![](../images/handbook/writing-papers/hero/gid.webp){fig-alt="A photo of a rose, then colourful motion maps at several frequencies, then a looping video and interactive dynamics shown as time slices." loading="lazy"}
 
 [idea]{.k .idea} → [payoff]{.k .pay} [· strip · page 1, full width]{.meta}
+
+[Its caption opens: “We model a generative image-space prior on scene motion: from a single RGB image, our method generates a spectral volume …”]{.cap}
 
 The middle panel shows what the new representation looks like, where most papers put a labelled box.
 
@@ -158,6 +175,8 @@ The middle panel shows what the new representation looks like, where most papers
 
 [problem]{.k .prob} → [idea]{.k .idea} → [payoff]{.k .pay} [· funnel · page 1, one column]{.meta}
 
+[Its caption opens: “Multi-Dataset Training.”]{.cap}
+
 Many real inputs, one model, many real outputs. The shape is the claim.
 
 **Borrow:** For generality, draw the funnel and fill both ends with real samples.
@@ -170,6 +189,8 @@ Many real inputs, one model, many real outputs. The shape is the claim.
 ![](../images/handbook/writing-papers/hero/swin.webp){fig-alt="Two stacks of feature maps. Swin has three scales and serves classification, detection and segmentation. ViT has one scale and serves classification only." loading="lazy"}
 
 [idea]{.k .idea} → [problem]{.k .prob} [· contrast pair · page 1, one column]{.meta}
+
+[Its caption opens: “(a) The proposed Swin Transformer builds hierarchical feature maps by merging image patches (shown in gray) in deeper layers …”]{.cap}
 
 Ours and the nearest baseline are drawn with the same shapes, so the only difference is the contribution.
 
@@ -184,6 +205,8 @@ Ours and the nearest baseline are drawn with the same shapes, so the only differ
 
 [idea]{.k .idea} → [payoff]{.k .pay} [· strip · page 1, one column]{.meta}
 
+[Its caption opens: “The YOLO Detection System.”]{.cap}
+
 The claim is simplicity, and the figure is one photo, one network and three steps.
 
 **Borrow:** If simplicity is the point, stop at three parts. **Watch out:** Tiny in print.
@@ -196,6 +219,8 @@ The claim is simplicity, and the figure is one photo, one network and three step
 ![](../images/handbook/writing-papers/hero/llmtime.webp){fig-alt="A language model completes a sentence and, below it, a string of numbers that is a forecast. Two small plots on the right show results." loading="lazy"}
 
 [idea]{.k .idea} → [payoff]{.k .pay} [· strip · page 2, full width]{.meta}
+
+[Its caption opens: “We propose LLMTime, a method for time series forecasting with large language models (LLMs) by encoding numbers as text and sampling possible extrapolations as text completions.”]{.cap}
 
 Text above, numbers below, the same model between. The analogy is the idea, and two small plots pay it off.
 
@@ -217,6 +242,8 @@ Use this when the result speaks for itself: a new ability, or a clear win.
 
 [problem]{.k .prob} → [payoff]{.k .pay} [· comparison row · page 1, full width]{.meta}
 
+[Its caption opens: “Our method achieves real-time rendering of radiance fields with quality that equals the previous method with the best quality …”]{.cap}
+
 One scene for every method, with speed, training time and quality printed on each image.
 
 **Borrow:** Put the numbers on the picture, and include the ground truth.
@@ -229,6 +256,8 @@ One scene for every method, with speed, training time and quality printed on eac
 ![](../images/handbook/writing-papers/hero/efficientnet.webp){fig-alt="Accuracy against number of parameters. A red line of EfficientNet models rises above dashed lines of other named models." loading="lazy"}
 
 [payoff]{.k .pay} [· plot · page 1, one column]{.meta}
+
+[Its caption opens: “Model Size vs. ImageNet Accuracy.”]{.cap}
 
 The claim is a trade-off, so the figure is the trade-off: one red line above every named rival.
 
@@ -243,6 +272,8 @@ The claim is a trade-off, so the figure is the trade-off: one red line above eve
 
 [payoff]{.k .pay} [· gallery · page 1, full width]{.meta}
 
+[Its caption opens: “Given any two unordered image collections X and Y, our algorithm learns to automatically “translate” an image from one into the other and vice versa …”]{.cap}
+
 Examples anyone can judge in a second, and a two-way arrow for the method's key property.
 
 **Borrow:** Choose examples a stranger can judge.
@@ -255,6 +286,8 @@ Examples anyone can judge in a second, and a two-way arrow for the method's key 
 ![](../images/handbook/writing-papers/hero/pix2pix.webp){fig-alt="Six input and output pairs: labels to street scene, labels to facade, black-and-white to colour, aerial to map, day to night, edges to photo." loading="lazy"}
 
 [payoff]{.k .pay} [· gallery · page 1, full width]{.meta}
+
+[Its caption opens: “Many problems in image processing, graphics, and vision involve translating an input image into a corresponding output image.”]{.cap}
 
 Six problems solved the same way, each as an input and an output under a two-word title.
 
@@ -269,6 +302,8 @@ Six problems solved the same way, each as an input and an output under a two-wor
 
 [payoff]{.k .pay} [· gallery · page 1, full width]{.meta}
 
+[Its caption opens: “Self-attention from a Vision Transformer with 8 × 8 patches trained with no supervision.”]{.cap}
+
 The finding is a surprise, so the figure shows only the surprise: objects light up without any labels.
 
 **Borrow:** Show the unexpected behaviour on many inputs.
@@ -282,6 +317,8 @@ The finding is a surprise, so the figure shows only the surprise: objects light 
 
 [payoff]{.k .pay} [· gallery · page 1, full width]{.meta}
 
+[Its caption opens: “ImageBind’s joint embedding space enables novel multimodal capabilities.”]{.cap}
+
 Three new abilities in three numbered boxes, shown before the model is explained.
 
 **Borrow:** Give each new ability a box and a three-word title.
@@ -294,6 +331,8 @@ Three new abilities in three numbered boxes, shown before the model is explained
 ![](../images/handbook/writing-papers/hero/geochat.webp){fig-alt="One aerial image in the centre with six dialogue boxes around it, each a different task." loading="lazy"}
 
 [payoff]{.k .pay} [· hub · page 1, one column]{.meta}
+
+[Its caption opens: “GeoChat can accomplish multiple tasks for remote-sensing (RS) image comprehension in a unified framework.”]{.cap}
 
 One aerial image with six tasks around it. Colours tie each answer to its region.
 
@@ -315,6 +354,8 @@ Use this for datasets, benchmarks and papers with several contributions.
 
 [scope]{.k .scope} [· triptych · page 1, full width]{.meta}
 
+[Its caption opens: “We aim to build a foundation model for segmentation by introducing three interconnected components …”]{.cap}
+
 Three contributions, three panels, and the same three names as the introduction.
 
 **Borrow:** Give each contribution a panel, with matching words.
@@ -327,6 +368,8 @@ Three contributions, three panels, and the same three names as the introduction.
 ![](../images/handbook/writing-papers/hero/satlas.webp){fig-alt="A globe with arrows to real satellite tiles for deforestation, wind turbines, floods, vessels and more, and a box of key statistics." loading="lazy"}
 
 [scope]{.k .scope} → [payoff]{.k .pay} [· hub · page 1, full width]{.meta}
+
+[Its caption opens: “SatlasPretrain is a large-scale remote sensing dataset.”]{.cap}
 
 A globe for coverage, real tiles named by their use, and the counts in one box.
 
@@ -341,6 +384,8 @@ A globe for coverage, real tiles named by their use, and the counts in one box.
 
 [scope]{.k .scope} → [payoff]{.k .pay} [· strip · page 1, full width]{.meta}
 
+[Its caption opens: “SWE-bench sources task instances from real-world Python repositories by connecting GitHub issues to merged pull request solutions that resolve related tests.”]{.cap}
+
 It follows one real issue from input to score, so the task and the metric are learnt together.
 
 **Borrow:** For a benchmark, show one item end to end.
@@ -353,6 +398,8 @@ It follows one real issue from input to score, so the task and the metric are le
 ![](../images/handbook/writing-papers/hero/sustainbench.webp){fig-alt="Coloured blocks, one per Sustainable Development Goal, each listing tasks with an input image, an output image and a count of examples." loading="lazy"}
 
 [scope]{.k .scope} [· gallery · page 2, one column]{.meta}
+
+[Its caption opens: “Datasets and tasks included in SustainBench ranging from poverty prediction to land cover classification …”]{.cap}
 
 Fifteen tasks, grouped and coloured by the goal each serves, each with its input, output and size.
 
@@ -367,6 +414,8 @@ Fifteen tasks, grouped and coloured by the goal each serves, each with its input
 
 [scope]{.k .scope} → [payoff]{.k .pay} [· strip · page 1, one column]{.meta}
 
+[Its caption opens: “The CheXpert task is to predict the probability of different observations from multi-view chest radiographs.”]{.cap}
+
 One real case defines the task: these X-rays in, these fourteen probabilities out.
 
 **Borrow:** Show one real input and its full output.
@@ -379,6 +428,8 @@ One real case defines the task: these X-rays in, these fourteen probabilities ou
 ![](../images/handbook/writing-papers/hero/blink.webp){fig-alt="Ten sample tasks around the BLINK logo, each an image with marked points and a one-line question." loading="lazy"}
 
 [scope]{.k .scope} [· hub · page 1, full width]{.meta}
+
+[Its caption opens: “The Blink Benchmark.”]{.cap}
 
 Each task is an image and a question that the reader can try, which shows they are easy for people.
 
@@ -394,6 +445,7 @@ Each task is an image and a question that the reader can try, which shows they a
 - **Real data.** 20 of 24 are built from real images, series or text, not icons.
 - **Few parts.** Most have two to four groups. A gallery repeats one small unit.
 - **Rarely an architecture.** Only MAE calls itself one, and it has five elements.
+- **Captions differ.** 7 of 24 open with a label, such as "Our MAE architecture." The strongest open with the claim itself, as Chain-of-Thought, DINO and ImageBind do.
 - **Few numbers.** Only 5 carry a measured result. The rest show outputs that anyone can judge by eye. A forecast or a temperature cannot be judged by eye, so **our figures need the number**.
 
 ::: {.callout-note collapse="true"}

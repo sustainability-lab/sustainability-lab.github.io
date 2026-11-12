@@ -632,6 +632,8 @@ More rules for the method:
 - **Keep notation clean.** Never use one symbol for two things.
 - **Verify every toy number in code** before it goes into the paper.
 
+**Draw the method.** The method figure answers *how does it work?*, and it is a separate figure from the hero figure. [Making method figures](method-figures.qmd) shows 28 of them from top papers, grouped by the question each one answers.
+
 ## Evaluation
 
 Call the section *Evaluation*, and make it **question-driven**. A model I like is the evaluation of [Gemello (KDD 2016)](https://www.kdd.org/kdd2016/papers/files/adp1036-batraA.pdf). The reader can predict its skeleton: data, baselines, metric, then one experiment per question.
@@ -1163,7 +1165,7 @@ The phone's microphone, not the bird, causes the drop. Undo the microphone first
 
 Every box in the first strip is true. None of them says what is hard, what is new or what is gained. The second strip is a plan in words: each panel still has to become a picture, built from one real example.
 
-**[Making hero figures](hero-figures.qmd)** shows the first figures of 24 papers from top venues, what each one does well, and how to choose what yours should lead with.
+**[Making hero figures](hero-figures.qmd)** shows the first figures of 24 papers from top venues, what each one does well, and how to choose what yours should lead with. The figure that explains the method is a separate one: see [Making method figures](method-figures.qmd).
 
 ## Figures
 
