@@ -282,6 +282,27 @@ try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quart
   }).catch(() => {});
 })();
 </script>
+<script>
+// Photo lightbox. Quarto's `lightbox: true` only wires up images written in
+// Markdown; ours come from listing templates (_templates/*.ejs) as raw HTML,
+// so load GLightbox ourselves on any page that has an a.lightbox link.
+// Gives a close button, previous/next arrows, Esc and arrow keys, and swipe.
+(() => {
+  if (!document.querySelector('a.lightbox') || window.GLightbox) return;
+  const base = '/theme/vendor/glightbox/';
+  const css = document.createElement('link');
+  css.rel = 'stylesheet'; css.href = base + 'glightbox.min.css';
+  document.head.appendChild(css);
+  const js = document.createElement('script');
+  js.src = base + 'glightbox.min.js';
+  js.onload = () => GLightbox({
+    selector: 'a.lightbox', loop: true, touchNavigation: true,
+    closeOnOutsideClick: true, zoomable: true, draggable: true,
+    descPosition: 'bottom', moreLength: 0
+  });
+  document.head.appendChild(js);
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
