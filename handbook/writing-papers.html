@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="How we write papers in the lab: structure, abstract, introduction, related work, method, evaluation, figures, tables and sentences. Every rule has a worked example, and the whole guide also ships as an AI-agent skill.">
+<meta name="description" content="How we write papers in the lab: structure, abstract, introduction, related work, method, evaluation, hero figures, figures, tables and sentences. Every rule has a worked example, and the whole guide also ships as an AI-agent skill.">
 
 <title>Sustainability Lab - Writing Papers</title>
 <style>
@@ -144,13 +144,13 @@ window.Quarto = {
 </script>
 
 <meta property="og:title" content="Sustainability Lab - Writing Papers">
-<meta property="og:description" content="How we write papers in the lab: structure, abstract, introduction, related work, method, evaluation, figures, tables and sentences. Every rule has a worked example, and the whole guide also ships as an AI-agent skill.">
+<meta property="og:description" content="How we write papers in the lab: structure, abstract, introduction, related work, method, evaluation, hero figures, figures, tables and sentences. Every rule has a worked example, and the whole guide also ships as an AI-agent skill.">
 <meta property="og:image" content="https://sustainability-lab.github.io/images/logo.png">
 <meta property="og:site_name" content="Sustainability Lab">
 <meta property="og:image:height" content="612">
 <meta property="og:image:width" content="2000">
 <meta name="twitter:title" content="Sustainability Lab - Writing Papers">
-<meta name="twitter:description" content="How we write papers in the lab: structure, abstract, introduction, related work, method, evaluation, figures, tables and sentences. Every rule has a worked example, and the whole guide also ships as an AI-agent skill.">
+<meta name="twitter:description" content="How we write papers in the lab: structure, abstract, introduction, related work, method, evaluation, hero figures, figures, tables and sentences. Every rule has a worked example, and the whole guide also ships as an AI-agent skill.">
 <meta name="twitter:image" content="https://sustainability-lab.github.io/images/logo.png">
 <meta name="twitter:creator" content="@nipun_batra">
 <meta name="twitter:card" content="summary_large_image">
@@ -242,6 +242,7 @@ window.Quarto = {
   <li><a href="#numbers-and-terms" id="toc-numbers-and-terms" class="nav-link" data-scroll-target="#numbers-and-terms">Numbers and terms</a></li>
   <li><a href="#american-and-british-english" id="toc-american-and-british-english" class="nav-link" data-scroll-target="#american-and-british-english">American and British English</a></li>
   </ul></li>
+  <li><a href="#hero-figures" id="toc-hero-figures" class="nav-link" data-scroll-target="#hero-figures">Hero figure</a></li>
   <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures">Figures</a>
   <ul class="collapse">
   <li><a href="#one-message-and-a-self-contained-caption" id="toc-one-message-and-a-self-contained-caption" class="nav-link" data-scroll-target="#one-message-and-a-self-contained-caption">One message, and a self-contained caption</a></li>
@@ -273,7 +274,7 @@ window.Quarto = {
 
 <div>
   <div class="description">
-    How we write papers in the lab: structure, abstract, introduction, related work, method, evaluation, figures, tables and sentences. Every rule has a worked example, and the whole guide also ships as an AI-agent skill.
+    How we write papers in the lab: structure, abstract, introduction, related work, method, evaluation, hero figures, figures, tables and sentences. Every rule has a worked example, and the whole guide also ships as an AI-agent skill.
   </div>
 </div>
 
@@ -334,6 +335,22 @@ pre.sourceCode code span.kw, pre.sourceCode code span.fu, pre.sourceCode code sp
 pre.sourceCode code span.st, pre.sourceCode code span.ss { color: #e2a07c !important; }
 pre.sourceCode code span.dv, pre.sourceCode code span.fl { color: #b8d7a3 !important; }
 .wp-abs td:nth-child(3) { min-width: 55%; }
+/* Hero figure sketches: a strip of panels, each labelled by the question it answers. (No child combinators: Quarto escapes them here.) */
+.hf-anat { display: flex; gap: 6px; margin: .7rem 0 1rem; }
+.hf-anat :is(.prob, .idea, .pay, .scope, .box) { flex: 1; min-width: 0; background: var(--soft); border-top: 4px solid var(--rule); padding: 8px 12px 2px; font-size: .93rem; line-height: 1.4; }
+.hf-anat :is(.prob, .idea, .pay, .scope, .box) p { margin-bottom: .5rem; }
+.hf-anat :is(.prob, .idea, .pay, .scope)::before { display: block; margin-bottom: 4px; font-weight: 700; font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; }
+.hf-anat .prob { border-color: var(--muted); } .hf-anat .prob::before { content: "Problem"; color: var(--muted); }
+.hf-anat .idea { border-color: var(--accent); } .hf-anat .idea::before { content: "Idea"; color: var(--accent); }
+.hf-anat .pay { border-color: var(--ok); } .hf-anat .pay::before { content: "Payoff"; color: var(--ok); }
+.hf-anat .scope { border-color: var(--ink); } .hf-anat .scope::before { content: "Scope"; color: var(--ink); }
+.hf-sketch em { color: var(--muted); font-size: .86rem; }
+.hf-before { align-items: center; gap: 0; margin-bottom: .3rem; }
+.hf-before::before { content: "✗  First draft"; flex: none; margin-right: 12px; font-weight: 700; font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.hf-before .box { border: 1px solid var(--muted); background: transparent; text-align: center; padding: 8px 6px 0; font-size: .86rem; }
+.hf-before .box + .box { margin-left: 22px; position: relative; }
+.hf-before .box + .box::before { content: "→"; position: absolute; left: -19px; top: 50%; transform: translateY(-50%); color: var(--muted); }
+@media (max-width: 760px) { .hf-anat { flex-direction: column; } .hf-before { align-items: stretch; } .hf-before .box + .box { margin: 22px 0 0; } .hf-before .box + .box::before { content: "↓"; left: 50%; top: -21px; transform: translateX(-50%); } }
 </pre></style>
 <p><img src="../images/handbook/writing-papers/hero.webp" class="wp-ill img-fluid" alt="A desk seen from above: one index card with a single line, a red ink arrow to a row of short paragraph cards, and a stack of finished pages."></p>
 <p>This page sets out how we write papers in the lab. It is for students writing their first paper, for anyone reviewing a draft, and for AI agents that help with either. Writing is a skill, and like any skill it improves with <em>deliberate</em> practice. This page gives you something concrete to practise against.</p>
@@ -1729,6 +1746,169 @@ Using an AI agent?
 <p>Some spellings differ: British “colour” and “optimise” are American “color” and “optimize”. There are also a few differences in grammar. Pick one variety and stick to it. Most of our previous papers use British English, though this often depends on the co-authors.</p>
 </section>
 </section>
+<section id="hero-figures" class="level2">
+<h2 class="anchored" data-anchor-id="hero-figures">Hero figure</h2>
+<p>The hero figure is Figure 1: the picture on page 1 that a reviewer sees before reading the introduction. In about <strong>ten seconds</strong> it should answer three questions: what is the <strong>problem</strong>, what is the <strong>idea</strong>, and what is the <strong>payoff</strong>, with a number. It is a visual abstract, not the architecture diagram.</p>
+<p>The first draft of a hero figure is nearly always the pipeline. Here it is for the selected paper, and then the figure we would sketch instead.</p>
+<div class="pv" data-paper="gemello">
+<div class="hf-anat hf-before">
+<div class="box">
+<p>Monthly bills</p>
+</div>
+<div class="box">
+<p>Feature extraction</p>
+</div>
+<div class="box">
+<p>K nearest neighbours</p>
+</div>
+<div class="box">
+<p>Appliance energy</p>
+</div>
+</div>
+<div class="hf-anat hf-sketch">
+<div class="prob">
+<p>A monthly bill gives one number. A breakdown by appliance needs a meter on each appliance, or a smart meter.</p>
+<p><em>Draw: one real bill.</em></p>
+</div>
+<div class="idea">
+<p>Find the metered homes most like yours, and average what their appliances use.</p>
+<p><em>Draw: your home linked to its nearest “twins”.</em></p>
+</div>
+<div class="pay">
+<p>A breakdown from the bill alone. On HVAC it is 76% accurate, against 61% and 56% for two methods that meter each home.</p>
+<p><em>Draw: three bars.</em></p>
+</div>
+</div>
+</div>
+<div class="pv" data-paper="thermeval">
+<div class="hf-anat hf-before">
+<div class="box">
+<p>Thermal images</p>
+</div>
+<div class="box">
+<p>Question generation</p>
+</div>
+<div class="box">
+<p>25 VLMs</p>
+</div>
+<div class="box">
+<p>Scores</p>
+</div>
+</div>
+<div class="hf-anat hf-sketch">
+<div class="prob">
+<p>A thermal image stores temperature, not colour or texture. Models learned from ordinary photos.</p>
+<p><em>Draw: one scene as a photo and as a thermal image.</em></p>
+</div>
+<div class="scope">
+<p>Seven tasks, each one step closer to reading a temperature.</p>
+<p><em>Draw: one real question per task.</em></p>
+</div>
+<div class="pay">
+<p>Asked for a temperature, a model answers with a textbook body temperature. Asked who is warmer, the best model is right 74% of the time, people 84%.</p>
+<p><em>Draw: one real question, the model’s answer, the true answer.</em></p>
+</div>
+</div>
+</div>
+<div class="pv" data-paper="jouleseye">
+<div class="hf-anat hf-before">
+<div class="box">
+<p>Thermal video</p>
+</div>
+<div class="box">
+<p>Respiration detection</p>
+</div>
+<div class="box">
+<p>Modelling</p>
+</div>
+<div class="box">
+<p>Calories</p>
+</div>
+</div>
+<div class="hf-anat hf-sketch">
+<div class="prob">
+<p>A smartwatch estimates calories from heart rate. The Apple Watch’s estimate is off by 37.6%.</p>
+<p><em>Draw: the watch reading beside the calorimeter reading.</em></p>
+</div>
+<div class="idea">
+<p>Breathing tracks energy use more closely. A thermal camera sees each breath as the nostrils warm and cool.</p>
+<p><em>Draw: a photo of the rider, the thermal frame and the breathing signal.</em></p>
+</div>
+<div class="pay">
+<p>5.8% error against an indirect calorimeter.</p>
+<p><em>Draw: two bars, 37.6% and 5.8%.</em></p>
+</div>
+</div>
+</div>
+<div class="pv" data-paper="gdmi">
+<div class="hf-anat hf-before">
+<div class="box">
+<p>Sensor data</p>
+</div>
+<div class="box">
+<p>Surrogate model</p>
+</div>
+<div class="box">
+<p>Mutual information</p>
+</div>
+<div class="box">
+<p>Gradient descent</p>
+</div>
+<div class="box">
+<p>Placements</p>
+</div>
+</div>
+<div class="hf-anat hf-sketch">
+<div class="prob">
+<p>Where should the next air-quality sensors go? Greedy mutual information places them well but slowly, one sensor at a time.</p>
+<p><em>Draw: a map of India with the existing CPCB stations and the gaps.</em></p>
+</div>
+<div class="idea">
+<p>Let every new sensor slide across the map at once, by gradient descent.</p>
+<p><em>Draw: the same map, with an arrow from each start to each final location.</em></p>
+</div>
+<div class="pay">
+<p>In Madhya Pradesh, with nine new sensors, RMSE is 5.8, against 5.6 for greedy MI and 6.3 for MaxVar.</p>
+<p><em>Draw: three bars.</em></p>
+</div>
+</div>
+</div>
+<div class="pv" data-paper="kestrel">
+<div class="hf-anat hf-before">
+<div class="box">
+<p>Phone audio</p>
+</div>
+<div class="box">
+<p>Spectrogram</p>
+</div>
+<div class="box">
+<p>Encoder</p>
+</div>
+<div class="box">
+<p>Classifier</p>
+</div>
+<div class="box">
+<p>Species</p>
+</div>
+</div>
+<div class="hf-anat hf-sketch">
+<div class="prob">
+<p>A classifier trained on clean recordings drops from 91% to 54% on phone audio.</p>
+<p><em>Draw: one call as two spectrograms, studio and phone.</em></p>
+</div>
+<div class="idea">
+<p>The phone’s microphone, not the bird, causes the drop. Undo the microphone first.</p>
+<p><em>Draw: the phone spectrogram, corrected.</em></p>
+</div>
+<div class="pay">
+<p>83% on phone audio, against 61% for the best baseline. Five labelled calls for a new species, not a hundred.</p>
+<p><em>Draw: the plot of accuracy against labels.</em></p>
+</div>
+</div>
+</div>
+<p>Every box in the first strip is true. None of them says what is hard, what is new or what is gained. The second strip is a plan in words: each panel still has to become a picture, built from one real example.</p>
+<p><strong><a href="../handbook/hero-figures.html">Making hero figures</a></strong> shows the first figures of 24 papers from top venues, what each one does well, and how to choose what yours should lead with.</p>
+</section>
 <section id="figures" class="level2">
 <h2 class="anchored" data-anchor-id="figures">Figures</h2>
 <section id="one-message-and-a-self-contained-caption" class="level3">
@@ -2098,6 +2278,7 @@ Using an AI agent?
 <li><label><input type="checkbox">Background and related work are separate. Related work opens with “We now categorize”, and each family ends with how we relate.</label></li>
 <li><label><input type="checkbox">The method gives the intuition first, follows a toy example, and contains no experiment counts.</label></li>
 <li><label><input type="checkbox">The evaluation goes from questions, to setup, to answer-first results, with one headline figure.</label></li>
+<li><label><input type="checkbox">Figure 1 sits on page 1 and shows the problem, the idea and the payoff in ten seconds (<a href="../handbook/hero-figures.html#checklist">checklist</a>).</label></li>
 <li><label><input type="checkbox">Every baseline got its best chance, and no headline cell is empty.</label></li>
 <li><label><input type="checkbox">Every number in the text matches its table or figure.</label></li>
 <li><label><input type="checkbox">Every reference uses <code>\cref</code>, including references to the supplement.</label></li>

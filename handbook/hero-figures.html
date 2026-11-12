@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="What Figure 1 should show, with 24 first figures from top papers and what to borrow from each.">
+
+<title>Sustainability Lab - Making Hero Figures</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="..//images/brand/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link rel="icon" type="image/png" sizes="32x32" href="../images/brand/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../images/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#fffefa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1e1c" media="(prefers-color-scheme: dark)">
+<script>
+// Follow the OS light/dark setting until someone uses the switch (see theme/toggle.html).
+try { if (!localStorage.getItem("lab-theme-chosen")) localStorage.setItem("quarto-color-scheme", window.matchMedia("(prefers-color-scheme: dark)").matches ? "alternate" : "default"); } catch (e) {}
+</script>
+
+
+<meta property="og:title" content="Sustainability Lab - Making Hero Figures">
+<meta property="og:description" content="What Figure 1 should show, with 24 first figures from top papers and what to borrow from each.">
+<meta property="og:image" content="https://sustainability-lab.github.io/images/logo.png">
+<meta property="og:site_name" content="Sustainability Lab">
+<meta property="og:image:height" content="612">
+<meta property="og:image:width" content="2000">
+<meta name="twitter:title" content="Sustainability Lab - Making Hero Figures">
+<meta name="twitter:description" content="What Figure 1 should show, with 24 first figures from top papers and what to borrow from each.">
+<meta name="twitter:image" content="https://sustainability-lab.github.io/images/logo.png">
+<meta name="twitter:creator" content="@nipun_batra">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="612">
+<meta name="twitter:image-width" content="2000">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/brand/logo-light.svg" alt="Sustainability Lab" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../papers/index.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../people.html"> 
+<span class="menu-text">People</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../join.html"> 
+<span class="menu-text">Join</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../handbook/index.html"> 
+<span class="menu-text">Handbook</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../news.html"> 
+<span class="menu-text">News</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#choose-what-leads" id="toc-choose-what-leads" class="nav-link active" data-scroll-target="#choose-what-leads">Choose what leads</a></li>
+  <li><a href="#lead-with-the-problem" id="toc-lead-with-the-problem" class="nav-link" data-scroll-target="#lead-with-the-problem">Lead with the problem</a></li>
+  <li><a href="#lead-with-the-idea" id="toc-lead-with-the-idea" class="nav-link" data-scroll-target="#lead-with-the-idea">Lead with the idea</a></li>
+  <li><a href="#lead-with-the-payoff" id="toc-lead-with-the-payoff" class="nav-link" data-scroll-target="#lead-with-the-payoff">Lead with the payoff</a></li>
+  <li><a href="#lead-with-the-scope" id="toc-lead-with-the-scope" class="nav-link" data-scroll-target="#lead-with-the-scope">Lead with the scope</a></li>
+  <li><a href="#what-the-24-have-in-common" id="toc-what-the-24-have-in-common" class="nav-link" data-scroll-target="#what-the-24-have-in-common">What the 24 have in common</a></li>
+  <li><a href="#make-your-own" id="toc-make-your-own" class="nav-link" data-scroll-target="#make-your-own">Make your own</a></li>
+  <li><a href="#checklist" id="toc-checklist" class="nav-link" data-scroll-target="#checklist">Checklist</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Making Hero Figures</h1>
+</div>
+
+<div>
+  <div class="description">
+    What Figure 1 should show, with 24 first figures from top papers and what to borrow from each.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+/* No child combinators here: Quarto escapes them inside page styles. */
+.k { font-weight: 700; font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; }
+.k.prob { color: var(--muted); } .k.idea { color: var(--accent); } .k.pay { color: var(--ok); } .k.scope { color: var(--ink); }
+.hf-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 20px; grid-auto-flow: dense; margin: 1rem 0 2.2rem; align-items: start; }
+.hf { border-top: 3px solid var(--rule); padding-top: .6rem; min-width: 0; scroll-margin-top: 90px; }
+.hf.wide { grid-column: 1 / -1; }
+.hf.prob { border-color: var(--muted); } .hf.idea { border-color: var(--accent); } .hf.pay { border-color: var(--ok); } .hf.scope { border-color: var(--ink); }
+.hf p { margin: 0 0 .35rem; font-size: .93rem; line-height: 1.45; }
+.hf .hd { font-size: 1rem; }
+.hf .meta, .hf-note { font-size: .76rem; color: var(--muted); }
+.hf img { display: block; width: 100%; background: #fff; border: 1px solid var(--rule); margin: .45rem 0 .5rem; }
+.hf-scroll { overflow-x: auto; }
+.hf-scroll table { font-size: .8rem; min-width: 640px; }
+@media (max-width: 760px) { .hf-grid { grid-template-columns: 1fr; } }
+</style>
+<p>The hero figure is Figure 1: the picture a reviewer sees before reading the introduction. In about <strong>ten seconds</strong> it should answer three questions.</p>
+<ol type="1">
+<li><span class="k prob">Problem</span> What is hard or missing today?</li>
+<li><span class="k idea">Idea</span> What is the one thing that changes that?</li>
+<li><span class="k pay">Payoff</span> What becomes possible, and by how much?</li>
+</ol>
+<p>It is a visual abstract, not the architecture diagram. This page shows 24 first figures from ICML, NeurIPS, ICLR, CVPR, ICCV, ECCV, KDD, AAAI and SIGGRAPH, and what to borrow from each. It is part of <a href="../handbook/writing-papers.html#hero-figures">Writing Papers</a>.</p>
+<section id="choose-what-leads" class="level2">
+<h2 class="anchored" data-anchor-id="choose-what-leads">Choose what leads</h2>
+<p>Ask which sentence of the abstract a reviewer should repeat to the other reviewers. Draw that sentence.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Your main claim</th>
+<th>Lead with</th>
+<th>Layout</th>
+<th>See</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“Everyone has missed problem X.”</td>
+<td><span class="k prob">problem</span></td>
+<td>A plot of the failure</td>
+<td><a href="#informer">Informer</a>, <a href="#resnet">ResNet</a></td>
+</tr>
+<tr class="even">
+<td>“A small change to a known method matters.”</td>
+<td><span class="k idea">idea</span></td>
+<td>Old and new, side by side</td>
+<td><a href="#cot">Chain-of-Thought</a>, <a href="#swin">Swin Transformer</a></td>
+</tr>
+<tr class="odd">
+<td>“One simple idea solves X.”</td>
+<td><span class="k idea">idea</span></td>
+<td>One example in, the idea, the result out</td>
+<td><a href="#clip">CLIP</a>, <a href="#mae">MAE</a>, <a href="#lime">LIME</a>, <a href="#llmtime">LLMTime</a></td>
+</tr>
+<tr class="even">
+<td>“One method handles many settings.”</td>
+<td><span class="k idea">idea</span></td>
+<td>Many inputs, one model, many outputs</td>
+<td><a href="#anysat">AnySat</a>, <a href="#pix2pix">pix2pix</a></td>
+</tr>
+<tr class="odd">
+<td>“We do X better, faster or cheaper.”</td>
+<td><span class="k pay">payoff</span></td>
+<td>Methods side by side, numbers on the picture</td>
+<td><a href="#3dgs">3D Gaussian Splatting</a>, <a href="#efficientnet">EfficientNet</a></td>
+</tr>
+<tr class="even">
+<td>“We can now do X, which nobody could.”</td>
+<td><span class="k pay">payoff</span></td>
+<td>A gallery of real outputs</td>
+<td><a href="#cyclegan">CycleGAN</a>, <a href="#imagebind">ImageBind</a>, <a href="#geochat">GeoChat</a></td>
+</tr>
+<tr class="odd">
+<td>“Here is a dataset or a benchmark.”</td>
+<td><span class="k scope">scope</span></td>
+<td>Real samples and counts, or one item from input to score</td>
+<td><a href="#satlas">SatlasPretrain</a>, <a href="#swebench">SWE-bench</a>, <a href="#chexpert">CheXpert</a></td>
+</tr>
+<tr class="even">
+<td>“We make several contributions.”</td>
+<td><span class="k scope">scope</span></td>
+<td>One panel per contribution</td>
+<td><a href="#sam">Segment Anything</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Our default for an applied paper:</strong> three panels, problem then idea then payoff, on <em>one real example</em>, with <em>one number</em>. Give the most space to your strongest panel.</p>
+</section>
+<section id="lead-with-the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="lead-with-the-problem">Lead with the problem</h2>
+<p>Use this when the gap itself is your news.</p>
+<div class="hf-grid">
+<div id="informer" class="hf prob">
+<p><span class="hd"><strong>Informer</strong> · AAAI 2021 · <a href="https://arxiv.org/abs/2012.07436">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/informer.webp" class="img-fluid" loading="lazy" alt="Two small plots: a short and a long forecast of one series, and an LSTM whose error rises and speed falls as the forecast lengthens."></p>
+<p><span class="k prob">problem</span> <span class="meta">· plot · page 1, one column</span></p>
+<p>It measures an existing model breaking as the forecast gets longer. The new method is not even shown.</p>
+<p><strong>Borrow:</strong> If a reader may doubt the gap, plot the baseline failing.</p>
+<p><span class="meta">Figure 1, Zhou et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="resnet" class="hf prob">
+<p><span class="hd"><strong>ResNet</strong> · CVPR 2016 · <a href="https://arxiv.org/abs/1512.03385">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/resnet.webp" class="img-fluid" loading="lazy" alt="Two plots of error against training iterations. In both, the 56-layer curve lies above the 20-layer curve."></p>
+<p><span class="k prob">problem</span> <span class="meta">· plot · page 1, one column</span></p>
+<p>Two lines per plot, named on the lines. The deeper network is worse, which nobody expects.</p>
+<p><strong>Borrow:</strong> A surprising measurement is a complete Figure 1.</p>
+<p><span class="meta">Figure 1, He et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="cot" class="hf prob wide">
+<p><span class="hd"><strong>Chain-of-Thought</strong> · NeurIPS 2022 · <a href="https://arxiv.org/abs/2201.11903">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/cot.webp" class="img-fluid" loading="lazy" alt="Two columns. Standard prompting gives a wrong answer with a red cross. Chain-of-thought prompting, with highlighted reasoning, gives the right answer with a tick."></p>
+<p><span class="k prob">problem</span> → <span class="k idea">idea</span> → <span class="k pay">payoff</span> <span class="meta">· contrast pair · page 1, full width</span></p>
+<p>The two columns are identical except for the highlighted text, so the eye lands on the idea. ✗ becomes ✓.</p>
+<p><strong>Borrow:</strong> Hold everything fixed except your idea, and colour only that.</p>
+<p><span class="meta">Figure 1, Wei et al.&nbsp;CC BY 4.0.</span></p>
+</div>
+</div>
+</section>
+<section id="lead-with-the-idea" class="level2">
+<h2 class="anchored" data-anchor-id="lead-with-the-idea">Lead with the idea</h2>
+<p>Use this when one idea carries the paper.</p>
+<div class="hf-grid">
+<div id="clip" class="hf idea wide">
+<p><span class="hd"><strong>CLIP</strong> · ICML 2021 · <a href="https://arxiv.org/abs/2103.00020">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/clip.webp" class="img-fluid" loading="lazy" alt="Three numbered panels: contrastive pre-training on a grid of images against captions, building a classifier from class names, and zero-shot prediction on a photo of a dog."></p>
+<p><span class="k idea">idea</span> → <span class="k pay">payoff</span> <span class="meta">· strip · page 2, full width</span></p>
+<p>Three numbered panels show how the model is trained, and then how it is used.</p>
+<p><strong>Borrow:</strong> Number the panels, and end on the use.</p>
+<p><span class="meta">Figure 1, Radford et al.&nbsp;From the authors’ repository, MIT licence.</span></p>
+</div>
+<div id="mae" class="hf idea">
+<p><span class="hd"><strong>MAE</strong> · CVPR 2022 · <a href="https://arxiv.org/abs/2111.06377">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/mae.webp" class="img-fluid" loading="lazy" alt="A flamingo photo with most patches masked; the visible patches enter a large encoder; a small decoder rebuilds the full image."></p>
+<p><span class="k idea">idea</span> → <span class="k pay">payoff</span> <span class="meta">· strip · page 1, one column</span></p>
+<p>An architecture with five elements and one real image. The big encoder takes few patches; the small decoder takes all.</p>
+<p><strong>Borrow:</strong> Draw only what is new, and let size mean something.</p>
+<p><span class="meta">Figure 1, He et al.&nbsp;CC BY 4.0.</span></p>
+</div>
+<div id="lime" class="hf idea wide">
+<p><span class="hd"><strong>LIME</strong> · KDD 2016 · <a href="https://arxiv.org/abs/1602.04938">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/lime.webp" class="img-fluid" loading="lazy" alt="A model predicts flu from a patient's symptoms; a magnifying glass labelled LIME highlights sneeze and headache; a doctor makes the decision."></p>
+<p><span class="k prob">problem</span> → <span class="k idea">idea</span> → <span class="k pay">payoff</span> <span class="meta">· strip · page 2, full width</span></p>
+<p>One patient tells the whole method, and the figure ends at the doctor who decides.</p>
+<p><strong>Borrow:</strong> End at the person who uses the output. <strong>Watch out:</strong> Generic icons. Use a real case today.</p>
+<p><span class="meta">Figure 1, Ribeiro et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="gid" class="hf idea wide">
+<p><span class="hd"><strong>Generative Image Dynamics</strong> · CVPR 2024 · <a href="https://arxiv.org/abs/2309.07906">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/gid.webp" class="img-fluid" loading="lazy" alt="A photo of a rose, then colourful motion maps at several frequencies, then a looping video and interactive dynamics shown as time slices."></p>
+<p><span class="k idea">idea</span> → <span class="k pay">payoff</span> <span class="meta">· strip · page 1, full width</span></p>
+<p>The middle panel shows what the new representation looks like, where most papers put a labelled box.</p>
+<p><strong>Borrow:</strong> Replace boxes with pictures of what is inside them.</p>
+<p><span class="meta">Figure 1, Li et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="anysat" class="hf idea">
+<p><span class="hd"><strong>AnySat</strong> · CVPR 2025 · <a href="https://arxiv.org/abs/2412.14123">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/anysat.webp" class="img-fluid" loading="lazy" alt="Five satellite datasets with different sensors and resolutions flow into one box labelled AnySat, which feeds five tasks with real output maps."></p>
+<p><span class="k prob">problem</span> → <span class="k idea">idea</span> → <span class="k pay">payoff</span> <span class="meta">· funnel · page 1, one column</span></p>
+<p>Many real inputs, one model, many real outputs. The shape is the claim.</p>
+<p><strong>Borrow:</strong> For generality, draw the funnel and fill both ends with real samples.</p>
+<p><span class="meta">Figure 1, Astruc et al.&nbsp;CC BY 4.0.</span></p>
+</div>
+<div id="swin" class="hf idea">
+<p><span class="hd"><strong>Swin Transformer</strong> · ICCV 2021 · <a href="https://arxiv.org/abs/2103.14030">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/swin.webp" class="img-fluid" loading="lazy" alt="Two stacks of feature maps. Swin has three scales and serves classification, detection and segmentation. ViT has one scale and serves classification only."></p>
+<p><span class="k idea">idea</span> → <span class="k prob">problem</span> <span class="meta">· contrast pair · page 1, one column</span></p>
+<p>Ours and the nearest baseline are drawn with the same shapes, so the only difference is the contribution.</p>
+<p><strong>Borrow:</strong> Draw the baseline the same way as your method.</p>
+<p><span class="meta">Figure 1, Liu et al.&nbsp;CC BY 4.0.</span></p>
+</div>
+<div id="yolo" class="hf idea">
+<p><span class="hd"><strong>YOLO</strong> · CVPR 2016 · <a href="https://arxiv.org/abs/1506.02640">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/yolo.webp" class="img-fluid" loading="lazy" alt="A photo of a person, a dog and a horse; one network; the same photo with a labelled box on each. Three steps are listed."></p>
+<p><span class="k idea">idea</span> → <span class="k pay">payoff</span> <span class="meta">· strip · page 1, one column</span></p>
+<p>The claim is simplicity, and the figure is one photo, one network and three steps.</p>
+<p><strong>Borrow:</strong> If simplicity is the point, stop at three parts. <strong>Watch out:</strong> Tiny in print.</p>
+<p><span class="meta">Figure 1, Redmon et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="llmtime" class="hf idea wide">
+<p><span class="hd"><strong>LLMTime</strong> · NeurIPS 2023 · <a href="https://arxiv.org/abs/2310.07820">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/llmtime.webp" class="img-fluid" loading="lazy" alt="A language model completes a sentence and, below it, a string of numbers that is a forecast. Two small plots on the right show results."></p>
+<p><span class="k idea">idea</span> → <span class="k pay">payoff</span> <span class="meta">· strip · page 2, full width</span></p>
+<p>Text above, numbers below, the same model between. The analogy is the idea, and two small plots pay it off.</p>
+<p><strong>Borrow:</strong> For “treat X as Y”, draw X and Y in parallel.</p>
+<p><span class="meta">Figure 1, Gruver et al.&nbsp;© the authors.</span></p>
+</div>
+</div>
+</section>
+<section id="lead-with-the-payoff" class="level2">
+<h2 class="anchored" data-anchor-id="lead-with-the-payoff">Lead with the payoff</h2>
+<p>Use this when the result speaks for itself: a new ability, or a clear win.</p>
+<div class="hf-grid">
+<div id="3dgs" class="hf pay wide">
+<p><span class="hd"><strong>3D Gaussian Splatting</strong> · SIGGRAPH 2023 · <a href="https://arxiv.org/abs/2308.04079">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/3dgs.webp" class="img-fluid" loading="lazy" alt="Six crops of one bicycle wheel: three earlier methods, the paper's method twice, and ground truth. Each carries its frame rate, training time and PSNR."></p>
+<p><span class="k prob">problem</span> → <span class="k pay">payoff</span> <span class="meta">· comparison row · page 1, full width</span></p>
+<p>One scene for every method, with speed, training time and quality printed on each image.</p>
+<p><strong>Borrow:</strong> Put the numbers on the picture, and include the ground truth.</p>
+<p><span class="meta">Figure 1, Kerbl et al.&nbsp;CC BY 4.0.</span></p>
+</div>
+<div id="efficientnet" class="hf pay">
+<p><span class="hd"><strong>EfficientNet</strong> · ICML 2019 · <a href="https://arxiv.org/abs/1905.11946">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/efficientnet.webp" class="img-fluid" loading="lazy" alt="Accuracy against number of parameters. A red line of EfficientNet models rises above dashed lines of other named models."></p>
+<p><span class="k pay">payoff</span> <span class="meta">· plot · page 1, one column</span></p>
+<p>The claim is a trade-off, so the figure is the trade-off: one red line above every named rival.</p>
+<p><strong>Borrow:</strong> Plot accuracy against cost, and label the points directly.</p>
+<p><span class="meta">Figure 1, Tan and Le. From the authors’ repository, Apache 2.0 licence.</span></p>
+</div>
+<div id="cyclegan" class="hf pay wide">
+<p><span class="hd"><strong>CycleGAN</strong> · ICCV 2017 · <a href="https://arxiv.org/abs/1703.10593">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/cyclegan.webp" class="img-fluid" loading="lazy" alt="Image pairs translated both ways: Monet and photos, zebras and horses, summer and winter. Below, one photo in four painters' styles."></p>
+<p><span class="k pay">payoff</span> <span class="meta">· gallery · page 1, full width</span></p>
+<p>Examples anyone can judge in a second, and a two-way arrow for the method’s key property.</p>
+<p><strong>Borrow:</strong> Choose examples a stranger can judge.</p>
+<p><span class="meta">Figure 1, Zhu et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="pix2pix" class="hf pay wide">
+<p><span class="hd"><strong>pix2pix</strong> · CVPR 2017 · <a href="https://arxiv.org/abs/1611.07004">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/pix2pix.webp" class="img-fluid" loading="lazy" alt="Six input and output pairs: labels to street scene, labels to facade, black-and-white to colour, aerial to map, day to night, edges to photo."></p>
+<p><span class="k pay">payoff</span> <span class="meta">· gallery · page 1, full width</span></p>
+<p>Six problems solved the same way, each as an input and an output under a two-word title.</p>
+<p><strong>Borrow:</strong> For breadth, repeat one small unit.</p>
+<p><span class="meta">Figure 1, Isola et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="dino" class="hf pay wide">
+<p><span class="hd"><strong>DINO</strong> · ICCV 2021 · <a href="https://arxiv.org/abs/2104.14294">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/dino.webp" class="img-fluid" loading="lazy" alt="Eight photos, each beside an attention map in which the main object glows."></p>
+<p><span class="k pay">payoff</span> <span class="meta">· gallery · page 1, full width</span></p>
+<p>The finding is a surprise, so the figure shows only the surprise: objects light up without any labels.</p>
+<p><strong>Borrow:</strong> Show the unexpected behaviour on many inputs.</p>
+<p><span class="meta">Figure 1, Caron et al.&nbsp;CC BY 4.0.</span></p>
+</div>
+<div id="imagebind" class="hf pay wide">
+<p><span class="hd"><strong>ImageBind</strong> · CVPR 2023 · <a href="https://arxiv.org/abs/2305.05665">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/imagebind.webp" class="img-fluid" loading="lazy" alt="Three numbered boxes: a sound retrieves images, depth and text; a bird photo plus wave sounds gives birds in water; sounds generate images."></p>
+<p><span class="k pay">payoff</span> <span class="meta">· gallery · page 1, full width</span></p>
+<p>Three new abilities in three numbered boxes, shown before the model is explained.</p>
+<p><strong>Borrow:</strong> Give each new ability a box and a three-word title.</p>
+<p><span class="meta">Figure 1, Girdhar et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="geochat" class="hf pay">
+<p><span class="hd"><strong>GeoChat</strong> · CVPR 2024 · <a href="https://arxiv.org/abs/2311.15826">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/geochat.webp" class="img-fluid" loading="lazy" alt="One aerial image in the centre with six dialogue boxes around it, each a different task."></p>
+<p><span class="k pay">payoff</span> <span class="meta">· hub · page 1, one column</span></p>
+<p>One aerial image with six tasks around it. Colours tie each answer to its region.</p>
+<p><strong>Borrow:</strong> Hold the input fixed, and vary the question. <strong>Watch out:</strong> Dense at column width.</p>
+<p><span class="meta">Figure 1, Kuckreja et al.&nbsp;CC BY 4.0.</span></p>
+</div>
+</div>
+</section>
+<section id="lead-with-the-scope" class="level2">
+<h2 class="anchored" data-anchor-id="lead-with-the-scope">Lead with the scope</h2>
+<p>Use this for datasets, benchmarks and papers with several contributions.</p>
+<div class="hf-grid">
+<div id="sam" class="hf scope wide">
+<p><span class="hd"><strong>Segment Anything</strong> · ICCV 2023 · <a href="https://arxiv.org/abs/2304.02643">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/sam.webp" class="img-fluid" loading="lazy" alt="Three panels labelled task, model and data: promptable segmentation, the model's three parts, and a data loop giving one billion masks."></p>
+<p><span class="k scope">scope</span> <span class="meta">· triptych · page 1, full width</span></p>
+<p>Three contributions, three panels, and the same three names as the introduction.</p>
+<p><strong>Borrow:</strong> Give each contribution a panel, with matching words.</p>
+<p><span class="meta">Figure 1, Kirillov et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="satlas" class="hf scope wide">
+<p><span class="hd"><strong>SatlasPretrain</strong> · ICCV 2023 · <a href="https://arxiv.org/abs/2211.15660">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/satlas.webp" class="img-fluid" loading="lazy" alt="A globe with arrows to real satellite tiles for deforestation, wind turbines, floods, vessels and more, and a box of key statistics."></p>
+<p><span class="k scope">scope</span> → <span class="k pay">payoff</span> <span class="meta">· hub · page 1, full width</span></p>
+<p>A globe for coverage, real tiles named by their use, and the counts in one box.</p>
+<p><strong>Borrow:</strong> For a dataset: real samples, real uses, three or four counts.</p>
+<p><span class="meta">Figure 1, Bastani et al.&nbsp;CC BY 4.0.</span></p>
+</div>
+<div id="swebench" class="hf scope wide">
+<p><span class="hd"><strong>SWE-bench</strong> · ICLR 2024 · <a href="https://arxiv.org/abs/2310.06770">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/swebench.webp" class="img-fluid" loading="lazy" alt="A GitHub issue and codebase, a language model that writes a pull request, and unit tests that fail before and pass after."></p>
+<p><span class="k scope">scope</span> → <span class="k pay">payoff</span> <span class="meta">· strip · page 1, full width</span></p>
+<p>It follows one real issue from input to score, so the task and the metric are learnt together.</p>
+<p><strong>Borrow:</strong> For a benchmark, show one item end to end.</p>
+<p><span class="meta">Figure 1, Jimenez et al.&nbsp;CC BY 4.0.</span></p>
+</div>
+<div id="sustainbench" class="hf scope">
+<p><span class="hd"><strong>SustainBench</strong> · NeurIPS 2021 · <a href="https://arxiv.org/abs/2111.04724">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/sustainbench.webp" class="img-fluid" loading="lazy" alt="Coloured blocks, one per Sustainable Development Goal, each listing tasks with an input image, an output image and a count of examples."></p>
+<p><span class="k scope">scope</span> <span class="meta">· gallery · page 2, one column</span></p>
+<p>Fifteen tasks, grouped and coloured by the goal each serves, each with its input, output and size.</p>
+<p><strong>Borrow:</strong> Group many items by something the reader cares about. <strong>Watch out:</strong> Near the limit for one figure.</p>
+<p><span class="meta">Figure 1, Yeh et al.&nbsp;© the authors.</span></p>
+</div>
+<div id="chexpert" class="hf scope">
+<p><span class="hd"><strong>CheXpert</strong> · AAAI 2019 · <a href="https://arxiv.org/abs/1901.07031">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/chexpert.webp" class="img-fluid" loading="lazy" alt="Two chest X-rays feed a model, which gives a probability for each of 14 findings."></p>
+<p><span class="k scope">scope</span> → <span class="k pay">payoff</span> <span class="meta">· strip · page 1, one column</span></p>
+<p>One real case defines the task: these X-rays in, these fourteen probabilities out.</p>
+<p><strong>Borrow:</strong> Show one real input and its full output.</p>
+<p><span class="meta">Figure 1, Irvin et al.&nbsp;CC BY 4.0.</span></p>
+</div>
+<div id="blink" class="hf scope wide">
+<p><span class="hd"><strong>BLINK</strong> · ECCV 2024 · <a href="https://arxiv.org/abs/2404.12390">paper</a></span></p>
+<p><img src="../images/handbook/writing-papers/hero/blink.webp" class="img-fluid" loading="lazy" alt="Ten sample tasks around the BLINK logo, each an image with marked points and a one-line question."></p>
+<p><span class="k scope">scope</span> <span class="meta">· hub · page 1, full width</span></p>
+<p>Each task is an image and a question that the reader can try, which shows they are easy for people.</p>
+<p><strong>Borrow:</strong> Let the reader attempt a sample. <strong>Watch out:</strong> Very small in print.</p>
+<p><span class="meta">Figure 1, Fu et al.&nbsp;CC BY-NC-SA 4.0.</span></p>
+</div>
+</div>
+</section>
+<section id="what-the-24-have-in-common" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-24-have-in-common">What the 24 have in common</h2>
+<ul>
+<li><strong>Page 1.</strong> 20 of 24 put Figure 1 on the first page. The other 4 put it on the second.</li>
+<li><strong>Real data.</strong> 20 of 24 are built from real images, series or text, not icons.</li>
+<li><strong>Few parts.</strong> Most have two to four groups. A gallery repeats one small unit.</li>
+<li><strong>Rarely an architecture.</strong> Only MAE calls itself one, and it has five elements.</li>
+<li><strong>Few numbers.</strong> Only 5 carry a measured result. The rest show outputs that anyone can judge by eye. A forecast or a temperature cannot be judged by eye, so <strong>our figures need the number</strong>.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+All 24 on the same axes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="hf-scroll">
+<table class="table">
+<thead>
+<tr class="header">
+<th>Paper</th>
+<th>Leads with</th>
+<th>Layout</th>
+<th>Page</th>
+<th>Real data</th>
+<th>Number</th>
+<th>Strongest on</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="#informer">Informer</a></td>
+<td><span class="k prob">problem</span></td>
+<td>plot</td>
+<td>1</td>
+<td>yes</td>
+<td>result</td>
+<td>problem framing, evidence</td>
+</tr>
+<tr class="even">
+<td><a href="#resnet">ResNet</a></td>
+<td><span class="k prob">problem</span></td>
+<td>plot</td>
+<td>1</td>
+<td>yes</td>
+<td>result</td>
+<td>clarity, problem framing, readable in print</td>
+</tr>
+<tr class="odd">
+<td><a href="#cot">Chain-of-Thought</a></td>
+<td><span class="k prob">problem</span></td>
+<td>contrast pair</td>
+<td>1</td>
+<td>yes</td>
+<td>none</td>
+<td>clarity, novelty, real examples</td>
+</tr>
+<tr class="even">
+<td><a href="#clip">CLIP</a></td>
+<td><span class="k idea">idea</span></td>
+<td>strip</td>
+<td>2</td>
+<td>partly</td>
+<td>none</td>
+<td>novelty, hierarchy, stands alone</td>
+</tr>
+<tr class="odd">
+<td><a href="#mae">MAE</a></td>
+<td><span class="k idea">idea</span></td>
+<td>strip</td>
+<td>1</td>
+<td>yes</td>
+<td>none</td>
+<td>novelty, readable in print, clarity</td>
+</tr>
+<tr class="even">
+<td><a href="#lime">LIME</a></td>
+<td><span class="k idea">idea</span></td>
+<td>strip</td>
+<td>2</td>
+<td>no</td>
+<td>none</td>
+<td>clarity, hierarchy</td>
+</tr>
+<tr class="odd">
+<td><a href="#gid">Generative Image Dynamics</a></td>
+<td><span class="k idea">idea</span></td>
+<td>strip</td>
+<td>1</td>
+<td>yes</td>
+<td>none</td>
+<td>hierarchy, novelty</td>
+</tr>
+<tr class="even">
+<td><a href="#anysat">AnySat</a></td>
+<td><span class="k idea">idea</span></td>
+<td>funnel</td>
+<td>1</td>
+<td>yes</td>
+<td>none</td>
+<td>real examples, clarity</td>
+</tr>
+<tr class="odd">
+<td><a href="#swin">Swin Transformer</a></td>
+<td><span class="k idea">idea</span></td>
+<td>contrast pair</td>
+<td>1</td>
+<td>no</td>
+<td>none</td>
+<td>novelty, problem framing, readable in print</td>
+</tr>
+<tr class="even">
+<td><a href="#yolo">YOLO</a></td>
+<td><span class="k idea">idea</span></td>
+<td>strip</td>
+<td>1</td>
+<td>yes</td>
+<td>none</td>
+<td>clarity, novelty</td>
+</tr>
+<tr class="odd">
+<td><a href="#llmtime">LLMTime</a></td>
+<td><span class="k idea">idea</span></td>
+<td>strip</td>
+<td>2</td>
+<td>yes</td>
+<td>result</td>
+<td>novelty, evidence, real examples</td>
+</tr>
+<tr class="even">
+<td><a href="#3dgs">3D Gaussian Splatting</a></td>
+<td><span class="k pay">payoff</span></td>
+<td>comparison row</td>
+<td>1</td>
+<td>yes</td>
+<td>result</td>
+<td>evidence, stands alone, problem framing</td>
+</tr>
+<tr class="odd">
+<td><a href="#efficientnet">EfficientNet</a></td>
+<td><span class="k pay">payoff</span></td>
+<td>plot</td>
+<td>1</td>
+<td>yes</td>
+<td>result</td>
+<td>evidence, clarity, readable in print</td>
+</tr>
+<tr class="even">
+<td><a href="#cyclegan">CycleGAN</a></td>
+<td><span class="k pay">payoff</span></td>
+<td>gallery</td>
+<td>1</td>
+<td>yes</td>
+<td>none</td>
+<td>real examples, clarity</td>
+</tr>
+<tr class="odd">
+<td><a href="#pix2pix">pix2pix</a></td>
+<td><span class="k pay">payoff</span></td>
+<td>gallery</td>
+<td>1</td>
+<td>yes</td>
+<td>none</td>
+<td>real examples, hierarchy, stands alone</td>
+</tr>
+<tr class="even">
+<td><a href="#dino">DINO</a></td>
+<td><span class="k pay">payoff</span></td>
+<td>gallery</td>
+<td>1</td>
+<td>yes</td>
+<td>none</td>
+<td>stands alone, real examples</td>
+</tr>
+<tr class="odd">
+<td><a href="#imagebind">ImageBind</a></td>
+<td><span class="k pay">payoff</span></td>
+<td>gallery</td>
+<td>1</td>
+<td>yes</td>
+<td>none</td>
+<td>real examples, hierarchy</td>
+</tr>
+<tr class="even">
+<td><a href="#geochat">GeoChat</a></td>
+<td><span class="k pay">payoff</span></td>
+<td>hub</td>
+<td>1</td>
+<td>yes</td>
+<td>none</td>
+<td>real examples, stands alone</td>
+</tr>
+<tr class="odd">
+<td><a href="#sam">Segment Anything</a></td>
+<td><span class="k scope">scope</span></td>
+<td>triptych</td>
+<td>1</td>
+<td>partly</td>
+<td>counts</td>
+<td>hierarchy, stands alone</td>
+</tr>
+<tr class="even">
+<td><a href="#satlas">SatlasPretrain</a></td>
+<td><span class="k scope">scope</span></td>
+<td>hub</td>
+<td>1</td>
+<td>yes</td>
+<td>counts</td>
+<td>real examples, evidence</td>
+</tr>
+<tr class="odd">
+<td><a href="#swebench">SWE-bench</a></td>
+<td><span class="k scope">scope</span></td>
+<td>strip</td>
+<td>1</td>
+<td>yes</td>
+<td>none</td>
+<td>real examples, clarity</td>
+</tr>
+<tr class="even">
+<td><a href="#sustainbench">SustainBench</a></td>
+<td><span class="k scope">scope</span></td>
+<td>gallery</td>
+<td>2</td>
+<td>yes</td>
+<td>counts</td>
+<td>hierarchy, real examples</td>
+</tr>
+<tr class="odd">
+<td><a href="#chexpert">CheXpert</a></td>
+<td><span class="k scope">scope</span></td>
+<td>strip</td>
+<td>1</td>
+<td>yes</td>
+<td>none</td>
+<td>clarity, real examples</td>
+</tr>
+<tr class="even">
+<td><a href="#blink">BLINK</a></td>
+<td><span class="k scope">scope</span></td>
+<td>hub</td>
+<td>1</td>
+<td>yes</td>
+<td>none</td>
+<td>real examples, hierarchy</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>Number</em>: the figure carries a measured result, only counts of data, or no number.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="make-your-own" class="level2">
+<h2 class="anchored" data-anchor-id="make-your-own">Make your own</h2>
+<ol type="1">
+<li><strong>Write the sentence.</strong> “Today, [problem]. We [idea]. Now, [payoff with a number].”</li>
+<li><strong>Choose what leads,</strong> from the table above.</li>
+<li><strong>Follow one real example</strong> through every panel. Pick a typical case, not the best of fifty.</li>
+<li><strong>Sketch on paper first,</strong> in week one, with three or four groups and one reading direction.</li>
+<li><strong>Replace boxes with pictures.</strong> A box that says “Encoder” shows nothing.</li>
+<li><strong>Put one number on it,</strong> with the baseline beside it.</li>
+<li><strong>Colour only what is new.</strong> Everything else is grey.</li>
+<li><strong>Build it at final width,</strong> as a vector PDF, with text of at least 6 to 7 pt.&nbsp;Put it on page 1.</li>
+<li><strong>Open the caption with the claim,</strong> and use the abstract’s words on the figure.</li>
+<li><strong>Test it for ten seconds</strong> on someone outside the project. Redraw what they miss.</li>
+</ol>
+<p><a href="../handbook/writing-papers.html#hero-figures">Writing Papers</a> works through these steps for five papers.</p>
+</section>
+<section id="checklist" class="level2">
+<h2 class="anchored" data-anchor-id="checklist">Checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">The claim is clear in ten seconds.</label></li>
+<li><label><input type="checkbox">The reader can see what existing methods cannot do.</label></li>
+<li><label><input type="checkbox">The new part stands out, and is not buried in a pipeline.</label></li>
+<li><label><input type="checkbox">Real inputs and outputs replace icons.</label></li>
+<li><label><input type="checkbox">A number or a comparison supports the claim.</label></li>
+<li><label><input type="checkbox">It has three or four groups and one reading direction.</label></li>
+<li><label><input type="checkbox">Every label is legible in the compiled PDF, and spelt correctly.</label></li>
+<li><label><input type="checkbox">The figure and its caption stand alone.</label></li>
+<li><label><input type="checkbox">It is on page 1, and its words match the abstract’s.</label></li>
+</ul>
+<p><span class="hf-note">The figures are reproduced from the cited papers for teaching and criticism only. Each belongs to its authors and publisher. If you are an author and would like a figure removed, please write to us.</span></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script>
+// Light/dark switch styled like nipunbatra.github.io (sun → moon pill).
+// It drives Quarto's own colour-scheme switch and hides Quarto's icon.
+// Until someone uses the switch, the site follows the OS setting.
+(() => {
+  const KEY = 'lab-theme-chosen';
+  const isDark = () => document.body.classList.contains('quarto-dark');
+  const mkButton = () => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'mode'; b.setAttribute('role', 'switch');
+    b.setAttribute('aria-label', 'Dark mode'); b.title = 'Light or dark appearance';
+    b.innerHTML = '<span class="sky"></span><span class="stars"><b style="left:9px;top:6px"></b><b style="left:15px;top:15px"></b><b style="left:23px;top:8px;opacity:.7"></b></span><span class="knob"></span>';
+    b.addEventListener('click', () => {
+      try { localStorage.setItem(KEY, '1'); } catch (_) {}
+      if (window.quartoToggleColorScheme) window.quartoToggleColorScheme();
+    });
+    return b;
+  };
+  const sync = () => document.querySelectorAll('.mode').forEach(b => b.setAttribute('aria-checked', String(isDark())));
+  const init = () => {
+    const tools = document.querySelector('.quarto-navbar-tools');
+    const nav = document.querySelector('#quarto-header .navbar .container-fluid') || document.querySelector('#quarto-header nav');
+    if (!nav) return;
+    const btn = mkButton();
+    if (tools) tools.prepend(btn); else nav.appendChild(btn);
+    sync();
+    new MutationObserver(sync).observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+    mq.addEventListener('change', e => {
+      let chosen = null; try { chosen = localStorage.getItem(KEY); } catch (_) {}
+      if (!chosen && e.matches !== isDark() && window.quartoToggleColorScheme) window.quartoToggleColorScheme();
+    });
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true }); else init();
+})();
+</script>
+<script>
+// Navbar logo: inline the SVG so it follows the theme colours, and draw the
+// sigmoid once per browser session (axes, then the curve, then the wordmark).
+// Skipped entirely for visitors who prefer reduced motion.
+(() => {
+  const img = document.querySelector('.navbar-logo');
+  if (!img || !window.fetch) return;
+  fetch(img.getAttribute('src')).then(r => r.ok ? r.text() : Promise.reject()).then(txt => {
+    const box = document.createElement('span');
+    box.innerHTML = txt.trim();
+    const svg = box.querySelector('svg');
+    if (!svg) return;
+    svg.setAttribute('class', 'navbar-logo lab-logo-svg');
+    svg.setAttribute('role', 'img');
+    svg.setAttribute('aria-label', img.getAttribute('alt') || 'Sustainability Lab');
+    svg.querySelectorAll('[stroke]').forEach(el => el.removeAttribute('stroke'));
+    svg.querySelectorAll('[fill]:not([fill="none"])').forEach(el => el.removeAttribute('fill'));
+    img.replaceWith(svg);
+    let seen = false;
+    try { seen = sessionStorage.getItem('lab-logo-drawn') === '1'; sessionStorage.setItem('lab-logo-drawn', '1'); } catch (_) {}
+    if (seen || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    svg.querySelectorAll('line, path').forEach(el => {
+      const len = el.getTotalLength ? el.getTotalLength() : 120;
+      el.style.strokeDasharray = len; el.style.strokeDashoffset = len;
+    });
+    svg.classList.add('draw');
+  }).catch(() => {});
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/sustainability-lab\.github\.io");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Sustainability Lab, IIT Gandhinagar<br> <a href="mailto:nipun.batra@iitgn.ac.in">nipun.batra@iitgn.ac.in</a> · <a href="../flyer.pdf">Lab flyer</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p><a href="https://www.youtube.com/@SustainabilityLab-SL">Lab YouTube</a> · <a href="https://www.youtube.com/@NipunBatra0">Teaching YouTube</a> · <a href="https://x.com/nipun_batra">X</a> · <a href="https://www.linkedin.com/in/nipunbatra0/">LinkedIn</a> · <a href="https://github.com/sustainability-lab">GitHub</a></p>
+</div>
+    <div class="nav-footer-right">
+<p>Supported by Google, Cisco, NVIDIA, Microsoft, SERB/ANRF, MoES, DST, STARS, GUJCOST, CoE in AI (MHRD), Gujarat Forest Dept. and Jio</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
