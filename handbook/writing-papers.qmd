@@ -73,6 +73,13 @@ pre.sourceCode code span.dv, pre.sourceCode code span.fl { color: #b8d7a3 !impor
 
 This page sets out how we write papers in the lab. It is for students writing their first paper, for anyone reviewing a draft, and for AI agents that help with either. Writing is a skill, and like any skill it improves with *deliberate* practice. This page gives you something concrete to practise against.
 
+```{=html}
+<figure style="margin:1.4rem 0 1.8rem;max-width:760px">
+<div style="aspect-ratio:16/9;background:#151816"><iframe src="https://www.youtube-nocookie.com/embed/hPAnLGXydRM?rel=0" title="Writing Papers: the film" referrerpolicy="strict-origin-when-cross-origin" style="width:100%;height:100%;border:0;display:block" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+<figcaption style="font-size:.86rem;color:var(--muted);margin-top:.45rem">This page as a short film (10 minutes) · <a href="https://youtu.be/hPAnLGXydRM">open on YouTube</a></figcaption>
+</figure>
+```
+
 Every rule comes with a **before and after**, and every example follows one paper. Pick the paper with the switch below, and the whole page changes with it: text, tables and figures. Four are **our own published papers**. For those, the *after* follows the published paper and its numbers, and the *before* is an invented first draft, the kind every paper starts as. **Kestrel**, the last one, is invented outright: it counts birds from cheap phone recordings, and its numbers are made up.
 
 ```{=html}

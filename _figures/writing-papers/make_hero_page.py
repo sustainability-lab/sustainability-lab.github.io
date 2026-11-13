@@ -19,6 +19,8 @@ GROUPS = OrderedDict([
     ("scope", ("Lead with the scope", "Use this for datasets, benchmarks and papers with several contributions.")),
 ])
 
+# The page as a film (sustain-social/HeroFiguresFilm), embedded under the introduction.
+FILM = '```{=html}\n<figure style="margin:1.4rem 0 1.8rem;max-width:760px">\n<div style="aspect-ratio:16/9;background:#151816"><iframe src="https://www.youtube-nocookie.com/embed/3pj1DY27aeQ?rel=0" title="Making Hero Figures: the film" referrerpolicy="strict-origin-when-cross-origin" style="width:100%;height:100%;border:0;display:block" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>\n<figcaption style="font-size:.86rem;color:var(--muted);margin-top:.45rem">This page as a short film (7½ minutes) · <a href="https://youtu.be/3pj1DY27aeQ">open on YouTube</a></figcaption>\n</figure>\n```\n'
 E = []
 def add(key, name, venue, arxiv, layout, page, wide, real, number, q, flow, why, borrow, alt, credit, watch=None):
     E.append(dict(key=key, name=name, venue=venue, arxiv=arxiv, layout=layout, page=page, wide=wide, real=real,
@@ -215,6 +217,7 @@ The hero figure is Figure 1: the picture a reviewer sees before reading the intr
 
 It is a visual abstract, not the architecture diagram: for that, see [Making method figures](method-figures.qmd). This page shows {N} first figures from ICML, NeurIPS, ICLR, CVPR, ICCV, ECCV, KDD, AAAI and SIGGRAPH, and what to borrow from each. It is part of [Writing Papers](writing-papers.qmd#hero-figures).
 
+{FILM}
 ## Choose what leads
 
 Ask which sentence of the abstract a reviewer should repeat to the other reviewers. Draw that sentence.

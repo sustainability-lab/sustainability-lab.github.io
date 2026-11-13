@@ -18,6 +18,8 @@ GROUPS = OrderedDict([
     ("intuition", ("Why should it work?", "why", "Your idea needs an intuition first. Draw a toy case in two dimensions.")),
 ])
 C = "© the authors"
+# The page as a film (sustain-social/MethodFiguresFilm), embedded under the introduction.
+FILM = '```{=html}\n<figure style="margin:1.4rem 0 1.8rem;max-width:760px">\n<div style="aspect-ratio:16/9;background:#151816"><iframe src="https://www.youtube-nocookie.com/embed/D62npQIxqWA?rel=0" title="Making Method Figures: the film" referrerpolicy="strict-origin-when-cross-origin" style="width:100%;height:100%;border:0;display:block" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>\n<figcaption style="font-size:.86rem;color:var(--muted);margin-top:.45rem">This page as a short film (9 minutes) · <a href="https://youtu.be/D62npQIxqWA">open on YouTube</a></figcaption>\n</figure>\n```\n'
 E = []
 def add(key, group, name, venue, arxiv, fig, page, wide, real, why, borrow, alt, credit, watch=None, url=None):
     E.append(dict(key=key, group=group, name=name, venue=venue, url=url or f"https://arxiv.org/abs/{arxiv}", fig=fig, page=page, wide=wide,
@@ -240,6 +242,7 @@ The method figure is a separate figure from the [hero figure](hero-figures.qmd).
 
 A method figure can answer six different questions. Pick the one where your novelty lives. This page shows {N} method figures from NeurIPS, ICML, ICLR, CVPR, ICCV, ECCV, KDD, AAAI, NAACL, MICCAI, JMLR and Nature, grouped by that question. They cover vision, language models, graphs, time series, weather, remote sensing and classic machine learning.
 
+{FILM}
 ## Choose the question
 
 | Your novelty is | The figure answers | Draw | See |
