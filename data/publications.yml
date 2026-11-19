@@ -895,8 +895,10 @@
     url: /papers/bibtex/its_different2013.bib
   - label: Code
     url: https://github.com/nipunbatra/Home_Deployment
-  - label: Dataset
-    url: http://iawe.github.io/
+  - label: Dataset (Zenodo)
+    url: https://doi.org/10.5281/zenodo.24361973
+  - label: iAWE project
+    url: https://iawe.github.io/
   - label: Slides (.pptx)
     url: https://github.com/sustainability-lab/sustainability-lab.github.io/releases/download/slide-sources/buildsys_13_slides.pptx
   - label: Slides
