@@ -143,6 +143,8 @@ missing = [k for k, v in CH.items() if not (SITE / v).exists()]
 for tile in sorted((FILM / "assets/kilns").glob("*.jpg")):
     ch_img[f"tile_{tile.stem}"] = put(tile, "img/geo", 1200)
 put(DATA / "pm-field.png", "img/geo", 4000)
+for name in ("filmer-wrf-t2.png", "filmer-pred-t2.png"):          # FiLMeR beat (scripts/filmer_layer.py)
+    put(DATA / name, "img/geo", 4000)
 
 # FlowSat: cut the paper's sample sheet (2 rows × 4 generated tiles, labels underneath) into single tiles
 sheet = Image.open(SITE / "papers/2026/flowsat-samples.webp").convert("RGB")
@@ -158,6 +160,12 @@ spiro = Image.open(SITE / "papers/2023/spiromask-hero.png").convert("RGB")
 spiro.crop((618, 33, 1076, 410)).save(PUB / "img/ch/spiro_use.jpg", quality=92)
 spiro.crop((62, 538, 282, 744)).resize((440, 412), Image.LANCZOS).save(PUB / "img/ch/spiro_mask.jpg", quality=92)
 ch_img["spiro_use"], ch_img["spiro_mask"] = "img/ch/spiro_use.jpg", "img/ch/spiro_mask.jpg"
+# Aperture: the paper's coal-plant tile (Fig. 3), full 4096 px so the zoom path stays native to the 512 px chimney
+ch_img["aperture"] = put(FILM / "assets/aperture/coal-4096.jpg", "img/ch", 4096)
+# AirDelhi Fig. 2a (a $30 sensor against a reference monitor); FlowSat's ground-resolution dial (same prompt, 0.30 → 1.00 m)
+ch_img["airdelhi_fig2a"] = put(FILM / "assets/airdelhi-fig2a.png", "img/ch", 2200)
+for f in sorted((FILM / "assets/flowsat-dial").glob("*.jpg")):
+    ch_img[f"dial_{f.stem}"] = put(f, "img/ch", 1024, f"dial-{f.stem}.jpg")
 
 funders = [put(site_path(p), "img/funders", 600) for p in flyer["funder_logos"]]
 
