@@ -1,158 +1,28 @@
-import { type DesignSystem, type Page, type SlideMeta, Step, Steps } from '@open-slide/core';
-import { type Context, type CSSProperties, createContext, useContext, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import type { Page, SlideMeta } from '@open-slide/core';
 import deck from './assets/deck.json';
+import { type FilmSpec, FilmSlide } from './live';
+import { design, PLAIN } from './pages';
 
-declare global {
-  interface ImportMeta {
-    readonly env: Record<string, string | boolean | undefined>;
-    glob: (pattern: string, options: { eager: true; import: 'default' }) => Record<string, string>;
-  }
-}
+// The lab talk: one source for the lecture and the video. The slide list is talk/cues.mjs,
+// resolved into assets/deck.json by talk/scripts/deck.mjs. Two kinds of slide:
+//   · film slides (live.tsx): a stretch of the lab film, played live from the film's own
+//     components (src/), stopping where talk/cues.mjs says;
+//   · plain pages (pages.tsx): ordinary open-slide pages in the film's look.
+// The video of the same slide list is src/Talk.tsx (in _film: npx remotion render src/index.ts Talk).
 
-// The talk plays the December 2026 lab film live: each slide embeds the film's own components in
-// a Remotion player (_talk/player/, built by _talk/scripts/player.mjs), so every word and line is
-// drawn by the browser at screen resolution. _talk/cues.mjs says where the film rests; deck.json
-// (from _talk/scripts/deck.mjs) lists each slide's rests as film frames, with a still of each,
-// frames/f01234.jpg, used only for thumbnails, the overview and the moment before the player is up.
-// Arriving at a slide going forward plays the film into its first rest; each → plays on to the
-// next rest; ← and jumps show the rest at once. Played end to end, the slides are the film.
-const FRAMES = import.meta.glob('./assets/frames/*.jpg', { eager: true, import: 'default' });
-const still = (name: string) => FRAMES[`./assets/frames/${name}.jpg`];
-const frameOf = (name: string) => Number(name.slice(1)); // "f01234" is film frame 1234
+export { design };
 
-// The live player: served from disk by the dev server; the published deck carries it in film/.
-const PLAYER_DEV = '../../player-dist/index.html';
-const PLAYER = import.meta.env.DEV ? new URL(PLAYER_DEV, import.meta.url).href : `${import.meta.env.BASE_URL}film/index.html`;
-
-type Rest = { still: string; from: string | null }; // the film plays from `from` to `still`
-type SlideSpec = { id: string; title: string; open: string | null; rests: Rest[] };
-
-// open-slide keeps its step host on globalThis; it says whether this page is the live one and how
-// the presenter reached it (forward, backward, or a jump from the overview).
-type Host = { isActivePage: boolean; entryDirection: 'forward' | 'backward' | 'jump' } | null;
-const HOST =
-  (globalThis as unknown as Record<string, Context<Host> | undefined>).__open_slide_step_host_context__ ??
-  createContext<Host>(null);
-
-// The film's tokens (_film/src/theme.ts), kept here so the Design panel shows the lab's palette.
-export const design: DesignSystem = {
-  palette: { bg: '#151816', text: '#eeefe9', accent: '#b52d24' },
-  fonts: {
-    display: 'Arial, Helvetica, sans-serif',
-    body: '"DM Sans", Arial, sans-serif',
-  },
-  typeScale: { hero: 160, body: 32 },
-  radius: 0,
-};
-
-const ROOT: CSSProperties = {
-  position: 'relative',
-  width: '100%',
-  height: '100%',
-  overflow: 'hidden',
-  background: 'var(--osd-bg)',
-};
-const LAYER: CSSProperties = {
-  position: 'absolute',
-  inset: 0,
-  width: '100%',
-  height: '100%',
-  display: 'block',
-  objectFit: 'cover',
-  border: 0,
-};
-
-const LiveSlide = ({ s }: { s: SlideSpec }) => {
-  const host = useContext(HOST);
-  const active = host?.isActivePage ?? false;
-  const forward = host?.entryDirection === 'forward';
-  const rests = s.rests.map((r) => r.still);
-  const last = rests.length - 1;
-  const root = useRef<HTMLDivElement>(null);
-  const player = useRef<HTMLIFrameElement>(null);
-  const [n, setN] = useState(last); // build steps revealed (a hostless thumbnail shows them all)
-  const nRef = useRef(last);
-  const ready = useRef(false);
-  const at = useRef(last); // the rest the player was last sent to
-  const [live, setLive] = useState(false); // the player is drawing; the still can go
-
-  // count the → presses: one hidden <Step> per rest after the first
-  useLayoutEffect(() => {
-    const el = root.current;
-    if (!el) return;
-    const count = () => el.querySelectorAll('[data-osd-step="revealed"]').length;
-    const sync = () => {
-      nRef.current = count();
-      setN(nRef.current);
-    };
-    sync();
-    const watch = new MutationObserver(sync);
-    watch.observe(el, { attributes: true, subtree: true, attributeFilter: ['data-osd-step'] });
-    return () => watch.disconnect();
-  }, [active]);
-
-  const post = (m: Record<string, unknown>) => player.current?.contentWindow?.postMessage(m, '*');
-
-  useEffect(() => {
-    if (!active) return;
-    ready.current = false;
-    setLive(false);
-    const onMessage = (e: MessageEvent) => {
-      if (e.source !== player.current?.contentWindow || e.data?.source !== 'lab-film') return;
-      if (e.data.type === 'ready') {
-        ready.current = true;
-        const k = nRef.current;
-        at.current = k;
-        const enter = s.rests[0].from;
-        if (forward && k === 0 && enter) post({ type: 'play', from: frameOf(enter), to: frameOf(rests[0]) });
-        else post({ type: 'seek', frame: frameOf(rests[k]) });
-      } else if (e.data.type === 'shown' || e.data.type === 'rest') {
-        setLive(true);
-      }
-    };
-    window.addEventListener('message', onMessage);
-    return () => window.removeEventListener('message', onMessage);
-  }, [active]);
-
-  // each → plays the film on to the next rest; ← and jumps go straight to the rest
-  useEffect(() => {
-    if (!active || !ready.current || n === at.current) return;
-    if (n === at.current + 1) post({ type: 'play', from: frameOf(rests[at.current]), to: frameOf(rests[n]) });
-    else post({ type: 'seek', frame: frameOf(rests[n]) });
-    at.current = n;
-  }, [n, active]);
-
-  const showing = !active ? rests[last] : forward && n === 0 && s.open && !live ? s.open : rests[n];
-  return (
-    <div ref={root} style={ROOT}>
-      <img src={still(showing)} alt={s.title} draggable={false} style={LAYER} />
-      {active && (
-        <iframe
-          ref={player}
-          src={PLAYER}
-          title={s.title}
-          tabIndex={-1}
-          allow="autoplay"
-          style={{ ...LAYER, pointerEvents: 'none', opacity: live ? 1 : 0 }}
-        />
-      )}
-      {last > 0 && (
-        <Steps>
-          {rests.slice(1).map((r) => (
-            <Step key={r} duration={0}>
-              <span />
-            </Step>
-          ))}
-        </Steps>
-      )}
-    </div>
-  );
-};
-
+type PageSpec = { id: string; title: string; page: { steps: number[]; audio: string | null } };
+type SlideSpec = FilmSpec | PageSpec;
 const SLIDES = deck.slides as SlideSpec[];
 
 const pages: Page[] = SLIDES.map((s) => {
-  const P: Page = () => <LiveSlide s={s} />;
+  if ('page' in s) {
+    const P = PLAIN[s.id];
+    if (!P) throw new Error(`talk/cues.mjs lists a page "${s.id}" that slides/lab-talk/pages.tsx does not define`);
+    return P;
+  }
+  const P: Page = () => <FilmSlide s={s} />;
   P.displayName = s.id;
   return P;
 });
@@ -177,6 +47,8 @@ These slides are the December 2026 lab film, cut where it pauses: each → plays
 
   place: `We are at IIT Gandhinagar, in Gujarat.
 We build sensors, collect datasets and train models for these four areas, and we release them openly. NILMTK, AirDelhi and SentinelKilnDB are all public.`,
+
+  agenda: `Four problems, one part of the talk each. Each → adds one. The headlines are the film's own chapter openings.`,
 
   air: `Part 1, clean air. India measures its air with a small number of government monitors, and most cities have very few of them.`,
 

@@ -4,10 +4,10 @@
 # ///
 """Check that every cue lands on a pause in the film, not in the middle of an animation.
 
-    uv run _talk/scripts/verify.py
+    uv run _film/talk/scripts/verify.py
 
 For each clip in deck.json it measures how much the picture still changes over the clip's last
-0.2 s. A cue with high motion stops the film mid-animation: move it in _talk/cues.mjs to just
+0.2 s. A cue with high motion stops the film mid-animation: move it in _film/talk/cues.mjs to just
 before the next motion starts (slow push-ins on photos and the chapter progress bar show up as low
 motion, which is fine).
 """
@@ -18,7 +18,7 @@ from pathlib import Path
 
 import numpy as np
 
-ASSETS = Path(__file__).resolve().parent.parent / "slides" / "lab-talk" / "assets"
+ASSETS = Path(__file__).resolve().parents[2] / "slides" / "lab-talk" / "assets"
 W, H = 192, 108
 LIMIT = 0.5  # mean grey-level change per frame, 0–255; holds measure well below this
 

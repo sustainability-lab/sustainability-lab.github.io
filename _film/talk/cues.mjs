@@ -12,9 +12,10 @@
 // chapter scenes, <time> can start from a beat key of the scene's `const T = {…}` table, so a cue
 // moves with its beat when the film is retimed: "air@st+3.95", "air@fi-0.5". "end" is the scene's
 // last moment. Slide ids that match film.yml beats are checked against it. `cover` shows one
-// frame outside the running order; `from` starts a slide's opening segment at a given cue.
+// frame outside the running order; `from` starts a slide's opening segment at a given cue; a slide
+// that follows a plain page opens from the start of its scene.
 //
-// After editing: node _talk/scripts/deck.mjs (renders every segment and rest still from the film).
+// After editing: node _film/talk/scripts/deck.mjs (renders every segment and rest still from the film).
 
 export const DECK = [
   // The cover: the film's title card, shown outside the running order. A deck opens on its first
@@ -24,6 +25,11 @@ export const DECK = [
   { id: "hook", title: "Air. Land. Breath. Power.", from: "hook@0", cues: ["hook@3.95", "hook@7.95", "hook@11.95", "hook@15.85"] },
   { id: "title", title: "Sustainability Lab, IIT Gandhinagar. AI for a sustainable future.", cues: ["hook@23.05"], pdf: false },
   { id: "place", title: "IIT Gandhinagar. We build sensors, datasets and machine learning, and we release them openly.", cues: ["place@4.55", "place@7.6"] },
+
+  // A plain open-slide page (slides/lab-talk/pages.tsx), not a stretch of the film. `steps` are its
+  // lengths in the video, in seconds: the page as it opens, then each → build in turn. `audio` (optional)
+  // is a narration file under public/; the page then lasts at least as long as its narration.
+  { id: "agenda", title: "Four problems.", page: true, steps: [2.5, 2, 2, 2, 3.5] },
 
   // 01 Clean air
   { id: "air", title: "01 Clean Air. Most Indian cities have few air monitors.", cues: ["air@1.0", "air@dock-0.05"] },
