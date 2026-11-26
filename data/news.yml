@@ -6,8 +6,8 @@
 #   film: optional one-line version (≤ 60 characters) for the lab film's "This quarter" card
 - when: 2026-11
   type: other
-  film: The December lab film, and slides for talks
-  text: 'A new edition of the <a href="https://youtu.be/iaZuz2s4Ij8"><b>lab film</b></a>, five minutes long, with new work on weather emulation (FiLMeR), how news and social media cover air pollution, Aperture, Signal Descriptors and interpretable sleep staging. The same story is also a <a href="https://sustainability-lab.github.io/talk/">slide deck for talks</a>.'
+  film: The December lab film, talk slides and talk video
+  text: 'A new edition of the <a href="https://youtu.be/iaZuz2s4Ij8"><b>lab film</b></a>, five minutes long, with new work on weather emulation (FiLMeR), how news and social media cover air pollution, Aperture, Signal Descriptors and interpretable sleep staging. The same story is also a <a href="https://sustainability-lab.github.io/talk/">slide deck for talks</a>, and a <a href="https://youtu.be/J3QXxYsoqlA">five-and-a-half-minute video made from those slides</a>, in 4K.'
 - when: 2026-11
   type: award
   text: Ayush Shrivastava wins <b>first prize for oral presentations at ConfAI 2026</b> (Plaksha University) for <b>ThermEval</b>, our KDD 2026 benchmark on whether vision-language models can read thermal images.
