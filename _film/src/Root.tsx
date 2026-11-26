@@ -22,8 +22,7 @@ export const Root: React.FC = () => (
     <Composition id="Poster" component={Poster} durationInFrames={1} fps={FPS} width={W} height={H} defaultProps={{ variant: "full" as const }} />
     <Composition id="PosterWeb" component={Poster} durationInFrames={1} fps={FPS} width={W} height={H} defaultProps={{ variant: "web" as const }} />
     <Composition id="LabFilm" component={Film} durationInFrames={FILM_FRAMES} fps={FPS} width={W} height={H} />
-    {/* the talk's slide list as a video (src/Talk.tsx): film stretches and plain open-slide pages;
-        hold = seconds to rest on each stop of a film slide */}
+    {/* the talk as a video, made from its slides (src/Talk.tsx); music = the film's score underneath */}
     <Composition
       id="Talk"
       component={Talk}
@@ -31,7 +30,7 @@ export const Root: React.FC = () => (
       fps={FPS}
       width={W}
       height={H}
-      defaultProps={{ hold: 0 } as TalkProps}
+      defaultProps={{ music: true } as TalkProps}
       calculateMetadata={calculateTalkMetadata}
     />
     <Composition id="Hook" component={Hook} durationInFrames={f(HOOK_LEN)} fps={FPS} width={W} height={H} />
