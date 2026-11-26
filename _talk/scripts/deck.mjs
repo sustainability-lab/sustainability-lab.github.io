@@ -2,7 +2,8 @@
 // from the film's own timeline (the LabFilm composition), plus deck.json for the slides.
 //
 //   node _talk/scripts/deck.mjs --check  # resolve the cues in _talk/cues.mjs against the film
-//   node _talk/scripts/deck.mjs          # render what is missing or stale (all of it: about 5 minutes)
+//   node _talk/scripts/deck.mjs          # render the stills that are missing or stale (about a minute)
+//   node _talk/scripts/deck.mjs --clips  # also a clip of every segment, for verify.py (about 5 minutes)
 //   PDF=1 node _talk/scripts/deck.mjs    # also each slide's last rest at 3840 x 2160 in _talk/out/pdf/
 //
 // Stills are named by film frame (f01234.jpg) and clips by their two frames (f01100-f01234.mp4), so
@@ -24,6 +25,7 @@ const FRAMES = path.join(ASSETS, "frames");
 const CLIPS = path.join(ASSETS, "clips");
 const MANIFEST = path.join(ASSETS, "deck.json");
 const PDF_DIR = path.resolve(HERE, "../out/pdf");
+const CLIPS_TOO = process.argv.includes("--clips"); // video clips of each segment, for verify.py
 
 const timeline = filmTimeline();
 const { FPS } = timeline;
@@ -51,12 +53,12 @@ for (const dir of [FRAMES, CLIPS]) {
 }
 const want = {
   stills: new Set(rests.map((r) => `${r.still}.jpg`)),
-  clips: new Set(rests.filter((r) => r.clip).map((r) => `${r.clip}.mp4`)),
+  clips: new Set(CLIPS_TOO ? rests.filter((r) => r.clip).map((r) => `${r.clip}.mp4`) : []),
 };
 for (const [dir, keep] of [[FRAMES, want.stills], [CLIPS, want.clips]]) {
   for (const f of fs.readdirSync(dir)) if (!keep.has(f)) fs.rmSync(path.join(dir, f)); // no longer used
 }
-const todo = rests.filter((r) => !fs.existsSync(path.join(FRAMES, `${r.still}.jpg`)) || (r.clip && !fs.existsSync(path.join(CLIPS, `${r.clip}.mp4`))));
+const todo = rests.filter((r) => !fs.existsSync(path.join(FRAMES, `${r.still}.jpg`)) || (CLIPS_TOO && r.clip && !fs.existsSync(path.join(CLIPS, `${r.clip}.mp4`))));
 console.log(fresh ? "film changed (or first run): rendering everything" : `${todo.length} of ${rests.length} rests to render`);
 
 if (todo.length || process.env.PDF) {
@@ -86,7 +88,7 @@ if (todo.length || process.env.PDF) {
   for (const r of todo) {
     const s = path.join(FRAMES, `${r.still}.jpg`);
     if (!fs.existsSync(s)) await still(r.frame, s);
-    const c = r.clip && path.join(CLIPS, `${r.clip}.mp4`);
+    const c = CLIPS_TOO && r.clip && path.join(CLIPS, `${r.clip}.mp4`);
     if (c && !fs.existsSync(c)) await clip(r.from, r.frame, c);
     console.log(`  ${r.cue.padEnd(18)} ${sec(r.frame)}`);
   }
@@ -108,7 +110,7 @@ const manifest = {
     title: s.title,
     open: i ? slides[i - 1].rests.at(-1).still : null, // what is on screen before the film plays into this slide
     holds: s.holds, // false: the film never pauses here (cuts between moving shots)
-    rests: s.rests.map((r) => ({ still: r.still, clip: r.clip })),
+    rests: s.rests.map((r) => ({ still: r.still, from: r.from === null ? null : `f${String(r.from).padStart(5, "0")}` })), // the film plays from `from` to this rest
   })),
 };
 fs.writeFileSync(MANIFEST, JSON.stringify(manifest, null, 1) + "\n");

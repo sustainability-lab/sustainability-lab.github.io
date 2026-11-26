@@ -1,25 +1,30 @@
 import { type DesignSystem, type Page, type SlideMeta, Step, Steps } from '@open-slide/core';
-import { type Context, type CSSProperties, createContext, useContext, useLayoutEffect, useRef, useState } from 'react';
+import { type Context, type CSSProperties, createContext, useContext, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import deck from './assets/deck.json';
 
 declare global {
   interface ImportMeta {
-    readonly env: Record<string, string | undefined>;
+    readonly env: Record<string, string | boolean | undefined>;
     glob: (pattern: string, options: { eager: true; import: 'default' }) => Record<string, string>;
   }
 }
 
-// The talk is the December 2026 lab film (_film/), cut at its rest points (_talk/cues.mjs) by
-// _talk/scripts/deck.mjs. For every rest there is a still of that film frame, frames/f01234.jpg,
-// and a clip of the film from the previous rest, clips/f01100-f01234.mp4; deck.json lists them.
+// The talk plays the December 2026 lab film live: each slide embeds the film's own components in
+// a Remotion player (_talk/player/, built by _talk/scripts/player.mjs), so every word and line is
+// drawn by the browser at screen resolution. _talk/cues.mjs says where the film rests; deck.json
+// (from _talk/scripts/deck.mjs) lists each slide's rests as film frames, with a still of each,
+// frames/f01234.jpg, used only for thumbnails, the overview and the moment before the player is up.
 // Arriving at a slide going forward plays the film into its first rest; each → plays on to the
-// next rest. Played end to end, the slides are the film, frame for frame.
+// next rest; ← and jumps show the rest at once. Played end to end, the slides are the film.
 const FRAMES = import.meta.glob('./assets/frames/*.jpg', { eager: true, import: 'default' });
-const CLIPS = import.meta.glob('./assets/clips/*.mp4', { eager: true, import: 'default' });
-const frame = (name: string) => FRAMES[`./assets/frames/${name}.jpg`];
-const clip = (name: string) => CLIPS[`./assets/clips/${name}.mp4`];
+const still = (name: string) => FRAMES[`./assets/frames/${name}.jpg`];
+const frameOf = (name: string) => Number(name.slice(1)); // "f01234" is film frame 1234
 
-type Rest = { still: string; clip: string | null };
+// The live player: served from disk by the dev server; the published deck carries it in film/.
+const PLAYER_DEV = '../../player-dist/index.html';
+const PLAYER = import.meta.env.DEV ? new URL(PLAYER_DEV, import.meta.url).href : `${import.meta.env.BASE_URL}film/index.html`;
+
+type Rest = { still: string; from: string | null }; // the film plays from `from` to `still`
 type SlideSpec = { id: string; title: string; open: string | null; rests: Rest[] };
 
 // open-slide keeps its step host on globalThis; it says whether this page is the live one and how
@@ -54,122 +59,100 @@ const LAYER: CSSProperties = {
   height: '100%',
   display: 'block',
   objectFit: 'cover',
+  border: 0,
 };
 
-/** The film into this slide's first rest: plays by itself when the slide is reached going forward. */
-const Entrance = ({ open, rest, alt }: { open: string; rest: Rest; alt: string }) => {
+const LiveSlide = ({ s }: { s: SlideSpec }) => {
   const host = useContext(HOST);
   const active = host?.isActivePage ?? false;
   const forward = host?.entryDirection === 'forward';
-  const video = useRef<HTMLVideoElement>(null);
-  const [playing, setPlaying] = useState(false);
+  const rests = s.rests.map((r) => r.still);
+  const last = rests.length - 1;
+  const root = useRef<HTMLDivElement>(null);
+  const player = useRef<HTMLIFrameElement>(null);
+  const [n, setN] = useState(last); // build steps revealed (a hostless thumbnail shows them all)
+  const nRef = useRef(last);
+  const ready = useRef(false);
+  const at = useRef(last); // the rest the player was last sent to
+  const [live, setLive] = useState(false); // the player is drawing; the still can go
 
+  // count the → presses: one hidden <Step> per rest after the first
   useLayoutEffect(() => {
-    const v = video.current;
-    if (!active || !forward || !v) {
-      setPlaying(false);
-      return;
-    }
-    v.currentTime = 0;
-    setPlaying(true);
-    v.play().catch(() => setPlaying(false));
-  }, [active, forward]);
-
-  return (
-    <>
-      <img src={frame(open)} alt="" draggable={false} style={{ ...LAYER, opacity: playing ? 1 : 0 }} />
-      <img src={frame(rest.still)} alt={alt} draggable={false} style={{ ...LAYER, opacity: playing ? 0 : 1 }} />
-      {active && rest.clip && (
-        <video
-          ref={video}
-          src={clip(rest.clip)}
-          muted
-          playsInline
-          preload="auto"
-          disablePictureInPicture
-          onEnded={() => setPlaying(false)}
-          style={{ ...LAYER, opacity: playing ? 1 : 0 }}
-        />
-      )}
-    </>
-  );
-};
-
-/** One → : when its <Step> is revealed on the live page, play the film on to this rest. */
-const Stage = ({ rest, alt }: { rest: Rest; alt: string }) => {
-  const active = useContext(HOST)?.isActivePage ?? false;
-  const box = useRef<HTMLDivElement>(null);
-  const video = useRef<HTMLVideoElement>(null);
-  const [phase, setPhase] = useState<'idle' | 'playing' | 'done'>('done');
-
-  useLayoutEffect(() => {
-    const step = box.current?.closest('[data-osd-step]');
-    if (!step) return;
-    const revealed = () => step.getAttribute('data-osd-step') === 'revealed';
-    let shown = revealed();
-    setPhase(shown ? 'done' : 'idle');
-    const watch = new MutationObserver(() => {
-      const now = revealed();
-      if (now === shown) return;
-      shown = now;
-      const v = video.current;
-      if (now && v) {
-        v.currentTime = 0;
-        setPhase('playing');
-        v.play().catch(() => setPhase('done'));
-      } else if (now) {
-        setPhase('done');
-      } else {
-        v?.pause();
-        setPhase('idle');
-      }
-    });
-    watch.observe(step, { attributes: true, attributeFilter: ['data-osd-step'] });
+    const el = root.current;
+    if (!el) return;
+    const count = () => el.querySelectorAll('[data-osd-step="revealed"]').length;
+    const sync = () => {
+      nRef.current = count();
+      setN(nRef.current);
+    };
+    sync();
+    const watch = new MutationObserver(sync);
+    watch.observe(el, { attributes: true, subtree: true, attributeFilter: ['data-osd-step'] });
     return () => watch.disconnect();
   }, [active]);
 
+  const post = (m: Record<string, unknown>) => player.current?.contentWindow?.postMessage(m, '*');
+
+  useEffect(() => {
+    if (!active) return;
+    ready.current = false;
+    setLive(false);
+    const onMessage = (e: MessageEvent) => {
+      if (e.source !== player.current?.contentWindow || e.data?.source !== 'lab-film') return;
+      if (e.data.type === 'ready') {
+        ready.current = true;
+        const k = nRef.current;
+        at.current = k;
+        const enter = s.rests[0].from;
+        if (forward && k === 0 && enter) post({ type: 'play', from: frameOf(enter), to: frameOf(rests[0]) });
+        else post({ type: 'seek', frame: frameOf(rests[k]) });
+      } else if (e.data.type === 'shown' || e.data.type === 'rest') {
+        setLive(true);
+      }
+    };
+    window.addEventListener('message', onMessage);
+    return () => window.removeEventListener('message', onMessage);
+  }, [active]);
+
+  // each → plays the film on to the next rest; ← and jumps go straight to the rest
+  useEffect(() => {
+    if (!active || !ready.current || n === at.current) return;
+    if (n === at.current + 1) post({ type: 'play', from: frameOf(rests[at.current]), to: frameOf(rests[n]) });
+    else post({ type: 'seek', frame: frameOf(rests[n]) });
+    at.current = n;
+  }, [n, active]);
+
+  const showing = !active ? rests[last] : forward && n === 0 && s.open && !live ? s.open : rests[n];
   return (
-    <div ref={box}>
-      <img src={frame(rest.still)} alt={alt} draggable={false} style={{ ...LAYER, opacity: phase === 'done' ? 1 : 0 }} />
-      {active && rest.clip && (
-        <video
-          ref={video}
-          src={clip(rest.clip)}
-          muted
-          playsInline
-          preload="auto"
-          disablePictureInPicture
-          onEnded={() => setPhase('done')}
-          style={{ ...LAYER, opacity: phase === 'done' ? 0 : 1 }}
+    <div ref={root} style={ROOT}>
+      <img src={still(showing)} alt={s.title} draggable={false} style={LAYER} />
+      {active && (
+        <iframe
+          ref={player}
+          src={PLAYER}
+          title={s.title}
+          tabIndex={-1}
+          allow="autoplay"
+          style={{ ...LAYER, pointerEvents: 'none', opacity: live ? 1 : 0 }}
         />
+      )}
+      {last > 0 && (
+        <Steps>
+          {rests.slice(1).map((r) => (
+            <Step key={r} duration={0}>
+              <span />
+            </Step>
+          ))}
+        </Steps>
       )}
     </div>
   );
 };
 
-const FilmSlide = ({ s }: { s: SlideSpec }) => (
-  <div style={ROOT}>
-    {s.open ? (
-      <Entrance open={s.open} rest={s.rests[0]} alt={s.title} />
-    ) : (
-      <img src={frame(s.rests[0].still)} alt={s.title} draggable={false} style={LAYER} />
-    )}
-    {s.rests.length > 1 && (
-      <Steps>
-        {s.rests.slice(1).map((rest) => (
-          <Step key={rest.still} duration={100}>
-            <Stage rest={rest} alt={s.title} />
-          </Step>
-        ))}
-      </Steps>
-    )}
-  </div>
-);
-
 const SLIDES = deck.slides as SlideSpec[];
 
 const pages: Page[] = SLIDES.map((s) => {
-  const P: Page = () => <FilmSlide s={s} />;
+  const P: Page = () => <LiveSlide s={s} />;
   P.displayName = s.id;
   return P;
 });
@@ -212,9 +195,10 @@ The data is out as AirDelhi, NeurIPS 2023 Datasets and Benchmarks.`,
 A 10-day forecast takes 281 minutes of WRF on CPUs and 6.5 seconds of FiLMeR on one GPU.
 In review, so no venue. Confirm these numbers with Balbir or Deena before showing this slide outside the lab: the timings are from the submission (Table 14), and the map error is our own recomputation from the arrays.`,
 
-  talk: `We also study how people talk about air pollution: 17,400 news articles in Samachar and 1.2 million tweets in Vartalaap.
-The chart is Delhi, 2010 to 2021, redrawn from Samachar: black is air-quality articles a week, pink is PM2.5, and the dashed line is India's limit.
-Attention spikes when smog is visible, and it favours big cities over the cities with the worst air. Samachar is COMPASS 2022; Vartalaap is CSCW 2021.`,
+  talk: `We also study how people talk about air pollution: 17,400 news articles in Samachar (two English dailies, 2010 to 2021) and 1.2 million tweets about Delhi in Vartalaap.
+The chart is Delhi, redrawn from Samachar: black is air-quality articles a week, pink is PM2.5, and the dashed line is India's limit. Coverage jumps at the end of each year, when smog is visible.
+Vartalaap: Delhi's tweets follow its PM2.5 only from October to December, though its air was above the WHO limit 92% of the time in 2016 to 2019 (Fig. 10, section 5.2.1).
+→ The finding: the news covers big cities, not the worst air. Varanasi, averaging 114 µg/m³, got 51 stories in 2010 to 2021; Mumbai, at 49, got 647 (Samachar, Tables 3 and 4). Samachar is COMPASS 2022; Vartalaap is CSCW 2021.`,
 
   vayuchat: `VayuChat answers questions about air-quality data in plain language. An LLM writes the pandas code, runs it on the CPCB data and replies with the numbers.
 The question here: which city had the worst air in December 2024? Byrnihat, in Assam, at 196 µg/m³, ahead of Delhi at 170.

@@ -30,5 +30,10 @@ cat > "$OUT/index.html" <<'EOF'
 <body><p><a href="/talk/s/lab-talk/">Open the lab talk</a></p></body>
 </html>
 EOF
+# the live film player the slides embed (build it first: node _talk/scripts/player.mjs)
+[ -f "$TALK/player-dist/player.js" ] || { echo "no player-dist: run node _talk/scripts/player.mjs" >&2; exit 1; }
+mkdir -p "$OUT/film"
+cp "$TALK/player-dist/index.html" "$TALK/player-dist/player.js" "$OUT/film/"
+cp -R "$TALK/player-dist/img" "$OUT/film/img"
 if grep -rqs "Balbir" "$OUT"; then echo "speaker notes leaked into the public copy" >&2; exit 1; fi
 du -sh "$OUT"

@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Audio, Easing, getInputProps, interpolate, Sequence, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Audio, Easing, interpolate, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { F } from "./data";
 import { Hook } from "./scenes/Hook";
 import { Place } from "./scenes/Place";
@@ -14,6 +14,7 @@ import { Join } from "./scenes/Join";
 import { C, FPS } from "./theme";
 import { CHAPTER_KEYS } from "./lib/chapter";
 import { bar } from "./timing";
+import { flag } from "./lib/env";
 
 // Scenes in bars of the score. Change a length here and in the scene's *_LEN together.
 export const SCENES: { id: string; bars: number; C: React.FC }[] = [
@@ -63,7 +64,7 @@ export const Film: React.FC = () => (
         </Sequence>
       ) : null,
     )}
-    {F.music && (getInputProps() as { music?: boolean }).music !== false && (
+    {F.music && flag("music") && (
       <Audio
         src={staticFile(F.music)}
         volume={(f) => interpolate(f, [FILM_FRAMES - 45, FILM_FRAMES - 1], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}

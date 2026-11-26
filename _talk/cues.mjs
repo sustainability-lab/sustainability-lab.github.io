@@ -31,7 +31,7 @@ export const DECK = [
   { id: "field", title: "Our models fill the gaps, and pick where the next monitor should go.", cues: ["air@fi+3.45", "air@ad-0.6"] },
   { id: "airdelhi", title: "Sensors on Delhi's buses map its air, street by street.", cues: ["air@ad+3.45", "air@fm-0.5"] },
   { id: "filmer", title: "A network stands in for India's weather model.", cues: ["air@fm+3.95", "air@tk-0.5"] },
-  { id: "talk", title: "And we read how India talks about its air.", cues: ["air@vc-0.5"] },
+  { id: "talk", title: "And we read how India talks about its air.", cues: ["air@tk+2.55", "air@vc-0.5"] },
   { id: "vayuchat", title: "Anyone can ask the data a question.", cues: ["air@vc+1.15", "air@end-0.4"] },
 
   // 02 Earth observation
