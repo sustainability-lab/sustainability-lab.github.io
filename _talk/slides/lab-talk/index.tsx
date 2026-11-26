@@ -184,7 +184,7 @@ export default pages;
 // Speaker notes by slide id (the ids in _talk/cues.mjs). Shown in the presenter view (press P).
 // The public copy on the lab site is built with VITE_PUBLIC=1 and leaves them out.
 const NOTES: Record<string, string> = {
-  start: `(The film's first frame. Press → to begin.)`,
+  cover: `The lab's title card. Press → to start the film from its first frame.`,
 
   hook: `Air, land, breath and power: the four things we measure. Each → draws the next line. All are real data except breathing, which is illustrative.
 Air is Delhi's daily PM2.5 from 2017 to 2025 (CPCB). Land is brick kilns along the Indo-Gangetic Plain by longitude (SentinelKilnDB). Power is one Delhi home over one day (iAWE).`,

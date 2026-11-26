@@ -61,6 +61,13 @@ export function resolveDeck(deck, timeline) {
   const slides = [];
   let prev = null;
   for (const d of deck) {
+    if (d.cover) {
+      // one frame from anywhere in the film, outside the running order (the deck's title card)
+      const frame = resolveCue(d.cover, timeline);
+      slides.push({ id: d.id, title: d.title, pdf: d.pdf !== false, holds: true, rests: [{ cue: d.cover, frame, still: pad(frame), clip: null, from: null }] });
+      continue;
+    }
+    if (d.from) prev = { cue: d.from, frame: resolveCue(d.from, timeline) }; // the opening segment starts here
     const rests = d.cues.map((cue) => {
       const frame = resolveCue(cue, timeline);
       if (prev && frame <= prev.frame) throw new Error(`cue ${cue} (slide ${d.id}) is not after ${prev.cue}`);

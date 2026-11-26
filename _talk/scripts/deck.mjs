@@ -30,7 +30,8 @@ const { FPS } = timeline;
 const slides = resolveDeck(DECK, timeline);
 const rests = slides.flatMap((s) => s.rests);
 const sec = (f) => `${(f / FPS).toFixed(2)}s`;
-const covered = (rests.at(-1).frame - rests[0].frame + 1) / timeline.frames;
+const played = rests.filter((r) => r.clip); // the running order, without the cover
+const covered = (played.at(-1).frame - played[0].from + 1) / timeline.frames;
 console.log(`${slides.length} slides, ${rests.length} rests, ${rests.length - 1} segments; covering ${(covered * 100).toFixed(1)}% of the film (${(timeline.frames / FPS).toFixed(1)} s)`);
 const beats = [...fs.readFileSync(path.join(FILM, "film.yml"), "utf8").matchAll(/^\s+- id: (\w+)/gm)].map((m) => m[1]);
 const missing = beats.filter((b) => !slides.some((s) => s.id === b));

@@ -11,16 +11,18 @@
 // Write a cue as "<scene>@<time>": seconds into a scene of _film/src/Film.tsx (SCENES). For the
 // chapter scenes, <time> can start from a beat key of the scene's `const T = {…}` table, so a cue
 // moves with its beat when the film is retimed: "air@st+3.95", "air@fi-0.5". "end" is the scene's
-// last moment. Slide ids that match film.yml beats are checked against it.
+// last moment. Slide ids that match film.yml beats are checked against it. `cover` shows one
+// frame outside the running order; `from` starts a slide's opening segment at a given cue.
 //
 // After editing: node _talk/scripts/deck.mjs (renders every segment and rest still from the film).
 
 export const DECK = [
-  // The film's first frame. A deck opens on its first slide fully built, so the opening has a slide
-  // of its own: from here, → plays "Air." and each → after it draws the next line.
-  { id: "start", title: "The Sustainability Lab film, December 2026", cues: ["hook@0"], pdf: false },
-  { id: "hook", title: "Air. Land. Breath. Power.", cues: ["hook@3.95", "hook@7.95", "hook@11.95", "hook@15.85"] },
-  { id: "title", title: "Sustainability Lab, IIT Gandhinagar. AI for a sustainable future.", cues: ["hook@23.05"] },
+  // The cover: the film's title card, shown outside the running order. A deck opens on its first
+  // slide fully built, so the film starts from the slide after it: → plays the film from its first
+  // frame to "Air.", and each → after that draws the next line.
+  { id: "cover", title: "Sustainability Lab, IIT Gandhinagar. AI for a sustainable future.", cover: "hook@23.05" },
+  { id: "hook", title: "Air. Land. Breath. Power.", from: "hook@0", cues: ["hook@3.95", "hook@7.95", "hook@11.95", "hook@15.85"] },
+  { id: "title", title: "Sustainability Lab, IIT Gandhinagar. AI for a sustainable future.", cues: ["hook@23.05"], pdf: false },
   { id: "place", title: "IIT Gandhinagar. We build sensors, datasets and machine learning, and we release them openly.", cues: ["place@4.55", "place@7.6"] },
 
   // 01 Clean air

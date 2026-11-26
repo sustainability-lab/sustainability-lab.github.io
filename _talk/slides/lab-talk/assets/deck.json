@@ -7,13 +7,13 @@
  },
  "slides": [
   {
-   "id": "start",
-   "title": "The Sustainability Lab film, December 2026",
+   "id": "cover",
+   "title": "Sustainability Lab, IIT Gandhinagar. AI for a sustainable future.",
    "open": null,
    "holds": true,
    "rests": [
     {
-     "still": "f00002",
+     "still": "f00694",
      "clip": null
     }
    ]
@@ -21,7 +21,7 @@
   {
    "id": "hook",
    "title": "Air. Land. Breath. Power.",
-   "open": "f00002",
+   "open": "f00694",
    "holds": true,
    "rests": [
     {
