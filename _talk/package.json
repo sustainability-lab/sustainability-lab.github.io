@@ -15,6 +15,7 @@
     "react-dom": "^19.2.8"
   },
   "devDependencies": {
+    "@remotion/player": "^4.0.537",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5"
   }

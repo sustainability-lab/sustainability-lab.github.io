@@ -105,6 +105,7 @@ export const Air: React.FC = () => {
       <Finding tone="light" at={T.st + 4.0} out={T.fi} f={b("stations").finding} />
       <Finding tone="light" at={T.fi + 3.5} out={T.ad} f={b("field").finding} />
       <Finding tone="light" at={T.ad + 3.5} out={T.fm} f={b("airdelhi").finding} />
+      <Finding tone="light" at={T.tk + 2.6} out={T.vc} f={b("talk").finding} top={724} />
       <BeatText tone="light" at={T.fi} out={T.ad - 0.42} title={b("field").title} tag={b("field").tag} />
       <BeatText tone="light" at={T.ad} out={T.fm - 0.42} title={b("airdelhi").title} tag={b("airdelhi").tag} />
       <BeatText tone="light" at={T.fm} out={T.tk - 0.42} title={b("filmer").title} text={b("filmer").text} tag={b("filmer").tag} isNew={b("filmer").new} />

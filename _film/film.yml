@@ -65,8 +65,13 @@ chapters:
         new: true
       - id: talk
         title: And we read how India talks about its air.
-        text: 17,400 news articles and 1.2 million tweets. Attention spikes when smog is visible, and favours big cities over the worst hit.
+        text: 17,400 news articles and 1.2 million tweets. Delhi's tweets rise with its PM2.5 only from October to December.
         tag: Samachar · COMPASS 2022 | Vartalaap · CSCW 2021
+        finding:
+          kicker: Air-pollution stories, 2010–21
+          lines: ["Varanasi, over twice as polluted as Mumbai, got 51 stories to its 647."]
+          bars: [["Mumbai · 49 µg/m³", 647, 0], ["Varanasi · 114 µg/m³", 51, 1]]
+          note: Mean PM2.5 · Samachar, Tables 3–4 · Vartalaap, Fig. 10
       - id: vayuchat
         title: Anyone can ask the data a question.
         question: Which city had the worst air in December 2024?

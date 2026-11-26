@@ -1,49 +1,56 @@
 # Lab talk, December 2026
 
-The talk is the lab film (`_film/`), cut where the film pauses. Each → plays the next moment of the film and stops on it; arriving at a slide going forward plays the film's own transition into it. Played end to end, the 31 slides are the film, frame for frame: 65 rest points and 64 segments covering all 297 seconds. One slide per beat of `film.yml`, plus the film's first frame (a deck opens on its first slide fully built, so the opening needs a slide before it), the title, the place, the four chapter cards and the lab at the end. Every slide has speaker notes with the numbers, sources and caveats (the `NOTES` in `slides/lab-talk/index.tsx`, keyed by slide id).
+One source, two outputs. The lab's story is written once, as React components driven by time with one design system: the film's scenes in `_film/src/scenes/`, its words and numbers in `_film/film.yml`, its tokens in `_film/src/theme.ts`. This folder is the talk, built with [open-slide](https://github.com/open-slide/open-slide): the slides, their order, where each one stops, and the speaker notes. Remotion runs underneath both outputs. Its player draws every slide live in the browser, so text and charts are sharp at any size and nothing is a screenshot. Its renderer turns the same slide list into the video, with the music (`Talk` in `_film/src/Talk.tsx`). Edit a scene or a line in `film.yml` and both change.
 
-Built with [open-slide](https://github.com/open-slide/open-slide): each page is a React component on a 1920 × 1080 canvas.
+The deck has 31 slides: one per beat of `film.yml`, plus the cover, the opening, the title, the place, the four chapter cards and the lab at the end. Each → plays the next moment of the film and stops; arriving at a slide going forward plays the film's own transition into it. Played end to end, the slides are the film, frame for frame. Every slide has speaker notes with the numbers, sources and caveats (`NOTES` in `slides/lab-talk/index.tsx`, keyed by slide id).
 
 ## Present
 
 ```bash
 cd _talk
-npm install      # first time only
-npm run dev      # prints the local URL; open the "Sustainability Lab" deck
+npm install                  # first time only (also run npm install in ../_film)
+node scripts/player.mjs      # build the live film player into player-dist/
+npm run dev                  # prints the local URL; open the "Sustainability Lab" deck
 ```
 
-Press **F** (or Present) for full screen and **P** for the presenter view, which shows the notes, the next slide and a timer. → or space plays on to the next rest, then moves to the next slide; ← steps back. A slide you jump to or come back to shows its last rest. The film plays muted.
+Press **F** (or Present) for full screen and **P** for the presenter view, which shows the notes, the next slide and a timer. → or space plays on to the next stop, then moves to the next slide; ← steps back. A slide you jump to or come back to shows its last stop. The film plays silent.
 
-No dev server on the day? `npm run build`, then `npm run preview` serves the same deck from `dist/` with no network needed. `out/lab-talk-december-2026.pdf` (30 pages: the last rest of each slide at 3840 × 2160, without the dark first frame) works on any laptop.
+The fonts come from Google Fonts, so present with a network connection or once online beforehand. `npm run build`, then `npm run preview`, serves the same deck from `dist/`. `out/lab-talk-december-2026.pdf` (the last stop of each slide at 3840 × 2160) works on any laptop.
 
-## How the film becomes slides
+## How it fits together
 
-- `cues.mjs` is the one list to edit: for each slide, the frames it rests on. A cue is the last frame before the film's next motion, written as `<scene>@<seconds>`, for example `air@st+3.95`. Beat keys (`st`, `fi`, `ad`, …) come from the scene's `const T` table in `_film/src/scenes/*.tsx`, so a cue moves with its beat when the film is retimed.
-- `node _talk/scripts/deck.mjs --check` resolves every cue against the film (scene list in `_film/src/Film.tsx`, clock in `timing.ts`), lists each slide's rests in film time, checks that they run in order and cover the whole film, and names any `film.yml` beat without a slide.
-- `node _talk/scripts/deck.mjs` renders, from the `LabFilm` composition itself, a still at every rest (`frames/f01234.jpg`, named by film frame) and a muted clip from each rest to the next (`clips/f01100-f01234.mp4`), and writes `slides/lab-talk/assets/deck.json`. Only missing pieces are rendered, so moving one cue or regrouping slides takes seconds; `deck.json` keeps a fingerprint of the film's source and images, and when the film changes everything is rendered again (about five minutes). It uses the film's own `node_modules` (run `npm install` in `_film/` first) and writes only inside `_talk/`.
-- `uv run _talk/scripts/verify.py` checks that every cue lands on a pause: it measures how much the picture still moves at the end of each clip and names any cue that stops the film mid-animation. Slides marked `holds: false` in `cues.mjs` (the photo montage, which never stops moving) are cut on purpose.
-- `PDF=1 node _talk/scripts/deck.mjs`, then `uv run _talk/scripts/pdf.py`, makes the PDF.
+- **Content:** `_film/src/scenes/*.tsx` and `_film/film.yml`. After changing `film.yml` or the site data, run `uv run _film/scripts/prep.py`.
+- **Slides:** `cues.mjs` lists, for each slide, the moments it stops on, written as `<scene>@<seconds>`, for example `air@st+3.95`. Beat keys (`st`, `fi`, `ad`, …) come from the scene's `const T` table, so a stop moves with its beat when the film is retimed. A `cover` entry shows one frame outside the running order; `from` starts a slide's opening at a given moment.
+- **`node scripts/deck.mjs`** resolves the stops against the film and writes `slides/lab-talk/assets/deck.json`, plus a still of every stop for thumbnails, the overview and the PDF. `--check` only lists the stops in film time and names any `film.yml` beat without a slide.
+- **`node scripts/player.mjs`** bundles the film's own source with the film's own packages (one React, one Remotion) into `player-dist/`, the page each slide embeds.
+- **`slides/lab-talk/index.tsx`** embeds the player in each slide and drives it from stop to stop with open-slide's step keys.
+- **The video:** `_film/src/Talk.tsx` builds it from `deck.json`, each slide's stretch of the film in deck order. In `_film/`, `npx remotion render src/index.ts Talk out/talk.mp4` gives the film with its music; `--props='{"hold":2}'` rests 2 seconds at each stop, silent while resting.
+- **Checks:** `node scripts/deck.mjs --clips`, then `uv run scripts/verify.py`, confirms that every stop lands on a pause in the film. The photo montage is marked `holds: false` because it never stops moving.
+- **PDF:** `PDF=1 node scripts/deck.mjs`, then `uv run scripts/pdf.py`.
 
-When the film changes, re-run `deck.mjs`. If a beat gains or loses a step (a new finding, a new build), add or move its cue in `cues.mjs` and give a new slide a note in `index.tsx`.
-
-The stills and clips (about 45 MB) are not in git, like `out/`, `dist/` and `node_modules/`: after a fresh checkout, run `deck.mjs` once to render them.
+After a change: `node scripts/player.mjs` and `node scripts/deck.mjs`, and the dev deck picks them up. `player-dist/`, the stills, `out/`, `dist/` and `node_modules/` are not in git.
 
 ## On the lab site
 
-The deck is live at [sustainability-lab.github.io/talk](https://sustainability-lab.github.io/talk/), linked under the film on the homepage. That copy has no speaker notes. The site serves the committed `talk/` folder on `main` as it is (`_quarto.yml` → `resources`). To publish a new version:
+The deck is live at [sustainability-lab.github.io/talk](https://sustainability-lab.github.io/talk/), linked under the film on the homepage. That copy has no speaker notes. The site serves the committed `talk/` folder on `main` as it is (`_quarto.yml` → `resources`), with the player in `talk/film/`. To publish a new version:
 
 ```bash
 git worktree add /tmp/site-main main                 # a clean checkout of main
-bash _talk/scripts/publish.sh /tmp/site-main         # builds into /tmp/site-main/talk
+bash _talk/scripts/publish.sh /tmp/site-main         # builds the deck and copies the player into /tmp/site-main/talk
 cd /tmp/site-main && git add talk && git commit -m "Update the lab talk" && git push
 git worktree remove /tmp/site-main
 ```
 
 Pushing to `main` redeploys the site in about four minutes.
 
+## Next
+
+Plain open-slide pages (text, figures, open-slide's own builds) can join the video through a small stand-in for open-slide's runtime inside Remotion, so a slide written only in open-slide also renders to video. Narration tracks per slide would set each slide's length in the video.
+
 ## Before showing it outside the lab
 
 - FiLMeR is in review. Confirm its numbers (281 minutes of WRF vs 6.5 seconds, 1.7 °C error) with Balbir or Deena.
 - Interpretable sleep staging is in review and double-blind: no venue or paper title, and no MESA or NSRR data.
 - Aperture is a 2026 preprint. The FlowSat images are generated, and the slide says so.
+- Samachar and Vartalaap: the numbers are checked against the papers (Samachar Tables 3–4; Vartalaap §5.2.1 and Fig. 10). The tweets are about Delhi only.
 - The JoulesEye, SpiroMask, ThermEval and ApneaEye slides show exactly what the film shows: figures with thermal views of faces, and photos with faces blurred. The breathing trace on the JoulesEye slide is illustrative, not a recording.
