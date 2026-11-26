@@ -9,11 +9,11 @@
 # This file holds the film's own words. Keep every line short: it is read in motion.
 # Rebuild:  make -C _film        (see _film/README.md)
 
-edition: October 2026          # shown in the corner of the last frame
+edition: December 2026         # shown in the corner of the last frame
 quarter_months: 4              # how far back "This quarter" looks
 url: sustainability-lab.github.io
 join_url: https://sustainability-lab.github.io/join.html
-music: score.mp3               # in _film/audio/; see README for how it was made
+music: score-dec.mp3           # in _film/audio/: score.mp3 with three phrases repeated (scripts/extend_score.py)
 
 # Opening: four words, four real signals drawn by one red line.
 hook:
@@ -48,6 +48,15 @@ chapters:
       - id: airdelhi
         title: Sensors on Delhi's buses map its air, street by street.
         tag: AirDelhi · NeurIPS 2023 Datasets & Benchmarks
+      - id: filmer
+        title: A network stands in for India's weather model.
+        text: "A 10-day forecast: 281 minutes of WRF on CPUs, 6.5 seconds on one GPU."
+        tag: FiLMeR · in review
+        new: true
+      - id: talk
+        title: And we read how India talks about its air.
+        text: 17,400 news articles and 1.2 million tweets. Attention spikes when smog is visible, and favours big cities over the worst hit.
+        tag: Samachar · COMPASS 2022 | Vartalaap · CSCW 2021
       - id: vayuchat
         title: Anyone can ask the data a question.
         question: Which city had the worst air in December 2024?
@@ -70,6 +79,10 @@ chapters:
       - id: flowsat
         title: And generate satellite images from metadata.
         tag: FlowSat · BMVC 2026
+      - id: aperture
+        title: And make satellite models say what they see.
+        text: "No training: a vision-language model is asked about parts, each at its own scale. Macro-F1 80.2%, against 69.8% for the best training-free method."
+        tag: Aperture · preprint 2026
         new: true
   - key: health
     name: Health Sensing
@@ -82,12 +95,22 @@ chapters:
       - id: spiromask
         title: A microphone inside an N95 mask measures lung function.
         tag: SpiroMask · ACM Transactions on Computing for Healthcare
+      - id: descriptors
+        title: Wearable signals can teach themselves.
+        text: A pulse's own mean, rhythm and spectrum become the training target.
+        tag: Signal Descriptors · IEEE DSAA 2026
+        new: true
       - id: thermeval
         title: We test where vision-language models fail on thermal images.
-        tag: ThermEval · KDD 2026
+        tag: ThermEval · KDD 2026 | First prize, oral talks, ConfAI 2026
       - id: apneaeye
         title: And screen for sleep apnea without touching the sleeper.
         tag: ApneaEye · patent filed 2025
+      - id: sleep
+        title: And stage sleep with evidence a clinician can check.
+        text: "Ten concepts a sleep technician knows, from spindles to muscle tone. They match a raw-signal model: Macro-F1 0.78 vs 0.77."
+        tag: Interpretable sleep staging | in review
+        new: true
   - key: energy
     name: Energy
     headline: A bill says how much a home used, not what used it.

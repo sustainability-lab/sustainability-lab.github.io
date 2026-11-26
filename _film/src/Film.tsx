@@ -19,14 +19,14 @@ import { bar } from "./timing";
 export const SCENES: { id: string; bars: number; C: React.FC }[] = [
   { id: "hook", bars: 8, C: Hook }, //       0:00 solo piano
   { id: "place", bars: 4, C: Place }, //     0:16 the pulse enters
-  { id: "air", bars: 10, C: Air }, //        0:24 strings swell at 0:32
-  { id: "earth", bars: 10, C: Earth }, //    0:44 the beat drops at 0:48
-  { id: "health", bars: 10, C: Health }, //  1:04 breakdown
-  { id: "energy", bars: 10, C: Energy }, //  1:24 build
-  { id: "work", bars: 8, C: Work }, //       1:44 climax
-  { id: "people", bars: 3, C: People }, //   2:00
-  { id: "alumni", bars: 6, C: Alumni }, //   2:06
-  { id: "join", bars: 6, C: Join }, //       2:18 outro, final chord
+  { id: "air", bars: 14, C: Air }, //        0:24 strings swell at 0:32 (bars 17–20 play twice)
+  { id: "earth", bars: 14, C: Earth }, //    0:52 the beat drops at 0:56 (bars 26–29 play twice)
+  { id: "health", bars: 14, C: Health }, //  1:20 breakdown (bars 34–37 play twice)
+  { id: "energy", bars: 10, C: Energy }, //  1:48 build
+  { id: "work", bars: 8, C: Work }, //       2:08 climax
+  { id: "people", bars: 3, C: People }, //   2:24
+  { id: "alumni", bars: 6, C: Alumni }, //   2:30
+  { id: "join", bars: 6, C: Join }, //       2:42 outro, final chord
 ];
 
 const starts = SCENES.reduce<number[]>((acc, s, i) => [...acc, acc[i] + s.bars], [0]);
