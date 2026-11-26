@@ -47,11 +47,11 @@ listing:
     </div>
     <!-- The lab film lives on YouTube; the player loads only when someone presses play. New edition: change the ID in both places. -->
     <figure class="film">
-      <button class="film-open" type="button" aria-haspopup="dialog" aria-controls="film-dialog" data-youtube="wi7nu7pTJqc">
+      <button class="film-open" type="button" aria-haspopup="dialog" aria-controls="film-dialog" data-youtube="iaZuz2s4Ij8">
         <img src="images/film/poster.jpg" width="1600" height="900" alt="Still from the lab film: 30,638 brick kilns found from space across the Indo-Gangetic Plain">
-        <span class="film-cta"><span class="film-play" aria-hidden="true"></span><span><b>Watch the lab film</b><span>2½ minutes · on YouTube, in 4K</span></span></span>
+        <span class="film-cta"><span class="film-play" aria-hidden="true"></span><span><b>Watch the lab film</b><span>5 minutes · on YouTube, in 4K</span></span></span>
       </button>
-      <figcaption>Our research, people and alumni in one short film · <a href="https://youtu.be/wi7nu7pTJqc">open on YouTube</a></figcaption>
+      <figcaption>Our research, people and alumni in one short film · <a href="https://youtu.be/iaZuz2s4Ij8">open on YouTube</a> · <a href="talk/">the same story as slides</a></figcaption>
     </figure>
   </div>
   <dialog id="film-dialog" class="film-dialog" aria-label="The Sustainability Lab film">

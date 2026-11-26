@@ -5,6 +5,7 @@ project:
     - images/**
     - events/acm-summer-2025/
     - flyer.pdf
+    - talk/**
     - theme/vendor/**
 
 website:
