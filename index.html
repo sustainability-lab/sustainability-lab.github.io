@@ -82,10 +82,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-when','listing-type','listing-text','listing-note','listing-photos','listing-links','listing-film','listing-press',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-when','listing-type','listing-film','listing-text','listing-note','listing-photos','listing-links','listing-press',{ data: ['index'] },{ data: ['categories'] }],
       page: 25,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-when","listing-type","listing-text","listing-note","listing-photos","listing-links","listing-film","listing-press"],
+      searchColumns: ["listing-when","listing-type","listing-film","listing-text","listing-note","listing-photos","listing-links","listing-press"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -314,11 +314,11 @@ window.Quarto = {
     </div>
     <!-- The lab film lives on YouTube; the player loads only when someone presses play. New edition: change the ID in both places. -->
     <figure class="film figure">
-      <button class="film-open" type="button" aria-haspopup="dialog" aria-controls="film-dialog" data-youtube="wi7nu7pTJqc">
+      <button class="film-open" type="button" aria-haspopup="dialog" aria-controls="film-dialog" data-youtube="iaZuz2s4Ij8">
         <img src="images/film/poster.jpg" width="1600" height="900" alt="Still from the lab film: 30,638 brick kilns found from space across the Indo-Gangetic Plain" class="figure-img">
-        <span class="film-cta"><span class="film-play" aria-hidden="true"></span><span><b>Watch the lab film</b><span>2½ minutes · on YouTube, in 4K</span></span></span>
+        <span class="film-cta"><span class="film-play" aria-hidden="true"></span><span><b>Watch the lab film</b><span>5 minutes · on YouTube, in 4K</span></span></span>
       </button>
-      <figcaption>Our research, people and alumni in one short film · <a href="https://youtu.be/wi7nu7pTJqc">open on YouTube</a></figcaption>
+      <figcaption>Our research, people and alumni in one short film · <a href="https://youtu.be/iaZuz2s4Ij8">open on YouTube</a> · <a href="talk/">the same story as slides</a></figcaption>
     </figure>
   </div>
   <dialog id="film-dialog" class="film-dialog" aria-label="The Sustainability Lab film">
@@ -442,6 +442,9 @@ No matching items
 <div class="head-row"><h2>Latest</h2><a class="arrow small" href="news.html">All news</a></div>
 <div id="listing-news-latest" class="quarto-listing quarto-listing-container-custom">
 <div class="newsfeed">
+<div class="list-row" data-type="other">
+<span class="d">Nov 2026</span><span><span class="label">News</span>A new edition of the <a href="https://youtu.be/iaZuz2s4Ij8"><b>lab film</b></a>, five minutes long, with new work on weather emulation (FiLMeR), how news and social media cover air pollution, Aperture, Signal Descriptors and interpretable sleep staging. The same story is also a <a href="https://sustainability-lab.github.io/talk/">slide deck for talks</a>.</span>
+</div>
 <div class="list-row" data-type="award">
 <span class="d">Nov 2026</span><span><span class="label">Award</span>Ayush Shrivastava wins <b>first prize for oral presentations at ConfAI 2026</b> (Plaksha University) for <b>ThermEval</b>, our KDD 2026 benchmark on whether vision-language models can read thermal images.</span>
 </div>
@@ -453,9 +456,6 @@ No matching items
 </div>
 <div class="list-row" data-type="other">
 <span class="d">Oct 2026</span><span><span class="label">News</span>Our first lab film: <a href="https://youtu.be/wi7nu7pTJqc"><b>the lab in 2½ minutes</b></a>, on our research, people and alumni, drawn from the lab’s own data. Watch it in 4K on YouTube.</span>
-</div>
-<div class="list-row" data-type="paper">
-<span class="d">Sep 2026</span><span><span class="label">Paper</span>Two research announcements: <a href="./papers/2026/flowsat.html"><b>FlowSat</b></a> accepted at <b>BMVC 2026</b>, and <a href="./papers/2026/signal-descriptors.html"><b>Efficient Time Series SSL via Signal Descriptors</b></a> accepted for a <b>Short Presentation at IEEE DSAA 2026</b>. Paper PDFs, research summaries and code links are now available.</span>
 </div>
 </div>
 <div class="listing-no-matching d-none">
