@@ -9,7 +9,17 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "lib": ["DOM", "ES2022"]
+    "lib": [
+      "DOM",
+      "ES2022"
+    ],
+    "types": [
+      "@open-slide/core/env"
+    ]
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "slides",
+    "open-slide.config.ts"
+  ]
 }

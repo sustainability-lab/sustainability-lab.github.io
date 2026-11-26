@@ -6,7 +6,7 @@ import path from "node:path";
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 
-export const FILM = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../_film");
+export const FILM = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../.."); // _film/talk/scripts → _film
 const SRC = path.join(FILM, "src");
 const read = (f) => fs.readFileSync(path.join(SRC, f), "utf8");
 
@@ -60,7 +60,20 @@ const pad = (f) => `f${String(f).padStart(5, "0")}`;
 export function resolveDeck(deck, timeline) {
   const slides = [];
   let prev = null;
+  let afterPage = false;
   for (const d of deck) {
+    if (d.page) {
+      // a plain open-slide page: no film frames; its lengths in the video and optional narration
+      slides.push({ id: d.id, title: d.title, pdf: d.pdf !== false, holds: true, page: { steps: d.steps ?? [3], audio: d.audio ?? null }, rests: [] });
+      afterPage = true;
+      continue;
+    }
+    if (afterPage && !d.from && d.cues?.length) {
+      // after a plain page the film picks up at the start of this slide's scene
+      const scene = timeline.scenes.find((x) => x.id === d.cues[0].split("@")[0]);
+      prev = { cue: `${scene.id}@0`, frame: scene.from };
+    }
+    afterPage = false;
     if (d.cover) {
       // one frame from anywhere in the film, outside the running order (the deck's title card)
       const frame = resolveCue(d.cover, timeline);
@@ -86,8 +99,9 @@ export function filmHash() {
   const walk = (dir) => {
     for (const e of fs.readdirSync(dir, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
       const p = path.join(dir, e.name);
-      if (e.isDirectory()) walk(p);
-      else if (!e.name.startsWith(".") && !/\.(mp3|wav)$/.test(e.name)) {
+      if (e.isDirectory()) {
+        if (p !== path.join(FILM, "src", "talk")) walk(p); // the talk's video code does not change the film
+      } else if (!e.name.startsWith(".") && !/\.(mp3|wav)$/.test(e.name) && p !== path.join(FILM, "src", "Talk.tsx")) {
         h.update(path.relative(FILM, p));
         h.update(fs.readFileSync(p));
       }
