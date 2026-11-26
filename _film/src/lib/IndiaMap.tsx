@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Img, staticFile } from "remotion";
+import { TimeContext, VideoContext } from "./time";
 import { Flat, flat, indiaRings, ringsPath } from "./geo";
 import { W, H } from "../theme";
 
@@ -12,11 +13,16 @@ export const IndiaMap: React.FC<{
   fill: string;
   draw?: number; // outline draw-on 0..1
   opacity?: number;
-  raster?: { src: string; bounds: [number, number, number, number]; reveal: string; opacity?: number };
+  // src: a path in public/ (the film); url: an imported file (the talk's slides)
+  raster?: { src?: string; url?: string; bounds: [number, number, number, number]; reveal: string; opacity?: number };
   children?: (proj: Proj) => React.ReactNode;
   under?: (proj: Proj) => React.ReactNode;
 }> = ({ view, stroke, fill, draw = 1, opacity = 1, raster, children, under }) => {
   const proj = flat(view);
+  // in open-slide (a slide's clock but not the video's) a plain <img>; under Remotion, <Img> waits for it to load
+  const slideTime = useContext(TimeContext);
+  const video = useContext(VideoContext);
+  const plain = slideTime !== null && !video;
   const d = ringsPath(indiaRings, proj);
   let rasterEl: React.ReactNode = null;
   if (raster) {
@@ -26,7 +32,10 @@ export const IndiaMap: React.FC<{
     rasterEl = (
       <div style={{ position: "absolute", inset: 0, clipPath: `path('${d}')`, opacity: raster.opacity ?? 1 }}>
         <div style={{ position: "absolute", inset: 0, clipPath: raster.reveal }}>
-          <Img src={staticFile(raster.src)} style={{ position: "absolute", left: px0, top: py0, width: px1 - px0, height: py1 - py0 }} />
+          {React.createElement(plain ? "img" : Img, {
+            src: raster.url ?? staticFile(raster.src ?? ""),
+            style: { position: "absolute", left: px0, top: py0, width: px1 - px0, height: py1 - py0 },
+          })}
         </div>
       </div>
     );

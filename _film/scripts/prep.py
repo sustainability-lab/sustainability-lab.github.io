@@ -172,14 +172,6 @@ funders = [put(site_path(p), "img/funders", 600) for p in flyer["funder_logos"]]
 # ---------- join + QR ----------
 segno.make(cfg["join_url"], error="m").save(str(PUB / "img/qr-join.svg"), scale=10, border=0, dark="#222522", light=None)
 
-# ---------- narration for the talk's video (talk/cues.mjs: `audio: "audio/narration/<id>.mp3"`) ----------
-narration = FILM / "audio" / "narration"
-if narration.is_dir():
-    (PUB / "audio" / "narration").mkdir(parents=True, exist_ok=True)
-    for f in sorted(narration.iterdir()):
-        if f.suffix.lower() in (".mp3", ".wav", ".m4a", ".aac"):
-            shutil.copyfile(f, PUB / "audio" / "narration" / f.name)
-
 # ---------- music ----------
 score = FILM / "audio" / cfg["music"]
 if score.exists():

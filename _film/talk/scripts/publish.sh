@@ -6,15 +6,14 @@
 #
 # The site serves talk/ as it is (_quarto.yml → resources), so the push to main redeploys it.
 # The public copy has no speaker notes (VITE_PUBLIC=1). GitHub Pages has no rewrites, so the app
-# shell is also copied to talk/s/lab-talk/, and talk/index.html redirects there. The film slides
-# draw the film live and read its images through staticFile(), from talk/film/.
+# shell is also copied to talk/s/lab-talk/, and talk/index.html redirects there. The slides import
+# their pictures and data, so the build is self-contained.
 set -euo pipefail
 
 SITE="${1:?usage: publish.sh <checkout of main>}"
 FILM="$(cd "$(dirname "$0")/../.." && pwd)" # _film/talk/scripts → _film
 OUT="$SITE/talk"
 
-[ -f "$FILM/public/film.json" ] || { echo "no public/film.json: run uv run _film/scripts/prep.py" >&2; exit 1; }
 rm -rf "$OUT"
 (cd "$FILM" && OPEN_SLIDE_BASE=/talk/ VITE_PUBLIC=1 npx open-slide build --out-dir "$OUT")
 mkdir -p "$OUT/s/lab-talk"
@@ -32,8 +31,5 @@ cat > "$OUT/index.html" <<'HTML'
 <body><p><a href="/talk/s/lab-talk/">Open the lab talk</a></p></body>
 </html>
 HTML
-# the film's images, for staticFile() in the live film slides (no audio: the talk plays silent)
-mkdir -p "$OUT/film"
-cp -R "$FILM/public/img" "$OUT/film/img"
 if grep -rqs "Balbir" "$OUT"; then echo "speaker notes leaked into the public copy" >&2; exit 1; fi
 du -sh "$OUT"

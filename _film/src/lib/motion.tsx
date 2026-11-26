@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Easing, interpolate, useCurrentFrame } from "remotion";
 import { C, FONT, FPS } from "../theme";
+import { TimeContext } from "./time";
 
 export const E = {
   out: Easing.bezier(0.16, 1, 0.3, 1),
@@ -10,8 +11,12 @@ export const E = {
   linear: (x: number) => x,
 };
 
-/** Seconds since the start of the enclosing <Sequence>. */
-export const useT = () => useCurrentFrame() / FPS;
+/** Seconds since the start of the enclosing <Sequence> (the film), or since the slide or build began (the talk). */
+export const useT = () => {
+  const t = useContext(TimeContext);
+  // A tree either has the talk's clock or Remotion's, never both, so the hooks run in the same order on every render.
+  return t ?? useCurrentFrame() / FPS;
+};
 
 /** 0→1 progress of a transition that starts at `at` and lasts `dur` seconds. */
 export const pt = (t: number, at: number, dur: number, ease = E.out) =>
