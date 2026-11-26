@@ -17,16 +17,17 @@ import { bar } from "./timing";
 
 // Scenes in bars of the score. Change a length here and in the scene's *_LEN together.
 export const SCENES: { id: string; bars: number; C: React.FC }[] = [
-  { id: "hook", bars: 8, C: Hook }, //       0:00 solo piano
-  { id: "place", bars: 4, C: Place }, //     0:16 the pulse enters
-  { id: "air", bars: 14, C: Air }, //        0:24 strings swell at 0:32 (bars 17–20 play twice)
-  { id: "earth", bars: 14, C: Earth }, //    0:52 the beat drops at 0:56 (bars 26–29 play twice)
-  { id: "health", bars: 14, C: Health }, //  1:20 breakdown (bars 34–37 play twice)
-  { id: "energy", bars: 10, C: Energy }, //  1:48 build
-  { id: "work", bars: 8, C: Work }, //       2:08 climax
-  { id: "people", bars: 3, C: People }, //   2:24
-  { id: "alumni", bars: 6, C: Alumni }, //   2:30
-  { id: "join", bars: 6, C: Join }, //       2:42 outro, final chord
+  // December 2026: two Lyria movements (scripts/two_movements.py), each stretched from 124 to 120 BPM
+  { id: "hook", bars: 12, C: Hook }, //      0:00 movement one: felt piano, no drums
+  { id: "place", bars: 4, C: Place }, //     0:24
+  { id: "air", bars: 32, C: Air }, //        0:32 groove A; A2 at 1:02 under AirDelhi
+  { id: "earth", bars: 22, C: Earth }, //    1:36 darker groove B, quiet close from 2:08
+  { id: "health", bars: 32, C: Health }, //  2:20 movement two: piano, breathing pads
+  { id: "energy", bars: 17, C: Energy }, //  3:24 the build, with kick
+  { id: "work", bars: 7, C: Work }, //       3:58 breakdown and riser under the venue wall
+  { id: "people", bars: 10, C: People }, //  4:12 the peak
+  { id: "alumni", bars: 6, C: Alumni }, //   4:32 peak
+  { id: "join", bars: 6, C: Join }, //       4:44 the final chord
 ];
 
 const starts = SCENES.reduce<number[]>((acc, s, i) => [...acc, acc[i] + s.bars], [0]);

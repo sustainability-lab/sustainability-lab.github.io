@@ -10,14 +10,14 @@ import { BAR, BEAT } from "../timing";
 // Four words, four real signals, one red line that ends as the lab's sigmoid.
 const BOX = { x0: M, x1: W - M, top: 470, base: 880 };
 
-// accelerating cuts: 2 bars, then 1 bar each, then the logo
+// two bars (4 s) per word, so each signal can be read, then the logo
 const T_AIR = 0.05;
 const T_LAND = 2 * BAR;
-const T_BREATH = 3 * BAR;
-const T_POWER = 4 * BAR;
-const T_LOGO = 5 * BAR;
-const T_TAG = 6 * BAR;
-export const HOOK_LEN = 8 * BAR;
+const T_BREATH = 4 * BAR;
+const T_POWER = 6 * BAR;
+const T_LOGO = 8 * BAR;
+const T_TAG = 9 * BAR;
+export const HOOK_LEN = 12 * BAR;
 
 // logo lockup geometry (logo units → px)
 const S = 3.8;

@@ -3,6 +3,7 @@ import { Sfx } from "./sfx";
 import { AbsoluteFill, Img, staticFile } from "remotion";
 import { E, lerp, pt, Rise, useT, Words } from "./motion";
 import { C, FONT, H, M, Tone, tone, W } from "../theme";
+import type { Finding as FindingData } from "../data";
 
 export const CHAPTER_KEYS = ["air", "earth", "health", "energy"];
 
@@ -166,3 +167,55 @@ export const Reveal: React.FC<{
 };
 
 export const frameSize = { W, H, M };
+
+/** A beat's result, under its text: a red rule, a kicker, one or two strong lines and/or bars, and the source. */
+export const Finding: React.FC<{ at: number; out?: number; tone: Tone; f?: FindingData; top?: number; width?: number }> = ({
+  at,
+  out,
+  tone: tn,
+  f,
+  top = 690,
+  width = 700,
+}) => {
+  const t = useT();
+  if (!f) return null;
+  const k = tone(tn);
+  const on = pt(t, at, 0.5) * (out === undefined ? 1 : 1 - pt(t, out - 0.45, 0.4));
+  if (on <= 0) return null;
+  const max = Math.max(...(f.bars ?? []).map((b) => b[1]));
+  const decimals = (f.bars ?? []).some((b) => b[1] < 1) ? 2 : (f.bars ?? []).some((b) => !Number.isInteger(b[1])) ? 2 : 0;
+  return (
+    <div style={{ position: "absolute", left: M, top, width, opacity: on, transform: `translateY(${(1 - pt(t, at, 0.6, E.out)) * 16}px)` }}>
+      <div style={{ height: 2, background: k.red, width: `${pt(t, at, 0.7, E.inOut) * 100}%` }} />
+      <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 14, fontFamily: FONT.mono, fontSize: 19, letterSpacing: "0.06em", color: k.red }}>
+        <span>FINDING</span>
+        {f.kicker && <span style={{ color: k.muted, letterSpacing: "0.02em" }}>· {f.kicker}</span>}
+      </div>
+      {f.lines?.map((line, i) => (
+        <div key={line} style={{ marginTop: i ? 6 : 12, fontFamily: FONT.body, fontWeight: 600, fontSize: 32, lineHeight: 1.25, color: k.ink, opacity: pt(t, at + 0.2 + i * 0.5, 0.5) }}>
+          {line}
+        </div>
+      ))}
+      {f.bars && (
+        <div style={{ marginTop: 14 }}>
+          {f.bars.map(([label, v, hi], i) => {
+            const a = pt(t, at + 0.35 + i * 0.3, 0.9, E.out);
+            const col = hi ? k.red : k.muted;
+            return (
+              <div key={label} style={{ display: "grid", gridTemplateColumns: "250px 1fr 90px", alignItems: "center", gap: 14, height: 40 }}>
+                <span style={{ fontFamily: FONT.body, fontSize: 23, color: k.ink }}>{label}</span>
+                <span style={{ height: 16, background: k.soft }}>
+                  <span style={{ display: "block", height: "100%", width: `${(v / max) * 100 * a}%`, background: col }} />
+                </span>
+                <span style={{ fontFamily: FONT.head, fontWeight: 700, fontSize: 28, color: col, textAlign: "right", fontVariantNumeric: "tabular-nums", opacity: pt(t, at + 0.35 + i * 0.3, 0.3) }}>
+                  {v.toFixed(decimals)}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+      )}
+      {f.note && <div style={{ marginTop: 12, fontFamily: FONT.mono, fontSize: 18, lineHeight: 1.4, color: k.muted, opacity: pt(t, at + 0.6, 0.5) }}>{f.note}</div>}
+    </div>
+  );
+};

@@ -162,6 +162,10 @@ spiro.crop((62, 538, 282, 744)).resize((440, 412), Image.LANCZOS).save(PUB / "im
 ch_img["spiro_use"], ch_img["spiro_mask"] = "img/ch/spiro_use.jpg", "img/ch/spiro_mask.jpg"
 # Aperture: the paper's coal-plant tile (Fig. 3), full 4096 px so the zoom path stays native to the 512 px chimney
 ch_img["aperture"] = put(FILM / "assets/aperture/coal-4096.jpg", "img/ch", 4096)
+# AirDelhi Fig. 2a (a $30 sensor against a reference monitor); FlowSat's ground-resolution dial (same prompt, 0.30 → 1.00 m)
+ch_img["airdelhi_fig2a"] = put(FILM / "assets/airdelhi-fig2a.png", "img/ch", 2200)
+for f in sorted((FILM / "assets/flowsat-dial").glob("*.jpg")):
+    ch_img[f"dial_{f.stem}"] = put(f, "img/ch", 1024, f"dial-{f.stem}.jpg")
 
 funders = [put(site_path(p), "img/funders", 600) for p in flyer["funder_logos"]]
 

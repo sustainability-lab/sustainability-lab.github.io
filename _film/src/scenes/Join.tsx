@@ -9,7 +9,7 @@ import { BAR } from "../timing";
 
 export const JOIN_LEN = 6 * BAR;
 
-const T_END = 3.5 * BAR; // the closing lockup
+const T_END = 4 * BAR; // the closing lockup
 
 export const Join: React.FC = () => {
   const t = useT();
@@ -46,9 +46,9 @@ export const Join: React.FC = () => {
         </Appear>
         <div style={{ position: "absolute", left: M, right: M, top: 840, borderTop: `1px solid ${C.rule}`, paddingTop: 26, opacity: pt(t, 2.0, 0.6) }}>
           <div style={{ fontFamily: FONT.body, fontWeight: 600, fontSize: 20, letterSpacing: "0.12em", textTransform: "uppercase", color: C.muted, marginBottom: 18 }}>Supported by</div>
-          <div style={{ display: "flex", alignItems: "center", gap: 46 }}>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 20 }}>
             {F.funders.map((f, i) => (
-              <Img key={f} src={staticFile(f)} style={{ height: 52, maxWidth: 150, objectFit: "contain", opacity: pt(t, 2.1 + i * 0.07, 0.4) }} />
+              <Img key={f} src={staticFile(f)} style={{ height: 68, maxWidth: 134, objectFit: "contain", opacity: pt(t, 2.1 + i * 0.07, 0.4) }} />
             ))}
           </div>
         </div>

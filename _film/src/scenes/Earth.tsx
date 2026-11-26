@@ -4,16 +4,16 @@ import { AbsoluteFill, Img, staticFile } from "remotion";
 import kilns from "../../data/kilns.json";
 import tiles from "../../data/kiln-tiles.json";
 import { beat, chapter, F } from "../data";
-import { BeatText, Chapter, Reveal } from "../lib/chapter";
+import { BeatText, Chapter, Finding, Reveal } from "../lib/chapter";
 import { flat, indiaRings, ringsPath } from "../lib/geo";
 import { Count, E, inOut, lerp, pt, useT } from "../lib/motion";
 import { C, FONT, H, W, DPR } from "../theme";
 import { BAR } from "../timing";
 
-export const EARTH_LEN = 14 * BAR;
+export const EARTH_LEN = 22 * BAR;
 
-// bars 26–29 of the score play twice (16–24 s here), which makes room for Aperture
-const T = { dock: 3.9, kl: 4.3, sk: 9.1, po: 13.4, fs: 16.6, ap: 20.4 };
+// movement one's darker groove (bars 48–63), then its quiet close under Aperture; SentinelKilnDB is now the kilns beat's tag
+const T = { dock: 3.9, kl: 4.3, sk: 14.0, po: 14.0, fs: 22.0, ap: 32.0 };
 const SWEEP = 3.6; // seconds for all kilns to appear
 const VIEW = { lon0: 82.2, lat0: 26.6, k: 60, cx: 1330, cy: 560 };
 
@@ -108,28 +108,22 @@ export const Earth: React.FC = () => {
       </AbsoluteFill>
 
       <Sfx at={T.kl + 0.3} name="rain_long" volume={0.98} />
-      {[0, 1, 2, 3].map((i) => (
-        <Sfx key={i} at={T.sk + i * 0.2} name="tick" volume={0.91} />
-      ))}
       <Sfx at={T.po - 0.1} name="whoosh" volume={0.33} />
       <Sfx at={T.fs - 0.1} name="whoosh" volume={0.33} />
       <BeatText tone="dark" at={T.kl} out={T.sk - 0.42} title={b("kilns").title} text={b("kilns").text} tag={b("kilns").tag} />
-      <BeatText tone="dark" at={T.sk + 0.05} out={T.po - 0.42} title={b("sentinelkilndb").title} text={b("sentinelkilndb").text} tag={b("sentinelkilndb").tag} />
       <BeatText tone="dark" at={T.po + 0.05} out={T.fs - 0.42} title={b("policy").title} tag={b("policy").tag} />
+      <Finding tone="dark" at={T.po + 3.0} out={T.fs} f={b("policy").finding} />
+      <Finding tone="dark" at={T.fs + 3.0} out={T.ap} f={b("flowsat").finding} />
       <BeatText tone="dark" at={T.fs + 0.05} out={T.ap - 0.42} title={b("flowsat").title} tag={b("flowsat").tag} isNew={b("flowsat").new} />
       <BeatText tone="dark" at={T.ap + 0.05} title={b("aperture").title} text={b("aperture").text} tag={b("aperture").tag} isNew={b("aperture").new} />
       <Sfx at={T.ap - 0.1} name="whoosh" volume={0.33} />
-
-      {/* SentinelKilnDB: four Sentinel-2 tiles, boxes drawn from the paper's annotations */}
-      {[0, 1, 2, 3].map((i) => (
-        <Tile key={i} i={i} at={T.sk + i * 0.2} out={T.po - 0.3} x={960 + (i % 2) * 430} y={196 + Math.floor(i / 2) * 420} s={380} />
-      ))}
 
       {/* Space to Policy: the paper's detections */}
       <Reveal src={F.img.policy} at={T.po - 0.15} out={T.fs - 0.25} x={1030} y={196} w={790} h={768} fit="contain" from="bottom" bg={C.night} />
 
       {/* FlowSat: generated satellite images */}
-      <FlowSatGrid at={T.fs - 0.05} out={T.ap - 0.3} />
+      <FlowSatGrid at={T.fs - 0.05} out={T.fs + 4.4} />
+      <Dial at={T.fs + 4.6} out={T.ap - 0.3} />
 
       {/* Aperture: the paper's own zoom path on one coal plant, 4096 → 2048 → 1024 → 512 px, ending on the chimney */}
       <Aperture at={T.ap} />
@@ -181,7 +175,7 @@ const Aperture: React.FC<{ at: number }> = ({ at }) => {
   const S = 760;
   const on = pt(t, at - 0.2, 0.7, E.inOut);
   // each step: hold the grid for a moment, then push into the next quadrant
-  const steps = [at + 1.3, at + 2.5, at + 3.6];
+  const steps = [at + 2.4, at + 5.0, at + 7.6];
   let k = 0;
   for (let i = 0; i < steps.length; i++) if (t >= steps[i]) k = i + 1;
   const from = ZOOM[Math.max(0, k - 1)];
@@ -212,6 +206,26 @@ const Aperture: React.FC<{ at: number }> = ({ at }) => {
       {steps.map((s) => (
         <Sfx key={s} at={s} name="tick" volume={0.5} />
       ))}
+    </div>
+  );
+};
+
+const GSD = ["0.30", "0.35", "0.40", "0.45", "0.50", "0.55", "0.60", "0.65", "0.70", "0.75", "0.80", "0.85", "0.90", "0.95", "1.00"];
+
+/** FlowSat's ground-resolution dial: the same description and noise, one number turned from 0.30 to 1.00 m. */
+const Dial: React.FC<{ at: number; out: number }> = ({ at, out }) => {
+  const t = useT();
+  if (t < at - 0.3 || t > out + 0.6) return null;
+  const on = pt(t, at - 0.2, 0.5, E.inOut) * (1 - pt(t, out, 0.5, E.inOut));
+  const k = Math.min(GSD.length - 1, Math.max(0, Math.floor(pt(t, at + 0.6, 3.0, E.inOut) * (GSD.length - 1) + 0.5)));
+  const s = 720;
+  return (
+    <div style={{ position: "absolute", left: 1060, top: 186, width: s, opacity: on }}>
+      <Img src={staticFile(F.img[`dial_${GSD[k]}`])} style={{ width: s, height: s, display: "block" }} />
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginTop: 12, fontFamily: FONT.mono, fontSize: 23, color: C.nightInk }}>
+        <span>stadium · same prompt and noise</span>
+        <span style={{ color: C.signal }}>{GSD[k]} m per pixel</span>
+      </div>
     </div>
   );
 };

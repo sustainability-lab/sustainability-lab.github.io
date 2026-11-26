@@ -6,11 +6,11 @@ import { Appear, E, Kicker, pt, Rise, Rule, useT, Words } from "../lib/motion";
 import { C, FONT, M } from "../theme";
 import { BAR, BEAT } from "../timing";
 
-export const WORK_LEN = 8 * BAR;
+export const WORK_LEN = 7 * BAR;
 
 // the red card lands on the downbeat of bar 58 (two bars before People)
 // the wall (with award badges), then This quarter on the phrase boundary at bar 56
-const T = { wall: 0, q: 4 * BAR };
+// (This quarter was dropped in December 2026: the wall alone, then Life in the lab on movement two's peak)
 
 // one cell per venue: the newest paper with a figure there
 const wallCells = () => {
@@ -21,19 +21,15 @@ const wallCells = () => {
 export const Work: React.FC = () => {
   const t = useT();
   const cells = wallCells();
-  const wallOut = pt(t, T.q + 0.5, 0.3, E.inOut);
-  const qIn = pt(t, T.q, 0.55, E.inOut);
   return (
     <AbsoluteFill style={{ background: C.paper, overflow: "hidden" }}>
       {cells.map((_, i) => (
         <Sfx key={i} at={0.25 + i * BEAT} name="tick" volume={0.9} />
       ))}
       <Sfx at={4.6} name="ping" volume={0.3} />
-      <Sfx at={T.q - 0.1} name="whoosh" volume={0.5} />
-      <Sfx at={T.q} name="thump" volume={0.3} />
 
       {/* A: the venue wall, one cell per beat */}
-      <AbsoluteFill style={{ opacity: 1 - wallOut }}>
+      <AbsoluteFill>
         <div style={{ position: "absolute", left: M, top: 70 }}>
           <Rise at={0.05}>
             <Kicker size={24}>{F.work.kicker}</Kicker>
@@ -52,7 +48,7 @@ export const Work: React.FC = () => {
                 <div style={{ overflow: "hidden", marginTop: 12 }}>
                   <div style={{ transform: `translateY(${(1 - a) * 100}%)`, fontFamily: FONT.head, fontWeight: 700, fontSize: 62, letterSpacing: "-0.04em", lineHeight: 1.02, color: C.ink }}>{c.venue}</div>
                 </div>
-                <div style={{ fontFamily: FONT.mono, fontSize: 24, color: C.muted, marginTop: 8, opacity: pt(t, at + 0.2, 0.4), whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                <div style={{ fontFamily: FONT.mono, fontSize: 24, color: C.muted, marginTop: 8, lineHeight: 1.3, opacity: pt(t, at + 0.2, 0.4), display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
                   {c.year} · {c.title}
                 </div>
                 {F.work.badges?.[c.venue] && (
@@ -66,30 +62,6 @@ export const Work: React.FC = () => {
         </div>
       </AbsoluteFill>
 
-      {/* C: this quarter, on the dark ground with red accents (full red is reserved for chapter cards) */}
-      <div style={{ position: "absolute", inset: 0, background: C.night, clipPath: `inset(0 0 0 ${(1 - qIn) * 100}%)` }}>
-        <div style={{ position: "absolute", left: M, top: 92 }}>
-          <Rise at={T.q + 0.25}>
-            <Kicker color={C.nightMuted} square={C.signal} size={24}>{F.edition}</Kicker>
-          </Rise>
-          <Words text={F.work.quarter_title} at={T.q + 0.35} style={{ marginTop: 16, fontFamily: FONT.head, fontWeight: 700, fontSize: 150, letterSpacing: "-0.055em", lineHeight: 0.95, color: C.nightInk }} />
-        </div>
-        <div style={{ position: "absolute", left: M, right: M, top: 420 }}>
-          {F.work.quarter.map((q, i) => {
-            const at = T.q + 0.75 + i * BEAT;
-            return (
-              <div key={i} style={{ display: "grid", gridTemplateColumns: "220px 1fr", gap: 30, padding: "26px 0", borderTop: `2px solid ${i === 0 ? C.signal : C.nightRule}` , opacity: pt(t, at, 0.3) }}>
-                <Rise at={at}>
-                  <span style={{ fontFamily: FONT.mono, fontSize: 30, color: C.signal }}>{q.when}</span>
-                </Rise>
-                <Appear at={at + 0.05} dy={16}>
-                  <span style={{ fontFamily: FONT.body, fontWeight: 500, fontSize: 46, lineHeight: 1.2, color: C.nightInk, letterSpacing: "-0.01em" }}>{q.text}</span>
-                </Appear>
-              </div>
-            );
-          })}
-        </div>
-      </div>
     </AbsoluteFill>
   );
 };

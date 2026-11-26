@@ -6,13 +6,13 @@ import field from "../../data/pm-field.json";
 import filmer from "../../data/filmer.json";
 import samachar from "../../data/samachar.json";
 import { beat, chapter, F } from "../data";
-import { BeatText, Chapter, Reveal } from "../lib/chapter";
+import { BeatText, Chapter, Finding, Reveal } from "../lib/chapter";
 import { IndiaMap } from "../lib/IndiaMap";
 import { Appear, E, inOut, lerp, pt, Rise, Typed, useT } from "../lib/motion";
 import { C, FONT, M } from "../theme";
 import { BAR } from "../timing";
 
-export const AIR_LEN = 14 * BAR;
+export const AIR_LEN = 32 * BAR;
 
 const DELHI: [number, number] = [77.21, 28.61];
 const VIEW = { lon0: 82.6, lat0: 22.2, k: 26.5, cx: 1345, cy: 586 };
@@ -20,7 +20,7 @@ const VIEW = { lon0: 82.6, lat0: 22.2, k: 26.5, cx: 1345, cy: 586 };
 // beat timings (s from chapter start)
 // beats land on bars of the score (2 s); the field arrives with the strings at bar 16.
 // The strings' four-bar phrase plays twice (18–26 s), which makes room for FiLMeR and the news beat.
-const T = { dock: 3.55, st: 3.95, fi: 7.6, pl: 9.9, ad: 12.0, fm: 14.6, tk: 20.0, vc: 24.0 };
+const T = { dock: 3.55, st: 3.95, fi: 14.0, pl: 18.0, ad: 30.0, fm: 38.0, tk: 48.0, vc: 56.0 };
 
 type Station = [number, number, number, number | null];
 
@@ -102,6 +102,9 @@ export const Air: React.FC = () => {
       ))}
       <Sfx at={T.ad - 0.45} name="whoosh" volume={0.42} />
       <BeatText tone="light" at={T.st} out={T.fi - 0.42} title={b("stations").title} tag={b("stations").tag} />
+      <Finding tone="light" at={T.st + 4.0} out={T.fi} f={b("stations").finding} />
+      <Finding tone="light" at={T.fi + 3.5} out={T.ad} f={b("field").finding} />
+      <Finding tone="light" at={T.ad + 3.5} out={T.fm} f={b("airdelhi").finding} />
       <BeatText tone="light" at={T.fi} out={T.ad - 0.42} title={b("field").title} tag={b("field").tag} />
       <BeatText tone="light" at={T.ad} out={T.fm - 0.42} title={b("airdelhi").title} tag={b("airdelhi").tag} />
       <BeatText tone="light" at={T.fm} out={T.tk - 0.42} title={b("filmer").title} text={b("filmer").text} tag={b("filmer").tag} isNew={b("filmer").new} />
@@ -109,9 +112,9 @@ export const Air: React.FC = () => {
       <BeatText tone="light" at={T.vc} title={b("vayuchat").title} tag={b("vayuchat").tag} />
 
       {/* AirDelhi: the sensor on a bus, and the street-level map from the paper */}
-      <Reveal src={F.img.bus} at={T.ad - 0.3} out={T.fm - 0.25} x={900} y={170} w={600} h={800} pos="40% 50%" />
-      <Reveal src={F.img.airdelhi} at={T.ad + 0.15} out={T.fm - 0.2} x={1530} y={330} w={270} h={480} pos="88% 50%" bg={C.paper} from="bottom" />
-      <div style={{ position: "absolute", left: 1530, top: 822, width: 270, fontFamily: FONT.mono, fontSize: 21, lineHeight: 1.3, color: C.muted, opacity: inOut(t, T.ad + 0.8, T.fm - 0.3) }}>
+      <Reveal src={F.img.bus} at={T.ad - 0.3} out={T.fm - 0.3} x={900} y={170} w={600} h={800} pos="40% 50%" />
+      <Reveal src={F.img.airdelhi} at={T.ad + 0.15} out={T.fm - 0.3} x={1530} y={330} w={270} h={480} pos="88% 50%" bg={C.paper} from="bottom" />
+      <div style={{ position: "absolute", left: 1530, top: 822, width: 270, fontFamily: FONT.mono, fontSize: 21, lineHeight: 1.3, color: C.muted, opacity: inOut(t, T.ad + 0.8, T.fm - 0.4) }}>
         PM2.5 along bus routes, Delhi
       </div>
 
@@ -184,8 +187,8 @@ const VayuChat: React.FC<{ at: number; question: string; top: [string, number][]
 const Filmer: React.FC<{ at: number; out: number }> = ({ at, out }) => {
   const t = useT();
   if (t < at - 0.5 || t > out + 0.5) return null;
-  const race = at + 3.3;
-  const mapOn = inOut(t, at - 0.2, race - 0.2, 0.7, 0.45);
+  const race = at + 4.0;
+  const mapOn = inOut(t, at - 0.2, out - 0.3, 0.7, 0.45);
   const sweep = pt(t, at + 0.9, 1.7, E.inOut);
   const bounds = filmer.bounds as [number, number, number, number];
   const ramp = (filmer.stops as [number, string][]).map(([, c]) => c).join(",");
@@ -221,41 +224,42 @@ const Filmer: React.FC<{ at: number; out: number }> = ({ at, out }) => {
   );
 };
 
-/** The cost of one 10-day forecast, bars to scale: WRF's three stages against FiLMeR on one GPU. */
+/** The cost of one 10-day forecast, to scale, in the left column's FINDING slot (the map stays on the right). */
 const Race: React.FC<{ at: number; out: number }> = ({ at, out }) => {
   const t = useT();
   const on = inOut(t, at, out - 0.25, 0.4, 0.35);
   if (on <= 0) return null;
-  const stages: [string, number][] = [["ungrib", 41], ["metgrid", 28], ["WRF", 212]];
+  const stages: [number, string][] = [[41, C.muted], [28, C.muted], [212, C.ink]];
   const total = 281;
-  const full = 820; // px for 281 minutes
-  const grow = pt(t, at + 0.2, 1.3, E.inOut);
-  const shown = grow * total;
+  const shown = pt(t, at + 0.3, 1.3, E.inOut) * total;
   let acc = 0;
+  const row = (label: string, col: string, bar: React.ReactNode, value: string, op = 1) => (
+    <div style={{ display: "grid", gridTemplateColumns: "230px 1fr 130px", alignItems: "center", gap: 14, height: 46, opacity: op }}>
+      <span style={{ fontFamily: FONT.body, fontSize: 23, color: C.ink }}>{label}</span>
+      <span style={{ height: 18, background: C.soft, display: "flex" }}>{bar}</span>
+      <span style={{ fontFamily: FONT.head, fontWeight: 700, fontSize: 28, color: col, textAlign: "right", fontVariantNumeric: "tabular-nums" }}>{value}</span>
+    </div>
+  );
+  const wrf = stages.map(([m, c], i) => {
+    const w = (Math.max(0, Math.min(m, shown - acc)) / total) * 100;
+    acc += m;
+    return <span key={i} style={{ width: `${w}%`, height: "100%", background: c, borderRight: w > 0 ? `2px solid ${C.paper}` : undefined }} />;
+  });
   return (
-    <div style={{ position: "absolute", left: 930, top: 330, width: 880, opacity: on }}>
-      <div style={{ fontFamily: FONT.mono, fontSize: 22, color: C.muted, marginBottom: 26 }}>One 10-day forecast</div>
-      <div style={{ fontFamily: FONT.body, fontWeight: 700, fontSize: 30, color: C.ink, marginBottom: 12 }}>WRF on CPUs</div>
-      <div style={{ display: "flex", height: 56 }}>
-        {stages.map(([name, m], i) => {
-          const w = (Math.max(0, Math.min(m, shown - acc)) / total) * full;
-          acc += m;
-          return (
-            <div key={name} style={{ position: "relative", width: w, height: "100%", background: i === 2 ? C.ink : C.muted, borderRight: w > 0 ? `2px solid ${C.paper}` : undefined }}>
-              <span style={{ position: "absolute", left: 0, top: i === 1 ? 92 : 64, fontFamily: FONT.mono, fontSize: 19, color: C.muted, whiteSpace: "nowrap", opacity: w > 4 ? 1 : 0 }}>
-                {name} {m} min
-              </span>
-            </div>
-          );
-        })}
+    <div style={{ position: "absolute", left: M, top: 690, width: 700, opacity: on }}>
+      <div style={{ height: 2, background: C.red, width: `${pt(t, at, 0.7, E.inOut) * 100}%` }} />
+      <div style={{ display: "flex", gap: 10, marginTop: 14, fontFamily: FONT.mono, fontSize: 19, letterSpacing: "0.06em", color: C.red }}>
+        <span>FINDING</span>
+        <span style={{ color: C.muted, letterSpacing: "0.02em" }}>· one 10-day forecast, to scale</span>
       </div>
-      <div style={{ fontFamily: FONT.mono, fontSize: 26, color: C.ink, marginTop: 64, textAlign: "right", width: full }}>{Math.round(shown)} minutes</div>
-      <div style={{ fontFamily: FONT.body, fontWeight: 700, fontSize: 30, color: C.red, marginTop: 44, marginBottom: 12 }}>FiLMeR on one GPU</div>
-      <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-        <div style={{ width: Math.max(3, (6.5 / 60 / total) * full), height: 56, background: C.red, opacity: pt(t, at + 0.2, 0.15) }} />
-        <div style={{ fontFamily: FONT.mono, fontSize: 26, color: C.red, opacity: pt(t, at + 0.35, 0.3) }}>6.5 seconds</div>
+      <div style={{ marginTop: 14 }}>
+        {row("WRF on CPUs", C.ink, wrf, `${Math.round(shown)} min`)}
+        {row("FiLMeR on one GPU", C.red, <span style={{ width: 3, height: "100%", background: C.red }} />, "6.5 s", pt(t, at + 1.6, 0.4))}
       </div>
-      <Sfx at={at + 0.2} name="tick" volume={0.4} />
+      <div style={{ marginTop: 12, fontFamily: FONT.mono, fontSize: 18, lineHeight: 1.4, color: C.muted, opacity: pt(t, at + 1.9, 0.5) }}>
+        WRF: ungrib 41 + metgrid 28 + model 212 min · FiLMeR, Table 14
+      </div>
+      <Sfx at={at + 0.3} name="tick" volume={0.4} />
     </div>
   );
 };

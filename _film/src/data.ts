@@ -1,7 +1,9 @@
 import film from "../public/film.json";
 
 // Everything on screen that is not a data layer comes from public/film.json (made by scripts/prep.py).
-export type Beat = { id: string; title: string; text?: string; tag?: string; question?: string; new?: boolean };
+/** A beat's result, shown a few seconds in: one or two lines, or bars ([label, value, highlight]), and a source note. */
+export type Finding = { kicker?: string; lines?: string[]; bars?: [string, number, number][]; note?: string };
+export type Beat = { id: string; title: string; text?: string; tag?: string; question?: string; new?: boolean; finding?: Finding };
 export type Chapter = { key: string; name: string; headline: string; beats: Beat[] };
 
 export const F = film as unknown as {

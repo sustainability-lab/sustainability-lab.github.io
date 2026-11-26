@@ -1,15 +1,16 @@
 import React, { useMemo } from "react";
 import { Sfx } from "../lib/sfx";
 import { beat, chapter, F } from "../data";
-import { BeatText, Chapter, Reveal } from "../lib/chapter";
+import { BeatText, Chapter, Finding, Reveal } from "../lib/chapter";
 import { E, inOut, lerp, pt, useT } from "../lib/motion";
 import { iawe, morph, Pt, resampleMax, SignalPath, toPts } from "../lib/signal";
 import { C, FONT, W, H } from "../theme";
 import { BAR } from "../timing";
 
-export const ENERGY_LEN = 10 * BAR;
+export const ENERGY_LEN = 17 * BAR;
 
-const T = { dock: 3.9, nl: 4.3, tk: 11.1, nb: 15.5 };
+// the build peaks into the climax at 20 s, where NILMBench's award lands
+const T = { dock: 3.9, nl: 4.3, tk: 13.0, nb: 20.0 };
 
 const LANES: [keyof typeof iawe, string][] = [
   ["air_conditioner", "Air conditioner"],
@@ -57,11 +58,13 @@ export const Energy: React.FC = () => {
       <BeatText tone="dark" at={T.nl} out={T.tk - 0.42} title={b("nilm").title} text={b("nilm").text} tag={b("nilm").tag} />
       <BeatText tone="dark" at={T.tk + 0.05} out={T.nb - 0.42} title={b("nilmtk").title} tag={b("nilmtk").tag} />
       <BeatText tone="dark" at={T.nb + 0.05} title={b("nilmbench").title} tag={b("nilmbench").tag} />
+      <Finding tone="dark" at={T.tk + 2.5} out={T.nb} f={b("nilmtk").finding} />
+      <Finding tone="dark" at={T.nb + 3.0} f={b("nilmbench").finding} />
 
       {/* disaggregation: the meter's line splits into appliance lanes */}
       <div style={{ position: "absolute", inset: 0, opacity: panel }}>
-        <div style={{ position: "absolute", left: 930, top: MAINS.top + 4, fontFamily: FONT.mono, fontSize: 21, color: C.nightInk, letterSpacing: "0.04em" }}>ONE METER</div>
-        <div style={{ position: "absolute", left: 930, top: MAINS.top + 34, fontFamily: FONT.mono, fontSize: 18, color: C.nightMuted }}>{iawe.date}</div>
+        <div style={{ position: "absolute", left: 930, top: MAINS.top + 4, fontFamily: FONT.mono, fontSize: 21, color: C.nightInk, letterSpacing: "0.04em", opacity: pt(t, T.nl + 0.9, 0.4) }}>ONE METER</div>
+        <div style={{ position: "absolute", left: 930, top: MAINS.top + 34, fontFamily: FONT.mono, fontSize: 18, color: C.nightMuted, opacity: pt(t, T.nl + 0.9, 0.4) }}>{iawe.date}</div>
         <svg width={W} height={H} style={{ position: "absolute", inset: 0 }}>
           <line x1={X0} x2={X1} y1={MAINS.base + 2} y2={MAINS.base + 2} stroke={C.nightRule} strokeWidth={1.5} />
           {lines.lanes.map((ln, i) => {
@@ -94,7 +97,6 @@ export const Energy: React.FC = () => {
 
       {/* NILMTK and the Test-of-Time award */}
       <Reveal src={F.img.testoftime} at={T.tk - 0.15} out={T.nb - 0.2} x={1240} y={196} w={560} h={760} pos="50% 30%" />
-      <Reveal src={F.img.nilmtk} at={T.tk + 0.3} out={T.nb - 0.25} x={900} y={760} w={316} h={196} fit="contain" bg="#ffffff" from="bottom" />
 
       {/* NILMBench2026 at BuildSys */}
       <Reveal src={F.img.nilmbench_award} at={T.nb - 0.2} x={900} y={250} w={900} h={487} fit="cover" />
