@@ -43,7 +43,7 @@ The film's score plays under the video. It is shorter than the talk, so it is la
 `video.mjs` makes the video safe to publish without watching every second of it:
 
 - **The render stops** on a missing score, on a slide whose builds and times disagree (it names the slide), and waits for every picture to load before drawing a frame.
-- **The loudness is set** to YouTube's standard, −14 LUFS with true peaks under −1 dBTP, in two passes; only the sound is re-encoded.
+- **The picture and the sound are rendered apart**, the sound as lossless WAV. Its loudness is set to YouTube's standard, −14 LUFS with true peaks under −1 dBTP (corrected to −2, since encoding lifts peaks), then it is encoded once and cut to the picture's exact length. `--reuse` keeps a picture already rendered and redoes only the sound, so a 4K fix takes minutes, not half an hour.
 - **The result is checked:** picture and sound as long as the talk, no dropouts (no silence over a second except where the score ends quietly), and the loudness on target. A failed check keeps the file aside as `*.unchecked.mp4`, makes no copies and exits with an error. The checks are in `out/talk/talk.report.json`; `node talk/scripts/video.mjs --check FILE` runs them on any video.
 
 ## Write a slide

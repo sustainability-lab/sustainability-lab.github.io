@@ -312,17 +312,17 @@ window.Quarto = {
         <a class="btn btn-outline-primary" href="papers/index.html">Publications</a>
       </div>
     </div>
-    <!-- The lab film lives on YouTube; the player loads only when someone presses play. New edition: change the ID in both places. -->
+    <!-- The lab talk, as a video made from its slides (_film/slides/lab-talk), lives on YouTube; the player loads only when someone presses play. New edition: change the ID in both places. -->
     <figure class="film figure">
-      <button class="film-open" type="button" aria-haspopup="dialog" aria-controls="film-dialog" data-youtube="iaZuz2s4Ij8">
-        <img src="images/film/poster.jpg" width="1600" height="900" alt="Still from the lab film: 30,638 brick kilns found from space across the Indo-Gangetic Plain" class="figure-img">
-        <span class="film-cta"><span class="film-play" aria-hidden="true"></span><span><b>Watch the lab film</b><span>5 minutes · on YouTube, in 4K</span></span></span>
+      <button class="film-open" type="button" aria-haspopup="dialog" aria-controls="film-dialog" data-youtube="J3QXxYsoqlA">
+        <img src="images/film/poster.jpg" width="1600" height="900" alt="Still from the lab talk: 30,638 brick kilns found from space across the Indo-Gangetic Plain" class="figure-img">
+        <span class="film-cta"><span class="film-play" aria-hidden="true"></span><span><b>Watch the lab talk</b><span>5½ minutes · on YouTube, in 4K</span></span></span>
       </button>
-      <figcaption>Our research, people and alumni in one short film · <a href="https://youtu.be/iaZuz2s4Ij8">open on YouTube</a> · <a href="talk/">the same story as slides</a></figcaption>
+      <figcaption>Our research, people and alumni in five and a half minutes · <a href="https://youtu.be/J3QXxYsoqlA">open on YouTube</a> · <a href="talk/">the same talk as slides</a></figcaption>
     </figure>
   </div>
-  <dialog id="film-dialog" class="film-dialog" aria-label="The Sustainability Lab film">
-    <form method="dialog"><button class="film-close" aria-label="Close the film">Close ×</button></form>
+  <dialog id="film-dialog" class="film-dialog" aria-label="The Sustainability Lab talk">
+    <form method="dialog"><button class="film-close" aria-label="Close the video">Close ×</button></form>
     <div class="film-frame"></div>
   </dialog>
   <script>
@@ -332,7 +332,7 @@ window.Quarto = {
       const frame = dialog.querySelector(".film-frame");
       open.addEventListener("click", () => {
         frame.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + open.dataset.youtube +
-          '?autoplay=1&rel=0&playsinline=1" title="The Sustainability Lab film" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
+          '?autoplay=1&rel=0&playsinline=1" title="The Sustainability Lab talk" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
         dialog.showModal();
       });
       dialog.addEventListener("close", () => { frame.innerHTML = ""; });
@@ -443,7 +443,7 @@ No matching items
 <div id="listing-news-latest" class="quarto-listing quarto-listing-container-custom">
 <div class="newsfeed">
 <div class="list-row" data-type="other">
-<span class="d">Nov 2026</span><span><span class="label">News</span>A new edition of the <a href="https://youtu.be/iaZuz2s4Ij8"><b>lab film</b></a>, five minutes long, with new work on weather emulation (FiLMeR), how news and social media cover air pollution, Aperture, Signal Descriptors and interpretable sleep staging. The same story is also a <a href="https://sustainability-lab.github.io/talk/">slide deck for talks</a>.</span>
+<span class="d">Nov 2026</span><span><span class="label">News</span>A new edition of the <a href="https://youtu.be/iaZuz2s4Ij8"><b>lab film</b></a>, five minutes long, with new work on weather emulation (FiLMeR), how news and social media cover air pollution, Aperture, Signal Descriptors and interpretable sleep staging. The same story is also a <a href="https://sustainability-lab.github.io/talk/">slide deck for talks</a>, and a <a href="https://youtu.be/J3QXxYsoqlA">five-and-a-half-minute video made from those slides</a>, in 4K.</span>
 </div>
 <div class="list-row" data-type="award">
 <span class="d">Nov 2026</span><span><span class="label">Award</span>Ayush Shrivastava wins <b>first prize for oral presentations at ConfAI 2026</b> (Plaksha University) for <b>ThermEval</b>, our KDD 2026 benchmark on whether vision-language models can read thermal images.</span>

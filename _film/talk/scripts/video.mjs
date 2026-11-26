@@ -3,6 +3,10 @@
 //   node talk/scripts/video.mjs              → out/talk/talk.mp4 (1080p) and talk-720p.mp4
 //   node talk/scripts/video.mjs --4k         → out/talk/talk-4k.mp4 (the master for YouTube), talk.mp4, talk-720p.mp4
 //   node talk/scripts/video.mjs --check FILE → only the checks, on a video already made
+//   … --reuse   keep the picture already rendered at this size (out/talk/.picture-*.mp4) and redo only the sound
+//
+// The picture and the sound are rendered separately: the picture as H.264, the sound as lossless WAV. The sound
+// is measured and corrected on the WAV, then encoded once as AAC and cut to the picture's exact length.
 //
 // Every run ends with out/talk/talk.report.json and a summary. It exits with an error, and keeps the
 // unchecked file aside, if a check fails:
@@ -19,8 +23,13 @@ import { fileURLToPath } from "node:url";
 const FILM = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const OUT = path.join(FILM, "out/talk");
 const LUFS = -14, PEAK = -1, SILENT_DB = -50, SILENT_S = 1.0;
+// correct to 1 dB under the limit: encoding to AAC afterwards lifts true peaks by up to about 0.6 dB
+const PEAK_TARGET = -2;
+// how far the sound may run past the picture (AAC pads its last block)
+const SYNC_S = 0.05;
 const args = process.argv.slice(2);
 const K4 = args.includes("--4k");
+const REUSE = args.includes("--reuse");
 fs.mkdirSync(OUT, { recursive: true });
 
 const ffErr = (argv) => {
@@ -43,8 +52,8 @@ const duration = (file, stream) => {
 };
 
 /** Measured loudness of a file (EBU R128, ffmpeg's loudnorm in measure mode). */
-const loudness = (file) => {
-  const log = stderrOf(["-i", file, "-af", `loudnorm=I=${LUFS}:TP=${PEAK}:LRA=11:print_format=json`, "-f", "null", "-"]);
+const loudness = (file, tp = PEAK) => {
+  const log = stderrOf(["-i", file, "-af", `loudnorm=I=${LUFS}:TP=${tp}:LRA=11:print_format=json`, "-f", "null", "-"]);
   const json = log.slice(log.lastIndexOf("{"), log.lastIndexOf("}") + 1);
   return JSON.parse(json);
 };
@@ -84,7 +93,7 @@ function check(file, expectSeconds) {
   ok("picture", !!v, v ? `${v.width}×${v.height}, ${v.seconds.toFixed(3)} s` : "no video stream");
   if (expectSeconds) ok("length", !!v && Math.abs(v.seconds - expectSeconds) <= 2 * frame, `${v?.seconds.toFixed(3)} s, talk is ${expectSeconds.toFixed(3)} s`);
   ok("sound", !!a, a ? `${a.seconds.toFixed(3)} s` : "no audio stream");
-  if (v && a) ok("sound as long as picture", Math.abs(a.seconds - v.seconds) <= 0.1, `${(a.seconds - v.seconds).toFixed(3)} s apart`);
+  if (v && a) ok("sound as long as picture", Math.abs(a.seconds - v.seconds) <= SYNC_S, `${(a.seconds - v.seconds).toFixed(3)} s apart`);
   if (a) {
     const L = loudness(file);
     const I = Number(L.input_i), TP = Number(L.input_tp);
@@ -121,37 +130,35 @@ const inputProps = { music: true };
 const talk = await selectComposition({ serveUrl, id: "Talk", inputProps });
 const seconds = talk.durationInFrames / talk.fps;
 console.log(`${talk.props.timeline.slides.length} slides, ${Math.floor(seconds / 60)}:${String(Math.round(seconds % 60)).padStart(2, "0")}, rendering at ${K4 ? "3840×2160" : "1920×1080"}…`);
-const raw = path.join(OUT, ".talk-raw.mp4");
-let last = -1;
-await renderMedia({
-  composition: talk,
-  serveUrl,
-  codec: "h264",
-  crf: 18,
-  audioCodec: "aac",
-  audioBitrate: "320k",
-  scale: K4 ? 2 : 1,
-  inputProps,
-  outputLocation: raw,
-  overwrite: true,
-  onProgress: ({ progress }) => {
-    const p = Math.floor(progress * 10);
-    if (p !== last) (last = p), console.log(`  ${p * 10}%`);
-  },
-});
+const picture = path.join(OUT, `.picture-${K4 ? "4k" : "1080p"}.mp4`);
+const sound = path.join(OUT, ".sound.wav");
+const progress = (label) => {
+  let last = -1;
+  return ({ progress: p }) => {
+    const k = Math.floor(p * 10);
+    if (k !== last) (last = k), console.log(`  ${label} ${k * 10}%`);
+  };
+};
+if (REUSE && fs.existsSync(picture) && Math.abs((duration(picture, "video")?.seconds ?? 0) - seconds) <= 2 / talk.fps) {
+  console.log(`  reusing ${path.relative(process.cwd(), picture)}`);
+} else {
+  await renderMedia({ composition: talk, serveUrl, codec: "h264", crf: 18, muted: true, scale: K4 ? 2 : 1, inputProps, outputLocation: picture, overwrite: true, onProgress: progress("picture") });
+}
+await renderMedia({ composition: talk, serveUrl, codec: "wav", inputProps, outputLocation: sound, overwrite: true, onProgress: progress("sound") });
 
 // ---------------------------------------------------------------------------------------------------------- loudness
-// Two passes of EBU R128 normalisation: measure, then correct linearly to −14 LUFS with true peaks under −1 dBTP.
-// Only the sound is re-encoded; the picture is copied as rendered.
-const m = loudness(raw);
+// Two passes of EBU R128 normalisation on the lossless sound: measure, then correct to −14 LUFS with true peaks
+// under the limit (linearly when the music allows it). Then one AAC encode, cut to the picture's length, and
+// the picture copied as rendered.
+const m = loudness(sound, PEAK_TARGET);
 const master = path.join(OUT, K4 ? "talk-4k.mp4" : "talk.mp4");
 const pending = master.replace(/\.mp4$/, ".unchecked.mp4");
 ffErr([
-  "-y", "-i", raw,
-  "-af", `loudnorm=I=${LUFS}:TP=${PEAK}:LRA=11:measured_I=${m.input_i}:measured_TP=${m.input_tp}:measured_LRA=${m.input_lra}:measured_thresh=${m.input_thresh}:offset=${m.target_offset}:linear=true`,
-  "-ar", "48000", "-c:v", "copy", "-c:a", "aac", "-b:a", "320k", "-movflags", "+faststart", pending,
+  "-y", "-i", picture, "-i", sound,
+  "-map", "0:v:0", "-map", "1:a:0",
+  "-af", `loudnorm=I=${LUFS}:TP=${PEAK_TARGET}:LRA=11:measured_I=${m.input_i}:measured_TP=${m.input_tp}:measured_LRA=${m.input_lra}:measured_thresh=${m.input_thresh}:offset=${m.target_offset}:linear=true,aresample=48000`,
+  "-c:v", "copy", "-c:a", "aac", "-b:a", "320k", "-t", seconds.toFixed(3), "-movflags", "+faststart", pending,
 ]);
-fs.rmSync(raw, { force: true });
 
 // ---------------------------------------------------------------------------------------------------------- checks
 const results = check(pending, seconds);
@@ -161,6 +168,8 @@ if (!passed) {
   process.exit(1);
 }
 fs.renameSync(pending, master);
+fs.rmSync(picture, { force: true });
+fs.rmSync(sound, { force: true });
 
 // ---------------------------------------------------------------------------------------------------------- copies
 if (K4) ffErr(["-y", "-i", master, "-vf", "scale=1920:1080:flags=lanczos", "-c:v", "libx264", "-crf", "18", "-preset", "slow", "-c:a", "copy", "-movflags", "+faststart", path.join(OUT, "talk.mp4")]);
