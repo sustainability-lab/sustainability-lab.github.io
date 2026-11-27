@@ -11,21 +11,23 @@
     "talk:preview": "open-slide preview"
   },
   "dependencies": {
+    "@open-slide/core": "^2.4.0",
     "@remotion/cli": "4.0.537",
     "@remotion/google-fonts": "4.0.537",
+    "@remotion/media-utils": "4.0.537",
     "@remotion/paths": "4.0.537",
+    "@remotion/player": "4.0.537",
     "d3-geo": "3.1.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "remotion": "4.0.537",
-    "@open-slide/core": "^2.4.0",
-    "@remotion/media-utils": "4.0.537",
-    "@remotion/player": "4.0.537"
+    "remotion": "4.0.537"
   },
   "devDependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.3.332",
+    "@openai/codex-sdk": "^0.172.0",
     "@types/d3-geo": "3.1.0",
     "@types/react": "^19.2.18",
-    "typescript": "5.9.3",
-    "@types/react-dom": "^19.2.5"
+    "@types/react-dom": "^19.2.5",
+    "typescript": "5.9.3"
   }
 }
