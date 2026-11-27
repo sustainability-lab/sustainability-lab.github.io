@@ -2,7 +2,7 @@
 <% for (const p of items) { %>
 <div class="person" <%= metadataAttrs(p) %>>
 <% if (p.url) { %><a href="<%= p.url %>"><% } %>
-<img src="<%= p.photo %>" alt="<%= p.name %>" loading="lazy">
+<% if (p.photo) { %><img src="<%= p.photo %>" alt="<%= p.name %>" loading="lazy"><% } else { %><i class="initial" aria-hidden="true"><%= p.name.charAt(0) %></i><% } %>
 <b><%= p.name %></b><% if (p.url) { %></a><% } %>
 <span><%= p.area %><% if (p.since) { %> · since <%= p.since %><% } %></span>
 </div>
